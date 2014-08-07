@@ -1,0 +1,124 @@
+// Defra
+// ==========================================================================
+
+
+// Override the global header bar with DEFRA colour
+
+#global-header-bar .header-bar {
+	background-color: $department-for-environment-food-rural-affairs;
+}
+
+
+
+
+// Page header
+
+.page-header {
+  margin: 1em 1em 3em 1em;
+  padding: 0 0 2em 0;
+
+  @include media(desktop) {
+    margin: 1em 2em 3em 2em;
+  }
+
+  .hgroup {
+    padding: 0;
+
+    h1 {
+      @include bold-48;
+      color: $text-colour;
+      padding-top: 0.7rem;
+      padding-bottom: 1.3rem;
+    }
+
+    h2.subtitle{
+      margin: 0;
+      color: $secondary-text-colour;
+      @include core-24;
+    }
+  }
+}
+
+
+
+// Tabs
+
+.nav-tabs {
+	background-color: #fff;
+	margin-top: 50px;
+	padding: 0;
+	position: relative;
+
+	&:after {
+		clear: both;
+		content: '.';
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+
+	ol, ul {
+		float: left;
+		list-style:  none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		z-index: 5;
+	}
+
+	li {
+		@include core-16;
+		float: left;
+		margin: 0;
+		padding: 0;
+
+		a {
+			border: 1px solid #fff;
+			border-bottom: none;
+			float: left;
+			height: 2.25em;
+			line-height: 2.25em;
+			margin-bottom: -1px;
+			padding: 0 1em;
+			position: relative;
+			text-align: center;
+			top: 0;
+		}
+
+		&.active a {
+			background-color: #fff;
+			border: 1px solid lightgrey;
+			border-bottom: 1px solid #fff;
+			color: $text-colour;
+			cursor: default; // A nice to have addition
+			position: relative;
+			text-decoration: none;
+			z-index: 5;
+		}
+
+	}
+
+}
+
+
+.tab-pane {
+	padding: 1em 1em 0 1em;
+	border-top: 1px solid lightgrey;
+}
+
+
+
+// This addition allows for minimal height content where the footer colour extends visually
+
+html {
+	background-color: $grey-3;
+}
+
+
+body {
+	background-color: $page-colour;
+}
+
+
+
+
