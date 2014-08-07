@@ -1,7 +1,8 @@
 CAPD Style Guide
 ================
 
-### About this repository
+About this repository
+---------------------
 
 You can clone this repository and run it locally,
 You will need [Node.js](http://nodejs.org/).
