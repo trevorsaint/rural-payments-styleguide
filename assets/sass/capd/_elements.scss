@@ -149,8 +149,7 @@ body {
 
 .steps-pos {
 	display: block;
-	margin-bottom: .5em;
-	@extend .font-medium;
+	@include core-19;
 	@extend .text-secondary;
 }
 
