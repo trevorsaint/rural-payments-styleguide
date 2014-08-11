@@ -10,7 +10,6 @@
 
 
 
-
 // Page header
 
 .page-header {
@@ -43,11 +42,8 @@
 
 // Tabs
 
-.nav-tabs {
+.tabs {
 	background-color: #fff;
-	margin-top: 50px;
-	padding: 0;
-	position: relative;
 
 	&:after {
 		clear: both;
@@ -58,42 +54,60 @@
 	}
 
 	ol, ul {
-		float: left;
-		list-style:  none;
-		margin: 0;
+		border-top: 1px solid $grey-2;
+		margin: 0 -1em;
 		padding: 0;
-		position: relative;
-		z-index: 5;
+
+		@include media(tablet) {
+			border-top: none;
+			float: left;
+			margin: 0;
+		}
+
 	}
 
 	li {
 		@include core-16;
-		float: left;
 		margin: 0;
 		padding: 0;
 
-		a {
-			border: 1px solid #fff;
+		@include media(tablet) {
+			float: left;
+		}
+
+	}
+
+	a {
+		border-bottom: 1px solid $grey-2;
+		display: block;
+		line-height: 3.5em;
+		padding: 0 1em;
+
+		@include media(tablet) {
+			border: 1px solid transparent;
 			border-bottom: none;
 			float: left;
 			height: 2.25em;
 			line-height: 2.25em;
 			margin-bottom: -1px;
-			padding: 0 1em;
-			position: relative;
 			text-align: center;
-			top: 0;
 		}
 
-		&.active a {
+		&:hover {
+			background-color: $grey-3;
+		}
+
+		&.active {
 			background-color: #fff;
-			border: 1px solid lightgrey;
-			border-bottom: 1px solid #fff;
 			color: $text-colour;
-			cursor: default; // A nice to have addition
-			position: relative;
+			cursor: default;
 			text-decoration: none;
-			z-index: 5;
+
+			@include media(tablet) {
+				border: 1px solid $grey-2;
+				border-bottom: 1px solid #fff;
+			}
+
 		}
 
 	}
@@ -101,9 +115,15 @@
 }
 
 
-.tab-pane {
-	padding: 1em 1em 0 1em;
-	border-top: 1px solid lightgrey;
+.tabs-content {
+	padding: 1em 0 0;
+
+	@include media(tablet) {
+		border-top: 1px solid $grey-2;
+		padding: 1em 1em 0;
+
+	}
+
 }
 
 
@@ -118,6 +138,60 @@ html {
 body {
 	background-color: $page-colour;
 }
+
+
+
+// Step indicator
+
+.step-indicator {
+	padding: 1em 0;
+}
+
+.steps-pos {
+	display: block;
+	margin-bottom: .5em;
+	@extend .font-medium;
+	@extend .text-secondary;
+}
+
+
+// Sumamry
+
+.summary {
+
+	li {
+		border-bottom: 1px solid $grey-2;
+		clear: both;
+		margin: 0;
+		overflow: hidden;
+		padding: .5em 0;
+	}
+
+}
+
+.summary-title {
+	display: block;
+	@extend .bold-small;
+
+	@include media(tablet) {
+		float: left;
+		width: 30%;
+	}
+
+}
+
+
+.summary-value {
+	display: block;
+	@include media(tablet) {
+		float: right;
+		width: 70%;
+	}
+
+}
+
+
+
 
 
 
