@@ -143,7 +143,7 @@ body {
 // Steps
 
 .steps {
-	padding: 1em 0;
+	//padding: 1em 0;
 }
 
 .steps-heading {
@@ -196,6 +196,26 @@ body {
 
 }
 
+
+
+// Alerts
+
+.alert {
+	background-color: rgba($error-colour, .1); // 10%
+	border-left: 3px solid $error-colour;
+	margin: 0 -1em 1em;
+	padding: 1em;
+}
+
+.alert-success {
+	background-color: rgba($turquoise, .1); // 10%
+	border-color: $turquoise;
+}
+
+.alert-info {
+	background-color: rgba($grey-2, .1); // 10%
+	border-color: $grey-2;
+}
 
 
 
