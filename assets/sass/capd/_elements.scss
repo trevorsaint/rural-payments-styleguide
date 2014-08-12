@@ -53,17 +53,17 @@
 		visibility: hidden;
 	}
 
-	ol, ul {
-		border-top: 1px solid $grey-2;
-		margin: 0 -1em;
-		padding: 0;
+}
 
-		@include media(tablet) {
-			border-top: none;
-			float: left;
-			margin: 0;
-		}
+.tabs-list {
+	border-top: 1px solid $grey-2;
+	margin: 0 -1em;
+	padding: 0;
 
+	@include media(tablet) {
+		border-top: none;
+		float: left;
+		margin: 0;
 	}
 
 	li {
@@ -114,7 +114,6 @@
 
 }
 
-
 .tabs-content {
 	padding: 1em 0 0;
 
@@ -128,7 +127,7 @@
 
 
 
-// This addition allows for minimal height content where the footer colour extends visually
+// Footer colour extended
 
 html {
 	background-color: $grey-3;
@@ -141,10 +140,14 @@ body {
 
 
 
-// Step indicator
+// Steps
 
-.step-indicator {
+.steps {
 	padding: 1em 0;
+}
+
+.steps-heading {
+	@include bold-36();
 }
 
 .steps-pos {
@@ -154,9 +157,14 @@ body {
 }
 
 
-// Sumamry
+
+// Summary
 
 .summary {
+
+	ul {
+		margin: 0;
+	}
 
 	li {
 		border-bottom: 1px solid $grey-2;
@@ -178,7 +186,6 @@ body {
 	}
 
 }
-
 
 .summary-value {
 	display: block;
