@@ -1,0 +1,38 @@
+// Summary
+// ==========================================================================
+
+.summary {
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		border-bottom: 1px solid $grey-2;
+		clear: both;
+		margin: 0;
+		overflow: hidden;
+		padding: .5em 0;
+	}
+
+}
+
+.summary-title {
+	display: block;
+	@extend .bold-small;
+
+	@include media(tablet) {
+		float: left;
+		width: 30%;
+	}
+
+}
+
+.summary-value {
+	display: block;
+	@include media(tablet) {
+		float: right;
+		width: 70%;
+	}
+
+}

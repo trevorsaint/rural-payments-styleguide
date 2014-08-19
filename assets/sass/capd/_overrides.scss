@@ -1,0 +1,24 @@
+// Overrides
+// ==========================================================================
+
+
+// Override the global header bar with DEFRA colour
+
+#global-header-bar .header-bar {
+	background-color: $department-for-environment-food-rural-affairs;
+}
+
+
+
+// Footer colour extended
+
+html {
+	background-color: $grey-3;
+}
+
+
+body {
+	background-color: $page-colour;
+}
+
+

@@ -31,5 +31,11 @@
 // CAPD Specific
 // ==========================================================================
 
-@import 'capd/elements';
+@import 'capd/overrides';
+@import 'capd/headers';
+@import 'capd/steps';
+@import 'capd/alerts';
+@import 'capd/tabs';
+@import 'capd/icons';
+@import 'capd/summary';
 

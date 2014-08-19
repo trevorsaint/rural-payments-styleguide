@@ -1,0 +1,16 @@
+// Steps
+// ==========================================================================
+
+.steps {
+	//padding: 1em 0;
+}
+
+.steps-heading {
+	@include bold-36();
+}
+
+.steps-pos {
+	display: block;
+	@include core-19;
+	@extend .text-secondary;
+}

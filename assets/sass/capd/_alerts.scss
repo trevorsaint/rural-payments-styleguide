@@ -1,0 +1,49 @@
+// Alerts
+// ==========================================================================
+
+%alert {
+	border-left: 4px solid $error-colour;
+	margin: 0 -1em 1em;
+	padding: 1em;
+}
+
+.alert-success {
+	@extend %alert;
+	background-color: rgba($turquoise, .1);
+	border-color: $turquoise;
+}
+
+.alert-info {
+	@extend %alert;
+	background-color: rgba($grey-2, .1);
+	border-color: $grey-2;
+}
+
+.alert-error {
+	@extend %alert;
+	background-color: rgba($error-colour, .1);
+	border-color: $error-colour;
+}
+
+.alert-header {
+  @extend .bold-medium;
+	clear: both;
+	overflow: hidden;
+	vertical-align: middle;
+	line-height: 2.083em; // 50px
+	margin-bottom: .5em;
+}
+
+.alert-number {
+	float: left;
+	margin-right: .41666667em; // 20px ÷ 48px font size
+	@extend .bold-xlarge;
+}
+
+.alert-message {
+	display: block;
+	overflow: hidden;
+	p:last-child {
+		margin: 0;
+	}
+}

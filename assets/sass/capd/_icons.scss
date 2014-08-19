@@ -1,0 +1,26 @@
+// Icons
+// ==========================================================================
+
+.icon {
+	float: left;
+	height: 22px;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 22px;
+}
+
+.icon-tick {
+	background-image: url("../images/icons/icon-tick.png");
+	@include device-pixel-ratio() {
+		background-image: url("../images/icons/icon-tick-2x.png");
+		background-size: 100%;
+	}
+}
+
+.icon-cross {
+	background-image: url("../images/icons/icon-cross.png");
+	@include device-pixel-ratio() {
+		background-image: url("../images/icons/icon-cross-2x.png");
+		background-size: 100%;
+	}
+}
