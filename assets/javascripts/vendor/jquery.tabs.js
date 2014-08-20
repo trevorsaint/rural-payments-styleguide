@@ -2,7 +2,7 @@
  * --------------------------------------------------------------------
  * jQuery tabs plugin
  * Author: Scott Jehl, scott@filamentgroup.com
- * Copyright (c) 2009 Filament Group 
+ * Copyright (c) 2009 Filament Group
  * licensed under MIT (filamentgroup.com/examples/mit-license.txt)
  * --------------------------------------------------------------------
  */
@@ -14,7 +14,7 @@
 jQuery.fn.tabs = function(settings){
 	//configurable options
 	var o = $.extend({
-    trackState: true, //track tabs in history, url hash, back button, page load
+    trackState: false, //track tabs in history, url hash, back button, page load
     srcPath: 'jQuery.history.blank.html',
     autoRotate: false,
     alwaysScrollToTop: true,
@@ -51,7 +51,7 @@ jQuery.fn.tabs = function(settings){
             }
           }
 
-          return format; 
+          return format;
         };
 
   var setTabItems = function ($tabsBody, $tabsNav) {
@@ -65,7 +65,7 @@ jQuery.fn.tabs = function(settings){
 	var adapt = function ($tabs, $tabsNav, $tabsBody) {
     var $tabItems = $tabsNav.find('li'),
         $container = $tabsNav.closest(o.containerTag).parent(),
-        $relatedArticle, 
+        $relatedArticle,
         $articleHeading,
         $articleInner;
 
@@ -96,9 +96,9 @@ jQuery.fn.tabs = function(settings){
 
       // if article has no inner div, add one & move the content into it
       if (!$articleInner.length) {
-        $articleInner = $('<div class="inner js-tab-pane" />').html($relatedArticle.html());
+        $articleInner = $('<div class="inner tabs-pane" />').html($relatedArticle.html());
       } else {
-        $articleInner.addClass('js-tab-pane');
+        $articleInner.addClass('tabs-pane');
       }
 
       $articleInner.attr('id', tabId);
@@ -114,13 +114,13 @@ jQuery.fn.tabs = function(settings){
 
     $tabsNav.closest(o.containerTag).remove();
   };
-	
+
 	return $(this).each(function(){
 		//reference to tabs container
 		var tabs = $(this);
 
 		//nav is first ul or ol
-		var tabsNav = tabs.find('.js-tabs ul, .js-tabs ol');
+		var tabsNav = tabs.find('.tabs-nav ul, .tabs-nav ol');
 
     // exit early if there isn't anything to click
     if (tabsNav.length === 0) {
@@ -128,7 +128,7 @@ jQuery.fn.tabs = function(settings){
     }
 
 		//body is nav's next sibling
-		var tabsBody = $(".js-tab-content");
+		var tabsBody = $(".tabs-content");
 
 		var tabIDprefix = 'tab-';
 
@@ -139,7 +139,7 @@ jQuery.fn.tabs = function(settings){
 			.attr('aria-live', 'polite');
 
     // check for mobile and adapt DOM if required
-    tabFormat = checkFormat(tabsNav);        
+    tabFormat = checkFormat(tabsNav);
     if (tabFormat === 'accordion') {
       adapt(tabs, tabsNav);
     } else {
@@ -148,9 +148,9 @@ jQuery.fn.tabs = function(settings){
         .addClass('tabs-nav')
         .attr('role','tablist');
     }
-		
+
 		//find tab panels, add class and aria
-		tabsBody.find('.js-tab-pane').each(function(){
+		tabsBody.find('.tabs-panel').each(function(){
 			$(this)
 				.addClass('tabs-panel')
 				.attr('role','tabpanel')
@@ -160,7 +160,7 @@ jQuery.fn.tabs = function(settings){
 				.attr('id', $(this).attr('id') + tabIDsuffix)
 				.hide();
 		});
-		
+
     var tabItems = setTabItems(tabsBody, tabsNav);
 
 		//set role of each tab
@@ -173,7 +173,7 @@ jQuery.fn.tabs = function(settings){
 				.attr('aria-controls', id)
 				.attr('aria-flowto', id);
 		});
-		
+
 		//generic select tab function
 		function selectTab(tab,fromHashChange){
 			if(o.trackState && !fromHashChange){
@@ -204,7 +204,7 @@ jQuery.fn.tabs = function(settings){
 					.attr('aria-expanded', false)
 					.removeClass('tabs-panel-selected')
 					.hide();
-					
+
 				//select active panel
 				var anchor = tab.attr('href').split('#')[1];
 
@@ -286,7 +286,7 @@ jQuery.fn.tabs = function(settings){
 
 			if (selectedIndex !== undefined) {
 				selectedIndex = selectedIndex >= tabItems.length ? 0 : selectedIndex < 0 ? tabItems.length - 1 : selectedIndex;
-                
+
         selectedTabItem = tabItems.find('a').eq(selectedIndex);
         selectedTabItem.focus();
         o.selected = selectedIndex;
@@ -295,11 +295,11 @@ jQuery.fn.tabs = function(settings){
 			return false;
 		});
 
-		//if tabs are rotating, stop them upon user events	
+		//if tabs are rotating, stop them upon user events
 		tabs.bind('click keydown focus',function(){
       if(o.autoRotate){ clearInterval(tabRotator); }
 		});
-		
+
 		//function to select a tab from the url hash
 		function selectTabFromHash(hash, pageLoad){
 			var currHash = hash || window.location.hash;
@@ -322,13 +322,13 @@ jQuery.fn.tabs = function(settings){
       //return true/false
       return !!hashedTab.size();
 		}
-		
+
 		//if state tracking is enabled, set up the callback
 		if(o.trackState){ $.historyInit(selectTabFromHash, o.srcPath); }
 
 		//set tab from hash at page load, if no tab hash, select first tab
 		selectTabFromHash(null, true);
-		
+
 		tabItems.on('click', 'a', function(){
       if ($(this).closest('.js-heading-tab').hasClass('active')) {
         deselectTab($(this));
@@ -338,11 +338,11 @@ jQuery.fn.tabs = function(settings){
 			$(this).focus();
 			return false;
 		});
-		
+
 		if(o.alwaysScrollToTop){
 			$(window)[0].scrollTo(0,0);
 		}
-	
+
     // related content box needs to know the top position of the footer
     // this changes when content is split into tabs
     if (typeof GOVUK.stopScrollingAtFooter !== 'undefined') {

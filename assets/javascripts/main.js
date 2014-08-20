@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-	// Form focus styles
+	/* FORM FOCUS STYLES */
 
 	if ($('.form').length>0) {
 
@@ -49,7 +49,8 @@ $(document).ready(function() {
 	}
 
 
-	// Errors move to related form
+	/* ERRORS MOVE TO RELATED FORM ENTRY */
+
 	$('.validation-list a[href^="#"]').on('click', function(e) {
 
 		e.preventDefault();
@@ -69,6 +70,15 @@ $(document).ready(function() {
 		}, 500);
 
 	});
+
+
+  /* TABS */
+
+  if ($('.tabs').length>0) {
+
+    $('.tabs').tabs();
+
+  }
 
 
 });

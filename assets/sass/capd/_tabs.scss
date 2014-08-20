@@ -1,7 +1,7 @@
 // Tabs
 // ==========================================================================
 
-.tabs {
+.tabs-nav {
 	background-color: #fff;
 
 	&:after {
@@ -34,6 +34,19 @@
 			float: left;
 		}
 
+		&.active a {
+			background-color: #fff;
+			color: $text-colour;
+			cursor: default;
+			text-decoration: none;
+
+			@include media(tablet) {
+				border: 1px solid $grey-2;
+				border-bottom: 1px solid #fff;
+			}
+
+		}
+
 	}
 
 	a {
@@ -54,19 +67,6 @@
 
 		&:hover {
 			background-color: $grey-3;
-		}
-
-		&.active {
-			background-color: #fff;
-			color: $text-colour;
-			cursor: default;
-			text-decoration: none;
-
-			@include media(tablet) {
-				border: 1px solid $grey-2;
-				border-bottom: 1px solid #fff;
-			}
-
 		}
 
 	}
