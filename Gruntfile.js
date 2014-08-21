@@ -96,7 +96,11 @@ module.exports = function(grunt) {
 
   // Register task(s)
 
-  grunt.registerTask('default', ['compass', 'connect', 'watch']);
+  grunt.registerTask('default', [
+    'compass',
+    'connect',
+    'watch'
+  ]);
 
 
 };
