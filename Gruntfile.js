@@ -85,9 +85,13 @@ module.exports = function(grunt) {
 
   // Load plugins that provide the tasks
 
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  [
+    'grunt-contrib-compass',
+    'grunt-contrib-connect',
+    'grunt-contrib-watch'
+  ].forEach(function (task) {
+    grunt.loadNpmTasks(task);
+  });
 
 
   // Register task(s)
