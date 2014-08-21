@@ -9,78 +9,75 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
 
+  	// Compass
 
-	// Sass
+  	compass: {
 
-	sass: {
+  		compile: {
 
-		dist: {
+  		  options: {
+      		sassDir: 'assets/sass',
+      		cssDir:  'assets/stylesheets',
+      		config:  'config/config.rb'
+        }
 
-			options: {
-				style: 'compressed' // Nested, compact, compressed, expanded
-			},
+  		}
 
-			files: {
-				'assets/stylesheets/main.css' : 'assets/sass/main.scss'
-			}
-
-		}
-
-	},
+  	},
 
 
-	// Connect
+  	// Connect
 
-	connect: {
+  	connect: {
 
-		server: {
+  		server: {
 
-			options: {
-				port: 9100,
-				open: true,
-				livereload: 35729,
-				hostname: 'localhost'
-			}
+  			options: {
+  				port: 9100,
+  				open: true,
+  				livereload: 35729,
+  				hostname: 'localhost'
+  			}
 
-		}
+  		}
 
-	},
-
-
-	// Watch
-
-	watch: {
+  	},
 
 
-		options: {
-			livereload: true
-		},
+  	// Watch
+
+  	watch: {
 
 
-		sass: {
-
-			files: ['assets/sass/**/*.scss'],
-			tasks: ['sass'],
-
-			options: {
-				livereload: true,
-				spawn: false
-			}
-
-		},
+  		options: {
+  			livereload: true
+  		},
 
 
-		html: {
+  		compass: {
 
-			files: ['*.html'],
-			options: {
-				livereload: true
-			}
+  			files: ['assets/sass/**/*.scss'],
+  			tasks: ['compass'],
 
-		}
+  			options: {
+  				livereload: true,
+  				spawn: false
+  			}
+
+  		},
 
 
-	}
+  		html: {
+
+  			files: ['*.html'],
+  			options: {
+  				livereload: true
+  			}
+
+  		}
+
+
+  	}
 
 
   });
@@ -88,14 +85,14 @@ module.exports = function(grunt) {
 
   // Load plugins that provide the tasks
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
 
   // Register task(s)
 
-  grunt.registerTask('default', ['sass', 'connect', 'watch']);
+  grunt.registerTask('default', ['compass', 'connect', 'watch']);
 
 
 };
