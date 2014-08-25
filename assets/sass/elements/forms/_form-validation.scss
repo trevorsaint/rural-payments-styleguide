@@ -1,14 +1,8 @@
-@import "../colours";
-
 // Validation summary box
 .validation-summary {
   border: 3px solid $error-colour;
   padding: $gutter-half $gutter;
   margin-bottom: $gutter;
-
-  @include ie-lte(6){
-    zoom: 1;
-  }
 }
 
 .validation-summary ul {
@@ -63,11 +57,6 @@
   @include core-16;
   color: $error-colour;
 }
-
-
-
-
-
 
 
 
