@@ -1,22 +1,23 @@
-// Date of birth
+// Date
 
-.date-of-birth label {
+.form-date label {
   display: block;
   margin-bottom: 5px;
 }
 
-.date-of-birth .form-group {
-  width: 50px;
-  float: left;
-  margin-right: 20px;
+.form-date .form-group {
   clear: none;
+  float: left;
+  margin-bottom: 0;
+  margin-right: 20px;
+  width: 50px;
 }
 
-.date-of-birth .form-group-year {
+.form-date .form-group-year {
   width: 70px;
 }
 
-.date-of-birth .form-group input {
+.form-date .form-group input {
   width: 100%;
 }
 
@@ -24,18 +25,18 @@
 // Use Modernizr to detect for touch events
 // Build: http://modernizr.com/download/#-touch-cssclasses-teststyles-prefixes
 
-// Hide date of birth
-.touch .date-of-birth {
+// Hide date
+.touch .form-date {
   display: none;
 }
 
-// Hide native date of birth
-.no-touch .native-date-of-birth {
+// Hide native date
+.no-touch .native-date-picker {
   display: none;
 }
 
-// Show native date of birth
-.touch .native-date-of-birth {
+// Show native date
+.touch .native-date-picker {
   display: block;
 }
 
