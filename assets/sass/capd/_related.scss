@@ -1,0 +1,30 @@
+// Related
+// ==========================================================================
+
+.related {
+  border-top: 10px solid $department-for-environment-food-rural-affairs;
+  margin-top: 1.6em;
+}
+
+
+  .related-section {
+    padding-right: 1em;
+  }
+
+
+  .related-section-title {
+    @extend .bold-medium;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+
+  .related-section-links {
+    @extend .font-xsmall;
+    margin-bottom: 3em;
+
+    li {
+      margin-bottom: 1em;
+    }
+
+  }
