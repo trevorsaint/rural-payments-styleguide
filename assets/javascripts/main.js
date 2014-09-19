@@ -104,6 +104,7 @@ function showHideRadioToggledContent() {
 
 }
 
+
 function toggleTabs() {
 
   if ($('.tabs').length>0) {
@@ -113,6 +114,7 @@ function toggleTabs() {
   }
 
 }
+
 
 function formValidation() {
 
@@ -139,7 +141,6 @@ function formValidation() {
 }
 
 
-
 $(document).ready(function() {
 
   // Turn off jQuery animation
@@ -149,7 +150,7 @@ $(document).ready(function() {
   // and focused states for block labels
   var $blockLabels = $(".block-label input[type='radio'], .block-label input[type='checkbox']");
 
-  //GOVUK.selectionButtons($blockLabels);
+  GOVUK.selectionButtons($blockLabels);
 
   // Details/summary polyfill
   // See /javascripts/vendor/details.polyfill.js

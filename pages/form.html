@@ -213,7 +213,7 @@
 								<input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">Home address
 							</label>
 
-							<label class="block-label" for="radio-other-address" data-target="example-other-address">
+							<label class="block-label" for="radio-other-address" data-target="other-address">
 								<input id="radio-other-address" type="radio" name="radio-indent-group" value="No">Other address
 							</label>
 
@@ -221,7 +221,7 @@
 
 					</div>
 
-					<div class="panel-indent toggle-content" id="example-other-address">
+					<div class="panel-indent toggle-content js-hidden" id="other-address">
 
 						<fieldset>
 
@@ -313,11 +313,16 @@
 
 
   <script src="/assets/govuk/javascripts/govuk-template.js"></script>
+  <script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"></script>
 
-	<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"></script>
-	<script src="/assets/javascripts/vendor/modernizr.custom.77028.js"></script>
-	<script src="/assets/javascripts/vendor/details.polyfill.js"></script>
-	<script src="/assets/javascripts/main.js"></script>
+  <!-- govuk frontend toolkit js -->
+  <script src="/assets/govuk/javascripts/bind.js"></script>
+  <script src="/assets/govuk/javascripts/selection-buttons.js"></script>
+
+  <!-- govuk elements js -->
+  <script src="/assets/javascripts/vendor/modernizr.custom.77028.js"></script>
+  <script src="/assets/javascripts/vendor/details.polyfill.js"></script>
+  <script src="/assets/javascripts/main.js"></script>
 
   </body>
 </html>

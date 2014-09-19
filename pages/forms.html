@@ -134,6 +134,7 @@
 				<h1 class="heading-large">Form elements</h1>
 
 
+        <!-- form -->
         <form class="form form-group" method="post" action="/">
 
 					<fieldset>
@@ -151,8 +152,10 @@
 					</fieldset>
 
         </form>
+        <!-- end -->
 
 
+        <!-- form -->
         <form class="form form-group" method="post" action="/">
 
 					<fieldset class="inline">
@@ -161,26 +164,28 @@
 
             <div class="form-group form-group-related">
 
-							<label class="block-label" for="radio-inline-1">
-								<input type="radio" value="Yes" name="radio-inline-group" id="radio-inline-1">Yes
+							<label class="block-label" for="radio-inline-1" data-target="ni-number">
+								<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
 							</label>
 
 							<label class="block-label" for="radio-inline-2">
-								<input type="radio" value="No" name="radio-inline-group" id="radio-inline-2">No
+								<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">No
 							</label>
 
             </div>
 
-            <div id="example-ni-number" class="panel-indent js-hidden">
+            <div class="panel-indent toggle-content js-hidden" id="ni-number">
               <label class="form-label" for="national-insurance">National Insurance number</label>
-              <input type="text" id="national-insurance" class="form-control">
+              <input class="form-control" id="national-insurance" type="text">
             </div>
 
 					</fieldset>
 
 				</form>
+				<!-- end -->
 
 
+        <!-- form -->
 				<form class="form form-group" method="post" action="/">
 
 					<fieldset>
@@ -190,38 +195,42 @@
 					  <p>Select all that apply</p>
 
 						<label class="block-label" for="checkbox-1">
-							<input type="checkbox" value="1" id="checkbox-1">Waste from animal carcasses
+							<input id="checkbox-1" type="checkbox" value="1">Waste from animal carcasses
 						</label>
 
 						<label class="block-label" for="checkbox-2">
-							<input type="checkbox" value="2" id="checkbox-2">Waste from mines or quarries
+							<input id="checkbox-2" type="checkbox" value="2">Waste from mines or quarries
 						</label>
 
 						<label class="block-label" for="checkbox-3">
-							<input type="checkbox" value="2" id="checkbox-3">Farm or agricultural waste
+							<input id="checkbox-3" type="checkbox" value="2">Farm or agricultural waste
 						</label>
 
 					</fieldset>
 
 				</form>
+				<!-- end -->
 
 
+        <!-- form -->
         <form class="form form-group" method="post" action="/">
 
 					<fieldset>
 
 						<label class="form-label" for="telephone-number">Enter your telephone number</label>
-						<input class="form-control" type="text" id="telephone-number">
+						<input class="form-control" id="telephone-number" type="text">
 
 						<label class="form-checkbox" for="checkbox-telephone-number">
-							<input type="checkbox" value="checkbox-telephone-number" id="checkbox-telephone-number">I need to be contacted using a text phone
+							<input id="checkbox-telephone-number" type="checkbox" value="checkbox-telephone-number">I need to be contacted using a text phone
 						</label>
 
 					</fieldset>
 
         </form>
+        <!-- end -->
 
 
+        <!-- form -->
 				<form class="form form-group" method="post" action="/">
 
 					<fieldset>
@@ -234,17 +243,17 @@
 
 							<div class="form-group form-group-day">
 								<label for="dob-day">Day</label>
-								<input class="form-control" type="text" id="dob-day" maxlength="2">
+								<input class="form-control" id="dob-day" type="text" maxlength="2">
 							</div>
 
 							<div class="form-group form-group-month">
 								<label for="dob-month">Month</label>
-								<input class="form-control" type="text" id="dob-month" maxlength="2">
+								<input class="form-control" id="dob-month" type="text" maxlength="2">
 							</div>
 
 							<div class="form-group form-group-year">
 								<label for="dob-year">Year</label>
-								<input class="form-control" type="text" id="dob-year" maxlength="4">
+								<input class="form-control" id="dob-year" type="text" maxlength="4">
 							</div>
 
 						</div>
@@ -257,6 +266,7 @@
 					</fieldset>
 
 				</form>
+				<!-- end -->
 
 
 				<h3 class="heading-small">Standard button</h3>
@@ -320,11 +330,16 @@
 
 
   <script src="/assets/govuk/javascripts/govuk-template.js"></script>
+  <script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"></script>
 
-	<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"></script>
-	<script src="/assets/javascripts/vendor/modernizr.custom.77028.js"></script>
-	<script src="/assets/javascripts/vendor/details.polyfill.js"></script>
-	<script src="/assets/javascripts/main.js"></script>
+  <!-- govuk frontend toolkit js -->
+  <script src="/assets/govuk/javascripts/bind.js"></script>
+  <script src="/assets/govuk/javascripts/selection-buttons.js"></script>
+
+  <!-- govuk elements js -->
+  <script src="/assets/javascripts/vendor/modernizr.custom.77028.js"></script>
+  <script src="/assets/javascripts/vendor/details.polyfill.js"></script>
+  <script src="/assets/javascripts/main.js"></script>
 
   </body>
 </html>
