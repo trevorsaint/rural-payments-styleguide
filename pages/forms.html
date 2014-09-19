@@ -134,8 +134,7 @@
 				<h1 class="heading-large">Form elements</h1>
 
 
-				<form class="form form-group" method="post" action="index.html">
-
+        <form class="form form-group" method="post" action="/">
 
 					<fieldset>
 
@@ -151,10 +150,16 @@
 
 					</fieldset>
 
+        </form>
 
-					<div class="form-group">
 
-						<fieldset class="inline">
+        <form class="form form-group" method="post" action="/">
+
+					<fieldset class="inline">
+
+					  <legend class="form-label">Do you know their National Insurance number?</legend>
+
+            <div class="form-group form-group-related">
 
 							<label class="block-label" for="radio-inline-1">
 								<input type="radio" value="Yes" name="radio-inline-group" id="radio-inline-1">Yes
@@ -164,98 +169,107 @@
 								<input type="radio" value="No" name="radio-inline-group" id="radio-inline-2">No
 							</label>
 
-						</fieldset>
+            </div>
 
-					</div>
+            <div id="example-ni-number" class="panel-indent js-hidden">
+              <label class="form-label" for="national-insurance">National Insurance number</label>
+              <input type="text" id="national-insurance" class="form-control">
+            </div>
 
-
-					<div class="form-group">
-
-						<fieldset>
-
-							<label class="block-label selected" for="checkbox-1">
-								<input type="checkbox" value="1" id="checkbox-1">Waste from animal carcasses
-							</label>
-
-							<label class="block-label" for="checkbox-2">
-								<input type="checkbox" value="2" id="checkbox-2">Waste from mines or quarries
-							</label>
-
-							<label class="block-label" for="checkbox-3">
-								<input type="checkbox" value="2" id="checkbox-3">Farm or agricultural waste
-							</label>
-
-						</fieldset>
-
-					</div>
-
-
-					<div class="form-group">
-
-						<fieldset>
-
-							<label class="form-label" for="telephone-number">Enter your telephone number</label>
-							<input class="form-control" type="text" id="telephone-number">
-
-							<label class="form-checkbox" for="checkbox-telephone-number">
-								<input type="checkbox" value="checkbox-telephone-number" id="checkbox-telephone-number">I need to be contacted using a text phone
-							</label>
-
-						</fieldset>
-
-					</div>
-
-
-					<div class="form-group">
-
-						<fieldset>
-
-							<legend class="form-label-bold">Date of birth</legend>
-
-							<div class="form-date">
-
-								<p class="form-hint">For example, 08 04 2014</p>
-
-								<div class="form-group form-group-day">
-									<label for="dob-day">Day</label>
-									<input class="form-control" type="text" id="dob-day" maxlength="2">
-								</div>
-
-								<div class="form-group form-group-month">
-									<label for="dob-month">Month</label>
-									<input class="form-control" type="text" id="dob-month" maxlength="2">
-								</div>
-
-								<div class="form-group form-group-year">
-									<label for="dob-year">Year</label>
-									<input class="form-control" type="text" id="dob-year" maxlength="4">
-								</div>
-
-							</div>
-
-							<div class="form-date native-date-picker">
-								<p class="form-hint">For example, 08 April 2014</p>
-								<input class="form-control" type="date">
-							</div>
-
-						</fieldset>
-
-					</div>
-
-					<h3 class="heading-small">Standard button</h3>
-
-					<button class="button" type="button" role="button">Save and continue</button>
-
-					<h3 class="heading-small">Disabled button</h3>
-
-					<button class="button" disabled="disabled" type="button" role="button">Save and continue</button>
-
-					<h3 class="heading-small">Standard button anchor link</h3>
-
-					<button class="button button-get-started" type="button" role="button">Start now</button>
-
+					</fieldset>
 
 				</form>
+
+
+				<form class="form form-group" method="post" action="/">
+
+					<fieldset>
+
+					  <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
+
+					  <p>Select all that apply</p>
+
+						<label class="block-label" for="checkbox-1">
+							<input type="checkbox" value="1" id="checkbox-1">Waste from animal carcasses
+						</label>
+
+						<label class="block-label" for="checkbox-2">
+							<input type="checkbox" value="2" id="checkbox-2">Waste from mines or quarries
+						</label>
+
+						<label class="block-label" for="checkbox-3">
+							<input type="checkbox" value="2" id="checkbox-3">Farm or agricultural waste
+						</label>
+
+					</fieldset>
+
+				</form>
+
+
+        <form class="form form-group" method="post" action="/">
+
+					<fieldset>
+
+						<label class="form-label" for="telephone-number">Enter your telephone number</label>
+						<input class="form-control" type="text" id="telephone-number">
+
+						<label class="form-checkbox" for="checkbox-telephone-number">
+							<input type="checkbox" value="checkbox-telephone-number" id="checkbox-telephone-number">I need to be contacted using a text phone
+						</label>
+
+					</fieldset>
+
+        </form>
+
+
+				<form class="form form-group" method="post" action="/">
+
+					<fieldset>
+
+						<legend class="form-label-bold">Date of birth</legend>
+
+						<div class="form-date">
+
+							<p class="form-hint">For example, 08 04 2014</p>
+
+							<div class="form-group form-group-day">
+								<label for="dob-day">Day</label>
+								<input class="form-control" type="text" id="dob-day" maxlength="2">
+							</div>
+
+							<div class="form-group form-group-month">
+								<label for="dob-month">Month</label>
+								<input class="form-control" type="text" id="dob-month" maxlength="2">
+							</div>
+
+							<div class="form-group form-group-year">
+								<label for="dob-year">Year</label>
+								<input class="form-control" type="text" id="dob-year" maxlength="4">
+							</div>
+
+						</div>
+
+						<div class="form-date native-date-picker">
+							<p class="form-hint">For example, 08 April 2014</p>
+							<input class="form-control" type="date">
+						</div>
+
+					</fieldset>
+
+				</form>
+
+
+				<h3 class="heading-small">Standard button</h3>
+
+				<button class="button" type="button" role="button">Save and continue</button>
+
+				<h3 class="heading-small">Disabled button</h3>
+
+				<button class="button" disabled="disabled" type="button" role="button">Save and continue</button>
+
+				<h3 class="heading-small">Standard button anchor link</h3>
+
+				<button class="button button-get-started" type="button" role="button">Start now</button>
 
 
 			</div>
