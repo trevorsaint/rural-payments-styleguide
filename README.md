@@ -26,4 +26,6 @@ You can run this project by navigating to the folder and typing:
 A local webserver should run automatically for you, using port: 
 **9100**
 
+*If this does not happen, navigate to http://localhost:9100*.
+
 Any changes to the **SASS** files or **HTML** files will initiate a **livereload**.
