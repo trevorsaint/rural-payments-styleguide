@@ -5,17 +5,20 @@
 .form-multiple-checkboxes {
   margin-top: 2em;
 
-
   ul {
     margin-bottom: 0;
   }
 
 
+  label {
+    @include user-select(none);
+  }
+
+
   > li {
-    border-top: 1px solid $grey-3;
-    overflow: hidden;
+    @include clearfix;
     margin-bottom: 0;
-    padding: 0 15px;
+    overflow: visible;
 
     &:hover {
       background-color: $grey-4;
@@ -24,7 +27,15 @@
   }
 
 
+  .block-label {
+    @include box-sizing(border-box);
+    width: 100%;
+  }
+
+
   .form-checkbox {
+    margin: 0;
+    padding: 15px;
 
     input {
       float: left;
@@ -36,7 +47,7 @@
 
   .code {
     font-weight: bold;
-    margin: 0 20px;
+    margin: 0 20px 0 10px;
     float: left;
   }
 

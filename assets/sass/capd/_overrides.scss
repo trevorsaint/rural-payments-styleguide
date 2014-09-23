@@ -18,6 +18,7 @@ html {
 
 
 body {
+  @include box-sizing(border-box);
 	background-color: $page-colour;
 }
 
