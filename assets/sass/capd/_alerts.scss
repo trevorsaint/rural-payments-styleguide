@@ -25,13 +25,26 @@
 	border-color: $error-colour;
 }
 
+.alert-reference {
+	@extend %alert;
+	background-color: rgba($grey-2, .1);
+	border-color: $grey-2;
+}
+
+.alert-complete {
+	@extend %alert;
+	background-color: $turquoise;
+	border-color: $turquoise;
+	color: $white;
+}
+
 .alert-header {
   @extend .bold-medium;
 	clear: both;
-	overflow: hidden;
-	vertical-align: middle;
 	line-height: 2.083em; // 50px
 	margin-bottom: .5em;
+	overflow: hidden;
+	vertical-align: middle;
 }
 
 .alert-number {
@@ -43,7 +56,14 @@
 .alert-message {
 	display: block;
 	overflow: hidden;
+
+  > p {
+    margin-top: 0;
+    margin-bottom: .5em;
+  }
+
 	p:last-child {
 		margin: 0;
 	}
+
 }

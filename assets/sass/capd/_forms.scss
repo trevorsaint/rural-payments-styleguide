@@ -1,3 +1,56 @@
 // Forms
 // ==========================================================================
 
+
+.form-multiple-checkboxes {
+  margin-top: 2em;
+
+
+  ul {
+    margin-bottom: 0;
+  }
+
+
+  > li {
+    border-top: 1px solid $grey-3;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 0 15px;
+
+    &:hover {
+      background-color: $grey-4;
+    }
+
+  }
+
+
+  .form-checkbox {
+
+    input {
+      float: left;
+      margin: 5px;
+    }
+
+  }
+
+
+  .code {
+    font-weight: bold;
+    margin: 0 20px;
+    float: left;
+  }
+
+
+  .details {
+    display: block;
+    overflow: hidden;
+  }
+
+
+}
+
+
+
+
+
+
