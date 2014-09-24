@@ -1,0 +1,60 @@
+// ==========================================================================
+// Lists
+// ==========================================================================
+
+
+.block-list {
+  @include box-sizing(border-box);
+  @include user-select(none);
+  background: $panel-colour;
+  border: 1px solid $panel-colour;
+  clear: left;
+  cursor: pointer; // Encourage clicking on block labels
+  display: block;
+  float: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: (18px $gutter $gutter-half $gutter*1.5);
+  position: relative;
+  width: 100%;
+
+  @include media(tablet) {
+    //margin-top: 5px;
+    //margin-bottom: 5px;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  input {
+    cursor: pointer;
+    position: absolute;
+    left: $gutter-half;
+    top: 20px;
+  }
+
+  &:hover {
+    border-color: $black;
+  }
+}
+
+
+// Add selected state
+.js-enabled .block-list.selected {
+  background: $white;
+  border-color: $black;
+}
+
+
+// Add focus to block labels
+.js-enabled .block-list.focused {
+  outline: 3px solid $yellow;
+}
+
+
+// Remove focus from radio/checkboxes
+.js-enabled .block-list input:focus {
+  outline: none;
+}
+
