@@ -1,0 +1,29 @@
+// Example
+// ==========================================================================
+
+.example {
+  border: 1px solid $grey-2;
+  margin-bottom: 20px;
+  padding: 45px 30px 20px;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    background: $grey-2;
+    color: white;
+    content: 'Example';
+    text-transform: uppercase;
+    padding: em(10);
+    position: absolute; top:0; right: 0;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+
+  .highlight {
+    background-color: transparent;
+    color: $department-for-environment-food-rural-affairs;
+  }
+
+
+}
