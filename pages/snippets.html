@@ -144,7 +144,7 @@
 				<ol class="list-bullet">
 				  <li><a href="#typography">Typography</a></li>
 				  <li>Layout</li>
-				  <li>Tables</li>
+				  <li><a href="#tables">Tables</a></li>
 				  <li>Forms</li>
 				  <li>Widgets</li>
 				  <li>Details</li>
@@ -152,9 +152,10 @@
 				</ol>
 
 
+        <!-- typography -->
 				<div id="typography">
 
-  				<h2 class="heading-medium">Typography</h2>
+  				<h2 class="heading-large">Typography</h2>
 
   				<h3 class="heading-small">Headings</h3>
 
@@ -290,6 +291,8 @@
 
 
 				</div>
+				<!-- end typography -->
+
 
 				<!--div id="layout">
 
@@ -297,17 +300,170 @@
 
   				<p>Snippets of code go here&hellip;</p>
 
-				</div>
+				</div-->
 
+
+        <!-- tables -->
 				<div id="tables">
 
-  				<h2 class="heading-medium">Tables</h2>
+  				<h2 class="heading-large">Tables</h2>
 
-  				<p>Snippets of code go here&hellip;</p>
+  				<h3 class="heading-small">Default Table (GOV.UK)</h3>
+
+  				<div class="example">
+            <table>
+
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th scope="col">Business Plan</th>
+                  <th scope="col">Actual</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Vehicle volumes</td>
+                  <td>103,672,000</td>
+                  <td>97,424,000</td>
+                </tr>
+                <tr>
+                  <td>Driver volumes</td>
+                  <td>16,891,000</td>
+                  <td>15,197,000</td>
+                </tr>
+                <tr>
+                  <td>Electronic take-up target</td>
+                  <td>54%</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Electronic take-up (actual)</td>
+                  <td>-</td>
+                  <td>50.3%</td>
+                </tr>
+              </tbody>
+
+            </table>
+  				</div>
+
+<pre class="language-markup">
+<code>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th scope="col">Business Plan</th>
+      <th scope="col">Actual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vehicle volumes</td>
+      <td>103,672,000</td>
+      <td>97,424,000</td>
+    </tr>
+    <tr>
+      <td>Driver volumes</td>
+      <td>16,891,000</td>
+      <td>15,197,000</td>
+    </tr>
+    <tr>
+      <td>Electronic take-up target</td>
+      <td>54%</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Electronic take-up (actual)</td>
+      <td>-</td>
+      <td>50.3%</td>
+    </tr>
+  </tbody>
+</table>
+</code>
+</pre>
+
+
+  				<h3 class="heading-small">Alternative Table (DEFRA)</h3>
+
+  				<div class="example">
+            <table class="table-capd">
+
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th scope="col">Business Plan</th>
+                  <th scope="col">Actual</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Vehicle volumes</td>
+                  <td>103,672,000</td>
+                  <td>97,424,000</td>
+                </tr>
+                <tr>
+                  <td>Driver volumes</td>
+                  <td>16,891,000</td>
+                  <td>15,197,000</td>
+                </tr>
+                <tr>
+                  <td>Electronic take-up target</td>
+                  <td>54%</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Electronic take-up (actual)</td>
+                  <td>-</td>
+                  <td>50.3%</td>
+                </tr>
+              </tbody>
+
+            </table>
+  				</div>
+
+<pre class="language-markup">
+<code>
+<table class="table-capd">
+  <thead>
+    <tr>
+      <th></th>
+      <th scope="col">Business Plan</th>
+      <th scope="col">Actual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vehicle volumes</td>
+      <td>103,672,000</td>
+      <td>97,424,000</td>
+    </tr>
+    <tr>
+      <td>Driver volumes</td>
+      <td>16,891,000</td>
+      <td>15,197,000</td>
+    </tr>
+    <tr>
+      <td>Electronic take-up target</td>
+      <td>54%</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Electronic take-up (actual)</td>
+      <td>-</td>
+      <td>50.3%</td>
+    </tr>
+  </tbody>
+</table>
+</code>
+</pre>
 
 				</div>
+				<!-- end tables -->
 
-				<div id="forms">
+
+				<!--div id="forms">
 
   				<h2 class="heading-medium">Forms</h2>
 
