@@ -1,24 +1,25 @@
+// ==========================================================================
 // Example
 // ==========================================================================
+
 
 .example {
   border: 1px solid $grey-2;
   margin-bottom: 20px;
-  padding: 45px 30px 20px;
   overflow: hidden;
+  padding: 45px 30px 20px;
   position: relative;
 
   &:before {
     background: $grey-2;
     color: white;
     content: 'Example';
-    text-transform: uppercase;
-    padding: em(10);
-    position: absolute; top:0; right: 0;
     font-size: 14px;
     line-height: 1;
+    padding: em(10);
+    position: absolute; top:0; right: 0;
+    text-transform: uppercase;
   }
-
 
   .highlight {
     background-color: transparent;
@@ -26,4 +27,19 @@
   }
 
 
+  .inner-block {
+    @include hide-text(left);
+    background-color: $department-for-environment-food-rural-affairs;
+    background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 30px 30px;
+    min-height: 60px;
+  }
+
+
 }
+
+
+.example-grid {
+  padding: 45px 0 35px;
+}
+

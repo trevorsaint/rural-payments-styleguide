@@ -143,7 +143,7 @@
 
 				<ol class="list-bullet">
 				  <li><a href="#typography">Typography</a></li>
-				  <li>Layout</li>
+				  <li><a href="#layout">Layout</a></li>
 				  <li><a href="#tables">Tables</a></li>
 				  <li>Forms</li>
 				  <li>Widgets</li>
@@ -189,11 +189,11 @@
 
 <pre class="language-markup">
 <code>
-<p class="lede">A <mark class="highlight">24px</mark> lead paragraph.</p>
+  <p class="lede">A <mark class="highlight">24px</mark> lead paragraph.</p>
 
-<p class="font-small">A <mark class="highlight">19px</mark> body copy paragraph.</p>
+  <p class="font-small">A <mark class="highlight">19px</mark> body copy paragraph.</p>
 
-<p class="font-xsmall">A <mark class="highlight">16px</mark> supporting text paragraph.</p>
+  <p class="font-xsmall">A <mark class="highlight">16px</mark> supporting text paragraph.</p>
 </code>
 </pre>
 
@@ -294,13 +294,234 @@
 				<!-- end typography -->
 
 
-				<!--div id="layout">
+        <!-- layout -->
+				<div id="layout">
 
-  				<h2 class="heading-medium">Layout</h2>
+  				<h2 class="heading-large">Layout</h2>
 
-  				<p>Snippets of code go here&hellip;</p>
+  				<h3 class="heading-medium">Grid unit proportions</h3>
 
-				</div-->
+  				<h4 class="heading-small">Halves</h4>
+
+  				<div class="example example-grid">
+
+            <div class="grid-wrapper">
+              <div class="grid grid-1-2">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="grid grid-1-2">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+            </div>
+
+  				</div>
+
+
+<pre class="language-markup">
+<code>
+  <div class="grid-wrapper">
+    <div class="grid grid-1-2">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+    <div class="grid grid-1-2">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+  </div>
+</code>
+</pre>
+
+
+          <h4 class="heading-small">Thirds</h4>
+
+  				<div class="example example-grid">
+
+            <div class="grid-wrapper">
+              <div class="grid grid-1-3">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="grid grid-1-3">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="grid grid-1-3">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+            </div>
+
+  				</div>
+
+
+<pre class="language-markup">
+<code>
+  <div class="grid-wrapper">
+    <div class="grid grid-1-3">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+    <div class="grid grid-1-3">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+    <div class="grid grid-1-3">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+  </div>
+</code>
+</pre>
+
+
+          <h4 class="heading-small">Two Thirds / One Third</h4>
+
+  				<div class="example example-grid">
+
+            <div class="grid-wrapper">
+              <div class="grid grid-2-3">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="grid grid-1-3">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+<pre class="language-markup">
+<code>
+  <div class="grid-wrapper">
+    <div class="grid grid-2-3">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+    <div class="grid grid-1-3">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+  </div>
+</code>
+</pre>
+
+
+          <h4 class="heading-small">One Third / Two Thirds</h4>
+
+  				<div class="example example-grid">
+
+            <div class="grid-wrapper">
+              <div class="grid grid-1-3">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="grid grid-2-3">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+<pre class="language-markup">
+<code>
+  <div class="grid-wrapper">
+    <div class="grid grid-1-3">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+    <div class="grid grid-2-3">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+  </div>
+</code>
+</pre>
+
+
+          <h4 class="heading-small">Quarters</h4>
+
+  				<div class="example example-grid">
+
+            <div class="grid-wrapper">
+              <div class="grid grid-1-4">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="grid grid-1-4">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="grid grid-1-4">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+              <div class="grid grid-1-4">
+                <div class="inner-block">
+                  <p>Content</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+<pre class="language-markup">
+<code>
+  <div class="grid-wrapper">
+    <div class="grid grid-1-4">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+    <div class="grid grid-1-4">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+    <div class="grid grid-1-4">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+    <div class="grid grid-1-4">
+      <div class="inner-block">
+        <p>Content</p>
+      </div>
+    </div>
+  </div>
+</code>
+</pre>
+
+			  </div>
+        <!-- end layout -->
 
 
         <!-- tables -->
@@ -311,7 +532,7 @@
   				<h3 class="heading-small">Default Table (GOV.UK)</h3>
 
   				<div class="example">
-            <table>
+            <table summary="Business plan execution results">
 
               <thead>
                 <tr>
@@ -349,37 +570,37 @@
 
 <pre class="language-markup">
 <code>
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th scope="col">Business Plan</th>
-      <th scope="col">Actual</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Vehicle volumes</td>
-      <td>103,672,000</td>
-      <td>97,424,000</td>
-    </tr>
-    <tr>
-      <td>Driver volumes</td>
-      <td>16,891,000</td>
-      <td>15,197,000</td>
-    </tr>
-    <tr>
-      <td>Electronic take-up target</td>
-      <td>54%</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Electronic take-up (actual)</td>
-      <td>-</td>
-      <td>50.3%</td>
-    </tr>
-  </tbody>
-</table>
+  <table summary="Business plan execution results">
+    <thead>
+      <tr>
+        <th></th>
+        <th scope="col">Business Plan</th>
+        <th scope="col">Actual</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vehicle volumes</td>
+        <td>103,672,000</td>
+        <td>97,424,000</td>
+      </tr>
+      <tr>
+        <td>Driver volumes</td>
+        <td>16,891,000</td>
+        <td>15,197,000</td>
+      </tr>
+      <tr>
+        <td>Electronic take-up target</td>
+        <td>54%</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Electronic take-up (actual)</td>
+        <td>-</td>
+        <td>50.3%</td>
+      </tr>
+    </tbody>
+  </table>
 </code>
 </pre>
 
@@ -387,7 +608,7 @@
   				<h3 class="heading-small">Alternative Table (DEFRA)</h3>
 
   				<div class="example">
-            <table class="table-capd">
+            <table class="table-capd" summary="Business plan execution results">
 
               <thead>
                 <tr>
@@ -425,37 +646,37 @@
 
 <pre class="language-markup">
 <code>
-<table class="table-capd">
-  <thead>
-    <tr>
-      <th></th>
-      <th scope="col">Business Plan</th>
-      <th scope="col">Actual</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Vehicle volumes</td>
-      <td>103,672,000</td>
-      <td>97,424,000</td>
-    </tr>
-    <tr>
-      <td>Driver volumes</td>
-      <td>16,891,000</td>
-      <td>15,197,000</td>
-    </tr>
-    <tr>
-      <td>Electronic take-up target</td>
-      <td>54%</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Electronic take-up (actual)</td>
-      <td>-</td>
-      <td>50.3%</td>
-    </tr>
-  </tbody>
-</table>
+  <table class="table-capd" summary="Business plan execution results">
+    <thead>
+      <tr>
+        <th></th>
+        <th scope="col">Business Plan</th>
+        <th scope="col">Actual</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vehicle volumes</td>
+        <td>103,672,000</td>
+        <td>97,424,000</td>
+      </tr>
+      <tr>
+        <td>Driver volumes</td>
+        <td>16,891,000</td>
+        <td>15,197,000</td>
+      </tr>
+      <tr>
+        <td>Electronic take-up target</td>
+        <td>54%</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Electronic take-up (actual)</td>
+        <td>-</td>
+        <td>50.3%</td>
+      </tr>
+    </tbody>
+  </table>
 </code>
 </pre>
 
@@ -545,7 +766,6 @@
 
   <!-- prism code highlighting -->
   <script src="/assets/javascripts/vendor/prism.js"></script>
-
 
   <script src="/assets/govuk/javascripts/govuk-template.js"></script>
   <script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"></script>
