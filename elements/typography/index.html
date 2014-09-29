@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Forms : CAP Information Service</title>
+    <title>Typography : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -120,7 +120,7 @@
 			<div class="inner-block">
 
 
-				<div class="phase-banner">
+			  <div class="phase-banner">
 					<p>
 						<strong class="phase-tag">Beta</strong>
 						<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
@@ -128,158 +128,96 @@
 				</div>
 
 
-				<a class="back-link" href="/">Back to the index</a>
+		    <a class="back-link" href="/">Back to the index</a>
 
 
-				<h1 class="heading-large">Form elements</h1>
+				<h1 class="heading-xlarge">Typography</h1>
 
 
-        <!-- form -->
-        <form class="form form-group" method="post" action="/">
+				<div class="text">
 
-					<fieldset>
 
-						<div class="form-group">
-							<label class="form-label" for="ni-number-1">National Insurance number</label>
-							<input class="form-control" type="text" id="ni-number-1">
+					<h1 class="heading-xlarge">Large heading <span class="heading-secondary">with sub heading</span></h1>
+
+
+					<p class="lede">This is an intro paragraph at 24px. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+					Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.</p>
+
+
+					<h2 class="heading-large">A 36px heading</h2>
+
+					<p>This is a body copy paragraph at 19px. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et
+					magnis dis parturient montes, <a href="#" rel="external">nasceturridiculus</a> mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec
+					sed odio dui.</p>
+
+
+					<h3 class="heading-medium">A 24px heading</h3>
+
+					<p>Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Maecenas
+					faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
+
+
+					<h4 class="heading-small">A 19px heading</h4>
+
+					<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Donec id elit
+					non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+
+					<h2 class="heading-medium">Inset text</h2>
+
+					<div class="text panel-indent">
+
+						<p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+
+					</div>
+
+
+					<h2 class="heading-medium">Hidden text (progressive disclosure)</h2>
+
+					<details>
+
+						<summary><span class="summary">Help with nationality</span></summary>
+
+						<div class="panel-indent">
+							<p>If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.</p>
+							<p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.</p>
 						</div>
 
-						<div class="form-group">
-							<label class="form-label" for="ni-number-3">National Insurance number <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span></label>
-							<input class="form-control" type="text" id="ni-number-3">
-						</div>
-
-					</fieldset>
-
-        </form>
-        <!-- end -->
+					</details>
 
 
-        <!-- form -->
-        <form class="form form-group" method="post" action="/">
+					<h2 class="heading-medium">Unordered list</h2>
 
-					<fieldset class="inline">
-
-					  <legend class="form-label">Do you know their National Insurance number?</legend>
-
-            <div class="form-group form-group-related">
-
-							<label class="block-label" for="radio-inline-1" data-target="ni-number">
-								<input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">Yes
-							</label>
-
-							<label class="block-label" for="radio-inline-2">
-								<input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">No
-							</label>
-
-            </div>
-
-            <div class="panel-indent toggle-content js-hidden" id="ni-number">
-              <label class="form-label" for="national-insurance">National Insurance number</label>
-              <input class="form-control" id="national-insurance" type="text">
-            </div>
-
-					</fieldset>
-
-				</form>
-				<!-- end -->
+					<ul class="list-bullet">
+						<li>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
+						<li>Vestibulum id ligula porta felis euismod semper.</li>
+						<li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+					</ul>
 
 
-        <!-- form -->
-				<form class="form form-group" method="post" action="/">
+					<h2 class="heading-medium">Ordered list</h2>
 
-					<fieldset>
-
-					  <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
-
-					  <p>Select all that apply</p>
-
-						<label class="block-label" for="checkbox-1">
-							<input id="checkbox-1" type="checkbox" value="1">Waste from animal carcasses
-						</label>
-
-						<label class="block-label" for="checkbox-2">
-							<input id="checkbox-2" type="checkbox" value="2">Waste from mines or quarries
-						</label>
-
-						<label class="block-label" for="checkbox-3">
-							<input id="checkbox-3" type="checkbox" value="2">Farm or agricultural waste
-						</label>
-
-					</fieldset>
-
-				</form>
-				<!-- end -->
+					<ol class="list-number">
+						<li>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
+						<li>Vestibulum id ligula porta felis <a href="#" rel="external">euismod semper</a>.</li>
+						<li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+					</ol>
 
 
-        <!-- form -->
-        <form class="form form-group" method="post" action="/">
+					<div class="text">
 
-					<fieldset>
+						<h2 class="heading-medium">You cannot use Government Gateway to access this service.</h2>
 
-						<label class="form-label" for="telephone-number">Enter your telephone number</label>
-						<input class="form-control" id="telephone-number" type="text">
+						<p>You need to register with GOV.UK to use this service. People you want to act on behalf of a business will also need to register.</p>
 
-						<label class="form-checkbox" for="checkbox-telephone-number">
-							<input id="checkbox-telephone-number" type="checkbox" value="checkbox-telephone-number">I need to be contacted using a text phone
-						</label>
+						<p>To do this, or to sign in if you are already registered, click the button below.</p>
 
-					</fieldset>
+						<p><a class="button" href="#">Register or sign in to GOV.UK services</a></p>
 
-        </form>
-        <!-- end -->
+					</div>
 
 
-        <!-- form -->
-				<form class="form form-group" method="post" action="/">
-
-					<fieldset>
-
-						<legend class="form-label-bold">Date of birth</legend>
-
-						<div class="form-date">
-
-							<p class="form-hint">For example, 08 04 2014</p>
-
-							<div class="form-group form-group-day">
-								<label for="dob-day">Day</label>
-								<input class="form-control" id="dob-day" type="text" maxlength="2">
-							</div>
-
-							<div class="form-group form-group-month">
-								<label for="dob-month">Month</label>
-								<input class="form-control" id="dob-month" type="text" maxlength="2">
-							</div>
-
-							<div class="form-group form-group-year">
-								<label for="dob-year">Year</label>
-								<input class="form-control" id="dob-year" type="text" maxlength="4">
-							</div>
-
-						</div>
-
-						<div class="form-date native-date-picker">
-							<p class="form-hint">For example, 08 April 2014</p>
-							<input class="form-control" type="date">
-						</div>
-
-					</fieldset>
-
-				</form>
-				<!-- end -->
-
-
-				<h3 class="heading-small">Standard button</h3>
-
-				<button class="button" type="button" role="button">Save and continue</button>
-
-				<h3 class="heading-small">Disabled button</h3>
-
-				<button class="button" disabled="disabled" type="button" role="button">Save and continue</button>
-
-				<h3 class="heading-small">Standard button anchor link</h3>
-
-				<button class="button button-get-started" type="button" role="button">Start now</button>
+				</div>
 
 
 			</div>

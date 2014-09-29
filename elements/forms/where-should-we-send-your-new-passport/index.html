@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Widgets : CAP Information Service</title>
+    <title>Where should we send your new passport? : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -128,151 +128,73 @@
 				</div>
 
 
-				<a class="back-link" href="/">Back to the index</a>
+				<a class="back-link" href="../">Back to forms</a>
 
 
-				<h1 class="heading-large">Alerts</h1>
+				<form class="form" method="post" action="/">
 
+					<h1 class="form-title heading-large">Where should we send your new passport?</h1>
 
-				<!-- Alerts -->
-				<div class="text">
+					<div class="form-group">
 
+						<fieldset>
 
-					<!-- Success alert -->
-					<div class="alert-success" role="alert">
+							<legend class="visuallyhidden">Choose the address to send your new passport to</legend>
 
-						<span class="icon icon-tick" aria-hidden="true"></span>
+							<label class="block-label" for="radio-home-address">
+								<input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">Home address
+							</label>
 
-						<div class="alert-message">
+							<label class="block-label" for="radio-other-address" data-target="other-address">
+								<input id="radio-other-address" type="radio" name="radio-indent-group" value="No">Other address
+							</label>
 
-							<p>You have amended your <b>business details</b></p>
-
-						</div>
-
-					</div>
-					<!-- End -->
-
-
-					<!-- Info alert -->
-					<div class="alert-info" role="alert">
-
-						<div class="alert-message">
-
-							<p>To view your business details, view and amend land parcels and land cover, select '<b>View business</b>' in the table below.</p>
-
-						</div>
+						</fieldset>
 
 					</div>
-					<!-- End -->
 
+					<div class="panel-indent toggle-content js-hidden" id="other-address">
 
-					<!-- Info alert -->
-					<div class="alert-info" role="alert">
+						<fieldset>
 
-						<span class="icon icon-tick" aria-hidden="true"></span>
+							<legend class="heading-medium">Your other address</legend>
 
-						<div class="alert-message">
+							<div class="form-group form-group-compound">
+								<label class="form-label" for="address-line-1">Street</label>
+								<input class="form-control" type="text" id="address-line-1">
+							</div>
 
-							<p>Based on the information you have given us, you might be eligble to receive entitlements from the National Reserve.</p>
+							<div class="form-group">
+								<label class="form-label visuallyhidden" for="address-line-2">Street</label>
+								<input class="form-control" type="text" id="address-line-2">
+							</div>
 
-						</div>
+							<div class="form-group">
+								<label class="form-label" for="address-town">Town or City</label>
+								<input class="form-control form-control-1-4" type="text" id="address-town">
+							</div>
 
-					</div>
-					<!-- End -->
+							<div class="form-group">
+								<label class="form-label" for="address-postcode">Postcode</label>
+								<input class="form-control form-control-1-8" type="text" id="address-postcode">
+							</div>
 
-
-					<!-- Info alert -->
-					<div class="alert-info" role="alert">
-
-						<span class="icon icon-cross" aria-hidden="true"></span>
-
-						<div class="alert-message">
-
-							<p>Based on the information you have given us, you are not eligble to receive entitlements from the National Reserve.</p>
-
-						</div>
-
-					</div>
-					<!-- End -->
-
-
-					<!-- Error alert -->
-					<div class="alert-error" role="alert">
-
-						<span class="icon icon-cross" aria-hidden="true"></span>
-
-						<div class="alert-message">
-
-							<p>The land use area you've entered is greater than the size of the parcel. Check and try again.</p>
-
-						</div>
+						</fieldset>
 
 					</div>
-					<!-- End -->
 
+					<div class="form-group">
 
-					<!-- Info alert -->
-					<div class="alert-info" role="alert">
+						<button class="button" type="button" role="button">Continue</button>
 
-						<div class="alert-message">
-
-							<h3 class="alert-header"><span class="alert-number">4</span> businesses to check</h3>
-
-							<p>To check your business details, select '<b>Check business</b>' in the table below.</p>
-
-						</div>
+						<ul>
+							<li><a href="../">Skip this section for now</a></li>
+							<li><a href="../">Back</a></li>
+						</ul>
 
 					</div>
-					<!-- End -->
 
-
-					<!-- Info alert -->
-					<div class="alert-info" role="alert">
-
-						<div class="alert-message">
-
-							<h3 class="alert-header"><span class="alert-number">125</span> businesses to check</h3>
-
-							<p>To check your business details, select '<b>Check business</b>' in the table below.</p>
-
-						</div>
-
-					</div>
-					<!-- End -->
-
-
-					<!-- complete alert -->
-					<div class="alert-complete" role="alert">
-
-						<div class="alert-message">
-
-							<p>Your reference number is</p>
-
-              <strong class="alert-number">200113567</strong>
-
-						</div>
-
-					</div>
-					<!-- End -->
-
-
-					<!-- reference alert -->
-					<div class="alert-reference" role="alert">
-
-						<div class="alert-message">
-
-							<p>CPH number</p>
-
-              <strong class="alert-number">200113567</strong>
-
-						</div>
-
-					</div>
-					<!-- End -->
-
-
-				</div>
-				<!-- End -->
+				</form>
 
 
 			</div>
@@ -332,9 +254,7 @@
   <!-- govuk elements js -->
   <script src="/assets/javascripts/vendor/modernizr.custom.77028.js"></script>
   <script src="/assets/javascripts/vendor/details.polyfill.js"></script>
-  <script src="/assets/javascripts/vendor/jquery.tabs.js"></script>
   <script src="/assets/javascripts/main.js"></script>
-
 
   </body>
 </html>

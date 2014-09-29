@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Form : CAP Information Service</title>
+    <title>Layout : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -117,6 +117,7 @@
 		<div id="content">
 
 
+			<!-- Phase banner -->
 			<div class="inner-block">
 
 
@@ -131,141 +132,184 @@
 				<a class="back-link" href="/">Back to the index</a>
 
 
-				<form class="form" method="post" action="/">
-
-					<h1 class="form-title heading-large">Your details</h1>
-
-					<div class="form-group">
-						<label class="form-label-bold" for="full-name">Full name</label>
-						<p class="form-hint">As shown on your birth certificate or passport</p>
-						<input class="form-control" type="text" id="full-name">
-					</div>
-
-					<div class="form-group">
-						<label class="form-label-bold" for="ni-number">National Insurance number
-							<span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60.<br>
-							For example, 'VO 12 34 56 D'.</span>
-						</label>
-						<input class="form-control" type="text" id="ni-number">
-					</div>
-
-					<div class="form-group">
-
-						<fieldset>
-
-							<legend class="form-label-bold">Date of birth</legend>
-
-							<div class="form-date">
-
-								<p class="form-hint">For example, 08 04 2014</p>
-
-								<div class="form-group form-group-day">
-									<label for="dob-day">Day</label>
-									<input type="text" class="form-control" id="dob-day">
-								</div>
-
-								<div class="form-group form-group-month">
-									<label for="dob-month">Month</label>
-									<input class="form-control" type="text" id="dob-month">
-								</div>
-
-								<div class="form-group form-group-year">
-									<label for="dob-year">Year</label>
-									<input class="form-control" type="text" id="dob-year">
-								</div>
-
-							</div>
-
-							<div class="form-date native-date-picker">
-								<p class="form-hint">For example, 08 April 2014</p>
-								<input class="form-control" type="date">
-							</div>
-
-						</fieldset>
-
-					</div>
-
-					<div class="form-group">
-
-						<button class="button" type="button" role="button">Continue</button>
-
-						<ul>
-							<li><a href="/">Skip this section for now</a></li>
-							<li><a href="/">Back</a></li>
-						</ul>
-
-					</div>
-
-				</form>
-
-
-				<form class="form" method="post" action="/">
-
-					<h1 class="form-title heading-large">Where should we send your new<br> passport?</h1>
-
-					<div class="form-group">
-
-						<fieldset>
-
-							<legend class="visuallyhidden">Choose the address to send your new passport to</legend>
-
-							<label class="block-label" for="radio-home-address">
-								<input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">Home address
-							</label>
-
-							<label class="block-label" for="radio-other-address" data-target="other-address">
-								<input id="radio-other-address" type="radio" name="radio-indent-group" value="No">Other address
-							</label>
-
-						</fieldset>
-
-					</div>
-
-					<div class="panel-indent toggle-content js-hidden" id="other-address">
-
-						<fieldset>
-
-							<legend class="heading-medium">Your other address</legend>
-
-							<div class="form-group form-group-compound">
-								<label class="form-label" for="address-line-1">Street</label>
-								<input class="form-control" type="text" id="address-line-1">
-							</div>
-
-							<div class="form-group">
-								<label class="form-label visuallyhidden" for="address-line-2">Street</label>
-								<input class="form-control" type="text" id="address-line-2">
-							</div>
-
-							<div class="form-group">
-								<label class="form-label" for="address-town">Town or City</label>
-								<input class="form-control form-control-1-4" type="text" id="address-town">
-							</div>
-
-							<div class="form-group">
-								<label class="form-label" for="address-postcode">Postcode</label>
-								<input class="form-control form-control-1-8" type="text" id="address-postcode">
-							</div>
-
-						</fieldset>
-
-					</div>
-
-					<div class="form-group">
-
-						<button class="button" type="button" role="button">Continue</button>
-
-						<ul>
-							<li><a href="/">Skip this section for now</a></li>
-							<li><a href="/">Back</a></li>
-						</ul>
-
-					</div>
-
-				</form>
+				<h1 class="heading-xlarge">Layout</h1>
 
 
 			</div>
+			<!-- End -->
+
+
+			<!-- Grid layout (full width) -->
+			<div class="inner-block">
+
+				<h2 class="bold-small">Full width</h2>
+
+				<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+			</div>
+			<!-- End -->
+
+
+			<!-- Grid layout (two thirds / one third) -->
+			<div class="grid-wrapper">
+
+				<div class="grid grid-2-3">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">Two thirds</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+					</div>
+
+				</div>
+
+				<div class="grid grid-1-3">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One third</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- End -->
+
+
+			<!-- Grid layout (one half) -->
+			<div class="grid-wrapper">
+
+				<div class="grid grid-1-2">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One half</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+					</div>
+
+				</div>
+
+				<div class="grid grid-1-2">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One half</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- End -->
+
+
+			<!-- Grid layout (one third) -->
+			<div class="grid-wrapper">
+
+				<div class="grid grid-1-3">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One third</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac.</p>
+
+					</div>
+
+				</div>
+
+				<div class="grid grid-1-3">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One third</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac.</p>
+
+					</div>
+
+				</div>
+
+				<div class="grid grid-1-3">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One third</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- End -->
+
+
+			<!-- Grid layout (one quarter) -->
+			<div class="grid-wrapper">
+
+				<div class="grid grid-1-4">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One quarter</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</p>
+
+					</div>
+
+				</div>
+
+				<div class="grid grid-1-4">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One quarter</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</p>
+
+					</div>
+
+				</div>
+
+				<div class="grid grid-1-4">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One quarter</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</p>
+
+					</div>
+
+				</div>
+
+				<div class="grid grid-1-4">
+
+					<div class="inner-block">
+
+						<h2 class="bold-small">One quarter</h2>
+
+						<p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- End -->
 
 
 		</div>

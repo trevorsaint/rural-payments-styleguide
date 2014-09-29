@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Typography : CAP Information Service</title>
+    <title>Forms : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -120,7 +120,7 @@
 			<div class="inner-block">
 
 
-			  <div class="phase-banner">
+				<div class="phase-banner">
 					<p>
 						<strong class="phase-tag">Beta</strong>
 						<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
@@ -128,96 +128,173 @@
 				</div>
 
 
-		    <a class="back-link" href="/">Back to the index</a>
+				<a class="back-link" href="/">Back to the index</a>
 
 
-				<h1 class="heading-large">Typography</h1>
+				<h1 class="heading-xlarge">Forms</h1>
 
 
 				<div class="text">
-
-
-					<h1 class="heading-xlarge">Large heading <span class="heading-secondary">with sub heading</span></h1>
-
-
-					<p class="lede">This is an intro paragraph at 24px. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-					Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.</p>
-
-
-					<h2 class="heading-large">A 36px heading</h2>
-
-					<p>This is a body copy paragraph at 19px. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et
-					magnis dis parturient montes, <a href="#" rel="external">nasceturridiculus</a> mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec
-					sed odio dui.</p>
-
-
-					<h3 class="heading-medium">A 24px heading</h3>
-
-					<p>Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Maecenas
-					faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.</p>
-
-
-					<h4 class="heading-small">A 19px heading</h4>
-
-					<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Donec id elit
-					non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-
-
-					<h2 class="heading-medium">Inset text</h2>
-
-					<div class="text panel-indent">
-
-						<p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
-
-					</div>
-
-
-					<h2 class="heading-medium">Hidden text (progressive disclosure)</h2>
-
-					<details>
-
-						<summary><span class="summary">Help with nationality</span></summary>
-
-						<div class="panel-indent">
-							<p>If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.</p>
-							<p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.</p>
-						</div>
-
-					</details>
-
-
-					<h2 class="heading-medium">Unordered list</h2>
-
-					<ul class="list-bullet">
-						<li>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
-						<li>Vestibulum id ligula porta felis euismod semper.</li>
-						<li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-					</ul>
-
-
-					<h2 class="heading-medium">Ordered list</h2>
-
-					<ol class="list-number">
-						<li>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
-						<li>Vestibulum id ligula porta felis <a href="#" rel="external">euismod semper</a>.</li>
-						<li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-					</ol>
-
-
-					<div class="text">
-
-						<h2 class="heading-medium">You cannot use Government Gateway to access this service.</h2>
-
-						<p>You need to register with GOV.UK to use this service. People you want to act on behalf of a business will also need to register.</p>
-
-						<p>To do this, or to sign in if you are already registered, click the button below.</p>
-
-						<p><a class="button" href="#">Register or sign in to GOV.UK services</a></p>
-
-					</div>
-
-
+				  <p class="lede">Below you will find a collection of reusable form controls and example forms.</p>
 				</div>
+
+
+				<ul class="list-bullet">
+				  <li><a href="your-details/">Your details</a></li>
+				  <li><a href="where-should-we-send-your-new-passport/">Where should we send your new passport?</a></li>
+				  <li><a href="validation/">Form validation</a></li>
+				</ul>
+
+
+        <h2 class="heading-large">Reusable form controls</h2>
+
+
+        <h3 class="heading-small">Form labels</h3>
+
+        <div class="example">
+          <label class="form-label" for="full-name-f1">Full name</label>
+          <input class="form-control" id="full-name-f1" type="text">
+        </div>
+
+
+        <h3 class="heading-small">Form spacing</h3>
+
+        <div class="example">
+          <div class="form-group">
+            <label class="form-label" for="first-name-2">First name</label>
+            <input class="form-control" id="first-name-2" type="text">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="last-name-2">Last name</label>
+            <input class="form-control" id="last-name-2" type="text">
+          </div>
+        </div>
+
+
+        <h3 class="heading-small">Hint text</h3>
+
+        <div class="example">
+          <label class="form-label" for="ni-number">
+            National Insurance number
+            <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
+          </label>
+          <input class="form-control" id="ni-number" type="text">
+        </div>
+
+
+        <h3 class="heading-small">Radio buttons inline</h3>
+
+        <div class="example">
+          <fieldset class="inline">
+            <label class="block-label" for="radio-inline-1">
+              <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
+            </label>
+            <label class="block-label" for="radio-inline-2">
+              <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
+            </label>
+          </fieldset>
+        </div>
+
+
+        <h3 class="heading-small">Radio buttons block</h3>
+
+        <div class="example">
+          <label class="block-label" for="radio-1">
+            <input id="radio-1" name="radio-group" value="Northern Ireland" type="radio">
+            Northern Ireland
+          </label>
+          <label class="block-label" for="radio-2">
+            <input id="radio-2" name="radio-group" value="Isle of Man or the Channel Islands" type="radio">
+            Isle of Man or the Channel Islands
+          </label>
+          <p class="form-block">or</p>
+          <label class="block-label" for="radio-3">
+            <input id="radio-3" name="radio-group" value="I am a British citizen living abroad" type="radio">
+            I am a British citizen living abroad
+          </label>
+        </div>
+
+
+        <h3 class="heading-small">Radio buttons with heading</h3>
+
+        <div class="example">
+          <form class="form">
+            <fieldset>
+              <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
+              <p>Select all that apply</p>
+              <label class="block-label" for="checkbox-1">
+                <input id="checkbox-1" value="waste-animal" type="checkbox">
+                Waste from animal carcasses
+              </label>
+              <label class="block-label" for="checkbox-2">
+                <input id="checkbox-2" value="waste-mines" type="checkbox">
+                Waste from mines or quarries
+              </label>
+              <label class="block-label" for="checkbox-3">
+                <input id="checkbox-3" value="farm-agricultural" type="checkbox">
+                Farm or agricultural waste
+              </label>
+            </fieldset>
+          </form>
+        </div>
+
+
+        <h3 class="heading-small">Radio button alternative approach</h3>
+
+        <div class="example">
+          <label class="form-label" for="telephone-number">Enter your telephone number</label>
+            <input class="form-control" id="telephone-number" type="text">
+            <label class="form-checkbox" for="checkbox-telephone-number">
+            <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
+            I need to be contacted using a text phone
+          </label>
+        </div>
+
+
+        <h3 class="heading-small">Inset form elements</h3>
+
+        <div class="example">
+          <form class="form">
+            <fieldset class="inline">
+              <legend class="form-label">Do you know their National Insurance number?</legend>
+              <div class="form-group form-group-compound">
+                <label class="block-label" data-target="example-ni-number" for="radio-indent-1">
+                  <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
+                  Yes
+                </label>
+                <label class="block-label" for="radio-indent-2">
+                  <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
+                  No
+                </label>
+              </div>
+              <div class="panel-indent js-hidden" id="example-ni-number">
+                <label class="form-label" for="national-insurance">National Insurance number</label>
+                <input class="form-control" id="national-insurance" type="text">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+
+        <h3 class="heading-small">Standard button</h3>
+
+        <div class="example">
+          <button class="button" type="button" role="button">Save and continue</button>
+        </div>
+
+
+        <h3 class="heading-small">Disabled button</h3>
+
+        <div class="example">
+          <button class="button" type="button" disabled="disabled" role="button">Save and continue</button>
+        </div>
+
+
+        <h3 class="heading-small">Start now button</h3>
+
+        <div class="example">
+          <button class="button button-get-started" type="button" role="button">Start now</button>
+        </div>
 
 
 			</div>
