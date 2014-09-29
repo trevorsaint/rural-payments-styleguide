@@ -5,9 +5,10 @@
 
 .example {
   border: 1px solid $grey-2;
+  margin-top: 15px;
   margin-bottom: 20px;
   overflow: hidden;
-  padding: 45px 30px 20px;
+  padding: 45px 30px 30px;
   position: relative;
 
   &:before {

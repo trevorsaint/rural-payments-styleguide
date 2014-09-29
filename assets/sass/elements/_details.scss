@@ -6,6 +6,7 @@ details {
 }
 
 details summary {
+  @include user-select(none);
   display: inline-block;
   color: $govuk-blue;
   cursor: pointer;
