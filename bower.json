@@ -1,0 +1,22 @@
+{
+  "name": "capd styleguide",
+  "version": "0.0.0",
+  "authors": [
+    "Kainos"
+  ],
+  "description": "Frontend for capd project",
+  "main": "app/assets/javascript/main.js",
+  "keywords": [
+    "capd"
+  ],
+  "license": "Other",
+  "homepage": "http://defragit.kainos.com",
+  "private": true,
+  "dependencies": {
+    "requirejs": "2.1.14",
+    "requirejs-text": "2.0.10",
+    "angular": "1.2.23",
+    "jquery": "1.10.2",
+     "angular-route" : "*"
+  }
+}
