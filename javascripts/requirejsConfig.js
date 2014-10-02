@@ -3,7 +3,8 @@
         paths: {
             'text': 'bower_components/requirejs-text/text',
             'jquery': 'bower_components/jquery/jquery.min',
-            'angular': 'bower_components/angular/angular.min',
+            'angular': 'bower_components/angular/angular',
+            'ngRoute' : 'bower_components/angular-route/angular-route',
             'angularCookies': 'bower_components/angular-cookies/angular-cookies.min',
             'angularUIStates': 'bower_components/angular-ui-router/release/angular-ui-router.min',
             'angularUIUtils': 'bower_components/ichuan-bower-angular-ui-utils/ui-utils.min',
@@ -69,7 +70,8 @@
             'jquery-placeholder': ['jquery'],
             'angular-placeholder': ['angular', 'jquery-placeholder'],
             'projectionEPSG27700': ['proj4'],
-            'OsGridRef' : {'exports' : 'OsGridRef'}
+            'OsGridRef' : {'exports' : 'OsGridRef'},
+            'ngRoute' : ['angular']
         },
         priority: ['polyfills', 'modernizr', 'angular'],
         //momentjs configuration
