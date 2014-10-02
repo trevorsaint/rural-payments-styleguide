@@ -29,7 +29,7 @@
 
 	@include media(tablet) {
 		float: left;
-		width: 30%;
+		width: 40%;
 	}
 
 }
@@ -38,7 +38,7 @@
 	display: block;
 	@include media(tablet) {
 		float: right;
-		width: 70%;
+		width: 60%;
 	}
 
 }
