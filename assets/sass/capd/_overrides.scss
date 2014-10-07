@@ -13,6 +13,8 @@
 // Footer colour extended
 
 html {
+  -webkit-text-size-adjust: 100%; /* 1 */
+  -ms-text-size-adjust: 100%; /* 1 */
 	background-color: $grey-3;
 }
 
