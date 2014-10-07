@@ -24,12 +24,12 @@
 
   .highlight {
     background-color: transparent;
-    color: $department-for-environment-food-rural-affairs;
+    color: $govuk-blue;
   }
 
   .inner-block {
     @include hide-text(left);
-    background-color: $department-for-environment-food-rural-affairs;
+    background-color: rgba($govuk-blue,.5);
     background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
     background-size: 30px 30px;
     min-height: 60px;
