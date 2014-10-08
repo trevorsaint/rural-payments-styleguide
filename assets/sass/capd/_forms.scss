@@ -3,6 +3,8 @@
 // ==========================================================================
 
 
+// Checkboxes
+
 .form-checkboxes {
   margin-top: 2em;
 
@@ -25,9 +27,42 @@
 }
 
 
-.form-control {
-    min-height: 35px;
-    max-height: 400px;
-    resize: vertical;
+// Form control
+
+.form-control-textarea {
+  @extend .form-control;
+  min-height: 35px;
+  max-height: 400px;
+  resize: vertical;
+}
+
+
+
+// Form search
+
+.form-search {
+  display: table;
+  width: 100%;
+
+  @include media(tablet) {
+    width: 50%;
+  }
+
+  .form-control {
+    margin: 0;
+    width: 100%;
+  }
+
+  .form-control-wrap {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  .button {
+    margin: 0 0 0 15px;
+    line-height: 1em;
+  }
+
 }
 

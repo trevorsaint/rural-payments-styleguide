@@ -3,11 +3,13 @@
 // ==========================================================================
 
 
-// Footer colour extended
+// Footer colour extended / font rendering fixes
 
 html {
   -webkit-text-size-adjust: 100%; /* 1 */
   -ms-text-size-adjust: 100%; /* 1 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 	background-color: $grey-3;
 }
 
@@ -22,3 +24,12 @@ body {
   display: inline-block;
   margin-top: 30px;
 }
+
+
+// Removes addition border and padding in firefox
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
