@@ -1837,10 +1837,11 @@
 <pre class="language-markup">
 <code>
   <div class="summary">
-  	<ul>
+
+  	<ul itemtype="http://schema.org/Organization" itemscope>
   		<li>
   			<h4 class="summary-title">Business name</h4>
-  			<div class="summary-value">Beech Farm</div>
+  			<div class="summary-value" itemprop="name">Beech Farm</div>
   		</li>
   		<li>
   			<h4 class="summary-title">Firm reference</h4>
@@ -1852,26 +1853,30 @@
   		</li>
   		<li>
   			<h4 class="summary-title">Address</h4>
-  			<div class="summary-value">
-  			  <div>Beech Farm</div>
-  			  <div>Pooley Bridge</div>
-  			  <div>Penrith, Cumbria</div>
-  			  <div>CA10 2NP</div>
-  			</div>
+        <div class="summary-value" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+          <div itemprop="streetAddress">Pooley Bridge</div>
+          <div itemprop="addressLocality">Penrith</div>
+          <div itemprop="addressRegion">Cumbria</div>
+          <div itemprop="postalCode">CH3 6NZ</div>
+          <div itemprop="addressCountry">United Kingdom</div>
+        </div>
   		</li>
-  		<li>
-  			<h4 class="summary-title">Landline</h4>
-  			<div class="summary-value"><a href="tel://014799593375">01479 9593375</a></div>
-  		</li>
-  		<li>
-  			<h4 class="summary-title">Mobile</h4>
-  			<div class="summary-value"><a href="tel://079783777457">07978 3777457</a></div>
-  		</li>
-  		<li>
-  			<h4 class="summary-title">Email</h4>
-  			<div class="sumamry-value"><a href="mailto:selenium-test-active-4@test.kainos.com">selenium-test-active-4@test.kainos.com</a></div>
-  		</li>
+      <li>
+        <h4 class="summary-title">Landline</h4>
+        <div class="summary-value" itemprop="telephone"><a href="tel://07337938476">07337938476</a></div>
+      </li>
+
+      <li>
+        <h4 class="summary-title">Mobile</h4>
+        <div class="summary-value" itemprop="telephone"><a href="tel://07449654321">07449654321</a></div>
+      </li>
+
+      <li>
+        <h4 class="summary-title">Email</h4>
+        <div class="summary-value" itemprop="email"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></div>
+      </li>
   	</ul>
+
   </div>
 </code>
 </pre>
