@@ -33,3 +33,18 @@ button::-moz-focus-inner {
     padding: 0;
 }
 
+
+// Exception for date inputs
+
+.form-date {
+
+  .form-group {
+
+    .form-label {
+      color: $secondary-text-colour;
+    }
+
+  }
+
+}
+
