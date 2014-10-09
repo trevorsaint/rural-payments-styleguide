@@ -136,7 +136,21 @@
 
 				<div class="text">
 				  <p class="lede">Below you will find a collection of reusable form controls and example forms.</p>
+
+				  <div class="alert-info" role="alert">
+
+						<div class="alert-message">
+
+							<p>When you mark-up elements please ensure that the <b>class tag</b> is used first! This allows for quick visibility for styles associated to elements, and allows for consistency.</p>
+
+						</div>
+
+					</div>
+
 				</div>
+
+
+        <h2 class="heading-large">Form examples</h2>
 
 
 				<ul class="list-bullet">
@@ -149,6 +163,7 @@
         <h2 class="heading-large">Reusable form controls</h2>
 
 
+        <!-- form labels -->
         <h3 class="heading-small">Form labels</h3>
 
         <div class="example">
@@ -157,6 +172,7 @@
         </div>
 
 
+        <!-- form spacing -->
         <h3 class="heading-small">Form spacing</h3>
 
         <div class="example">
@@ -171,6 +187,7 @@
         </div>
 
 
+        <!-- hint text -->
         <h3 class="heading-small">Hint text</h3>
 
         <div class="example">
@@ -182,53 +199,101 @@
         </div>
 
 
+        <!-- date inputs -->
+        <h3 class="heading-small">Date inputs</h3>
+
+        <div class="example">
+
+          <fieldset>
+
+            <legend class="form-label">Date of birth</legend>
+
+            <div class="form-date">
+
+            	<div class="form-group form-group-day">
+            		<label class="form-label" for="dob-day">Day</label>
+            		<input class="form-control" id="dob-day" type="text">
+            	</div>
+
+            	<div class="form-group form-group-month">
+            		<label class="form-label" for="dob-month">Month</label>
+            		<input class="form-control" id="dob-month" type="text">
+            	</div>
+
+            	<div class="form-group form-group-year">
+            		<label class="form-label" for="dob-year">Year</label>
+            		<input class="form-control" id="dob-year" type="text">
+            	</div>
+
+            </div>
+
+          </fieldset>
+
+        </div>
+
+
+        <!-- standard search -->
         <h3 class="heading-small">Standard search</h3>
 
         <div class="example">
 
-          <div class="form-search">
+          <fieldset>
 
-            <label class="form-label">What are you looking for?</label>
+            <legend class="form-label">What are you looking for?</legend>
 
-            <div class="form-group">
+            <div class="form-search">
 
-              <div class="form-control-wrap">
+              <div class="form-group-search">
                 <input class="form-control" id="search" type="text">
               </div>
 
-              <div class="form-control-wrap">
+              <div class="form-group-button">
                 <button class="button" type="button" role="button">Search</button>
               </div>
 
             </div>
 
-          </div>
+          </fieldset>
 
         </div>
 
 
+        <!-- textarea -->
         <h3 class="heading-small">Form textarea</h3>
 
 				<div class="example">
           <label class="form-label" for="enquiry">Enquiry</label>
-          <textarea class="form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
+          <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
 				</div>
 
 
+        <!-- radio buttons inline -->
         <h3 class="heading-small">Radio buttons inline</h3>
 
         <div class="example">
+
           <fieldset class="inline">
-            <label class="block-label" for="radio-inline-1">
-              <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
-            </label>
-            <label class="block-label" for="radio-inline-2">
-              <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
-            </label>
+
+            <legend class="form-label">Do you know their National Insurance number?</legend>
+
+            <div class="form-group form-group-compound">
+
+              <label class="block-label" for="radio-inline-1">
+                <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
+              </label>
+
+              <label class="block-label" for="radio-inline-2">
+                <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
+              </label>
+
+            </div>
+
           </fieldset>
+
         </div>
 
 
+        <!-- radio buttons block -->
         <h3 class="heading-small">Radio buttons block</h3>
 
         <div class="example">
@@ -248,6 +313,7 @@
         </div>
 
 
+        <!-- radio buttons with heading -->
         <h3 class="heading-small">Radio buttons with heading</h3>
 
         <div class="example">
@@ -272,6 +338,7 @@
         </div>
 
 
+        <!-- radio buttons alternative approach -->
         <h3 class="heading-small">Radio button alternative approach</h3>
 
         <div class="example">
@@ -284,6 +351,7 @@
         </div>
 
 
+        <!-- inset form elements -->
         <h3 class="heading-small">Inset form elements</h3>
 
         <div class="example">
@@ -309,6 +377,7 @@
         </div>
 
 
+        <!-- standard button -->
         <h3 class="heading-small">Standard button</h3>
 
         <div class="example">
@@ -316,6 +385,7 @@
         </div>
 
 
+        <!-- disabled button -->
         <h3 class="heading-small">Disabled button</h3>
 
         <div class="example">
@@ -323,6 +393,7 @@
         </div>
 
 
+        <!-- start now button -->
         <h3 class="heading-small">Start now button</h3>
 
         <div class="example">
