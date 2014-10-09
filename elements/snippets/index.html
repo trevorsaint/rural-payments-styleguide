@@ -299,17 +299,19 @@
 
             <div class="example">
 
-              <div class="hcard" itemtype="http://microformats.org/profile/hcard" itemscope>
+              <div class="hcard" itemtype="http://schema.org/Organization" itemscope>
 
-                <div class="hcard-adr" itemprop="adr" itemscope>
-                  <div itemprop="street-address">Pooley Bridge</div>
-                  <div itemprop="locality">Penrith</div>
-                  <div itemprop="region">Cumbria</div>
-                  <div itemprop="postal-code">CH3 6NZ</div>
-                  <div itemprop="country-name">United Kingdom</div>
+                <div itemprop="name"><b>Beech Farm</b></div>
+
+                <div class="hcard-adr" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+                  <div itemprop="streetAddress">Pooley Bridge</div>
+                  <div itemprop="addressLocality">Penrith</div>
+                  <div itemprop="addressRegion">Cumbria</div>
+                  <div itemprop="postalCode">CH3 6NZ</div>
+                  <div itemprop="addressCountry">United Kingdom</div>
                 </div>
 
-                <div itemprop="tel">0147 9643 7770</div>
+                <div itemprop="telephone"><a href="tel://014796437770">0147 9643 7770</a></div>
                 <div itemprop="email"><a href="mailto:joe.bloggs@beechfarm.co.uk">joe.bloggs@beechfarm.co.uk</a></div>
 
               </div>
@@ -319,17 +321,19 @@
 
 <pre class="language-markup">
 <code>
-  <div class="hcard" itemtype="http://microformats.org/profile/hcard" itemscope>
+  <div class="hcard" itemtype="http://schema.org/Organization" itemscope>
 
-    <div class="hcard-adr" itemprop="adr" itemscope>
-      <div itemprop="street-address">Pooley Bridge</div>
-      <div itemprop="locality">Penrith</div>
-      <div itemprop="region">Cumbria</div>
-      <div itemprop="postal-code">CH3 6NZ</div>
-      <div itemprop="country-name">United Kingdom</div>
+    <div itemprop="name"><b>Beech Farm</b></div>
+
+    <div class="hcard-adr" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+      <div itemprop="streetAddress">Pooley Bridge</div>
+      <div itemprop="addressLocality">Penrith</div>
+      <div itemprop="addressRegion">Cumbria</div>
+      <div itemprop="postalCode">CH3 6NZ</div>
+      <div itemprop="addressCountry">United Kingdom</div>
     </div>
 
-    <div itemprop="tel">0147 9643 7770</div>
+    <div itemprop="telephone"><a href="tel://014796437770">0147 9643 7770</a></div>
     <div itemprop="email"><a href="mailto:joe.bloggs@beechfarm.co.uk">joe.bloggs@beechfarm.co.uk</a></div>
 
   </div>
