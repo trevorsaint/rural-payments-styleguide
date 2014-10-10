@@ -25,7 +25,6 @@
 }
 
 .summary-title {
-	display: block;
 	@extend .bold-small;
 
 	@include media(tablet) {

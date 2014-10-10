@@ -120,43 +120,100 @@
 			<div class="inner-block">
 
 
+        <!-- phase banner -->
 				<div class="phase-banner">
 					<p>
 						<strong class="phase-tag">Beta</strong>
 						<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
 					</p>
 				</div>
+				<!-- end -->
 
 
+        <!-- back link -->
 				<a class="back-link" href="/">Back to the index</a>
+				<!-- end -->
 
 
+        <!-- heading and intro -->
 				<h1 class="heading-xlarge"><abbr title="Hypertext Markup Language">HTML</abbr> Snippets</h1>
-
 
 				<div class="text">
 
 				  <p class="lede"><abbr title="Hypertext Markup Language">HTML</abbr> snippets can be used to help with prototyping and becoming more familiar with reusable <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
 
+				  <div class="alert-info" role="alert">
+
+						<div class="alert-message">
+
+							<p>When you mark-up elements please ensure that the <b>class tag</b> is used first! This allows for quick visibility for styles associated to elements, and allows for consistency.</p>
+
+						</div>
+
+					</div>
+
 				</div>
+				<!-- end -->
 
 
-				<ol class="list-bullet">
-				  <li><a href="#typography">Typography</a></li>
-				  <li><a href="#layout">Layout</a></li>
-				  <li><a href="#tables">Tables</a></li>
-				  <li><a href="#forms">Forms</a></li>
-				  <li><a href="#details">Details</a></li>
-				  <li><a href="#alerts">Alerts</a></li>
-				  <li><a href="#other">Other</a></li>
-				</ol>
+        <!-- index heading -->
+				<h3 class="heading-large">Index</h3>
+				<!-- end -->
+
+
+			</div>
+
+
+      <!-- index -->
+      <div class="grid-wrapper">
+
+          <div class="grid grid-1-2">
+
+            <div class="inner-block">
+
+      				<ol class="list-bullet">
+      				  <li><a href="#typography">Typography</a></li>
+      				  <li><a href="#layout">Layout</a></li>
+      				  <li><a href="#tables">Tables</a></li>
+      				  <li><a href="#forms">Forms</a></li>
+      				  <li><a href="#details">Details</a></li>
+      				</ol>
+
+            </div>
+
+          </div>
+
+          <div class="grid grid-1-2">
+
+            <div class="inner-block">
+
+      				<ol class="list-bullet">
+                <li><a href="#alerts">Alerts</a></li>
+      				  <li><a href="#tabs">Tabs</a></li>
+      				  <li><a href="#steps">Steps</a></li>
+      				  <li><a href="#summary">Summary</a></li>
+      				  <li><a href="#related">Related</a></li>
+      				</ol>
+
+            </div>
+
+          </div>
+
+      </div>
+			<!-- end -->
+
+
+			<div class="inner-block">
 
 
         <!-- typography -->
 				<div id="typography">
 
+
   				<h2 class="heading-large">Typography</h2>
 
+
+          <!-- headings -->
   				<h3 class="heading-small">Headings</h3>
 
   				<div class="example">
@@ -168,17 +225,18 @@
 
 <pre class="language-markup">
 <code>
-  <h1 class="heading-xlarge">A <mark class="highlight">48px bold</mark> heading</h1>
+  <h1 class="heading-xlarge">A 48px bold heading</h1>
 
-  <h2 class="heading-large">A <mark class="highlight">36px bold</mark> heading</h2>
+  <h2 class="heading-large">A 36px bold heading</h2>
 
-  <h3 class="heading-medium">A <mark class="highlight">24px bold</mark> heading</h3>
+  <h3 class="heading-medium">A 24px bold heading</h3>
 
-  <h4 class="heading-small">A <mark class="highlight">19px bold</mark> heading</h4>
+  <h4 class="heading-small">A 19px bold heading</h4>
 </code>
 </pre>
 
 
+          <!-- lead paragraph and body copy -->
   				<h3 class="heading-small">Lead paragraph and body copy</h3>
 
   				<div class="example">
@@ -189,16 +247,17 @@
 
 <pre class="language-markup">
 <code>
-  <p class="lede">A <mark class="highlight">24px</mark> lead paragraph.</p>
+  <p class="lede">A 24px lead paragraph.</p>
 
-  <p class="font-small">A <mark class="highlight">19px</mark> body copy paragraph.</p>
+  <p class="font-small">A 19px body copy paragraph.</p>
 
-  <p class="font-xsmall">A <mark class="highlight">16px</mark> supporting text paragraph.</p>
+  <p class="font-xsmall">A 16px supporting text paragraph.</p>
 </code>
 </pre>
 
 
-<h3 class="heading-small">Lists</h3>
+          <!-- lists -->
+          <h3 class="heading-small">Lists</h3>
 
   				<div class="example">
             <ul class="list-bullet">
@@ -235,43 +294,62 @@
 </pre>
 
 
+          <!-- addresses -->
+          <h2 class="heading-small">Address using ( <a href="http://microformats.org/wiki/microdata">microdata </a>)</h2>
 
-        <h2 class="heading-small">Address using ( <a href="http://microformats.org/wiki/microdata">microdata </a>)</h2>
+            <div class="example">
 
-          <div class="example">
+              <div class="hcard" itemtype="http://schema.org/Organization" itemscope>
 
-            <div class="hcard" itemtype="http://microformats.org/profile/hcard" itemscope>
+                <div itemprop="name"><b>Beech Farm</b></div>
 
-              <div class="hcard-adr" itemprop="adr" itemscope>
-                <div itemprop="street-address">Pooley Bridge</div>
-                <div itemprop="locality">Penrith</div>
-                <div itemprop="region">Cumbria</div>
-                <div itemprop="postal-code">CH3 6NZ</div>
-                <div itemprop="country-name">United Kingdom</div>
+                <div class="hcard-adr" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+                  <div itemprop="streetAddress">Pooley Bridge</div>
+                  <div itemprop="addressLocality">Penrith</div>
+                  <div itemprop="addressRegion">Cumbria</div>
+                  <div itemprop="postalCode">CH3 6NZ</div>
+                  <div itemprop="addressCountry">United Kingdom</div>
+                </div>
+
+                <div itemprop="telephone"><a href="tel://014796437770">0147 9643 7770</a></div>
+                <div itemprop="email"><a href="mailto:joe.bloggs@beechfarm.co.uk">joe.bloggs@beechfarm.co.uk</a></div>
+
               </div>
-
-              <div itemprop="tel">0147 9643 7770</div>
-              <div itemprop="email"><a href="mailto:joe.bloggs@beechfarm.co.uk">joe.bloggs@beechfarm.co.uk</a></div>
 
             </div>
 
-          </div>
 
+            <div class="text">
+
+              <div class="alert-info" role="alert">
+
+    						<div class="alert-message">
+
+    							<p>You will notice the telephone number is a link. This is a <abbr title="HyperText Markup Language">HTML</abbr>5 attribute
+    							with a <a href="http://demosthenes.info/blog/536/Adding-Phone-Numbers-To-Web-Pages-With-HTML5-and-Microdata" rel="external">tel protocol</a>.</p>
+
+    						</div>
+
+    					</div>
+
+            </div>
 
 
 <pre class="language-markup">
 <code>
-  <div class="hcard" itemtype="http://microformats.org/profile/hcard" itemscope>
+  <div class="hcard" itemtype="http://schema.org/Organization" itemscope>
 
-    <div class="hcard-adr" itemprop="adr" itemscope>
-      <div itemprop="street-address">Pooley Bridge</div>
-      <div itemprop="locality">Penrith</div>
-      <div itemprop="region">Cumbria</div>
-      <div itemprop="postal-code">CH3 6NZ</div>
-      <div itemprop="country-name">United Kingdom</div>
+    <div itemprop="name"><b>Beech Farm</b></div>
+
+    <div class="hcard-adr" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+      <div itemprop="streetAddress">Pooley Bridge</div>
+      <div itemprop="addressLocality">Penrith</div>
+      <div itemprop="addressRegion">Cumbria</div>
+      <div itemprop="postalCode">CH3 6NZ</div>
+      <div itemprop="addressCountry">United Kingdom</div>
     </div>
 
-    <div itemprop="tel">0147 9643 7770</div>
+    <div itemprop="telephone"><a href="tel://014796437770">0147 9643 7770</a></div>
     <div itemprop="email"><a href="mailto:joe.bloggs@beechfarm.co.uk">joe.bloggs@beechfarm.co.uk</a></div>
 
   </div>
@@ -279,7 +357,7 @@
 </pre>
 
 
-
+          <!-- inset text -->
           <h3 class="heading-small">Inset text</h3>
 
   				<div class="example">
@@ -307,6 +385,7 @@
 </pre>
 
 
+          <!-- hidden text -->
           <h3 class="heading-small">Hidden text (progressive disclosure)</h3>
 
   				<div class="example">
@@ -341,10 +420,12 @@
         <!-- layout -->
 				<div id="layout">
 
-  				<h2 class="heading-large">Layout</h2>
 
+  				<h2 class="heading-large">Layout</h2>
   				<h3 class="heading-medium">Grid unit proportions</h3>
 
+
+          <!-- halves -->
   				<h4 class="heading-small">Halves</h4>
 
   				<div class="example example-grid">
@@ -383,6 +464,7 @@
 </pre>
 
 
+          <!-- thirds -->
           <h4 class="heading-small">Thirds</h4>
 
   				<div class="example example-grid">
@@ -431,6 +513,7 @@
 </pre>
 
 
+          <!-- two thirds / one third -->
           <h4 class="heading-small">Two Thirds / One Third</h4>
 
   				<div class="example example-grid">
@@ -469,6 +552,7 @@
 </pre>
 
 
+          <!-- one third / two thirds -->
           <h4 class="heading-small">One Third / Two Thirds</h4>
 
   				<div class="example example-grid">
@@ -507,6 +591,7 @@
 </pre>
 
 
+          <!-- quarters -->
           <h4 class="heading-small">Quarters</h4>
 
   				<div class="example example-grid">
@@ -564,6 +649,7 @@
 </code>
 </pre>
 
+
 			  </div>
         <!-- end -->
 
@@ -571,8 +657,11 @@
         <!-- tables -->
 				<div id="tables">
 
+
   				<h2 class="heading-large">Tables</h2>
 
+
+          <!-- default table -->
   				<h3 class="heading-small">Default Table (GOV.UK)</h3>
 
   				<div class="example">
@@ -652,6 +741,7 @@
 </pre>
 
 
+          <!-- alternative table -->
   				<h3 class="heading-small">Alternative Table (DEFRA)</h3>
 
   				<div class="example">
@@ -730,6 +820,7 @@
 </code>
 </pre>
 
+
 				</div>
 				<!-- end -->
 
@@ -737,16 +828,16 @@
         <!-- forms -->
 				<div id="forms">
 
+
   				<h2 class="heading-large">Forms</h2>
 
+
+  				<!-- form labels -->
   				<h3 class="heading-small">Form labels</h3>
 
-
   				<div class="example">
-
             <label class="form-label" for="full-name">Full name</label>
             <input class="form-control" id="full-name" type="text">
-
   				</div>
 
 
@@ -758,11 +849,10 @@
 </pre>
 
 
+          <!-- form spacing -->
           <h3 class="heading-small">Form spacing</h3>
 
-
   				<div class="example">
-
             <div class="form-group">
               <label class="form-label" for="first-name">First name</label>
               <input class="form-control" id="first-name" type="text">
@@ -771,17 +861,18 @@
               <label class="form-label" for="last-name">Last name</label>
               <input class="form-control" id="last-name" type="text">
             </div>
-
   				</div>
 
 
 <pre class="language-markup">
 <code>
   <!-- Use .form-group to create spacing when wrapping label and input pairs -->
+
   <div class="form-group">
     <label class="form-label" for="first-name">First name</label>
     <input class="form-control" id="first-name" type="text">
   </div>
+
   <div class="form-group">
     <label class="form-label" for="last-name">Last name</label>
     <input class="form-control" id="last-name" type="text">
@@ -790,6 +881,7 @@
 </pre>
 
 
+          <!-- form hint text -->
           <h3 class="heading-small">Form hint text</h3>
 
   				<div class="example">
@@ -798,6 +890,7 @@
               National Insurance number
               <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
             </label>
+
             <input class="form-control" id="ni-number" type="text">
 
   				</div>
@@ -809,18 +902,131 @@
     National Insurance number
     <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
   </label>
+
   <input class="form-control" id="ni-number" type="text">
 </code>
 </pre>
 
 
+          <!-- date inputs -->
+          <h3 class="heading-small">Date inputs</h3>
 
+  				<div class="example">
+
+            <fieldset>
+
+              <legend class="form-label">Date of birth</legend>
+
+              <div class="form-date">
+
+              	<div class="form-group form-group-day">
+              		<label class="form-label" for="dob-day">Day</label>
+              		<input class="form-control" type="text" id="dob-day">
+              	</div>
+
+              	<div class="form-group form-group-month">
+              		<label class="form-label" for="dob-month">Month</label>
+              		<input class="form-control" type="text" id="dob-month">
+              	</div>
+
+              	<div class="form-group form-group-year">
+              		<label class="form-label" for="dob-year">Year</label>
+              		<input class="form-control" type="text" id="dob-year">
+              	</div>
+
+              </div>
+
+            </fieldset>
+
+  				</div>
+
+
+<pre class="language-markup">
+<code>
+  <fieldset>
+
+    <legend class="form-label">Date of birth</legend>
+
+    <div class="form-date">
+
+    	<div class="form-group form-group-day">
+    		<label class="form-label" for="dob-day">Day</label>
+    		<input class="form-control" type="text" id="dob-day">
+    	</div>
+
+    	<div class="form-group form-group-month">
+    		<label class="form-label" for="dob-month">Month</label>
+    		<input class="form-control" type="text" id="dob-month">
+    	</div>
+
+    	<div class="form-group form-group-year">
+    		<label class="form-label" for="dob-year">Year</label>
+    		<input class="form-control" type="text" id="dob-year">
+    	</div>
+
+    </div>
+
+  </fieldset>
+</code>
+</pre>
+
+
+          <!-- standard search -->
+          <h3 class="heading-small">Standard search</h3>
+
+  				<div class="example">
+
+            <fieldset>
+
+              <legend class="form-label">What are you looking for?</legend>
+
+              <div class="form-search">
+
+                <div class="form-group-search">
+                  <input class="form-control" id="search" type="text">
+                </div>
+
+                <div class="form-group-button">
+                  <button class="button" type="button" role="button">Search</button>
+                </div>
+
+              </div>
+
+            </fieldset>
+
+  				</div>
+
+
+<pre class="language-markup">
+<code>
+  <fieldset>
+
+    <legend class="form-label">What are you looking for?</legend>
+
+    <div class="form-search">
+
+      <div class="form-group-search">
+        <input class="form-control" id="search" type="text">
+      </div>
+
+      <div class="form-group-button">
+        <button class="button" type="button" role="button">Search</button>
+      </div>
+
+    </div>
+
+  </fieldset>
+</code>
+</pre>
+
+
+          <!-- textarea -->
           <h3 class="heading-small">Form textarea</h3>
 
   				<div class="example">
 
             <label class="form-label" for="enquiry">Enquiry</label>
-            <textarea class="form-control" id="enquiry" rows="6" cols="50"></textarea>
+            <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
 
   				</div>
 
@@ -828,22 +1034,32 @@
 <pre class="language-markup">
 <code>
   <label class="form-label" for="enquiry">Enquiry</label>
-  <textarea class="form-control" id="enquiry" rows="6" cols="50"></textarea>
+  <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
 </code>
 </pre>
 
 
+          <!-- radio buttons inline -->
           <h3 class="heading-small">Radio buttons inline</h3>
 
   				<div class="example">
 
             <fieldset class="inline">
-              <label class="block-label" for="radio-inline-1">
-                <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
-              </label>
-              <label class="block-label" for="radio-inline-2">
-                <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
-              </label>
+
+              <legend class="form-label">Do you know their National Insurance number?</legend>
+
+              <div class="form-group form-group-compound">
+
+                <label class="block-label" for="radio-inline-1">
+                  <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
+                </label>
+
+                <label class="block-label" for="radio-inline-2">
+                  <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
+                </label>
+
+              </div>
+
             </fieldset>
 
   				</div>
@@ -852,17 +1068,27 @@
 <pre class="language-markup">
 <code>
   <fieldset class="inline">
-    <label class="block-label" for="radio-inline-1">
-      <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
-    </label>
-    <label class="block-label" for="radio-inline-2">
-      <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
-    </label>
+
+    <legend class="form-label">Do you know their National Insurance number?</legend>
+
+    <div class="form-group form-group-compound">
+
+      <label class="block-label" for="radio-inline-1">
+        <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
+      </label>
+
+      <label class="block-label" for="radio-inline-2">
+        <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
+      </label>
+
+    </div>
+
   </fieldset>
 </code>
 </pre>
 
 
+          <!-- radio button block -->
           <h3 class="heading-small">Radio buttons block</h3>
 
   				<div class="example">
@@ -908,27 +1134,36 @@
 </pre>
 
 
+          <!-- radio buttons with heading -->
           <h3 class="heading-small">Radio buttons with heading</h3>
 
   				<div class="example">
 
             <form class="form">
+
               <fieldset>
+
                 <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
+
                 <p>Select all that apply</p>
+
                 <label class="block-label" for="checkbox-1">
                   <input id="checkbox-1" value="waste-animal" type="checkbox">
                   Waste from animal carcasses
                 </label>
+
                 <label class="block-label" for="checkbox-2">
                   <input id="checkbox-2" value="waste-mines" type="checkbox">
                   Waste from mines or quarries
                 </label>
+
                 <label class="block-label" for="checkbox-3">
                   <input id="checkbox-3" value="farm-agricultural" type="checkbox">
                   Farm or agricultural waste
                 </label>
+
               </fieldset>
+
             </form>
 
   				</div>
@@ -936,27 +1171,36 @@
 <pre class="language-markup">
 <code>
   <form class="form">
+
     <fieldset>
+
       <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
+
       <p>Select all that apply</p>
+
       <label class="block-label" for="checkbox-1">
         <input id="checkbox-1" value="waste-animal" type="checkbox">
         Waste from animal carcasses
       </label>
+
       <label class="block-label" for="checkbox-2">
         <input id="checkbox-2" value="waste-mines" type="checkbox">
         Waste from mines or quarries
       </label>
+
       <label class="block-label" for="checkbox-3">
         <input id="checkbox-3" value="farm-agricultural" type="checkbox">
         Farm or agricultural waste
       </label>
+
     </fieldset>
+
   </form>
 </code>
 </pre>
 
 
+          <!-- radio button alternative approach -->
           <h3 class="heading-small">Radio button alternative approach</h3>
 
   				<div class="example">
@@ -973,8 +1217,9 @@
 <pre class="language-markup">
 <code>
   <label class="form-label" for="telephone-number">Enter your telephone number</label>
-    <input class="form-control" id="telephone-number" type="text">
-    <label class="form-checkbox" for="checkbox-telephone-number">
+  <input class="form-control" id="telephone-number" type="text">
+
+  <label class="form-checkbox" for="checkbox-telephone-number">
     <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
     I need to be contacted using a text phone
   </label>
@@ -982,6 +1227,7 @@
 </pre>
 
 
+          <!-- inset form elements -->
           <h3 class="heading-small">Inset form elements</h3>
 
   				<div class="example">
@@ -1011,34 +1257,42 @@
 <pre class="language-markup">
 <code>
   <form class="form">
+
     <fieldset class="inline">
+
       <legend class="form-label">Do you know their National Insurance number?</legend>
+
       <div class="form-group form-group-compound">
+
         <label class="block-label" data-target="example-ni-number" for="radio-indent-1">
           <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
           Yes
         </label>
+
         <label class="block-label" for="radio-indent-2">
           <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
           No
         </label>
+
       </div>
+
       <div class="panel-indent js-hidden" id="example-ni-number">
         <label class="form-label" for="national-insurance">National Insurance number</label>
         <input class="form-control" id="national-insurance" type="text">
       </div>
+
     </fieldset>
+
   </form>
 </code>
 </pre>
 
 
+          <!-- standard button -->
           <h3 class="heading-small">Standard button</h3>
 
   				<div class="example">
-
             <button class="button" type="button" role="button">Save and continue</button>
-
   				</div>
 
 <pre class="language-markup">
@@ -1048,12 +1302,11 @@
 </pre>
 
 
+          <!-- disabled button -->
           <h3 class="heading-small">Disabled button</h3>
 
   				<div class="example">
-
             <button class="button" type="button" disabled="disabled" role="button">Save and continue</button>
-
   				</div>
 
 <pre class="language-markup">
@@ -1063,12 +1316,11 @@
 </pre>
 
 
+          <!-- start now button -->
           <h3 class="heading-small">Start now button</h3>
 
   				<div class="example">
-
             <button class="button button-get-started" type="button" role="button">Start now</button>
-
   				</div>
 
 <pre class="language-markup">
@@ -1085,9 +1337,11 @@
         <!-- details -->
 				<div id="details">
 
+
   				<h2 class="heading-medium">Details</h2>
 
 
+          <!-- html5 details -->
   				<h3 class="heading-small">Support for HTML5's &lt;details&gt; and &lt;summary&gt;</h3>
 
   				<div class="example">
@@ -1120,6 +1374,7 @@
 </code>
 </pre>
 
+
 				</div>
 				<!-- end -->
 
@@ -1127,8 +1382,11 @@
         <!-- alerts -->
 				<div id="alerts">
 
+
   				<h2 class="heading-large">Alerts</h2>
 
+
+          <!-- success alert -->
           <h3 class="heading-small">Success alert</h3>
 
   				<div class="alert-success" role="alert">
@@ -1159,6 +1417,7 @@
 </pre>
 
 
+          <!-- information alert -->
           <h3 class="heading-small">Information alert</h3>
 
   				<div class="alert-info" role="alert">
@@ -1185,6 +1444,7 @@
 </pre>
 
 
+          <!-- eligible alert -->
           <h3 class="heading-small">Eligible alert</h3>
 
   				<div class="alert-info" role="alert">
@@ -1213,6 +1473,7 @@
 </pre>
 
 
+          <!-- not eligible alert -->
           <h3 class="heading-small">Not eligible alert</h3>
 
   				<div class="alert-info" role="alert">
@@ -1241,6 +1502,7 @@
 </pre>
 
 
+          <!-- error alert -->
           <h3 class="heading-small">Error alert</h3>
 
   				<div class="alert-error" role="alert">
@@ -1269,6 +1531,7 @@
 </pre>
 
 
+          <!-- informative alert -->
           <h3 class="heading-small">Informative alert</h3>
 
   				<div class="alert-info" role="alert">
@@ -1301,6 +1564,7 @@
 </pre>
 
 
+          <!-- completion alert -->
           <h3 class="heading-small">Completion alert</h3>
 
   				<div class="alert-complete" role="alert">
@@ -1333,6 +1597,7 @@
 </pre>
 
 
+          <!-- reference alert -->
           <h3 class="heading-small">Reference alert</h3>
 
   				<div class="alert-reference" role="alert">
@@ -1369,115 +1634,17 @@
 				<!-- end -->
 
 
-        <!-- other -->
-				<div id="other">
-
-  				<h2 class="heading-large">Other</h2>
+				<!-- tabs -->
+				<div id="tabs">
 
 
-  				<h3 class="heading-small">Steps</h3>
-
-  				<div class="example">
-
-  				  <h2 class="steps-heading"><span class="steps-pos">Step 1 of 6</span> Your details</h2>
-
-  				</div>
-
-<pre class="language-markup">
-<code>
-  <h2 class="steps-heading"><span class="steps-pos">Step 1 of 6</span> Your details</h2>
-</code>
-</pre>
+				  <h2 class="heading-large">Tabs</h2>
 
 
-  				<h3 class="heading-small">Summary</h3>
+          <!-- tabbed content -->
+          <h3 class="heading-small">Tabbed content</h3>
 
-  				<div class="example">
-
-            <div class="summary">
-            	<ul>
-            		<li>
-            			<span class="summary-title">Business name</span>
-            			<span class="summary-value">Beech Farm</span>
-            		</li>
-            		<li>
-            			<span class="summary-title">Firm reference</span>
-            			<span class="summary-value">2000000045</span>
-            		</li>
-            		<li>
-            			<span class="summary-title"><abbr title="Value Added Tax">VAT</abbr> registration number</span>
-            			<span class="summary-value">567890123</span>
-            		</li>
-            		<li>
-            			<span class="summary-title">Address</span>
-            			<span class="summary-value">Beech Farm <br> Pooley Bridge <br> Penrith, Cumbria <br> CA10 2NP <br>
-            			</span>
-            		</li>
-            		<li>
-            			<span class="summary-title">Landline</span>
-            			<span class="summary-value"><a href="tel://014799593375">01479 9593375</a></span>
-            		</li>
-            		<li>
-            			<span class="summary-title">Mobile</span>
-            			<span class="summary-value"><a href="tel://079783777457">07978 3777457</a></span>
-            		</li>
-            		<li>
-            			<span class="summary-title">Email</span>
-            			<span class="sumamry-value"><a href="mailto:selenium-test-active-4@test.kainos.com">selenium-test-active-4@test.kainos.com</a></span>
-            		</li>
-            	</ul>
-            </div>
-
-  				</div>
-
-<pre class="language-markup">
-<code>
-  <div class="summary">
-    <ul>
-      <li>
-        <span class="summary-title">Business name</span>
-        <span class="summary-value">Beech Farm</span>
-      </li>
-      <li>
-        <span class="summary-title">Firm reference</span>
-        <span class="summary-value">2000000045</span>
-      </li>
-      <li>
-        <span class="summary-title"><abbr title="Value Added Tax">VAT</abbr> registration number</span>
-        <span class="summary-value">567890123</span>
-      </li>
-      <li>
-        <span class="summary-title">Address</span>
-        <span class="summary-value">Beech Farm <br> Pooley Bridge <br> Penrith, Cumbria <br> CA10 2NP <br> United Kingdom
-      </span>
-      </li>
-      <li>
-        <span class="summary-title">Landline</span>
-        <span class="summary-value">
-          <a href="tel://014799593375">01479 9593375</a>
-        </span>
-      </li>
-      <li>
-        <span class="summary-title">Mobile</span>
-        <span class="summary-value">
-          <a href="tel://079783777457">07978 3777457</a>
-        </span>
-      </li>
-      <li>
-        <span class="summary-title">Email</span>
-        <span class="sumamry-value">
-          <a href="mailto://selenium-test-active-4@test.kainos.com">selenium-test-active-4@test.kainos.com</a>
-        </span>
-      </li>
-    </ul>
-  </div>
-</code>
-</pre>
-
-
-          <h3 class="heading-small">Summary</h3>
-
-  				<div class="example">
+          <div class="example">
 
             <div class="tabs">
 
@@ -1579,9 +1746,163 @@
 </pre>
 
 
-          <h3 class="heading-small">Related content</h3>
+				</div>
+				<!-- end -->
+
+
+				<!-- steps -->
+				<div id="steps">
+
+
+				  <h2 class="heading-large">Steps</h2>
+
+
+          <!-- step process -->
+				  <h3 class="heading-small">A multiple step process</h3>
+
 
   				<div class="example">
+  				  <h2 class="steps-heading"><span class="steps-pos">Step 1 of 6</span> Your details</h2>
+  				</div>
+
+<pre class="language-markup">
+<code>
+  <h2 class="steps-heading"><span class="steps-pos">Step 1 of 6</span> Your details</h2>
+</code>
+</pre>
+
+
+				</div>
+				<!-- end -->
+
+
+				<!-- summary -->
+				<div id="summary">
+
+
+				  <h2 class="heading-large">Summary</h2>
+
+
+          <!-- summary of items -->
+          <h3 class="heading-small">A summary of items with title and value</h3>
+
+
+          <div class="example">
+
+            <div class="summary">
+
+            	<ul itemtype="http://schema.org/Organization" itemscope>
+            		<li>
+            			<h4 class="summary-title">Business name</h4>
+            			<div class="summary-value" itemprop="name">Beech Farm</div>
+            		</li>
+            		<li>
+            			<h4 class="summary-title">Firm reference</h4>
+            			<div class="summary-value">2000000045</div>
+            		</li>
+            		<li>
+            			<h4 class="summary-title"><abbr title="Value Added Tax">VAT</abbr> registration number</h4>
+            			<div class="summary-value">567890123</div>
+            		</li>
+            		<li>
+            			<h4 class="summary-title">Address</h4>
+                  <div class="summary-value" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+                    <div itemprop="streetAddress">Pooley Bridge</div>
+                    <div itemprop="addressLocality">Penrith</div>
+                    <div itemprop="addressRegion">Cumbria</div>
+                    <div itemprop="postalCode">CH3 6NZ</div>
+                    <div itemprop="addressCountry">United Kingdom</div>
+                  </div>
+            		</li>
+                <li>
+                  <h4 class="summary-title">Landline</h4>
+                  <div class="summary-value" itemprop="telephone"><a href="tel://07337938476">07337938476</a></div>
+                </li>
+
+                <li>
+                  <h4 class="summary-title">Mobile</h4>
+                  <div class="summary-value" itemprop="telephone"><a href="tel://07449654321">07449654321</a></div>
+                </li>
+
+                <li>
+                  <h4 class="summary-title">Email</h4>
+                  <div class="summary-value" itemprop="email"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></div>
+                </li>
+            	</ul>
+
+            </div>
+
+  				</div>
+
+<pre class="language-markup">
+<code>
+  <div class="summary">
+
+    <ul itemtype="http://schema.org/Organization" itemscope>
+
+      <li>
+        <h4 class="summary-title">Business name</h4>
+        <div class="summary-value" itemprop="name">Beech Farm</div>
+      </li>
+
+      <li>
+        <h4 class="summary-title">Firm reference</h4>
+        <div class="summary-value">2000000045</div>
+      </li>
+
+      <li>
+        <h4 class="summary-title"><abbr title="Value Added Tax">VAT</abbr> registration number</h4>
+        <div class="summary-value">567890123</div>
+      </li>
+
+      <li>
+        <h4 class="summary-title">Address</h4>
+        <div class="summary-value" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+          <div itemprop="streetAddress">Pooley Bridge</div>
+          <div itemprop="addressLocality">Penrith</div>
+          <div itemprop="addressRegion">Cumbria</div>
+          <div itemprop="postalCode">CH3 6NZ</div>
+          <div itemprop="addressCountry">United Kingdom</div>
+        </div>
+      </li>
+
+      <li>
+        <h4 class="summary-title">Landline</h4>
+        <div class="summary-value" itemprop="telephone"><a href="tel://07337938476">07337938476</a></div>
+      </li>
+
+      <li>
+        <h4 class="summary-title">Mobile</h4>
+        <div class="summary-value" itemprop="telephone"><a href="tel://07449654321">07449654321</a></div>
+      </li>
+
+      <li>
+        <h4 class="summary-title">Email</h4>
+        <div class="summary-value" itemprop="email"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></div>
+      </li>
+
+    </ul>
+
+  </div>
+</code>
+</pre>
+
+
+				</div>
+				<!-- end -->
+
+
+				<!-- related content -->
+				<div id="related">
+
+
+				  <h2 class="heading-large">Related</h2>
+
+
+          <!-- related content block -->
+          <h3 class="heading-small">Related content block</h3>
+
+          <div class="example">
 
               <div class="grid grid-1-3">
 
