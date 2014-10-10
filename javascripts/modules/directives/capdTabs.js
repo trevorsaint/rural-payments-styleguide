@@ -17,11 +17,17 @@ define(function () {
             restrict: 'A',
             transclude: true,
             scope: {
-//                tabIndex: '=capdTabsIndex'
+
             },
             controller: function ($scope, $element, $attrs, $transclude) {
-                $scope.tabIndex = Number($attrs['capdTabsIndex']);
+                $scope.tabIndex = Number($attrs['capdTabsIndex'] || 0);
                 $scope.tabs = [];
+
+                function tabChanged(){
+                    $scope.tabs.forEach(function(tab, index){
+                        tab.tabChanged(index === $scope.tabIndex);
+                    })
+                }
 
                 $scope.isTabSelected = function(index){
                     return index === $scope.tabIndex;
@@ -29,10 +35,13 @@ define(function () {
 
                 $scope.selectTab = function(index){
                     $scope.tabIndex = index;
+                    tabChanged();
                 }
 
                 this.registerTab = function(tab){
                     $scope.tabs.push(tab);
+                    var lastTabIndex = $scope.tabs.length - 1;
+                    tab.tabChanged(lastTabIndex === $scope.tabIndex);
                 }
 
                 $scope.selectTab($scope.tabIndex);

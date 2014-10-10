@@ -1,24 +1,22 @@
 define(function () {
     var capdTabsTab = function () {
         return {
+            template: '<div ng-show="isVisible"><div ng-transclude></div></div>',
             link: function postLink(scope, iElement, iAttrs, capdTabs) {
                 var tabName = iAttrs['capdTabsTab'];
 
-                scope.tabChanged = function(isActive){
+                scope.isVisible = false;
 
-                }
-
-                capdTabs.registerTab({name: tabName, tabChanged: scope.tabChanged});
+                capdTabs.registerTab({name: tabName, tabChanged: function(tabVisible){
+                    scope.isVisible = tabVisible;
+                }});
             },
             restrict : 'A',
-            transclude: false,
+            transclude: true,
             scope : {},
             require : '^^capdTabs',
             controller: function($scope, $element, $attrs, $transclude){
 
-//                debugger;
-//                var tabName = $attrs['capd-tabs-tab'];
-//                capdTabs.tabHeaders.push(tabName)
             }
         }
     }
