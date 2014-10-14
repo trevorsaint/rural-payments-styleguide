@@ -1,1 +1,1 @@
-web: grunt index.js
+web: grunt connect:dist
