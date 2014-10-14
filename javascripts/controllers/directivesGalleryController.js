@@ -1,3 +1,9 @@
-/**
- * Created by mjamiolkowski on 01/10/2014.
- */
+define(function () {
+    var DirectivesGalleryController = function ($scope) {
+        $scope.testModel = {}
+    }
+
+    DirectivesGalleryController.$inject = ['$scope'];
+
+    return DirectivesGalleryController;
+});
