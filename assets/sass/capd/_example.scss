@@ -27,16 +27,18 @@
     color: $govuk-blue;
   }
 
-  .inner-block {
-    @include hide-text(left);
-    background-color: rgba($govuk-blue,.5);
-    background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
-    background-size: 30px 30px;
-    min-height: 60px;
-  }
-
   &-grid {
-    padding: 45px 0 35px;
+
+    p {
+      @include hide-text(left);
+      background-color: rgba($govuk-blue,.5);
+      background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+      background-size: 30px 30px;
+      min-height: 60px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
   }
 
 }
