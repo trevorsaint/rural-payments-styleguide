@@ -13,5 +13,8 @@
   "repository" : {
     "type": "git",
     "url" : "https://github.com/trevorsaint/capd.git"
-  }
+  },
+    "scripts": {
+        "postinstall": "gem install sass"
+    }
 }
