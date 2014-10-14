@@ -20,6 +20,6 @@
     "url" : "https://github.com/trevorsaint/capd.git"
   },
     "scripts": {
-        "start" : "npm start"
+        "start" : "node app.js"
     }
 }
