@@ -8,6 +8,7 @@
 html {
   -webkit-text-size-adjust: 100%; /* 1 */
   -ms-text-size-adjust: 100%; /* 1 */
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 	background-color: $grey-3;
