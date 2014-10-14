@@ -37,6 +37,27 @@
 }
 
 
+.form-control-select {
+  @include core-19;
+  background-color: white;
+  border: 1px solid $border-colour;
+  width: 100%;
+
+  @include media(tablet) {
+    width: 50%;
+  }
+
+
+  // Prevent firefox from using default focus
+
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+
+}
+
 
 // Form search
 
