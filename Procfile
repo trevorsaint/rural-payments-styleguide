@@ -1,1 +1,1 @@
-web: node_modules/grunt-cli/bin/grunt connect:dist
+web: ./node_modules/grunt-cli/bin/grunt connect:dist
