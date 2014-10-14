@@ -114,7 +114,6 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('dist-run', [
-    'compass',
     'connect:dist'
   ])
 
