@@ -46,7 +46,7 @@ module.exports = function(grunt) {
                 port: 80,
                 open: false,
                 hostname: 'localhost',
-                keepalive: 'true'
+                keepalive: true
 
             }
 
@@ -112,6 +112,11 @@ module.exports = function(grunt) {
     'connect',
     'watch'
   ]);
+
+  grunt.registerTask('dist-run', [
+    'compass',
+    'connect:dist'
+  ])
 
 
 };
