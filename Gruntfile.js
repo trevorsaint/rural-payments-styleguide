@@ -109,7 +109,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', [
     'compass',
-    'connect',
+    'connect:server',
     'watch'
   ]);
 
