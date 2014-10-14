@@ -1,7 +1,6 @@
 .DS_Store
 .sass-cache
 node_modules
-assets/stylesheets
 .idea/
 javascript/bower_components/
 gems/
