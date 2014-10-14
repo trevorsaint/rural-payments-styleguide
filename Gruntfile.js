@@ -39,7 +39,18 @@ module.exports = function(grunt) {
   				hostname: 'localhost'
   			}
 
-  		}
+  		},
+        dist: {
+
+            options: {
+                port: 9100,
+                open: true,
+                hostname: 'localhost',
+                keepalive: 'true'
+
+            }
+
+        }
 
   	},
 
