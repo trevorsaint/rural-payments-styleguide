@@ -4,7 +4,7 @@
 // Increase the base font size to 19px
 // Using the core-19 mixin from the govuk_toolkit _typography.scss file
 
-#content {
+main {
   @include core-19;
   -webkit-font-smoothing: antialiased;
 }

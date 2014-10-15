@@ -111,98 +111,88 @@
 
 
 	<!-- Content -->
-  <main id="wrapper" role="main">
+  <main class="group" id="page-container" role="main">
 
 
-		<div id="content">
+		<div class="phase-banner">
+			<p>
+				<strong class="phase-tag">Beta</strong>
+				<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+			</p>
+		</div>
 
 
-			<div class="inner-block">
+		<a class="back-link" href="../">Back to forms</a>
 
 
-				<div class="phase-banner">
-					<p>
-						<strong class="phase-tag">Beta</strong>
-						<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
-					</p>
-				</div>
+    <!-- form -->
+		<form class="form" method="post" action="/">
 
+			<h1 class="form-title heading-large">Your details</h1>
 
-				<a class="back-link" href="../">Back to forms</a>
+			<div class="form-group">
+				<label class="form-label-bold" for="full-name">Full name</label>
+				<p class="form-hint">As shown on your birth certificate or passport</p>
+				<input class="form-control" type="text" id="full-name">
+			</div>
 
+			<div class="form-group">
+				<label class="form-label-bold" for="ni-number">National Insurance number
+					<span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60.<br>
+					For example, 'VO 12 34 56 D'.</span>
+				</label>
+				<input class="form-control" type="text" id="ni-number">
+			</div>
 
-				<form class="form" method="post" action="/">
+			<div class="form-group">
 
-					<h1 class="form-title heading-large">Your details</h1>
+				<fieldset>
 
-					<div class="form-group">
-						<label class="form-label-bold" for="full-name">Full name</label>
-						<p class="form-hint">As shown on your birth certificate or passport</p>
-						<input class="form-control" type="text" id="full-name">
-					</div>
+					<legend class="form-label-bold">Date of birth</legend>
 
-					<div class="form-group">
-						<label class="form-label-bold" for="ni-number">National Insurance number
-							<span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60.<br>
-							For example, 'VO 12 34 56 D'.</span>
-						</label>
-						<input class="form-control" type="text" id="ni-number">
-					</div>
+					<div class="form-date">
 
-					<div class="form-group">
+						<p class="form-hint">For example, 08 04 2014</p>
 
-						<fieldset>
+						<div class="form-group form-group-day">
+							<label for="dob-day">Day</label>
+							<input type="text" class="form-control" id="dob-day">
+						</div>
 
-							<legend class="form-label-bold">Date of birth</legend>
+						<div class="form-group form-group-month">
+							<label for="dob-month">Month</label>
+							<input class="form-control" type="text" id="dob-month">
+						</div>
 
-							<div class="form-date">
-
-								<p class="form-hint">For example, 08 04 2014</p>
-
-								<div class="form-group form-group-day">
-									<label for="dob-day">Day</label>
-									<input type="text" class="form-control" id="dob-day">
-								</div>
-
-								<div class="form-group form-group-month">
-									<label for="dob-month">Month</label>
-									<input class="form-control" type="text" id="dob-month">
-								</div>
-
-								<div class="form-group form-group-year">
-									<label for="dob-year">Year</label>
-									<input class="form-control" type="text" id="dob-year">
-								</div>
-
-							</div>
-
-							<div class="form-date native-date-picker">
-								<p class="form-hint">For example, 08 April 2014</p>
-								<input class="form-control" type="date">
-							</div>
-
-						</fieldset>
+						<div class="form-group form-group-year">
+							<label for="dob-year">Year</label>
+							<input class="form-control" type="text" id="dob-year">
+						</div>
 
 					</div>
 
-					<div class="form-group">
-
-						<button class="button" type="button" role="button">Continue</button>
-
-						<ul>
-							<li><a href="../">Skip this section for now</a></li>
-							<li><a href="../">Back</a></li>
-						</ul>
-
+					<div class="form-date native-date-picker">
+						<p class="form-hint">For example, 08 April 2014</p>
+						<input class="form-control" type="date">
 					</div>
 
-				</form>
-
+				</fieldset>
 
 			</div>
 
+			<div class="form-group">
 
-		</div>
+				<button class="button" type="button" role="button">Continue</button>
+
+				<ul>
+					<li><a href="../">Skip this section for now</a></li>
+					<li><a href="../">Back</a></li>
+				</ul>
+
+			</div>
+
+		</form>
+		<!-- end -->
 
 
 	</main>

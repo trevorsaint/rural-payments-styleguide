@@ -111,111 +111,89 @@
 
 
 	<!-- Content -->
-  <main id="page-container" role="main">
+  <main class="group" id="page-container" role="main">
 
 
-		<div id="content">
+		<div class="phase-banner">
+			<p>
+				<strong class="phase-tag">Beta</strong>
+				<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+			</p>
+		</div>
 
 
+		<a class="back-link" href="/">Back to the index</a>
 
 
+		<h1 class="heading-xlarge"><abbr title="Hypertext Markup Language">HTML</abbr> Snippets</h1>
 
-        <!-- phase banner -->
-				<div class="phase-banner">
-					<p>
-						<strong class="phase-tag">Beta</strong>
-						<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
-					</p>
-				</div>
-				<!-- end -->
+		<div class="text">
 
+		  <p class="lede"><abbr title="Hypertext Markup Language">HTML</abbr> snippets can be used to help with prototyping and becoming more familiar with reusable <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
 
-        <!-- back link -->
-				<a class="back-link" href="/">Back to the index</a>
-				<!-- end -->
+		  <div class="alert-info" role="alert">
 
+				<div class="alert-message">
 
-        <!-- heading and intro -->
-				<h1 class="heading-xlarge"><abbr title="Hypertext Markup Language">HTML</abbr> Snippets</h1>
-
-				<div class="text">
-
-				  <p class="lede"><abbr title="Hypertext Markup Language">HTML</abbr> snippets can be used to help with prototyping and becoming more familiar with reusable <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
-
-				  <div class="alert-info" role="alert">
-
-						<div class="alert-message">
-
-							<p>When you mark-up elements please ensure that the <b>class tag</b> is used first! This allows for quick visibility for styles associated to elements, and allows for consistency.</p>
-
-						</div>
-
-					</div>
+					<p>When you mark-up elements please ensure that the <b>class tag</b> is used first! This allows for quick visibility for styles associated to elements, and allows for consistency.</p>
 
 				</div>
-				<!-- end -->
+
+			</div>
+
+		</div>
 
 
-        <!-- index heading -->
-				<h3 class="heading-large">Index</h3>
-				<!-- end -->
+		<h3 class="heading-large">Index</h3>
 
 
+    <!-- index -->
+    <div class="grid-row">
+
+        <div class="column-third">
+
+  				<ol class="list-bullet">
+  				  <li><a href="#typography">Typography</a></li>
+  				  <li><a href="#layout">Layout</a></li>
+  				  <li><a href="#tables">Tables</a></li>
+  				  <li><a href="#forms">Forms</a></li>
+  				  <li><a href="#details">Details</a></li>
+  				</ol>
+
+        </div>
+
+        <div class="column-third">
+
+  				<ol class="list-bullet">
+            <li><a href="#alerts">Alerts</a></li>
+  				  <li><a href="#tabs">Tabs</a></li>
+  				  <li><a href="#steps">Steps</a></li>
+  				  <li><a href="#summary">Summary</a></li>
+  				  <li><a href="#related">Related</a></li>
+  				</ol>
+
+        </div>
+
+    </div>
+		<!-- end -->
 
 
-
-      <!-- index -->
-      <div class="grid-row">
-
-          <div class="column-half">
-
-    				<ol class="list-bullet">
-    				  <li><a href="#typography">Typography</a></li>
-    				  <li><a href="#layout">Layout</a></li>
-    				  <li><a href="#tables">Tables</a></li>
-    				  <li><a href="#forms">Forms</a></li>
-    				  <li><a href="#details">Details</a></li>
-    				</ol>
-
-          </div>
-
-          <div class="column-half">
-
-    				<ol class="list-bullet">
-              <li><a href="#alerts">Alerts</a></li>
-    				  <li><a href="#tabs">Tabs</a></li>
-    				  <li><a href="#steps">Steps</a></li>
-    				  <li><a href="#summary">Summary</a></li>
-    				  <li><a href="#related">Related</a></li>
-    				</ol>
-
-          </div>
-
-      </div>
-			<!-- end -->
+    <!-- typography -->
+		<div id="typography">
 
 
+			<h2 class="heading-large">Typography</h2>
 
 
-			<div class="inner-block">
+      <!-- headings -->
+			<h3 class="heading-small">Headings</h3>
 
-
-        <!-- typography -->
-				<div id="typography">
-
-
-  				<h2 class="heading-large">Typography</h2>
-
-
-          <!-- headings -->
-  				<h3 class="heading-small">Headings</h3>
-
-  				<div class="example">
-            <h1 class="heading-xlarge">A <mark class="highlight">48px bold</mark> heading</h1>
-            <h2 class="heading-large">A <mark class="highlight">36px bold</mark> heading</h2>
-            <h3 class="heading-medium">A <mark class="highlight">24px bold</mark> heading</h3>
-            <h4 class="heading-small">A <mark class="highlight">19px bold</mark> heading</h4>
-  				</div>
+				<div class="example">
+          <h1 class="heading-xlarge">A <mark class="highlight">48px bold</mark> heading</h1>
+          <h2 class="heading-large">A <mark class="highlight">36px bold</mark> heading</h2>
+          <h3 class="heading-medium">A <mark class="highlight">24px bold</mark> heading</h3>
+          <h4 class="heading-small">A <mark class="highlight">19px bold</mark> heading</h4>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -230,14 +208,14 @@
 </pre>
 
 
-          <!-- lead paragraph and body copy -->
-  				<h3 class="heading-small">Lead paragraph and body copy</h3>
+      <!-- lead paragraph and body copy -->
+			<h3 class="heading-small">Lead paragraph and body copy</h3>
 
-  				<div class="example">
-            <p class="lede">A <mark class="highlight">24px</mark> lead paragraph.</p>
-            <p class="font-small">A <mark class="highlight">19px</mark> body copy paragraph.</p>
-            <p class="font-xsmall">A <mark class="highlight">16px</mark> supporting text paragraph.</p>
-  				</div>
+				<div class="example">
+          <p class="lede">A <mark class="highlight">24px</mark> lead paragraph.</p>
+          <p class="font-small">A <mark class="highlight">19px</mark> body copy paragraph.</p>
+          <p class="font-xsmall">A <mark class="highlight">16px</mark> supporting text paragraph.</p>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -250,24 +228,24 @@
 </pre>
 
 
-          <!-- lists -->
-          <h3 class="heading-small">Lists</h3>
+      <!-- lists -->
+      <h3 class="heading-small">Lists</h3>
 
-  				<div class="example">
-            <ul class="list-bullet">
-              <li>here is a bulleted list</li>
-              <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
-              <li>vestibulum id ligula porta <b>felis euismod semper</b></li>
-              <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
-            </ul>
+				<div class="example">
+          <ul class="list-bullet">
+            <li>here is a bulleted list</li>
+            <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+            <li>vestibulum id ligula porta <b>felis euismod semper</b></li>
+            <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+          </ul>
 
-            <ul class="list-number">
-              <li>here is a numbered list</li>
-              <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
-              <li>vestibulum id ligula porta felis euismod semper</li>
-              <li>integer posuere erat a ante venenatis <a href="https://www.gov.uk" rel="external">velit aliquet</a></li>
-            </ul>
-  				</div>
+          <ul class="list-number">
+            <li>here is a numbered list</li>
+            <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+            <li>vestibulum id ligula porta felis euismod semper</li>
+            <li>integer posuere erat a ante venenatis <a href="https://www.gov.uk" rel="external">velit aliquet</a></li>
+          </ul>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -288,29 +266,29 @@
 </pre>
 
 
-          <!-- addresses -->
-          <h2 class="heading-small">Address using ( <a href="http://microformats.org/wiki/microdata">microdata </a>)</h2>
+      <!-- addresses -->
+      <h2 class="heading-small">Address using ( <a href="http://microformats.org/wiki/microdata">microdata </a>)</h2>
 
-            <div class="example">
+        <div class="example">
 
-              <div class="hcard" itemtype="http://schema.org/Organization" itemscope>
+          <div class="hcard" itemtype="http://schema.org/Organization" itemscope>
 
-                <div itemprop="name"><b>Beech Farm</b></div>
+            <div itemprop="name"><b>Beech Farm</b></div>
 
-                <div class="hcard-adr" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-                  <div itemprop="streetAddress">Pooley Bridge</div>
-                  <div itemprop="addressLocality">Penrith</div>
-                  <div itemprop="addressRegion">Cumbria</div>
-                  <div itemprop="postalCode">CH3 6NZ</div>
-                  <div itemprop="addressCountry">United Kingdom</div>
-                </div>
-
-                <div itemprop="telephone">0147 9643 7770</div>
-                <div itemprop="email"><a href="mailto:joe.bloggs@beechfarm.co.uk">joe.bloggs@beechfarm.co.uk</a></div>
-
-              </div>
-
+            <div class="hcard-adr" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+              <div itemprop="streetAddress">Pooley Bridge</div>
+              <div itemprop="addressLocality">Penrith</div>
+              <div itemprop="addressRegion">Cumbria</div>
+              <div itemprop="postalCode">CH3 6NZ</div>
+              <div itemprop="addressCountry">United Kingdom</div>
             </div>
+
+            <div itemprop="telephone">0147 9643 7770</div>
+            <div itemprop="email"><a href="mailto:joe.bloggs@beechfarm.co.uk">joe.bloggs@beechfarm.co.uk</a></div>
+
+          </div>
+
+        </div>
 
 
 <pre class="language-markup">
@@ -335,20 +313,20 @@
 </pre>
 
 
-          <!-- inset text -->
-          <h3 class="heading-small">Inset text</h3>
+      <!-- inset text -->
+      <h3 class="heading-small">Inset text</h3>
 
-  				<div class="example">
+  			<div class="example">
 
-            <div class="panel-indent">
-              <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
-            </div>
+          <div class="panel-indent">
+            <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+          </div>
 
-            <div class="panel-indent text">
-              <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
-            </div>
+          <div class="panel-indent text">
+            <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+          </div>
 
-  				</div>
+  			</div>
 
 <pre class="language-markup">
 <code>
@@ -363,20 +341,20 @@
 </pre>
 
 
-          <!-- hidden text -->
-          <h3 class="heading-small">Hidden text (progressive disclosure)</h3>
+      <!-- hidden text -->
+      <h3 class="heading-small">Hidden text (progressive disclosure)</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <details>
-              <summary><span class="summary">Help with nationality</span></summary>
-              <div class="panel-indent">
-                <p>If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.</p>
-                <p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.</p>
-              </div>
-            </details>
+          <details>
+            <summary><span class="summary">Help with nationality</span></summary>
+            <div class="panel-indent">
+              <p>If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.</p>
+              <p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.</p>
+            </div>
+          </details>
 
-  				</div>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -391,33 +369,33 @@
 </pre>
 
 
-				</div>
-				<!-- end -->
+		</div>
+		<!-- end -->
 
 
-        <!-- layout -->
-				<div id="layout">
+    <!-- layout -->
+		<div id="layout">
 
 
-  				<h2 class="heading-large">Layout</h2>
-  				<h3 class="heading-medium">Grid unit proportions</h3>
+			<h2 class="heading-large">Layout</h2>
+			<h3 class="heading-medium">Grid unit proportions</h3>
 
 
-          <!-- halves -->
-  				<h4 class="heading-small">Halves</h4>
+      <!-- halves -->
+			<h4 class="heading-small">Halves</h4>
 
-  				<div class="example example-grid">
+				<div class="example example-grid">
 
-            <div class="grid-row">
-              <div class="column-half">
-                  <p>Content</p>
-              </div>
-              <div class="column-half">
+          <div class="grid-row">
+            <div class="column-half">
                 <p>Content</p>
-              </div>
             </div>
+            <div class="column-half">
+              <p>Content</p>
+            </div>
+          </div>
 
-  				</div>
+				</div>
 
 
 <pre class="language-markup">
@@ -434,24 +412,24 @@
 </pre>
 
 
-          <!-- thirds -->
-          <h4 class="heading-small">Thirds</h4>
+      <!-- thirds -->
+      <h4 class="heading-small">Thirds</h4>
 
-  				<div class="example example-grid">
+				<div class="example example-grid">
 
-            <div class="grid-row">
-              <div class="column-third">
-                <p>Content</p>
-              </div>
-              <div class="column-third">
-                <p>Content</p>
-              </div>
-              <div class="column-third">
-                <p>Content</p>
-              </div>
+          <div class="grid-row">
+            <div class="column-third">
+              <p>Content</p>
             </div>
+            <div class="column-third">
+              <p>Content</p>
+            </div>
+            <div class="column-third">
+              <p>Content</p>
+            </div>
+          </div>
 
-  				</div>
+				</div>
 
 
 <pre class="language-markup">
@@ -471,21 +449,21 @@
 </pre>
 
 
-          <!-- two thirds / one third -->
-          <h4 class="heading-small">Two Thirds / One Third</h4>
+      <!-- two thirds / one third -->
+      <h4 class="heading-small">Two Thirds / One Third</h4>
 
-  				<div class="example example-grid">
+				<div class="example example-grid">
 
-            <div class="grid-row">
-              <div class="column-two-thirds">
-                <p>Content</p>
-              </div>
-              <div class="column-third">
-                <p>Content</p>
-              </div>
+          <div class="grid-row">
+            <div class="column-two-thirds">
+              <p>Content</p>
             </div>
-
+            <div class="column-third">
+              <p>Content</p>
+            </div>
           </div>
+
+        </div>
 
 
 <pre class="language-markup">
@@ -502,21 +480,21 @@
 </pre>
 
 
-          <!-- one third / two thirds -->
-          <h4 class="heading-small">One Third / Two Thirds</h4>
+      <!-- one third / two thirds -->
+      <h4 class="heading-small">One Third / Two Thirds</h4>
 
-  				<div class="example example-grid">
+				<div class="example example-grid">
 
-            <div class="grid-row">
-              <div class="column-third">
-                <p>Content</p>
-              </div>
-              <div class="column-two-thirds">
-                <p>Content</p>
-              </div>
+          <div class="grid-row">
+            <div class="column-third">
+              <p>Content</p>
             </div>
-
+            <div class="column-two-thirds">
+              <p>Content</p>
+            </div>
           </div>
+
+        </div>
 
 
 <pre class="language-markup">
@@ -533,27 +511,27 @@
 </pre>
 
 
-          <!-- quarters -->
-          <h4 class="heading-small">Quarters</h4>
+      <!-- quarters -->
+      <h4 class="heading-small">Quarters</h4>
 
-  				<div class="example example-grid">
+				<div class="example example-grid">
 
-            <div class="grid-row">
-              <div class="column-quarter">
-                <p>Content</p>
-              </div>
-              <div class="column-quarter">
-                <p>Content</p>
-              </div>
-              <div class="column-quarter">
-                <p>Content</p>
-              </div>
-              <div class="column-quarter">
-                <p>Content</p>
-              </div>
+          <div class="grid-row">
+            <div class="column-quarter">
+              <p>Content</p>
             </div>
-
+            <div class="column-quarter">
+              <p>Content</p>
+            </div>
+            <div class="column-quarter">
+              <p>Content</p>
+            </div>
+            <div class="column-quarter">
+              <p>Content</p>
+            </div>
           </div>
+
+        </div>
 
 
 <pre class="language-markup">
@@ -576,58 +554,58 @@
 </pre>
 
 
-			  </div>
-        <!-- end -->
+	  </div>
+    <!-- end -->
 
 
-        <!-- tables -->
-				<div id="tables">
+    <!-- tables -->
+		<div id="tables">
 
 
-  				<h2 class="heading-large">Tables</h2>
+			<h2 class="heading-large">Tables</h2>
 
 
-          <!-- default table -->
-  				<h3 class="heading-small">Default Table (GOV.UK)</h3>
+      <!-- default table -->
+			<h3 class="heading-small">Default Table (GOV.UK)</h3>
 
-  				<div class="example">
-            <table>
+			<div class="example">
+        <table>
 
-              <caption class="visuallyhidden">Business plan execution results</caption>
+          <caption class="visuallyhidden">Business plan execution results</caption>
 
-              <thead>
-                <tr>
-                  <th>&nbsp;</th>
-                  <th scope="col">Business Plan</th>
-                  <th scope="col">Actual</th>
-                </tr>
-              </thead>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Business Plan</th>
+              <th scope="col">Actual</th>
+            </tr>
+          </thead>
 
-              <tbody>
-                <tr>
-                  <td>Vehicle volumes</td>
-                  <td>103,672,000</td>
-                  <td>97,424,000</td>
-                </tr>
-                <tr>
-                  <td>Driver volumes</td>
-                  <td>16,891,000</td>
-                  <td>15,197,000</td>
-                </tr>
-                <tr>
-                  <td>Electronic take-up target</td>
-                  <td>54%</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>Electronic take-up (actual)</td>
-                  <td>-</td>
-                  <td>50.3%</td>
-                </tr>
-              </tbody>
+          <tbody>
+            <tr>
+              <td>Vehicle volumes</td>
+              <td>103,672,000</td>
+              <td>97,424,000</td>
+            </tr>
+            <tr>
+              <td>Driver volumes</td>
+              <td>16,891,000</td>
+              <td>15,197,000</td>
+            </tr>
+            <tr>
+              <td>Electronic take-up target</td>
+              <td>54%</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Electronic take-up (actual)</td>
+              <td>-</td>
+              <td>50.3%</td>
+            </tr>
+          </tbody>
 
-            </table>
-  				</div>
+        </table>
+			</div>
 
 <pre class="language-markup">
 <code>
@@ -667,47 +645,47 @@
 </pre>
 
 
-          <!-- alternative table -->
-  				<h3 class="heading-small">Alternative Table (DEFRA)</h3>
+      <!-- alternative table -->
+			<h3 class="heading-small">Alternative Table (DEFRA)</h3>
 
-  				<div class="example">
-            <table class="table-capd">
+			<div class="example">
+        <table class="table-capd">
 
-              <caption class="visuallyhidden">Business plan execution results</caption>
+          <caption class="visuallyhidden">Business plan execution results</caption>
 
-              <thead>
-                <tr>
-                  <th>&nbsp;</th>
-                  <th scope="col">Business Plan</th>
-                  <th scope="col">Actual</th>
-                </tr>
-              </thead>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Business Plan</th>
+              <th scope="col">Actual</th>
+            </tr>
+          </thead>
 
-              <tbody>
-                <tr>
-                  <td>Vehicle volumes</td>
-                  <td>103,672,000</td>
-                  <td>97,424,000</td>
-                </tr>
-                <tr>
-                  <td>Driver volumes</td>
-                  <td>16,891,000</td>
-                  <td>15,197,000</td>
-                </tr>
-                <tr>
-                  <td>Electronic take-up target</td>
-                  <td>54%</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>Electronic take-up (actual)</td>
-                  <td>-</td>
-                  <td>50.3%</td>
-                </tr>
-              </tbody>
+          <tbody>
+            <tr>
+              <td>Vehicle volumes</td>
+              <td>103,672,000</td>
+              <td>97,424,000</td>
+            </tr>
+            <tr>
+              <td>Driver volumes</td>
+              <td>16,891,000</td>
+              <td>15,197,000</td>
+            </tr>
+            <tr>
+              <td>Electronic take-up target</td>
+              <td>54%</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Electronic take-up (actual)</td>
+              <td>-</td>
+              <td>50.3%</td>
+            </tr>
+          </tbody>
 
-            </table>
-  				</div>
+        </table>
+			</div>
 
 <pre class="language-markup">
 <code>
@@ -747,24 +725,24 @@
 </pre>
 
 
+		</div>
+		<!-- end -->
+
+
+    <!-- forms -->
+		<div id="forms">
+
+
+			<h2 class="heading-large">Forms</h2>
+
+
+			<!-- form labels -->
+			<h3 class="heading-small">Form labels</h3>
+
+				<div class="example">
+          <label class="form-label" for="full-name">Full name</label>
+          <input class="form-control" id="full-name" type="text">
 				</div>
-				<!-- end -->
-
-
-        <!-- forms -->
-				<div id="forms">
-
-
-  				<h2 class="heading-large">Forms</h2>
-
-
-  				<!-- form labels -->
-  				<h3 class="heading-small">Form labels</h3>
-
-  				<div class="example">
-            <label class="form-label" for="full-name">Full name</label>
-            <input class="form-control" id="full-name" type="text">
-  				</div>
 
 
 <pre class="language-markup">
@@ -775,19 +753,19 @@
 </pre>
 
 
-          <!-- form spacing -->
-          <h3 class="heading-small">Form spacing</h3>
+      <!-- form spacing -->
+      <h3 class="heading-small">Form spacing</h3>
 
-  				<div class="example">
-            <div class="form-group">
-              <label class="form-label" for="first-name">First name</label>
-              <input class="form-control" id="first-name" type="text">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="last-name">Last name</label>
-              <input class="form-control" id="last-name" type="text">
-            </div>
-  				</div>
+				<div class="example">
+          <div class="form-group">
+            <label class="form-label" for="first-name">First name</label>
+            <input class="form-control" id="first-name" type="text">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="last-name">Last name</label>
+            <input class="form-control" id="last-name" type="text">
+          </div>
+				</div>
 
 
 <pre class="language-markup">
@@ -807,19 +785,19 @@
 </pre>
 
 
-          <!-- form hint text -->
-          <h3 class="heading-small">Form hint text</h3>
+      <!-- form hint text -->
+      <h3 class="heading-small">Form hint text</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <label class="form-label" for="ni-number">
-              National Insurance number
-              <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
-            </label>
+          <label class="form-label" for="ni-number">
+            National Insurance number
+            <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
+          </label>
 
-            <input class="form-control" id="ni-number" type="text">
+          <input class="form-control" id="ni-number" type="text">
 
-  				</div>
+				</div>
 
 
 <pre class="language-markup">
@@ -834,37 +812,37 @@
 </pre>
 
 
-          <!-- date inputs -->
-          <h3 class="heading-small">Date inputs</h3>
+      <!-- date inputs -->
+      <h3 class="heading-small">Date inputs</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <fieldset>
+          <fieldset>
 
-              <legend class="form-label">Date of birth</legend>
+            <legend class="form-label">Date of birth</legend>
 
-              <div class="form-date">
+            <div class="form-date">
 
-              	<div class="form-group form-group-day">
-              		<label class="form-label" for="dob-day">Day</label>
-              		<input class="form-control" type="text" id="dob-day">
-              	</div>
+            	<div class="form-group form-group-day">
+            		<label class="form-label" for="dob-day">Day</label>
+            		<input class="form-control" type="text" id="dob-day">
+            	</div>
 
-              	<div class="form-group form-group-month">
-              		<label class="form-label" for="dob-month">Month</label>
-              		<input class="form-control" type="text" id="dob-month">
-              	</div>
+            	<div class="form-group form-group-month">
+            		<label class="form-label" for="dob-month">Month</label>
+            		<input class="form-control" type="text" id="dob-month">
+            	</div>
 
-              	<div class="form-group form-group-year">
-              		<label class="form-label" for="dob-year">Year</label>
-              		<input class="form-control" type="text" id="dob-year">
-              	</div>
+            	<div class="form-group form-group-year">
+            		<label class="form-label" for="dob-year">Year</label>
+            		<input class="form-control" type="text" id="dob-year">
+            	</div>
 
-              </div>
+            </div>
 
-            </fieldset>
+          </fieldset>
 
-  				</div>
+				</div>
 
 
 <pre class="language-markup">
@@ -897,19 +875,19 @@
 </pre>
 
 
-          <!-- standard search -->
-          <h3 class="heading-small">Select boxes</h3>
+      <!-- standard search -->
+      <h3 class="heading-small">Select boxes</h3>
 
-  				<div class="example">
-            <label class="form-label" for="legal-status">Legal status</label>
-            <select class="form-control-select" id="legal-status">
-              <option>-- Please make a selection --</option>
-              <option value="1">Charitable Interest Organisation</option>
-              <option value="2">Community Interest Company</option>
-              <option value="3">Government (Central)</option>
-              <option value="4">Government Limited Liability Partnership</option>
-            </select>
-  				</div>
+				<div class="example">
+          <label class="form-label" for="legal-status">Legal status</label>
+          <select class="form-control-select" id="legal-status">
+            <option>-- Please make a selection --</option>
+            <option value="1">Charitable Interest Organisation</option>
+            <option value="2">Community Interest Company</option>
+            <option value="3">Government (Central)</option>
+            <option value="4">Government Limited Liability Partnership</option>
+          </select>
+				</div>
 
 
 <pre class="language-markup">
@@ -927,30 +905,30 @@
 </pre>
 
 
-          <!-- standard search -->
-          <h3 class="heading-small">Standard search</h3>
+      <!-- standard search -->
+      <h3 class="heading-small">Standard search</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <fieldset>
+          <fieldset>
 
-              <legend class="form-label">What are you looking for?</legend>
+            <legend class="form-label">What are you looking for?</legend>
 
-              <div class="form-search">
+            <div class="form-search">
 
-                <div class="form-group-search">
-                  <input class="form-control" id="search" type="text">
-                </div>
-
-                <div class="form-group-button">
-                  <button class="button" type="button" role="button">Search</button>
-                </div>
-
+              <div class="form-group-search">
+                <input class="form-control" id="search" type="text">
               </div>
 
-            </fieldset>
+              <div class="form-group-button">
+                <button class="button" type="button" role="button">Search</button>
+              </div>
 
-  				</div>
+            </div>
+
+          </fieldset>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -976,15 +954,15 @@
 </pre>
 
 
-          <!-- textarea -->
-          <h3 class="heading-small">Form textarea</h3>
+      <!-- textarea -->
+      <h3 class="heading-small">Form textarea</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <label class="form-label" for="enquiry">Enquiry</label>
-            <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
+          <label class="form-label" for="enquiry">Enquiry</label>
+          <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
 
-  				</div>
+				</div>
 
 
 <pre class="language-markup">
@@ -995,30 +973,30 @@
 </pre>
 
 
-          <!-- radio buttons inline -->
-          <h3 class="heading-small">Radio buttons inline</h3>
+      <!-- radio buttons inline -->
+      <h3 class="heading-small">Radio buttons inline</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <fieldset class="inline">
+          <fieldset class="inline">
 
-              <legend class="form-label">Do you know their National Insurance number?</legend>
+            <legend class="form-label">Do you know their National Insurance number?</legend>
 
-              <div class="form-group form-group-compound">
+            <div class="form-group form-group-compound">
 
-                <label class="block-label" for="radio-inline-1">
-                  <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
-                </label>
+              <label class="block-label" for="radio-inline-1">
+                <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
+              </label>
 
-                <label class="block-label" for="radio-inline-2">
-                  <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
-                </label>
+              <label class="block-label" for="radio-inline-2">
+                <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
+              </label>
 
-              </div>
+            </div>
 
-            </fieldset>
+          </fieldset>
 
-  				</div>
+				</div>
 
 
 <pre class="language-markup">
@@ -1044,29 +1022,29 @@
 </pre>
 
 
-          <!-- radio button block -->
-          <h3 class="heading-small">Radio buttons block</h3>
+      <!-- radio button block -->
+      <h3 class="heading-small">Radio buttons block</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <label class="block-label" for="radio-1">
-              <input id="radio-1" name="radio-group" value="Northern Ireland" type="radio">
-              Northern Ireland
-            </label>
+          <label class="block-label" for="radio-1">
+            <input id="radio-1" name="radio-group" value="Northern Ireland" type="radio">
+            Northern Ireland
+          </label>
 
-            <label class="block-label" for="radio-2">
-              <input id="radio-2" name="radio-group" value="Isle of Man or the Channel Islands" type="radio">
-              Isle of Man or the Channel Islands
-            </label>
+          <label class="block-label" for="radio-2">
+            <input id="radio-2" name="radio-group" value="Isle of Man or the Channel Islands" type="radio">
+            Isle of Man or the Channel Islands
+          </label>
 
-            <p class="form-block">or</p>
+          <p class="form-block">or</p>
 
-            <label class="block-label" for="radio-3">
-              <input id="radio-3" name="radio-group" value="I am a British citizen living abroad" type="radio">
-              I am a British citizen living abroad
-            </label>
+          <label class="block-label" for="radio-3">
+            <input id="radio-3" name="radio-group" value="I am a British citizen living abroad" type="radio">
+            I am a British citizen living abroad
+          </label>
 
-  				</div>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1090,39 +1068,39 @@
 </pre>
 
 
-          <!-- radio buttons with heading -->
-          <h3 class="heading-small">Radio buttons with heading</h3>
+      <!-- radio buttons with heading -->
+      <h3 class="heading-small">Radio buttons with heading</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <form class="form">
+          <form class="form">
 
-              <fieldset>
+            <fieldset>
 
-                <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
+              <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
 
-                <p>Select all that apply</p>
+              <p>Select all that apply</p>
 
-                <label class="block-label" for="checkbox-1">
-                  <input id="checkbox-1" value="waste-animal" type="checkbox">
-                  Waste from animal carcasses
-                </label>
+              <label class="block-label" for="checkbox-1">
+                <input id="checkbox-1" value="waste-animal" type="checkbox">
+                Waste from animal carcasses
+              </label>
 
-                <label class="block-label" for="checkbox-2">
-                  <input id="checkbox-2" value="waste-mines" type="checkbox">
-                  Waste from mines or quarries
-                </label>
+              <label class="block-label" for="checkbox-2">
+                <input id="checkbox-2" value="waste-mines" type="checkbox">
+                Waste from mines or quarries
+              </label>
 
-                <label class="block-label" for="checkbox-3">
-                  <input id="checkbox-3" value="farm-agricultural" type="checkbox">
-                  Farm or agricultural waste
-                </label>
+              <label class="block-label" for="checkbox-3">
+                <input id="checkbox-3" value="farm-agricultural" type="checkbox">
+                Farm or agricultural waste
+              </label>
 
-              </fieldset>
+            </fieldset>
 
-            </form>
+          </form>
 
-  				</div>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1156,19 +1134,19 @@
 </pre>
 
 
-          <!-- radio button alternative approach -->
-          <h3 class="heading-small">Radio button alternative approach</h3>
+      <!-- radio button alternative approach -->
+      <h3 class="heading-small">Radio button alternative approach</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <label class="form-label" for="telephone-number">Enter your telephone number</label>
-              <input class="form-control" id="telephone-number" type="text">
-              <label class="form-checkbox" for="checkbox-telephone-number">
-              <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
-              I need to be contacted using a text phone
-            </label>
+          <label class="form-label" for="telephone-number">Enter your telephone number</label>
+            <input class="form-control" id="telephone-number" type="text">
+            <label class="form-checkbox" for="checkbox-telephone-number">
+            <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
+            I need to be contacted using a text phone
+          </label>
 
-  				</div>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1183,32 +1161,32 @@
 </pre>
 
 
-          <!-- inset form elements -->
-          <h3 class="heading-small">Inset form elements</h3>
+      <!-- inset form elements -->
+      <h3 class="heading-small">Inset form elements</h3>
 
-  				<div class="example">
+				<div class="example">
 
-            <form class="form">
-              <fieldset class="inline">
-                <legend class="form-label">Do you know their National Insurance number?</legend>
-                <div class="form-group form-group-compound">
-                  <label class="block-label" data-target="example-ni-number" for="radio-indent-1">
-                    <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
-                    Yes
-                  </label>
-                  <label class="block-label" for="radio-indent-2">
-                    <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
-                    No
-                  </label>
-                </div>
-                <div class="panel-indent js-hidden" id="example-ni-number">
-                  <label class="form-label" for="national-insurance">National Insurance number</label>
-                  <input class="form-control" id="national-insurance" type="text">
-                </div>
-              </fieldset>
-            </form>
+          <form class="form">
+            <fieldset class="inline">
+              <legend class="form-label">Do you know their National Insurance number?</legend>
+              <div class="form-group form-group-compound">
+                <label class="block-label" data-target="example-ni-number" for="radio-indent-1">
+                  <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
+                  Yes
+                </label>
+                <label class="block-label" for="radio-indent-2">
+                  <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
+                  No
+                </label>
+              </div>
+              <div class="panel-indent js-hidden" id="example-ni-number">
+                <label class="form-label" for="national-insurance">National Insurance number</label>
+                <input class="form-control" id="national-insurance" type="text">
+              </div>
+            </fieldset>
+          </form>
 
-  				</div>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1244,12 +1222,12 @@
 </pre>
 
 
-          <!-- standard button -->
-          <h3 class="heading-small">Standard button</h3>
+      <!-- standard button -->
+      <h3 class="heading-small">Standard button</h3>
 
-  				<div class="example">
-            <button class="button" type="button" role="button">Save and continue</button>
-  				</div>
+				<div class="example">
+          <button class="button" type="button" role="button">Save and continue</button>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1258,12 +1236,12 @@
 </pre>
 
 
-          <!-- disabled button -->
-          <h3 class="heading-small">Disabled button</h3>
+      <!-- disabled button -->
+      <h3 class="heading-small">Disabled button</h3>
 
-  				<div class="example">
-            <button class="button" type="button" disabled="disabled" role="button">Save and continue</button>
-  				</div>
+				<div class="example">
+          <button class="button" type="button" disabled="disabled" role="button">Save and continue</button>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1272,12 +1250,12 @@
 </pre>
 
 
-          <!-- start now button -->
-          <h3 class="heading-small">Start now button</h3>
+      <!-- start now button -->
+      <h3 class="heading-small">Start now button</h3>
 
-  				<div class="example">
-            <button class="button button-get-started" type="button" role="button">Start now</button>
-  				</div>
+				<div class="example">
+          <button class="button button-get-started" type="button" role="button">Start now</button>
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1286,35 +1264,35 @@
 </pre>
 
 
-				</div>
-				<!-- end -->
+		</div>
+		<!-- end -->
 
 
-        <!-- details -->
-				<div id="details">
+    <!-- details -->
+		<div id="details">
 
 
-  				<h2 class="heading-medium">Details</h2>
+			<h2 class="heading-medium">Details</h2>
 
 
-          <!-- html5 details -->
-  				<h3 class="heading-small">Support for HTML5's &lt;details&gt; and &lt;summary&gt;</h3>
+      <!-- html5 details -->
+			<h3 class="heading-small">Support for HTML5's &lt;details&gt; and &lt;summary&gt;</h3>
 
-  				<div class="example">
+			<div class="example">
 
-  				<details>
+			<details>
 
-            <summary><span class="summary">Why aren't all prisons available?</span></summary>
+        <summary><span class="summary">Why aren't all prisons available?</span></summary>
 
-              <div class="panel-indent">
+          <div class="panel-indent">
 
-                <p>You can’t make an online visit request for all prisons (eg high-security and private prisons). If you can’t enter the prison you're visiting, contact the prison to find out how to book.</p>
+            <p>You can’t make an online visit request for all prisons (eg high-security and private prisons). If you can’t enter the prison you're visiting, contact the prison to find out how to book.</p>
 
-              </div>
+          </div>
 
-            </details>
+        </details>
 
-  				</div>
+			</div>
 
 <pre class="language-markup">
 <code>
@@ -1331,31 +1309,31 @@
 </pre>
 
 
-				</div>
-				<!-- end -->
+		</div>
+		<!-- end -->
 
 
-        <!-- alerts -->
-				<div id="alerts">
+    <!-- alerts -->
+		<div id="alerts">
 
 
-  				<h2 class="heading-large">Alerts</h2>
+			<h2 class="heading-large">Alerts</h2>
 
 
-          <!-- success alert -->
-          <h3 class="heading-small">Success alert</h3>
+      <!-- success alert -->
+      <h3 class="heading-small">Success alert</h3>
 
-  				<div class="alert-success" role="alert">
+				<div class="alert-success" role="alert">
 
-						<span class="icon icon-tick" aria-hidden="true"></span>
+					<span class="icon icon-tick" aria-hidden="true"></span>
 
-						<div class="alert-message">
+					<div class="alert-message">
 
-							<p>You have amended your <b>business details</b></p>
-
-						</div>
+						<p>You have amended your <b>business details</b></p>
 
 					</div>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -1373,18 +1351,18 @@
 </pre>
 
 
-          <!-- information alert -->
-          <h3 class="heading-small">Information alert</h3>
+      <!-- information alert -->
+      <h3 class="heading-small">Information alert</h3>
 
-  				<div class="alert-info" role="alert">
+				<div class="alert-info" role="alert">
 
-						<div class="alert-message">
+					<div class="alert-message">
 
-							<p>To view your business details, view and amend land parcels and land cover, select '<b>View business</b>' in the table below.</p>
-
-						</div>
+						<p>To view your business details, view and amend land parcels and land cover, select '<b>View business</b>' in the table below.</p>
 
 					</div>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -1400,18 +1378,18 @@
 </pre>
 
 
-          <!-- eligible alert -->
-          <h3 class="heading-small">Eligible alert</h3>
+      <!-- eligible alert -->
+      <h3 class="heading-small">Eligible alert</h3>
 
-  				<div class="alert-info" role="alert">
+				<div class="alert-info" role="alert">
 
-						<span class="icon icon-tick" aria-hidden="true"></span>
+					<span class="icon icon-tick" aria-hidden="true"></span>
 
-						<div class="alert-message">
-							<p>Based on the information you have given us, you might be eligble to receive entitlements from the National Reserve.</p>
-						</div>
-
+					<div class="alert-message">
+						<p>Based on the information you have given us, you might be eligble to receive entitlements from the National Reserve.</p>
 					</div>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -1429,18 +1407,18 @@
 </pre>
 
 
-          <!-- not eligible alert -->
-          <h3 class="heading-small">Not eligible alert</h3>
+      <!-- not eligible alert -->
+      <h3 class="heading-small">Not eligible alert</h3>
 
-  				<div class="alert-info" role="alert">
+				<div class="alert-info" role="alert">
 
-						<span class="icon icon-cross" aria-hidden="true"></span>
+					<span class="icon icon-cross" aria-hidden="true"></span>
 
-						<div class="alert-message">
-							<p>Based on the information you have given us, you are not eligble to receive entitlements from the National Reserve.</p>
-						</div>
-
+					<div class="alert-message">
+						<p>Based on the information you have given us, you are not eligble to receive entitlements from the National Reserve.</p>
 					</div>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -1458,18 +1436,18 @@
 </pre>
 
 
-          <!-- error alert -->
-          <h3 class="heading-small">Error alert</h3>
+      <!-- error alert -->
+      <h3 class="heading-small">Error alert</h3>
 
-  				<div class="alert-error" role="alert">
+				<div class="alert-error" role="alert">
 
-						<span class="icon icon-cross" aria-hidden="true"></span>
+					<span class="icon icon-cross" aria-hidden="true"></span>
 
-						<div class="alert-message">
-							<p>The land use area you've entered is greater than the size of the parcel. Check and try again.</p>
-						</div>
-
+					<div class="alert-message">
+						<p>The land use area you've entered is greater than the size of the parcel. Check and try again.</p>
 					</div>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -1487,20 +1465,20 @@
 </pre>
 
 
-          <!-- informative alert -->
-          <h3 class="heading-small">Informative alert</h3>
+      <!-- informative alert -->
+      <h3 class="heading-small">Informative alert</h3>
 
-  				<div class="alert-info" role="alert">
+				<div class="alert-info" role="alert">
 
-						<div class="alert-message">
+					<div class="alert-message">
 
-							<h3 class="alert-header"><span class="alert-number">4</span> businesses to check</h3>
+						<h3 class="alert-header"><span class="alert-number">4</span> businesses to check</h3>
 
-							<p>To check your business details, select '<b>Check business</b>' in the table below.</p>
-
-						</div>
+						<p>To check your business details, select '<b>Check business</b>' in the table below.</p>
 
 					</div>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -1520,20 +1498,20 @@
 </pre>
 
 
-          <!-- completion alert -->
-          <h3 class="heading-small">Completion alert</h3>
+      <!-- completion alert -->
+      <h3 class="heading-small">Completion alert</h3>
 
-  				<div class="alert-complete" role="alert">
+				<div class="alert-complete" role="alert">
 
-						<div class="alert-message">
+					<div class="alert-message">
 
-							<p>Your reference number is</p>
+						<p>Your reference number is</p>
 
-              <strong class="alert-number">200113567</strong>
-
-						</div>
+            <strong class="alert-number">200113567</strong>
 
 					</div>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -1553,20 +1531,20 @@
 </pre>
 
 
-          <!-- reference alert -->
-          <h3 class="heading-small">Reference alert</h3>
+      <!-- reference alert -->
+      <h3 class="heading-small">Reference alert</h3>
 
-  				<div class="alert-reference" role="alert">
+				<div class="alert-reference" role="alert">
 
-						<div class="alert-message">
+					<div class="alert-message">
 
-							<p>CPH number</p>
+						<p>CPH number</p>
 
-              <strong class="alert-number">200113567</strong>
-
-						</div>
+            <strong class="alert-number">200113567</strong>
 
 					</div>
+
+				</div>
 
 
 <pre class="language-markup">
@@ -1586,87 +1564,85 @@
 </pre>
 
 
-				</div>
-				<!-- end -->
+		</div>
+		<!-- end -->
 
 
-				<!-- tabs -->
-				<div id="tabs">
+		<!-- tabs -->
+		<div id="tabs">
 
 
-				  <h2 class="heading-large">Tabs</h2>
+		  <h2 class="heading-large">Tabs</h2>
 
 
-          <!-- tabbed content -->
-          <h3 class="heading-small">Tabbed content</h3>
+      <!-- tabbed content -->
+      <h3 class="heading-small">Tabbed content</h3>
 
-          <div class="example">
+        <div class="example">
 
-            <div class="tabs">
+          <div class="tabs">
 
-              <div class="tabs-nav">
+            <div class="tabs-nav">
 
-                <ul class="tabs-list">
-                  <li class="active"><a href="#before-you-start">Before you start</a></li>
-                  <li><a href="#what-you-need-to-know">What you need to know</a></li>
-                  <li><a href="#other-ways-to-apply">Other ways to apply</a></li>
-                </ul>
+              <ul class="tabs-list">
+                <li class="active"><a href="#before-you-start">Before you start</a></li>
+                <li><a href="#what-you-need-to-know">What you need to know</a></li>
+                <li><a href="#other-ways-to-apply">Other ways to apply</a></li>
+              </ul>
 
-              </div>
+            </div>
 
-              <div class="tabs-content">
+            <div class="tabs-content">
 
-                  <div class="tabs-panel" id="before-you-start">
+                <div class="tabs-panel" id="before-you-start">
 
-                    <div class="text">
+                  <div class="text">
 
-                      <p>To get your first provisional driving licence online for a car, motorcycle or moped you must:</p>
-
-                      <ul class="list-bullet">
-                        <li>be a resident of Great Britain &ndash; there’s a different service in <a href="http://www.nidirect.gov.uk/applying-for-a-provisional-driving-licence" rel="external">Northern Ireland</a></li>
-                        <li>meet the minimum age requirement</li>
-                        <li>meet the <a href="/driving-eyesight-rules">minimum eyesight requirement</a></li>
-                        <li>not be prevented from driving for any reason</li>
-                        <li>pay &pound;50 by MasterCard, Visa, Electron, Maestro or Delta debit or credit card</li>
-                        <li>have a valid <abbr title="United Kngdom">UK</abbr> passport or <a href="/driving-licence-application-identity-documents">other form of identity</a></li>
-                        <li>have your National Insurance number if known</li>
-                        <li>provide addresses where you’ve lived for the last 3 years</li>
-                      </ul>
-
-                    </div>
-
-                  </div>
-
-                  <div class="tabs-panel" id="what-you-need-to-know">
+                    <p>To get your first provisional driving licence online for a car, motorcycle or moped you must:</p>
 
                     <ul class="list-bullet">
-                      <li>Proof of identification required</li>
-                      <li>3 years of address details required</li>
-                      <li>Debit or credit card required</li>
+                      <li>be a resident of Great Britain &ndash; there’s a different service in <a href="http://www.nidirect.gov.uk/applying-for-a-provisional-driving-licence" rel="external">Northern Ireland</a></li>
+                      <li>meet the minimum age requirement</li>
+                      <li>meet the <a href="/driving-eyesight-rules">minimum eyesight requirement</a></li>
+                      <li>not be prevented from driving for any reason</li>
+                      <li>pay &pound;50 by MasterCard, Visa, Electron, Maestro or Delta debit or credit card</li>
+                      <li>have a valid <abbr title="United Kngdom">UK</abbr> passport or <a href="/driving-licence-application-identity-documents">other form of identity</a></li>
+                      <li>have your National Insurance number if known</li>
+                      <li>provide addresses where you’ve lived for the last 3 years</li>
                     </ul>
 
                   </div>
 
-                  <div class="tabs-panel" id="other-ways-to-apply">
+                </div>
 
-                    <div class="text">
+                <div class="tabs-panel" id="what-you-need-to-know">
 
-                      <p>You can apply by post by completing a D1 application form, which you can get from
-                      the <a href="#"><abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr> form ordering service</a> or from a Post Office.</p>
+                  <ul class="list-bullet">
+                    <li>Proof of identification required</li>
+                    <li>3 years of address details required</li>
+                    <li>Debit or credit card required</li>
+                  </ul>
 
-                      <p>You’ll also need to include:</p>
+                </div>
 
-                      <ul class="list-bullet">
+                <div class="tabs-panel" id="other-ways-to-apply">
+
+                  <div class="text">
+
+                    <p>You can apply by post by completing a D1 application form, which you can get from
+                    the <a href="#"><abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr> form ordering service</a> or from a Post Office.</p>
+
+                    <p>You’ll also need to include:</p>
+
+                    <ul class="list-bullet">
                       <li>original documentation confirming your identity</li>
                       <li>a colour <a href="/photos-for-passports">passport-style photograph</a></li>
                       <li>the fee of &pound;50 by cheque or postal order payable to <abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr> (do not send cash)</li>
-                      </ul>
+                    </ul>
 
-                      <p>Send your completed application and payment to <abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr>, Swansea, SA99 1AD.</p>
+                    <p>Send your completed application and payment to <abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr>, Swansea, SA99 1AD.</p>
 
-                      <p>If you’re including non&ndash;<abbr title="United Kingdom">UK</abbr> identity documents send your application and payment to <abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr>, Swansea, SA99 1AF.</p>
-
-                    </div>
+                    <p>If you’re including non&ndash;<abbr title="United Kingdom">UK</abbr> identity documents send your application and payment to <abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr>, Swansea, SA99 1AF.</p>
 
                   </div>
 
@@ -1674,7 +1650,9 @@
 
               </div>
 
-  				</div>
+            </div>
+
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1702,24 +1680,24 @@
 </pre>
 
 
+		</div>
+		<!-- end -->
+
+
+		<!-- steps -->
+		<div id="steps">
+
+
+		  <h2 class="heading-large">Steps</h2>
+
+
+      <!-- step process -->
+		  <h3 class="heading-small">A multiple step process</h3>
+
+
+				<div class="example">
+				  <h2 class="steps-heading"><span class="steps-pos">Step 1 of 6</span> Your details</h2>
 				</div>
-				<!-- end -->
-
-
-				<!-- steps -->
-				<div id="steps">
-
-
-				  <h2 class="heading-large">Steps</h2>
-
-
-          <!-- step process -->
-				  <h3 class="heading-small">A multiple step process</h3>
-
-
-  				<div class="example">
-  				  <h2 class="steps-heading"><span class="steps-pos">Step 1 of 6</span> Your details</h2>
-  				</div>
 
 <pre class="language-markup">
 <code>
@@ -1728,67 +1706,67 @@
 </pre>
 
 
+		</div>
+		<!-- end -->
+
+
+		<!-- summary -->
+		<div id="summary">
+
+
+		  <h2 class="heading-large">Summary</h2>
+
+
+      <!-- summary of items -->
+      <h3 class="heading-small">A summary of items with title and value</h3>
+
+
+        <div class="example">
+
+          <div class="summary">
+
+          	<ul itemtype="http://schema.org/Organization" itemscope>
+          		<li>
+          			<h4 class="summary-title">Business name</h4>
+          			<div class="summary-value" itemprop="name">Beech Farm</div>
+          		</li>
+          		<li>
+          			<h4 class="summary-title">Firm reference</h4>
+          			<div class="summary-value">2000000045</div>
+          		</li>
+          		<li>
+          			<h4 class="summary-title"><abbr title="Value Added Tax">VAT</abbr> registration number</h4>
+          			<div class="summary-value">567890123</div>
+          		</li>
+          		<li>
+          			<h4 class="summary-title">Address</h4>
+                <div class="summary-value" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+                  <div itemprop="streetAddress">Pooley Bridge</div>
+                  <div itemprop="addressLocality">Penrith</div>
+                  <div itemprop="addressRegion">Cumbria</div>
+                  <div itemprop="postalCode">CH3 6NZ</div>
+                  <div itemprop="addressCountry">United Kingdom</div>
+                </div>
+          		</li>
+              <li>
+                <h4 class="summary-title">Landline</h4>
+                <div class="summary-value" itemprop="telephone">07337938476</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title">Mobile</h4>
+                <div class="summary-value" itemprop="telephone">07449654321</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title">Email</h4>
+                <div class="summary-value" itemprop="email"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></div>
+              </li>
+          	</ul>
+
+          </div>
+
 				</div>
-				<!-- end -->
-
-
-				<!-- summary -->
-				<div id="summary">
-
-
-				  <h2 class="heading-large">Summary</h2>
-
-
-          <!-- summary of items -->
-          <h3 class="heading-small">A summary of items with title and value</h3>
-
-
-          <div class="example">
-
-            <div class="summary">
-
-            	<ul itemtype="http://schema.org/Organization" itemscope>
-            		<li>
-            			<h4 class="summary-title">Business name</h4>
-            			<div class="summary-value" itemprop="name">Beech Farm</div>
-            		</li>
-            		<li>
-            			<h4 class="summary-title">Firm reference</h4>
-            			<div class="summary-value">2000000045</div>
-            		</li>
-            		<li>
-            			<h4 class="summary-title"><abbr title="Value Added Tax">VAT</abbr> registration number</h4>
-            			<div class="summary-value">567890123</div>
-            		</li>
-            		<li>
-            			<h4 class="summary-title">Address</h4>
-                  <div class="summary-value" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-                    <div itemprop="streetAddress">Pooley Bridge</div>
-                    <div itemprop="addressLocality">Penrith</div>
-                    <div itemprop="addressRegion">Cumbria</div>
-                    <div itemprop="postalCode">CH3 6NZ</div>
-                    <div itemprop="addressCountry">United Kingdom</div>
-                  </div>
-            		</li>
-                <li>
-                  <h4 class="summary-title">Landline</h4>
-                  <div class="summary-value" itemprop="telephone">07337938476</div>
-                </li>
-
-                <li>
-                  <h4 class="summary-title">Mobile</h4>
-                  <div class="summary-value" itemprop="telephone">07449654321</div>
-                </li>
-
-                <li>
-                  <h4 class="summary-title">Email</h4>
-                  <div class="summary-value" itemprop="email"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></div>
-                </li>
-            	</ul>
-
-            </div>
-
-  				</div>
 
 <pre class="language-markup">
 <code>
@@ -1844,58 +1822,58 @@
 </pre>
 
 
-				</div>
-				<!-- end -->
+		</div>
+		<!-- end -->
 
 
-				<!-- related content -->
-				<div id="related">
+		<!-- related content -->
+		<div id="related">
 
 
-				  <h2 class="heading-large">Related</h2>
+		  <h2 class="heading-large">Related</h2>
 
 
-          <!-- related content block -->
-          <h3 class="heading-small">Related content block</h3>
+      <!-- related content block -->
+      <h3 class="heading-small">Related content block</h3>
 
-          <div class="example example-grid">
+        <div class="example example-grid">
 
 
-              <div class="grid-row">
+            <div class="grid-row">
 
-                <div class="column-third">
+              <div class="column-third">
 
-                  <div class="related">
+                <div class="related">
 
-          				  <div class="related-section">
+        				  <div class="related-section">
 
-                      <h2 class="related-section-title">Dealing with <abbr title="Her Majesty's Revenue and Customs">HMRC</abbr></h2>
+                    <h2 class="related-section-title">Dealing with <abbr title="Her Majesty's Revenue and Customs">HMRC</abbr></h2>
 
-                      <ul class="related-section-links">
-                        <li><a href="/">Get help with tax</a></li>
-                        <li><a href="/">Handling someone's personal tax affairs on their behalf</a></li>
-                      </ul>
+                    <ul class="related-section-links">
+                      <li><a href="/">Get help with tax</a></li>
+                      <li><a href="/">Handling someone's personal tax affairs on their behalf</a></li>
+                    </ul>
 
-          				  </div>
+        				  </div>
 
-          				  <div class="related-section">
+        				  <div class="related-section">
 
-                      <h2 class="related-section-title">Elsewhere on GOV.UK</h2>
+                    <h2 class="related-section-title">Elsewhere on GOV.UK</h2>
 
-                      <ul class="related-section-links">
-                        <li><a href="/">Claiming and dealing with tax credits for someone else</a></li>
-                        <li><a href="/">Claim and deal with Child Benefit for someone else</a></li>
-                      </ul>
+                    <ul class="related-section-links">
+                      <li><a href="/">Claiming and dealing with tax credits for someone else</a></li>
+                      <li><a href="/">Claim and deal with Child Benefit for someone else</a></li>
+                    </ul>
 
-          				  </div>
+        				  </div>
 
-          				</div>
-
-                </div>
+        				</div>
 
               </div>
 
-  				</div>
+            </div>
+
+				</div>
 
 <pre class="language-markup">
 <code>
@@ -1928,14 +1906,8 @@
 </pre>
 
 
-				</div>
-				<!-- end -->
-
-
-			</div>
-
-
 		</div>
+		<!-- end -->
 
 
 	</main>

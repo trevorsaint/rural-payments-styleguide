@@ -64,6 +64,7 @@
   <script src="/javascripts/bower_components/requirejs/require.js" data-main="/javascripts/main.js"></script>
   <script src="/javascripts/requirejsConfig.js" ></script>
 
+
 	<!-- Header -->
   <div id="skiplink-container">
     <div>
@@ -113,40 +114,23 @@
 
 
 	<!-- Content -->
-  <main id="wrapper" role="main">
+  <main class="group" id="page-container" role="main">
 
 
-		<div id="content">
-
-
-			<div class="inner-block">
-
-				<div class="phase-banner">
-					<p>
-						<strong class="phase-tag">Beta</strong>
-						<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
-					</p>
-				</div>
-
-				<a class="back-link" href="/">Back to index</a>
-
-			</div>
-
-
-			<div class="grid-wrapper">
-
-          <div class="grid grid-1-1">
-
-              <div class="inner-block" ng-view>
-
-              </div>
-
-          </div>
-
-      </div>
-
-
+	  <div class="phase-banner">
+			<p>
+				<strong class="phase-tag">Beta</strong>
+				<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+			</p>
 		</div>
+
+
+		<a class="back-link" href="/">Back to index</a>
+
+
+    <div class="inner-block" ng-view>
+
+    </div>
 
 
 	</main>

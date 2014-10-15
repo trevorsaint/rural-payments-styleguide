@@ -111,101 +111,89 @@
 
 
 	<!-- Content -->
-  <main id="wrapper" role="main">
+  <main class="group" id="page-container" role="main">
 
 
-		<div id="content">
+		<div class="phase-banner">
+			<p>
+				<strong class="phase-tag">Beta</strong>
+				<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+			</p>
+		</div>
 
 
-			<div class="inner-block">
+		<a class="back-link" href="../">Back to forms</a>
 
 
-				<div class="phase-banner">
-					<p>
-						<strong class="phase-tag">Beta</strong>
-						<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
-					</p>
-				</div>
+		<h1 class="heading-xlarge">Form validation</h1>
 
 
-				<a class="back-link" href="../">Back to forms</a>
+		<form class="form" method="post" action="/">
 
 
-				<h1 class="heading-xlarge">Form validation</h1>
+			<div class="validation-summary group">
 
+				<h1 class="validation-heading">There was a problem submitting the form</h1>
 
-				<form class="form" method="post" action="/">
+				<p>Because of the following problems:</p>
 
-
-					<div class="validation-summary group">
-
-						<h1 class="validation-heading">There was a problem submitting the form</h1>
-
-						<p>Because of the following problems:</p>
-
-						<ol class="validation-list list-number text">
-							<li><a href="#register-email-label">Enter your email address &ndash; must be a valid email address</a></li>
-							<li><a href="#register-email-confirm-label">Re-enter your email address &ndash; must match Enter your email address</a></li>
-							<li><a href="#register-confirm-understanding">I agree to the Terms and conditions and privacy policy &ndash; must be checked</a></li>
-						</ol>
-
-					</div>
-
-
-					<div class="text">
-
-						<p>You need to give your email address and create a password. This is so you can make, save and retrieve LPAs.</p>
-
-						<p>You can create an account in your name to help someone else make an LPA. But they must make all the decisions about the LPA themselves.</p>
-
-						<p>If you already have an account please <a href="/">sign in</a>.</p>
-
-					</div>
-
-
-					<fieldset>
-
-						<div class="form-group validation">
-					      <label class="form-label" for="register-email" id="register-email-label">Enter your email address <span class="validation-message">must be a valid email address</span></label>
-					      <input class="form-control" type="email" id="register-email">
-						</div>
-
-						<div class="form-group validation">
-					      <label class="form-label" for="register-email-confirm" id="register-email-confirm-label">Re-enter your email address <span class="validation-message">must match Enter your email address</span></label>
-					      <input class="form-control" type="email" id="register-email-confirm">
-						</div>
-
-					</fieldset>
-
-
-					<fieldset>
-
-						<div class="text">
-							<p>LPAs are governed by the laws of England and Wales and can only be made by people with mental capacity aged 18 or older.</p>
-						</div>
-
-						<div class="form-group validation">
-					      <label class="form-label" for="register-confirm-understanding" id="register-confirm-understanding-label">
-					      <input type="checkbox" value="1" id="register-confirm-understanding"> I agree to the <a target="_blank" href="/">Terms and conditions and privacy policy</a> <span class="validation-message">must be checked</span></label>
-						</div>
-
-					</fieldset>
-
-
-					<div class="form-group">
-
-						<button class="button" type="button" role="button">Continue</button>
-
-					</div>
-
-
-				</form>
-
+				<ol class="validation-list list-number text">
+					<li><a href="#register-email-label">Enter your email address &ndash; must be a valid email address</a></li>
+					<li><a href="#register-email-confirm-label">Re-enter your email address &ndash; must match Enter your email address</a></li>
+					<li><a href="#register-confirm-understanding">I agree to the Terms and conditions and privacy policy &ndash; must be checked</a></li>
+				</ol>
 
 			</div>
 
 
-		</div>
+			<div class="text">
+
+				<p>You need to give your email address and create a password. This is so you can make, save and retrieve LPAs.</p>
+
+				<p>You can create an account in your name to help someone else make an LPA. But they must make all the decisions about the LPA themselves.</p>
+
+				<p>If you already have an account please <a href="/">sign in</a>.</p>
+
+			</div>
+
+
+			<fieldset>
+
+				<div class="form-group validation">
+			      <label class="form-label" for="register-email" id="register-email-label">Enter your email address <span class="validation-message">must be a valid email address</span></label>
+			      <input class="form-control" type="email" id="register-email">
+				</div>
+
+				<div class="form-group validation">
+			      <label class="form-label" for="register-email-confirm" id="register-email-confirm-label">Re-enter your email address <span class="validation-message">must match Enter your email address</span></label>
+			      <input class="form-control" type="email" id="register-email-confirm">
+				</div>
+
+			</fieldset>
+
+
+			<fieldset>
+
+				<div class="text">
+					<p>LPAs are governed by the laws of England and Wales and can only be made by people with mental capacity aged 18 or older.</p>
+				</div>
+
+				<div class="form-group validation">
+			      <label class="form-label" for="register-confirm-understanding" id="register-confirm-understanding-label">
+			      <input type="checkbox" value="1" id="register-confirm-understanding"> I agree to the <a target="_blank" href="/">Terms and conditions and privacy policy</a> <span class="validation-message">must be checked</span></label>
+				</div>
+
+			</fieldset>
+
+
+			<div class="form-group">
+
+				<button class="button" type="button" role="button">Continue</button>
+
+			</div>
+
+
+		</form>
 
 
 	</main>
