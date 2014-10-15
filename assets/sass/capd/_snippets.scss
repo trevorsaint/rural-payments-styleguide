@@ -1,0 +1,22 @@
+// ==========================================================================
+// Snippets
+// ==========================================================================
+
+.titled-list {
+  margin-bottom: 1.05263em; // 20px
+
+	ul {
+		margin: 0;
+	}
+
+  &-title {
+  	@extend .bold-small;
+  	margin-right: 20px;
+  	float: left;
+  }
+
+  &-value {
+    overflow: hidden;
+  }
+
+}
