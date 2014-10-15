@@ -6,16 +6,16 @@ define(['angular'
     function (angular, capdDirectivesModule, directivesGalleryController, ngRoute) {
         var capdStyleguideModule = angular.module('capd-styleguide', ['capd.directives', 'ngRoute']);
 
+        capdStyleguideModule.controller('directivesGalleryController', directivesGalleryController);
+
         capdStyleguideModule.config(function ($routeProvider) {
             $routeProvider
                 .when('/', {
                     templateUrl: '/javascripts/views/directive-gallery.html',
-                    controller: function(){
-
-                    }
+                    controller: 'directivesGalleryController'
                 })
                 .otherwise('/')
         })
 
-        capdStyleguideModule.controller(directivesGalleryController, 'directivesGalleryController')
+
     })

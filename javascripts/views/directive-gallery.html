@@ -28,11 +28,45 @@
         </div>
         <div capd-tabs-tab="Tab2">
             <strong>Tab2</strong> contents
+            <input ng-model="testModel.someTab2Text"/>
+            <p>Some tab2 text: {{testModel.someTab2Text}}</p>
         </div>
         <div capd-tabs-tab="Tab3">
             <strong>Tab3</strong> contents
         </div>
     </div>
 
+    <p>Some tab2 text: {{testModel.someTab2Text}}</p>
+
     <hr/>
+
+    <!--- capd-form-group --->
+    <h1 class="heading-large">capdBlockLabel</h1>
+
+    <h2 class="heading-medium">Radio block label</h2>
+
+    <div class="form-group form-group-compound">
+        <label class="block-label">
+            <input name="radio-inline-group" value="Yes" type="radio"> Yes
+        </label>
+
+        <label class="block-label">
+            <input name="radio-inline-group" value="No" type="radio"> No
+        </label>
+    </div>
+
+    <h2 class="heading-medium">Checkbox block label</h2>
+
+    <fieldset>
+        <label class="block-label">
+            <input value="waste-animal" type="checkbox">
+            Waste from animal carcasses
+        </label>
+        <label class="block-label">
+            <input value="waste-mines" type="checkbox">
+            Waste from mines or quarries
+        </label>
+    </fieldset>
+
+
 </div>

@@ -1,3 +1,4 @@
+@charset "utf-8";
 // Alerts
 // ==========================================================================
 
@@ -50,7 +51,7 @@
 
 .alert-number {
 	float: left;
-	margin-right: .41666667em; // 20px ÷ 48px font size
+    margin-right: .41666667em; // 20px ÷ 48px font size
 	@extend .bold-xlarge;
 }
 
