@@ -20,4 +20,5 @@ define(
         capdDirectivesModule.directive('capdTabs', capdTabs);
         capdDirectivesModule.directive('capdTabsTab', capdTabsTab);
         capdDirectivesModule.directive('blockLabel', capdBlockLabel);
+        capdDirectivesModule.directive('blockList', capdBlockLabel);
     })

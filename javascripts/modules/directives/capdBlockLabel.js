@@ -15,17 +15,7 @@ define(function () {
             controller: function($scope, $element, $attrs, $transclude){
                 var checkbox = $element.find('input[type=checkbox]');
                 var radio = $element.find('input[type=radio]');
-//
-//                var changeHandler = function (input) {
-//                    return function () {
-//                        if (input.is(':checked')) {
-//                            $element.addClass('selected');
-//                        }
-//                        else {
-//                            $element.removeClass('selected');
-//                        }
-//                    }
-//                }
+                var inputs = radio.add(checkbox);
 
                 checkbox.change(function () {
                     if (checkbox.is(':checked')) {
@@ -41,10 +31,8 @@ define(function () {
 
                     var inputsFromGroup = $("input[name='" + radioName + "']");
 
-                    debugger;
-
                     var inputsFromGroupExcludingSelf = inputsFromGroup.not(radio);
-                    inputsFromGroupExcludingSelf.remove
+                    inputsFromGroupExcludingSelf.closest('label.block-label').removeClass('selected');
 
                     if (radio.is(':checked')) {
                         $element.addClass('selected');
@@ -53,6 +41,34 @@ define(function () {
                         $element.removeClass('selected');
                     }
                 });
+
+                function toggleChecked(selector){
+                    selector.prop('checked', !selector.prop('checked'));
+                }
+
+                $element.not('label').click(function(event){
+//                    toggleChecked(radio);
+                    toggleChecked(checkbox);
+                    inputs.focus();
+                    inputs.trigger('change');
+                })
+
+
+
+                function preventPropagation(event){
+
+                    event.stopPropagation();
+                }
+
+                $element.find('label').add(inputs).click(preventPropagation);
+
+                inputs.focus(function(){
+                    $element.addClass('focused');
+                })
+
+                inputs.blur(function(){
+                    $element.removeClass('focused');
+                })
             }
         }
     }
