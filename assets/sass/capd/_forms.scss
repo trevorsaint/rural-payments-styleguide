@@ -88,3 +88,20 @@
 
 }
 
+
+// Form table
+
+.form-table {
+
+  table th,
+  table td {
+    padding: em(14) em(20);
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+}
+
+
