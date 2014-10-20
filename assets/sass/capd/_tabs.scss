@@ -2,7 +2,40 @@
 // Tabs
 // ==========================================================================
 
+
 .tabs-nav {
+  background-color: #fff;
+
+
+  &:after {
+		clear: both;
+		content: '.';
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+
+
+	&-list {
+  	border-top: 1px solid $grey-2;
+  	padding: 0;
+
+  	li {
+    	@include core-19;
+    	margin: 0;
+    	padding: 0;
+  	}
+
+	}
+
+
+}
+
+
+
+
+
+/*.tabs-nav {
 	background-color: #fff;
 
 	&:after {
@@ -83,4 +116,9 @@
 
 	}
 
-}
+}*/
+
+
+
+
+

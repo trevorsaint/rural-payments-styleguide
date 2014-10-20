@@ -28,6 +28,10 @@ table th {
 
 // Alternative table styling for DEFRA
 
+.table-capd {
+  border: 1px solid $border-colour;
+}
+
 .table-capd tr.stripe td,
 .table-capd tr:nth-child(even) td {
   background-color: #fff;
@@ -36,12 +40,27 @@ table th {
 .table-capd th,
 .table-capd td {
   background-color: $grey-3;
-  border: solid 1px $border-colour;
+  border: 0 none;
   padding: em(14) em(20);
+}
+
+.table-capd th {
+  border-left: 1px solid $border-colour;
+
+  &:first-child {
+    border-left: 0 none;
+  }
+
 }
 
 .table-capd td {
   background: #eaedef;
-  border: dotted 1px $border-colour
+  border-left: dotted 1px $border-colour;
+  border-top: 1px solid $border-colour;
+
+  &:first-child {
+    border-left: 0 none;
+  }
+
 }
 
