@@ -152,6 +152,26 @@ strong, b {
 }
 
 
+// Link styles
+.link {
+  color: $link-colour;
+  text-decoration: underline;
+
+  &:visited {
+    color: $link-visited-colour;
+  }
+
+  &:hover {
+    color: $link-hover-colour;
+  }
+
+  &:active {
+    color: $link-colour;
+  }
+
+}
+
+
 // Code styles
 pre,
 code {
@@ -162,5 +182,4 @@ code {
   border: 1px solid $border-colour;
   padding: 3px 7px;
 }
-
 
