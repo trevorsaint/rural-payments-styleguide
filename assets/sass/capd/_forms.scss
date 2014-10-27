@@ -99,6 +99,7 @@
   }
 
   .form-control {
+    @include core-16;
     width: auto;
   }
 
