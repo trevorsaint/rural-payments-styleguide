@@ -9,67 +9,33 @@
 // Import GOV.UK frontend toolkit
 // ==========================================================================
 
-@import '../govuk/sass/colours';
-@import '../govuk/sass/measurements';
-@import '../govuk/sass/conditionals';
-@import '../govuk/sass/grid_layout';
-@import '../govuk/sass/design-patterns/alpha-beta';
-@import '../govuk/sass/shims';
-@import '../govuk/sass/typography';
-@import '../govuk/sass/css3';
-@import '../govuk/sass/design-patterns/buttons';
+@import '../govuk/sass/manifest';
 
 
 // ==========================================================================
 // Modules
 // ==========================================================================
 
-@import 'elements/helpers';
-@import 'elements/reset';
-@import 'elements/typography';
-@import 'elements/layout';
-@import 'elements/forms';
-@import 'elements/tables';
-@import 'elements/buttons';
-@import 'elements/details';
-@import 'elements/lists';
-@import 'elements/panels';
-@import 'elements/icons';
+@import 'elements/manifest';
 
 
 // ==========================================================================
 // CAPD Specific
 // ==========================================================================
 
-@import 'capd/overrides';
-@import 'capd/steps';
-@import 'capd/alerts';
-@import 'capd/tabs';
-@import 'capd/icons';
-@import 'capd/summary';
-@import 'capd/forms';
-@import 'capd/related';
-@import 'capd/lists';
-@import 'capd/microdata';
-@import 'capd/snippets';
-@import 'capd/example';
+@import 'capd/manifest';
 
 
 // ==========================================================================
 // Vendor
 // ==========================================================================
 
-@import 'vendor/prism';
+@import 'vendor/manifest';
 
 
 // ==========================================================================
 // Contributors
 // ==========================================================================
 
-@import 'contributors/trevor-saint';
-@import 'contributors/alex-torrance';
-@import 'contributors/tim-paul';
-@import 'contributors/damian-heavern';
-@import 'contributors/ashwini-ingale';
-@import 'contributors/robert-stringer';
+@import 'contributors/manifest';
 
