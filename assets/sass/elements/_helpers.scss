@@ -1,11 +1,13 @@
 // Helpers
 // ==========================================================================
 
+
 // Return ems from a pixel value
 // This assumes a base of 19px
 @function em($px, $base: 19) {
   @return ($px / $base) + em;
 }
+
 
 // Use the contain floats mixin for this project,
 // as placeholders are not supported by libsass
@@ -15,31 +17,30 @@
     display: block;
     clear: both;
   }
-  @include ie-lte(7) {
-    zoom: 1;
+}
+
+
+// Create a site-container mixin for this project,
+// as placeholders are not yet supported by libsass
+@mixin site-width-container {
+  max-width: $site-width;
+  margin: 0 $gutter-half;
+  @include media(tablet){
+    margin: 0 $gutter;
+  }
+  @include media($min-width: ($site-width + $gutter * 2)){
+    margin: 0 auto;
   }
 }
 
-// Want to see how the grid works?
-// add this class to the body to see how grid padding is set
-.example-highlight-grid {
-  .grid-wrapper {
-    background:  $grey-2;
-  }
-  .grid {
-    background: $grey-4;
-  }
-  .is-inner-block-highlight {
-    background: $grey-3;
-    width: 100%;
-  }
+
+// Create a grid-row mixin for this project,
+// as placeholders are not yet supported by libsass
+@mixin grid-row {
+  @include contain-floats;
+  margin: 0 (-$gutter-half);
 }
 
-// Used to space the "back" link on example pages
-.example-back-link {
-  @include inline-block;
-  margin-top: $gutter;
-}
 
 // Hide, but not for screenreaders
 .visuallyhidden {
@@ -50,7 +51,9 @@
   margin: -1px; padding: 0; border: 0;
 }
 
+
 // Hide, only when JavaScript is enabled
 .js-enabled .js-hidden {
   display: none;
 }
+
