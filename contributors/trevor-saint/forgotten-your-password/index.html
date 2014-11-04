@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Trevor Saint : CAP Information Service</title>
+    <title>Forgotten your password? : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -122,36 +122,78 @@
 		</div>
 
 
-		<a class="back-link" href="/">Back to index</a>
-
-
-    <h1 class="heading-xlarge">Trevor Saint <span class="heading-secondary">Prototypes</span></h1>
+		<a class="back-link" href="../">Back to index</a>
 
 
     <div class="text">
 
-      <p class="lede">Please find a collection of <abbr title="HyperText Markup Language">HTML</abbr> prototypes.</p>
+      <h1 class="heading-xlarge">Forgotten your password?</h1>
+
+      <p class="lede">Enter your customer reference number (<abbr title="Customer Reference Number">CRN</abbr>), email address and the code that we have emailed you.</p>
+
+      <p>If you don't have a code, click '<b>resend unique code</b>' below to recieve one. When you get this code, return to this page and enter it. This code is only active for 12 hours, after this time you will need another code.</p>
+
+      <p>If you don't know your <abbr title="Customer Reference Number">CRN</abbr> or the email address that is registered to your account, you will need to contact us on 03000 200 301.</p>
 
     </div>
 
 
-    <div class="grid-row">
+    <form class="form" method="post" action="/">
 
-      <!-- column -->
-      <div class="column-third">
 
-        <ul class="list-bullet">
-          <li><a href="cap-information-service">CAP Information Service</a></li>
-          <li><a href="invalid-or-missing-token">Invalid or missing token</a></li>
-          <li><a href="signin">Sign in</a></li>
-          <li><a href="forgotten-your-password">Forgotten your password?</a></li>
-          <li><a href="need-to-change-password">Need to change password</a></li>
-        </ul>
+      <fieldset>
 
+        <legend class="heading-large">Your details</legend>
+
+        <div class="form-group">
+          <label class="form-label" for="customer-reference">Customer Reference Number</label>
+          <span class="form-hint">It'll be in your email inbox. For example, 1234567890.</span>
+          <input class="form-control" id="customer-reference" type="text">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-control" id="email" type="email">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="unique-code">Unique code</label>
+          <input class="form-control" id="unique-code" type="text">
+        </div>
+
+      </fieldset>
+
+
+      <p class="form-block">Unique code has expired or is forgotten? <br> <a href="/">Resend unique code</a></p>
+
+
+      <fieldset>
+
+        <legend class="heading-large">Create new password</legend>
+
+        <div class="text">
+          <p>Your new password must be different from your email address and customer reference number, a minimum of 8 characters, contain upper and lower case letters, and contain at least one number or special character.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="new-password">New password</label>
+          <input class="form-control" id="new-password" type="password">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="confirm-password">Confirm password</label>
+          <input class="form-control" id="confirm-password" type="password">
+        </div>
+
+      </fieldset>
+
+
+      <div class="button-container">
+        <button class="button" type="button" role="button">Create new password</button>
       </div>
-      <!-- end -->
 
-    </div>
+
+    </form>
 
 
 	</main>
