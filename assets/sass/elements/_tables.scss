@@ -76,3 +76,27 @@ table tfoot {
 
 }
 
+
+
+// Table variations
+
+.table {
+
+
+  // Parcel table
+
+  &-parcel {
+
+    .feature,
+    .action {
+      width: 100px;
+    }
+
+  }
+
+
+
+}
+
+
+

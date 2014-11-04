@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Trevor Saint : CAP Information Service</title>
+    <title>Sign in : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -122,32 +122,45 @@
 		</div>
 
 
-		<a class="back-link" href="/">Back to index</a>
-
-
-    <h1 class="heading-xlarge">Trevor Saint <span class="heading-secondary">Prototypes</span></h1>
+		<a class="back-link" href="../">Back to index</a>
 
 
     <div class="text">
 
-      <p class="lede">Please find a collection of <abbr title="HyperText Markup Language">HTML</abbr> prototypes.</p>
+		  <h1 class="heading-xlarge">Sign in to <abbr title="Common Agricultural Policy">CAP</abbr> Information Service</h1>
+
+		  <p class="lede">Enter the 10-digit Customer Reference Number provided to you by <abbr title="Common Agricultural Policy">CAP</abbr> Information Service and your password.</p>
 
     </div>
 
 
-    <div class="grid-row">
+		<form class="form form-group" method="post" action="/">
 
-      <!-- column -->
-      <div class="column-third">
+			<div class="form-group">
+				<label class="form-label" for="customer-reference">Customer Reference Number</label>
+				<span class="form-hint">It'll be in your email inbox. For example, 1234567890.</span>
+				<input class="form-control" type="text" id="customer-reference">
+			</div>
 
-        <ul class="list-bullet">
-          <li><a href="cap-information-service">CAP Information Service</a></li>
-          <li><a href="invalid-or-missing-token">Invalid or missing token</a></li>
-          <li><a href="signin">Sign in</a></li>
-        </ul>
+			<div class="form-group">
+				<label class="form-label" for="password">Enter your password</label>
+				<input class="form-control" type="password" id="password">
+			</div>
 
+			<div class="form-group">
+				<button class="button" type="button" role="button">Sign in</button>
+				<p><a href="/">Forgotten your password?</a></p>
+			</div>
+
+		</form>
+
+
+    <div class="alert-info" role="alert">
+
+      <div class="alert-message">
+        <p>Unauthorised access to this system constitutes an offence under the Computer Misuse Act 1990. You must follow Defra or Defra Network organisational policies and codes of conduct relating to the use of computer systems, and
+        agree to the terms of the Personal Commitment Statement. Activity on the Defra network computer systems may be monitored and/or recorded to secure the effective operation of the system and for other lawful puposes.</p>
       </div>
-      <!-- end -->
 
     </div>
 
