@@ -43,3 +43,10 @@
 
 }
 
+
+.new {
+  @include phase-tag(beta);
+  background-color: $govuk-blue;
+  margin-left: 10px;
+}
+

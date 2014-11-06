@@ -1,0 +1,123 @@
+// ==========================================================================
+// Modals
+// ==========================================================================
+
+
+.modal {
+  @include box-sizing(border-box); // Compass box sizing
+  @include transition(opacity, .2s, ease-in-out); // Compass transition
+  background-color: rgba(0,0,0,.5);
+  height: 100%;
+  padding: $gutter-half;
+  position: fixed;
+  left: 0; top: 0; right: 0; bottom: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 0;
+
+  &[aria-hidden="true"] {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+  }
+
+
+  &[aria-hidden="false"] .modal-holder {
+    @include transform(scale(1)); // Compass transform scale
+  }
+
+
+  // Matches page container properties
+
+  @include media(tablet) {
+    padding: $gutter;
+  }
+
+  @include media($min-width: ($site-width + $gutter * 2), $ignore-for-ie: true) {
+    padding: 0;
+  }
+
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    margin-right: -.25em;
+    vertical-align: middle;
+  }
+
+
+  &-holder {
+    @include transform(scale(.8)); // Compass transform scale
+    @include transition(transform, .3s, ease-in-out); // Compass transition transform
+    background-color: rgb(239,239,239);
+    border: 20px solid white;
+    display: inline-block;
+    margin: auto;
+    max-width: 800px;
+    position: relative;
+    vertical-align: middle;
+  }
+
+
+  &-heading {
+    @include bold-36();
+    margin-top: em(15, 24);
+    margin-bottom: em(10, 24);
+
+    @include media(tablet) {
+      margin-top: em(15, 36);
+      margin-bottom: em(20, 36);
+    }
+
+  }
+
+
+  &-content {
+    padding: 1em;
+    text-align: left;
+  }
+
+
+  // Modify form controls inside a modal
+
+  .form-group {
+    float: none;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+
+  // Button close modal
+
+  &-close {
+    @include core-19;
+    @include hide-text;
+    border: 0 none;
+    cursor: pointer;
+    height: em(44);
+    padding: 0;
+    position: absolute; top: 0; right: 0;
+    width: em(44);
+    margin: auto;
+
+    .icon {
+      background-position: 50% 50%;
+      background-size: em(22) em(22);
+      height: 100%;
+      margin: 0;
+      width: 100%;
+    }
+
+  }
+
+
+}
+

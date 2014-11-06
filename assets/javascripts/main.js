@@ -1,4 +1,8 @@
-(function(){
+(function() {
+
+
+    // Show and hide checkbox toggled content
+
     function showHideCheckboxToggledContent() {
 
         $(".block-label input[type='checkbox']").each(function() {
@@ -38,6 +42,9 @@
         });
 
     }
+
+
+    // Show & hide radio toggled content
 
     function showHideRadioToggledContent() {
 
@@ -106,17 +113,113 @@
     }
 
 
-    function toggleTabs() {
+    // Show modal
 
-        if ($('.tabs').length>0) {
+    function showModal() {
 
-            $('.tabs').tabs();
+
+      if ($('.modal').length>0) {
+
+
+        // Open modal
+
+        $('a[data-toggle=modal]').on('click', function(e) {
+
+
+          e.preventDefault();
+          e.stopPropagation();
+
+
+          var activeElement = $(this);
+
+
+          // Grab the target
+
+          var data   = '#' + $(this).attr('data-target');
+
+
+          // Toggle attribute and get focus
+
+          $(data).attr('aria-hidden', 'false')
+            .find('.modal-holder').focus()
+            .attr('tabindex', '-1');
+
+
+        });
+
+
+        // Close modal only if visible
+
+        function closeModal() {
+
+          $('.modal[aria-hidden=false]').attr('aria-hidden', 'true')
+            .find('.modal-holder').blur()
+            .attr('tabindex', '0');
 
         }
+
+
+        // Stop bubbling
+
+        $('.modal-holder').on('click', function(e) {
+
+          e.stopPropagation();
+
+        });
+
+
+        $('.modal-close').on('click', function(e) {
+
+          e.stopPropagation();
+
+          closeModal();
+
+        });
+
+
+        // Document binding events
+
+        $(document).bind({
+
+          click: function(e) {
+
+            closeModal();
+
+          },
+
+          keyup: function(e) {
+
+            if (e.keyCode == 27) {
+
+              closeModal();
+
+            }
+
+          }
+
+        });
+
+
+      }
+
 
     }
 
 
+    // Toggle tabs
+
+    function toggleTabs() {
+
+      if ($('.tabs').length>0) {
+
+          $('.tabs').tabs();
+
+      }
+
+    }
+
+
+    // Multiple checkboxes
 
     function formMultipleCheckboxes() {
 
@@ -169,6 +272,7 @@
     }
 
 
+    // Form validation
 
     function formValidation() {
 
@@ -195,6 +299,8 @@
     }
 
 
+    // Document ready
+
     $(document).ready(function() {
 
         // Turn off jQuery animation
@@ -218,6 +324,9 @@
         toggleTabs();
         formValidation();
         formMultipleCheckboxes();
+        showModal();
 
     });
+
+
 })();

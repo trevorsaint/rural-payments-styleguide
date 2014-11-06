@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Index : CAP Information Service</title>
+    <title>Modals : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -65,7 +65,7 @@
 	<!-- Header -->
   <div id="skiplink-container">
     <div>
-      <a href="#page-container" class="skiplink">Skip to main content</a>
+      <a href="#content" class="skiplink">Skip to main content</a>
     </div>
   </div>
 
@@ -114,7 +114,7 @@
   <main class="group" id="page-container" role="main">
 
 
-		<div class="phase-banner">
+	  <div class="phase-banner">
 			<p>
 				<strong class="phase-tag">Beta</strong>
 				<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
@@ -122,96 +122,91 @@
 		</div>
 
 
-		<div class="grid-row">
+    <a class="back-link" href="/">Back to the index</a>
 
 
-      <!-- column -->
-      <div class="column-third">
+		<h1 class="heading-xlarge">Modals</h1>
 
-          <h1 class="heading-large">Index</h1>
 
-          <ul class="list-bullet">
-            <li><a href="/elements/typography/">Typography</a></li>
-            <li><a href="/elements/layout/">Layout</a></li>
-            <li><a href="/elements/tables/">Tables</a></li>
-            <li><a href="/elements/forms/">Forms</a></li>
-            <li><a href="/elements/details/">Details</a></li>
-            <li><a href="/elements/alerts/">Alerts</a></li>
-            <li><a href="/elements/modals/">Modals <span class="new">New</span></a></li>
-            <li><a href="/elements/other/">Other</a></li>
-          </ul>
+    <div class="text">
+
+      <div role="alert" class="alert-info">
+
+        <div class="alert-message">
+
+          <p>These modals are in early stages of development. They still require testing and improvements in way of accessibility. We also require an <b>AngularJS</b> alternative.</p>
+
+        </div>
 
       </div>
-      <!-- end -->
-
-
-      <!-- column -->
-      <div class="column-third">
-
-        <h1 class="heading-large">Pages</h1>
-
-        <ul class="list-bullet">
-          <li><a href="/pages/my-account/">My account</a></li>
-          <li><a href="/pages/personal-details/">Personal details</a></li>
-          <li><a href="/pages/self-assessment/">Self assessment</a></li>
-          <li><a href="/pages/cross-compliance/">Cross compliance</a></li>
-          <li><a href="/pages/confirmation/">Confirmation</a></li>
-          <li><a href="/pages/apply-for-bps/">Apply for bps</a></li>
-          <li><a href="/pages/amend-business-details/">Amend business details</a></li>
-          <li><a href="/pages/bps-application/">BPS application</a></li>
-        </ul>
-
-      </div>
-      <!-- end -->
-
-
-      <!-- column -->
-      <div class="column-third">
-
-        <h1 class="heading-large">Snippets</h1>
-
-        <p>You will find all <abbr title="Hypertext Markup Language">HTML</abbr> code snippets and how they look in the browser. <a href="/elements/snippets/">View html snippets</a></p>
-
-      </div>
-      <!-- end -->
-
 
     </div>
 
 
-    <div class="grid-row">
+    <h2 class="heading-medium">Examples</h2>
 
 
-      <!-- column -->
-      <div class="column-third">
+		<ul class="list-bullet">
+  		<li><a href="/" data-toggle="modal" data-target="modal-1">Sign out</a></li>
+  		<li><a href="/" data-toggle="modal" data-target="modal-2">Lock customers account</a></li>
+		</ul>
 
-        <h1 class="heading-large">Contributors</h1>
 
-        <ul class="list-bullet">
-          <li><a href="/contributors/alex-torrance/">Alex Torrance</a></li>
-          <li><a href="/contributors/tim-paul/">Tim Paul</a></li>
-          <li><a href="/contributors/trevor-saint/">Trevor Saint</a></li>
-          <li><a href="/contributors/damian-heavern/">Damian Heavern</a></li>
-          <li><a href="/contributors/ashwini-ingale/">Ashwini Ingale</a></li>
-          <li><a href="/contributors/robert-stringer/">Robert Stringer</a></li>
-        </ul>
+    <!-- Modal 1 -->
+		<div class="modal" id="modal-1" aria-labelledby="modal-title-1" role="dialog" aria-hidden="true">
+
+      <div class="modal-holder" role="document" tabindex="0">
+
+        <div class="modal-content">
+
+          <h1 class="modal-heading" id="modal-title-1">Sign out</h1>
+
+          <p>This will end your session. Are you sure you want to sign out?</p>
+
+          <button class="button" role="button">Yes</button>
+
+        </div>
+
+        <button class="modal-close" aria-label="close" type="button">
+          <span class="icon icon-close">x</span>
+        </button>
 
       </div>
-      <!-- end -->
+
+		</div>
+		<!-- End -->
 
 
-      <!-- column -->
-      <div class="column-third">
+		<!-- Modal 2 -->
+		<div class="modal" id="modal-2" aria-labelledby="modal-title-2" role="dialog" aria-hidden="true">
 
-        <h1 class="heading-large">AngularJS</h1>
+      <div class="modal-holder" role="document" tabindex="0">
 
-        <p>You will find a collection of angular directives. <a href="/pages/angular/">View angular directives</a></p>
+        <div class="modal-content">
+
+          <h1 class="modal-heading" id="modal-title-2">Lock customer's account</h1>
+
+          <form class="form">
+
+            <div class="form-group">
+              <label class="form-label" for="reason">Give a reason for locking this customer's account</label>
+              <textarea class="form-control form-control-textarea" id="reason" rows="6" cols="50"></textarea>
+            </div>
+
+            <button class="button" role="button">Lock customer's account</button>
+
+          </form>
+
+        </div>
+
+        <button class="modal-close" aria-label="close" type="button">
+          <span class="icon icon-close">x</span>
+        </button>
 
       </div>
-      <!-- end -->
 
-
-    </div>
+		</div>
+		<!-- End -->
 
 
 	</main>
@@ -228,18 +223,17 @@
         <div class="footer-meta-inner">
 
           <ul>
-    			  <li><a href="#">Help</a></li>
-    			  <li><a href="#">Cookies</a></li>
-    			  <li><a href="#">Contact</a></li>
-    			  <li><a href="#">Cymraeg</a></li>
-    			  <li>Built by <a href="#">Defra</a></li>
-    			</ul>
+      		  <li><a href="#">Help</a></li>
+      		  <li><a href="#">Cookies</a></li>
+      		  <li><a href="#">Contact</a></li>
+      		  <li><a href="#">Cymraeg</a></li>
+      		  <li>Built by <a href="#">Defra</a></li>
+      		</ul>
 
           <div class="open-government-licence">
             <h2><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government Licence</a></h2>
             <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government Licence v2.0</a>, except where otherwise stated</p>
           </div>
-
         </div>
 
         <div class="copyright">
@@ -267,7 +261,6 @@
   <script src="/assets/javascripts/vendor/modernizr.custom.77028.js"></script>
   <script src="/assets/javascripts/vendor/details.polyfill.js"></script>
   <script src="/assets/javascripts/main.js"></script>
-
 
   </body>
 </html>
