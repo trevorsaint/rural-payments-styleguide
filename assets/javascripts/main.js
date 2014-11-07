@@ -137,7 +137,7 @@
 
         // Open modal
 
-        function openModal(e,data) {
+        function openModal(data) {
 
           $(data).attr('aria-hidden', 'false')
             .find('.modal-content').focus()
