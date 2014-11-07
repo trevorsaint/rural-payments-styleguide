@@ -125,27 +125,25 @@
 
         $('a[data-toggle=modal]').on('click', function(e) {
 
-
           e.preventDefault();
           e.stopPropagation();
 
+          var data = '#' + $(this).attr('data-target');
 
-          var activeElement = $(this);
-
-
-          // Grab the target
-
-          var data   = '#' + $(this).attr('data-target');
-
-
-          // Toggle attribute and get focus
-
-          $(data).attr('aria-hidden', 'false')
-            .find('.modal-holder').focus()
-            .attr('tabindex', '-1');
-
+          openModal(data); // Pass data value into function
 
         });
+
+
+        // Open modal
+
+        function openModal(e,data) {
+
+          $(data).attr('aria-hidden', 'false')
+            .find('.modal-content').focus()
+            .attr('tabindex', '-1');
+
+        }
 
 
         // Close modal only if visible
@@ -153,7 +151,7 @@
         function closeModal() {
 
           $('.modal[aria-hidden=false]').attr('aria-hidden', 'true')
-            .find('.modal-holder').blur()
+            .find('.modal-content').blur()
             .attr('tabindex', '0');
 
         }
