@@ -130,7 +130,7 @@
 
     <div class="text">
 
-      <div role="alert" class="alert-info">
+      <div class="alert-info" role="alert">
 
         <div class="alert-message">
 
@@ -153,23 +153,23 @@
 
 
     <!-- Modal 1 -->
-		<div class="modal" id="modal-1" aria-labelledby="modal-title-1" role="dialog" aria-hidden="true">
+		<div class="modal" id="modal-1" aria-hidden="true">
 
-      <div class="modal-holder" role="document" tabindex="0">
+      <div class="modal-holder" aria-labelledby="modal-title-1" aria-describedby="modal-content-1" role="alertdialog">
 
-        <div class="modal-content">
+        <div class="modal-content" id="modal-content-1" role="document" tabindex="0">
 
           <h1 class="modal-heading" id="modal-title-1">Sign out</h1>
 
           <p>This will end your session. Are you sure you want to sign out?</p>
 
-          <button class="button" role="button">Yes</button>
+          <button class="button">Yes</button>
+
+          <button class="modal-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
 
         </div>
-
-        <button class="modal-close" aria-label="close" type="button">
-          <span class="icon icon-close">x</span>
-        </button>
 
       </div>
 
@@ -177,12 +177,12 @@
 		<!-- End -->
 
 
-		<!-- Modal 2 -->
-		<div class="modal" id="modal-2" aria-labelledby="modal-title-2" role="dialog" aria-hidden="true">
+		<!-- Modal 2-->
+		<div class="modal" id="modal-2" aria-hidden="true">
 
-      <div class="modal-holder" role="document" tabindex="0">
+      <div class="modal-holder" aria-labelledby="modal-title-2" aria-describedby="modal-content-2" role="alertdialog">
 
-        <div class="modal-content">
+        <div class="modal-content" id="modal-content-2" role="document" tabindex="0">
 
           <h1 class="modal-heading" id="modal-title-2">Lock customer's account</h1>
 
@@ -193,15 +193,15 @@
               <textarea class="form-control form-control-textarea" id="reason" rows="6" cols="50"></textarea>
             </div>
 
-            <button class="button" role="button">Lock customer's account</button>
+            <button class="button">Lock customer's account</button>
+
+            <button class="modal-close" aria-label="close" type="button">
+              <span class="icon icon-close">x</span>
+            </button>
 
           </form>
 
         </div>
-
-        <button class="modal-close" aria-label="close" type="button">
-          <span class="icon icon-close">x</span>
-        </button>
 
       </div>
 
