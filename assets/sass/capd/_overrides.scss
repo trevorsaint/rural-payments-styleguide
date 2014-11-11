@@ -21,6 +21,15 @@ body {
 }
 
 
+// Responsive images
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
 .back-link {
   display: inline-block;
   margin-top: 30px;
