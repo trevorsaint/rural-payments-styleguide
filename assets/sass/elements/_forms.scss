@@ -5,7 +5,7 @@
 // Fieldset is used to group more than one .form-group
 fieldset {
   width: 100%;
-  @include contain-floats;
+  @extend %contain-floats;
 }
 
 
@@ -13,7 +13,7 @@ fieldset {
 .form-group {
   float: left;
   width: 100%;
-  @include contain-floats;
+  @extend %contain-floats;
   margin-bottom: $gutter-half;
   @include media(tablet) {
     margin-bottom: $gutter;
@@ -65,7 +65,7 @@ fieldset {
 .form-block {
   float: left;
   width: 100%;
-  @include contain-floats;
+  @extend %contain-floats;
 }
 
 

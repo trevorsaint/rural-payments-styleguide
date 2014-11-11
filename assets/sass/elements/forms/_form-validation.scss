@@ -6,11 +6,11 @@
 }
 
 .validation-summary ul {
-  //margin-top: 10px;
+  margin-top: 10px;
 }
 
-.validation-summary li {
-//.validation-summary p {
+.validation-summary li,
+.validation-summary p {
   @include core-16;
 }
 
@@ -21,10 +21,6 @@
 
 .validation-summary a {
   color: $error-colour;
-  text-decoration: none;
-  @include ie-lte(6) {
-    color: $error-colour !important;
-  }
 }
 
 .validation-summary .heading-small {
@@ -62,41 +58,39 @@
 
 // Form validation for DEFRA
 
-.form .validation-summary,
-.form .validation {
-	background-color: $error-background;
-	border-left: 3px solid $error-colour;
+.form {
+
+
+  .validation-summary,
+  .validation {
+  	background-color: $error-background;
+  	border-left: 3px solid $error-colour;
+  }
+
+
+  .validation-summary {
+  	margin: 0 -1em 1em;
+  	padding: 1em;
+  }
+
+
+  .validation {
+  	margin: 0 -1em .5em;
+  	padding: .75em 1em 1em;
+  }
+
+
+  .validation-list {
+  	margin-top: 0.75em;
+  	margin-bottom: 0;
+  	color: $error-colour;
+  }
+
+
+  .validation-heading {
+  	@extend .bold-medium; // Extend from typography styles
+  }
+
+
 }
-
-
-.form .validation-summary {
-	margin: 0 -1em 1em;
-	padding: 1em;
-}
-
-
-.form .validation {
-	margin: 0 -1em .5em;
-	padding: .75em 1em 1em;
-}
-
-
-.form .validation-list {
-	margin-top: 0.75em;
-	margin-bottom: 0;
-	color: $error-colour;
-}
-
-
-.form .validation-heading {
-	@extend .bold-medium; // Extend from typography styles
-}
-
-
-
-
-
-
-
-
 
