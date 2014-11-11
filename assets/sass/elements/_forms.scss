@@ -1,17 +1,25 @@
 // Forms
 // ==========================================================================
 
+
+// Fieldset is used to group more than one .form-group
+fieldset {
+  width: 100%;
+  @include contain-floats;
+}
+
+
 // Form group is used to wrap label and input pairs
 .form-group {
   float: left;
   width: 100%;
-  clear: both;
   @include contain-floats;
   margin-bottom: $gutter-half;
   @include media(tablet) {
     margin-bottom: $gutter;
   }
 }
+
 
 .form-group-related {
   margin-bottom: 10px;
@@ -20,15 +28,9 @@
   }
 }
 
+
 .form-group-compound {
   margin-bottom: 10px;
-}
-
-// Fieldset is used to group more than one .form-group
-fieldset {
-  width: 100%;
-  float: left;
-  clear: both;
 }
 
 
@@ -41,7 +43,7 @@ fieldset {
 }
 
 
-// Labels
+// LABELS
 
 // Form labels, or for legends styled to look like labels
 .form-label {
@@ -67,7 +69,7 @@ fieldset {
 }
 
 
-// Hints
+// HINTS
 
 // Form hints & examples are light grey and sit above a form control
 .form-hint {
@@ -80,7 +82,7 @@ fieldset {
 }
 
 
-// Form controls
+// FORM CONTROLS
 
 // By default, form controls are 50% width for desktop,
 // and 100% width for mobile
@@ -138,6 +140,7 @@ fieldset {
 }
 
 
+
 // Checkboxes
 .form-checkbox {
   display: block;
@@ -147,6 +150,7 @@ fieldset {
   vertical-align: middle;
   margin: -2px 5px 0 0;
 }
+
 
 // Buttons
 .form .button {
