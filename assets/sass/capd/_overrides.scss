@@ -6,12 +6,12 @@
 // Footer colour extended / font rendering fixes
 
 html {
+  background-color: $grey-3;
   -webkit-text-size-adjust: 100%; /* 1 */
   -ms-text-size-adjust: 100%; /* 1 */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	background-color: $grey-3;
 }
 
 
@@ -21,12 +21,25 @@ body {
 }
 
 
+// Selection
+
+::-moz-selection {
+  background: $grey-3;
+  color: $black;
+}
+
+::selection {
+  background: $grey-3;
+  color: $black;
+}
+
+
 // Responsive images
 
 img {
-  width: 100%;
   height: auto;
   max-width: 100%;
+  width: 100%;
 }
 
 
