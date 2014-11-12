@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Trevor Saint : CAP Information Service</title>
+    <title>Personal details : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -122,39 +122,85 @@
 		</div>
 
 
-		<a class="back-link" href="/">Back to index</a>
+		<a class="back-link" href="../">Back to cap information service</a>
 
 
-    <h1 class="heading-xlarge">Trevor Saint <span class="heading-secondary">Prototypes</span></h1>
+    <h1 class="heading-xlarge">Your personal details</h1>
 
 
-    <div class="text">
-
-      <p class="lede">Please find a collection of <abbr title="HyperText Markup Language">HTML</abbr> prototypes.</p>
-
-    </div>
+    <form class="form" method="post" action="/">
 
 
-    <div class="grid-row">
+      <div class="form-group">
+        <label class="form-label" for="title">Title (optional)</label>
+        <select class="form-control-select" id="title">
+          <option>-- Please make a selection --</option>
+          <option value="1">Miss</option>
+          <option value="2">Ms</option>
+          <option value="3">Mr</option>
+          <option value="4" selected>Dr</option>
+          <option value="5">Sir</option>
+          <option value="6">Dname</option>
+        </select>
+      </div>
 
-      <!-- column -->
-      <div class="column-third">
 
-        <ul class="list-bullet">
-          <li><a href="cap-information-service">CAP Information Service</a></li>
-          <li><a href="invalid-or-missing-token">Invalid or missing token</a></li>
-          <li><a href="signin">Sign in</a></li>
-          <li><a href="my-account">My account</a></li>
-          <li><a href="forgotten-your-password">Forgotten your password?</a></li>
-          <li><a href="need-to-change-password">Need to change password</a></li>
-          <li><a href="scheme-eligibility">Scheme eligibility</a></li>
-          <li><a href="confirm-journey">Confirm journey <span class="new">New</span></a></li>
-        </ul>
+      <div class="form-group">
+        <label class="form-label" for="first-ame">First name</label>
+        <input class="form-control" id="first-name" type="text" value="Mia">
+      </div>
+
+
+      <div class="form-group">
+        <label class="form-label" for="middle-name">Middle name</label>
+        <input class="form-control" id="middle-name" type="text" value="Jane">
+      </div>
+
+
+      <div class="form-group">
+        <label class="form-label" for="last-name">Last name</label>
+        <input class="form-control" id="last-name" type="text" value="Wallace">
+      </div>
+
+
+      <div class="form-group">
+
+        <fieldset>
+
+          <legend class="form-label">Date of birth</legend>
+
+          <div class="form-date">
+
+          	<div class="form-group form-group-day">
+          		<label class="form-label" for="dob-day">Day</label>
+          		<input class="form-control" id="dob-day" type="text" value="18">
+          	</div>
+
+          	<div class="form-group form-group-month">
+          		<label class="form-label" for="dob-month">Month</label>
+          		<input class="form-control" id="dob-month" type="text" value="10">
+          	</div>
+
+          	<div class="form-group form-group-year">
+          		<label class="form-label" for="dob-year">Year</label>
+          		<input class="form-control" id="dob-year" type="text" value="1969">
+          	</div>
+
+          </div>
+
+        </fieldset>
 
       </div>
-      <!-- end -->
 
-    </div>
+
+      <div class="form-group">
+
+        <a class="button" href="../your-contact-details/" role="button">Continue</a>
+
+      </div>
+
+
+    </form>
 
 
 	</main>

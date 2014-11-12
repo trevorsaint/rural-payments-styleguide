@@ -53,4 +53,9 @@
 
 .map-thumbnail {
   border: 1px solid $grey-2;
+
+  img {
+    display: block;
+  }
+
 }

@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Check business details : CAP Information Service</title>
+    <title>Your contact details : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -122,141 +122,96 @@
 		</div>
 
 
-		<a class="back-link" href="../">Back to index</a>
+		<a class="back-link" href="../personal-details/">Back to personal details</a>
 
 
-    <div class="grid-row">
+    <h1 class="heading-xlarge">Your contact details</h1>
 
 
-      <div class="column-two-thirds">
+    <form class="form" method="post" action="/">
 
 
-        <h1 class="heading-xlarge">Check business details <span class="heading-secondary">Beech Farm</span></h1>
+      <fieldset>
 
+        <legend class="heading-large">Address</legend>
 
-    		<p class="lede">Please check that the details below are correct.</p>
+        <fieldset class="form-group">
 
+          <legend class="form-label">Postcode</legend>
 
-        <!-- business contact details -->
-        <section>
+          <div class="form-search">
 
+            <div class="form-group-search">
+              <input class="form-control" id="search" type="text" value="CA10 2NP">
+            </div>
 
-      		<h2 class="heading-large">Business contact details</h2>
-
-
-          <div class="summary">
-
-            <ul itemtype="http://schema.org/Organization" itemscop>
-
-              <li>
-                <h4 class="summary-title">Business name</h4>
-                <div class="summary-value" itemprop="name">Beech Farm</div>
-              </li>
-
-              <li>
-                <h4 class="summary-title">Address</h4>
-                <div class="summary-value" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope="">
-                  <div itemprop="streetAddress">Pooley Bridge</div>
-                  <div itemprop="addressLocality">Penrith</div>
-                  <div itemprop="addressRegion">Cumbria</div>
-                  <div itemprop="postalCode">CH3 6NZ</div>
-                  <div itemprop="addressCountry">United Kingdom</div>
-                </div>
-              </li>
-
-              <li>
-                <h4 class="summary-title">Landline</h4>
-                <div class="summary-value" itemprop="telephone">07337938476</div>
-              </li>
-
-              <li>
-                <h4 class="summary-title">Mobile</h4>
-                <div class="summary-value" itemprop="telephone">07449654321</div>
-              </li>
-
-              <li>
-                <h4 class="summary-title">Email</h4>
-                <div class="summary-value" itemprop="email"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></div>
-              </li>
-
-            </ul>
+            <div class="form-group-button">
+              <button class="button" type="button">Find UK address</button>
+            </div>
 
           </div>
 
+        </fieldset>
 
-        </section>
-        <!-- end -->
-
-
-        <!-- reference numbers -->
-        <section>
+      </fieldset>
 
 
-          <h2 class="heading-large">Reference numbers</h2>
+      <details>
 
+        <summary><span class="summary">I have an address in Northern Ireland or outside the United Kingdom</span></summary>
 
-          <div class="summary">
+        <div class="panel-indent">
 
-            <ul>
+          <div class="hcard" itemtype="http://schema.org/Organization" itemscope>
 
-              <li>
-                <h4 class="summary-title">Single Business Identifier</h4>
-                <div class="summary-value">222223250</div>
-              </li>
+            <div itemprop="name"><b>Beech Farm</b></div>
 
-              <li>
-                <h4 class="summary-title"><abbr title="Value Added Tax">VAT</abbr> Registration Number</h4>
-                <div class="summary-value">GB999 9999 73</div>
-              </li>
-
-            </ul>
-
+            <div class="hcard-adr" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+              <div itemprop="streetAddress">Pooley Bridge</div>
+              <div itemprop="addressLocality">Penrith</div>
+              <div itemprop="addressRegion">Cumbria</div>
+              <div itemprop="postalCode">CH3 6NZ</div>
+              <div itemprop="addressCountry">United Kingdom</div>
+            </div>
           </div>
 
-
-        </section>
-        <!-- end -->
-
-
-        <!-- next steps -->
-        <section>
-
-
-          <h2 class="heading-large">Next steps</h2>
-
-
-          <p>To confirm that the business details are correct, click 'I have checked these details'.</p>
-
-
-          <p>If any of these details are wrong, click 'Amend these details'.</p>
-
-
-          <p>Your business details must be correct when you submit an application, but you can amend these details at any time until you submit the application.</p>
-
-
-        </section>
-        <!-- end -->
-
-
-        <!-- actions -->
-        <div class="button-container">
-          <a class="button" href="additional-business-details" role="button">I have checked these details</a>
-          <p><a href="amend-business-details">Amend these details</a></p>
         </div>
-        <!-- end -->
+
+      </details>
 
 
+      <fieldset>
+
+        <legend class="heading-large">Email and telephone</legend>
+
+        <div class="text">
+          <p>You must enter either a landline or mobile number.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-control" id="email" type="email" value="mia.wallace@beechfarm.co.uk">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="landline">Landline</label>
+          <input class="form-control" id="landline" type="tel" value="0147 9643 7573">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="mobile">Mobile</label>
+          <input class="form-control" id="mobile" type="tel" value="0797 8377 7457">
+        </div>
+
+      </fieldset>
+
+
+      <div class="button-container">
+        <a class="button" href="../additional-business-details" role="button">Continue</a>
       </div>
 
 
-      <div class="column-third">
-
-        <div class="map-thumbnail"><img src="/assets/images/map/map-image.png" alt="*"></div>
-
-      </div>
-
-
-    </div>
+    </form>
 
 
 	</main>
