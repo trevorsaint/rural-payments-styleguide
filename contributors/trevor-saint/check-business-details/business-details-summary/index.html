@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Amend business details : CAP Information Service</title>
+    <title>Business details summary : CAP Information Service</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -122,7 +122,7 @@
 		</div>
 
 
-		<a class="back-link" href="../">Back to check business details</a>
+		<a class="back-link" href="../">Back to index</a>
 
 
     <div class="grid-row">
@@ -131,109 +131,180 @@
       <div class="column-two-thirds">
 
 
-        <h1 class="heading-xlarge">Amend business details <span class="heading-secondary">Beech Farm</span></h1>
+        <h1 class="heading-xlarge">Business details summary <span class="heading-secondary">Beech Farm</span></h1>
 
 
-        <form class="form" method="post" action="/">
+        <p class="lede">Do we need anything in this paragraph?</p>
 
 
-          <fieldset>
+        <!-- business contact details -->
+        <section>
 
-            <legend class="heading-large">Business name and address</legend>
 
-            <div class="form-group">
-              <label class="form-label" for="business-name">Business name</label>
-              <input class="form-control" id="business-name" type="text" value="Beech Farm">
-            </div>
+      		<h2 class="heading-large">Business contact details</h2>
 
-            <fieldset class="form-group">
 
-              <legend class="form-label">Postcode</legend>
+          <div class="summary">
 
-              <div class="form-search">
+            <ul itemtype="http://schema.org/Organization" itemscop>
 
-                <div class="form-group-search">
-                  <input class="form-control" id="search" type="text">
+              <li>
+                <h4 class="summary-title">Business name</h4>
+                <div class="summary-value" itemprop="name">Beech Farm</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title">Address</h4>
+                <div class="summary-value" itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope="">
+                  <div itemprop="streetAddress">Pooley Bridge</div>
+                  <div itemprop="addressLocality">Penrith</div>
+                  <div itemprop="addressRegion">Cumbria</div>
+                  <div itemprop="postalCode">CH3 6NZ</div>
+                  <div itemprop="addressCountry">United Kingdom</div>
                 </div>
+              </li>
 
-                <div class="form-group-button">
-                  <button class="button" type="button">Find UK address</button>
-                </div>
+              <li>
+                <h4 class="summary-title">Landline</h4>
+                <div class="summary-value" itemprop="telephone">07337938476</div>
+              </li>
 
-              </div>
+              <li>
+                <h4 class="summary-title">Mobile</h4>
+                <div class="summary-value" itemprop="telephone">07449654321</div>
+              </li>
 
-            </fieldset>
+              <li>
+                <h4 class="summary-title">Email</h4>
+                <div class="summary-value" itemprop="email"><a href="mailto:info@beechfarm.co.uk">info@beechfarm.co.uk</a></div>
+              </li>
 
-          </fieldset>
+            </ul>
 
-
-          <details>
-
-            <summary><span class="summary">I have an address in Northern Ireland or outside the United Kingdom</span></summary>
-
-            <div class="panel-indent">
-
-              <p>
-                Pooley Bridge<br>
-                Penrith<br>
-                Cumbria<br>
-                CH3 6NZ<br>
-                United Kingdom
-              </p>
-
-            </div>
-
-          </details>
-
-
-          <fieldset>
-
-            <legend class="heading-large">Business contact details</legend>
-
-            <div class="text">
-              <p>You must enter either a landline or mobile number.</p>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="email">Email</label>
-              <input class="form-control" id="email" type="email" value="info@beechfarm.co.uk">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="landline">Landline</label>
-              <input class="form-control" id="landline" type="tel" value="0147 9643 7573">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="mobile">Mobile</label>
-              <input class="form-control" id="mobile" type="tel" value="0797 8377 7457">
-            </div>
-
-          </fieldset>
-
-
-
-          <fieldset>
-
-            <legend class="heading-large">Reference numbers</legend>
-
-            <div class="form-group">
-              <label class="form-label" for="vat-number">VAT registration number (if applicable)</label>
-              <input class="form-control" id="vat-number" type="text" value="GB999 9999 73">
-            </div>
-
-          </fieldset>
-
-
-          <!-- actions -->
-          <div class="button-container">
-            <!--button class="button" type="button">Business details are correct and complete</button-->
-            <a class="button" href="../additional-business-details" role="button">Business details are correct and complete</a>
           </div>
-          <!-- end -->
 
 
-        </form>
+        </section>
+        <!-- end -->
+
+
+        <!-- reference numbers -->
+        <section>
+
+
+          <h2 class="heading-large">Reference numbers</h2>
+
+
+          <div class="summary">
+
+            <ul>
+
+              <li>
+                <h4 class="summary-title">Single Business Identifier</h4>
+                <div class="summary-value">222223250</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title"><abbr title="Value Added Tax">VAT</abbr> Registration Number</h4>
+                <div class="summary-value">GB999 9999 73</div>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <p><a href="../amend-business-details/">Amend business contact details and reference numbers</a></p>
+
+
+        </section>
+        <!-- end -->
+
+
+        <!-- business contact details -->
+        <section>
+
+
+      		<h2 class="heading-large">Additional details</h2>
+
+
+          <div class="summary">
+
+            <ul>
+
+              <li>
+                <h4 class="summary-title">Legal status</h4>
+                <div class="summary-value">Sole Proprietorship</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title">Business type</h4>
+                <div class="summary-value">Farmer controlled business</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title">Companies House registration</h4>
+                <div class="summary-value">1122334455</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title">Business registered</h4>
+                <div class="summary-value">07449654321</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title">Land registered</h4>
+                <div class="summary-value">Scotland</div>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <p><a href="../amend-business-details/">Amend additional details</a></p>
+
+
+        </section>
+        <!-- end -->
+
+
+        <!-- people accountable -->
+        <section>
+
+
+          <h2 class="heading-large">People accountable</h2>
+
+
+          <div class="summary">
+
+            <ul>
+
+              <li>
+                <h4 class="summary-title">John Shelly</h4>
+                <div class="summary-value"><a href="mailto:j.shelly@abusiness.com">j.shelly@abusiness.com</a> <br> 07730670866</div>
+              </li>
+
+              <li>
+                <h4 class="summary-title">Joe Bloggs</h4>
+                <div class="summary-value"><a href="mailto:j.bloggs@abusiness.com">j.bloggs@abusiness.com</a> <br> 07740671821</div>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+        </section>
+        <!-- end -->
+
+
+        <!-- actions -->
+        <div class="button-container">
+          <a class="button" href="additional-business-details" role="button">I have checked these details</a>
+          <p><a href="amend-business-details">Amend these details</a></p>
+        </div>
+        <!-- end -->
 
 
       </div>
@@ -241,7 +312,7 @@
 
       <div class="column-third">
 
-        <img src="http://placehold.it/600x600" alt="">
+        <img src="/assets/images/map/map-image.png" alt="*">
 
       </div>
 
