@@ -674,7 +674,7 @@ button:focus,
             background-position: 100% 0%; } }
         @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
           #footer .footer-meta .copyright a {
-            background-image: url(images/govuk-crest-2x.png?0.10.0);
+            background-image: url(/assets/govuk/images/govuk-crest-2x.png?0.10.0);
             background-size: 125px 102px; } }
         @media (min-width: 641px) {
           #footer .footer-meta .copyright a {
