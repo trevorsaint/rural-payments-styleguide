@@ -54,8 +54,13 @@
 .map-thumbnail {
   border: 1px solid $grey-2;
 
+  // Responsive image
+
   img {
     display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
   }
 
 }
