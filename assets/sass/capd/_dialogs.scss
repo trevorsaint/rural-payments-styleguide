@@ -1,9 +1,9 @@
 // ==========================================================================
-// Modals
+// Dialog
 // ==========================================================================
 
 
-.modal {
+.dialog {
   @include box-sizing(border-box); // Compass box sizing
   @include transition(opacity, .2s, ease-in-out); // Compass transition
   background-color: rgba(0,0,0,.5);
@@ -27,7 +27,7 @@
   }
 
 
-  &[aria-hidden="false"] .modal-holder {
+  &[aria-hidden="false"] .dialog-holder {
     @include transform(scale(1)); // Compass transform scale
   }
 
@@ -84,7 +84,7 @@
   }
 
 
-  // Modify form controls inside a modal
+  // Modify form controls inside a dialog
 
   .form-group {
     float: none;

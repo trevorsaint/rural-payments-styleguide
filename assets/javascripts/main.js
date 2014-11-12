@@ -113,45 +113,45 @@
     }
 
 
-    // Show modal
+    // Show dialog
 
-    function showModal() {
-
-
-      if ($('.modal').length>0) {
+    function showDialog() {
 
 
-        // Open modal
+      if ($('.dialog').length>0) {
 
-        $('a[data-toggle=modal]').on('click', function(e) {
+
+        // Open dialog
+
+        $('a[data-toggle=dialog]').on('click', function(e) {
 
           e.preventDefault();
           e.stopPropagation();
 
           var data = '#' + $(this).attr('data-target');
 
-          openModal(data); // Pass data value into function
+          openDialog(data); // Pass data value into function
 
         });
 
 
-        // Open modal
+        // Open dialog
 
-        function openModal(data) {
+        function openDialog(data) {
 
           $(data).attr('aria-hidden', 'false')
-            .find('.modal-content').focus()
+            .find('.dialog-content').focus()
             .attr('tabindex', '-1');
 
         }
 
 
-        // Close modal only if visible
+        // Close dialog only if visible
 
-        function closeModal() {
+        function closeDialog() {
 
-          $('.modal[aria-hidden=false]').attr('aria-hidden', 'true')
-            .find('.modal-content').blur()
+          $('.dialog[aria-hidden=false]').attr('aria-hidden', 'true')
+            .find('.dialog-content').blur()
             .attr('tabindex', '0');
 
         }
@@ -159,18 +159,18 @@
 
         // Stop bubbling
 
-        $('.modal-holder').on('click', function(e) {
+        $('.dialog-holder').on('click', function(e) {
 
           e.stopPropagation();
 
         });
 
 
-        $('.modal-close').on('click', function(e) {
+        $('.dialog-close').on('click', function(e) {
 
           e.stopPropagation();
 
-          closeModal();
+          closeDialog();
 
         });
 
@@ -181,7 +181,7 @@
 
           click: function(e) {
 
-            closeModal();
+            closeDialog();
 
           },
 
@@ -189,7 +189,7 @@
 
             if (e.keyCode == 27) {
 
-              closeModal();
+              closeDialog();
 
             }
 
@@ -322,7 +322,7 @@
         toggleTabs();
         formValidation();
         formMultipleCheckboxes();
-        showModal();
+        showDialog();
 
     });
 
