@@ -22,3 +22,19 @@
 
 }
 
+
+// An exception to the rule
+
+details {
+
+  .hcard {
+    margin-bottom: 0;
+
+    &-adr {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+

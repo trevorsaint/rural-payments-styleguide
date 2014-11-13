@@ -122,7 +122,7 @@
 		</div>
 
 
-		<a class="back-link" href="../">Back to check business details</a>
+		<a class="back-link" href="../check-business-details/">Back to check business details</a>
 
 
     <div class="grid-row">
@@ -134,26 +134,30 @@
         <h1 class="heading-xlarge">Amend business details <span class="heading-secondary">Beech Farm</span></h1>
 
 
-        <form class="form" method="post" action="/">
+        <form class="form" method="get" action="../additional-business-details">
 
 
-          <fieldset>
+          <!-- form group -->
+          <fieldset class="form-group">
+
 
             <legend class="heading-large">Business name and address</legend>
+
 
             <div class="form-group">
               <label class="form-label" for="business-name">Business name</label>
               <input class="form-control" id="business-name" type="text" value="Beech Farm">
             </div>
 
-            <fieldset class="form-group">
 
-              <legend class="form-label">Postcode</legend>
+            <div class="form-group">
+
+              <label class="form-label" for="postcode-search">Postcode</label>
 
               <div class="form-search">
 
                 <div class="form-group-search">
-                  <input class="form-control" id="search" type="text">
+                  <input class="form-control" id="postcode-search" type="text">
                 </div>
 
                 <div class="form-group-button">
@@ -162,31 +166,34 @@
 
               </div>
 
-            </fieldset>
-
-          </fieldset>
-
-
-          <details>
-
-            <summary><span class="summary">I have an address in Northern Ireland or outside the United Kingdom</span></summary>
-
-            <div class="panel-indent">
-
-              <p>
-                Pooley Bridge<br>
-                Penrith<br>
-                Cumbria<br>
-                CH3 6NZ<br>
-                United Kingdom
-              </p>
-
             </div>
 
-          </details>
+
+            <details>
+
+              <summary><span class="summary">I have an address in Northern Ireland or outside the United Kingdom</span></summary>
+
+              <div class="panel-indent">
+
+                <p>
+                  Pooley Bridge<br>
+                  Penrith<br>
+                  Cumbria<br>
+                  CH3 6NZ<br>
+                  United Kingdom
+                </p>
+
+              </div>
+
+            </details>
 
 
-          <fieldset>
+          </fieldset>
+          <!-- end -->
+
+
+          <!-- form group -->
+          <fieldset class="form-group">
 
             <legend class="heading-large">Business contact details</legend>
 
@@ -210,10 +217,11 @@
             </div>
 
           </fieldset>
+          <!-- end -->
 
 
-
-          <fieldset>
+          <!-- form group -->
+          <fieldset class="form-group">
 
             <legend class="heading-large">Reference numbers</legend>
 
@@ -223,12 +231,14 @@
             </div>
 
           </fieldset>
+          <!-- end -->
 
 
-          <!-- actions -->
-          <div class="button-container">
-            <!--button class="button" type="button">Business details are correct and complete</button-->
-            <a class="button" href="../additional-business-details" role="button">Business details are correct and complete</a>
+          <!-- form group -->
+          <div class="form-group">
+
+            <button class="button" type="submit">Business details are correct and complete</button>
+
           </div>
           <!-- end -->
 

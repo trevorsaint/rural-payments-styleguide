@@ -122,27 +122,30 @@
 		</div>
 
 
-		<a class="back-link" href="../personal-details/">Back to personal details</a>
+		<a class="back-link" href="../personal-details/">Back to your personal details</a>
 
 
     <h1 class="heading-xlarge">Your contact details</h1>
 
 
-    <form class="form" method="post" action="/">
+    <p class="lede">Check the details below for any errors.</p>
 
 
-      <fieldset>
+    <form class="form" method="get" action="../contact-preferences/">
 
-        <legend class="heading-large">Address</legend>
 
-        <fieldset class="form-group">
+      <div class="form-group">
 
-          <legend class="form-label">Postcode</legend>
+        <fieldset>
+
+          <legend class="heading-large">Address</legend>
+
+          <label class="form-label" for="postcode-search">Postcode</label>
 
           <div class="form-search">
 
             <div class="form-group-search">
-              <input class="form-control" id="search" type="text" value="CA10 2NP">
+              <input class="form-control" id="postcode-search" type="text" value="CA10 2NP">
             </div>
 
             <div class="form-group-button">
@@ -153,7 +156,7 @@
 
         </fieldset>
 
-      </fieldset>
+      </div>
 
 
       <details>
@@ -180,34 +183,38 @@
       </details>
 
 
-      <fieldset>
+      <div class="form-group">
 
-        <legend class="heading-large">Email and telephone</legend>
+        <fieldset>
 
-        <div class="text">
-          <p>You must enter either a landline or mobile number.</p>
-        </div>
+          <legend class="heading-large">Email and telephone</legend>
 
-        <div class="form-group">
-          <label class="form-label" for="email">Email</label>
-          <input class="form-control" id="email" type="email" value="mia.wallace@beechfarm.co.uk">
-        </div>
+          <div class="text">
+            <p>You must enter either a landline or mobile number.</p>
+          </div>
 
-        <div class="form-group">
-          <label class="form-label" for="landline">Landline</label>
-          <input class="form-control" id="landline" type="tel" value="0147 9643 7573">
-        </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" id="email" type="email" value="mia.wallace@beechfarm.co.uk">
+          </div>
 
-        <div class="form-group">
-          <label class="form-label" for="mobile">Mobile</label>
-          <input class="form-control" id="mobile" type="tel" value="0797 8377 7457">
-        </div>
+          <div class="form-group">
+            <label class="form-label" for="landline">Landline</label>
+            <input class="form-control" id="landline" type="tel" value="0147 9643 7573">
+          </div>
 
-      </fieldset>
+          <div class="form-group">
+            <label class="form-label" for="mobile">Mobile</label>
+            <input class="form-control" id="mobile" type="tel" value="0797 8377 7457">
+          </div>
+
+        </fieldset>
+
+      </div>
 
 
-      <div class="button-container">
-        <a class="button" href="../check-business-details/" role="button">Continue</a>
+      <div class="form-group">
+        <button class="button" type="submit">Contine</button>
       </div>
 
 

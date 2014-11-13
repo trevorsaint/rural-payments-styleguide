@@ -122,7 +122,7 @@
 		</div>
 
 
-		<a class="back-link" href="../">Back to check business details</a>
+		<a class="back-link" href="../additional-business-details/">Back to additional business details</a>
 
 
     <div class="text">
@@ -131,10 +131,12 @@
 
       <p class="lede">Before applying for any schemes, you need to provide us with details of people who are accountable for your business. You can do this now or choose to do it later.</p>
 
+      <p><a href="../business-details-summary/">Continue and provide additional business details later</a></p>
+
     </div>
 
 
-    <form class="form" method="post" action="/">
+    <form class="form" method="get" action="../people-accountable-summary/">
 
 
       <fieldset>
@@ -143,22 +145,28 @@
         <legend class="heading-large">Add an accountable person</legend>
 
 
+        <!-- form group -->
         <div class="form-group">
           <label class="form-label" for="name">Name</label>
           <input class="form-control" id="name" type="text">
         </div>
+        <!-- end -->
 
 
+        <!-- form group -->
         <div class="form-group">
           <label class="form-label" for="email">Email</label>
           <input class="form-control" id="email" type="email">
         </div>
+        <!-- end -->
 
 
+        <!-- form group -->
         <div class="form-group">
           <label class="form-label" for="telephone">Telephone number</label>
           <input class="form-control" id="telephone" type="tel">
         </div>
+        <!-- end -->
 
 
         <!-- date of birth -->
@@ -189,105 +197,119 @@
         <!-- end -->
 
 
+        <!-- form group -->
         <div class="form-group">
           <label class="form-label" for="business-attributed">Percentage of business attributed</label>
           <span class="form-hint">For example, 20%.</span>
           <input class="form-control" id="business-attributed" type="text">
         </div>
+        <!-- end -->
 
 
+        <!-- form group -->
         <div class="form-group">
           <label class="form-label" for="ni-number">National Insurance number</label>
           <input class="form-control" id="ni-number" type="text">
         </div>
+        <!-- end -->
 
 
-        <!-- is this person an owner? -->
-        <fieldset class="inline">
+        <!-- form group -->
+        <div class="form-group form-group-compound">
 
-          <legend class="form-label">Is this person an owner?</legend>
+          <fieldset class="inline">
 
-          <div class="form-group form-group-compound">
+            <legend class="form-label">Is this person an owner?</legend>
 
-            <label class="block-label" data-target="person-dob" for="radio-indent-1">
-              <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
-              Yes
-            </label>
+            <div class="form-group form-group-compound">
 
-            <label class="block-label" for="radio-indent-2">
-              <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
-              No
-            </label>
+              <label class="block-label" data-target="person-dob" for="radio-indent-1">
+                <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
+                Yes
+              </label>
 
-          </div>
-
-          <div class="panel-indent js-hidden" id="person-dob">
-
-            <div class="form-date">
-
-              <label class="form-label">Date this person became an owner</label>
-
-            	<div class="form-group form-group-day">
-            		<label class="form-label" for="dob-day-2">Day</label>
-            		<input class="form-control" id="dob-day-2" type="text">
-            	</div>
-
-            	<div class="form-group form-group-month">
-            		<label class="form-label" for="dob-month-2">Month</label>
-            		<input class="form-control" id="dob-month-2" type="text">
-            	</div>
-
-            	<div class="form-group form-group-year">
-            		<label class="form-label" for="dob-year-2">Year</label>
-            		<input class="form-control" id="dob-year-2" type="text">
-            	</div>
+              <label class="block-label" for="radio-indent-2">
+                <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
+                No
+              </label>
 
             </div>
 
-          </div>
+            <div class="panel-indent js-hidden" id="person-dob">
 
-        </fieldset>
-        <!-- end -->
+              <div class="form-date">
 
+                <label class="form-label">Date this person became an owner</label>
 
-        <!-- is this person head of holding -->
-        <!--fieldset class="inline">
+              	<div class="form-group form-group-day">
+              		<label class="form-label" for="dob-day-2">Day</label>
+              		<input class="form-control" id="dob-day-2" type="text">
+              	</div>
 
-          <legend class="form-label">Is this person head of holding?</legend>
+              	<div class="form-group form-group-month">
+              		<label class="form-label" for="dob-month-2">Month</label>
+              		<input class="form-control" id="dob-month-2" type="text">
+              	</div>
 
-          <div class="form-group">
+              	<div class="form-group form-group-year">
+              		<label class="form-label" for="dob-year-2">Year</label>
+              		<input class="form-control" id="dob-year-2" type="text">
+              	</div>
 
-            <label class="block-label" for="radio-inline-1">
-              <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
-            </label>
+              </div>
 
-            <label class="block-label" for="radio-inline-2">
-              <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
-            </label>
+            </div>
 
-          </div>
+          </fieldset>
 
-        </fieldset-->
-        <!-- end -->
-
-
-        <!-- wwhat does head of holding mean? -->
-        <!--details>
-
-          <summary><span class="summary">What does head of holding mean?</span></summary>
-
-          <div class="panel-indent">
-            <p>According to the scheme rules, the ‘head of holding’ is the person who 'exercises effective and long-term control over the legal business in terms of decisions related to management, benefits and financial risks’. Go to <a href="http://www.gov.uk" rel="external">GOV.UK</a> to find out more about how we use this information to assess eligibility for <abbr title="Common Agricultural Policy">CAP</abbr> schemes.</p>
-          </div>
-
-        </details-->
-        <!-- end -->
-
-
-        <div class="button-container">
-          <a class="button" href="../people-accountable-summary" role="button">Add this person</a>
-          <p><a href="../business-details-summary/">Continue and provide additional business details later</a></p>
         </div>
+        <!-- end -->
+
+
+        <!-- form group -->
+        <div class="form-group">
+
+          <fieldset class="inline">
+
+            <legend class="form-label">Is this person head of holding?</legend>
+
+            <div class="form-group">
+
+              <label class="block-label" for="radio-inline-1">
+                <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
+              </label>
+
+              <label class="block-label" for="radio-inline-2">
+                <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
+              </label>
+
+            </div>
+
+          </fieldset>
+
+          <div class="text">
+
+            <details>
+
+              <summary><span class="summary">What does head of holding mean?</span></summary>
+
+              <div class="panel-indent">
+                <p>According to the scheme rules, the ‘head of holding’ is the person who 'exercises effective and long-term control over the legal business in terms of decisions related to management, benefits and financial risks’. Go to <a href="http://www.gov.uk" rel="external">GOV.UK</a> to find out more about how we use this information to assess eligibility for <abbr title="Common Agricultural Policy">CAP</abbr> schemes.</p>
+              </div>
+
+            </details>
+
+          </div>
+
+        </div>
+        <!-- end -->
+
+
+        <!-- form group -->
+        <div class="form-group">
+          <button class="button" type="submit">Continue</button>
+        </div>
+        <!-- end -->
 
 
       </fieldset>

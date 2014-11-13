@@ -122,47 +122,59 @@
 		</div>
 
 
-		<a class="back-link" href="../">Back to cap information service</a>
+		<a class="back-link" href="../">Back to CAP Information Service</a>
 
 
     <h1 class="heading-xlarge">Your personal details</h1>
 
 
-    <form class="form" method="post" action="/">
+    <p class="lede">Check the details below for any errors.</p>
 
 
+    <form class="form" method="get" action="../your-contact-details/">
+
+
+      <!-- form group -->
       <div class="form-group">
         <label class="form-label" for="title">Title (optional)</label>
         <select class="form-control-select" id="title">
           <option>-- Please make a selection --</option>
-          <option value="1">Miss</option>
+          <option value="1" selected>Miss</option>
           <option value="2">Ms</option>
           <option value="3">Mr</option>
-          <option value="4" selected>Dr</option>
+          <option value="4">Dr</option>
           <option value="5">Sir</option>
           <option value="6">Dname</option>
         </select>
       </div>
+      <!-- end -->
 
 
+      <!-- form group -->
       <div class="form-group">
         <label class="form-label" for="first-ame">First name</label>
         <input class="form-control" id="first-name" type="text" value="Mia">
       </div>
+      <!-- end -->
 
 
+      <!-- form group -->
       <div class="form-group">
         <label class="form-label" for="middle-name">Middle name</label>
         <input class="form-control" id="middle-name" type="text" value="Jane">
       </div>
+      <!-- end -->
 
 
+      <!-- form group -->
       <div class="form-group">
         <label class="form-label" for="last-name">Last name</label>
         <input class="form-control" id="last-name" type="text" value="Wallace">
       </div>
+      <!-- end -->
 
 
+      <!-- form-group -->
       <div class="form-group">
 
         <fieldset>
@@ -191,13 +203,16 @@
         </fieldset>
 
       </div>
+      <!-- end -->
 
 
+      <!-- form group -->
       <div class="form-group">
 
-        <a class="button" href="../your-contact-details/" role="button">Continue</a>
+        <button class="button" type="submit">Continue</button>
 
       </div>
+      <!-- end -->
 
 
     </form>
