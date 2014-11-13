@@ -40,17 +40,17 @@ module.exports = function(grunt) {
   			}
 
   		},
-        dist: {
 
-            options: {
-                port: 80,
-                open: false,
-                hostname: 'localhost',
-                keepalive: true
+      dist: {
 
-            }
-
+        options: {
+            port: 80,
+            open: false,
+            hostname: 'localhost',
+            keepalive: true
         }
+
+      }
 
   	},
 
@@ -80,9 +80,10 @@ module.exports = function(grunt) {
 
   		html: {
 
-  			files: ['*.html'],
+  			files: ['**/*.html'],
   			options: {
-  				livereload: true
+  				livereload: true,
+  				spawn: false
   			}
 
   		}
