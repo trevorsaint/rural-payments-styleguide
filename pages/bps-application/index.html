@@ -117,7 +117,7 @@
 	  <div class="phase-banner">
 			<p>
 				<strong class="phase-tag">Beta</strong>
-				<span>This is a new service &ndash; your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+				<span>This is a new service &ndash; your <a href="#">feedback</a> will help us to improve it.</span>
 			</p>
 		</div>
 
@@ -182,7 +182,7 @@
 
 
       <!-- table -->
-      <table class="table-capd">
+      <table>
         <caption class="visuallyhidden">Land and entitlements overview</caption>
         <thead>
           <tr>
@@ -280,31 +280,41 @@
 
 
       <!-- form -->
-      <form class="form">
+      <form class="form" method="get" action="/">
 
-        <h1 class="form-title heading-large">Go ahead with the application</h1>
 
-        <fieldset class="inline">
+        <h1 class="heading-large">Go ahead with the application</h1>
 
-          <legend class="form-label">Do you want to go ahead with the application based on these details?</legend>
 
-          <div class="form-group">
-            <label class="block-label" for="radio-indent-1">
-              <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">Yes
-            </label>
-            <label class="block-label" for="radio-indent-2">
-              <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">No
-            </label>
-          </div>
+        <!-- form group -->
+        <div class="form-group">
 
-        </fieldset>
+          <fieldset class="inline">
 
-        <div class="form-group form-group-compound">
-          <button class="button" type="button">Save and continue</button>
-          <ul>
-						<li><a href="../">Save and return to scheme eligibility</a></li>
-					</ul>
+            <legend class="form-label">Do you want to go ahead with the application based on these details?</legend>
+
+            <div class="form-group">
+              <label class="block-label" for="radio-indent-1">
+                <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">Yes
+              </label>
+              <label class="block-label" for="radio-indent-2">
+                <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">No
+              </label>
+            </div>
+
+          </fieldset>
+
         </div>
+        <!-- end -->
+
+
+        <!-- form group -->
+        <div class="form-group">
+          <button class="button" type="submit">Save and continue</button>
+          <p><a href="../">Save and return to scheme eligibility</a></p>
+        </div>
+        <!-- end -->
+
 
       </form>
       <!-- end -->

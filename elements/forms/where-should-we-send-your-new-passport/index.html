@@ -117,7 +117,7 @@
 		<div class="phase-banner">
 			<p>
 				<strong class="phase-tag">Beta</strong>
-				<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+				<span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
 			</p>
 		</div>
 
@@ -126,10 +126,17 @@
 
 
     <!-- form -->
-		<form class="form" method="post" action="/">
+		<form class="form" method="get" action="/">
 
-			<h1 class="form-title heading-large">Where should we send your new passport?</h1>
 
+			<div class="text">
+
+  			<h1 class="form-title heading-large">Where should we send your new passport?</h1>
+
+			</div>
+
+
+      <!-- form group -->
 			<div class="form-group">
 
 				<fieldset>
@@ -147,7 +154,10 @@
 				</fieldset>
 
 			</div>
+			<!-- end -->
 
+
+      <!-- other address -->
 			<div class="panel-indent toggle-content js-hidden" id="other-address">
 
 				<fieldset>
@@ -177,10 +187,13 @@
 				</fieldset>
 
 			</div>
+			<!-- end -->
 
+
+      <!-- form group -->
 			<div class="form-group">
 
-				<button class="button" type="button">Continue</button>
+				<button class="button" type="submit">Continue</button>
 
 				<ul>
 					<li><a href="../">Skip this section for now</a></li>
@@ -188,6 +201,8 @@
 				</ul>
 
 			</div>
+			<!-- end -->
+
 
 		</form>
 		<!-- end -->

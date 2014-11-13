@@ -117,7 +117,7 @@
 		<div class="phase-banner">
 			<p>
 				<strong class="phase-tag">Beta</strong>
-				<span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+				<span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
 			</p>
 		</div>
 
@@ -125,30 +125,39 @@
 		<a class="back-link" href="../">Back to forms</a>
 
 
+		<h1 class="heading-xlarge">Your details</h1>
+
+
     <!-- form -->
-		<form class="form" method="post" action="/">
+		<form class="form" method="get" action="/">
 
-			<h1 class="form-title heading-large">Your details</h1>
 
+      <!-- form group -->
 			<div class="form-group">
-				<label class="form-label-bold" for="full-name">Full name</label>
+				<label class="form-label" for="full-name">Full name</label>
 				<p class="form-hint">As shown on your birth certificate or passport</p>
 				<input class="form-control" type="text" id="full-name">
 			</div>
+			<!-- end -->
 
+
+      <!-- form group -->
 			<div class="form-group">
-				<label class="form-label-bold" for="ni-number">National Insurance number
+				<label class="form-label" for="ni-number">National Insurance number
 					<span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60.<br>
 					For example, 'VO 12 34 56 D'.</span>
 				</label>
 				<input class="form-control" type="text" id="ni-number">
 			</div>
+			<!-- end -->
 
+
+      <!-- form group -->
 			<div class="form-group">
 
 				<fieldset>
 
-					<legend class="form-label-bold">Date of birth</legend>
+					<legend class="form-label">Date of birth</legend>
 
 					<div class="form-date">
 
@@ -179,10 +188,13 @@
 				</fieldset>
 
 			</div>
+			<!-- end -->
 
+
+      <!-- form group -->
 			<div class="form-group">
 
-				<button class="button" type="button">Continue</button>
+				<button class="button" type="submit">Continue</button>
 
 				<ul>
 					<li><a href="../">Skip this section for now</a></li>
@@ -190,6 +202,8 @@
 				</ul>
 
 			</div>
+			<!-- end -->
+
 
 		</form>
 		<!-- end -->

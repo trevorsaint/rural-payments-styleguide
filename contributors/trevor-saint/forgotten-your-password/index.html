@@ -117,7 +117,7 @@
 	  <div class="phase-banner">
 			<p>
 				<strong class="phase-tag">Beta</strong>
-				<span>This is a new service &ndash; your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+				<span>This is a new service &ndash; your <a href="#">feedback</a> will help us to improve it.</span>
 			</p>
 		</div>
 
@@ -133,64 +133,77 @@
 
       <p>If you don't have a code, click '<b>send unique code</b>' below to recieve one. When you get this code, return to this page and enter it. This code is only active for 12 hours, after this time you will need another code.</p>
 
-      <p>If you don't know your <abbr title="Customer Reference Number">CRN</abbr> or the email address that is registered to your account, you will need to contact us on 03000 200 301.</p>
+      <p>If you don't know your <abbr title="Customer Reference Number">CRN</abbr> or the email address that is registered to your account, you will need to contact us on <b>03000 200 301</b>.</p>
 
     </div>
 
 
-    <form class="form" method="post" action="/">
+    <form class="form" method="get" action="/">
 
 
-      <fieldset>
+      <!-- form group -->
+      <div class="form-group">
 
-        <legend class="heading-large">Your details</legend>
+        <fieldset>
 
-        <div class="form-group">
-          <label class="form-label" for="customer-reference">Customer reference number</label>
-          <input class="form-control" id="customer-reference" type="text">
-        </div>
+          <legend class="heading-large">Your details</legend>
 
-        <div class="form-group">
-          <label class="form-label" for="email">Email address</label>
-          <input class="form-control" id="email" type="email">
-        </div>
+          <div class="form-group">
+            <label class="form-label" for="customer-reference">Customer reference number</label>
+            <input class="form-control" id="customer-reference" type="text">
+          </div>
 
-        <div class="form-group">
-          <label class="form-label" for="unique-code">Unique code</label>
-          <span class="form-hint">It'll be in your email inbox. For example, 123456.</span>
-          <input class="form-control" id="unique-code" type="text">
-        </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email address</label>
+            <input class="form-control" id="email" type="email">
+          </div>
 
-      </fieldset>
+          <div class="form-group">
+            <label class="form-label" for="unique-code">Unique code</label>
+            <span class="form-hint">It'll be in your email inbox. For example, 123456.</span>
+            <input class="form-control" id="unique-code" type="text">
+          </div>
 
+        </fieldset>
 
-      <p class="form-block">Unique code has expired or is forgotten? <br> <a href="/">Send unique code</a></p>
+        <p class="form-block">Unique code has expired or is forgotten? <br> <a href="/">Send unique code</a></p>
 
-
-      <fieldset>
-
-        <legend class="heading-large">Create new password</legend>
-
-        <div class="text">
-          <p>Your new password must be different from your email address and customer reference number, a minimum of 8 characters, contain upper and lower case letters, and contain at least one number or special character.</p>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="new-password">New password</label>
-          <input class="form-control" id="new-password" type="password">
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="confirm-password">Confirm password</label>
-          <input class="form-control" id="confirm-password" type="password">
-        </div>
-
-      </fieldset>
-
-
-      <div class="button-container">
-        <button class="button" type="button">Create new password</button>
       </div>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <div class="form-group">
+
+        <fieldset>
+
+          <legend class="heading-large">Create new password</legend>
+
+          <div class="text">
+            <p>Your new password must be different from your email address and customer reference number, a minimum of 8 characters, contain upper and lower case letters, and contain at least one number or special character.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="new-password">New password</label>
+            <input class="form-control" id="new-password" type="password">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="confirm-password">Confirm password</label>
+            <input class="form-control" id="confirm-password" type="password">
+          </div>
+
+        </fieldset>
+
+      </div>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <div class="form-group">
+        <button class="button" type="submit">Create new password</button>
+      </div>
+      <!-- end -->
 
 
     </form>
