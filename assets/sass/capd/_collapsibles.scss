@@ -1,0 +1,37 @@
+// ==========================================================================
+// Collapsibles
+// ==========================================================================
+
+
+.collapsible {
+
+  &-heading {
+    @include user-select(none); // Compass helper
+    cursor: pointer;
+    border-top: 1px solid $grey-2;
+    padding: .5em;
+
+    &:focus {
+      outline: 3px solid $yellow;
+    }
+
+  }
+
+  .name {
+    color: $govuk-blue;
+    text-decoration: underline;
+  }
+
+
+  &-content {
+    padding: .5em;
+  }
+
+}
+
+
+// Aria hidden attribute
+
+[aria-hidden=true] {
+  @extend .visuallyhidden;
+}
