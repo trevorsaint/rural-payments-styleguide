@@ -3,6 +3,7 @@
 // ==========================================================================
 
 .collapsible {
+  margin-bottom: 1.05263em; // 20px
 
   &-heading {
     @include user-select(none); // Compass helper
