@@ -19,20 +19,5 @@
 
     <!-- capd-collapsible-->
 
-    <section class="collapsible">
-
-        <h2 class="heading-medium">People legally responsible for the business</h2>
-
-        <article class="collapsible-item">
-            <div class="collapsible-heading">
-                <h3 class="name"><span>Mia Wallace</span></h3>
-                <p class="owns">Percentage of business owned {{percentage}}%</p>
-            </div>
-            <div class="collapsible-content">
-                <p>Content</p>
-                <p>Percentage <input ng-model="percentage"></p>
-            </div>
-        </article>
-
-    </section>
+    <div ng-include="'/javascripts/views/capd-collapsible-exhibition.html'"></div>
 </div>
