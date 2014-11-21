@@ -4,20 +4,10 @@
 
 .details {
   margin-bottom: 1.05263em; // 20px
+  overflow: hidden;
 
 
-  ul {
-    margin: 0;
-  }
-
-
-  li {
-		clear: both;
-		overflow: hidden;
-	}
-
-
-  &-title {
+  dt {
     @extend .bold-small;
 
     @include media(tablet) {
@@ -28,7 +18,7 @@
   }
 
 
-  &-value {
+  dd {
     display: block;
   	@include media(tablet) {
     	@include box-sizing(border-box);
