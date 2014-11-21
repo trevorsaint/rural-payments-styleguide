@@ -2,36 +2,104 @@
 // Collapsibles
 // ==========================================================================
 
-
 .collapsible {
 
   &-heading {
     @include user-select(none); // Compass helper
-    cursor: pointer;
     border-top: 1px solid $grey-2;
-    padding: .5em;
+    padding: .5em 0;
+    position: relative;
+  }
 
-    &:focus {
-      outline: 3px solid $yellow;
-    }
-
+  &-content {
+    padding: .5em 0;
   }
 
   .name {
-    color: $govuk-blue;
-    text-decoration: underline;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
   }
 
+  .owns {
+    margin: 0;
+    position: absolute;
+    top: .6em; right: .5em;
+  }
 
-  &-content {
-    padding: .5em;
+}
+
+// JS Enabled
+
+.js-enabled {
+
+  .collapsible {
+
+    &-heading {
+      padding: 0;
+    }
+
+    &-content {
+      padding: .5em .5em .5em 1.9em;
+    }
+
+    button {
+      background: transparent;
+      border: 0 none;
+      cursor: pointer;
+      display: block;
+      font-size: 1em;
+      padding: .5em;
+      text-align: left;
+      width: 100%;
+
+      span {
+        color: $link-colour;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+
+      &:before {
+        color: $link-colour;
+        margin-right: .35em;
+      }
+
+      // Closed
+      &[aria-expanded=false] {
+        &:before {
+          content: '►';
+        }
+      }
+
+      // Open
+      &[aria-expanded=true] {
+        &:before {
+          content: '▼';
+        }
+      }
+
+
+      &:hover {
+        span,
+        &:before {
+          color: $link-hover-colour;
+        }
+      }
+
+
+      &:focus {
+        outline: 3px solid $yellow;
+      }
+
+    }
+
   }
 
 }
 
 
 // Aria hidden attribute
-
 [aria-hidden=true] {
   @extend .visuallyhidden;
 }
+

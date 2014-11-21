@@ -1,0 +1,42 @@
+// ==========================================================================
+// Details
+// ==========================================================================
+
+.details {
+  margin-bottom: 1.05263em; // 20px
+
+
+  ul {
+    margin: 0;
+  }
+
+
+  li {
+		clear: both;
+		overflow: hidden;
+	}
+
+
+  &-title {
+    @extend .bold-small;
+
+    @include media(tablet) {
+  		float: left;
+  		width: 40%;
+  	}
+
+  }
+
+
+  &-value {
+    display: block;
+  	@include media(tablet) {
+    	@include box-sizing(border-box);
+  		float: right;
+  		padding-left: 20px;
+  		width: 60%;
+  	}
+  }
+
+
+}

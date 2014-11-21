@@ -128,24 +128,56 @@
 		<h1 class="heading-xlarge">Collapsibles</h1>
 
 
-
     <!-- collapsible -->
 		<section class="collapsible">
 
 
-  		<h2 class="heading-medium"></h2>
+  		<h2 class="heading-medium">People legally responsible for the business</h2>
 
 
       <!-- item -->
       <article class="collapsible-item">
 
-  		  <div class="collapsible-heading" tabindex="0">
-    		  <h3 class="name">Mia Wallace</h3>
-    		  <span class="owned">Percentage of business owned: 40&#37;</span>
-    		</div>
+  		  <div class="collapsible-heading">
+    		  <h3 class="name"><span>Mia Wallace</span></h3>
+    		  <p class="owns">Percentage of business owned 40%</p>
+  		  </div>
 
   		  <div class="collapsible-content">
-    		  <p>Some content goes here&hellip;</p>
+
+          <div class="details">
+
+            <ul>
+
+              <li>
+                <h4 class="details-title">Date became owner</h4>
+                <div class="details-value">18 June 1972</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Email address</h4>
+                <div class="details-value"><a href="mailto:m.wallace@abusiness.com">m.wallace@abusiness.com</a></div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Phone number</h4>
+                <div class="details-value">07730670866</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Date of birth</h4>
+                <div class="details-value">18 September 1964</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">National Insurance</h4>
+                <div class="details-value">QQ 12 34 56 A</div>
+              </li>
+
+            </ul>
+
+          </div>
+
   		  </div>
 
       </article>
@@ -155,13 +187,46 @@
       <!-- item -->
       <article class="collapsible-item">
 
-  		  <div class="collapsible-heading" tabindex="0">
-    		  <h3 class="name">John Shelly</h3>
-    		  <span class="owned">Percentage of business owned: 30&#37;</span>
-    		</div>
+  		  <div class="collapsible-heading">
+    		  <h3 class="name"><span>John Shelly</span></h3>
+    		  <p class="owns">Percentage of business owned 40%</p>
+  		  </div>
 
   		  <div class="collapsible-content">
-    		  <p>Some content goes here&hellip;</p>
+
+          <div class="details">
+
+            <ul>
+
+              <li>
+                <h4 class="details-title">Date became owner</h4>
+                <div class="details-value">12 March 1984</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Email address</h4>
+                <div class="details-value"><a href="mailto:j.shelly@abusiness.com">j.shelly@abusiness.com</a></div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Phone number</h4>
+                <div class="details-value">07760670286</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Date of birth</h4>
+                <div class="details-value">05 April 1978</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">National Insurance</h4>
+                <div class="details-value">QQ 18 34 53 B</div>
+              </li>
+
+            </ul>
+
+          </div>
+
   		  </div>
 
       </article>
@@ -171,13 +236,46 @@
       <!-- item -->
       <article class="collapsible-item">
 
-  		  <div class="collapsible-heading" tabindex="0">
-    		  <h3 class="name">Peter Burns</h3>
-    		  <span class="owned">Percentage of business owned: 30&#37;</span>
-    		</div>
+  		  <div class="collapsible-heading">
+    		  <h3 class="name"><span>Peter Burns</span></h3>
+    		  <p class="owns">Percentage of business owned 40%</p>
+  		  </div>
 
   		  <div class="collapsible-content">
-    		  <p>Some content goes here&hellip;</p>
+
+          <div class="details">
+
+            <ul>
+
+              <li>
+                <h4 class="details-title">Date became owner</h4>
+                <div class="details-value">10 October 1987</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Email address</h4>
+                <div class="details-value"><a href="mailto:p.burns@abusiness.com">p.burns@abusiness.com</a></div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Phone number</h4>
+                <div class="details-value">06760670352</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">Date of birth</h4>
+                <div class="details-value">25 July 1977</div>
+              </li>
+
+              <li>
+                <h4 class="details-title">National Insurance</h4>
+                <div class="details-value">QQ 28 45 53 A</div>
+              </li>
+
+            </ul>
+
+          </div>
+
   		  </div>
 
       </article>
@@ -240,48 +338,6 @@
   <script src="/assets/javascripts/vendor/modernizr.custom.77028.js"></script>
   <script src="/assets/javascripts/vendor/details.polyfill.js"></script>
   <script src="/assets/javascripts/main.js"></script>
-
-
-  <script>
-
-    $('.collapsible .collapsible-item').each(function() {
-
-
-      // Variables
-      var $this    = $(this);
-      var $header  = $(this).find('.collapsible-heading');
-      var $content = $(this).find('.collapsible-content');
-
-
-      var $link = $header.find('a');
-
-
-      // Create a unique ID
-      var id = 'collapsible-' + $(this).index();
-
-
-      // Add attributes to collapsible headings
-      $header.attr('aria-controls', id).attr('aria-expanded', 'false');
-
-
-      // Add attributes to collapsible content
-      $content.attr('id', id).attr('aria-hidden', 'true');
-
-
-      // Toggle state
-      $header.on('click', function() {
-
-        var state = $(this).attr('aria-expanded') === 'false' ? true : false;
-
-        $header.attr('aria-expanded', state);
-        $content.attr('aria-hidden', !state);
-
-      });
-
-
-    });
-
-  </script>
 
 
   </body>

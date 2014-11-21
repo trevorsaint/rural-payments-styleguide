@@ -221,51 +221,48 @@
 
     function formMultipleCheckboxes() {
 
+      if ($('.form-checkboxes').length > 0) {
 
-        if ($('.form-checkboxes').length > 0) {
+        $('.form-checkboxes > li').on('click', function(event) {
 
-            $('.form-checkboxes > li').on('click', function(event) {
+          var target   = $(event.target);
+          var checkbox = $(this).find("input[type='checkbox']");
 
-                var target   = $(event.target);
-                var checkbox = $(this).find("input[type='checkbox']");
+          if (target.is("input[type='checkbox']")) {
 
-                if (target.is("input[type='checkbox']")) {
+            if ($(this).hasClass('selected')) {
+              $(this).removeClass('selected');
+              $(this).removeClass('focused');
+            } else {
+              $(this).addClass('selected');
+              $(this).addClass('focused');
+            }
 
-                    if ($(this).hasClass('selected')) {
+            return;
 
-                        $(this).removeClass('selected');
-                        $(this).removeClass('focused');
+          }
 
-                    } else {
+          event.preventDefault();
 
-                        $(this).addClass('selected');
-                        $(this).addClass('focused');
-                    }
+          if (!checkbox.prop('checked')) {
 
-                    return;
-                }
+            $(this).addClass('selected');
+            $(this).addClass('focused');
 
-                event.preventDefault();
+            checkbox.prop('checked', true);
 
-                if (!checkbox.prop('checked')) {
+          } else {
 
-                    $(this).addClass('selected');
-                    $(this).addClass('focused');
+            $(this).removeClass('selected');
+            $(this).removeClass('focused');
 
-                    checkbox.prop('checked', true);
+            checkbox.prop('checked', false);
 
-                } else {
+          }
 
-                    $(this).removeClass('selected');
-                    $(this).removeClass('focused');
+        });
 
-                    checkbox.prop('checked', false);
-
-                }
-
-            });
-
-        }
+      }
 
     }
 
@@ -274,25 +271,67 @@
 
     function formValidation() {
 
-        $('.validation-list a[href^="#"]').on('click', function(e) {
+      $('.validation-list a[href^="#"]').on('click', function(e) {
 
-            e.preventDefault();
+        e.preventDefault();
 
-            // Declare variables
-            var link = $(this),
-                id   = link.attr('href');
+        // Declare variables
+        var link = $(this),
+            id   = link.attr('href');
 
-            // Get focus
-            $(id).focus();
+        // Get focus
+        $(id).focus();
 
-            // Smooth movement to error
-            $('html, body').animate({
+        // Smooth movement to error
+        $('html, body').animate({
 
-                scrollTop: ($(id).offset().top) - 20
+            scrollTop: ($(id).offset().top) - 20
 
-            }, 500);
+        }, 500);
+
+      });
+
+    }
+
+
+    // Collapsibles
+
+    function collapsibles() {
+
+      $('.collapsible .collapsible-item').each(function() {
+
+
+        // Variables
+        var $this    = $(this);
+        var $header  = $(this).find('.collapsible-heading h3');
+        var $content = $(this).find('.collapsible-content');
+
+
+        // Create a unique ID
+        var id = 'collapsible-' + $(this).index();
+
+
+        // Add button inside $header
+        $header.wrapInner('<button aria-expanded="false" aria-controls="'+ id +'">');
+        var $button = $header.children('button');
+
+
+        // Add attributes to collapsible content
+        $content.attr('id', id).attr('aria-hidden', 'true')
+
+
+        // Toggle state
+        $button.on('click', function() {
+
+          var state = $(this).attr('aria-expanded') === 'false' ? true : false;
+
+          $button.attr('aria-expanded', state);
+          $content.attr('aria-hidden', !state);
 
         });
+
+
+      });
 
     }
 
@@ -323,6 +362,7 @@
         formValidation();
         formMultipleCheckboxes();
         showDialog();
+        collapsibles();
 
     });
 
