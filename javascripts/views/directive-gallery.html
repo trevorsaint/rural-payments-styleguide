@@ -1,160 +1,18 @@
 <div id="directive-gallery">
-
-
     <!--- capd-hello --->
-    <h1 class="heading-large">capd Hello</h1>
+    <h1 class="heading-large">capdHello</h1>
     <span capd-hello="Developer"/>
-
+    <hr/>
 
     <!--- capd-tabs --->
-    <h1 class="heading-large">capd Tabs</h1>
 
-    <div capd-tabs>
+    <div ng-include="'/javascripts/views/capd-tabs-exhibition.html'"></div>
 
-        <div capd-tabs-tab="Tab1">
 
-            <div class="text">
-
-                <p>To get your first provisional driving licence online for a car, motorcycle or moped you must:</p>
-
-                <ul class="list-bullet">
-                    <li>be a resident of Great Britain – there’s a different service in <a href="http://www.nidirect.gov.uk/applying-for-a-provisional-driving-licence" rel="external">Northern Ireland</a></li>
-                    <li>meet the minimum age requirement</li>
-                    <li>meet the <a href="/driving-eyesight-rules">minimum eyesight requirement</a></li>
-                    <li>not be prevented from driving for any reason</li>
-                    <li>pay £50 by MasterCard, Visa, Electron, Maestro or Delta debit or credit card</li>
-                    <li>have a valid <abbr title="United Kngdom">UK</abbr> passport or <a href="/driving-licence-application-identity-documents">other form of identity</a></li>
-                    <li>have your National Insurance number if known</li>
-                    <li>provide addresses where you’ve lived for the last 3 years</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-        <div capd-tabs-tab="Tab2">
-            <b>Tab2</b> contents
-        </div>
-
-        <div capd-tabs-tab="Tab3">
-            <b>Tab3</b> contents
-        </div>
-
-        <div capd-tabs-tab="Tab4">
-            <b>Tab4</b> contents
-        </div>
-
-        <div capd-tabs-tab="Tab5">
-            <b>Tab5</b> contents
-        </div>
-
-    </div>
-
+    <hr/>
 
     <!--- capd-form-group --->
-    <h1 class="heading-large">capd BlockLabel</h1>
 
-    <h2 class="heading-medium">Radio block label</h2>
-
-    <div class="form-group">
-
-        <label class="block-label">
-            <input name="radio-inline-group" value="Yes" type="radio"> Yes
-        </label>
-
-        <label class="block-label">
-            <input name="radio-inline-group" value="No" type="radio"> No
-        </label>
-
-        <label class="block-label">
-            <input name="radio-inline-group" value="Other" type="radio"> Other
-        </label>
-
-    </div>
-
-    <h2 class="heading-medium">Checkbox block label</h2>
-
-    <fieldset class="form-group">
-
-        <label class="block-label">
-            <input value="waste-animal" type="checkbox">
-            Waste from animal carcasses
-        </label>
-
-        <label class="block-label">
-            <input value="waste-mines" type="checkbox">
-            Waste from mines or quarries
-        </label>
-
-    </fieldset>
-
-    <fieldset>
-
-        <legend class="form-label-bold">Select the Good Agriculture and Environment Conditions (<abbr title="Good Agriculture and Environment Conditions">GAEC</abbr>) that will apply to your holding by ticking the relevant boxes.</legend>
-
-        <div class="form-group">
-
-            <ol class="form-checkboxes">
-
-                <li class="block-list">
-                    <label>
-                        <input type="checkbox">
-                        <span class="code">GAEC 5</span>
-                    </label>
-                    <span class="title">Minimum land management</span>
-                </li>
-
-                <li class="block-list">
-                    <label>
-                        <input type="checkbox">
-                        <span class="code">GAEC 6</span>
-                    </label>
-                    <div class="details">Soil organic matter
-                        <ul class="list-bullet">
-                            <li>Burnt heather, rough grass, broken and vaccinium</li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="block-list">
-                    <label>
-                        <input type="checkbox">
-                        <span class="code">GAEC 7A</span>
-                    </label>
-                    <div class="details">Boundaries
-                        <ul class="list-bullet">
-                            <li>Hedgerows</li>
-                            <li>Stone walls</li>
-                            <li>Earth and stone banks</li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="block-list">
-                    <label><input type="checkbox">
-                        <span class="code">GAEC 7B</span>
-                    </label>
-                    <span class="details">Visible public rights of way</span>
-                </li>
-
-                <li class="block-list">
-                    <label>
-                        <input type="checkbox">
-                        <span class="code">GAEC 7C</span>
-                    </label>
-                    <div class="details">Tree
-                        <ul class="list-bullet">
-                            <li>Trees</li>
-                            <li>Trees with Tree Protection Order</li>
-                        </ul>
-                    </div>
-                </li>
-
-            </ol>
-
-        </div>
-
-    </fieldset>
-
+    <div ng-include="'/javascripts/views/capd-block-label-exhitibtion.html'"></div>
 
 </div>
