@@ -3,6 +3,7 @@
 
 
 // Fieldset is used to group more than one .form-group
+
 fieldset {
   width: 100%;
   @extend %contain-floats;
@@ -10,6 +11,7 @@ fieldset {
 
 
 // Form group is used to wrap label and input pairs
+
 .form-group {
   float: left;
   width: 100%;
@@ -45,23 +47,31 @@ fieldset {
 
 // LABELS
 
+
 // Form labels, or for legends styled to look like labels
+
+.form-label,
+.form-label-bold {
+  display: block;
+  color: $text-colour;
+}
+
 .form-label {
   @include core-19;
-  display: block;
   margin-bottom: 5px;
 }
 
 .form-label-bold {
   @include bold-24;
-  display: block;
   margin-bottom: 0;
   .form-hint {
     @include core-19;
   }
 }
 
+
 // Used for paragraphs in-between form elements
+
 .form-block {
   float: left;
   width: 100%;
@@ -84,18 +94,20 @@ fieldset {
 
 // FORM CONTROLS
 
+
 // By default, form controls are 50% width for desktop,
 // and 100% width for mobile
+
 .form-control {
   @include core-19;
-
-  width: 100%;
   @include box-sizing(border-box);
-  padding: 4px;
   background-color: $white;
   border: 1px solid $border-colour;
+  padding: 4px;
+  width: 100%;
 
   // Disable webkit appearance and remove rounded corners
+
   -webkit-appearance: none;
   border-radius: 0;
 
@@ -106,12 +118,14 @@ fieldset {
 
 
 // Form control widths
+
 .form-control-3-4 {
   width: 100%;
   @include media(tablet) {
     width: 75%;
   }
 }
+
 
 .form-control-1-2 {
   width: 100%;
@@ -120,9 +134,11 @@ fieldset {
   }
 }
 
+
 .form-control-1-4 {
   width: 25%;
 }
+
 
 .form-control-1-8 {
   width: 12.5%;
@@ -130,22 +146,25 @@ fieldset {
 
 
 // Radio buttons
+
 .form-radio {
   display: block;
   margin: 10px 0;
 }
+
 .form-radio input {
   vertical-align: middle;
   margin: -4px 5px 0 0;
 }
 
 
-
 // Checkboxes
+
 .form-checkbox {
   display: block;
   margin: $gutter-half 0;
 }
+
 .form-checkbox input {
   vertical-align: middle;
   margin: -2px 5px 0 0;
@@ -167,3 +186,4 @@ fieldset {
 // Form patterns
 @import "forms/form-date";
 @import "forms/form-block-labels";
+
