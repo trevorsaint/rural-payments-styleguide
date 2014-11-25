@@ -49,14 +49,6 @@ body {
 }
 
 
-// Removes addition border and padding in firefox
-
-button::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-
 // Exception for date inputs
 
 .form-date {
