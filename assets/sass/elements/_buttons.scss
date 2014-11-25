@@ -10,6 +10,15 @@
   vertical-align: top;
 }
 
+
+// Fix unwanted button padding in Firefox
+
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
 .button:focus {
   outline: 3px solid $yellow;
 }
@@ -17,11 +26,11 @@
 
 // Disabled buttons
 
-.button[disabled='disabled'] {
+.button[disabled="disabled"] {
   background: $button-colour;
 }
 
-.button[disabled='disabled']:focus {
+.button[disabled="disabled"]:focus {
   outline: none;
 }
 
@@ -30,15 +39,20 @@
 
 .button-get-started {
   @include bold-24;
-  background-image: url('/assets/govuk/images/icons/icon-pointer.png');
+  background-image: url("/assets/govuk/images/icons/icon-pointer.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
   padding: em(7) em(41) em(4) em(16);
 
   @include device-pixel-ratio {
-    background-image: url('/assets/govuk/images/icons/icon-pointer-2x.png');
+    background-image: url("/assets/govuk/images/icons/icon-pointer-2x.png");
     background-size: 30px 19px;
   }
+
+  @include ie(6) {
+    background-image: file-url("/assets/govuk/images/icons/icon-pointer-2x.png");
+  }
+
 }
 
 
