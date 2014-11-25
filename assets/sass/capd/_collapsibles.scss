@@ -2,6 +2,7 @@
 // Collapsibles
 // ==========================================================================
 
+
 .collapsible {
   margin-bottom: 1.05263em; // 20px
 
@@ -28,7 +29,36 @@
     top: .6em; right: .5em;
   }
 
+  .details {
+    margin-bottom: 1.05263em; // 20px
+    overflow: hidden;
+
+    dt {
+      @extend .bold-small;
+
+      @include media(tablet) {
+        float: left;
+        width: 40%;
+      }
+
+    }
+
+    dd {
+      display: block;
+      @include media(tablet) {
+        @include box-sizing(border-box);
+        float: right;
+        padding-left: 20px;
+        width: 60%;
+      }
+
+    }
+
+  }
+
 }
+
+
 
 // JS Enabled
 
@@ -96,11 +126,5 @@
 
   }
 
-}
-
-
-// Aria hidden attribute
-[aria-hidden=true] {
-  @extend .visuallyhidden;
 }
 
