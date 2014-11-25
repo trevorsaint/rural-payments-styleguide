@@ -1,17 +1,9 @@
 <div class="tabs">
     <div class="tabs-nav">
         <ul class="tabs-list tabs-nav" role="tablist">
-            <li ng-class="{active : isTabSelected($index)}" ng-repeat="tab in tabs track by $index">
-                <a href="javascript:void(0)" role="tab" aria-controls="what-you-need-to-know" aria-flowto="what-you-need-to-know"
-                   aria-selected="true" tabindex="{{isTabSelected($index) ? 0 : -1}}" ng-click="selectTab($index)">
-                    {{tab.name}}
-                </a>
-            </li>
-            <!--<li><a href="#before-you-start" role="tab" id="tab-before-you-start" aria-controls="before-you-start" aria-flowto="before-you-start" aria-selected="false" tabindex="-1">Before you start</a></li>-->
-            <!--<li class="active"><a href="#what-you-need-to-know" role="tab" id="tab-what-you-need-to-know" aria-controls="what-you-need-to-know" aria-flowto="what-you-need-to-know" aria-selected="true" tabindex="0">What you need to know</a></li>-->
-            <!--<li><a href="#other-ways-to-apply" role="tab" id="tab-other-ways-to-apply" aria-controls="other-ways-to-apply" aria-flowto="other-ways-to-apply" aria-selected="false" tabindex="-1">Other ways to apply</a></li>-->
+
         </ul>
     </div>
-    <div class="tabs-content tabs-body" aria-live="polite" ng-transclude>
+    <div class="tabs-content tabs-body" aria-live="polite">
     </div>
 </div>

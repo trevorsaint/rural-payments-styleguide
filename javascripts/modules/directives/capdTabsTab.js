@@ -1,15 +1,17 @@
-define(function () {
-    var capdTabsTab = function () {
+define(['./capdTabsConstants'],function (capdTabsConstants) {
+    var capdTabsTab = function ($rootScope) {
         return {
             template: '<div ng-show="isVisible" ng-transclude></div>',
-            link: function postLink(scope, iElement, iAttrs, capdTabs) {
-                var tabName = iAttrs['capdTabsTab'];
+            link: function postLink(scope, iElement, iAttrs, capdTabsController) {
+                scope.isVisible = true;
 
-                scope.isVisible = false;
+                var registrationInfo = capdTabsController.registerTab();
 
-                capdTabs.registerTab({name: tabName, tabChanged: function(tabVisible){
-                    scope.isVisible = tabVisible;
-                }});
+                scope.index = registrationInfo.index;
+
+                registrationInfo.masterScope.$on(capdTabsConstants.TAB_CHANGED_EVENT, function(event, currentIndex){
+                    scope.isVisible = scope.index === currentIndex;
+                })
             },
             restrict : 'A',
             transclude: true,
@@ -21,7 +23,7 @@ define(function () {
         }
     }
 
-    capdTabsTab.$inject = [];
+    capdTabsTab.$inject = ['$rootScope'];
 
     return capdTabsTab;
 });
