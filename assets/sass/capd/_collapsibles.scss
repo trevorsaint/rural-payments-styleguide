@@ -95,14 +95,18 @@
         margin-right: .35em;
       }
 
+
       // Closed
+
       &[aria-expanded=false] {
         &:before {
           content: '►';
         }
       }
 
+
       // Open
+
       &[aria-expanded=true] {
         &:before {
           content: '▼';
@@ -123,6 +127,14 @@
       }
 
     }
+
+
+    // Aria hidden attribute
+
+    [aria-hidden=true] {
+      @extend .visuallyhidden;
+    }
+
 
   }
 
