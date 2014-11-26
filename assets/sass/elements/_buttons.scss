@@ -13,24 +13,28 @@
 
 // Fix unwanted button padding in Firefox
 
-.button::-moz-focus-inner {
+.button::-moz-focus-inner,
+ button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
 
-.button:focus {
+.button:focus,
+ button:focus {
   outline: 3px solid $yellow;
 }
 
 
 // Disabled buttons
 
-.button[disabled="disabled"] {
+.button[disabled="disabled"],
+ button[disabled="disabled"] {
   background: $button-colour;
 }
 
-.button[disabled="disabled"]:focus {
+.button[disabled="disabled"]:focus,
+ button[disabled="disabled"]:focus {
   outline: none;
 }
 

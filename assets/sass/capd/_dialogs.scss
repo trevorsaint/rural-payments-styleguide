@@ -79,6 +79,7 @@
 
 
   &-content {
+    outline: none; // Removes dotted border on focus
     padding: 1em;
     text-align: left;
   }
