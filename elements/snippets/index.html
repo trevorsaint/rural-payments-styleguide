@@ -157,7 +157,6 @@
 				  <li><a href="#layout">Layout</a></li>
 				  <li><a href="#tables">Tables</a></li>
 				  <li><a href="#forms">Forms</a></li>
-				  <li><a href="#details">Details</a></li>
 				</ol>
 
       </div>
@@ -165,11 +164,10 @@
       <div class="column-third">
 
 				<ol class="list-bullet">
+				  <li><a href="#details">Details</a></li>
           <li><a href="#alerts">Alerts</a></li>
 				  <li><a href="#tabs">Tabs</a></li>
 				  <li><a href="#steps">Steps</a></li>
-				  <li><a href="#summary">Summary</a></li>
-				  <li><a href="#related">Related</a></li>
 				</ol>
 
       </div>
@@ -177,6 +175,8 @@
       <div class="column-third">
 
 				<ol class="list-bullet">
+          <li><a href="#summary">Summary</a></li>
+				  <li><a href="#related">Related</a></li>
 				  <li><a href="#collapsibles">Collapsibles</a></li>
 				</ol>
 
@@ -647,44 +647,40 @@
 
 
       <!-- default table -->
-			<h3 class="heading-small">Default Table (GOV.UK)</h3>
+			<h3 class="heading-small">Table (standard)</h3>
 
 			<div class="example">
         <table>
-
           <caption class="visuallyhidden">Business plan execution results</caption>
-
           <thead>
             <tr>
-              <th scope="col">&nbsp;</th>
+              <th></th>
               <th scope="col">Business Plan</th>
               <th scope="col">Actual</th>
             </tr>
           </thead>
-
           <tbody>
             <tr>
-              <td scope="row">Vehicle volumes</td>
+              <th scope="row">Vehicle volumes</th>
               <td>103,672,000</td>
               <td>97,424,000</td>
             </tr>
             <tr>
-              <td scope="row">Driver volumes</td>
+              <th scope="row">Driver volumes</th>
               <td>16,891,000</td>
               <td>15,197,000</td>
             </tr>
             <tr>
-              <td scope="row">Electronic take-up target</td>
+              <th scope="row">Electronic take-up target</th>
               <td>54%</td>
               <td>-</td>
             </tr>
             <tr>
-              <td scope="row">Electronic take-up (actual)</td>
+              <th scope="row">Electronic take-up (actual)</th>
               <td>-</td>
               <td>50.3%</td>
             </tr>
           </tbody>
-
         </table>
 			</div>
 
@@ -701,102 +697,22 @@
     </thead>
     <tbody>
       <tr>
-        <td scope="row">Vehicle volumes</td>
+        <th scope="row">Vehicle volumes</th>
         <td>103,672,000</td>
         <td>97,424,000</td>
       </tr>
       <tr>
-        <td scope="row">Driver volumes</td>
+        <th scope="row">Driver volumes</th>
         <td>16,891,000</td>
         <td>15,197,000</td>
       </tr>
       <tr>
-        <td scope="row">Electronic take-up target</td>
+        <th scope="row">Electronic take-up target</th>
         <td>54%</td>
         <td>-</td>
       </tr>
       <tr>
-        <td scope="row">Electronic take-up (actual)</td>
-        <td>-</td>
-        <td>50.3%</td>
-      </tr>
-    </tbody>
-  </table>
-</code>
-</pre>
-
-
-      <!-- alternative table -->
-			<h3 class="heading-small">Alternative Table (DEFRA)</h3>
-
-			<div class="example">
-        <table class="table-capd">
-
-          <caption class="visuallyhidden">Business plan execution results</caption>
-
-          <thead>
-            <tr>
-              <th scope="col">&nbsp;</th>
-              <th scope="col">Business Plan</th>
-              <th scope="col">Actual</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td scope="row">Vehicle volumes</td>
-              <td>103,672,000</td>
-              <td>97,424,000</td>
-            </tr>
-            <tr>
-              <td scope="row">Driver volumes</td>
-              <td>16,891,000</td>
-              <td>15,197,000</td>
-            </tr>
-            <tr>
-              <td scope="row">Electronic take-up target</td>
-              <td>54%</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td scope="row">Electronic take-up (actual)</td>
-              <td>-</td>
-              <td>50.3%</td>
-            </tr>
-          </tbody>
-
-        </table>
-			</div>
-
-<pre class="language-markup">
-<code>
-  <table class="table-capd">
-    <caption class="visuallyhidden">Business plan execution results</caption>
-    <thead>
-      <tr>
-        <th></th>
-        <th scope="col">Business Plan</th>
-        <th scope="col">Actual</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td scope="row">Vehicle volumes</td>
-        <td>103,672,000</td>
-        <td>97,424,000</td>
-      </tr>
-      <tr>
-        <td scope="row">Driver volumes</td>
-        <td>16,891,000</td>
-        <td>15,197,000</td>
-      </tr>
-      <tr>
-        <td scope="row">Electronic take-up target</td>
-        <td>54%</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td scope="row">Electronic take-up (actual)</td>
+        <th scope="row">Electronic take-up (actual)</th>
         <td>-</td>
         <td>50.3%</td>
       </tr>
@@ -807,134 +723,329 @@
 
 
       <!-- screen reader enhanced table -->
-			<h3 class="heading-small">Business details listing (Screen reader optimised)</h3>
+			<h3 class="heading-small">Table (screen reader optimised)</h3>
 
 			<div class="example">
 
-        <table class="table-capd">
-
+        <table>
     		  <caption class="visuallyhidden">Busness details listing</caption>
-
     			<thead>
-
     				<tr>
     					<th scope="col">Business</th>
     					<th scope="col">Permissions</th>
     					<th scope="col">View or check</th>
     				</tr>
-
     			</thead>
-
     			<tbody>
-
     				<tr>
-    					<td scope="row">Hansels Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222235</td>
+    					<th scope="row">Hansels Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222235</th>
     					<td><a href="/">View or give permissions <span class="visuallyhidden">to Hansels Farm</span></a></td>
     					<td><a href="/">View business <span class="visuallyhidden">Hansels Farm</span></a></td>
     				</tr>
-
     				<tr>
-    					<td scope="row">Willow Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222236</td>
+    					<th scope="row">Willow Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222236</th>
     					<td><a href="/">View or give permissions <span class="visuallyhidden">to Willow Farm</span></a></td>
     					<td><a href="/">View business <span class="visuallyhidden">Willow Farm</span></a></td>
     				</tr>
-
     			</tbody>
-
     		</table>
 
 			</div>
 
 <pre class="language-markup">
 <code>
-  <table class="table-capd">
-
+  <table>
     <caption class="visuallyhidden">Busness details listing</caption>
-
   	<thead>
-
   		<tr>
   			<th scope="col">Business</th>
   			<th scope="col">Permissions</th>
   			<th scope="col">View or check</th>
   		</tr>
-
   	</thead>
-
   	<tbody>
-
   		<tr>
-  			<td scope="row">Hansels Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222235</td>
+  			<th scope="row">Hansels Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222235</th>
   			<td><a href="/">View or give permissions <span class="visuallyhidden">to Hansels Farm</span></a></td>
   			<td><a href="/">View business <span class="visuallyhidden">Hansels Farm</span></a></td>
   		</tr>
-
   		<tr>
-  			<td scope="row">Willow Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222236</td>
+  			<th scope="row">Willow Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222236</th>
   			<td><a href="/">View or give permissions <span class="visuallyhidden">to Willow Farm</span></a></td>
   			<td><a href="/">View business <span class="visuallyhidden">Willow Farm</span></a></td>
   		</tr>
-
   	</tbody>
-
   </table>
 </code>
 </pre>
 
 
-      <!-- screen reader enhanced table -->
-      <h3 class="heading-small">Manage land features (Screen reader optimised)</h3>
+			<!-- table with form elements -->
+      <h3 class="heading-small">Table (with form elements)</h3>
+
+      <div class="example">
+
+        <form class="form-table" method="post" action="/">
+      		<table>
+      		  <caption class="visuallyhidden">Business plan execution results</caption>
+      			<thead>
+      				<tr>
+      					<th scope="col">Parcel name</th>
+      					<th scope="col">Parcel reference</th>
+      					<th scope="col">Total area (<abbr title="Hectare">ha</abbr>)</th>
+      					<th scope="col"><abbr title="Basic Payment Scheme">BPS</abbr> eligible area (<abbr title="Hectare">ha</abbr>)</th>
+      					<th scope="col">Land cover</th>
+      					<th scope="col">Land use area (<abbr title="Hectare">ha</abbr>)</th>
+      					<th scope="col">Land use 2014</th>
+      					<th scope="col">Area to activate entitlements to claim <abbr title="Basic Payment Scheme">BPS</abbr> (<abbr title="Hectare">ha</abbr>)</th>
+      				</tr>
+      			</thead>
+      			<tbody>
+      				<tr>
+      					<th scope="row">Field E</th>
+      					<td>NZ1234</td>
+      					<td>10.50</td>
+      					<td>10.50</td>
+      					<td>Arable</td>
+      					<td>5.40</td>
+      					<td>Wheat</td>
+      					<td>
+        					<label class="visuallyhidden" for="land-area-1">Land Area</label>
+        					<input class="form-control" type="text" id="land-area-1" size="5" value="5.20">
+      					</td>
+      				</tr>
+      				<tr>
+      					<th scope="row">Field E</th>
+      					<td>NZ1234</td>
+      					<td>10.50</td>
+      					<td>10.50</td>
+      					<td>Arable</td>
+      					<td>5.40</td>
+      					<td>Wheat</td>
+      					<td>
+        					<label class="visuallyhidden" for="land-area-2">Land Area</label>
+        					<input class="form-control" type="text" id="land-area-2" size="5" value="5.00">
+      					</td>
+      				</tr>
+      				<tr>
+      					<th scope="row">Field E</th>
+      					<td>NZ1234</td>
+      					<td>10.50</td>
+      					<td>10.50</td>
+      					<td>Arable</td>
+      					<td>-</td>
+      					<td>Peas</td>
+      					<td>
+        					<label class="visuallyhidden" for="land-area-3">Land Area</label>
+        					<input class="form-control" type="text" id="land-area-3" size="5" value="10.00">
+      					</td>
+      				</tr>
+      			</tbody>
+      		</table>
+        </form>
+
+      </div>
+
+
+<pre class="language-markup">
+<code>
+  <form class="form-table" method="post" action="/">
+  	<table>
+  	  <caption class="visuallyhidden">Business plan execution results</caption>
+  		<thead>
+  			<tr>
+  				<th scope="col">Parcel name</th>
+  				<th scope="col">Parcel reference</th>
+  				<th scope="col">Total area (ha)</th>
+  				<th scope="col">BPS eligible area (ha)</th>
+  				<th scope="col">Land cover</th>
+  				<th scope="col">Land use area (ha)</th>
+  				<th scope="col">Land use 2014</th>
+  				<th scope="col">Area to activate entitlements to claim BPS (ha)</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			<tr>
+  				<th scope="row">Field E</th>
+  				<td>NZ1234</td>
+  				<td>10.50</td>
+  				<td>10.50</td>
+  				<td>Arable</td>
+  				<td>5.40</td>
+  				<td>Wheat</td>
+  				<td>
+  					<label class="visuallyhidden" for="land-area-1">Land Area</label>
+  					<input class="form-control" type="text" id="land-area-1" size="5" value="5.20">
+  				</td>
+  			</tr>
+  			<tr>
+  				<th scope="row">Field E</th>
+  				<td>NZ1234</td>
+  				<td>10.50</td>
+  				<td>10.50</td>
+  				<td>Arable</td>
+  				<td>5.40</td>
+  				<td>Wheat</td>
+  				<td>
+  					<label class="visuallyhidden" for="land-area-2">Land Area</label>
+  					<input class="form-control" type="text" id="land-area-2" size="5" value="5.00">
+  				</td>
+  			</tr>
+  			<tr>
+  				<th scope="row">Field E</th>
+  				<td>NZ1234</td>
+  				<td>10.50</td>
+  				<td>10.50</td>
+  				<td>Arable</td>
+  				<td>-</td>
+  				<td>Peas</td>
+  				<td>
+  					<label class="visuallyhidden" for="land-area-3">Land Area</label>
+  					<input class="form-control" type="text" id="land-area-3" size="5" value="10.00">
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </form>
+</code>
+</pre>
+
+
+      <!-- table manage land features -->
+      <h3 class="heading-small">Table (manage land features)</h3>
 
 			<div class="example">
 
         <table class="table-parcel">
-
     		  <caption class="visuallyhidden">Manage land features</caption>
+    			<thead>
+    				<tr>
+    					<th scope="col">Feature</th>
+    					<th class="table-area" scope="col">Area</th>
+    					<th></th>
+    				</tr>
+    			</thead>
+    			<tfoot>
+      			<tr>
+        			<td>Total</td>
+        			<td>0.4ha</td>
+        			<td></td>
+      			</tr>
+    			</tfoot>
+    			<tbody>
+    				<tr>
+    					<th scope="row"><a href="/">Arable land</a></th>
+    					<td><span class="text-secondary">Unknown</span></td>
+    					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Arable land</span></a></td>
+    				</tr>
+    				<tr>
+    					<th scope="row"><a href="/">Buffer strips</a></th>
+    					<td><span class="text-secondary">Unknown</span></td>
+    					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Buffer strips</span></a></td>
+    				</tr>
+    				<tr>
+    					<th scope="row"><a href="/">Hedges</a></th>
+    					<td><span class="text-secondary">Unknown</span></td>
+    					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Hedges</span></a></td>
+    				</tr>
+    				<tr>
+    					<th scope="row"><a href="/">Pond</a></th>
+    					<td>0.4ha</td>
+    					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Pond</span></a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+
+			</div>
+
+<pre class="language-markup">
+<code>
+  <table class="table-parcel">
+    <caption class="visuallyhidden">Manage land features</caption>
+    <thead>
+      <tr>
+        <th scope="col">Feature</th>
+        <th scope="col">Area</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>0.4ha</td>
+        <td></td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <th scope="row"><a href="/">Arable land</a></th>
+        <td class="table-area"><span class="text-secondary">Unknown</span></td>
+        <td class="table-action"><a href="/">Remove <span class="visuallyhidden">Arable land</span></a></td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="/">Buffer strips</a></th>
+        <td class="table-area"><span class="text-secondary">Unknown</span></td>
+        <td class="table-action"><a href="/">Remove <span class="visuallyhidden">Buffer strips</span></a></td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="/">Hedges</a></th>
+        <td class="table-area"><span class="text-secondary">Unknown</span></td>
+        <td class="table-action"><a href="/">Remove <span class="visuallyhidden">Hedges</span></a></td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="/">Pond</a></th>
+        <td class="table-area">0.4ha</td>
+        <td class="table-action"><a href="/">Remove <span class="visuallyhidden">Pond</span></a></td>
+      </tr>
+    </tbody>
+  </table>
+</code>
+</pre>
+
+
+      <!-- table reset user passwords -->
+      <h3 class="heading-small">Table (reset user passwords)</h3>
+
+			<div class="example">
+
+        <table class="table-resetpassword">
+
+    		  <caption class="visuallyhidden">Reset user passwords</caption>
 
     			<thead>
 
     				<tr>
-    					<th scope="col">Feature</th>
-    					<th class="table-area" scope="col">Area</th>
-    					<th class="table-action" scope="col">&nbsp;</th>
+    					<th scope="col">Name</th>
+    					<th></th>
     				</tr>
 
     			</thead>
 
-    			<tfoot>
-
-      			<tr>
-        			<td scope="row">Total</td>
-        			<td>0.4ha</td>
-        			<td>&nbsp;</td>
-      			</tr>
-
-    			</tfoot>
-
     			<tbody>
 
     				<tr>
-    					<td scope="row"><a href="/">Arable land</a></td>
-    					<td><span class="text-secondary">Unknown</span></td>
-    					<td><a href="/">Remove <span class="visuallyhidden">Arable land</span></a></td>
+    					<th scope="row"><b>Connor Auditor</b> <br> selenium-test-internal-auditor@test.kainos.com</th>
+    					<td class="table-action"><a href="/">Reset password</a></td>
     				</tr>
 
     				<tr>
-    					<td scope="row"><a href="/">Buffer strips</a></td>
-    					<td><span class="text-secondary">Unknown</span></td>
-    					<td><a href="/">Remove <span class="visuallyhidden">Buffer strips</span></a></td>
+    					<th scope="row"><b>Connor Basic</b> <br> selenium-test-internal-basic@test.kainos.com</th>
+    					<td class="table-action"><a href="/">Reset password</a></td>
     				</tr>
 
     				<tr>
-    					<td scope="row"><a href="/">Hedges</a></td>
-    					<td><span class="text-secondary">Unknown</span></td>
-    					<td><a href="/">Remove <span class="visuallyhidden">Hedges</span></a></td>
+    					<th scope="row"><b>Connor Higher</b> <br> selenium-test-internal-higher@test.kainos.com</th>
+    					<td class="table-action"><a href="/">Reset password</a></td>
     				</tr>
 
     				<tr>
-    					<td scope="row"><a href="/">Pond</a></td>
-    					<td>0.4ha</td>
-    					<td><a href="/">Remove <span class="visuallyhidden">Pond</span></a></td>
+    					<th scope="row"><b>Connor Operations</b> <br> selenium-test-internal-operations@test.kainos.com</th>
+    					<td class="table-action"><a href="/">Reset password</a></td>
+    				</tr>
+
+    				<tr>
+    					<th scope="row"><b>Connor Qc</b> <br> selenium-test-internal-qc@test.kainos.com</th>
+    					<td class="table-action"><a href="/">Reset password</a></td>
     				</tr>
 
     			</tbody>
@@ -946,57 +1057,43 @@
 <pre class="language-markup">
 <code>
   <table class="table-parcel">
-
     <caption class="visuallyhidden">Manage land features</caption>
-
-  	<thead>
-
-  		<tr>
-  			<th scope="col">Feature</th>
-  			<th class="table-area" scope="col">Area</th>
-  			<th class="table-action" scope="col">&nbsp;</th>
-  		</tr>
-
-  	</thead>
-
-  	<tfoot>
-
-  		<tr>
-  			<td scope="row">Total</td>
-  			<td>0.4ha</td>
-  			<td>&nbsp;</td>
-  		</tr>
-
-  	</tfoot>
-
-  	<tbody>
-
-  		<tr>
-  			<td scope="row"><a href="/">Arable land</a></td>
-  			<td><span class="text-secondary">Unknown</span></td>
-  			<td><a href="/">Remove <span class="visuallyhidden">Arable land</span></a></td>
-  		</tr>
-
-  		<tr>
-  			<td scope="row"><a href="/">Buffer strips</a></td>
-  			<td><span class="text-secondary">Unknown</span></td>
-  			<td><a href="/">Remove <span class="visuallyhidden">Buffer strips</span></a></td>
-  		</tr>
-
-  		<tr>
-  			<td scope="row"><a href="/">Hedges</a></td>
-  			<td><span class="text-secondary">Unknown</span></td>
-  			<td><a href="/">Remove <span class="visuallyhidden">Hedges</span></a></td>
-  		</tr>
-
-  		<tr>
-  			<td scope="row"><a href="/">Pond</a></td>
-  			<td>0.4ha</td>
-  			<td><a href="/">Remove <span class="visuallyhidden">Pond</span></a></td>
-  		</tr>
-
-  	</tbody>
-
+    <thead>
+      <tr>
+        <th scope="col">Feature</th>
+        <th scope="col">Area</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>0.4ha</td>
+        <td></td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <th scope="row"><a href="/">Arable land</a></th>
+        <td class="table-area"><span class="text-secondary">Unknown</span></td>
+        <td class="table-action"><a href="/">Remove <span class="visuallyhidden">Arable land</span></a></td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="/">Buffer strips</a></th>
+        <td class="table-area"><span class="text-secondary">Unknown</span></td>
+        <td class="table-action"><a href="/">Remove <span class="visuallyhidden">Buffer strips</span></a></td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="/">Hedges</a></th>
+        <td class="table-area"><span class="text-secondary">Unknown</span></td>
+        <td class="table-action"><a href="/">Remove <span class="visuallyhidden">Hedges</span></a></td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="/">Pond</a></th>
+        <td class="table-area">0.4ha</td>
+        <td class="table-action"><a href="/">Remove <span class="visuallyhidden">Pond</span></a></td>
+      </tr>
+    </tbody>
   </table>
 </code>
 </pre>

@@ -128,7 +128,8 @@
 		<h1 class="heading-xlarge">Tables</h1>
 
 
-		<h2 class="heading-medium">Default table (GOV.UK)</h2>
+    <!-- standard table -->
+		<h2 class="heading-medium">1. Table (standard)</h2>
 
 
 		<table>
@@ -138,7 +139,7 @@
 			<thead>
 
 				<tr>
-					<th>&nbsp;</th>
+					<th></th>
 					<th scope="col">Business Plan</th>
 					<th scope="col">Actual</th>
 				</tr>
@@ -148,25 +149,25 @@
 			<tbody>
 
 				<tr>
-					<td scope="row">Vehicle volumes</td>
+					<th scope="row">Vehicle volumes</th>
 					<td>103,672,000</td>
 					<td>97,424,000</td>
 				</tr>
 
 				<tr>
-					<td scope="row">Driver volumes</td>
+					<th scope="row">Driver volumes</th>
 					<td>16,891,000</td>
 					<td>15,197,000</td>
 				</tr>
 
 				<tr>
-					<td scope="row">Electronic take-up target</td>
+					<th scope="row">Electronic take-up target</th>
 					<td>54%</td>
 					<td>-</td>
 				</tr>
 
 				<tr>
-					<td scope="row">Electronic take-up (actual)</td>
+					<th scope="row">Electronic take-up (actual)</th>
 					<td>-</td>
 					<td>50.3%</td>
 				</tr>
@@ -176,59 +177,11 @@
 		</table>
 
 
-		<h2 class="heading-medium">Alternative table (<abbr title="Department for Environment, Food and Rural Affairs">DEFRA</abbr>)</h2>
+    <!-- screen reader optimised table -->
+		<h2 class="heading-medium">2. Table (screen reader optimised)</h2>
 
 
-		<table class="table-capd">
-
-		  <caption class="visuallyhidden">Business plan execution results</caption>
-
-			<thead>
-
-				<tr>
-					<th>&nbsp;</th>
-					<th scope="col">Business Plan</th>
-					<th scope="col">Actual</th>
-				</tr>
-
-			</thead>
-
-			<tbody>
-
-				<tr>
-					<td scope="row">Vehicle volumes</td>
-					<td>103,672,000</td>
-					<td>97,424,000</td>
-				</tr>
-
-				<tr>
-					<td scope="row">Driver volumes</td>
-					<td>16,891,000</td>
-					<td>15,197,000</td>
-				</tr>
-
-				<tr>
-					<td scope="row">Electronic take-up target</td>
-					<td>54%</td>
-					<td>-</td>
-				</tr>
-
-				<tr>
-					<td scope="row">Electronic take-up (actual)</td>
-					<td>-</td>
-					<td>50.3%</td>
-				</tr>
-
-			</tbody>
-
-		</table>
-
-
-
-		<h2 class="heading-medium">Table (Screen reader optimised)</h2>
-
-
-		<table class="table-capd">
+		<table>
 
 		  <caption class="visuallyhidden">Busness details listing</caption>
 
@@ -245,13 +198,13 @@
 			<tbody>
 
 				<tr>
-					<td scope="row">Hansels Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222235</td>
+					<th scope="row">Hansels Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222235</th>
 					<td><a href="/">View or give permissions <span class="visuallyhidden">to Hansels Farm</span></a></td>
 					<td><a href="/">View business <span class="visuallyhidden">Hansels Farm</span></a></td>
 				</tr>
 
 				<tr>
-					<td scope="row">Willow Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222236</td>
+					<th scope="row">Willow Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222236</th>
 					<td><a href="/">View or give permissions <span class="visuallyhidden">to Willow Farm</span></a></td>
 					<td><a href="/">View business <span class="visuallyhidden">Willow Farm</span></a></td>
 				</tr>
@@ -261,8 +214,8 @@
 		</table>
 
 
-
-		<h2 class="heading-medium">Table with form elements</h2>
+    <!-- table with form elements -->
+		<h2 class="heading-medium">3. Table (with form elements)</h2>
 
 
     <form class="form-table" method="post" action="/">
@@ -289,7 +242,7 @@
   			<tbody>
 
   				<tr>
-  					<td scope="row">Field E</td>
+  					<th scope="row">Field E</th>
   					<td>NZ1234</td>
   					<td>10.50</td>
   					<td>10.50</td>
@@ -303,7 +256,7 @@
   				</tr>
 
   				<tr>
-  					<td scope="row">Field E</td>
+  					<th scope="row">Field E</th>
   					<td>NZ1234</td>
   					<td>10.50</td>
   					<td>10.50</td>
@@ -317,7 +270,7 @@
   				</tr>
 
   				<tr>
-  					<td scope="row">Field E</td>
+  					<th scope="row">Field E</th>
   					<td>NZ1234</td>
   					<td>10.50</td>
   					<td>10.50</td>
@@ -337,7 +290,8 @@
     </form>
 
 
-    <h2 class="heading-medium">Manage land features (Screen reader optimised)</h2>
+    <!-- table manage land features -->
+    <h2 class="heading-medium">4. Table (manage land features)</h2>
 
 
 		<table class="table-parcel">
@@ -348,8 +302,8 @@
 
 				<tr>
 					<th scope="col">Feature</th>
-					<th class="table-area" scope="col">Area</th>
-					<th class="table-action">&nbsp;</th>
+					<th scope="col">Area</th>
+					<th></th>
 				</tr>
 
 			</thead>
@@ -359,7 +313,7 @@
   			<tr>
     			<td>Total</td>
     			<td>0.4ha</td>
-    			<td>&nbsp;</td>
+    			<td></td>
   			</tr>
 
 			</tfoot>
@@ -367,27 +321,76 @@
 			<tbody>
 
 				<tr>
-					<td scope="row"><a href="/">Arable land</a></td>
-					<td><span class="text-secondary">Unknown</span></td>
-					<td><a href="/">Remove <span class="visuallyhidden">Arable land</span></a></td>
+					<th scope="row"><a href="/">Arable land</a></th>
+					<td class="table-area"><span class="text-secondary">Unknown</span></td>
+					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Arable land</span></a></td>
 				</tr>
 
 				<tr>
-					<td scope="row"><a href="/">Buffer strips</a></td>
-					<td><span class="text-secondary">Unknown</span></td>
-					<td><a href="/">Remove <span class="visuallyhidden">Buffer strips</span></a></td>
+					<th scope="row"><a href="/">Buffer strips</a></th>
+					<td class="table-area"><span class="text-secondary">Unknown</span></td>
+					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Buffer strips</span></a></td>
 				</tr>
 
 				<tr>
-					<td scope="row"><a href="/">Hedges</a></td>
-					<td><span class="text-secondary">Unknown</span></td>
-					<td><a href="/">Remove <span class="visuallyhidden">Hedges</span></a></td>
+					<th scope="row"><a href="/">Hedges</a></th>
+					<td class="table-area"><span class="text-secondary">Unknown</span></td>
+					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Hedges</span></a></td>
 				</tr>
 
 				<tr>
-					<td scope="row"><a href="/">Pond</a></td>
-					<td>0.4ha</td>
-					<td><a href="/">Remove <span class="visuallyhidden">Pond</span></a></td>
+					<th scope="row"><a href="/">Pond</a></th>
+					<td class="table-area">0.4ha</td>
+					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Pond</span></a></td>
+				</tr>
+
+			</tbody>
+
+		</table>
+
+
+		<!-- reset user passwords -->
+    <h2 class="heading-medium">5. Table (reset user passwords)</h2>
+
+
+		<table class="table-resetpassword">
+
+		  <caption class="visuallyhidden">Reset user passwords</caption>
+
+			<thead>
+
+				<tr>
+					<th scope="col">Name</th>
+					<th></th>
+				</tr>
+
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<th scope="row"><b>Connor Auditor</b> <br> selenium-test-internal-auditor@test.kainos.com</th>
+					<td class="table-action"><a href="/">Reset password</a></td>
+				</tr>
+
+				<tr>
+					<th scope="row"><b>Connor Basic</b> <br> selenium-test-internal-basic@test.kainos.com</th>
+					<td class="table-action"><a href="/">Reset password</a></td>
+				</tr>
+
+				<tr>
+					<th scope="row"><b>Connor Higher</b> <br> selenium-test-internal-higher@test.kainos.com</th>
+					<td class="table-action"><a href="/">Reset password</a></td>
+				</tr>
+
+				<tr>
+					<th scope="row"><b>Connor Operations</b> <br> selenium-test-internal-operations@test.kainos.com</th>
+					<td class="table-action"><a href="/">Reset password</a></td>
+				</tr>
+
+				<tr>
+					<th scope="row"><b>Connor Qc</b> <br> selenium-test-internal-qc@test.kainos.com</th>
+					<td class="table-action"><a href="/">Reset password</a></td>
 				</tr>
 
 			</tbody>

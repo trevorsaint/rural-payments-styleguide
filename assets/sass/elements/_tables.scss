@@ -2,7 +2,7 @@
 // ==========================================================================
 
 
-// GOV.UK Publication table styling
+// Publication table styling
 
 table {
   border-collapse: collapse;
@@ -18,50 +18,12 @@ table td {
   color: #0b0c0c;
   padding: em(12, 16) em(20, 16) em(9, 16) 0;
   text-align: left;
+
 }
 
-table th {
+table thead th {
   font-weight: 700;
   vertical-align: top;
-}
-
-
-// Alternative table styling for DEFRA
-
-.table-capd {
-  border: 1px solid $border-colour;
-}
-
-.table-capd tr.stripe td,
-.table-capd tr:nth-child(even) td {
-  background-color: #fff;
-}
-
-.table-capd th,
-.table-capd td {
-  background-color: $grey-3;
-  border: 0 none;
-  padding: em(14) em(20);
-}
-
-.table-capd th {
-  border-left: 1px solid $border-colour;
-
-  &:first-child {
-    border-left: 0 none;
-  }
-
-}
-
-.table-capd td {
-  background: #eaedef;
-  border-left: dotted 1px $border-colour;
-  border-top: 1px solid $border-colour;
-
-  &:first-child {
-    border-left: 0 none;
-  }
-
 }
 
 
@@ -81,6 +43,7 @@ table tfoot {
 
 .table {
 
+
   // Parcel table
 
   &-parcel {
@@ -92,8 +55,26 @@ table tfoot {
         width: 100px;
       }
 
+      .table-action {
+        text-align: right;
+      }
+
     }
 
+  }
+
+
+  // Reset password table
+
+  &-resetpassword {
+
+    @include media(tablet) {
+
+      .table-action {
+        text-align: right;
+      }
+
+    }
 
   }
 
