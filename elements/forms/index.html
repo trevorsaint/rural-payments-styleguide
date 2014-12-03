@@ -221,19 +221,21 @@
 
         <div class="form-date">
 
+          <p class="form-hint">For example, 31 3 1980</p>
+
         	<div class="form-group form-group-day">
-        		<label class="form-label" for="dob-day">Day</label>
-        		<input class="form-control" id="dob-day" type="text">
+        		<label for="dob-day">Day</label>
+        		<input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
         	</div>
 
         	<div class="form-group form-group-month">
-        		<label class="form-label" for="dob-month">Month</label>
-        		<input class="form-control" id="dob-month" type="text">
+        		<label for="dob-month">Month</label>
+        		<input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
         	</div>
 
         	<div class="form-group form-group-year">
-        		<label class="form-label" for="dob-year">Year</label>
-        		<input class="form-control" id="dob-year" type="text">
+        		<label for="dob-year">Year</label>
+        		<input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
         	</div>
 
         </div>
