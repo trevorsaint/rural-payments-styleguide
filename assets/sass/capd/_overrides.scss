@@ -63,3 +63,23 @@ body {
 
 }
 
+
+
+// Exception for details
+
+details {
+  margin-top: em(5, 16 );
+  margin-bottom: em(20, 16);
+
+  @include media(tablet) {
+    margin-top: em(5);
+    margin-bottom: em(20);
+  }
+
+}
+
+details .panel-indent {
+  margin: 0;
+  padding: 10px 15px;
+}
+

@@ -3,6 +3,8 @@
 // ==========================================================================
 
 
+// Block list
+
 .block-list {
   @include box-sizing(border-box);
   @include user-select(none);
@@ -18,11 +20,6 @@
   position: relative;
   width: 100%;
 
-  @include media(tablet) {
-    //margin-top: 5px;
-    //margin-bottom: 5px;
-  }
-
   label {
     cursor: pointer;
   }
@@ -37,10 +34,12 @@
   &:hover {
     border-color: $black;
   }
+
 }
 
 
 // Add selected state
+
 .js-enabled .block-list.selected {
   background: $white;
   border-color: $black;
@@ -48,13 +47,37 @@
 
 
 // Add focus to block labels
+
 .js-enabled .block-list.focused {
   outline: 3px solid $yellow;
 }
 
 
 // Remove focus from radio/checkboxes
+
 .js-enabled .block-list input:focus {
   outline: none;
+}
+
+
+// Description list
+
+.description-list {
+  margin-bottom: 1em;
+
+  dt {
+    float: left;
+    margin-right: 5px;
+
+    &:after {
+      content: ':';
+    }
+
+  }
+
+  dd {
+    overflow: hidden;
+  }
+
 }
 

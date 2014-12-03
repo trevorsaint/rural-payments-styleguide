@@ -1,26 +1,34 @@
 // Panels
 // ==========================================================================
 
+
 // Indented panels with a grey left hand border
+
 .panel-indent {
   @extend %contain-floats;
-  clear: both;
   border-left: 4px solid $border-colour;
-
-  padding: 10px 0 10px $gutter-half;
+  clear: both;
   margin: ($gutter $gutter-half $gutter*1.5 0);
+  padding: 10px 0 10px $gutter-half;
 }
+
 
 .panel-indent legend {
   margin-top: 0;
 }
 
-// Remove bottom margin on last paragraph
+
+// Remove bottom margin on last paragraph and ul
+
 .panel-indent p:only-child,
-.panel-indent p:last-child {
+.panel-indent p:last-child,
+.panel-indent ul:only-child,
+.panel-indent ul:last-child {
   margin-bottom: 0;
 }
+
 
 .panel-indent .form-group:last-child {
   margin-bottom: 0;
 }
+

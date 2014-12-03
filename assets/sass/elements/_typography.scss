@@ -10,6 +10,7 @@ main {
 }
 
 // Core font sizes
+
 .font-xxlarge {
   @include core-80;
 }
@@ -30,6 +31,7 @@ main {
 }
 
 // Bold font sizes
+
 .bold-xxlarge {
   @include bold-80();
 }
@@ -54,6 +56,7 @@ main {
 // Spacing is set in em, using the px to em function in the elements _helpers.scss file
 
 // Headings
+
 .heading-xlarge {
   @include bold-48();
 
@@ -119,7 +122,9 @@ main {
 
 }
 
+
 // Text
+
 p {
   margin-top: em(5, 16 );
   margin-bottom: em(20, 16);
@@ -132,18 +137,42 @@ p {
 }
 
 // Lede, or intro text
+
 .lede {
   @include core-24;
 }
 
 // Set a max-width for text blocks
 // Less than 75 characters per line of text
+
 .text {
   max-width: 30em;
 }
 
+
 .text-secondary {
   color: $secondary-text-colour;
+}
+
+
+.text-warning {
+  color: $warning-color;
+
+  &:before {
+    @include border-radius(50%);
+    background-color: $warning-background;
+    content: '!';
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    height: 1em;
+    line-height: 1;
+    margin-right: 5px;
+    padding: 2px;
+    text-align: center;
+    width: 1em;
+  }
+
 }
 
 
@@ -153,9 +182,13 @@ strong, b {
 
 
 // Link styles
+
 .link {
   color: $link-colour;
-  text-decoration: underline;
+
+  &:link {
+    color: $link-colour;
+  }
 
   &:visited {
     color: $link-visited-colour;
@@ -172,7 +205,30 @@ strong, b {
 }
 
 
+.link-secondary {
+  color: $link-secondary-color;
+
+  &:link {
+    color: $link-secondary-color;
+  }
+
+  &:visited {
+    color: $link-secondary-visited-color;
+  }
+
+  &:hover {
+    color: $link-secondary-hover-color;
+  }
+
+  &:active {
+    color: $link-secondary-active-color;
+  }
+
+}
+
+
 // Code styles
+
 pre,
 code {
   font-size: 13px;

@@ -128,8 +128,11 @@
 		<h1 class="heading-xlarge">Tables</h1>
 
 
-    <!-- standard table -->
-		<h2 class="heading-medium">1. Table (standard)</h2>
+		<p class="lede">Consider putting content into tables to make it easier to scan.</p>
+
+
+    <!-- standard -->
+		<h2 class="heading-medium">Standard table</h2>
 
 
 		<table>
@@ -140,8 +143,8 @@
 
 				<tr>
 					<th></th>
-					<th scope="col">Business Plan</th>
-					<th scope="col">Actual</th>
+					<th class="numeric" scope="col">Business Plan</th>
+					<th class="numeric" scope="col">Actual</th>
 				</tr>
 
 			</thead>
@@ -150,26 +153,26 @@
 
 				<tr>
 					<th scope="row">Vehicle volumes</th>
-					<td>103,672,000</td>
-					<td>97,424,000</td>
+					<td class="numeric">103,672,000</td>
+					<td class="numeric">97,424,000</td>
 				</tr>
 
 				<tr>
 					<th scope="row">Driver volumes</th>
-					<td>16,891,000</td>
-					<td>15,197,000</td>
+					<td class="numeric">16,891,000</td>
+					<td class="numeric">15,197,000</td>
 				</tr>
 
 				<tr>
 					<th scope="row">Electronic take-up target</th>
-					<td>54%</td>
-					<td>-</td>
+					<td class="numeric">54%</td>
+					<td class="numeric">-</td>
 				</tr>
 
 				<tr>
 					<th scope="row">Electronic take-up (actual)</th>
-					<td>-</td>
-					<td>50.3%</td>
+					<td class="numeric">-</td>
+					<td class="numeric">50.3%</td>
 				</tr>
 
 			</tbody>
@@ -177,8 +180,162 @@
 		</table>
 
 
-    <!-- screen reader optimised table -->
-		<h2 class="heading-medium">2. Table (screen reader optimised)</h2>
+		<!-- land features -->
+		<h2 class="heading-medium">Land features table</h2>
+
+
+    <table class="table-land-features">
+
+      <caption class="visuallyhidden">Land uses and features information</caption>
+
+      <thead>
+
+        <tr>
+          <th scope="col">Land uses and features</th>
+          <th class="numeric" scope="col">Area</th>
+          <th class="action"></th>
+        </tr>
+
+      </thead>
+
+      <tfoot>
+
+        <tr>
+          <th>Total area</th>
+          <td class="numeric">5.6ha</td>
+          <td class="action"></td>
+        </tr>
+
+      </tfoot>
+
+      <tbody>
+
+        <tr>
+          <th scope="row"><a href="#">Hedge</a></th>
+          <td class="numeric">0.56ha</td>
+          <td class="action"><a class="link-secondary" href="#">Remove</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Buffer strip</a></th>
+          <td class="numeric">0.67ha</td>
+          <td class="action"><a class="link-secondary" href="#">Remove</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Arable land</a> <span class="text-warning">More information required</span></th>
+          <td class="numeric">4.32ha</td>
+          <td class="action"><a class="link-secondary" href="#">Remove</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Unknown</a></th>
+          <td class="numeric">0.05ha</td>
+          <td class="action"><a class="link-secondary" href="#">Remove</a></td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+
+    <!-- land parcels -->
+		<h2 class="heading-medium">Land parcels table</h2>
+
+    <table class="table-land-parcels">
+
+      <caption class="visuallyhidden">Land parcels</caption>
+
+      <thead>
+
+        <tr>
+          <th scope="col">Land parcel name</th>
+          <th class="numeric" scope="col">ID</th>
+          <th class="numeric" scope="col">Area</th>
+          <th class="checked" scope="col">Checked</th>
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <th scope="row"><a href="#">Arable land</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_3931</span></td>
+          <td class="numeric">5.76ha</td>
+          <td class="checked"><span class="tag tag-done">Yes</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Top field</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_5971</span></td>
+          <td class="numeric">6.05ha</td>
+          <td class="checked"><span class="tag tag-done">Yes</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">East field</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_4541</span></td>
+          <td class="numeric">0.49ha</td>
+          <td class="checked"><span class="tag">No</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Fallow field</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_3254</span></td>
+          <td class="numeric">5.6ha</td>
+          <td class="checked"><span class="tag">No</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">The Fen</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_4248</span></td>
+          <td class="numeric">4.56ha</td>
+          <td class="checked"><span class="tag tag-done">Yes</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Wheat and Barle</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_1039</span></td>
+          <td class="numeric">5.34ha</td>
+          <td class="checked"><span class="tag">No</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Untilted</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_1039</span></td>
+          <td class="numeric">5.34ha</td>
+          <td class="checked"><span class="tag">No</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Untilted</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_4461</span></td>
+          <td class="numeric">3.25ha</td>
+          <td class="checked"><span class="tag">No</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Untilted</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_4369</span></td>
+          <td class="numeric">2.1ha</td>
+          <td class="checked"><span class="tag">No</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Untilted</a></th>
+          <td class="numeric"><span class="text-secondary">SJ8063_4774</span></td>
+          <td class="numeric">7.12ha</td>
+          <td class="checked"><span class="tag">No</span></td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+
+    <!-- screen reader optimised -->
+		<h2 class="heading-medium">Screen reader optimised table</h2>
 
 
 		<table>
@@ -189,8 +346,8 @@
 
 				<tr>
 					<th scope="col">Business</th>
-					<th scope="col">Permissions</th>
-					<th scope="col">View or check</th>
+					<th class="action" scope="col">Permissions</th>
+					<th class="action" scope="col">View or check</th>
 				</tr>
 
 			</thead>
@@ -199,14 +356,14 @@
 
 				<tr>
 					<th scope="row">Hansels Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222235</th>
-					<td><a href="/">View or give permissions <span class="visuallyhidden">to Hansels Farm</span></a></td>
-					<td><a href="/">View business <span class="visuallyhidden">Hansels Farm</span></a></td>
+					<td class="action"><a href="/">View or give permissions <span class="visuallyhidden">to Hansels Farm</span></a></td>
+					<td class="action"><a href="/">View business <span class="visuallyhidden">Hansels Farm</span></a></td>
 				</tr>
 
 				<tr>
 					<th scope="row">Willow Farm <br> <b><abbr title="Single Business Identifier">SBI</abbr></b>: 222222236</th>
-					<td><a href="/">View or give permissions <span class="visuallyhidden">to Willow Farm</span></a></td>
-					<td><a href="/">View business <span class="visuallyhidden">Willow Farm</span></a></td>
+					<td class="action"><a href="/">View or give permissions <span class="visuallyhidden">to Willow Farm</span></a></td>
+					<td class="action"><a href="/">View business <span class="visuallyhidden">Willow Farm</span></a></td>
 				</tr>
 
 			</tbody>
@@ -214,8 +371,8 @@
 		</table>
 
 
-    <!-- table with form elements -->
-		<h2 class="heading-medium">3. Table (with form elements)</h2>
+    <!-- form elements -->
+		<h2 class="heading-medium">Form tables</h2>
 
 
     <form class="form-table" method="post" action="/">
@@ -290,70 +447,11 @@
     </form>
 
 
-    <!-- table manage land features -->
-    <h2 class="heading-medium">4. Table (manage land features)</h2>
+		<!-- reset passwords -->
+    <h2 class="heading-medium">Reset passwords table</h2>
 
 
-		<table class="table-parcel">
-
-		  <caption class="visuallyhidden">Manage land features</caption>
-
-			<thead>
-
-				<tr>
-					<th scope="col">Feature</th>
-					<th scope="col">Area</th>
-					<th></th>
-				</tr>
-
-			</thead>
-
-			<tfoot>
-
-  			<tr>
-    			<td>Total</td>
-    			<td>0.4ha</td>
-    			<td></td>
-  			</tr>
-
-			</tfoot>
-
-			<tbody>
-
-				<tr>
-					<th scope="row"><a href="/">Arable land</a></th>
-					<td class="table-area"><span class="text-secondary">Unknown</span></td>
-					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Arable land</span></a></td>
-				</tr>
-
-				<tr>
-					<th scope="row"><a href="/">Buffer strips</a></th>
-					<td class="table-area"><span class="text-secondary">Unknown</span></td>
-					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Buffer strips</span></a></td>
-				</tr>
-
-				<tr>
-					<th scope="row"><a href="/">Hedges</a></th>
-					<td class="table-area"><span class="text-secondary">Unknown</span></td>
-					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Hedges</span></a></td>
-				</tr>
-
-				<tr>
-					<th scope="row"><a href="/">Pond</a></th>
-					<td class="table-area">0.4ha</td>
-					<td class="table-action"><a href="/">Remove <span class="visuallyhidden">Pond</span></a></td>
-				</tr>
-
-			</tbody>
-
-		</table>
-
-
-		<!-- reset user passwords -->
-    <h2 class="heading-medium">5. Table (reset user passwords)</h2>
-
-
-		<table class="table-resetpassword">
+		<table>
 
 		  <caption class="visuallyhidden">Reset user passwords</caption>
 
@@ -370,27 +468,27 @@
 
 				<tr>
 					<th scope="row"><b>Connor Auditor</b> <br> selenium-test-internal-auditor@test.kainos.com</th>
-					<td class="table-action"><a href="/">Reset password</a></td>
+					<td class="action"><a href="/">Reset password</a></td>
 				</tr>
 
 				<tr>
 					<th scope="row"><b>Connor Basic</b> <br> selenium-test-internal-basic@test.kainos.com</th>
-					<td class="table-action"><a href="/">Reset password</a></td>
+					<td class="action"><a href="/">Reset password</a></td>
 				</tr>
 
 				<tr>
 					<th scope="row"><b>Connor Higher</b> <br> selenium-test-internal-higher@test.kainos.com</th>
-					<td class="table-action"><a href="/">Reset password</a></td>
+					<td class="action"><a href="/">Reset password</a></td>
 				</tr>
 
 				<tr>
 					<th scope="row"><b>Connor Operations</b> <br> selenium-test-internal-operations@test.kainos.com</th>
-					<td class="table-action"><a href="/">Reset password</a></td>
+					<td class="action"><a href="/">Reset password</a></td>
 				</tr>
 
 				<tr>
 					<th scope="row"><b>Connor Qc</b> <br> selenium-test-internal-qc@test.kainos.com</th>
-					<td class="table-action"><a href="/">Reset password</a></td>
+					<td class="action"><a href="/">Reset password</a></td>
 				</tr>
 
 			</tbody>

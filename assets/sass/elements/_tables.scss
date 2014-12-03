@@ -33,6 +33,29 @@ table thead th {
 }
 
 
+// Right align headings for numeric content
+
+table th.numeric {
+  text-align: right;
+}
+
+
+// Use tabular numbers for numeric table cells
+
+table td.numeric {
+  @include core-16($tabular-numbers: true);
+  text-align: right;
+}
+
+
+// Right align actions
+
+table th.action,
+table td.action {
+  text-align: right;
+}
+
+
 // Table foot
 
 table tfoot {
@@ -50,19 +73,19 @@ table tfoot {
 .table {
 
 
-  // Parcel table
+  // Table land features
 
-  &-parcel {
+  &-land-features {
 
     @include media(tablet) {
 
-      .table-area,
-      .table-action {
-        width: 100px;
+      .area,
+      .checked {
+        text-align: right;
       }
 
-      .table-action {
-        text-align: right;
+      .text-warning {
+        float: right;
       }
 
     }
@@ -70,13 +93,24 @@ table tfoot {
   }
 
 
-  // Reset password table
+  // Table land parcels
 
-  &-resetpassword {
+  &-land-parcels {
+
+    .tag {
+      display: inline-block;
+      padding: 0 20px;
+
+      &-done {
+        background-color: $button-colour;
+        color: white;
+      }
+
+    }
 
     @include media(tablet) {
 
-      .table-action {
+      .checked {
         text-align: right;
       }
 
