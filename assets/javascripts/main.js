@@ -317,7 +317,7 @@
 
 
         // Add attributes to collapsible content
-        $content.attr('id', id).attr('aria-hidden', 'true')
+        $content.attr('id', id).attr('aria-hidden', 'true');
 
 
         // Toggle state
@@ -332,6 +332,46 @@
 
 
       });
+
+    }
+
+
+    // Toggler
+
+    function toggler() {
+
+
+      $('.toggle-link').each(function() {
+
+
+        var $link    = $(this);
+        var $content = $($link.attr('href'));
+
+
+        // Add attributes to toggler link
+        $link.attr('aria-expanded', 'false');
+
+
+        // Add attributes to toggler content
+        $content.attr('aria-hidden', 'true');
+
+
+        // Toggle state
+        $link.on('click', function(e) {
+
+          e.preventDefault();
+
+          var state = $(this).attr('aria-expanded') === 'false' ? true : false;
+
+          $link.attr('aria-expanded', state);
+          $content.attr('aria-hidden', !state);
+
+
+        });
+
+
+      });
+
 
     }
 
@@ -363,6 +403,7 @@
         formMultipleCheckboxes();
         showDialog();
         collapsibles();
+        toggler();
 
     });
 

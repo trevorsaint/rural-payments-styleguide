@@ -129,13 +129,6 @@
     }
 
 
-    // Aria hidden attribute
-
-    [aria-hidden=true] {
-      @extend .visuallyhidden;
-    }
-
-
   }
 
 }
