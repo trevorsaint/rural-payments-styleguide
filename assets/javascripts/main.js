@@ -41,7 +41,7 @@
 
         });
 
-    }
+    };
 
 
     // Show & hide radio toggled content
@@ -110,7 +110,7 @@
 
         });
 
-    }
+    };
 
 
     // Show dialog
@@ -201,7 +201,7 @@
       }
 
 
-    }
+    };
 
 
     // Toggle tabs
@@ -214,7 +214,7 @@
 
       }
 
-    }
+    };
 
 
     // Multiple checkboxes
@@ -264,7 +264,7 @@
 
       }
 
-    }
+    };
 
 
     // Form validation
@@ -297,6 +297,7 @@
     // Collapsibles
 
     function collapsibles() {
+
 
       $('.collapsible .collapsible-item').each(function() {
 
@@ -333,27 +334,30 @@
 
       });
 
-    }
+
+    };
 
 
-    // Toggler
+    // Toggle
 
-    function toggler() {
-
-
-      $('.toggle-link').each(function() {
+    function toggleContent() {
 
 
-        var $link    = $(this);
-        var $content = $($link.attr('href'));
+      $('.toggle').each(function(index) {
+
+
+        // Variables
+        var $link    = $(this).find('.toggle-link');
+        var $content = $(this).find('.toggle-content');
+        var $id      = 'toggle-' + (index ++);
 
 
         // Add attributes to toggler link
-        $link.attr('aria-expanded', 'false');
+        $link.attr('aria-controls', $id).attr('aria-expanded', false);
 
 
         // Add attributes to toggler content
-        $content.attr('aria-hidden', 'true');
+        $content.attr('id', $id).attr('aria-hidden', true);
 
 
         // Toggle state
@@ -373,7 +377,7 @@
       });
 
 
-    }
+    };
 
 
     // Document ready
@@ -403,7 +407,7 @@
         formMultipleCheckboxes();
         showDialog();
         collapsibles();
-        toggler();
+        toggleContent();
 
     });
 
