@@ -121,8 +121,18 @@ fieldset {
 // Form control errors
 
 .form-control-error {
-  outline: 3px solid $error-colour;
+  border-color: $error-colour;
+  outline: 2px solid $error-colour;
 }
+
+
+// Form control focus
+
+.form-control:focus {
+  border-color: $yellow;
+  outline: 2px solid $yellow;
+}
+
 
 
 // Form control widths
