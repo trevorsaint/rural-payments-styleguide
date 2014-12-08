@@ -118,6 +118,13 @@ fieldset {
 }
 
 
+// Form control errors
+
+.form-control-error {
+  outline: 3px solid $error-colour;
+}
+
+
 // Form control widths
 
 .form-control-3-4 {

@@ -28,42 +28,23 @@
 }
 
 
-// Validation error message box
-// .validation-error {
-//   clear: both;
-//   @include contain-floats;
-//   border-left: 3px solid $error-colour;
-//   padding: $gutter- $gutter;
-//   margin-bottom: $gutter-half;
-//   margin-left: -($gutter);
-// }
-
-// .validation-error .form-group {
-//   margin-bottom: 20px;
-// }
-
-// .validation-error p {
-//   margin-bottom: 10px;
-// }
-
 
 // Validation message
 .validation-message {
-  display: block;
   @include core-16;
+  display: block;
   color: $error-colour;
 }
 
 
 
-// Form validation for DEFRA
+// Form validation
 
 .form {
 
 
   .validation-summary,
   .validation {
-  	background-color: $error-background;
   	border-left: 3px solid $error-colour;
   }
 
@@ -81,9 +62,9 @@
 
 
   .validation-list {
-  	margin-top: 0.75em;
+    color: $error-colour;
+  	margin-top: .75em;
   	margin-bottom: 0;
-  	color: $error-colour;
   }
 
 

@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Form validation : Claim rural payments</title>
+    <title>Table validation : Claim rural payments</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -122,79 +122,106 @@
 		</div>
 
 
-		<a class="back-link" href="../">Back to forms</a>
+		<a class="back-link" href="../">Back to tables</a>
 
 
-		<h1 class="heading-xlarge">Form validation</h1>
+		<h1 class="heading-xlarge">Table validation</h1>
 
 
-    <!-- form -->
-		<form class="form" method="get" action="/">
+    <!-- form table -->
+		<form class="form form-table" method="post" action="/">
 
+      <div class="validation-summary group">
 
-			<div class="text">
+        <h1 class="validation-heading">There was a problem submitting the form</h1>
 
-        <div class="validation-summary group">
+        <p>Because of the following problems:</p>
 
-          <h1 class="validation-heading">There was a problem submitting the form</h1>
+        <ol class="validation-list list-number text">
+          <li><a href="#land-area-1">Enter a number in the following format 3.5</a></li>
+          <li><a href="#land-area-2">Enter a number in the following format 3.5</a></li>
+        </ol>
 
-          <p>Because of the following problems:</p>
+      </div>
 
-          <ol class="validation-list list-number text">
-            <li><a href="#register-email-label">Enter your email address &ndash; must be a valid email address</a></li>
-            <li><a href="#register-email-confirm-label">Re-enter your email address &ndash; must match Enter your email address</a></li>
-            <li><a href="#register-confirm-understanding">I agree to the Terms and conditions and privacy policy &ndash; must be checked</a></li>
-          </ol>
+  		<table>
 
-        </div>
+  		  <caption class="visuallyhidden">Business plan execution results</caption>
 
-				<p>You need to give your email address and create a password. This is so you can make, save and retrieve LPAs.</p>
+  			<thead>
 
-				<p>You can create an account in your name to help someone else make an LPA. But they must make all the decisions about the LPA themselves.</p>
+  				<tr>
+  					<th scope="col">Parcel</th>
+  					<th scope="col">Reference</th>
+  					<th scope="col">Total area</th>
+  					<th scope="col">Eligible area</th>
+  					<th scope="col">Land cover</th>
+  					<th scope="col">Land use area</th>
+  					<th scope="col">Land use</th>
+  					<th scope="col">Area to claim</th>
+  				</tr>
 
-				<p>If you already have an account please <a href="/">sign in</a>.</p>
+  			</thead>
 
-			</div>
+  			<tfoot>
 
+    			<tr>
+  					<th scope="col" colspan="7">Total</th>
+  					<td>NaN ha</td>
+  				</tr>
 
-      <!-- form group -->
-			<div class="form-group validation">
-	      <label class="form-label" for="register-email" id="register-email-label">Enter your email address <span class="validation-message">must be a valid email address</span></label>
-	      <input class="form-control" type="email" id="register-email">
-			</div>
-			<!-- end -->
+  			</tfoot>
 
+  			<tbody>
 
-      <!-- form group -->
-			<div class="form-group validation">
-	      <label class="form-label" for="register-email-confirm" id="register-email-confirm-label">Re-enter your email address <span class="validation-message">must match Enter your email address</span></label>
-	      <input class="form-control" type="email" id="register-email-confirm">
-			</div>
-      <!-- end -->
+  				<tr>
+  					<th scope="row">Field E</th>
+  					<td>NZ1234</td>
+  					<td>10.50ha</td>
+  					<td>10.50ha</td>
+  					<td>Arable</td>
+  					<td>5.40ha</td>
+  					<td>Wheat</td>
+  					<td>
+    					<label class="visuallyhidden" for="land-area-1">Land Area</label>
+    					<input class="form-control form-control-error" type="text" id="land-area-1" size="5" value="34.fs"> ha
+  					</td>
+  				</tr>
 
+  				<tr>
+  					<th scope="row">Field E</th>
+  					<td>NZ1234</td>
+  					<td>10.50ha</td>
+  					<td>10.50ha</td>
+  					<td>Arable</td>
+  					<td>5.40ha</td>
+  					<td>Wheat</td>
+  					<td>
+    					<label class="visuallyhidden" for="land-area-2">Land Area</label>
+    					<input class="form-control form-control-error" type="text" id="land-area-2" size="5" value="abcdef"> ha
+  					</td>
+  				</tr>
 
-      <div class="form-block text">
-				<p>LPAs are governed by the laws of England and Wales and can only be made by people with mental capacity aged 18 or older.</p>
-			</div>
+  				<tr>
+  					<th scope="row">Field E</th>
+  					<td>NZ1234</td>
+  					<td>10.50ha</td>
+  					<td>10.50ha</td>
+  					<td>Arable</td>
+  					<td>-</td>
+  					<td>Peas</td>
+  					<td>
+    					<label class="visuallyhidden" for="land-area-3">Land Area</label>
+    					<input class="form-control" type="text" id="land-area-3" size="5" value="3.5"> ha
+  					</td>
+  				</tr>
 
+  			</tbody>
 
-      <!-- form group -->
-			<div class="form-group validation">
-	      <label class="form-label" for="register-confirm-understanding" id="register-confirm-understanding-label">
-	      <input type="checkbox" value="1" id="register-confirm-understanding"> I agree to the <a target="_blank" href="/">Terms and conditions and privacy policy</a> <span class="validation-message">must be checked</span></label>
-			</div>
-			<!-- end -->
+  		</table>
 
-
-      <!-- form group -->
-			<div class="form-group">
-				<button class="button" type="submit">Continue</button>
-			</div>
-			<!-- end -->
-
-
-		</form>
-		<!-- end -->
+    </form>
+    <!-- end -->
 
 
 	</main>
