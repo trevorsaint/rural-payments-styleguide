@@ -2,42 +2,58 @@
 // ==========================================================================
 
 
-// Alert icons
+.icon:before {
+  cursor: default;
+  content: '\00a0'; // non-breaking space
+  display: inline-block;
+  height: 22px;
+  text-align: center;
+  vertical-align: middle;
+  width: 22px;
+}
 
-div[class*="alert-"] {
 
-  .icon {
-  	float: left;
-  	height: em(22);
-  	margin-right: em(20);
-  	overflow: hidden;
-  	width: em(22);
+.icon {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 
-  	&-tick {
-      background-image: url("../images/icons/icon-tick.png");
-    	@include device-pixel-ratio() {
-    		background-image: url("../images/icons/icon-tick-2x.png");
-    		background-size: 100%;
-    	}
-  	}
 
-  	&-cross {
-      background-image: url("../images/icons/icon-cross.png");
-    	@include device-pixel-ratio() {
-    		background-image: url("../images/icons/icon-cross-2x.png");
-    		background-size: 100%;
-    	}
-  	}
+.icon-close {
+  background-image: url("../images/icons/icon-close.png");
+  display: block;
 
-  	&-close {
-      background-image: url("../images/icons/icon-close.png");
-    	@include device-pixel-ratio() {
-    		background-image: url("../images/icons/icon-close-2x.png");
-    		background-size: 100%;
-    	}
-  	}
+	@include device-pixel-ratio() {
+		background-image: url("../images/icons/icon-close-2x.png");
+    background-size: 100%;
+	}
 
+}
+
+
+.icon-tick,
+.icon-cross {
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+
+.icon-tick {
+  background-image: url("../images/icons/icon-tick.png");
+	@include device-pixel-ratio() {
+		background-image: url("../images/icons/icon-tick-2x.png");
+		background-size: 100%;
+	}
+}
+
+
+.icon-cross {
+  background-image: url("../images/icons/icon-cross.png");
+  @include device-pixel-ratio() {
+  	background-image: url("../images/icons/icon-cross-2x.png");
+  	background-size: 100%;
   }
-
 }
 

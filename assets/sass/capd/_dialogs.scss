@@ -99,24 +99,14 @@
   // Button close modal
 
   &-close {
-    @include core-19;
     @include hide-text;
     border: 0 none;
     cursor: pointer;
-    height: em(44);
-    padding: 0;
-    position: absolute; top: 0; right: 0;
-    width: em(44);
+    height: 22px;
     margin: auto;
-
-    .icon {
-      background-position: 50% 50%;
-      background-size: em(22) em(22);
-      height: 100%;
-      margin: 0;
-      width: 100%;
-    }
-
+    padding: 0;
+    position: absolute; top: 20px; right: 20px;
+    width: 22px;
   }
 
 

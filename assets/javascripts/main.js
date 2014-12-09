@@ -285,7 +285,7 @@
         // Smooth movement to error
         $('html, body').animate({
 
-            scrollTop: ($(id).offset().top) - 20
+          scrollTop: ($(id).offset().top) - 20
 
         }, 500);
 
@@ -303,26 +303,31 @@
 
 
         // Variables
-        var $this    = $(this);
-        var $header  = $(this).find('.collapsible-heading h3');
-        var $content = $(this).find('.collapsible-content');
+        var $this    = $(this),
+            $header  = $(this).find('.collapsible-heading h3'),
+            $content = $(this).find('.collapsible-content');
 
 
         // Create a unique ID
-        var id = 'collapsible-' + $(this).index();
+        var $id = 'collapsible-' + $(this).index();
 
 
         // Add button inside $header
-        $header.wrapInner('<button aria-expanded="false" aria-controls="'+ id +'">');
+        $header.wrapInner('<button aria-expanded="false" aria-controls="' + $id + '">');
         var $button = $header.children('button');
 
 
         // Add attributes to collapsible content
-        $content.attr('id', id).attr('aria-hidden', 'true');
+        $content.attr({
+          'id' : $id,
+          'aria-hidden' : true
+        });
 
 
         // Toggle state
-        $button.on('click', function() {
+        $button.on('click', function(e) {
+
+          e.preventDefault();
 
           var state = $(this).attr('aria-expanded') === 'false' ? true : false;
 
@@ -347,17 +352,22 @@
 
 
         // Variables
-        var $link    = $(this).find('.toggle-link');
-        var $content = $(this).find('.toggle-content');
-        var $id      = 'toggle-' + (index ++);
+        var $link    = $(this).find('.toggle-link'),
+            $content = $(this).find('.toggle-content'),
+            $id      = 'toggle-' + (index ++);
 
 
         // Add attributes to toggler link
-        $link.attr('aria-controls', $id).attr('aria-expanded', false);
+        $link.attr('aria-controls', $id).attr({
+          'aria-expanded' : false
+        });
 
 
-        // Add attributes to toggler content
-        $content.attr('id', $id).attr('aria-hidden', true);
+        // Add attributes to toggle content
+        $content.attr({
+          'id' : $id,
+          'aria-hidden' : true
+        });
 
 
         // Toggle state
@@ -369,7 +379,6 @@
 
           $link.attr('aria-expanded', state);
           $content.attr('aria-hidden', !state);
-
 
         });
 
@@ -402,14 +411,15 @@
         showHideCheckboxToggledContent();
         showHideRadioToggledContent();
 
-        toggleTabs();
-        formValidation();
-        formMultipleCheckboxes();
-        showDialog();
-        collapsibles();
-        toggleContent();
-
     });
+
+
+    toggleTabs();
+    formValidation();
+    formMultipleCheckboxes();
+    showDialog();
+    collapsibles();
+    toggleContent();
 
 
 })();
