@@ -33,6 +33,12 @@
     margin-bottom: 1.05263em; // 20px
     overflow: hidden;
 
+    &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
     dt {
       @extend .bold-small;
 
@@ -41,12 +47,6 @@
         clear: left;
         margin-top: em(5);
         width: 40%;
-      }
-
-      &:after {
-        content: '';
-        clear: both;
-        display: table;
       }
 
     }
