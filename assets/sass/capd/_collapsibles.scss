@@ -38,7 +38,15 @@
 
       @include media(tablet) {
         float: left;
+        clear: left;
+        margin-top: em(5);
         width: 40%;
+      }
+
+      &:after {
+        content: '';
+        clear: both;
+        display: table;
       }
 
     }
@@ -48,6 +56,7 @@
       @include media(tablet) {
         @include box-sizing(border-box);
         float: right;
+        margin-top: em(5);
         padding-left: 20px;
         width: 60%;
       }
