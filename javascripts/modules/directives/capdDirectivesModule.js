@@ -7,6 +7,7 @@ define(
         , './capdBlockLabel'
         , './capdTabsHeader'
         , './capdCollapsible'
+        , './capdToggle'
     ]
     , function
         (
@@ -17,6 +18,7 @@ define(
           , capdBlockLabel
           , capdTabsHeader
           , capdCollapsible
+          , capdToggle
         )
     {
         var capdDirectivesModule = angular.module('capd.directives', []);
@@ -27,4 +29,5 @@ define(
         capdDirectivesModule.directive('blockList', capdBlockLabel);
         capdDirectivesModule.directive('capdTabsHeader', capdTabsHeader);
         capdDirectivesModule.directive('collapsibleItem', capdCollapsible);
+        capdDirectivesModule.directive('toggle', capdToggle);
     })
