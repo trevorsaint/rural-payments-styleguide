@@ -34,8 +34,8 @@
     overflow: hidden;
 
     &:after {
-      content: '';
       clear: both;
+      content: '';
       display: table;
     }
 
@@ -43,8 +43,8 @@
       @extend .bold-small;
 
       @include media(tablet) {
-        float: left;
         clear: left;
+        float: left;
         margin-top: em(5);
         width: 40%;
       }

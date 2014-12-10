@@ -23,6 +23,7 @@
 .button:focus,
  button:focus {
   outline: 3px solid $yellow;
+  overflow: hidden; // Fixes unwanted padding on focus
 }
 
 
