@@ -5,7 +5,6 @@
 
 .dialog {
   @include box-sizing(border-box); // Compass box sizing
-  //@include transition(opacity, .2s, ease-in-out); // Compass transition
   background-color: rgba(0,0,0,.5);
   height: 100%;
   padding: $gutter-half;
@@ -24,11 +23,6 @@
     opacity: 1;
     visibility: visible;
     z-index: 2;
-  }
-
-
-  &[aria-hidden="false"] .dialog-holder {
-    //@include transform(scale(1)); // Compass transform scale
   }
 
 
@@ -53,8 +47,6 @@
 
 
   &-holder {
-    //@include transform(scale(.8)); // Compass transform scale
-    //@include transition(transform, .3s, ease-in-out); // Compass transition transform
     background-color: $white;
     border: 10px solid $white;
     display: inline-block;
