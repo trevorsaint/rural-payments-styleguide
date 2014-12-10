@@ -64,7 +64,6 @@ body {
 }
 
 
-
 // Exception for details
 
 details {
@@ -82,4 +81,14 @@ details .panel-indent {
   margin: 0;
   padding: 10px 15px;
 }
+
+
+// Links
+
+#global-header #logo,
+a:link {
+  overflow: hidden; // Fixes unwanted padding on focus
+}
+
+
 

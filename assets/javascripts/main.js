@@ -168,6 +168,17 @@
 
         $('.dialog-close').on('click', function(e) {
 
+          e.preventDefault();
+          e.stopPropagation();
+
+          closeDialog();
+
+        });
+
+
+        $('.dialog-cancel').on('click', function(e) {
+
+          e.preventDefault();
           e.stopPropagation();
 
           closeDialog();
