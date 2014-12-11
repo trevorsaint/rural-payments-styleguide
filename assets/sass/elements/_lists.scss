@@ -10,6 +10,7 @@ ol {
 
 
 // Bulleted lists
+
 .list-bullet {
   list-style-type: disc;
   padding-left: 20px;
@@ -17,17 +18,30 @@ ol {
 
 
 // Numbered lists
+
 .list-number {
   list-style-type: decimal;
   padding-left: 20px;
   @include ie-lte(7) {
-  padding-left: 28px;
+    padding-left: 28px;
+  }
 }
+
+
+// Alpha lists
+
+.list-alpha {
+  list-style-type: lower-alpha;
+  padding-left: 20px;
+  @include ie-lte(7) {
+    padding-left: 28px;
+  }
 }
 
 
 .list-bullet,
-.list-number {
+.list-number,
+.list-alpha {
   margin-top: 5px;
   margin-bottom: 20px;
 }
