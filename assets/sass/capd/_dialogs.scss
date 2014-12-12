@@ -5,7 +5,6 @@
 
 .dialog {
   @include box-sizing(border-box); // Compass box sizing
-  @include transition(opacity, .2s, ease-in-out); // Compass transition
   background-color: rgba(0,0,0,.5);
   height: 100%;
   padding: $gutter-half;
@@ -24,11 +23,6 @@
     opacity: 1;
     visibility: visible;
     z-index: 2;
-  }
-
-
-  &[aria-hidden="false"] .dialog-holder {
-    @include transform(scale(1)); // Compass transform scale
   }
 
 
@@ -53,10 +47,8 @@
 
 
   &-holder {
-    @include transform(scale(.8)); // Compass transform scale
-    @include transition(transform, .3s, ease-in-out); // Compass transition transform
-    background-color: rgb(239,239,239);
-    border: 20px solid white;
+    background-color: $white;
+    border: 10px solid $white;
     display: inline-block;
     margin: auto;
     max-width: 530px;
@@ -100,17 +92,19 @@
 
   &-close {
     @include hide-text;
+    background-color: transparent; // Removed background colour in Chrome (bug)
     border: 0 none;
     cursor: pointer;
     height: 22px;
     margin: auto;
     padding: 0;
-    position: absolute; top: 20px; right: 20px;
+    position: absolute;
+    top: 5px; right: 5px;
     width: 22px;
   }
 
 
-  // Cancel link to close modal
+  // Cancel link to close dialog
 
   &-cancel {
     display: inline-block;
