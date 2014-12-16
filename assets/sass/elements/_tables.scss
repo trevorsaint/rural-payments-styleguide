@@ -121,3 +121,67 @@ table tfoot {
 
 }
 
+
+
+
+// Table rendering on mobile devices
+
+/*table {
+
+  thead {
+    display: none; // Hide on mobile devices
+  }
+
+
+  tfoot {
+
+    tr {
+      display: block;
+      padding: 20px 0;
+
+      th,
+      td {
+        border: none;
+        display: block;
+        padding: 0;
+        text-align: right;
+      }
+
+    }
+
+  }
+
+
+  tbody {
+
+    tr {
+      border-top: 1px solid $border-colour;
+      display: block;
+      padding: 20px 0;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      th,
+      td {
+        border: none;
+        display: block;
+        padding: 0;
+        text-align: right;
+
+        &:before {
+          content: attr(data-title);
+          float: left;
+          font-weight: bold;
+          padding-right: 30px;
+        }
+
+      }
+
+    }
+
+  }
+
+}*/
+
