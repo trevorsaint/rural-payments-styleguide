@@ -1,13 +1,13 @@
 define(
     [
         'angular'
-        , './capdHello'
-        , './capdTabs'
-        , './capdTabsTab'
-        , './capdBlockLabel'
-        , './capdTabsHeader'
-        , './capdCollapsible'
-        , './capdToggle'
+        , './directives/capdHello'
+        , './directives/capdTabs'
+        , './directives/capdTabsTab'
+        , './directives/capdBlockLabel'
+        , './directives/capdTabsHeader'
+        , './directives/capdCollapsible'
+        , './directives/capdToggle'
         , './filters/capdPreformatted'    ]
     , function
         (
@@ -22,7 +22,7 @@ define(
           , capdPreformatted
         )
     {
-        var capdDirectivesModule = angular.module('capd.directives', []);
+        var capdDirectivesModule = angular.module('capd.styleguide', []);
         capdDirectivesModule.directive('capdHello', capdHello);
         capdDirectivesModule.directive('capdTabs', capdTabs);
         capdDirectivesModule.directive('capdTabsTab', capdTabsTab);
