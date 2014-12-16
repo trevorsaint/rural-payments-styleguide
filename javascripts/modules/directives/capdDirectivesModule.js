@@ -8,7 +8,7 @@ define(
         , './capdTabsHeader'
         , './capdCollapsible'
         , './capdToggle'
-    ]
+        , './filters/capdPreformatted'    ]
     , function
         (
           angular
@@ -19,6 +19,7 @@ define(
           , capdTabsHeader
           , capdCollapsible
           , capdToggle
+          , capdPreformatted
         )
     {
         var capdDirectivesModule = angular.module('capd.directives', []);
@@ -30,4 +31,5 @@ define(
         capdDirectivesModule.directive('capdTabsHeader', capdTabsHeader);
         capdDirectivesModule.directive('collapsibleItem', capdCollapsible);
         capdDirectivesModule.directive('toggle', capdToggle);
+        capdDirectivesModule.filter('capdPreformatted', capdPreformatted);
     })

@@ -1,0 +1,16 @@
+<h1 class="heading-large">capdPreformatted</h1>
+
+<div class="text">
+    <div class="panel-indent">
+        This is a filter not a directive
+    </div>
+
+    <textarea ng-model="textWithNewlines">
+
+    </textarea>
+</div>
+
+
+
+<p ng-bind-html="textWithNewlines | capdPreformatted">
+</p>
