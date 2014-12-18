@@ -39,15 +39,14 @@ body {
 
 .heading-xlarge-noback {
   margin-top: em(30, 32);
-  margin-bottom: em(30, 32);
+  margin-bottom: em(15, 32);
 
   @include media(tablet) {
     margin-top: em(60, 48);
-    margin-bottom: em(60, 48);
+    margin-bottom: em(30, 48);
   }
 
 }
-
 
 
 .back-link {
