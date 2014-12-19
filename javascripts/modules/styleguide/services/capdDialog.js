@@ -50,7 +50,10 @@ define(['jquery','jquery-trap-input'], function ($) {
             getDialogTemplate(settings.templateUrl)
                 .then(function (template) {
                     var dialog = createAndShowDialog(template);
+
+                    dialog.find('.dialog-content').focus().attr('tabindex', '-1');
                     dialog.trap();
+
                     bindHandlers(dialog);
                     currentDialog = dialog;
 
