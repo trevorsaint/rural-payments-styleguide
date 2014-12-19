@@ -1,5 +1,7 @@
 (function() {
-
+    var dialogData = {
+        lastFocus : null
+    }
 
     // Show and hide checkbox toggled content
 
@@ -128,16 +130,20 @@
                 e.preventDefault();
                 e.stopPropagation();
 
-                var data = '#' + $(this).attr('data-target');
+                var anchor = $(this)
 
-                openDialog(data); // Pass data value into function
+                var data = '#' + anchor.attr('data-target');
+
+                openDialog(data, anchor); // Pass data value into function
 
             });
 
 
             // Open dialog
 
-            function openDialog(data) {
+            function openDialog(data, anchor) {
+                dialogData.lastFocus = anchor;
+
                 var dialog = $(data);
                 dialog.attr('aria-hidden', 'false')
                     .find('.dialog-content').focus()
@@ -159,6 +165,9 @@
 
 
                 dialog.untrap();
+
+                dialogData.lastFocus.focus();
+                dialogData.lastFocus.blur();
             }
 
 
