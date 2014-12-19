@@ -22,56 +22,49 @@ define(['jquery','jquery-trap-input'], function ($) {
             }
         }
 
-        function documentClick(){
-            self.close();
-        }
-
         function documentKeyUp(e){
             if (e.keyCode == 27) {
                 self.close();
             }
         }
 
-        function bindCloseToDocument(){
-            var doc = $(document);
-//            doc.bind('click', documentClick);
-            doc.bind('keyup', documentKeyUp);
+        function createAndShowDialog(template) {
+            var dialog = $(template);
+            $('body').append(dialog);
+            dialog.attr('aria-hidden', 'false');
+            return dialog;
         }
 
-        function unbindCloseFromDocument(){
+        function bindHandlers(dialog) {
+            var close = self.close.bind(self);
+            dialog.find('button.dialog-close').click(close);
+            dialog.click(close);
+            dialog.find('.dialog-holder').click(function (e) {
+                e.stopPropagation();
+            })
             var doc = $(document);
-//            doc.unbind('click', documentClick);
-            doc.unbind('keyup', documentKeyUp);
+            doc.bind('keyup', documentKeyUp);
         }
 
         this.open = function (scope, settings) {
             getDialogTemplate(settings.templateUrl)
                 .then(function (template) {
-                    var dialog = $(template);
-                    $('body').append(dialog);
-                    dialog.attr('aria-hidden','false');
+                    var dialog = createAndShowDialog(template);
                     dialog.trap();
-
-                    var close = self.close.bind(self);
-
-                    dialog.find('button.dialog-close').click(close);
-                    dialog.click(close);
-
-                    dialog.find('.dialog-holder').click(function(e){
-                        e.stopPropagation();
-                    })
-
+                    bindHandlers(dialog);
                     currentDialog = dialog;
 
-                    bindCloseToDocument();
+
                 });
         }
 
         this.close = function(){
+            var doc = $(document);
+
             currentDialog.untrap();
             currentDialog.attr('aria-hidden','true');
             currentDialog.remove();
-            unbindCloseFromDocument();
+            doc.unbind('keyup', documentKeyUp);
             currentDialog = null;
         }
     }
