@@ -5,14 +5,14 @@ define(function () {
 
         $scope.showDialog1 = function(){
             capdDialog.open($scope, {
-                templateUrl : '/javascripts/modules/styleguide/views/dialog1-template.html',
+                templateUrl : '/javascripts/views/dialog1-template.html',
                 injectClose : true
             });
         }
 
         $scope.showDialog2 = function(){
             capdDialog.open($scope, {
-                templateUrl : '/javascripts/modules/styleguide/views/dialog2-template.html',
+                templateUrl : '/javascripts/views/dialog2-template.html',
                 injectClose : true,
                 controller : ['$scope', function($dialogScope){
                     $dialogScope.confirm = function(text){
