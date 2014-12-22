@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Sign in : Rural Payments</title>
+    <title>Land query : Rural Payments</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -117,53 +117,84 @@
 	  <div class="phase-banner">
 			<p>
 				<strong class="phase-tag">Beta</strong>
-				<span>This is a new service &ndash; your <a href="#">feedback</a> will help us to improve it.</span>
+				<span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
 			</p>
 		</div>
 
 
-    <div class="text">
-
-		  <h1 class="heading-xlarge heading-xlarge-noback">Sign in to <abbr title="Common Agricultural Policy">CAP</abbr> Information Service</h1>
-
-		  <p class="lede">Enter the 10-digit Customer Reference Number provided to you by <abbr title="Common Agricultural Policy">CAP</abbr> Information Service and your password.</p>
-
-    </div>
-
-
-		<form class="form form-group" method="post" action="/">
-
-			<div class="form-group">
-				<label class="form-label" for="customer-reference">Customer Reference Number</label>
-				<span class="form-hint">It'll be in your email inbox. For example, 1234567890.</span>
-				<input class="form-control" type="text" id="customer-reference">
-			</div>
-
-			<div class="form-group">
-				<label class="form-label" for="password">Enter your password</label>
-				<input class="form-control" type="password" id="password">
-			</div>
-
-			<div class="form-group">
-				<button class="button" type="submit">Sign in</button>
-				<p><a href="/">Forgotten your password?</a></p>
-			</div>
-
-		</form>
+	  <a class="back-link" href="/">Back to index</a>
 
 
     <div class="text">
 
-      <div class="alert-info" role="alert">
 
-        <div class="alert-message">
-          <p>Unauthorised access to this system constitutes an offence under the Computer Misuse Act 1990. You must follow Defra or Defra Network organisational policies and codes of conduct relating to the use of computer systems, and
-          agree to the terms of the Personal Commitment Statement.</p>
+      <h1 class="heading-xlarge">Tell us more about your query</h1>
 
-          <p>Activity on the Defra network computer systems may be monitored and/or recorded to secure the effective operation of the system and for other lawful puposes.</p>
+
+      <form class="form" method="get" action="query">
+
+
+        <div class="form-group">
+          <label class="form-label" for="enquiry">Query</label>
+          <textarea class="form-control form-control-3-4 form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
         </div>
 
-      </div>
+
+        <div class="form-group">
+
+          <fieldset class="inline">
+
+            <legend class="form-label">Do you know both, the <abbr title="Single Business Identifier">SBI</abbr> of the seller and parcel references for the parcels you have purchased?</legend>
+
+            <div class="form-group form-group-compound">
+
+              <label class="block-label" data-target="seller-references" for="radio-indent-1">
+                <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">Yes
+              </label>
+
+              <label class="block-label" for="radio-indent-2">
+                <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">No
+              </label>
+
+            </div>
+
+            <div class="panel-indent js-hidden" id="seller-references">
+
+              <div class="form-group">
+                <label class="form-label" for="sbi-reference">SBI reference number of the seller's business</label>
+                <input class="form-control" id="sbi-reference" type="text">
+              </div>
+
+              <div class="form-group form-group-compound">
+                <label class="form-label" for="parcel-reference">Parcel reference</label>
+                <input class="form-control" id="parcel-reference" type="text">
+              </div>
+
+              <div class="form-group form-group-compound">
+                <label class="form-label visuallyhidden" for="parcel-reference-2">Parcel reference #2</label>
+                <input class="form-control" id="parcel-reference-2" type="text">
+              </div>
+
+              <p><a href="#">Add another parcel reference</a></p>
+
+            </div>
+
+          </fieldset>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <button class="button" type="submit">Finish and submit query</button>
+
+          <p><a href="../">Cancel</a></p>
+
+        </div>
+
+
+      </form>
+
 
     </div>
 
@@ -220,6 +251,7 @@
   <script src="/assets/javascripts/vendor/modernizr.custom.77028.js"></script>
   <script src="/assets/javascripts/vendor/details.polyfill.js"></script>
   <script src="/assets/javascripts/main.js"></script>
+
 
   </body>
 </html>

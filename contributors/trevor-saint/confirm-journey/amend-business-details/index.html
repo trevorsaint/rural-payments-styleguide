@@ -169,23 +169,45 @@
             </div>
 
 
-            <details>
+            <div class="toggle">
 
-              <summary><span class="summary">I have an address in Northern Ireland or outside the United Kingdom</span></summary>
+              <p><a class="toggle-link" href="#">Enter address manually</a></p>
 
-              <div class="panel-indent">
+              <div class="toggle-content">
 
-                <div itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-                  <div itemprop="streetAddress">Pooley Bridge</div>
-                  <div itemprop="addressLocality">Penrith</div>
-                  <div itemprop="addressRegion">Cumbria</div>
-                  <div itemprop="postalCode">CH3 6NZ</div>
-                  <div itemprop="addressCountry">United Kingdom</div>
+                <div class="panel-indent">
+
+          				<fieldset>
+
+          					<legend class="heading-medium">Your address</legend>
+
+          					<div class="form-group form-group-compound">
+          						<label class="form-label" for="address-line-1">Street</label>
+          						<input class="form-control" type="text" id="address-line-1">
+          					</div>
+
+          					<div class="form-group">
+          						<label class="form-label visuallyhidden" for="address-line-2">Street</label>
+          						<input class="form-control" type="text" id="address-line-2">
+          					</div>
+
+          					<div class="form-group">
+          						<label class="form-label" for="address-town">Town or City</label>
+          						<input class="form-control form-control-1-4" type="text" id="address-town">
+          					</div>
+
+          					<div class="form-group">
+          						<label class="form-label" for="address-postcode">Postcode</label>
+          						<input class="form-control form-control-1-8" type="text" id="address-postcode">
+          					</div>
+
+          				</fieldset>
+
                 </div>
 
               </div>
 
-            </details>
+            </div>
 
 
           </fieldset>

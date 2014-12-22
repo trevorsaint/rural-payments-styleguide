@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Sign in : Rural Payments</title>
+    <title>Amend business details : Rural Payments</title>
 
     <script>
       (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
@@ -114,56 +114,161 @@
   <main id="page-container" role="main">
 
 
+    <!-- beta banner -->
 	  <div class="phase-banner">
 			<p>
 				<strong class="phase-tag">Beta</strong>
 				<span>This is a new service &ndash; your <a href="#">feedback</a> will help us to improve it.</span>
 			</p>
 		</div>
+		<!-- end -->
 
 
     <div class="text">
 
-		  <h1 class="heading-xlarge heading-xlarge-noback">Sign in to <abbr title="Common Agricultural Policy">CAP</abbr> Information Service</h1>
 
-		  <p class="lede">Enter the 10-digit Customer Reference Number provided to you by <abbr title="Common Agricultural Policy">CAP</abbr> Information Service and your password.</p>
-
-    </div>
+  		<a class="back-link" href="../">Back to business details</a>
 
 
-		<form class="form form-group" method="post" action="/">
-
-			<div class="form-group">
-				<label class="form-label" for="customer-reference">Customer Reference Number</label>
-				<span class="form-hint">It'll be in your email inbox. For example, 1234567890.</span>
-				<input class="form-control" type="text" id="customer-reference">
-			</div>
-
-			<div class="form-group">
-				<label class="form-label" for="password">Enter your password</label>
-				<input class="form-control" type="password" id="password">
-			</div>
-
-			<div class="form-group">
-				<button class="button" type="submit">Sign in</button>
-				<p><a href="/">Forgotten your password?</a></p>
-			</div>
-
-		</form>
+  		<h1 class="heading-xlarge">Amend business details <span class="heading-secondary">Beech Farm</span></h1>
 
 
-    <div class="text">
+      <!-- form group -->
+      <fieldset class="form-group">
 
-      <div class="alert-info" role="alert">
 
-        <div class="alert-message">
-          <p>Unauthorised access to this system constitutes an offence under the Computer Misuse Act 1990. You must follow Defra or Defra Network organisational policies and codes of conduct relating to the use of computer systems, and
-          agree to the terms of the Personal Commitment Statement.</p>
+        <legend class="heading-large">Business name and address</legend>
 
-          <p>Activity on the Defra network computer systems may be monitored and/or recorded to secure the effective operation of the system and for other lawful puposes.</p>
+
+        <div class="form-group">
+          <label class="form-label" for="business-name">Business name</label>
+          <input class="form-control" id="business-name" type="text" value="Beech Farm">
         </div>
 
+
+        <div class="form-group">
+
+          <label class="form-label" for="postcode-search">Postcode</label>
+
+          <div class="form-search">
+
+            <div class="form-group-search">
+              <input class="form-control" id="postcode-search" type="text">
+            </div>
+
+            <div class="form-group-button">
+              <button class="button" type="button">Find UK address</button>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="toggle">
+
+          <p><a class="toggle-link" href="#">Enter address manually</a></p>
+
+          <div class="toggle-content">
+
+            <div class="panel-indent">
+
+      				<fieldset>
+
+      					<legend class="heading-medium">Your address</legend>
+
+      					<div class="form-group form-group-compound">
+      						<label class="form-label" for="address-line-1">Street</label>
+      						<input class="form-control" type="text" id="address-line-1">
+      					</div>
+
+      					<div class="form-group">
+      						<label class="form-label visuallyhidden" for="address-line-2">Street</label>
+      						<input class="form-control" type="text" id="address-line-2">
+      					</div>
+
+      					<div class="form-group">
+      						<label class="form-label" for="address-town">Town or City</label>
+      						<input class="form-control form-control-1-4" type="text" id="address-town">
+      					</div>
+
+      					<div class="form-group">
+      						<label class="form-label" for="address-postcode">Postcode</label>
+      						<input class="form-control form-control-1-8" type="text" id="address-postcode">
+      					</div>
+
+      				</fieldset>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </fieldset>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <fieldset class="form-group">
+
+
+        <legend class="heading-large">Business contact details</legend>
+
+
+        <div class="text">
+          <p>You must enter either a landline or mobile number.</p>
+        </div>
+
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-control" id="email" type="email" value="info@beechfarm.co.uk">
+        </div>
+
+
+        <div class="form-group">
+          <label class="form-label" for="landline">Landline</label>
+          <input class="form-control" id="landline" type="tel" value="0147 9643 7573">
+        </div>
+
+
+        <div class="form-group">
+          <label class="form-label" for="mobile">Mobile</label>
+          <input class="form-control" id="mobile" type="tel" value="0797 8377 7457">
+        </div>
+
+
+      </fieldset>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <fieldset class="form-group">
+
+
+        <legend class="heading-large">Reference numbers</legend>
+
+
+        <div class="form-group">
+          <label class="form-label" for="vat-number">VAT registration number (if applicable)</label>
+          <input class="form-control" id="vat-number" type="text" value="GB999 9999 73">
+        </div>
+
+
+      </fieldset>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <div class="form-group">
+
+        <button class="button" type="submit">Business details are correct and complete</button>
+
       </div>
+      <!-- end -->
+
 
     </div>
 
