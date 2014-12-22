@@ -1,5 +1,5 @@
 define(['jquery','jquery-trap-input'], function ($) {
-    var PinfDialog = function ($templateCache, $http, $q) {
+    var PinfDialog = function ($templateCache, $http, $q, $controller, $compile) {
         var currentDialog = null;
         var self = this;
 
@@ -36,7 +36,6 @@ define(['jquery','jquery-trap-input'], function ($) {
         }
 
         function bindHandlers(dialog) {
-            var close = self.close.bind(self);
             dialog.find('button.dialog-close').click(close);
             dialog.click(close);
             dialog.find('.dialog-holder').click(function (e) {
@@ -57,6 +56,18 @@ define(['jquery','jquery-trap-input'], function ($) {
                     bindHandlers(dialog);
                     currentDialog = dialog;
 
+                    var childScope = scope.$new(false);
+
+                    if(settings.injectClose){
+                        childScope.close = close
+                    }
+
+                    var controller = $controller(settings.controller || function() {}, {
+                        $scope : childScope
+                    });
+
+
+                    $compile(dialog)(childScope)
 
                 });
         }
@@ -70,9 +81,11 @@ define(['jquery','jquery-trap-input'], function ($) {
             doc.unbind('keyup', documentKeyUp);
             currentDialog = null;
         }
+
+        var close = self.close.bind(self);
     }
 
-    PinfDialog.$inject = ['$templateCache', '$http', '$q'];
+    PinfDialog.$inject = ['$templateCache', '$http', '$q', '$controller', '$compile'];
 
     return PinfDialog;
 });

@@ -27,6 +27,14 @@
 
     <div ng-include="'/javascripts/views/capd-preformatted.html'"></div>
 
-    <button ng-click="showDialog()">Show dialog</button>
+    <div class="text">
+        <h1 class="heading-large">capdDialog</h1>
+
+        <button class="button" ng-click="showDialog1()">Show dialog 1</button>
+
+        <button class="button" ng-click="showDialog2()">Show dialog 2</button>
+
+        <p class="text">Text received from dialog: <b>{{textFromDialog}}</b></p>
+    </div>
 
 </div>
