@@ -1,4 +1,5 @@
 define(function () {
+    // @ngInject
     var capdCollapsible = function () {
         return {
             link: function postLink(scope, iElement, iAttrs) {
@@ -25,8 +26,6 @@ define(function () {
             scope: false
         }
     }
-
-    capdCollapsible.$inject = [];
 
     return capdCollapsible;
 });

@@ -1,4 +1,5 @@
 define(function () {
+    // @ngInject
     var helloDirective = function () {
         return {
             template : '<strong>Hello {{name}}</strong>',
@@ -10,13 +11,11 @@ define(function () {
             scope : {
                 name: '@capdHello'
             },
-            controller: function($scope, $element, $attrs, $transclude){
+            controller: /* @ngInject */ function($scope, $element, $attrs, $transclude){
 
             }
         }
     }
-
-    helloDirective.$inject = [];
 
     return helloDirective;
 });

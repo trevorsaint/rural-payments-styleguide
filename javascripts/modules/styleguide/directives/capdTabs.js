@@ -1,4 +1,5 @@
 define(['./capdTabsConstants'],function (capdTabsConstants) {
+    // @ngInject
     var capdTabs = function ($rootScope) {
         return {
             templateUrl: '/javascripts/modules/styleguide/views/capd-tabs-template.html',
@@ -46,10 +47,6 @@ define(['./capdTabsConstants'],function (capdTabsConstants) {
                 }
             }]
         }
-
-        capdTabs.$inject = ['$rootScope'];
-
-
     }
 
     return capdTabs;

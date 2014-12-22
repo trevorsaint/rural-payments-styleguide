@@ -1,5 +1,5 @@
 define(['./capdTabsConstants'],function (capdTabsConstants) {
-    var capdTabsTab = function ($rootScope) {
+    var capdTabsTab = function () {
         return {
             template: '<div ng-show="isVisible" ng-transclude></div>',
             link: function postLink(scope, iElement, iAttrs, capdTabsController) {
@@ -22,8 +22,6 @@ define(['./capdTabsConstants'],function (capdTabsConstants) {
             }
         }
     }
-
-    capdTabsTab.$inject = ['$rootScope'];
 
     return capdTabsTab;
 });

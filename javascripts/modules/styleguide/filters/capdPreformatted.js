@@ -1,4 +1,6 @@
 define(function () {
+
+    // @ngInject
     var capdPreformatted = function ($sce) {
         function escape(text){
             return text.
@@ -14,8 +16,6 @@ define(function () {
             return $sce.trustAsHtml(textWithBrs);
         }
     }
-
-    capdPreformatted.$inject = ['$sce'];
 
     return capdPreformatted;
 });

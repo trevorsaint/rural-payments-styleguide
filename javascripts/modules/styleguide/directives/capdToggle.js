@@ -1,5 +1,6 @@
 define(function () {
 
+    // @ngInject
     var capdToggle = function () {
         return {
             link: function postLink(scope, iElement, iAttrs) {
@@ -24,13 +25,11 @@ define(function () {
             },
             restrict : 'C',
             transclude: false,
-            controller: function($scope, $element, $attrs, $transclude){
+            controller: /* @ngInject */ function($scope, $element, $attrs, $transclude){
 
             }
         }
     }
-
-    capdToggle.$inject = [];
 
     return capdToggle;
 });

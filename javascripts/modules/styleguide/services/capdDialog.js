@@ -1,4 +1,5 @@
 define(['jquery','jquery-trap-input'], function ($) {
+    // @ngInject
     var PinfDialog = function ($templateCache, $http, $q, $controller, $compile) {
         var currentDialog = null;
         var self = this;
@@ -103,8 +104,6 @@ define(['jquery','jquery-trap-input'], function ($) {
 
         var close = self.close.bind(self);
     }
-
-    PinfDialog.$inject = ['$templateCache', '$http', '$q', '$controller', '$compile'];
 
     return PinfDialog;
 });

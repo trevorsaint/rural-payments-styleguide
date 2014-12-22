@@ -1,4 +1,5 @@
 define(['./capdTabsConstants'],function (capdTabsConstants) {
+    // @ngInject
     var capdTabsHeader = function ($rootScope) {
         return {
             templateUrl : '/javascripts/modules/styleguide/views/capd-tabs-header-template.html',
@@ -24,13 +25,11 @@ define(['./capdTabsConstants'],function (capdTabsConstants) {
                 two_way_binding: '='
             },
             require : '^^capdTabs',
-            controller: function($scope, $element, $attrs, $transclude){
+            controller: /* @ngInject */ function($scope, $element, $attrs, $transclude){
 
             }
         }
     }
-
-    capdTabsHeader.$inject = ['$rootScope'];
 
     return capdTabsHeader;
 });
