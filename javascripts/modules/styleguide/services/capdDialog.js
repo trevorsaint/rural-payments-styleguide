@@ -2,6 +2,7 @@ define(['jquery','jquery-trap-input'], function ($) {
     var PinfDialog = function ($templateCache, $http, $q, $controller, $compile) {
         var currentDialog = null;
         var self = this;
+        var focusedElement = null;
 
         function getDialogTemplate(templateUrl) {
             var dialogTemplate = $templateCache.get(templateUrl);
@@ -45,7 +46,21 @@ define(['jquery','jquery-trap-input'], function ($) {
             doc.bind('keyup', documentKeyUp);
         }
 
+        /**
+         * Opens new dialog.
+         * @param scope
+         * Scope of controller spawning dialog. This is important because dialog will have scope which is a child
+         * of provided scope.
+         *
+         * @param settings
+         * Setting object
+         * controller : Function | String - controller that is going to be used in dialog. OPTIONAL
+         * templateUrl : String - url to dialogs template
+         * injectClose : Boolean - if this is true close() method will be injected to dialogs scope. OPTIONAL
+         */
         this.open = function (scope, settings) {
+            focusedElement = $(':focus');
+
             getDialogTemplate(settings.templateUrl)
                 .then(function (template) {
                     var dialog = createAndShowDialog(template);
@@ -66,12 +81,14 @@ define(['jquery','jquery-trap-input'], function ($) {
                         $scope : childScope
                     });
 
-
                     $compile(dialog)(childScope)
 
                 });
         }
 
+        /**
+         * Closes currently opened dialog
+         */
         this.close = function(){
             var doc = $(document);
 
@@ -80,6 +97,8 @@ define(['jquery','jquery-trap-input'], function ($) {
             currentDialog.remove();
             doc.unbind('keyup', documentKeyUp);
             currentDialog = null;
+
+            focusedElement.focus();
         }
 
         var close = self.close.bind(self);
