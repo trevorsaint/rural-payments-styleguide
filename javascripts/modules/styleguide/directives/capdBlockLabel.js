@@ -1,4 +1,5 @@
 define(function () {
+    // @ngInject
     var capdBlockLabel = function () {
         return {
             template : '',
@@ -12,7 +13,7 @@ define(function () {
                 delegate_binding: '&',
                 two_way_binding: '='
             },
-            controller: function($scope, $element, $attrs, $transclude){
+            controller: /* @ngInject */ function($scope, $element, $attrs, $transclude){
                 var checkbox = $element.find('input[type=checkbox]');
                 var radio = $element.find('input[type=radio]');
                 var inputs = radio.add(checkbox);
@@ -47,7 +48,6 @@ define(function () {
                 }
 
                 $element.not('label').click(function(event){
-//                    toggleChecked(radio);
                     toggleChecked(checkbox);
                     inputs.focus();
                     inputs.trigger('change');
@@ -72,8 +72,6 @@ define(function () {
             }
         }
     }
-
-    capdBlockLabel.$inject = [];
 
     return capdBlockLabel;
 });

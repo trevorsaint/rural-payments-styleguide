@@ -1,13 +1,15 @@
 define(
     [
         'angular'
-        , './capdHello'
-        , './capdTabs'
-        , './capdTabsTab'
-        , './capdBlockLabel'
-        , './capdTabsHeader'
-        , './capdCollapsible'
-        , './capdToggle'
+        , './directives/capdHello'
+        , './directives/capdTabs'
+        , './directives/capdTabsTab'
+        , './directives/capdBlockLabel'
+        , './directives/capdTabsHeader'
+        , './directives/capdCollapsible'
+        , './directives/capdToggle'
+        , './filters/capdPreformatted'
+        , './services/capdDialog'
     ]
     , function
         (
@@ -19,9 +21,11 @@ define(
           , capdTabsHeader
           , capdCollapsible
           , capdToggle
+          , capdPreformatted
+          , capdDialog
         )
     {
-        var capdDirectivesModule = angular.module('capd.directives', []);
+        var capdDirectivesModule = angular.module('capd.styleguide', []);
         capdDirectivesModule.directive('capdHello', capdHello);
         capdDirectivesModule.directive('capdTabs', capdTabs);
         capdDirectivesModule.directive('capdTabsTab', capdTabsTab);
@@ -30,4 +34,6 @@ define(
         capdDirectivesModule.directive('capdTabsHeader', capdTabsHeader);
         capdDirectivesModule.directive('collapsibleItem', capdCollapsible);
         capdDirectivesModule.directive('toggle', capdToggle);
+        capdDirectivesModule.filter('capdPreformatted', capdPreformatted);
+        capdDirectivesModule.service('capdDialog', capdDialog);
     })

@@ -1,7 +1,8 @@
 define(['./capdTabsConstants'],function (capdTabsConstants) {
+    // @ngInject
     var capdTabs = function ($rootScope) {
         return {
-            templateUrl: '/javascripts/modules/directives/views/capd-tabs-template.html',
+            templateUrl: '/javascripts/modules/styleguide/views/capd-tabs-template.html',
             link: function postLink(scope, iElement, iAttrs, controller, transcludeFn) {
                 transcludeFn(function(transClone){
                     var tabListUl = iElement.find('ul.tabs-list');
@@ -46,10 +47,6 @@ define(['./capdTabsConstants'],function (capdTabsConstants) {
                 }
             }]
         }
-
-        capdTabs.$inject = ['$rootScope'];
-
-
     }
 
     return capdTabs;

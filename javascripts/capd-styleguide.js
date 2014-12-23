@@ -1,10 +1,10 @@
 define(['angular'
-        , './modules/directives/capdDirectivesModule'
+        , './modules/styleguide/capdStyleguideModule'
         , './controllers/directivesGalleryController'
         ,'ngRoute'
     ],
     function (angular, capdDirectivesModule, directivesGalleryController, ngRoute) {
-        var capdStyleguideModule = angular.module('capd-styleguide', ['capd.directives', 'ngRoute']);
+        var capdStyleguideModule = angular.module('capd-styleguide', ['capd.styleguide', 'ngRoute']);
 
         capdStyleguideModule.controller('directivesGalleryController', directivesGalleryController);
 

@@ -43,7 +43,8 @@
             'modernizr' : 'bower_components/modernizr-custom/modernizr.custom.77028',
             'sopraFeatureToolsUtils': 'bower_components/sopra-feature-tools/Utils.min',
             'sopraFeatureTools': 'bower_components/sopra-feature-tools/MathFeatureTools.min',
-            'details-polyfill' : 'bower_components/details-polyfill/details.polyfill'
+            'details-polyfill' : 'bower_components/details-polyfill/details.polyfill',
+            'jquery-trap-input' : 'bower_components/jquery-trap-input/jquery.trap.min'
         },
         shim: {
             'jscrollpane': ['jquery'],
@@ -71,7 +72,8 @@
             'angular-placeholder': ['angular', 'jquery-placeholder'],
             'projectionEPSG27700': ['proj4'],
             'OsGridRef' : {'exports' : 'OsGridRef'},
-            'ngRoute' : ['angular']
+            'ngRoute' : ['angular'],
+            'jquery-trap-input' : ['jquery']
         },
         priority: ['polyfills', 'modernizr', 'angular'],
         //momentjs configuration

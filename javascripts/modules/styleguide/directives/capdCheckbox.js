@@ -1,4 +1,5 @@
 define(function () {
+    // @ngInject
     var capdCheckbox = function () {
         return {
             template : '',
@@ -17,8 +18,6 @@ define(function () {
             }
         }
     }
-
-    capdCheckbox.$inject = [];
 
     return capdCheckbox;
 });

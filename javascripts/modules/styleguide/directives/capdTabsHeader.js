@@ -1,7 +1,8 @@
 define(['./capdTabsConstants'],function (capdTabsConstants) {
+    // @ngInject
     var capdTabsHeader = function ($rootScope) {
         return {
-            templateUrl : '/javascripts/modules/directives/views/capd-tabs-header-template.html',
+            templateUrl : '/javascripts/modules/styleguide/views/capd-tabs-header-template.html',
             link: function postLink(scope, iElement, iAttrs, capdTabsController) {
                 var registrationInfo = capdTabsController.registerHeader();
                 scope.index = registrationInfo.index;
@@ -24,13 +25,11 @@ define(['./capdTabsConstants'],function (capdTabsConstants) {
                 two_way_binding: '='
             },
             require : '^^capdTabs',
-            controller: function($scope, $element, $attrs, $transclude){
+            controller: /* @ngInject */ function($scope, $element, $attrs, $transclude){
 
             }
         }
     }
-
-    capdTabsHeader.$inject = ['$rootScope'];
 
     return capdTabsHeader;
 });
