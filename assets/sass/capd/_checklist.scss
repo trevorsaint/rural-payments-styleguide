@@ -1,0 +1,70 @@
+// Checklist
+// ==========================================================================
+
+
+%checklist {
+  border-bottom: 1px solid $border-colour;
+	clear: both;
+	margin: em(15) 0;
+	overflow: hidden;
+	padding-left: em(60);
+	position: relative;
+	min-height: em(60);
+
+	&:last-child {
+  	border-bottom: 0 none;
+	}
+
+	&:before {
+  	background: url(/assets/images/icons/checklist.png);
+  	background-position: 50% 0;
+  	content: '';
+  	height: 50px;
+  	position: absolute;
+  	left: 0; top: 0;
+  	width: 50px;
+
+    @include device-pixel-ratio() {
+      background: url(/assets/images/icons/checklist-2x.png);
+      background-size: 50px;
+    }
+
+	}
+
+	ul {
+  	margin-top: em(5);
+  	margin-bottom: em(20);
+	}
+
+}
+
+
+.checklist-notmet {
+	@extend %checklist;
+
+	&:before {
+	  background-position: 50% 0
+	}
+
+}
+
+
+.checklist-inprogress {
+	@extend %checklist;
+
+	&:before {
+	  background-position: 50% -50px;
+	}
+
+}
+
+
+.checklist-done {
+	@extend %checklist;
+
+	&:before {
+	  background-position: 50% -100px;
+	}
+
+}
+
