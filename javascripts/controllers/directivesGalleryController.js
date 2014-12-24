@@ -17,6 +17,15 @@ define(function () {
                 controller : 'showDIalog2Controller'
             });
         }
+
+        $scope.showDialog3 = function(){
+            capdDialog.open($scope, {
+                templateUrl : '/javascripts/views/dialog3-template.html',
+                injectClose : true
+            }).then(function(result){
+                $scope.testModel.textFromDialog = result;
+            });
+        }
     }
 
     DirectivesGalleryController.$inject = ['$scope', 'capdDialog'];
