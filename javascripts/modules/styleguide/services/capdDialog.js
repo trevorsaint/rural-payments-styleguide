@@ -37,7 +37,6 @@ define(['jquery','jquery-trap-input'], function ($) {
         }
 
         function bindHandlers(dialog) {
-            dialog.find('button.dialog-close').click(close);
             dialog.click(close);
             dialog.find('.dialog-holder').click(function (e) {
                 e.stopPropagation();
