@@ -14,12 +14,7 @@ define(function () {
             capdDialog.open($scope, {
                 templateUrl : '/javascripts/views/dialog2-template.html',
                 injectClose : true,
-                controller : ['$scope', function($dialogScope){
-                    $dialogScope.confirm = function(text){
-                        $scope.textFromDialog = text;
-                        $dialogScope.close();
-                    }
-                }]
+                controller : 'showDIalog2Controller'
             });
         }
     }
