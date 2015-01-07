@@ -1,9 +1,8 @@
 define(['jquery','jquery-trap-input'], function ($) {
     // @ngInject
     var PinfDialog = function ($templateCache, $http, $q, $controller, $compile) {
-        var currentDialog = null;
+        var currentDialog, focusedElement, closeDeffered = null;
         var self = this;
-        var focusedElement = null;
 
         function getDialogTemplate(templateUrl) {
             var dialogTemplate = $templateCache.get(templateUrl);
@@ -38,7 +37,6 @@ define(['jquery','jquery-trap-input'], function ($) {
         }
 
         function bindHandlers(dialog) {
-            dialog.find('button.dialog-close').click(close);
             dialog.click(close);
             dialog.find('.dialog-holder').click(function (e) {
                 e.stopPropagation();
@@ -61,6 +59,8 @@ define(['jquery','jquery-trap-input'], function ($) {
          */
         this.open = function (scope, settings) {
             focusedElement = $(':focus');
+
+            closeDeffered = $q.defer()
 
             getDialogTemplate(settings.templateUrl)
                 .then(function (template) {
@@ -85,21 +85,29 @@ define(['jquery','jquery-trap-input'], function ($) {
                     $compile(dialog)(childScope)
 
                 });
+
+            return closeDeffered.promise;
         }
 
         /**
          * Closes currently opened dialog
          */
-        this.close = function(){
+        this.close = function(result){
             var doc = $(document);
 
             currentDialog.untrap();
             currentDialog.attr('aria-hidden','true');
+
+            closeDeffered.resolve(result);
+            closeDeffered = null;
+
             currentDialog.remove();
             doc.unbind('keyup', documentKeyUp);
             currentDialog = null;
 
             focusedElement.focus();
+
+
         }
 
         var close = self.close.bind(self);

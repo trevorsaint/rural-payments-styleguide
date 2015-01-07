@@ -5,21 +5,25 @@ define(function () {
 
         $scope.showDialog1 = function(){
             capdDialog.open($scope, {
-                templateUrl : '/javascripts/modules/styleguide/views/dialog1-template.html',
+                templateUrl : '/javascripts/views/dialog1-template.html',
                 injectClose : true
             });
         }
 
         $scope.showDialog2 = function(){
             capdDialog.open($scope, {
-                templateUrl : '/javascripts/modules/styleguide/views/dialog2-template.html',
+                templateUrl : '/javascripts/views/dialog2-template.html',
                 injectClose : true,
-                controller : ['$scope', function($dialogScope){
-                    $dialogScope.confirm = function(text){
-                        $scope.textFromDialog = text;
-                        $dialogScope.close();
-                    }
-                }]
+                controller : 'showDIalog2Controller'
+            });
+        }
+
+        $scope.showDialog3 = function(){
+            capdDialog.open($scope, {
+                templateUrl : '/javascripts/views/dialog3-template.html',
+                injectClose : true
+            }).then(function(result){
+                $scope.testModel.textFromDialog = result;
             });
         }
     }
