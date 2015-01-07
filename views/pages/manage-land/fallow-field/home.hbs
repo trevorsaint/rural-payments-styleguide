@@ -1,0 +1,113 @@
+  <!-- Content -->
+  <main id="page-container" role="main">
+
+
+	  {{>beta}}
+
+
+		<a class="back-link" href="../">Back to land</a>
+
+
+    <div class="grid-row">
+
+
+      <div class="column-two-thirds">
+
+
+        <h1 class="heading-xlarge">Fallow field</h1>
+
+
+        <p class="lede">List the land uses and features on this land parcel.</p>
+
+
+        <form class="form" method="get" action="/pages/manage-land/">
+
+
+        <p class="text-warning"><b>Enter any missing information before saving</b></p>
+
+
+        <!-- table land features information -->
+        <table class="table-land-features">
+          <caption class="visuallyhidden">Land uses and features information</caption>
+          <thead>
+            <tr>
+              <th class="parcel" scope="col">Land uses and features</th>
+              <th class="area" scope="col">Area</th>
+              <th class="action"></th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th class="parcel" data-title="Land uses and features">Total area</th>
+              <td class="area" data-title="Area">5.6ha</td>
+              <td class="checked"></td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <th class="parcel" scope="row" data-title="Land uses and features">Hedge</th>
+              <td class="area" data-title="Area">0.56ha</td>
+              <td class="checked">Remove</td>
+            </tr>
+            <tr>
+              <th class="parcel" scope="row" data-title="Land uses and features">Buffer strip</th>
+              <td class="area" data-title="Area">0.67ha</td>
+              <td class="checked">Remove</td>
+            </tr>
+            <tr>
+              <th class="parcel" scope="row" data-title="Land uses and features"><a href="land-use/">Arable land</a> <span class="text-warning">More information required</span></th>
+              <td class="area" data-title="Area">4.32ha</td>
+              <td class="checked"><a class="link-secondary" href="/">Remove</a></td>
+            </tr>
+            <tr>
+              <th class="parcel" scope="row" data-title="Land uses and features">Unknown</th>
+              <td class="area" data-title="Area">0.05ha</td>
+              <td class="checked"></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- end -->
+
+
+        <p><a href="add-feature/">Add a land use or feature</a></p>
+
+
+          <div class="form-group">
+            <label class="block-label">
+              <input type="checkbox" name="checkbox-group" value="confirm">By checking this box I confirm this information is accurate
+            </label>
+          </div>
+
+
+          <button class="button" type="submit">Save and return</button>
+
+
+        </form>
+
+
+      </div>
+
+
+      <div class="column-third">
+
+        <img class="img-border img-responsive" src="http://placehold.it/600x600/dee0e2" alt="*">
+
+        <h2 class="heading-small">Land parcel details</h2>
+
+        <dl class="description-list">
+          <dt>Parcel area</dt>
+          <dd>5.6ha</dd>
+          <dt>Parcel ID</dt>
+          <dd>SJ8063_3254</dd>
+          <dt>Last checked</dt>
+          <dd><time datetime="2014-12-09">09/12/14</time></dd>
+        </dl>
+
+      </div>
+
+
+    </div>
+
+
+	</main>
+	<!-- End -->

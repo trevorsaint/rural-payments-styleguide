@@ -1,25 +1,24 @@
 {
   "name": "capd-styleguide",
-  "description" : "A simple styleguide for CAPD services",
-  "version" : "0.0.1",
-  "private" : true,
-  "devDependencies" : {
-    "grunt" : "^0.4.5",
-    "grunt-contrib-compass" : "^0.9.1",
-    "grunt-contrib-connect" : "^0.8.0",
-    "grunt-contrib-watch"   : "^0.6.1"
+  "description": "A simple styleguide for CAPD services",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "express3-handlebars": "^0.5.2",
+    "grunt-express-server": "^0.4.19",
+    "grunt": "^0.4.5",
+    "grunt-contrib-handlebars": "^0.9.2",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
   },
   "dependencies": {
-    "body-parser": "^1.8.3",
-    "express": "^4.9.4",
-    "serve-static": "^1.6.2",
-    "node-static" : "*"
-   },
-  "repository" : {
-    "type": "git",
-    "url" : "https://github.com/trevorsaint/capd.git"
+    "express": "*"
   },
-    "scripts": {
-        "start" : "node app.js"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trevorsaint/capd.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
 }

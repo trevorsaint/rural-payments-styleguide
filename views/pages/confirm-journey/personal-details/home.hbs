@@ -1,0 +1,104 @@
+  <!-- Content -->
+  <main id="page-container" role="main">
+
+
+	  {{>beta}}
+
+
+		<a class="back-link" href="../">Back to Rural Payments</a>
+
+
+    <h1 class="heading-xlarge">Your personal details</h1>
+
+
+    <p class="lede">Check the details below for any errors.</p>
+
+
+    <form class="form" method="get" action="../your-contact-details/">
+
+
+      <!-- form group -->
+      <div class="form-group">
+        <label class="form-label" for="title">Title (optional)</label>
+        <select class="form-control-select" id="title">
+          <option>-- Please make a selection --</option>
+          <option value="1" selected>Miss</option>
+          <option value="2">Ms</option>
+          <option value="3">Mr</option>
+          <option value="4">Dr</option>
+          <option value="5">Sir</option>
+        </select>
+      </div>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <div class="form-group">
+        <label class="form-label" for="first-ame">First name</label>
+        <input class="form-control" id="first-name" type="text" value="Mia">
+      </div>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <div class="form-group">
+        <label class="form-label" for="middle-name">Middle name</label>
+        <input class="form-control" id="middle-name" type="text" value="Jane">
+      </div>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <div class="form-group">
+        <label class="form-label" for="last-name">Last name</label>
+        <input class="form-control" id="last-name" type="text" value="Wallace">
+      </div>
+      <!-- end -->
+
+
+      <!-- form-group -->
+      <div class="form-group">
+
+        <fieldset>
+
+          <legend class="form-label">Date of birth</legend>
+
+          <div class="form-date">
+
+          	<div class="form-group form-group-day">
+          		<label class="form-label" for="dob-day">Day</label>
+          		<input class="form-control" id="dob-day" type="text" value="18">
+          	</div>
+
+          	<div class="form-group form-group-month">
+          		<label class="form-label" for="dob-month">Month</label>
+          		<input class="form-control" id="dob-month" type="text" value="10">
+          	</div>
+
+          	<div class="form-group form-group-year">
+          		<label class="form-label" for="dob-year">Year</label>
+          		<input class="form-control" id="dob-year" type="text" value="1969">
+          	</div>
+
+          </div>
+
+        </fieldset>
+
+      </div>
+      <!-- end -->
+
+
+      <!-- form group -->
+      <div class="form-group">
+
+        <button class="button" type="submit">Continue</button>
+
+      </div>
+      <!-- end -->
+
+
+    </form>
+
+
+	</main>
+	<!-- End -->

@@ -1,0 +1,95 @@
+  <!-- Content -->
+  <main id="page-container" role="main">
+
+
+		{{>beta}}
+
+
+		<a class="back-link" href="../">Back to forms</a>
+
+
+    <!-- form -->
+		<form class="form" method="get" action="/">
+
+
+			<div class="text">
+
+  			<h1 class="form-title heading-large">Where should we send your new passport?</h1>
+
+			</div>
+
+
+      <!-- form group -->
+			<div class="form-group">
+
+				<fieldset>
+
+					<legend class="visuallyhidden">Choose the address to send your new passport to</legend>
+
+					<label class="block-label" for="radio-home-address">
+						<input id="radio-home-address" type="radio" name="radio-indent-group" value="Yes">Home address
+					</label>
+
+					<label class="block-label" for="radio-other-address" data-target="other-address">
+						<input id="radio-other-address" type="radio" name="radio-indent-group" value="No">Other address
+					</label>
+
+				</fieldset>
+
+			</div>
+			<!-- end -->
+
+
+      <!-- other address -->
+			<div class="panel-indent toggle-content js-hidden" id="other-address">
+
+				<fieldset>
+
+					<legend class="heading-medium">Your other address</legend>
+
+					<div class="form-group form-group-compound">
+						<label class="form-label" for="address-line-1">Street</label>
+						<input class="form-control" type="text" id="address-line-1">
+					</div>
+
+					<div class="form-group">
+						<label class="form-label visuallyhidden" for="address-line-2">Street</label>
+						<input class="form-control" type="text" id="address-line-2">
+					</div>
+
+					<div class="form-group">
+						<label class="form-label" for="address-town">Town or City</label>
+						<input class="form-control form-control-1-4" type="text" id="address-town">
+					</div>
+
+					<div class="form-group">
+						<label class="form-label" for="address-postcode">Postcode</label>
+						<input class="form-control form-control-1-8" type="text" id="address-postcode">
+					</div>
+
+				</fieldset>
+
+			</div>
+			<!-- end -->
+
+
+      <!-- form group -->
+			<div class="form-group">
+
+				<button class="button" type="submit">Continue</button>
+
+				<ul>
+					<li><a href="../">Skip this section for now</a></li>
+					<li><a href="../">Back</a></li>
+				</ul>
+
+			</div>
+			<!-- end -->
+
+
+		</form>
+		<!-- end -->
+
+
+	</main>
+	<!-- End -->

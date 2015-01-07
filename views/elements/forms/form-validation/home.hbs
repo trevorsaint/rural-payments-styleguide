@@ -1,0 +1,84 @@
+  <!-- Content -->
+  <main id="page-container" role="main">
+
+
+		{{>beta}}
+
+
+		<a class="back-link" href="../">Back to forms</a>
+
+
+		<h1 class="heading-xlarge">Form validation</h1>
+
+
+    <!-- form -->
+		<form class="form" method="get" action="/">
+
+
+			<div class="text">
+
+        <div class="validation-summary group">
+
+          <h1 class="validation-heading">There was a problem submitting the form</h1>
+
+          <p>Because of the following problems:</p>
+
+          <ol class="validation-list list-number text">
+            <li><a href="#register-email-label">Enter your email address &ndash; must be a valid email address</a></li>
+            <li><a href="#register-email-confirm-label">Re-enter your email address &ndash; must match Enter your email address</a></li>
+            <li><a href="#register-confirm-understanding">I agree to the Terms and conditions and privacy policy &ndash; must be checked</a></li>
+          </ol>
+
+        </div>
+
+				<p>You need to give your email address and create a password. This is so you can make, save and retrieve LPAs.</p>
+
+				<p>You can create an account in your name to help someone else make an LPA. But they must make all the decisions about the LPA themselves.</p>
+
+				<p>If you already have an account please <a href="/">sign in</a>.</p>
+
+			</div>
+
+
+      <!-- form group -->
+			<div class="form-group validation">
+	      <label class="form-label" for="register-email" id="register-email-label">Enter your email address <span class="validation-message">must be a valid email address</span></label>
+	      <input class="form-control" type="email" id="register-email">
+			</div>
+			<!-- end -->
+
+
+      <!-- form group -->
+			<div class="form-group validation">
+	      <label class="form-label" for="register-email-confirm" id="register-email-confirm-label">Re-enter your email address <span class="validation-message">must match Enter your email address</span></label>
+	      <input class="form-control" type="email" id="register-email-confirm">
+			</div>
+      <!-- end -->
+
+
+      <div class="form-block text">
+				<p>LPAs are governed by the laws of England and Wales and can only be made by people with mental capacity aged 18 or older.</p>
+			</div>
+
+
+      <!-- form group -->
+			<div class="form-group validation">
+	      <label class="form-label" for="register-confirm-understanding" id="register-confirm-understanding-label">
+	      <input type="checkbox" value="1" id="register-confirm-understanding"> I agree to the <a target="_blank" href="/">Terms and conditions and privacy policy</a> <span class="validation-message">must be checked</span></label>
+			</div>
+			<!-- end -->
+
+
+      <!-- form group -->
+			<div class="form-group">
+				<button class="button" type="submit">Continue</button>
+			</div>
+			<!-- end -->
+
+
+		</form>
+		<!-- end -->
+
+
+	</main>
+	<!-- End -->

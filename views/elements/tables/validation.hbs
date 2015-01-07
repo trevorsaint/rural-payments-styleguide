@@ -1,0 +1,111 @@
+  <!-- Content -->
+  <main id="page-container" role="main">
+
+
+		{{>beta}}
+
+
+		<a class="back-link" href="../">Back to tables</a>
+
+
+		<h1 class="heading-xlarge">Table validation</h1>
+
+
+    <!-- form table -->
+		<form class="form form-table" method="post" action="/">
+
+      <div class="validation-summary group text">
+
+        <h1 class="validation-heading">There was a problem submitting the form</h1>
+
+        <p>Because of the following problems:</p>
+
+        <ol class="validation-list list-number text">
+          <li><a href="#land-area-1">Enter a number in the following format 3.5</a></li>
+          <li><a href="#land-area-2">Enter a number in the following format 3.5</a></li>
+        </ol>
+
+      </div>
+
+  		<table>
+
+  		  <caption class="visuallyhidden">Business plan execution results</caption>
+
+  			<thead>
+
+  				<tr>
+  					<th scope="col">Parcel</th>
+  					<th scope="col">Reference</th>
+  					<th scope="col">Total area</th>
+  					<th scope="col">Eligible area</th>
+  					<th scope="col">Land cover</th>
+  					<th scope="col">Land use area</th>
+  					<th scope="col">Land use</th>
+  					<th scope="col">Area to claim</th>
+  				</tr>
+
+  			</thead>
+
+  			<tfoot>
+
+    			<tr>
+  					<th scope="col" colspan="7">Total</th>
+  					<td>NaN ha</td>
+  				</tr>
+
+  			</tfoot>
+
+  			<tbody>
+
+  				<tr>
+  					<th scope="row" data-title="Parcel">Field E</th>
+  					<td data-title="Reference">NZ1234</td>
+  					<td data-title="Total area">10.50ha</td>
+  					<td data-title="Eligible area">10.50ha</td>
+  					<td data-title="Land cover">Arable</td>
+  					<td data-title="Land use area">5.40ha</td>
+  					<td data-title="Land use">Wheat</td>
+  					<td data-title="Arrea to claim">
+    					<label class="visuallyhidden" for="land-area-1">Land Area</label>
+    					<input class="form-control form-control-error" type="text" id="land-area-1" size="5" value="34.fs"> ha
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<th scope="row" data-title="Parcel">Field E</th>
+  					<td data-title="Reference">NZ1234</td>
+  					<td data-title="Total area">10.50ha</td>
+  					<td data-title="Eligible area">10.50ha</td>
+  					<td data-title="Land cover">Arable</td>
+  					<td data-title="Land use area">5.40ha</td>
+  					<td data-title="Land use">Wheat</td>
+  					<td data-title="Area to claim">
+    					<label class="visuallyhidden" for="land-area-2">Land Area</label>
+    					<input class="form-control form-control-error" type="text" id="land-area-2" size="5" value="abcdef"> ha
+  					</td>
+  				</tr>
+
+  				<tr>
+  					<th scope="row" data-title="Parcel">Field E</th>
+  					<td data-title="Reference">NZ1234</td>
+  					<td data-title="Total area">10.50ha</td>
+  					<td data-title="Eligible area">10.50ha</td>
+  					<td data-title="Land cover">Arable</td>
+  					<td data-title="Land use area">-</td>
+  					<td data-title="Land use">Peas</td>
+  					<td data-title="Area to claim">
+    					<label class="visuallyhidden" for="land-area-3">Land Area</label>
+    					<input class="form-control" type="text" id="land-area-3" size="5" value="3.5"> ha
+  					</td>
+  				</tr>
+
+  			</tbody>
+
+  		</table>
+
+    </form>
+    <!-- end -->
+
+
+	</main>
+	<!-- End -->

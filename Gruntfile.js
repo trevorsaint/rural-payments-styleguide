@@ -1,17 +1,44 @@
+'use strict';
+
+
+var path = require('path');
+
+
 module.exports = function(grunt) {
 
 
-  // Project configuration
-
+  // configurations
   grunt.initConfig({
 
 
     pkg: grunt.file.readJSON('package.json'),
 
 
-  	// Compass
+    // express
+    express: {
 
-  	compass: {
+      dev: {
+
+        options: {
+          script: 'app.js',
+          port: 3000
+        }
+
+      }
+
+    },
+
+
+    // handlebars
+    handlebars: {
+
+      files: [ 'views/**/*.hbs' ]
+
+    },
+
+
+    // compass
+    compass: {
 
   		compile: {
 
@@ -26,49 +53,48 @@ module.exports = function(grunt) {
   	},
 
 
-  	// Connect
+    // watch
+    watch: {
 
-  	connect: {
 
-  		server: {
+      options: {
+        livereload: true,
+      },
 
-  			options: {
-  				port: 9100,
-  				open: true,
-  				livereload: 35729,
-  				hostname: 'localhost'
-  			}
 
-  		},
+      // express
+      express: {
 
-      dist: {
+        files: [ 'app.js', 'Gruntfile.js', 'routes.js' ],
+        tasks: [ 'express:dev' ],
 
         options: {
-            port: 80,
-            open: false,
-            hostname: 'localhost',
-            keepalive: true
+          livereload: true,
+          spawn: false
         }
 
-      }
-
-  	},
+      },
 
 
-  	// Watch
+      // handlebars
+      handlebars: {
 
-  	watch: {
+        files: [ 'views/**/*.hbs' ],
+        task: [ 'handlebars'],
+
+        options: {
+          livereload: true,
+          spawn: false
+        }
+
+      },
 
 
-  		options: {
-  			livereload: true
-  		},
+      // compass
+      compass: {
 
-
-  		compass: {
-
-  			files: ['assets/sass/**/*.scss'],
-  			tasks: ['compass'],
+  			files: [ 'assets/sass/**/*.scss' ],
+  			tasks: [ 'compass' ],
 
   			options: {
   				livereload: true,
@@ -78,45 +104,24 @@ module.exports = function(grunt) {
   		},
 
 
-  		html: {
-
-  			files: ['**/*.html'],
-  			options: {
-  				livereload: true,
-  				spawn: false
-  			}
-
-  		}
-
-
-  	}
+    }
 
 
   });
 
 
-  // Load plugins that provide the tasks
-
-  [
-    'grunt-contrib-compass',
-    'grunt-contrib-connect',
-    'grunt-contrib-watch'
-  ].forEach(function (task) {
+  // load the plugin that provides the express task(s)
+  ['grunt-express-server',
+   'grunt-contrib-handlebars',
+   'grunt-contrib-compass',
+   'grunt-contrib-watch'
+  ].forEach(function(task) {
     grunt.loadNpmTasks(task);
   });
 
 
-  // Register task(s)
-
-  grunt.registerTask('default', [
-    'compass',
-    'connect:server',
-    'watch'
-  ]);
-
-  grunt.registerTask('dist-run', [
-    'connect:dist'
-  ])
+  // default task(s)
+  grunt.registerTask( 'default', [ 'express:dev', 'handlebars', 'compass', 'watch' ] );
 
 
 };

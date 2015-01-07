@@ -1,0 +1,86 @@
+  <!-- Content -->
+  <main id="page-container" role="main">
+
+
+	  {{>beta}}
+
+
+	  <a class="back-link" href="/">Back to index</a>
+
+
+    <div class="text">
+
+
+      <h1 class="heading-xlarge">Tell us more about your query</h1>
+
+
+      <form class="form" method="get" action="./">
+
+
+        <div class="form-group">
+          <label class="form-label" for="enquiry">Query</label>
+          <textarea class="form-control form-control-3-4 form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
+        </div>
+
+
+        <div class="form-group">
+
+          <fieldset class="inline">
+
+            <legend class="form-label">Do you know both, the <abbr title="Single Business Identifier">SBI</abbr> of the seller and parcel references for the parcels you have purchased?</legend>
+
+            <div class="form-group form-group-compound">
+
+              <label class="block-label" data-target="seller-references" for="radio-indent-1">
+                <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">Yes
+              </label>
+
+              <label class="block-label" for="radio-indent-2">
+                <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">No
+              </label>
+
+            </div>
+
+            <div class="panel-indent js-hidden" id="seller-references">
+
+              <div class="form-group">
+                <label class="form-label" for="sbi-reference">SBI reference number of the seller's business</label>
+                <input class="form-control" id="sbi-reference" type="text">
+              </div>
+
+              <div class="form-group form-group-compound">
+                <label class="form-label" for="parcel-reference">Parcel reference</label>
+                <input class="form-control" id="parcel-reference" type="text">
+              </div>
+
+              <div class="form-group form-group-compound">
+                <label class="form-label visuallyhidden" for="parcel-reference-2">Parcel reference #2</label>
+                <input class="form-control" id="parcel-reference-2" type="text">
+              </div>
+
+              <p><a href="#">Add another parcel reference</a></p>
+
+            </div>
+
+          </fieldset>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <button class="button" type="submit">Finish and submit query</button>
+
+          <p><a href="./">Cancel</a></p>
+
+        </div>
+
+
+      </form>
+
+
+    </div>
+
+
+	</main>
+	<!-- End -->
