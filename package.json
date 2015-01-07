@@ -3,6 +3,9 @@
   "description": "A simple styleguide for CAPD services",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": "0.10.x"
+  },
   "devDependencies": {
     "express3-handlebars": "^0.5.2",
     "grunt-express-server": "^0.4.19",
@@ -19,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trevorsaint/capd.git"
+    "url": "https://github.com/Defra/capd-styleguide.git"
   },
   "scripts": {
     "start": "node app.js"
