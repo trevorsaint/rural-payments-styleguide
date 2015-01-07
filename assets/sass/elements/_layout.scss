@@ -2,15 +2,13 @@
 // ==========================================================================
 
 
-// Page container
+// Content
 // ==========================================================================
+// Content wraps the entire site content block
 
-
-// Page container wraps the entire site content block
-#page-container {
+#content {
   @extend %site-width-container;
   @extend %contain-floats;
-  display: block;
   padding-bottom: $gutter;
   @include media(desktop) {
     padding-bottom: $gutter*3;
