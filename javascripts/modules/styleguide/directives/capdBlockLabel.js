@@ -1,4 +1,4 @@
-define(function () {
+define(['lodash'],function (_) {
     // @ngInject
     var capdBlockLabel = function () {
         return {
@@ -60,6 +60,20 @@ define(function () {
 
                 inputs.blur(function(){
                     $element.removeClass('focused');
+                })
+
+                var propertiesToWatch = inputs.map(function(){
+                    return $(this).attr('ng-model');
+                })
+
+                function propertyChanged(){
+                    setTimeout(function(){
+                        inputs.trigger('change');
+                    },0 );
+                }
+
+                _.forEach(propertiesToWatch, function(property){
+                    $scope.$watch(property, propertyChanged);
                 })
             }
         }
