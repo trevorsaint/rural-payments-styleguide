@@ -17,6 +17,10 @@ define(['angular'
                     templateUrl: '/javascripts/views/directive-gallery.html',
                     controller: 'directivesGalleryController'
                 })
+                .when('/advanced/capd-checkbox', {
+                    templateUrl : '/javascripts/views/advanced/capd-block-label.html',
+                    controler : function(){}
+                })
                 .otherwise('/')
         })
 

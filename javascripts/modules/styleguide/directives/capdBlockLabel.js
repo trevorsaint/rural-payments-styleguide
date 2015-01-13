@@ -1,18 +1,13 @@
-define(function () {
+define(['lodash'],function (_) {
     // @ngInject
     var capdBlockLabel = function () {
         return {
             template : '',
-            link: function postLink(scope, iElement, iAttrs) {
+            link: function postLink($scope, $element, iAttrs) {
 
             },
             restrict : 'C',
             transclude: false,
-            scope : {
-                attribute_binding: '@',
-                delegate_binding: '&',
-                two_way_binding: '='
-            },
             controller: /* @ngInject */ function($scope, $element, $attrs, $transclude){
                 var checkbox = $element.find('input[type=checkbox]');
                 var radio = $element.find('input[type=radio]');
@@ -44,7 +39,7 @@ define(function () {
                 });
 
                 function toggleChecked(selector){
-                    selector.prop('checked', !selector.prop('checked'));
+                    selector.trigger('click');
                 }
 
                 $element.not('label').click(function(event){
@@ -53,10 +48,7 @@ define(function () {
                     inputs.trigger('change');
                 })
 
-
-
                 function preventPropagation(event){
-
                     event.stopPropagation();
                 }
 
@@ -68,6 +60,20 @@ define(function () {
 
                 inputs.blur(function(){
                     $element.removeClass('focused');
+                })
+
+                var propertiesToWatch = inputs.map(function(){
+                    return $(this).attr('ng-model');
+                })
+
+                function propertyChanged(){
+                    setTimeout(function(){
+                        inputs.trigger('change');
+                    },0 );
+                }
+
+                _.forEach(propertiesToWatch, function(property){
+                    $scope.$watch(property, propertyChanged);
                 })
             }
         }

@@ -17,6 +17,7 @@
     "requirejs-text": "2.0.10",
     "angular": "1.2.23",
     "jquery": "1.10.2",
-     "angular-route" : "*"
+     "angular-route" : "*",
+     "lodash" : "*"
   }
 }
