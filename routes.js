@@ -151,11 +151,11 @@ module.exports = {
         });
 
 
-      // other
-      app.get('/elements/other', function(req, res) {
+      // tabs
+      app.get('/elements/tabs', function(req, res) {
 
-        var data = {doctitle: 'Other'};
-        res.render('elements/other/home', data);
+        var data = {doctitle: 'Tabs'};
+        res.render('elements/tabs/home', data);
 
       });
 

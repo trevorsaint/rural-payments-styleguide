@@ -41,14 +41,17 @@ ol {
 
 .list-bullet,
 .list-number,
-.list-alpha {
+.list-alpha,
+.list-nav {
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
 
 .list-bullet li,
-.list-number li {
+.list-number li,
+.list-alpha li,
+.list-nav li {
   margin-bottom: 5px;
 }
 
