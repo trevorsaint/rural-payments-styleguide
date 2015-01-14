@@ -38,6 +38,8 @@ body {
 // Main heading no back link
 
 .heading-xlarge-noback {
+  @extend .heading-xlarge;
+
   margin-top: em(30, 32);
   margin-bottom: em(15, 32);
 
