@@ -66,6 +66,10 @@ define(['lodash'],function (_) {
                     return $(this).attr('ng-model');
                 })
 
+                Array.prototype.push.apply(propertiesToWatch, inputs.map(function(){
+                    return $(this).attr('ng-checked');
+                }))
+
                 function propertyChanged(){
                     setTimeout(function(){
                         inputs.trigger('change');
@@ -75,6 +79,8 @@ define(['lodash'],function (_) {
                 _.forEach(propertiesToWatch, function(property){
                     $scope.$watch(property, propertyChanged);
                 })
+
+                propertyChanged();
             }
         }
     }

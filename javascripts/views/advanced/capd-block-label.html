@@ -1,6 +1,7 @@
 <h1 class="heading-large">capdBlockLabel</h1>
 
 <div>
+    <input type="checkbox" ng-model="zero">
     <input type="checkbox" ng-model="one">
     <input type="checkbox" ng-model="two">
     <input type="checkbox" ng-model="three">
@@ -9,13 +10,30 @@
 <fieldset>
 
 
-    <legend class="form-label-bold">Select the Good Agriculture and Environment Conditions (<abbr title="Good Agriculture and Environment Conditions">GAEC</abbr>) that will apply to your holding by ticking the relevant boxes.</legend>
+    <div class="form-group form-group-compound">
+        <label class="block-label">
+            <input name="radio-inline-group" value="Yes" type="radio" ng-model="radiosVisible"> Yes
+        </label>
+
+        <label class="block-label">
+            <input name="radio-inline-group" value="No" type="radio" ng-model="radiosVisible"> No
+        </label>
+    </div>
 
 
     <div class="form-group">
 
 
-        <ol class="form-checkboxes">
+        <ol class="form-checkboxes" ng-show="radiosVisible">
+
+            <li class="block-list">
+                <label>
+                    <input type="checkbox" ng-click="zero = !zero" ng-checked="zero">
+                    <span class="code">Zero</span>
+                </label>
+                <span class="title">Zero</span>
+            </li>
+
 
             <li class="block-list">
                 <label>
