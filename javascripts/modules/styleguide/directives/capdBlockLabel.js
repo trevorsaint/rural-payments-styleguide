@@ -2,7 +2,6 @@ define(['lodash'],function (_) {
     // @ngInject
     var capdBlockLabel = function () {
         return {
-            template : '',
             link: function postLink($scope, $element, iAttrs) {
 
             },
