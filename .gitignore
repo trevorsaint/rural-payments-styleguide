@@ -4,6 +4,7 @@ node_modules
 .idea/
 npm-debug.log
 tmp
+assets/stylesheets/
 javascript/bower_components/
 gems/
 npm-debug.log
