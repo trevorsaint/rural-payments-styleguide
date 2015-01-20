@@ -8,3 +8,4 @@ javascript/bower_components/
 gems/
 npm-debug.log
 files
+target/

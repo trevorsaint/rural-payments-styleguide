@@ -19,7 +19,9 @@ define(['angular'
                 })
                 .when('/advanced/capd-checkbox', {
                     templateUrl : '/javascripts/views/advanced/capd-block-label.html',
-                    controler : function(){}
+                    controller : function($scope){
+                        $scope.radiosVisible = 'Other';
+                    }
                 })
                 .otherwise('/')
         })

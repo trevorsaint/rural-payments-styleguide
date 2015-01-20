@@ -26,9 +26,6 @@ define(['lodash'],function (_) {
 
                     var inputsFromGroup = $("input[name='" + radioName + "']");
 
-                    var inputsFromGroupExcludingSelf = inputsFromGroup.not(radio);
-                    inputsFromGroupExcludingSelf.closest('label.block-label').removeClass('selected');
-
                     if (radio.is(':checked')) {
                         $element.addClass('selected');
                     }
