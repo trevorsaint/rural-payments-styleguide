@@ -4,7 +4,7 @@
 
 
 .collapsible {
-  margin-bottom: 1.05263em; // 20px
+  margin-bottom: 1em;
 
   &-heading {
     @include user-select(none); // Compass helper
@@ -24,13 +24,17 @@
   }
 
   .owns {
-    margin: 0;
-    position: absolute;
-    top: .6em; right: .5em;
+    margin-bottom: 0;
+
+    @include media(tablet) {
+      position: absolute;
+      right: 0; top: .5em;
+    }
+
   }
 
   .details {
-    margin-bottom: 1.05263em; // 20px
+    margin-bottom: 0;
     overflow: hidden;
 
     &:after {
@@ -83,6 +87,16 @@
       padding: .5em .5em .5em 1.9em;
     }
 
+    .owns {
+      margin: 0 .5em .5em 1.9em;
+
+      @include media(tablet) {
+        margin: 0;
+        right: .5em; top: .6em;
+      }
+
+    }
+
     button {
       background: transparent;
       border: 0 none;
@@ -122,14 +136,12 @@
         }
       }
 
-
       &:hover {
         span,
         &:before {
           color: $link-hover-colour;
         }
       }
-
 
       &:focus {
         outline: 3px solid $yellow;

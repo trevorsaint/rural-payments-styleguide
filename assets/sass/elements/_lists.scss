@@ -48,10 +48,45 @@ ol {
 }
 
 
-.list-bullet li,
-.list-number li,
-.list-alpha li,
-.list-nav li {
-  margin-bottom: 5px;
+.list-bullet,
+.list-number,
+.list-alpha,
+.list-nav {
+
+  li {
+    margin-bottom: 5px;
+  }
+
 }
+
+
+// Parcel lists
+
+.list-parcel {
+
+  dt, dd {
+    display: inline;
+  }
+
+  dt {
+
+    &:after {
+      content: ':';
+    }
+
+  }
+
+  dd {
+    padding-right: 10px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+  }
+
+}
+
+
+
 

@@ -123,6 +123,31 @@ main {
 }
 
 
+
+// Page header
+
+.page-header {
+  margin-top: em(15, 16);
+  margin-bottom: em(30, 16);
+
+  @include media(tablet) {
+    margin-top: em(30, 19);
+    margin-bottom: em(60, 19);
+  }
+
+  h1 {
+    @include bold-48();
+  }
+
+  dl, ul {
+    color: $secondary-text-colour;
+    margin: .5em 0 0 0;
+  }
+
+}
+
+
+
 // Text
 
 p {
