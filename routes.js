@@ -251,7 +251,12 @@ module.exports = {
       // manage land
       app.get('/pages/manage-land', function(req, res) {
 
-        var data = {doctitle: 'Manage land'};
+        var data = {
+          doctitle: 'Manage land',
+          mapScripts: true,
+          openLayers: true
+        };
+
         res.render('pages/manage-land/home', data);
 
       });
@@ -260,7 +265,12 @@ module.exports = {
         // manage land
         app.get('/pages/manage-land/fallow-field', function(req, res) {
 
-          var data = {doctitle: 'Fallow field'};
+          var data = {
+            doctitle: 'Fallow field',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/manage-land/fallow-field/home', data);
 
         });
@@ -269,7 +279,12 @@ module.exports = {
         // land use
         app.get('/pages/manage-land/fallow-field/land-use', function(req, res) {
 
-          var data = {doctitle: 'Land use'};
+          var data = {
+            doctitle: 'Land use',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/manage-land/fallow-field/land-use/home', data);
 
         });
@@ -278,7 +293,12 @@ module.exports = {
         // add feature
         app.get('/pages/manage-land/fallow-field/add-feature', function(req, res) {
 
-          var data = {doctitle: 'Add feature'};
+          var data = {
+            doctitle: 'Add feature',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/manage-land/fallow-field/add-feature/home', data);
 
         });
@@ -287,7 +307,12 @@ module.exports = {
         // edit feature
         app.get('/pages/manage-land/fallow-field/edit-feature', function(req, res) {
 
-          var data = {doctitle: 'Edit feature'};
+          var data = {
+            doctitle: 'Edit feature',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/manage-land/fallow-field/edit-feature/home', data);
 
         });
@@ -296,7 +321,12 @@ module.exports = {
         // add feature details
         app.get('/pages/manage-land/fallow-field/add-feature-details', function(req, res) {
 
-          var data = {doctitle: 'Add feature details'};
+          var data = {
+            doctitle: 'Add feature details',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/manage-land/fallow-field/add-feature-details/home', data);
 
         });
