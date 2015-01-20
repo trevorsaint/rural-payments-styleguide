@@ -26,8 +26,12 @@ define(['lodash'],function (_) {
 
                     var inputsFromGroup = $("input[name='" + radioName + "']");
 
+                    // because of this line radios gray out each other
+                    // we can try removing this line anr relying on angular to notify all radios
+                    // from group and then every radio can take care of itself in terms of highlighting or graying
                     var inputsFromGroupExcludingSelf = inputsFromGroup.not(radio);
-                    inputsFromGroupExcludingSelf.closest('label.block-label').removeClass('selected');
+//                    inputsFromGroupExcludingSelf.closest('label.block-label').removeClass('selected');
+
 
                     if (radio.is(':checked')) {
                         $element.addClass('selected');
