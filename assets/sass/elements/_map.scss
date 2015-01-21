@@ -1,0 +1,32 @@
+// Open Layers Map
+// ==========================================================================
+
+
+@import 'http://openlayers.org/en/v3.1.1/css/ol.css';
+
+
+.map-container {
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+}
+
+
+.map {
+  height: 100%;
+  width: 100%;
+
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+

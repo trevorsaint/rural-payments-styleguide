@@ -1,6 +1,7 @@
 {{#if prismScript}}
 <script src="/assets/javascripts/vendor/prism.js"></script>
 {{/if}}
+
 <script src="/assets/govuk/javascripts/govuk-template.js"></script>
 <script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"></script>
 <script src="/assets/javascripts/vendor/jquery.trap.min.js"></script>
@@ -14,9 +15,16 @@
 <script src="/assets/javascripts/vendor/details.polyfill.js"></script>
 <script src="/assets/javascripts/vendor/jquery.tabs.js"></script>
 
+
 {{#unless angularScripts}}
 <script src="/assets/javascripts/main.js"></script>
 {{/unless}}
+
+
+{{#if mapScripts}}
+<script src="/assets/javascripts/map.js"></script>
+{{/if}}
+
 
 <!-- live reload -->
 <script src="//localhost:35729/livereload.js"></script>
