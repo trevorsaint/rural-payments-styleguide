@@ -345,6 +345,12 @@ module.exports = {
       app.get('/pages/land-query', function(req, res) {
 
         var data = {doctitle: 'Land query'};
+
+        var data = {
+          doctitle: 'Land query',
+          landScripts: true
+        };
+
         res.render('pages/land-query/home', data);
 
       });
