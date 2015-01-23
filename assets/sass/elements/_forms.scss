@@ -138,7 +138,9 @@ fieldset {
 // Form control widths
 
 .form-control-wide {
-  width: 100%;
+  @include media(tablet) {
+    width: 100%;
+  }
 }
 
 
