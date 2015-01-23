@@ -6,6 +6,7 @@
 
 
 .map-container {
+  clear: both;
   position: relative;
   width: 100%;
 
@@ -19,14 +20,8 @@
 
 
 .map {
+  @include abs-pos(0, 0, 0, 0);
   height: 100%;
   width: 100%;
-
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
