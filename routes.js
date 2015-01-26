@@ -522,6 +522,15 @@ module.exports = {
       });
 
 
+      // summary page
+      app.get('/pages/summary-page', function(req, res) {
+
+        var data = {doctitle: 'Summary page'};
+        res.render('pages/summary-page/home', data);
+
+      });
+
+
   }
 
 

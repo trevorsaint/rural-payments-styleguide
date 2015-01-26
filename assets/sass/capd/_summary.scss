@@ -29,7 +29,7 @@
 
 	@include media(tablet) {
 		float: left;
-		width: 40%;
+		width: 33.33%;
 	}
 
 }
@@ -38,9 +38,31 @@
 	display: block;
 	@include media(tablet) {
   	@include box-sizing(border-box);
+		float: left;
+		padding-left: 10px;
+		width: 56.66%;
+	}
+
+}
+
+.summary-edit {
+	display: block;
+	text-align: right;
+	@include media(tablet) {
+  	@include box-sizing(border-box);
 		float: right;
 		padding-left: 20px;
-		width: 60%;
+		width: 10%;
+	}
+
+}
+
+.column-two-thirds{
+	.summary-title{
+		width: 40%;
+	}
+	.summary-value{
+		width: 50%;
 	}
 
 }
