@@ -47,9 +47,9 @@
 
 .summary-edit {
 	display: block;
-	text-align: right;
 	@include media(tablet) {
   	@include box-sizing(border-box);
+		text-align: right;
 		float: right;
 		padding-left: 20px;
 		width: 10%;
