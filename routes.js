@@ -173,6 +173,15 @@ module.exports = {
       });
 
 
+      // Pagination
+      app.get('/elements/pagination', function(req, res) {
+
+        var data = {doctitle: 'Pagination'};
+        res.render('elements/pagination/home', data);
+
+      });
+
+
     // PAGES
 
 

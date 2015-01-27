@@ -1,0 +1,66 @@
+// ==========================================================================
+// Pagination
+// ==========================================================================
+
+
+.pager {
+
+  margin-top: em(5, 16);
+  margin-bottom: em(20, 16);
+
+  @include media(tablet) {
+    margin-top: em(5);
+    margin-bottom: em(20);
+  }
+
+
+  &-items {
+    display: none;
+
+    @include media(tablet) {
+      display: inline;
+    }
+
+  }
+
+
+  &-prev,
+  &-next {
+    padding-right: 10px;
+
+    @include media(tablet) {
+      padding-right: 0;
+    }
+
+  }
+
+
+  &-prev {
+
+    @include media(tablet) {
+      padding-right: 10px;
+    }
+
+  }
+
+
+  &-next {
+
+    @include media(tablet) {
+      padding-left: 10px;
+    }
+
+  }
+
+
+  &-controls {
+
+    @include media(tablet) {
+      float: right;
+    }
+
+  }
+
+
+}
+

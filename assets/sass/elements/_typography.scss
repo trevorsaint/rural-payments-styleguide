@@ -151,7 +151,7 @@ main {
 // Text
 
 p {
-  margin-top: em(5, 16 );
+  margin-top: em(5, 16);
   margin-bottom: em(20, 16);
 
   @include media(tablet) {
