@@ -26,10 +26,10 @@
 
   &-prev,
   &-next {
-    padding-right: 10px;
+    margin-right: 10px;
 
     @include media(tablet) {
-      padding-right: 0;
+      margin-right: 0;
     }
 
   }
@@ -38,7 +38,7 @@
   &-prev {
 
     @include media(tablet) {
-      padding-right: 10px;
+      margin-right: 10px;
     }
 
   }
@@ -47,7 +47,7 @@
   &-next {
 
     @include media(tablet) {
-      padding-left: 10px;
+      margin-left: 10px;
     }
 
   }
