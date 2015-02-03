@@ -102,10 +102,30 @@ details .panel-indent {
 
 // Links
 
-#global-header #logo,
-a:link {
+#global-header #logo, a:link {
   overflow: hidden; // Fixes unwanted padding on focus
 }
 
 
+// Edit inline
+
+.edit-inline {
+  cursor: text;
+
+  span {
+
+    &:after {
+      @include core-16;
+      color: $link-colour;
+      content: 'Edit';
+      cursor: pointer;
+      display: inline;
+      font-weight: normal;
+      text-decoration: underline;
+      vertical-align: baseline;
+    }
+
+  }
+
+}
 
