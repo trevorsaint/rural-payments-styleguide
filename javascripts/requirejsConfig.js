@@ -1,4 +1,4 @@
-(function(){
+function requirejsConfig(){
     var config = {
         paths: {
             'text': 'bower_components/requirejs-text/text',
@@ -44,7 +44,8 @@
             'sopraFeatureToolsUtils': 'bower_components/sopra-feature-tools/Utils.min',
             'sopraFeatureTools': 'bower_components/sopra-feature-tools/MathFeatureTools.min',
             'details-polyfill' : 'bower_components/details-polyfill/details.polyfill',
-            'jquery-trap-input' : 'bower_components/jquery-trap-input/jquery.trap.min'
+            'jquery-trap-input' : 'bower_components/jquery-trap-input/jquery.trap.min',
+            "angular-mocks" : "bower_components/angular-mocks/angular-mocks"
         },
         shim: {
             'jscrollpane': ['jquery'],
@@ -73,12 +74,13 @@
             'projectionEPSG27700': ['proj4'],
             'OsGridRef' : {'exports' : 'OsGridRef'},
             'ngRoute' : ['angular'],
-            'jquery-trap-input' : ['jquery']
+            'jquery-trap-input' : ['jquery'],
+            "angular-mocks" : { exports : 'angular.mock', deps : ['angular']}
         },
         priority: ['polyfills', 'modernizr', 'angular'],
         //momentjs configuration
         noGlobal: true
     };
 
-    require.config(config);
-})()
+    return config;
+}

@@ -18,6 +18,7 @@
     "angular": "1.2.23",
     "jquery": "1.10.2",
      "angular-route" : "*",
-     "lodash" : "*"
+     "lodash" : "*",
+     "angular-mocks": "1.2.23"
   }
 }
