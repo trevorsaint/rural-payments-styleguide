@@ -1,4 +1,4 @@
-define(['angular-mocks', 'modules/styleguide/capdStyleguideModule'], function(mock){
+define(['angularMocks', 'modules/styleguide/capdStyleguideModule'], function(mock){
     describe('aesHomeController', function(){
         var capdDialog
 

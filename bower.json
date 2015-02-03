@@ -19,6 +19,8 @@
     "jquery": "1.10.2",
      "angular-route" : "*",
      "lodash" : "*",
-     "angular-mocks": "1.2.23"
+     "angular-mocks": "1.2.23",
+     "momentjs": "~2.4.0",
+     "moment-timezone": "0.0.3"
   }
 }

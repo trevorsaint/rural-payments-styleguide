@@ -45,7 +45,7 @@ function requirejsConfig(){
             'sopraFeatureTools': 'bower_components/sopra-feature-tools/MathFeatureTools.min',
             'details-polyfill' : 'bower_components/details-polyfill/details.polyfill',
             'jquery-trap-input' : 'bower_components/jquery-trap-input/jquery.trap.min',
-            "angular-mocks" : "bower_components/angular-mocks/angular-mocks"
+            "angularMocks" : "bower_components/angular-mocks/angular-mocks"
         },
         shim: {
             'jscrollpane': ['jquery'],
@@ -75,7 +75,7 @@ function requirejsConfig(){
             'OsGridRef' : {'exports' : 'OsGridRef'},
             'ngRoute' : ['angular'],
             'jquery-trap-input' : ['jquery'],
-            "angular-mocks" : { exports : 'angular.mock', deps : ['angular']}
+            "angularMocks" : { exports : 'angular.mock', deps : ['angular']}
         },
         priority: ['polyfills', 'modernizr', 'angular'],
         //momentjs configuration
