@@ -1,6 +1,14 @@
 define(['moment'], function (moment) {
     /* @ngInject */
-    var capdDatePickerController = function ($scope, capdDatePickerService, capdConfig) {
+    var capdDatePickerController = function ($scope, capdDatePickerService) {
+        var defaultTimeZone;
+        if(capd != undefined && capd.config != undefined){
+            defaultTimeZone = capd.config.defaultTimeZone;
+        }
+        else {
+            defaultTimeZone = 'Europe/London';
+        }
+
 
         // Set up arrays of values
         $scope.days = capdDatePickerService.getDays();
@@ -26,7 +34,7 @@ define(['moment'], function (moment) {
                 correctDate();
                 var date = moment.utc([$scope.dateFields.year, $scope.dateFields.month - 1, $scope.dateFields.day]);
                 if (date.tz) {
-                    date = date.tz(capdConfig.defaultTimeZone);
+                    date = date.tz(defaultTimeZone);
                 }
                 $scope.model = date.toDate();
             } else {

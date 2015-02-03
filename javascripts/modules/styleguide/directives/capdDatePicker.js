@@ -8,7 +8,6 @@ define(function () {
 
         /** link functions **/
         function link(scope, element, attrs, ctrl) {
-
             var startYear = parseInt(attrs['startYear'], 10) || 1900;
             var endYearOffset = parseInt(attrs['endYearOffset'], 10) || 0;
             var endYear = attrs['endYear'] ? parseInt(attrs['endYear'], 10) : new Date().getFullYear() + endYearOffset;
@@ -85,7 +84,7 @@ define(function () {
                 model: '=ngModel'
             },
             controller: 'capdDatePickerController',
-            templateUrl: '/assets/javascripts/modules/styleguide/views/date-picker-template.html',
+            templateUrl: '/javascripts/modules/styleguide/views/date-picker-template.html',
             link: link
         };
     };

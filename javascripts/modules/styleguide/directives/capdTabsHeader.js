@@ -2,7 +2,7 @@ define(['./capdTabsConstants'], function (capdTabsConstants) {
     // @ngInject
     var capdTabsHeader = function ($rootScope) {
         return {
-            templateUrl: '/assets/javascripts/modules/styleguide/views/capd-tabs-header-template.html',
+            templateUrl: '/javascripts/modules/styleguide/views/capd-tabs-header-template.html',
             link: function postLink(scope, iElement, iAttrs, capdTabsController) {
                 var registrationInfo = capdTabsController.registerHeader();
                 scope.index = registrationInfo.index;
