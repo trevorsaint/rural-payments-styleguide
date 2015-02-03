@@ -47,13 +47,18 @@ define(['lodash'], function (_) {
             $element.removeClass('focused');
         });
 
-        var propertiesToWatch = inputs.map(function () {
-            return $(this).attr('ng-model');
-        });
+        var attrsWithProperties = ['ng-model', 'ng-checked'],
+            propertiesToWatch = [];
 
-        propertiesToWatch = _.union(propertiesToWatch, inputs.map(function () {
-            return $(this).attr('ng-checked');
-        }));
+        attrsWithProperties.forEach(function(attr){
+            var properties = inputs.map(function () {
+                return $(this).attr(attr);
+            });
+
+            _.forEach(properties, function(prop){
+                propertiesToWatch.push(prop);
+            })
+        });
 
         function propertyChanged() {
             setTimeout(function () {
