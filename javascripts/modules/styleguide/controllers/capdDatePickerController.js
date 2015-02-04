@@ -2,7 +2,7 @@ define(['moment'], function (moment) {
     /* @ngInject */
     var capdDatePickerController = function ($scope, capdDatePickerService) {
         var defaultTimeZone;
-        if(capd != undefined && capd.config != undefined){
+        if(window.capd && window.capd.config){
             defaultTimeZone = capd.config.defaultTimeZone;
         }
         else {
