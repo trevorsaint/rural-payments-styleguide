@@ -1,12 +1,12 @@
-define(['angularMocks', 'angular', 'utils/capdUtilsModule'],
+define(['angularMocks', 'angular', 'modules/styleguide/capdStyleguideModule'],
     function(angularMocks, angular){
         describe('capdPageSelector', function(){
             var scope;
             var innerScope;
             var element;
-            var html = '<div capd-page-selector current-page="1" pages-count="10"></div>'
+            var html = '<div capd-paginator current-page="1" pages-count="10"></div>'
 
-            beforeEach(module('capd.utils'));
+            beforeEach(module('capd.styleguide'));
 
             beforeEach(inject(function($compile, $rootScope){
                 scope = $rootScope.$new();
