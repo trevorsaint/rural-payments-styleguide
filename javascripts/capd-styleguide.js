@@ -10,6 +10,9 @@ define(['angular'
 
         capdStyleguideModule.controller('directivesGalleryController', directivesGalleryController);
         capdStyleguideModule.controller('showDIalog2Controller', showDIalog2Controller);
+        capdStyleguideModule.factory('capdConfig',{
+            defaultTimezone : "Europe/London"
+        })
 
         capdStyleguideModule.config(function ($routeProvider) {
             $routeProvider
