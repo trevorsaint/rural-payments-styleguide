@@ -21,7 +21,7 @@ define(['angular'
                     controller: 'directivesGalleryController'
                 })
                 .when('/advanced/capd-checkbox', {
-                    templateUrl : '/javascripts/views/advanced/capd-block-label.html',
+                    templateUrl : '/javascripts/views/advanced/capd-block-label-advanced.html',
                     controller : function($scope){
                         $scope.radiosVisible = 'Other';
                     }

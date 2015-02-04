@@ -14,6 +14,7 @@ define(
         , './services/capdDatePickerService'
         , './controllers/capdDatePickerController'
         , './controllers/capdBlockLabelController'
+        , './directives/capdPaginator'
     ]
     , function
         (
@@ -31,6 +32,7 @@ define(
           , capdDatePickerService
           , capdDatePickerController
           , capdBlockLabelController
+          , capdPaginator
         )
     {
         var capdDirectivesModule = angular.module('capd.styleguide', []);
@@ -48,4 +50,5 @@ define(
         capdDirectivesModule.service('capdDatePickerService', capdDatePickerService);
         capdDirectivesModule.controller('capdDatePickerController', capdDatePickerController);
         capdDirectivesModule.controller('capdBlockLabelController', capdBlockLabelController);
+        capdDirectivesModule.directive('capdPaginator', capdPaginator);
     });

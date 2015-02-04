@@ -26,6 +26,12 @@ define(function () {
                 $scope.testModel.textFromDialog = result;
             });
         }
+
+        $scope.pagination = {
+            currentPage : 0,
+            pagesCount: 20
+
+        }
     }
 
     DirectivesGalleryController.$inject = ['$scope', 'capdDialog'];
