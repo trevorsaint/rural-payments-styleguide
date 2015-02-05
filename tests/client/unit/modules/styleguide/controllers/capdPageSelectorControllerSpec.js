@@ -111,6 +111,32 @@ define(['angularMocks', 'angular', 'modules/styleguide/capdStyleguideModule'],
                 })
             })
 
+            describe('page size info', function(){
+                beforeEach(function(){
+                    $scope.pagesCount = 5;
+                    $scope.pageSize = 10;
+                    $scope.totalElements = 42;
+                })
+
+                it('should display page range correctly', function(){
+                    $scope.currentPage = 1;
+                    buildController();
+                    expect($scope.pageSizeInfo).toEqual({
+                        leftBound: 1,
+                        rightBound: 10
+                    })
+                })
+
+                it('for last page high bound of page range should be correct', function(){
+                    $scope.currentPage = 5;
+                    buildController();
+                    expect($scope.pageSizeInfo).toEqual({
+                        leftBound: 41,
+                        rightBound: 42
+                    })
+                })
+            })
+
         });
     }
 );

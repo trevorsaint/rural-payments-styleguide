@@ -11,5 +11,5 @@
         <a class="pager-next" href="" ng-click="nextPage()">Next</a>
     </div>
 
-    <div class="pager-summary">Showing 25 &ndash; 50 of 146 agents</div>
+    <div class="pager-summary">Showing {{pageSizeInfo.leftBound}} &ndash; {{pageSizeInfo.rightBound}} of {{totalElements}} {{itemLabel}}</div>
 </div>

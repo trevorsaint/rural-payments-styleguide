@@ -12,7 +12,10 @@ define(function () {
                 pagesCount: '=',
                 displayPageOffset: '=?',
                 startPage: '=?',
-                scrollToElement: '@scrolltoid'
+                scrollToElement: '@scrolltoid',
+                totalElements: '=?',
+                pageSize: '=?',
+                itemLabel: '=?'
             },
             /* @ngInject */
             controller: 'capdPaginatorController'

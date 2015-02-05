@@ -6,12 +6,11 @@ define(function () {
 
         $scope.displayPageOffset = $scope.displayPageOffset || 0;
         $scope.startPage = $scope.startPage || 1;
-        //$scope.scrollToElement = $scope.scrollToElement || "";
+        $scope.pageSizeInfo = {};
 
         function buildVirtualPages() {
             $scope.virtualPages = [];
-//            var firstPage = Math.max($scope.currentPage - 2, 1);
-//            var lastPage = Math.min($scope.currentPage + 2, $scope.pagesCount);
+
             var currentPage = $scope.currentPage;
 
             var firstPage = currentPage - OFFSET;
@@ -30,7 +29,14 @@ define(function () {
             }
         }
 
+        function updatePageSizeInfo(){
+            $scope.pageSizeInfo.leftBound = ($scope.currentPage - 1) * $scope.pageSize + 1;
+            $scope.pageSizeInfo.rightBound =
+                Math.min($scope.pageSizeInfo.leftBound + $scope.pageSize - 1, $scope.totalElements);
+        }
+
         buildVirtualPages();
+        updatePageSizeInfo();
 
         $scope.nextPage = function () {
             var pageNum = $scope.currentPage + $scope.displayPageOffset;
@@ -42,6 +48,7 @@ define(function () {
             }
 
             buildVirtualPages();
+            updatePageSizeInfo();
         }
 
         $scope.previousPage = function () {
@@ -54,11 +61,13 @@ define(function () {
             }
 
             buildVirtualPages();
+            updatePageSizeInfo();
         }
 
         $scope.goToPage = function(newPage){
             $scope.currentPage = newPage;
             buildVirtualPages();
+            updatePageSizeInfo();
         }
     }
 
