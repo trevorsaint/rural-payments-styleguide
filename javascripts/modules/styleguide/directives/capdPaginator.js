@@ -1,8 +1,8 @@
-define(function () {
+define(['../templatePath'],function (templatePath) {
     /* @ngInject */
     var capdPageSelector = function () {
         return {
-            templateUrl : '/javascripts/modules/styleguide/views/capd-paginator-template.html',
+            templateUrl : templatePath('/javascripts/modules/styleguide/views/capd-paginator-template.html'),
             link: function postLink(scope, iElement, iAttrs) {
             },
             restrict: 'A',

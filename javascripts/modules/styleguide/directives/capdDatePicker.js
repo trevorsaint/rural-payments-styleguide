@@ -2,7 +2,7 @@
  * A directive for embedding a date picker into your app.
  */
 
-define(function () {
+define(['../templatePath'],function (templatePath) {
     /* @ngInject */
     var capdDatePicker = function () {
 
@@ -84,7 +84,7 @@ define(function () {
                 model: '=ngModel'
             },
             controller: 'capdDatePickerController',
-            templateUrl: '/javascripts/modules/styleguide/views/date-picker-template.html',
+            templateUrl: templatePath('/javascripts/modules/styleguide/views/date-picker-template.html'),
             link: link
         };
     };
