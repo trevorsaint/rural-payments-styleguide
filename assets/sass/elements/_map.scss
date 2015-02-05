@@ -2,10 +2,11 @@
 // ==========================================================================
 
 
-@import 'http://openlayers.org/en/v3.1.1/css/ol.css';
+//@import 'vendor/openlayers.scss';
 
 
 .map-container {
+  border: 1px solid #bfc1c3;
   clear: both;
   position: relative;
   width: 100%;
@@ -25,3 +26,57 @@
   width: 100%;
 }
 
+
+// Zoom Group
+
+.olControlZoom {
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+
+  // Zoom Out
+
+  .olControlZoomOut {
+    font-family: "nta",Arial,sans-serif;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 24px;
+    text-decoration: none;
+    border: 1px solid #bfc1c3;
+    display: block;
+    margin-top: -1px;
+    position: relative;
+  }
+
+
+  // Zoom In
+
+  .olControlZoomIn {
+    font-family: "nta",Arial,sans-serif;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 24px;
+    text-decoration: none;
+    border: 1px solid #bfc1c3;
+    display: block;
+  }
+
+
+// Attribution
+
+.olControlAttribution {
+  display: none;
+}
+
+
+
+.olControlZoom {
+  bottom: 0; left: 0;
+}

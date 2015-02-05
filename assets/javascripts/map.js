@@ -1,16 +1,19 @@
-var map = new ol.Map({
 
-  target: 'map',
-
-  layers: [
-    new ol.layer.Tile({
-      source: new ol.source.MapQuest({layer: 'sat'})
-    })
+var map = new OpenLayers.Map({
+  div: "map",
+  layers: [new OpenLayers.Layer.OSM()],
+  controls: [
+      new OpenLayers.Control.Navigation({
+          dragPanOptions: {
+              enableKinetic: true
+          }
+      }),
+      new OpenLayers.Control.Attribution(),
+      new OpenLayers.Control.Zoom({
+          zoomInId: "customZoomIn",
+          zoomOutId: "customZoomOut"
+      })
   ],
-
-  view: new ol.View({
-    center: ol.proj.transform([37.41, 8.82], 'EPSG:4326', 'EPSG:3857'),
-    zoom: 4
-  })
-
+  center: [0, 0],
+  zoom: 1
 });
