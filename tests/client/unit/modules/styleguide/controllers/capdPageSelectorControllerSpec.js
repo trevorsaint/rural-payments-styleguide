@@ -70,8 +70,8 @@ define(['angularMocks', 'angular', 'modules/styleguide/capdStyleguideModule'],
                     buildController();
                 })
 
-                it('generates 3 virtual pages', function(){
-                    expect($scope.virtualPages).toEqual([1,2,3]);
+                it('generates 5 virtual pages', function(){
+                    expect($scope.virtualPages).toEqual([1,2,3,4,5]);
                 })
             })
 
@@ -83,7 +83,7 @@ define(['angularMocks', 'angular', 'modules/styleguide/capdStyleguideModule'],
                 })
 
                 it('generates 3 virtual pages', function(){
-                    expect($scope.virtualPages).toEqual([8,9,10]);
+                    expect($scope.virtualPages).toEqual([6,7,8,9,10]);
                 })
             })
 

@@ -1,6 +1,8 @@
 define(function () {
     // @ngInject
     var CapdPaginatorController = function ($scope) {
+        var VIRTUAL_PAGES_COUNT = 5,
+            OFFSET = Math.floor(VIRTUAL_PAGES_COUNT/2);
 
         $scope.displayPageOffset = $scope.displayPageOffset || 0;
         $scope.startPage = $scope.startPage || 1;
@@ -8,8 +10,20 @@ define(function () {
 
         function buildVirtualPages() {
             $scope.virtualPages = [];
-            var firstPage = Math.max($scope.currentPage - 2, 1);
-            var lastPage = Math.min($scope.currentPage + 2, $scope.pagesCount);
+//            var firstPage = Math.max($scope.currentPage - 2, 1);
+//            var lastPage = Math.min($scope.currentPage + 2, $scope.pagesCount);
+            var currentPage = $scope.currentPage;
+
+            var firstPage = currentPage - OFFSET;
+            var lastPage = currentPage + OFFSET;
+            var overflowLeft = Math.max(1 - firstPage,0);
+            var overflowRight = Math.max(lastPage - $scope.pagesCount, 0);
+
+            firstPage = Math.max(firstPage, 1);
+            lastPage = Math.min(lastPage, $scope.pagesCount);
+
+            firstPage = Math.max(firstPage - overflowRight, 1);
+            lastPage = Math.min(lastPage + overflowLeft, $scope.pagesCount);
 
             for (var i = firstPage; i <= lastPage; i++) {
                 $scope.virtualPages.push(i);
