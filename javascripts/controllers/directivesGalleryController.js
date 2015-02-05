@@ -28,7 +28,7 @@ define(function () {
         }
 
         $scope.pagination = {
-            currentPage : 0,
+            currentPage : 5,
             pagesCount: 20
 
         }

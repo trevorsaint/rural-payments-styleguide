@@ -1,0 +1,15 @@
+<div class="pager">
+
+    <div class="pager-controls">
+        <a class="pager-prev" href="" ng-click="previousPage()">Prev</a>
+        <ul class="pager-items">
+            <li ng-repeat="page in virtualPages">
+                <a href="" ng-if="page != currentPage" ng-click="goToPage(page)">{{page}}</a>
+                <span ng-if="page == currentPage">{{page}}</span>
+            </li>
+        </ul>
+        <a class="pager-next" href="" ng-click="nextPage()">Next</a>
+    </div>
+
+    <div class="pager-summary">Showing 25 &ndash; 50 of 146 agents</div>
+</div>
