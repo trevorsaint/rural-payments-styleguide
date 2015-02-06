@@ -12,6 +12,7 @@
                        placeholder="DD"
                        min="0"
                        max="31"
+                       data-ng-maxlength="2"
                        name="dateFields.day"
                        data-ng-model="dateFields.day"
                        data-ng-change="dateChanged()">
@@ -25,6 +26,7 @@
                        placeholder="MM"
                        min="0"
                        max="12"
+                       data-ng-maxlength="2"
                        name="dateFields.month"
                        data-ng-model="dateFields.month"
                        data-ng-change="dateChanged()">
@@ -37,6 +39,7 @@
                        pattern="[0-9]*"
                        placeholder="YYYY"
                        min="0"
+                       data-ng-maxlength="4"
                        name="dateFields.year"
                        data-ng-model="dateFields.year"
                        data-ng-change="dateChanged()">
