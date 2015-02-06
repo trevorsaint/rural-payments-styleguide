@@ -2,8 +2,7 @@
 // ==========================================================================
 
 
-//@import 'vendor/openlayers.scss';
-
+// Map container
 
 .map-container {
   border: 1px solid #bfc1c3;
@@ -19,7 +18,6 @@
 
 }
 
-
 .map {
   @include abs-pos(0, 0, 0, 0);
   height: 100%;
@@ -27,56 +25,38 @@
 }
 
 
-// Zoom Group
+// Zoom Controls
 
 .olControlZoom {
   margin-left: -1px;
   margin-bottom: -1px;
+  position: absolute;
+  bottom: 0; left: 0;
+
+  .olButton {
+    border: 1px solid $grey-2;
+    background-color: #fff;
+    display: block;
+    font-size: 24px;
+    height: 30px;
+    line-height: 33px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 30px;
+
+    &:hover {
+      color: $black;
+    }
+
+  }
+
 }
 
 
   // Zoom Out
 
   .olControlZoomOut {
-    font-family: "nta",Arial,sans-serif;
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 33px;
-    font-size: 24px;
-    text-decoration: none;
-    border: 1px solid #bfc1c3;
-    display: block;
     margin-top: -1px;
-    position: relative;
   }
 
-
-  // Zoom In
-
-  .olControlZoomIn {
-    font-family: "nta",Arial,sans-serif;
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 33px;
-    font-size: 24px;
-    text-decoration: none;
-    border: 1px solid #bfc1c3;
-    display: block;
-  }
-
-
-// Attribution
-
-.olControlAttribution {
-  display: none;
-}
-
-
-
-.olControlZoom {
-  bottom: 0; left: 0;
-}
