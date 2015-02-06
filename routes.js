@@ -262,7 +262,6 @@ module.exports = {
 
         var data = {
           doctitle: 'Manage land',
-          mapScripts: true,
           openLayers: true
         };
 
@@ -276,7 +275,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Fallow field',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -290,7 +288,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Land use',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -304,7 +301,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Add feature',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -318,7 +314,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Edit feature',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -332,7 +327,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Add feature details',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -476,7 +470,12 @@ module.exports = {
         // check business details
         app.get('/pages/confirm-journey/check-business-details', function(req, res) {
 
-          var data = {doctitle: 'Check business details'};
+          var data = {
+            doctitle: 'Check business details',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/confirm-journey/check-business-details/home', data);
 
         });
@@ -485,7 +484,12 @@ module.exports = {
         // amend business details
         app.get('/pages/confirm-journey/amend-business-details', function(req, res) {
 
-          var data = {doctitle: 'Amend business details'};
+          var data = {
+            doctitle: 'Amend business details',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/confirm-journey/amend-business-details/home', data);
 
         });
@@ -512,7 +516,12 @@ module.exports = {
         // business details summary
         app.get('/pages/confirm-journey/business-details-summary', function(req, res) {
 
-          var data = {doctitle: 'Business details summary'};
+          var data = {
+            doctitle: 'Business details summary',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/confirm-journey/business-details-summary/home', data);
 
         });
@@ -521,7 +530,12 @@ module.exports = {
         // business overview
         app.get('/pages/confirm-journey/business-overview', function(req, res) {
 
-          var data = {doctitle: 'Business overview'};
+          var data = {
+            doctitle: 'Business overview',
+            mapScripts: true,
+            openLayers: true
+          };
+
           res.render('pages/confirm-journey/business-overview/home', data);
 
         });
