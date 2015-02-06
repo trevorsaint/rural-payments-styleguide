@@ -2,10 +2,10 @@
 // ==========================================================================
 
 
-@import 'http://openlayers.org/en/v3.1.1/css/ol.css';
-
+// Map container
 
 .map-container {
+  border: 1px solid #bfc1c3;
   clear: both;
   position: relative;
   width: 100%;
@@ -18,10 +18,45 @@
 
 }
 
-
 .map {
   @include abs-pos(0, 0, 0, 0);
   height: 100%;
   width: 100%;
 }
+
+
+// Zoom Controls
+
+.olControlZoom {
+  margin-left: -1px;
+  margin-bottom: -1px;
+  position: absolute;
+  bottom: 0; left: 0;
+
+  .olButton {
+    border: 1px solid $grey-2;
+    background-color: #fff;
+    display: block;
+    font-size: 24px;
+    height: 30px;
+    line-height: 33px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 30px;
+
+    &:hover {
+      color: $black;
+    }
+
+  }
+
+}
+
+
+  // Zoom Out
+
+  .olControlZoomOut {
+    margin-top: -1px;
+  }
 
