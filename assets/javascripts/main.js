@@ -390,7 +390,8 @@ function collapsibles() {
         // Add attributes to collapsible content
         $content.attr({
           'id' : $id,
-          'aria-hidden' : true
+          'aria-hidden' : true,
+          'style' : 'display: none;'
         });
 
 
@@ -402,7 +403,7 @@ function collapsibles() {
           var state = $(this).attr('aria-expanded') === 'false' ? true : false;
 
           $button.attr('aria-expanded', state);
-          $content.attr('aria-hidden', !state);
+          $content.attr('aria-hidden', !state).toggle();
 
         });
 
