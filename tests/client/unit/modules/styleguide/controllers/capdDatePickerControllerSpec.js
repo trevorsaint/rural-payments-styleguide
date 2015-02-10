@@ -14,6 +14,12 @@ define([
 
 
             beforeEach(inject(function ($injector) {
+                window.capd = {
+                    config : {
+                        defaultTimeZone : 'Europe/London'
+                    }
+                }
+
                 $rootScope = $injector.get('$rootScope');
                 scope = $rootScope.$new();
                 var capdDatePickerService = $injector.get('capdDatePickerService');
