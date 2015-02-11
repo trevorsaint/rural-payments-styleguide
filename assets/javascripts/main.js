@@ -440,7 +440,8 @@ function toggleContent() {
     // Add attributes to toggle content
     $content.attr({
       'id' : $id,
-      'aria-hidden' : true
+      'aria-hidden' : true,
+      'style' : 'display: none;'
     });
 
 
@@ -452,7 +453,7 @@ function toggleContent() {
       var state = $(this).attr('aria-expanded') === 'false' ? true : false;
 
       $link.attr('aria-expanded', state);
-      $content.attr('aria-hidden', !state);
+      $content.attr('aria-hidden', !state).toggle();
 
     });
 
