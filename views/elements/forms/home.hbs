@@ -22,8 +22,8 @@
 
 
 
-    <!-- form examples -->
-    <h2 class="heading-large">Form examples</h2>
+    <!-- examples -->
+    <h2 class="heading-large">Examples</h2>
 
 
 		<ul class="list-bullet">
@@ -34,15 +34,24 @@
 		</ul>
 
 
-    <h2 class="heading-large">Reusable form controls</h2>
 
+    <h3 class="heading-medium">Optional and mandatory fields</h3>
 
+    <div class="text">
+
+      <ul class="list-bullet">
+        <li>only ask for the information you absolutely need</li>
+        <li>if you do ask for optional information, mark the labels of optional fields with '(optional)'</li>
+        <li>don't mark mandatory fields with asterisks</li>
+      </ul>
+
+    </div>
 
 
     <!-- form labels -->
-    <h3 class="heading-medium">Form labels</h3>
+    <h3 class="heading-medium">Labels</h3>
 
-    <p class="text">Click on the label &quot;Full name&quot; or inside the form field to show the focus state.</p>
+    <p class="text">Click on the label &quot;Full name&quot; to bring focus to the form field.</p>
 
     <div class="example">
       <label class="form-label" for="full-name-f1">Full name</label>
@@ -50,12 +59,10 @@
     </div>
 
 
-
-
     <!-- form spacing -->
     <h3 class="heading-medium">Spacing between form elements</h3>
 
-    <p class="text">Ensure there is sufficient spacing between elements.</p>
+    <p class="text">Ensure there is sufficient spacing between form elements.</p>
 
     <div class="example">
       <div class="form-group">
@@ -67,8 +74,6 @@
         <input class="form-control" id="last-name-2" type="text">
       </div>
     </div>
-
-
 
 
     <!-- hint text -->
@@ -90,10 +95,8 @@
     </div>
 
 
-
-
     <!-- date inputs -->
-    <h3 class="heading-small">Date inputs</h3>
+    <h3 class="heading-medium">Date inputs</h3>
 
     <div class="example">
 
@@ -127,10 +130,12 @@
     </div>
 
 
-
-
     <!-- toggle date inputs -->
-    <h3 class="heading-small">Option based toggle date inputs</h3>
+    <h3 class="heading-medium">Date inputs with inset form element</h3>
+
+    <p>Insets can be used within forms to emphasise supporting information.</p>
+
+    <p>Click on &quot;Yes&quot; to see how this works.</p>
 
     <div class="example">
 
@@ -186,10 +191,14 @@
     </div>
 
 
+    <!-- drop down lists -->
+    <h3 class="heading-medium">Drop-down lists</h3>
 
-
-    <!-- select box -->
-    <h3 class="heading-small">Select box</h3>
+    <div class="text">
+      <p>Avoid using drop-down lists (the HTML select element) - use radio buttons or checkboxes instead. (Preferred)</p>
+      <p><a rel="external" href="https://www.youtube.com/watch?v=CUkMCQR4TpY">Watch Alice Bartlett present the failings of select boxes to meet the needs of less technically capable users</a>.</p>
+      <p>Use as a last resort if there is an absolute need for it!</p>
+    </div>
 
     <div class="example">
 
@@ -206,10 +215,8 @@
     </div>
 
 
-
-
-    <!-- standard search -->
-    <h3 class="heading-small">Standard search</h3>
+    <!-- search -->
+    <h3 class="heading-medium">Search</h3>
 
     <div class="example">
 
@@ -234,10 +241,8 @@
     </div>
 
 
-
-
     <!-- textarea -->
-    <h3 class="heading-small">Form textarea</h3>
+    <h3 class="heading-medium">Textarea</h3>
 
 		<div class="example">
       <label class="form-label" for="enquiry">Enquiry</label>
@@ -245,17 +250,24 @@
 		</div>
 
 
+    <!-- radio buttons -->
+    <h3 class="heading-medium">Radio buttons</h3>
 
+    <div class="text">
 
+      <ul class="list-bullet">
+        <li>use these to let users choose a single option from a list</li>
+        <li>for more than two options, radio buttons should be stacked</li>
+        <li>radio buttons with large hit areas are easier to select with a mouse or touch devices</li>
+      </ul>
 
-    <!-- radio buttons inline -->
-    <h3 class="heading-small">Radio buttons inline</h3>
+    </div>
 
     <div class="example">
 
       <fieldset class="inline">
 
-        <legend class="form-label">Do you know their National Insurance number?</legend>
+        <legend class="form-label visuallyhidden">Do you know their National Insurance number?</legend>
 
         <div class="form-group form-group-compound">
 
@@ -272,12 +284,6 @@
       </fieldset>
 
     </div>
-
-
-
-
-    <!-- radio buttons block -->
-    <h3 class="heading-small">Radio buttons block</h3>
 
     <div class="example">
       <label class="block-label" for="radio-1">
@@ -296,11 +302,17 @@
     </div>
 
 
+    <!-- checkboxes -->
+    <h3 class="heading-medium">Checkboxes</h3>
 
+    <div class="text">
 
+      <ul class="list-bullet">
+        <li>use these to select either on/off toggles or multiple selections</li>
+        <li>make it clear with words when users can select one or multiple options</li>
+      </ul>
 
-    <!-- radio buttons with heading -->
-    <h3 class="heading-small">Radio buttons with heading</h3>
+    </div>
 
     <div class="example">
       <form class="form">
@@ -323,12 +335,7 @@
       </form>
     </div>
 
-
-
-
-
-    <!-- radio buttons alternative approach -->
-    <h3 class="heading-small">Large hit areas aren't always appropriate.</h3>
+    <p>Large hit areas aren't always appropriate.</p>
 
     <div class="example">
       <label class="form-label" for="telephone-number">Enter your telephone number</label>
@@ -340,10 +347,12 @@
     </div>
 
 
-
-
     <!-- inset form elements -->
-    <h3 class="heading-small">Inset form elements</h3>
+    <h3 class="heading-medium">Inset form elements</h3>
+
+    <p>Insets can be used within forms to emphasise supporting information.</p>
+
+    <p>Click on &quot;Yes&quot; to see how this works.</p>
 
     <div class="example">
       <form class="form">
@@ -369,33 +378,99 @@
 
 
 
+    <p>Click on &quot;Citizen of a different country&quot; to see how this works.</p>
 
-    <!-- standard button -->
-    <h3 class="heading-small">Standard button</h3>
+
+    <div class="example">
+      <form class="form">
+        <fieldset>
+          <legend class="form-label-bold">What is your nationality?</legend>
+          <p>Select all options that are relevant to you.</p>
+          <div class="form-group form-group-compound">
+
+            <label class="block-label" for="nationality-british">
+              <input type="checkbox" id="nationality-british" value="British">
+              British (including English, Scottish, Welsh and Northern Irish)
+            </label>
+
+            <label class="block-label" for="nationality-irish">
+              <input type="checkbox" id="nationality-irish" value="Irish">
+              Irish
+            </label>
+
+            <label class="block-label" data-target="different-country" for="nationality-other">
+              <input type="checkbox" id="nationality-other" value="Citizen of a different country">
+              Citizen of a different country
+            </label>
+
+          </div>
+
+          <div id="different-country" class="panel-indent js-hidden">
+            <label class="form-label" for="nationality-other-country">Country name</label>
+            <input class="form-control" type="text" id="nationality-other-country">
+          </div>
+
+      </form>
+    </div>
+
+
+    <!-- button -->
+    <h2 class="heading-large">Buttons</h2>
+
+    <h3 class="heading-medium">Button text</h3>
+
+    <p class="text">Buton text should be short and describe the action the button performs.</p>
+
 
     <div class="example">
       <button class="button" type="button">Save and continue</button>
     </div>
 
 
+    <p class="text">Launch your service with a Start now button.</p>
 
 
-    <!-- disabled button -->
-    <h3 class="heading-small">Disabled button</h3>
-
-    <div class="example">
-      <button class="button" type="button" disabled="disabled">Save and continue</button>
-    </div>
-
-
-
-
-    <!-- start now button -->
-    <h3 class="heading-small">Start now button</h3>
-
+    <!-- start now -->
     <div class="example">
       <button class="button button-get-started" type="button">Start now</button>
     </div>
+
+
+    <p class="text">Align the primary action button to the left edge of your form, in the user's line of sight.</p>
+
+
+    <div class="example">
+
+      <form class="form" method="post" action="/">
+
+        <div class="form-group">
+          <label class="form-label" for="form-email-address-1">Email address</label>
+          <input class="form-control" type="text" id="form-email-address-1">
+        </div>
+
+        <div class="form-group">
+          <button class="button">Save and continue</button>
+          <p><a href="#">Back</a></p>
+        </div>
+
+      </form>
+
+    </div>
+
+
+    <!-- disabled button -->
+    <h3 class="heading-medium">Disabled buttons</h3>
+
+    <p>Disabled buttons should be set at 50% opacity.</p>
+
+    <div class="example">
+      <button class="button" type="button" disabled="disabled">Primary button</button>
+    </div>
+
+
+
+
+
 
 
 
