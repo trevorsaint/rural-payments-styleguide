@@ -145,7 +145,11 @@ module.exports = {
         // checklist example
         app.get('/elements/checklist/example', function(req, res) {
 
-          var data = {doctitle: 'Checklist example'};
+          var data = {
+            doctitle: 'Checklist example',
+            openLayers: true
+          };
+
           res.render('elements/checklist/example/home', data);
 
         });
@@ -164,8 +168,8 @@ module.exports = {
       app.get('/elements/snippets', function(req, res) {
 
         var data = {
-            doctitle: 'Snippets',
-            prismScript: true
+          doctitle: 'Snippets',
+          prismScript: true
         };
 
         res.render('elements/snippets/home', data);
@@ -472,7 +476,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Check business details',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -486,7 +489,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Amend business details',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -518,7 +520,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Business details summary',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -532,7 +533,6 @@ module.exports = {
 
           var data = {
             doctitle: 'Business overview',
-            mapScripts: true,
             openLayers: true
           };
 
@@ -572,8 +572,8 @@ module.exports = {
       app.get('/pages/angular', function(req, res) {
 
         var data = {
-            doctitle: 'Angular directives',
-            angularScripts: true
+          doctitle: 'Angular directives',
+          angularScripts: true
         };
 
         res.render('pages/angular/home', data);
