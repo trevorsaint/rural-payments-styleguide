@@ -1,6 +1,7 @@
 // Typography
 // ==========================================================================
 
+
 // Increase the base font size to 19px
 // Using the core-19 mixin from the govuk_toolkit _typography.scss file
 
@@ -8,6 +9,7 @@ main {
   @include core-19;
   -webkit-font-smoothing: antialiased;
 }
+
 
 // Core font sizes
 
@@ -30,6 +32,7 @@ main {
   @include core-16;
 }
 
+
 // Bold font sizes
 
 .bold-xxlarge {
@@ -50,6 +53,7 @@ main {
 .bold-xsmall {
   @include bold-16();
 }
+
 
 // Common heading sizes
 // Using the bold-xx mixins from the govuk_toolkit _typography.scss file
@@ -123,7 +127,6 @@ main {
 }
 
 
-
 // Page header
 
 .page-header {
@@ -147,7 +150,6 @@ main {
 }
 
 
-
 // Text
 
 p {
@@ -161,14 +163,15 @@ p {
 
 }
 
+
 // Lede, or intro text
 
 .lede {
   @include core-24;
 }
 
-// Set a max-width for text blocks
-// Less than 75 characters per line of text
+
+// Set a max-width for text blocks (Less than 75 characters per line of text)
 
 .text {
   max-width: 30em;
@@ -187,8 +190,9 @@ p {
     @include border-radius(50%);
     background-color: $warning-background;
     content: '!';
-    color: #fff;
+    color: $white;
     display: inline-block;
+    font-family: arial;
     font-weight: bold;
     height: 1em;
     line-height: 1;
@@ -230,6 +234,8 @@ strong, b {
 }
 
 
+// Link secondary
+
 .link-secondary {
   color: $link-secondary-color;
 
@@ -256,11 +262,11 @@ strong, b {
 
 pre,
 code {
-  font-size: 13px;
-  line-height: 19px;
-  color: $black;
   background-color: $highlight-colour;
   border: 1px solid $border-colour;
+  color: $black;
+  font-size: 13px;
+  line-height: 19px;
   padding: 3px 7px;
 }
 
