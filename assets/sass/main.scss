@@ -38,3 +38,12 @@
 // ==========================================================================
 
 @import 'vendor/manifest';
+
+
+@media (min-width: 640px) {
+
+  body {
+    background: red !important;
+  }
+
+}
