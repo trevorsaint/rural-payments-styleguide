@@ -1,6 +1,7 @@
 // Alerts
 // ==========================================================================
 
+
 %alert {
 	border-left: 4px solid $error-colour;
 	clear: both;
@@ -8,29 +9,24 @@
 	padding: 1.05263em;
 }
 
+
 .alert-success {
 	@extend %alert;
-	background-color: rgba($turquoise, .1);
 	border-color: $turquoise;
 }
 
+
 .alert-info {
 	@extend %alert;
-	background-color: rgba($grey-2, .1);
 	border-color: $grey-2;
 }
+
 
 .alert-error {
 	@extend %alert;
-	background-color: rgba($error-colour, .1);
 	border-color: $error-colour;
 }
 
-.alert-reference {
-	@extend %alert;
-	background-color: rgba($grey-2, .1);
-	border-color: $grey-2;
-}
 
 .alert-complete {
 	@extend %alert;
@@ -38,6 +34,7 @@
 	border-color: $turquoise;
 	color: $white;
 }
+
 
 .alert-header {
   @extend .bold-medium;
@@ -48,11 +45,13 @@
 	vertical-align: middle;
 }
 
+
 .alert-number {
 	float: left;
-    margin-right: .41666667em; // 20px ÷ 48px font size
+  margin-right: .41666667em; // 20px ÷ 48px font size
 	@extend .bold-xlarge;
 }
+
 
 .alert-message {
 	display: block;
@@ -68,3 +67,4 @@
 	}
 
 }
+
