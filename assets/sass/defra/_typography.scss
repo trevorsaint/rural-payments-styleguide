@@ -11,6 +11,7 @@ strong, b {
 
 .text-warning {
   color: $warning-color;
+  display: block;
 
   &:before {
     @include border-radius(50%);

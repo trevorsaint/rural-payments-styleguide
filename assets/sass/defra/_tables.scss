@@ -49,11 +49,6 @@ table {
 
     @include media(tablet) {
 
-      .area,
-      .checked {
-        text-align: right;
-      }
-
       .text-warning {
         float: right;
       }
