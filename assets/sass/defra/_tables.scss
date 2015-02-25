@@ -7,31 +7,24 @@ table {
   margin-bottom: 1.05263em; // 20px
 
 
-  // Right align actions
+  // Helper classes
 
-  th,
-  td {
-    padding: em(12, 16) 0 em(9, 16) em(20, 16);
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &.action {
-      text-align: right;
-    }
-
+  .sbi,
+  .email {
+    @extend .text-secondary;
+    font-weight: normal;
   }
 
+  .last {
+    padding-right: 0;
+  }
 
-  // Table tbody
+  .top {
+    vertical-align: top;
+  }
 
-  tbody {
-
-    th {
-      font-weight: normal;
-    }
-
+  .action {
+    text-align: right;
   }
 
 
@@ -39,11 +32,6 @@ table {
 
   tfoot {
     border-top: 2px solid rgb(0, 0, 0);
-
-    th {
-      font-weight: 700;
-    }
-
   }
 
 
