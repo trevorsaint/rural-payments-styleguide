@@ -127,29 +127,6 @@ main {
 }
 
 
-// Page header
-
-.page-header {
-  margin-top: em(15, 16);
-  margin-bottom: em(30, 16);
-
-  @include media(tablet) {
-    margin-top: em(30, 19);
-    margin-bottom: em(60, 19);
-  }
-
-  h1 {
-    @include bold-48();
-  }
-
-  dl, ul {
-    color: $secondary-text-colour;
-    margin: .5em 0 0 0;
-  }
-
-}
-
-
 // Text
 
 p {
@@ -183,33 +160,6 @@ p {
 }
 
 
-.text-warning {
-  color: $warning-color;
-
-  &:before {
-    @include border-radius(50%);
-    background-color: $warning-background;
-    content: '!';
-    color: $white;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    height: 1em;
-    line-height: 1;
-    margin-right: 5px;
-    padding: 2px;
-    text-align: center;
-    width: 1em;
-  }
-
-}
-
-
-strong, b {
-  font-weight: bold;
-}
-
-
 // Link styles
 
 .link {
@@ -229,30 +179,6 @@ strong, b {
 
   &:active {
     color: $link-colour;
-  }
-
-}
-
-
-// Link secondary
-
-.link-secondary {
-  color: $link-secondary-color;
-
-  &:link {
-    color: $link-secondary-color;
-  }
-
-  &:visited {
-    color: $link-secondary-visited-color;
-  }
-
-  &:hover {
-    color: $link-secondary-hover-color;
-  }
-
-  &:active {
-    color: $link-secondary-active-color;
   }
 
 }

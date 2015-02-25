@@ -1,0 +1,14 @@
+// Extends
+// ==========================================================================
+
+
+// Extended attributes originally from sass/elements/ (govuk_elements)
+
+details {
+
+  summary {
+    @include user-select(none);
+  }
+
+}
+

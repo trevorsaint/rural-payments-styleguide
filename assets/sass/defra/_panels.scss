@@ -1,0 +1,18 @@
+// Panels
+// ==========================================================================
+
+
+// Remove bottom margin on last ul and top margin on paragraph
+.panel-indent {
+
+  p {
+    margin-top: 0;
+  }
+
+  ul:only-child,
+  ul:last-child {
+    margin-bottom: 0;
+  }
+
+}
+

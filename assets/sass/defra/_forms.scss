@@ -1,6 +1,30 @@
-// ==========================================================================
 // Forms
 // ==========================================================================
+
+
+// Form control errors
+
+.form-control-error {
+  border-color: $error-colour;
+  outline: 2px solid $error-colour;
+}
+
+
+// Form control focus
+
+.form-control:focus {
+  border-color: $yellow;
+  outline: 2px solid $yellow;
+}
+
+
+// Form control widths
+
+.form-control-wide {
+  @include media(tablet) {
+    width: 100%;
+  }
+}
 
 
 // Checkboxes
@@ -96,7 +120,8 @@
 
   table th,
   table td {
-    padding: em(13) em(20) em(11) 0;
+    padding-top: em(13);
+    padding-bottom: em(11);
   }
 
   .form-control {

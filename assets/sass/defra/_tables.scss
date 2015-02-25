@@ -1,0 +1,117 @@
+// ==========================================================================
+// Tables
+// ==========================================================================
+
+
+table {
+  margin-bottom: 1.05263em; // 20px
+
+
+  // Right align actions
+
+  th,
+  td {
+    padding: em(12, 16) 0 em(9, 16) em(20, 16);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &.action {
+      text-align: right;
+    }
+
+  }
+
+
+  // Table tbody
+
+  tbody {
+
+    th {
+      font-weight: normal;
+    }
+
+  }
+
+
+  // Table tfoot
+
+  tfoot {
+    border-top: 2px solid rgb(0, 0, 0);
+
+    th {
+      font-weight: 700;
+    }
+
+  }
+
+
+}
+
+
+// Table variations
+
+.table {
+
+
+  // Table land features
+
+  &-land-features {
+
+    @include media(tablet) {
+
+      .area,
+      .checked {
+        text-align: right;
+      }
+
+      .text-warning {
+        float: right;
+      }
+
+    }
+
+  }
+
+
+  // Table land parcels
+
+  &-land-parcels {
+
+    .tag {
+      display: inline-block;
+      padding: 0 20px;
+
+      &-done {
+        background-color: $button-colour;
+        color: white;
+      }
+
+    }
+
+    @include media(tablet) {
+
+      .checked {
+        text-align: right;
+      }
+
+    }
+
+  }
+
+
+  // Table customer and business results
+
+  &-business-search {
+
+    tbody th,
+    tbody td {
+      vertical-align: top;
+    }
+
+  }
+
+
+}
+

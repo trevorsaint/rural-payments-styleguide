@@ -49,7 +49,6 @@ fieldset {
 
 
 // Form labels, or for legends styled to look like labels
-
 .form-label,
 .form-label-bold {
   display: block;
@@ -79,7 +78,7 @@ fieldset {
 }
 
 
-// HINTS
+// Hints
 
 // Form hints & examples are light grey and sit above a form control
 .form-hint {
@@ -92,58 +91,30 @@ fieldset {
 }
 
 
-// FORM CONTROLS
-
+// Form controls
 
 // By default, form controls are 50% width for desktop,
 // and 100% width for mobile
-
 .form-control {
   @include core-19;
+
+  width: 100%;
   @include box-sizing(border-box);
+  padding: 4px;
   background-color: $white;
   border: 1px solid $border-colour;
-  padding: 4px;
-  width: 100%;
 
   // Disable webkit appearance and remove rounded corners
-
   -webkit-appearance: none;
   border-radius: 0;
 
   @include media(tablet) {
     width: 50%;
   }
-
 }
-
-
-// Form control errors
-
-.form-control-error {
-  border-color: $error-colour;
-  outline: 2px solid $error-colour;
-}
-
-
-// Form control focus
-
-.form-control:focus {
-  border-color: $yellow;
-  outline: 2px solid $yellow;
-}
-
 
 
 // Form control widths
-
-.form-control-wide {
-  @include media(tablet) {
-    width: 100%;
-  }
-}
-
-
 .form-control-3-4 {
   width: 100%;
   @include media(tablet) {
@@ -171,7 +142,6 @@ fieldset {
 
 
 // Radio buttons
-
 .form-radio {
   display: block;
   margin: 10px 0;
@@ -184,7 +154,6 @@ fieldset {
 
 
 // Checkboxes
-
 .form-checkbox {
   display: block;
   margin: $gutter-half 0;
