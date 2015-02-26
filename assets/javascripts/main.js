@@ -275,9 +275,9 @@ function toggleTabs() {
 
 function tableSortable() {
 
-  if ($('.table-sortable').length>0) {
+  if ($('.js-table-sortable').length>0) {
 
-    $('.table-sortable').stupidtable();
+    $('.js-table-sortable').stupidtable();
 
   }
 
