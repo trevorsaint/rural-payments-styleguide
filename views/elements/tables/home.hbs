@@ -32,47 +32,68 @@
 		<!-- sortable table -->
 		<h2 class="heading-medium">Sortable table</h2>
 
-		<table class="table-sortable">
+    <table class="table-land-parcels table-sortable">
 
-      <caption class="visuallyhidden">Sortable table of results</caption>
+      <caption class="visuallyhidden">Land parcels</caption>
 
-			<thead>
+      <thead>
 
-				<tr>
-					<th scope="col">Date</th>
-					<th class="numeric" scope="col" data-sort="int">Online</th>
-					<th class="numeric" scope="col" data-sort="int">Bulk software</th>
-					<th class="numeric last" scope="col" data-sort="int">Paper</th>
-				</tr>
+        <tr>
+          <th scope="col">Land parcel name</th>
+          <th class="numeric" scope="col"><abbr title="Single Business Identifier">SBI</abbr></th>
+          <th class="numeric" scope="col" data-sort="int">Area (<abbr title="hectare">ha</abbr>)</th>
+          <th class="checked last" scope="col" data-sort="string">Checked</th>
+        </tr>
 
-			</thead>
+      </thead>
 
-			<tbody>
+      <tbody>
 
-				<tr>
-					<th scope="row">1 to 30 March 2014</th>
-					<td class="numeric">199</td>
-					<td class="numeric">37,054</td>
-					<td class="numeric last">4,857</td>
-				</tr>
+        <tr>
+          <th scope="row"><a href="#">Arable land</a></th>
+          <td class="numeric"><span class="sbi">SJ8063_3931</span></td>
+          <td class="numeric">5.76</td>
+          <td class="checked last"><span class="tag tag-done">Yes</span></td>
+        </tr>
 
-				<tr>
-					<th scope="row">1 to 30 October 2013</th>
-					<td class="numeric">0</td>
-					<td class="numeric">33,348</td>
-					<td class="numeric last">4,841</td>
-				</tr>
+        <tr>
+          <th scope="row"><a href="#">Top field</a></th>
+          <td class="numeric"><span class="sbi">SJ8063_5971</span></td>
+          <td class="numeric">6.05</td>
+          <td class="checked last"><span class="tag tag-done">Yes</span></td>
+        </tr>
 
-				<tr>
-					<th scope="row">1 to 31 December 2013</th>
-					<td class="numeric">69</td>
-					<td class="numeric">27,212</td>
-					<td class="numeric last">4,418</td>
-				</tr>
+        <tr>
+          <th scope="row"><a href="#">East field</a></th>
+          <td class="numeric"><span class="sbi">SJ8063_4541</span></td>
+          <td class="numeric">0.49</td>
+          <td class="checked last"><span class="tag">No</span></td>
+        </tr>
 
-			</tbody>
+        <tr>
+          <th scope="row"><a href="#">Fallow field</a></th>
+          <td class="numeric"><span class="sbi">SJ8063_3254</span></td>
+          <td class="numeric">5.6</td>
+          <td class="checked last"><span class="tag">No</span></td>
+        </tr>
 
-		</table>
+        <tr>
+          <th scope="row"><a href="#">The Fen</a></th>
+          <td class="numeric"><span class="sbi">SJ8063_4248</span></td>
+          <td class="numeric">4.56</td>
+          <td class="checked last"><span class="tag tag-done">Yes</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row"><a href="#">Wheat and Barle</a></th>
+          <td class="numeric"><span class="sbi">SJ8063_1039</span></td>
+          <td class="numeric">5.34</td>
+          <td class="checked last"><span class="tag">No</span></td>
+        </tr>
+
+      </tbody>
+
+    </table>
 
 
     <!-- efas -->
@@ -269,7 +290,7 @@
     <!-- land parcels -->
 		<h2 class="heading-medium">Land parcels table</h2>
 
-    <table class="table-land-parcels table-sortable">
+    <table class="table-land-parcels">
 
       <caption class="visuallyhidden">Land parcels</caption>
 
@@ -278,8 +299,8 @@
         <tr>
           <th scope="col">Land parcel name</th>
           <th class="numeric" scope="col"><abbr title="Single Business Identifier">SBI</abbr></th>
-          <th class="numeric" scope="col" data-sort="int">Area (<abbr title="hectare">ha</abbr>)</th>
-          <th class="checked last" scope="col" data-sort="string">Checked</th>
+          <th class="numeric" scope="col">Area (<abbr title="hectare">ha</abbr>)</th>
+          <th class="checked last" scope="col">Checked</th>
         </tr>
 
       </thead>
