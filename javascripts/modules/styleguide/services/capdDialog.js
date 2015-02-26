@@ -37,7 +37,8 @@ define(['jquery','jquery-trap-input'], function ($) {
         }
 
         function bindHandlers(dialog) {
-            dialog.click(close);
+            // Wrapping in function to assure no parameters are passed to close function
+            dialog.click(function(){close()});
             dialog.find('.dialog-holder').click(function (e) {
                 e.stopPropagation();
             })
