@@ -29,6 +29,52 @@
 		</ul>
 
 
+		<!-- sortable table -->
+		<h2 class="heading-medium">Sortable table</h2>
+
+		<table class="table-sortable">
+
+      <caption class="visuallyhidden">Sortable table of results</caption>
+
+			<thead>
+
+				<tr>
+					<th scope="col">Date</th>
+					<th class="numeric" scope="col" data-sort="int">Online</th>
+					<th class="numeric" scope="col" data-sort="int">Bulk software</th>
+					<th class="numeric last" scope="col" data-sort="int">Paper</th>
+				</tr>
+
+			</thead>
+
+			<tbody>
+
+				<tr>
+					<th scope="row">1 to 30 March 2014</th>
+					<td class="numeric">199</td>
+					<td class="numeric">37,054</td>
+					<td class="numeric last">4,857</td>
+				</tr>
+
+				<tr>
+					<th scope="row">1 to 30 October 2013</th>
+					<td class="numeric">0</td>
+					<td class="numeric">33,348</td>
+					<td class="numeric last">4,841</td>
+				</tr>
+
+				<tr>
+					<th scope="row">1 to 31 December 2013</th>
+					<td class="numeric">69</td>
+					<td class="numeric">27,212</td>
+					<td class="numeric last">4,418</td>
+				</tr>
+
+			</tbody>
+
+		</table>
+
+
     <!-- efas -->
     <h2 class="heading-medium">Ecological focus areas</h2>
 
@@ -223,7 +269,7 @@
     <!-- land parcels -->
 		<h2 class="heading-medium">Land parcels table</h2>
 
-    <table class="table-land-parcels">
+    <table class="table-land-parcels table-sortable">
 
       <caption class="visuallyhidden">Land parcels</caption>
 
@@ -232,8 +278,8 @@
         <tr>
           <th scope="col">Land parcel name</th>
           <th class="numeric" scope="col"><abbr title="Single Business Identifier">SBI</abbr></th>
-          <th class="numeric" scope="col">Area (<abbr title="hectare">ha</abbr>)</th>
-          <th class="checked last" scope="col">Checked</th>
+          <th class="numeric" scope="col" data-sort="int">Area (<abbr title="hectare">ha</abbr>)</th>
+          <th class="checked last" scope="col" data-sort="string">Checked</th>
         </tr>
 
       </thead>

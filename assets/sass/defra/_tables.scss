@@ -98,3 +98,37 @@ table {
 
 }
 
+
+
+
+// Table sorting
+
+table {
+
+  [data-sort] {
+    @include user-select(none);
+    @extend .link;
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+  }
+
+  .sorting-asc {
+
+    &:after {
+      //content: 'x';
+    }
+
+  }
+
+
+  .sorting-desc {
+
+    &:after {
+      //content: 'y';
+    }
+
+  }
+
+
+}
