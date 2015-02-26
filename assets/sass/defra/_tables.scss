@@ -99,9 +99,7 @@ table {
 }
 
 
-
-
-// Table sorting
+// Table sorting (tidy this up)
 
 table {
 
@@ -114,21 +112,18 @@ table {
   }
 
   .sorting-asc {
-
     &:after {
-      //content: 'x';
+      position: absolute; right: 0;
+      content: '▲';
     }
-
   }
-
 
   .sorting-desc {
-
     &:after {
-      //content: 'y';
+      position: absolute; right: 0;
+      content: '▼';
     }
-
   }
 
-
 }
+
