@@ -2,134 +2,33 @@
 // ==========================================================================
 
 
-// Publication table styling
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 1.05263em; // 20px
   width: 100%;
 }
 
-
 table th,
 table td {
-  @include core-16($tabular-numbers: true);
-  border-bottom: 1px solid $border-colour;
-  color: #0b0c0c;
-  padding: em(12, 16) 0 em(9, 16) em(20, 16);
+  @include core-16;
+  padding: em(12, 16) em(20, 16) em(9, 16) 0;
   text-align: left;
-
-  &:first-child {
-    padding-left: 0;
-  }
-
+  color: #0b0c0c;
+  border-bottom: 1px solid $border-colour;
 }
 
-
-table thead th {
+table th {
   font-weight: 700;
-  vertical-align: top;
 }
-
 
 // Right align headings for numeric content
-
 table th.numeric {
   text-align: right;
 }
 
-
 // Use tabular numbers for numeric table cells
-
 table td.numeric {
   @include core-16($tabular-numbers: true);
   text-align: right;
-}
-
-
-// Right align actions
-
-table th.action,
-table td.action {
-  text-align: right;
-}
-
-
-// Table foot
-
-table tfoot {
-  border-top: 2px solid rgb(0, 0, 0);
-
-  th {
-    font-weight: 700;
-  }
-
-}
-
-
-// Table variations
-
-.table {
-
-
-  // Table land features
-
-  &-land-features {
-
-    @include media(tablet) {
-
-      .area,
-      .checked {
-        text-align: right;
-      }
-
-      .text-warning {
-        float: right;
-      }
-
-    }
-
-  }
-
-
-  // Table land parcels
-
-  &-land-parcels {
-
-    .tag {
-      display: inline-block;
-      padding: 0 20px;
-
-      &-done {
-        background-color: $button-colour;
-        color: white;
-      }
-
-    }
-
-    @include media(tablet) {
-
-      .checked {
-        text-align: right;
-      }
-
-    }
-
-  }
-
-
-  // Table customer and business results
-
-  &-business-search {
-
-    tbody th,
-    tbody td {
-      vertical-align: top;
-    }
-
-  }
-
-
 }
 

@@ -8,17 +8,13 @@ ol {
   padding: 0;
 }
 
-
 // Bulleted lists
-
 .list-bullet {
   list-style-type: disc;
   padding-left: 20px;
 }
 
-
 // Numbered lists
-
 .list-number {
   list-style-type: decimal;
   padding-left: 20px;
@@ -27,9 +23,7 @@ ol {
   }
 }
 
-
 // Alpha lists
-
 .list-alpha {
   list-style-type: lower-alpha;
   padding-left: 20px;
@@ -38,55 +32,14 @@ ol {
   }
 }
 
-
 .list-bullet,
-.list-number,
-.list-alpha,
-.list-nav {
+.list-number {
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
-
-.list-bullet,
-.list-number,
-.list-alpha,
-.list-nav {
-
-  li {
-    margin-bottom: 5px;
-  }
-
+.list-bullet li,
+.list-number li {
+  margin-bottom: 5px;
 }
-
-
-// Parcel lists
-
-.list-parcel {
-
-  dt, dd {
-    display: inline;
-  }
-
-  dt {
-
-    &:after {
-      content: ':';
-    }
-
-  }
-
-  dd {
-    padding-right: 10px;
-
-    &:last-child {
-      padding-right: 0;
-    }
-
-  }
-
-}
-
-
-
 

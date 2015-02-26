@@ -271,6 +271,19 @@ function toggleTabs() {
 };
 
 
+// Table sortable
+
+function tableSortable() {
+
+  if ($('.js-table-sortable').length>0) {
+
+    $('.js-table-sortable').stupidtable();
+
+  }
+
+};
+
+
 // Multiple checkboxes
 
 function formMultipleCheckboxes() {
@@ -466,6 +479,7 @@ function toggleContent() {
   showDialog();
   collapsibles();
   toggleContent();
+  tableSortable();
 
 })();
 

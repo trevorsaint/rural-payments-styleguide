@@ -1,6 +1,56 @@
-// ==========================================================================
 // Lists
 // ==========================================================================
+
+
+.list-alpha,
+.list-nav {
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+  li {
+    margin-bottom: 5px;
+  }
+
+}
+
+
+// Alpha lists
+
+.list-alpha {
+  list-style-type: lower-alpha;
+  padding-left: 20px;
+  @include ie-lte(7) {
+    padding-left: 28px;
+  }
+}
+
+
+// Parcel lists
+
+.list-parcel {
+
+  dt, dd {
+    display: inline;
+  }
+
+  dt {
+
+    &:after {
+      content: ':';
+    }
+
+  }
+
+  dd {
+    padding-right: 10px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+  }
+
+}
 
 
 // Block list

@@ -44,10 +44,19 @@
 }
 
 
-.new {
+.new,
+.updated {
   @include phase-tag(beta);
-  background-color: $govuk-blue;
+  line-height: normal;
   margin-left: 10px;
+}
+
+.new {
+  background-color: $turquoise;
+}
+
+.updated {
+  background-color: $orange;
 }
 
 

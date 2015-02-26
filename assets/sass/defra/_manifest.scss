@@ -1,4 +1,7 @@
 @import 'base';
+@import 'typography';
+@import 'tables';
+@import 'extends';
 @import 'overrides';
 @import 'steps';
 @import 'alerts';
@@ -8,6 +11,7 @@
 @import 'summary';
 @import 'forms';
 @import 'related';
+@import 'panels';
 @import 'lists';
 @import 'microdata';
 @import 'snippets';
@@ -15,3 +19,4 @@
 @import 'collapsibles';
 @import 'pagination';
 @import 'example';
+@import 'map';

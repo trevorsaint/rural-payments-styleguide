@@ -1,0 +1,129 @@
+// ==========================================================================
+// Tables
+// ==========================================================================
+
+
+table {
+  margin-bottom: 1.05263em; // 20px
+
+
+  // Helper classes
+
+  .sbi,
+  .email {
+    @extend .text-secondary;
+    font-weight: normal;
+  }
+
+  .last {
+    padding-right: 0;
+  }
+
+  .top {
+    vertical-align: top;
+  }
+
+  .action {
+    text-align: right;
+  }
+
+
+  // Table tfoot
+
+  tfoot {
+    border-top: 2px solid rgb(0, 0, 0);
+  }
+
+
+}
+
+
+// Table variations
+
+.table {
+
+
+  // Table land features
+
+  &-land-features {
+
+    @include media(tablet) {
+
+      .text-warning {
+        float: right;
+      }
+
+    }
+
+  }
+
+
+  // Table land parcels
+
+  &-land-parcels {
+
+    .tag {
+      display: inline-block;
+      padding: 0 20px;
+
+      &-done {
+        background-color: $button-colour;
+        color: white;
+      }
+
+    }
+
+    @include media(tablet) {
+
+      .checked {
+        text-align: right;
+      }
+
+    }
+
+  }
+
+
+  // Table customer and business results
+
+  &-business-search {
+
+    tbody th,
+    tbody td {
+      vertical-align: top;
+    }
+
+  }
+
+
+}
+
+
+// Table sorting (tidy this up)
+
+table {
+
+  [data-sort] {
+    @include user-select(none);
+    @extend .link;
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+  }
+
+  .sorting-asc {
+    &:after {
+      position: absolute; right: 0;
+      content: '▲';
+    }
+  }
+
+  .sorting-desc {
+    &:after {
+      position: absolute; right: 0;
+      content: '▼';
+    }
+  }
+
+}
+

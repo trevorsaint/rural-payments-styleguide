@@ -559,6 +559,15 @@ module.exports = {
       });
 
 
+      // efas
+      app.get('/pages/efas', function(req, res) {
+
+        var data = {doctitle: 'Ecological focus areas'};
+        res.render('pages/efas/home', data);
+
+      });
+
+
         // amend business details
         app.get('/pages/business-details/amend-business-details', function(req, res) {
 
