@@ -47,6 +47,7 @@
 .new,
 .updated {
   @include phase-tag(beta);
+  line-height: normal;
   margin-left: 10px;
 }
 
