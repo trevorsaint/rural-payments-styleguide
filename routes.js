@@ -568,6 +568,15 @@ module.exports = {
       });
 
 
+      // activate your entitlements
+      app.get('/pages/activate-your-entitlements', function(req, res) {
+
+        var data = {doctitle: 'Activate your entitlements'};
+        res.render('pages/activate-your-entitlements/home', data);
+
+      });
+
+
         // amend business details
         app.get('/pages/business-details/amend-business-details', function(req, res) {
 

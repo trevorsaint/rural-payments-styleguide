@@ -4,7 +4,7 @@
 
 
 table {
-  margin-bottom: 1.05263em; // 20px
+  margin-bottom: 1.05263em * 2; // 40px
 
 
   // Helper classes
@@ -27,6 +27,24 @@ table {
     text-align: right;
   }
 
+  .form-control {
+    @include core-16;
+    margin: -5px 0;
+    position: relative; top: -1px; // A little extra finesse
+    width: auto;
+  }
+
+
+  // Other helper classes
+
+  .totals {
+
+    th, td {
+      border-bottom-color: $black;
+    }
+
+  }
+
 
   // Table tfoot
 
@@ -41,6 +59,59 @@ table {
 // Table variations
 
 .table {
+
+
+  // Table land entitlements
+
+  &-land-entitlements {
+
+    .parcel-id {
+      width: 14%;
+    }
+
+    .land-use {
+      width: 24%;
+    }
+
+    .land-area {
+      width: 10%;
+    }
+
+    .notes {
+      width: 20%;
+    }
+
+    .entitlement {
+      width: 10%;
+    }
+
+    .action {
+      width: 8%;
+    }
+
+    tbody {
+
+      .parcel-name,
+      .parcel-id {
+        border-bottom-color: $black;
+      }
+
+      th,
+      td {
+        vertical-align: top;
+      }
+
+      input {
+        text-align: right;
+      }
+
+      .total {
+        font-weight: 700;
+      }
+
+    }
+
+  }
 
 
   // Table land features
@@ -99,28 +170,33 @@ table {
 }
 
 
-// Table sorting (tidy this up)
+// Table sortable
 
-table {
+.js-table-sortable {
 
   [data-sort] {
     @include user-select(none);
     @extend .link;
     cursor: pointer;
-    text-decoration: underline;
     position: relative;
+    text-decoration: underline;
+  }
+
+  .sorting-asc,
+  .sorting-desc {
+    &:after {
+      position: absolute; right: 0;
+    }
   }
 
   .sorting-asc {
     &:after {
-      position: absolute; right: 0;
       content: '▲';
     }
   }
 
   .sorting-desc {
     &:after {
-      position: absolute; right: 0;
       content: '▼';
     }
   }
