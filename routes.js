@@ -568,6 +568,15 @@ module.exports = {
       });
 
 
+      // basic payment scheme application
+      app.get('/pages/basic-payment-scheme-application', function(req, res) {
+
+        var data = {doctitle: 'Basic payment scheme application'};
+        res.render('pages/basic-payment-scheme-application/home', data);
+
+      });
+
+
       // activate your entitlements
       app.get('/pages/activate-your-entitlements', function(req, res) {
 

@@ -167,6 +167,43 @@ table {
   }
 
 
+  // Table summary
+
+  &-summary {
+    border-top: 1px solid $grey-2;
+
+    &-heading {
+      position: relative;
+
+      a {
+        position: absolute; right: 0; top: 5px;
+      }
+
+    }
+
+    &-title {
+      vertical-align: top;
+      width: 45%;
+    }
+
+    &-content {
+      width: 45%;
+
+      ul {
+        margin: 0; // override list bullet margins
+      }
+
+    }
+
+    &-action {
+      padding-right: 0;
+      text-align: right;
+      width: 10%;
+    }
+
+  }
+
+
 }
 
 
