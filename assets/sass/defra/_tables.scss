@@ -170,7 +170,18 @@ table {
   // Table summary
 
   &-summary {
-    border-top: 1px solid $grey-2;
+
+    tr {
+
+      &:first-child {
+
+        th, td {
+          border-top: 1px solid $grey-2;
+        }
+
+      }
+
+    }
 
     &-heading {
       position: relative;
@@ -187,7 +198,6 @@ table {
     }
 
     &-content {
-      //width: 45%;
 
       ul {
         margin: 0; // override list bullet margins
@@ -198,7 +208,6 @@ table {
     &-action {
       padding-right: 0;
       text-align: right;
-      //width: 10%;
     }
 
   }
