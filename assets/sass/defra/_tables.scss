@@ -17,10 +17,15 @@ table {
 
   .last {
     padding-right: 0;
+    text-align: right;
   }
 
   .top {
     vertical-align: top;
+  }
+
+  .text-normal {
+    font-weight: normal;
   }
 
   .action {
@@ -118,6 +123,14 @@ table {
 
   &-land-features {
 
+    tbody {
+
+      th {
+        font-weight: normal;
+      }
+
+    }
+
     @include media(tablet) {
 
       .text-warning {
@@ -132,6 +145,14 @@ table {
   // Table land parcels
 
   &-land-parcels {
+
+    tbody {
+
+      th {
+        font-weight: normal;
+      }
+
+    }
 
     .tag {
       display: inline-block;

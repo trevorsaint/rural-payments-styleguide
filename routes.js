@@ -586,6 +586,15 @@ module.exports = {
       });
 
 
+      // check and submit your removal of land
+      app.get('/pages/removal-of-land', function(req, res) {
+
+        var data = {doctitle: 'Check and submit your removal of land'};
+        res.render('pages/removal-of-land/home', data);
+
+      });
+
+
         // amend business details
         app.get('/pages/business-details/amend-business-details', function(req, res) {
 
