@@ -176,6 +176,44 @@ table {
   }
 
 
+  // Table land removal
+
+  &-land-removal {
+
+    tbody {
+
+      th {
+        font-weight: normal;
+
+        @include media(tablet) {
+          width: 30%;
+        }
+
+      }
+
+    }
+
+    &-summary {
+
+      tbody {
+
+        th {
+
+          @include media(tablet) {
+            width: 30%;
+          }
+
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+
   // Table customer and business results
 
   &-business-search {
