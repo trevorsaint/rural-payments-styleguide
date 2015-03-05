@@ -1,0 +1,49 @@
+// Placeholders
+// ==========================================================================
+
+
+%unstyle-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+%clearfix {
+
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+
+}
+
+
+%hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+
+%visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+// IE9 + (http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/)
+%vertical-align {
+  @include transform(translateY(-50%));
+  position: relative;
+  top: 50%;
+}
+

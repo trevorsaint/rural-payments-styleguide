@@ -1,0 +1,47 @@
+// ==========================================================================
+// Navigation (business menu)
+// ==========================================================================
+
+
+.business {
+
+
+  // Menu
+
+  &-menu {
+    border-bottom: 1px solid $border-colour;
+  }
+
+
+  // Links
+
+  &-links {
+    @extend %clearfix;
+    @extend %unstyle-list;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 10px 0;
+
+    @include media(tablet) {
+
+    }
+
+    li {
+      margin-bottom: 5px;
+
+      @include media(tablet) {
+        float: left;
+        margin-right: 30px;
+      }
+
+    }
+
+    a {
+      @extend .link-secondary;
+    }
+
+  }
+
+
+}
+

@@ -35,6 +35,15 @@ body {
 
 
 
+// Content
+
+#content {
+  min-height: 300px;
+  position: relative;
+}
+
+
+
 // Main heading no back link
 
 .heading-xlarge-noback {
@@ -105,27 +114,4 @@ details .panel-indent {
 #global-header #logo, a:link {
   overflow: hidden; // Fixes unwanted padding on focus
 }
-
-
-// Edit inline
-
-/*.edit-inline {
-  cursor: text;
-
-  span {
-
-    &:after {
-      @include core-16;
-      color: $link-colour;
-      content: 'Edit';
-      cursor: pointer;
-      display: inline;
-      font-weight: normal;
-      text-decoration: underline;
-      vertical-align: baseline;
-    }
-
-  }
-
-}*/
 

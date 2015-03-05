@@ -595,6 +595,15 @@ module.exports = {
       });
 
 
+      // loading
+      app.get('/pages/loading', function(req, res) {
+
+        var data = {doctitle: 'Loading'};
+        res.render('pages/loading/home', data);
+
+      });
+
+
         // amend business details
         app.get('/pages/business-details/amend-business-details', function(req, res) {
 
