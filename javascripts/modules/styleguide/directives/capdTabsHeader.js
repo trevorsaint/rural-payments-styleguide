@@ -6,7 +6,7 @@ define(['./capdTabsConstants', '../templatePath'], function (capdTabsConstants, 
             link: function postLink(scope, iElement, iAttrs, capdTabsController) {
                 var registrationInfo = capdTabsController.registerHeader();
                 scope.index = registrationInfo.index;
-                scope.isActive = scope.index % 2 == 0;
+                scope.isActive = scope.index === 0; // make first tab active by default
 
                 scope.selectTab = function (index) {
                     registrationInfo.masterScope.$broadcast(capdTabsConstants.TAB_CHANGED_EVENT, index);
