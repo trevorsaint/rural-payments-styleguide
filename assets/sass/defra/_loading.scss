@@ -4,19 +4,27 @@
 
 
 .loading {
-  @extend %hide-text;
-  background-image: url('../images/loading.gif');
-  display: block;
-  position: absolute; top: 50%; left: 50%;
-  height: 36px;
-  margin-top: -18px;
-  margin-left: -18px;
-  width: 36px;
+  background-color: $white;
+  height: 100%;
+  position: absolute; top: 0; left: 0;
+  width: 100%;
 
-	@include device-pixel-ratio() {
-		background-image: url('../images/loading-2x.gif');
-    @include background-size(100%);
-	}
+  &-spinner {
+    @extend %hide-text;
+    background-image: url('../images/loading.gif');
+    display: block;
+    position: absolute; top: 50%; left: 50%;
+    height: 36px;
+    margin-top: -18px;
+    margin-left: -18px;
+    width: 36px;
+
+    @include device-pixel-ratio() {
+  		background-image: url('../images/loading-2x.gif');
+      @include background-size(100%);
+  	}
+
+  }
 
 }
 

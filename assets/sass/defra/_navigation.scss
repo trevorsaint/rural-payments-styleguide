@@ -22,16 +22,13 @@
     line-height: 1.25;
     padding: 10px 0;
 
-    @include media(tablet) {
-
-    }
-
     li {
       margin-bottom: 5px;
 
       @include media(tablet) {
         float: left;
         margin-right: 30px;
+        margin-bottom: 0;
       }
 
     }
