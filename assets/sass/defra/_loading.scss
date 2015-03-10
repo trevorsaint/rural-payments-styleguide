@@ -8,7 +8,25 @@
   height: 100%;
   position: absolute; top: 0; left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 11;
+
+  // Trick to cover anything that may pop out of edges
+  &:before,
+  &:after {
+    background: $white;
+    content: '';
+    height: 100%;
+    position: absolute; top: 0;
+    width: 50%;
+  }
+
+  &:before {
+    left: -50%;
+  }
+
+  &:after {
+    right: -50%;
+  }
 
   &-spinner {
     @extend %hide-text;
