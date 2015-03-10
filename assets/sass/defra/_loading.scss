@@ -8,12 +8,13 @@
   height: 100%;
   position: absolute; top: 0; left: 0;
   width: 100%;
+  z-index: 10;
 
   &-spinner {
     @extend %hide-text;
     background-image: url('../images/loading.gif');
     display: block;
-    position: absolute; top: 50%; left: 50%;
+    position: absolute; top: 150px; left: 50%;
     height: 36px;
     margin-top: -18px;
     margin-left: -18px;
