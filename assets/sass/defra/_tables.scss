@@ -288,7 +288,8 @@ table {
   .sorting-asc,
   .sorting-desc {
     &:after {
-      position: absolute; right: 0;
+      margin-left: 4px;
+      position: absolute;
     }
   }
 
