@@ -115,3 +115,15 @@ details .panel-indent {
   overflow: hidden; // Fixes unwanted padding on focus
 }
 
+
+// Related external icon placement override
+
+.related-section-links {
+
+  a[rel="external"]::after {
+    background-position: right 4px;
+    content: "\A0\A0\A0\A0\A0";
+  }
+
+}
+
