@@ -12,7 +12,6 @@
 
   	background: url('/assets/images/icons/checklist.png');
   	background-position: 50% 0;
-  	@include background-size(25px);
   	content: '';
   	height: 25px;
   	position: absolute;
@@ -21,6 +20,7 @@
 
     @include device-pixel-ratio() {
       background: url('/assets/images/icons/checklist-2x.png');
+      @include background-size(25px);
     }
 
 	}
