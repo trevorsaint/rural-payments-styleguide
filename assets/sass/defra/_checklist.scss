@@ -3,30 +3,24 @@
 
 
 %checklist {
-  border-bottom: 1px solid $border-colour;
 	clear: both;
-	margin: em(15) 0;
-	overflow: hidden;
-	padding-left: em(60);
+	margin: em(19) 0;
+	padding-left: em(30);
 	position: relative;
-	min-height: em(60);
-
-	&:last-child {
-  	border-bottom: 0 none;
-	}
 
 	&:before {
-  	background: url(/assets/images/icons/checklist.png);
+
+  	background: url('/assets/images/icons/checklist.png');
   	background-position: 50% 0;
+  	@include background-size(25px);
   	content: '';
-  	height: 50px;
+  	height: 25px;
   	position: absolute;
   	left: 0; top: 0;
-  	width: 50px;
+  	width: 25px;
 
     @include device-pixel-ratio() {
-      background: url(/assets/images/icons/checklist-2x.png);
-      background-size: 50px;
+      background: url('/assets/images/icons/checklist-2x.png');
     }
 
 	}
@@ -39,6 +33,7 @@
 }
 
 
+// cross icon
 .checklist-notmet {
 	@extend %checklist;
 
@@ -49,21 +44,23 @@
 }
 
 
+// question mark icon
 .checklist-inprogress {
 	@extend %checklist;
 
 	&:before {
-	  background-position: 50% -50px;
+	  background-position: 50% -25px;
 	}
 
 }
 
 
+// tick icon
 .checklist-done {
 	@extend %checklist;
 
 	&:before {
-	  background-position: 50% -100px;
+	  background-position: 50% -50px;
 	}
 
 }

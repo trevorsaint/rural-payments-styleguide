@@ -604,6 +604,15 @@ module.exports = {
       });
 
 
+      // apply for the basic payment scheme
+      app.get('/pages/apply-for-the-basic-payment-application', function(req, res) {
+
+        var data = {doctitle: 'Apply for the basic payment scheme'};
+        res.render('pages/apply-for-the-basic-payment-application/home', data);
+
+      });
+
+
         // amend business details
         app.get('/pages/business-details/amend-business-details', function(req, res) {
 
