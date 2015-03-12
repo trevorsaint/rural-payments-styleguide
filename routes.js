@@ -613,6 +613,20 @@ module.exports = {
       });
 
 
+      // add / edit land
+      app.get('/pages/add-edit-land', function(req, res) {
+
+        var data = {
+          doctitle: 'Add / Edit land',
+          openLayers: true
+        };
+
+
+        res.render('pages/add-edit-land/home', data);
+
+      });
+
+
         // amend business details
         app.get('/pages/business-details/amend-business-details', function(req, res) {
 
