@@ -6,1554 +6,1161 @@
 
     <div class="text">
 
-      <p>Select how many entitlements you'd like to use for each of your land parcels.</p>
+      <p class="lede">Edit how many entitlements you want to activate on each parcel.</p>
 
-      <p>The table shows your parcel size, as well as the amount of eligible land currenly verified by the <abbr title="Rural Payments Agency">RPA</abbr>.</p>
+      <p>If the amount of eligible area verified by <abbr title="Rural Payments Agency">RPA</abbr> is different to the amount of area you've declared it means your land hasn't been verified (digitised) by the <abbr title="Rural Payments Agency">RPA</abbr> yet.</p>
+
+      <h2 class="heading-medium">CPH 02/123/1234</h2>
+
+      <p>Non-severely disadvantaged area (Non-SDA)</p>
 
     </div>
 
 
-    <h2 class="heading-medium">CPH 02/123/1234</h2>
+    <form action="/" method="post">
 
 
-    <form method="post" action="/">
+      <table class="table-land-entitlements">
 
-  		<table class="table-land-entitlements">
-
-        <caption class="visuallyhidden">Ecological focus areas listing</caption>
-
-  			<thead>
-
-  				<tr>
-  					<th class="parcel-name" scope="col">Parcel name</th>
-  					<th class="parcel-id" scope="col">Parcel ID</th>
-  					<th class="land-use" scope="col">Land use</th>
-  					<th class="area numeric" scope="col">Area (ha)</th>
-  					<th class="notes" scope="col">Notes</th>
-  					<th class="entitlement" scope="col"></th>
-  					<th class="action" scope="col"></th>
-  				</tr>
-
-  			</thead>
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="4">BYF</th>
-  					<td class="parcel-id" rowspan="4">SU1234_8747</td>
-    				<td>Spring wheat</td>
-    				<td class="numeric">3.00</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Non-agricultural area</td>
-    				<td class="numeric">0.09</td>
-    				<td>Ineligible for <abbr title="Basic Payment Scheme">BPS</abbr></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">3.09</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">3.09</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric"><input class="form-control" type="text" value="3.00" size="5"></td>
-    				<td><a href="#">Save</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-        <!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="4">FREDS</th>
-  					<td class="parcel-id" rowspan="4">SU1234_9365</td>
-    				<td>Spring wheat</td>
-    				<td class="numeric">5.71</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Temporary grass</td>
-    				<td class="numeric">0.90</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">6.67</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">6.61</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric"><input class="form-control form-control-error" type="text" value="6.61.fs" size="5"></td>
-    				<td><a href="#">Save</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">POORSLOT</th>
-  					<td class="parcel-id" rowspan="3">SU1235_2843</td>
-    				<td>Spring wheat</td>
-    				<td class="numeric">4.97</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">4.97</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">4.97</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">4.97</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">CATH</th>
-  					<td class="parcel-id" rowspan="3">SU1235_4938</td>
-    				<td>Spring wheat</td>
-    				<td class="numeric">3.72</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">3.72</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">3.72</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">3.72</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="4">SMITH</th>
-  					<td class="parcel-id" rowspan="4">SU1235_7641</td>
-    				<td>Spring wheat</td>
-    				<td class="numeric">16.82</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-          <tr>
-  					<th>Buffer strip</th>
-    				<td class="numeric total">0.01</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">16.91</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">16.89</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">16.83</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="4">PLANK</th>
-  					<td class="parcel-id" rowspan="4">SU1235_0143</td>
-    				<td>Spring barley</td>
-    				<td class="numeric">3.86</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-          <tr>
-  					<th>Spring barley</th>
-    				<td class="numeric total">5.50</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">9.36</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">9.36</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">9.36</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">BSH</th>
-  					<td class="parcel-id" rowspan="3">SU1235_3947</td>
-    				<td>Spring barley</td>
-    				<td class="numeric">4.80</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">5.03</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">4.83</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">4.80</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">GROUSE</th>
-  					<td class="parcel-id" rowspan="3">SU1235_5861</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">3.21</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">3.23</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">3.23</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">3.21</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">CASTLE</th>
-  					<td class="parcel-id" rowspan="3">SU1235_7969</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">6.90</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">6.90</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">6.90</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">6.90</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">LAWN</th>
-  					<td class="parcel-id" rowspan="3">SU1235_7969</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">0.20</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">0.47</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">0.47</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">0.20</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">TIME</th>
-  					<td class="parcel-id" rowspan="3">SU1236_1091</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">14.23</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">14.28</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">14.28</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">14.23</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">CHRCH</th>
-  					<td class="parcel-id" rowspan="3">SU1236_1658</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">4.83</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">4.89</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">4.88</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">4.83</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">NRCORNER</th>
-  					<td class="parcel-id" rowspan="3">SU1236_1720</td>
-    				<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">4.71</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">4.71</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">4.71</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">4.71</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">PHIL</th>
-  					<td class="parcel-id" rowspan="3">SU1236_3645</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">7.14</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">7.19</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">7.19</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">7.14</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">HILL</th>
-  					<td class="parcel-id" rowspan="3">SU1236_3867</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">5.74</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">5.74</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">5.74</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">5.74</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">MID</th>
-  					<td class="parcel-id" rowspan="3">SU1236_4225</td>
-    				<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">5.35</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">5.35</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">5.35</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">5.35</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">JANE</th>
-  					<td class="parcel-id" rowspan="3">SU1236_5930</td>
-    				<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">2.82</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">2.82</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">2.82</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">2.82</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">CLERK</th>
-  					<td class="parcel-id" rowspan="3">SU1236_6081</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">5.58</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">6.41</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">6.20</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">5.58</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">TOM</th>
-  					<td class="parcel-id" rowspan="3">SU1236_6559</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">4.51</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">4.56</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">4.56</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">4.51</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">LAWN</th>
-  					<td class="parcel-id" rowspan="3">SU1236_9816</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">1.90</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">1.93</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">1.93</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">1.90</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">TOP</th>
-  					<td class="parcel-id" rowspan="3">SU1237_1323</td>
-    				<td>Spring wheat</td>
-    				<td class="numeric">7.41</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">7.41</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">7.41</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">7.41</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="4">3RD</th>
-  					<td class="parcel-id" rowspan="4">SU1237_4042</td>
-    				<td>Spring wheat</td>
-    				<td class="numeric">12.00</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Non&ndash;agricultural area</td>
-    				<td class="numeric total">0.00</td>
-    				<td>Inelgible for <abbr title="Basic Payment Scheme">BPS</abbr></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">12.01</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">12.00</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">12.00</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">3RD</th>
-  					<td class="parcel-id" rowspan="3">SU1237_4042</td>
-    				<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">11.00</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">11.01</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">11.01</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">11.00</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">1ST</th>
-  					<td class="parcel-id" rowspan="3">SU1237_8618</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">6.82</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">6.88</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">6.82</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">6.82</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">LARGE</th>
-  					<td class="parcel-id" rowspan="3">SU1238_0575</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">6.95</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">7.03</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">6.95</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">6.95</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">ALLOT</th>
-  					<td class="parcel-id" rowspan="3">SU1238_1350</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">1.80</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">1.80</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">1.80</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">1.80</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="4">DAIRY</th>
-  					<td class="parcel-id" rowspan="4">SU1238_4590</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">4.80</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Buffer strip</td>
-    				<td class="numeric">0.06</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">4.91</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">4.80</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">4.86</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="5">BRIDGET</th>
-  					<td class="parcel-id" rowspan="5">SU1238_7884</td>
-    				<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">1.68</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Buffer strip</td>
-    				<td class="numeric">0.01</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">9.21</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">1.68</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">1.68</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">10.90</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">BARN</th>
-  					<td class="parcel-id" rowspan="3">SU1239_0602</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">1.57</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">1.60</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">1.57</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">1.57</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">CRICKET</th>
-  					<td class="parcel-id" rowspan="3">SU1239_2222</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">2.77</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">2.77</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">2.77</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">2.77</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="7">TOPGRND</th>
-  					<td class="parcel-id" rowspan="7">SU1239_2222</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">1.46</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-          <tr>
-  					<td>Maize</td>
-    				<td class="numeric">5.79</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Hedge</td>
-    				<td class="numeric">0.06</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Hedge</td>
-    				<td class="numeric">0.01</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-          <tr>
-  					<td>Hedge</td>
-    				<td class="numeric">0.02</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">1.46</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">1.46</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">7.34</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">WHITE</th>
-  					<td class="parcel-id" rowspan="3">SU1239_6729</td>
-    				<td>Permanent grass</td>
-    				<td class="numeric">1.84</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">1.84</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">1.84</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">1.84</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">WHITEGATE</th>
-  					<td class="parcel-id" rowspan="3">SU1239_6810</td>
-    				<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">6.69</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">6.69</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">6.69</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">6.69</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">POND</th>
-  					<td class="parcel-id" rowspan="3">SU1240_9092</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">3.41</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">3.45</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">3.41</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">3.41</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">BIGPOND</th>
-  					<td class="parcel-id" rowspan="3">SU1241_1272</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">9.60</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">9.80</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">9.80</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">9.60</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">HMF</th>
-  					<td class="parcel-id" rowspan="3">SU1241_2790</td>
-    				<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">3.34</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">3.44</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">3.44</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">3.34</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">FR</th>
-  					<td class="parcel-id" rowspan="3">SU1241_2976</td>
-    				<td>Woodland block</td>
-    				<td class="numeric">0.00</td>
-    				<td>Ineligible for <abbr title="Basic Payment Scheme">BPS</abbr></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">0.34</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">0.00</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">0.00</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">CASTLE</th>
-  					<td class="parcel-id" rowspan="3">SU1241_4250</td>
-    				<td>Fallow</td>
-    				<td class="numeric">12.43</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">12.43</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">12.43</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">12.43</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">30 ACRE</th>
-  					<td class="parcel-id" rowspan="3">SU1241 6165</td>
-    				<td>Beans</td>
-    				<td class="numeric">8.79</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">8.93</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">8.79</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">8.79</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">20 ACRE</th>
-  					<td class="parcel-id" rowspan="3">SU1241_6933</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">11.31</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">11.55</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">11.51</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">11.31</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="4">BALLOON</th>
-  					<td class="parcel-id" rowspan="4">SU1241_7807</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">11.31</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr>
-  					<td>Temporary grass</td>
-    				<td class="numeric">3.77</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">6.03</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">6.03</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">9.80</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">PAUL</th>
-  					<td class="parcel-id" rowspan="3">SU1242_1829</td>
-    				<td>Oilseed &ndash; spring</td>
-    				<td class="numeric">6.18</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">6.18</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">6.18</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">6.18</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  			<!-- tbody -->
-  			<tbody>
-
-  				<tr>
-  					<th class="parcel-name" scope="row" rowspan="3">TPCASTLE</th>
-  					<td class="parcel-id" rowspan="3">SU1242_2405</td>
-    				<td>Temporary grass</td>
-    				<td class="numeric">4.43</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Parcel size</th>
-    				<td class="numeric total">4.53</td>
-    				<td></td>
-    				<td></td>
-    				<td></td>
-  				</tr>
-
-  				<tr class="totals">
-  					<th>Eligible area (verified)</th>
-    				<td class="numeric total">4.53</td>
-    				<th>Activated area (ha)</th>
-    				<td class="numeric total">4.43</td>
-    				<td><a href="#">Edit</a></td>
-  				</tr>
-
-  			</tbody>
-  			<!-- end -->
-
-  		</table>
-
-
-  		<h2 class="heading-medium">Total</h2>
-
-
-  		<table>
-
-        <caption class="visuallyhidden">Land parcels</caption>
 
         <thead>
-
           <tr>
-            <th scope="col">Region</th>
-            <th class="numeric" scope="col">Total area (ha)</th>
-            <th class="numeric" scope="col">Eligible area (ha)</th>
-            <th class="numeric" scope="col">Total entitlements</th>
-            <th class="numeric" scope="col">Activated entitlements</th>
+            <th class="parcel-name" scope="row">Parcel</th>
+            <th class="parcel-id">ID</th>
+            <th class="land-uses">Land uses</th>
+            <th class="parcel-size numeric">Parcel size (<abbr title="Hectare">ha</abbr>)</th>
+            <th class="eligible-verified numeric">Eligible area verified by <abbr title="Rural Payments Agency">RPA</abbr> (<abbr title="Hectare">ha</abbr>)</th>
+            <th class="eligible-declared numeric">Eligible area you've declared this year (<abbr title="Hectare">ha</abbr>)</th>
+            <th class="eligible-area numeric last" colspan="2">Area to activate (<abbr title="Hectare">ha</abbr>)</th>
           </tr>
-
         </thead>
+
 
         <tbody>
 
           <tr>
-            <th scope="row">Non-severely disadvantaged area (Non&ndash;SDA)</th>
-            <td class="numeric">251.99</td>
-            <td class="numeric">250.65</td>
-            <td class="numeric">267.75</td>
-            <td class="numeric">267.65</td>
+            <th class="parcel-name">BYF</th>
+            <td class="parcel-id"><span class="sbi">SU1234_8747</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">3.09</td>
+            <td class="eligible-verified numeric">3.09</td>
+            <td class="eligible-declared numeric">3.09</td>
+            <td class="numeric">3.09</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring wheat</td>
+            <td class="numeric">3.00</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Non&ndash;agricultural area (ineligible)</td>
+            <td class="numeric">3.00</td>
+            <td colspan="2"></td>
           </tr>
 
         </tbody>
 
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">FREDS</th>
+            <td class="parcel-id"><span class="sbi">SU1234_9365</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">6.67</td>
+            <td class="eligible-verified numeric">6.61</td>
+            <td class="eligible-declared numeric">6.61</td>
+            <td class="numeric">6.61</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring wheat</td>
+            <td class="numeric">5.71</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">0.90</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody class="open">
+
+          <tr>
+            <th class="parcel-name">POORSLOT</th>
+            <td class="parcel-id"><span class="sbi">SU1235_2843</span></td>
+            <td class="land-uses"><a href="#">Hide</a></td>
+            <td class="parcel-size numeric">4.97</td>
+            <td class="eligible-verified numeric">4.97</td>
+            <td class="eligible-declared numeric">4.97</td>
+            <td class="numeric">4.97</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring wheat</td>
+            <td class="numeric">4.97</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">CATH</th>
+            <td class="parcel-id"><span class="sbi">SU1235_4938</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">3.72</td>
+            <td class="eligible-verified numeric">3.72</td>
+            <td class="eligible-declared numeric">3.72</td>
+            <td class="numeric">3.72</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring wheat</td>
+            <td class="numeric">3.72</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">SMITH</th>
+            <td class="parcel-id"><span class="sbi">SU1235_7641</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">16.91</td>
+            <td class="eligible-verified numeric">16.89</td>
+            <td class="eligible-declared numeric">16.89</td>
+            <td class="numeric"><input class="form-control" type="text" value="16.89" size="5"></td>
+            <td class="numeric last"><a href="#">Save</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring wheat</td>
+            <td class="numeric">16.82</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Buffer strip</td>
+            <td class="numeric">0.01</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">PLANK</th>
+            <td class="parcel-id"><span class="sbi">SU1235_0143</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">9.36</td>
+            <td class="eligible-verified numeric">9.36</td>
+            <td class="eligible-declared numeric">9.36</td>
+            <td class="numeric"><input class="form-control form-control-error" type="text" value="9.36.fs" size="5"></td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring barley</td>
+            <td class="numeric">10.86</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring barley</td>
+            <td class="numeric">5.50</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">BSH</th>
+            <td class="parcel-id"><span class="sbi">SU1235_3947</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">5.03</td>
+            <td class="eligible-verified numeric">4.83</td>
+            <td class="eligible-declared numeric">4.83</td>
+            <td class="numeric">4.83</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring barley</td>
+            <td class="numeric">4.80</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">GROUSE</th>
+            <td class="parcel-id"><span class="sbi">SU1235_5861</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">3.23</td>
+            <td class="eligible-verified numeric">3.23</td>
+            <td class="eligible-declared numeric">3.23</td>
+            <td class="numeric">3.23</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">3.21</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">CASTLE</th>
+            <td class="parcel-id"><span class="sbi">SU1235_7969</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">6.90</td>
+            <td class="eligible-verified numeric">6.90</td>
+            <td class="eligible-declared numeric">6.90</td>
+            <td class="numeric">6.90</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">6.90</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">LAWN</th>
+            <td class="parcel-id"><span class="sbi">SU1235_9599</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">0.47</td>
+            <td class="eligible-verified numeric">0.47</td>
+            <td class="eligible-declared numeric">0.47</td>
+            <td class="numeric">0.47</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">0.47</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">TIME</th>
+            <td class="parcel-id"><span class="sbi">SU1236_1091</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">14.28</td>
+            <td class="eligible-verified numeric">14.28</td>
+            <td class="eligible-declared numeric">14.28</td>
+            <td class="numeric">14.28</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">14.23</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">CHRCH</th>
+            <td class="parcel-id"><span class="sbi">SU1236_1658</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">4.88</td>
+            <td class="eligible-verified numeric">4.88</td>
+            <td class="eligible-declared numeric">4.88</td>
+            <td class="numeric">4.88</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">4.88</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">NRCORNER</th>
+            <td class="parcel-id"><span class="sbi">SU1236_1720</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">4.71</td>
+            <td class="eligible-verified numeric">4.71</td>
+            <td class="eligible-declared numeric">4.71</td>
+            <td class="numeric">4.71</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Oilseed &ndash; spring</td>
+            <td class="numeric">4.71</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">PHIL</th>
+            <td class="parcel-id"><span class="sbi">SU1236_3645</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">7.19</td>
+            <td class="eligible-verified numeric">7.19</td>
+            <td class="eligible-declared numeric">7.19</td>
+            <td class="numeric">7.19</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">7.14</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">HILL</th>
+            <td class="parcel-id"><span class="sbi">SU1236_3867</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">5.74</td>
+            <td class="eligible-verified numeric">7.19</td>
+            <td class="eligible-declared numeric">7.19</td>
+            <td class="numeric">7.19</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">7.14</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">MID</th>
+            <td class="parcel-id"><span class="sbi">SU1236_4225</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">5.35</td>
+            <td class="eligible-verified numeric">5.35</td>
+            <td class="eligible-declared numeric">5.35</td>
+            <td class="numeric">5.35</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Oilseed &ndash; spring</td>
+            <td class="numeric">5.35</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">JANE</th>
+            <td class="parcel-id"><span class="sbi">SU1236_5930</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">2.82</td>
+            <td class="eligible-verified numeric">2.82</td>
+            <td class="eligible-declared numeric">2.82</td>
+            <td class="numeric">2.82</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Oilseed &ndash; spring</td>
+            <td class="numeric">2.82</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">CLERK</th>
+            <td class="parcel-id"><span class="sbi">SU1236_6081</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">6.41</td>
+            <td class="eligible-verified numeric">6.20</td>
+            <td class="eligible-declared numeric">6.20</td>
+            <td class="numeric">6.20</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">2.82</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">TOM</th>
+            <td class="parcel-id"><span class="sbi">SU1236_6559</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">4.56</td>
+            <td class="eligible-verified numeric">4.56</td>
+            <td class="eligible-declared numeric">4.56</td>
+            <td class="numeric">4.56</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">4.51</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">LAWN</th>
+            <td class="parcel-id"><span class="sbi">SU1236_9816</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">1.93</td>
+            <td class="eligible-verified numeric">1.93</td>
+            <td class="eligible-declared numeric">1.93</td>
+            <td class="numeric">1.93</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">1.90</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">TOP</th>
+            <td class="parcel-id"><span class="sbi">SU1237_1323</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">7.41</td>
+            <td class="eligible-verified numeric">7.41</td>
+            <td class="eligible-declared numeric">7.41</td>
+            <td class="numeric">7.41</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring wheat</td>
+            <td class="numeric">7.41</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">3RD</th>
+            <td class="parcel-id"><span class="sbi">SU1237_4042</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">12.01</td>
+            <td class="eligible-verified numeric">12.00</td>
+            <td class="eligible-declared numeric">12.00</td>
+            <td class="numeric">12.00</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring wheat</td>
+            <td class="numeric">12.00</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Non&ndash;agricultural area (ineligible)</td>
+            <td class="numeric">00.00</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">3RD</th>
+            <td class="parcel-id"><span class="sbi">SU1237_6127</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">11.01</td>
+            <td class="eligible-verified numeric">11.01</td>
+            <td class="eligible-declared numeric">11.01</td>
+            <td class="numeric">11.01</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Spring wheat</td>
+            <td class="numeric">11.00</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Non&ndash;agricultural area (ineligible)</td>
+            <td class="numeric">00.00</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">1ST</th>
+            <td class="parcel-id"><span class="sbi">SU1237_8618</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">6.88</td>
+            <td class="eligible-verified numeric">6.82</td>
+            <td class="eligible-declared numeric">6.82</td>
+            <td class="numeric">6.82</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">6.82</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">LARGE</th>
+            <td class="parcel-id"><span class="sbi">SU1238_0575</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">7.03</td>
+            <td class="eligible-verified numeric">6.95</td>
+            <td class="eligible-declared numeric">6.95</td>
+            <td class="numeric">6.95</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">6.95</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">ALLOT</th>
+            <td class="parcel-id"><span class="sbi">SU1238_1350</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">1.80</td>
+            <td class="eligible-verified numeric">1.80</td>
+            <td class="eligible-declared numeric">1.80</td>
+            <td class="numeric">1.80</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">1.80</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">DAIRY</th>
+            <td class="parcel-id"><span class="sbi">SU1238_4590</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">4.91</td>
+            <td class="eligible-verified numeric">4.80</td>
+            <td class="eligible-declared numeric">4.80</td>
+            <td class="numeric">4.80</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">4.80</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Buffer strip</td>
+            <td class="numeric">0.06</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">BRIDGET</th>
+            <td class="parcel-id"><span class="sbi">SU1238_7884</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">1.68</td>
+            <td class="eligible-verified numeric">1.68</td>
+            <td class="eligible-declared numeric">1.68</td>
+            <td class="numeric">1.68</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Oilseed &ndash; spring</td>
+            <td class="numeric">1.68</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Buffer strip</td>
+            <td class="numeric">0.01</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Oilseed &ndash; spring</td>
+            <td class="numeric">9.21</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">BARN</th>
+            <td class="parcel-id"><span class="sbi">SU1239_0602</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">1.60</td>
+            <td class="eligible-verified numeric">1.57</td>
+            <td class="eligible-declared numeric">1.57</td>
+            <td class="numeric">1.57</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">1.57</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">CRICKET</th>
+            <td class="parcel-id"><span class="sbi">SU1239_2222</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">2.77</td>
+            <td class="eligible-verified numeric">2.77</td>
+            <td class="eligible-declared numeric">2.77</td>
+            <td class="numeric">2.77</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">2.77</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">TOPGRND</th>
+            <td class="parcel-id"><span class="sbi">SU1239_2307</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">1.46</td>
+            <td class="eligible-verified numeric">1.46</td>
+            <td class="eligible-declared numeric">1.46</td>
+            <td class="numeric">1.46</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">1.46</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Maize</td>
+            <td class="numeric">5.79</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Hedge</td>
+            <td class="numeric">0.06</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Hedge</td>
+            <td class="numeric">0.01</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Hedge</td>
+            <td class="numeric">0.02</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">WHITE</th>
+            <td class="parcel-id"><span class="sbi">SU1239_6729</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">1.84</td>
+            <td class="eligible-verified numeric">1.84</td>
+            <td class="eligible-declared numeric">1.84</td>
+            <td class="numeric">1.84</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Permanent grass</td>
+            <td class="numeric">1.84</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">WHITEGATE</th>
+            <td class="parcel-id"><span class="sbi">SU1239_6810</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">6.69</td>
+            <td class="eligible-verified numeric">6.69</td>
+            <td class="eligible-declared numeric">6.69</td>
+            <td class="numeric">6.69</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Oilseed &ndash; spring</td>
+            <td class="numeric">6.69</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">POND</th>
+            <td class="parcel-id"><span class="sbi">SU1240_9092</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">3.45</td>
+            <td class="eligible-verified numeric">3.41</td>
+            <td class="eligible-declared numeric">3.41</td>
+            <td class="numeric">3.41</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">3.41</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">BIGPOND</th>
+            <td class="parcel-id"><span class="sbi">SU1241_1272</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">9.80</td>
+            <td class="eligible-verified numeric">9.80</td>
+            <td class="eligible-declared numeric">9.80</td>
+            <td class="numeric">9.80</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">9.60</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">HMF</th>
+            <td class="parcel-id"><span class="sbi">SU1241_2790</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">3.44</td>
+            <td class="eligible-verified numeric">3.44</td>
+            <td class="eligible-declared numeric">3.44</td>
+            <td class="numeric">3.44</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">3.34</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">FR</th>
+            <td class="parcel-id"><span class="sbi">SU1241_2976</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">0.34</td>
+            <td class="eligible-verified numeric">0.00</td>
+            <td class="eligible-declared numeric">0.00</td>
+            <td class="numeric">0.00</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Woodland block (ineligible)</td>
+            <td class="numeric">0.00</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">CASTLE</th>
+            <td class="parcel-id"><span class="sbi">SU1241_4250</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">12.43</td>
+            <td class="eligible-verified numeric">12.43</td>
+            <td class="eligible-declared numeric">12.43</td>
+            <td class="numeric">12.43</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Fallow</td>
+            <td class="numeric">12.43</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">30 ACRE</th>
+            <td class="parcel-id"><span class="sbi">SU1241_6165</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">8.93</td>
+            <td class="eligible-verified numeric">8.79</td>
+            <td class="eligible-declared numeric">8.79</td>
+            <td class="numeric">8.79</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Beans</td>
+            <td class="numeric">8.79</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">20 ACRE</th>
+            <td class="parcel-id"><span class="sbi">SU1241_6933</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">11.55</td>
+            <td class="eligible-verified numeric">11.51</td>
+            <td class="eligible-declared numeric">11.51</td>
+            <td class="numeric">11.51</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">11.31</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">BALLOON</th>
+            <td class="parcel-id"><span class="sbi">SU1241_7807</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">6.03</td>
+            <td class="eligible-verified numeric">6.03</td>
+            <td class="eligible-declared numeric">6.03</td>
+            <td class="numeric">6.03</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">6.03</td>
+            <td colspan="2"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">3.77</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">PAUL</th>
+            <td class="parcel-id"><span class="sbi">SU1242_1829</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">6.18</td>
+            <td class="eligible-verified numeric">6.18</td>
+            <td class="eligible-declared numeric">6.18</td>
+            <td class="numeric">6.18</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Oilseed &ndash; spring</td>
+            <td class="numeric">6.18</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
+        <tbody>
+
+          <tr>
+            <th class="parcel-name">TPCASTLE</th>
+            <td class="parcel-id"><span class="sbi">SU1242_2405</span></td>
+            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="parcel-size numeric">4.53</td>
+            <td class="eligible-verified numeric">4.53</td>
+            <td class="eligible-declared numeric">4.53</td>
+            <td class="numeric">4.53</td>
+            <td class="numeric last"><a href="#">Edit</a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="3">Temporary grass</td>
+            <td class="numeric">4.53</td>
+            <td colspan="2"></td>
+          </tr>
+
+        </tbody>
+
+
       </table>
 
 
-      <button class="button" type="submit">Save</button>
-
-
     </form>
+
+
+    <h2 class="heading-medium">Totals</h2>
+
+
+		<table>
+
+      <caption class="visuallyhidden">Land parcels</caption>
+
+      <thead>
+
+        <tr>
+          <th scope="col">Region</th>
+          <th class="numeric" scope="col">Total area (<abbr title="Hectare">ha</abbr>)</th>
+          <th class="numeric" scope="col">Eligible area (<abbr title="Hectare">ha</abbr>)</th>
+          <th class="numeric" scope="col">Total entitlements</th>
+          <th class="numeric last" scope="col">Activated entitlements</th>
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td scope="row">Non-severely disadvantaged area (Non&ndash;SDA)</td>
+          <td class="numeric">251.99</td>
+          <td class="numeric">250.65</td>
+          <td class="numeric">267.75</td>
+          <td class="numeric last">267.65</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+
+    <button class="button" type="submit">Save changes</button>

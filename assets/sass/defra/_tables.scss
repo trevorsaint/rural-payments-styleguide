@@ -66,9 +66,9 @@ table {
 .table {
 
 
-  // Table land entitlements
+  // Table land entitlements (old)
 
-  &-land-entitlements {
+  /*&-land-entitlements {
 
     .parcel-id {
       width: 14%;
@@ -112,6 +112,55 @@ table {
 
       .total {
         font-weight: 700;
+      }
+
+    }
+
+  }*/
+
+
+  // Table land entitlements
+
+  &-land-entitlements {
+
+    .parcel-id {
+      width: 13%;
+    }
+
+    .land-uses {
+      width: 10%;
+    }
+
+    .land-area {
+      width: 10%;
+    }
+
+    .parcel-size {
+      width: 10%;
+    }
+
+    .eligible-verified {
+      width: 15%;
+    }
+
+    .eligible-declared {
+      width: 15%;
+    }
+
+    .eligible-area {
+      width: 12%;
+    }
+
+
+    tbody {
+
+      th,
+      td {
+        vertical-align: top;
+      }
+
+      input {
+        text-align: right;
       }
 
     }
@@ -304,6 +353,50 @@ table {
       content: '▼';
     }
   }
+
+}
+
+
+// Tables with javascript
+
+.js-enabled {
+
+
+  .table {
+
+
+    // Table Land entitlements
+
+    &-land-entitlements {
+
+      tbody {
+
+        tr {
+          display: none;
+
+          &:first-child {
+            display: table-row;
+          }
+
+        }
+
+        &.open {
+          border-top: 2px solid $black;
+          border-bottom: 2px solid $black;
+
+          tr {
+            display: table-row;
+          }
+
+        }
+
+      }
+
+    }
+
+
+  }
+
 
 }
 

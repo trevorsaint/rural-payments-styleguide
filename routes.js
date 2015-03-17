@@ -595,15 +595,6 @@ module.exports = {
       });
 
 
-      // activate your entitlements 2
-      app.get('/pages/activate-entitlements', function(req, res) {
-
-        var data = {doctitle: 'Activate your entitlements'};
-        res.render('pages/activate-entitlements/home', data);
-
-      });
-
-
       // check and submit your removal of land
       app.get('/pages/removal-of-land', function(req, res) {
 
