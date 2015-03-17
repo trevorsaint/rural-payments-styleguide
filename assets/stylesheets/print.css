@@ -1,0 +1,11 @@
+﻿
+
+/* Hide elements */
+
+.phase-banner,
+.business-menu,
+.header-proposition,
+.back-link {
+  display: none !important;
+}
+

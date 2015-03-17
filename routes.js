@@ -571,7 +571,7 @@ module.exports = {
       // basic payment scheme application
       app.get('/pages/basic-payment-scheme-application', function(req, res) {
 
-        var data = {doctitle: 'Basic payment scheme application'};
+        var data = {doctitle: 'BPS application'};
         res.render('pages/basic-payment-scheme-application/home', data);
 
       });
@@ -580,7 +580,7 @@ module.exports = {
         // basic payment scheme application summary
         app.get('/pages/basic-payment-scheme-application/summary', function(req, res) {
 
-          var data = {doctitle: 'Basic payment scheme application summary'};
+          var data = {doctitle: 'BPS application summary'};
           res.render('pages/basic-payment-scheme-application/summary', data);
 
         });
