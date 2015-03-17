@@ -577,11 +577,29 @@ module.exports = {
       });
 
 
+        // basic payment scheme application summary
+        app.get('/pages/basic-payment-scheme-application/summary', function(req, res) {
+
+          var data = {doctitle: 'Basic payment scheme application summary'};
+          res.render('pages/basic-payment-scheme-application/summary', data);
+
+        });
+
+
       // activate your entitlements
       app.get('/pages/activate-your-entitlements', function(req, res) {
 
         var data = {doctitle: 'Activate your entitlements'};
         res.render('pages/activate-your-entitlements/home', data);
+
+      });
+
+
+      // activate your entitlements 2
+      app.get('/pages/activate-entitlements', function(req, res) {
+
+        var data = {doctitle: 'Activate your entitlements'};
+        res.render('pages/activate-entitlements/home', data);
 
       });
 
