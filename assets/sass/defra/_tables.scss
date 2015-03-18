@@ -3,6 +3,8 @@
 // ==========================================================================
 
 
+// Global properties
+
 table {
   margin-bottom: 1.05263em * 2; // 40px
 
@@ -35,7 +37,7 @@ table {
   .form-control {
     @include core-16;
     margin: -5px 0;
-    position: relative; top: -1px; // A little extra finesse
+    position: relative;
     width: auto;
   }
 
@@ -64,59 +66,6 @@ table {
 // Table variations
 
 .table {
-
-
-  // Table land entitlements (old)
-
-  /*&-land-entitlements {
-
-    .parcel-id {
-      width: 14%;
-    }
-
-    .land-use {
-      width: 24%;
-    }
-
-    .land-area {
-      width: 10%;
-    }
-
-    .notes {
-      width: 20%;
-    }
-
-    .entitlement {
-      width: 10%;
-    }
-
-    .action {
-      width: 8%;
-    }
-
-    tbody {
-
-      .parcel-name,
-      .parcel-id {
-        border-bottom-color: $black;
-      }
-
-      th,
-      td {
-        vertical-align: top;
-      }
-
-      input {
-        text-align: right;
-      }
-
-      .total {
-        font-weight: 700;
-      }
-
-    }
-
-  }*/
 
 
   // Table land entitlements
@@ -151,6 +100,18 @@ table {
       width: 12%;
     }
 
+    .edit-activated-area {
+      width: 3%;
+    }
+
+    .form-control {
+      margin: -5px -5px -5px 0;
+    }
+
+    .text-warning {
+      position: relative;
+      top: -1px;
+    }
 
     tbody {
 
@@ -160,6 +121,7 @@ table {
       }
 
       input {
+        @include core-16($tabular-numbers: true);
         text-align: right;
       }
 

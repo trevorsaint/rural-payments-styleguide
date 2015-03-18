@@ -20,7 +20,7 @@
     <form action="/" method="post">
 
 
-      <table class="table-land-entitlements">
+      <table class="table-land-entitlements js-inline-edit">
 
 
         <thead>
@@ -41,12 +41,15 @@
           <tr>
             <th class="parcel-name">BYF</th>
             <td class="parcel-id"><span class="sbi">SU1234_8747</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">3.09</td>
             <td class="eligible-verified numeric">3.09</td>
             <td class="eligible-declared numeric">3.09</td>
-            <td class="numeric">3.09</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">3.09</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="3.09" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -71,12 +74,15 @@
           <tr>
             <th class="parcel-name">FREDS</th>
             <td class="parcel-id"><span class="sbi">SU1234_9365</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">6.67</td>
             <td class="eligible-verified numeric">6.61</td>
             <td class="eligible-declared numeric">6.61</td>
-            <td class="numeric">6.61</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.61</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.61" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -96,17 +102,20 @@
         </tbody>
 
 
-        <tbody class="open">
+        <tbody>
 
           <tr>
             <th class="parcel-name">POORSLOT</th>
             <td class="parcel-id"><span class="sbi">SU1235_2843</span></td>
-            <td class="land-uses"><a href="#">Hide</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">4.97</td>
             <td class="eligible-verified numeric">4.97</td>
             <td class="eligible-declared numeric">4.97</td>
-            <td class="numeric">4.97</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">4.97</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="4.97" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -124,12 +133,15 @@
           <tr>
             <th class="parcel-name">CATH</th>
             <td class="parcel-id"><span class="sbi">SU1235_4938</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">3.72</td>
             <td class="eligible-verified numeric">3.72</td>
             <td class="eligible-declared numeric">3.72</td>
-            <td class="numeric">3.72</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">4.97</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="4.97" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -147,12 +159,15 @@
           <tr>
             <th class="parcel-name">SMITH</th>
             <td class="parcel-id"><span class="sbi">SU1235_7641</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">16.91</td>
             <td class="eligible-verified numeric">16.89</td>
             <td class="eligible-declared numeric">16.89</td>
-            <td class="numeric"><input class="form-control" type="text" value="16.89" size="5"></td>
-            <td class="numeric last"><a href="#">Save</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.89</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.89" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -177,12 +192,14 @@
           <tr>
             <th class="parcel-name">PLANK</th>
             <td class="parcel-id"><span class="sbi">SU1235_0143</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">9.36</td>
             <td class="eligible-verified numeric">9.36</td>
             <td class="eligible-declared numeric">9.36</td>
-            <td class="numeric"><input class="form-control form-control-error" type="text" value="9.36.fs" size="5"></td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">9.36</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="9.36" size="5"></div>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -207,12 +224,15 @@
           <tr>
             <th class="parcel-name">BSH</th>
             <td class="parcel-id"><span class="sbi">SU1235_3947</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">5.03</td>
             <td class="eligible-verified numeric">4.83</td>
             <td class="eligible-declared numeric">4.83</td>
-            <td class="numeric">4.83</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">4.83</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="4.83" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -230,12 +250,15 @@
           <tr>
             <th class="parcel-name">GROUSE</th>
             <td class="parcel-id"><span class="sbi">SU1235_5861</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">3.23</td>
             <td class="eligible-verified numeric">3.23</td>
             <td class="eligible-declared numeric">3.23</td>
-            <td class="numeric">3.23</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">3.23</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="3.23" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -253,12 +276,15 @@
           <tr>
             <th class="parcel-name">CASTLE</th>
             <td class="parcel-id"><span class="sbi">SU1235_7969</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">6.90</td>
             <td class="eligible-verified numeric">6.90</td>
             <td class="eligible-declared numeric">6.90</td>
-            <td class="numeric">6.90</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.90</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.90" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -276,12 +302,15 @@
           <tr>
             <th class="parcel-name">LAWN</th>
             <td class="parcel-id"><span class="sbi">SU1235_9599</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">0.47</td>
             <td class="eligible-verified numeric">0.47</td>
             <td class="eligible-declared numeric">0.47</td>
-            <td class="numeric"><span class="text-warning">9.90 <br> Exceeds parcel size</span></td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value"><span class="text-warning">9.90 <br> Exceeds parcel size</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="9.90" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -299,12 +328,15 @@
           <tr>
             <th class="parcel-name">TIME</th>
             <td class="parcel-id"><span class="sbi">SU1236_1091</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">14.28</td>
             <td class="eligible-verified numeric">14.28</td>
             <td class="eligible-declared numeric">14.28</td>
-            <td class="numeric">14.28</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">14.28</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="14.28" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -322,12 +354,15 @@
           <tr>
             <th class="parcel-name">CHRCH</th>
             <td class="parcel-id"><span class="sbi">SU1236_1658</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">4.88</td>
             <td class="eligible-verified numeric">4.88</td>
             <td class="eligible-declared numeric">4.88</td>
-            <td class="numeric">4.88</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">4.88</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="4.88" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -345,12 +380,15 @@
           <tr>
             <th class="parcel-name">NRCORNER</th>
             <td class="parcel-id"><span class="sbi">SU1236_1720</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">4.71</td>
             <td class="eligible-verified numeric">4.71</td>
             <td class="eligible-declared numeric">4.71</td>
-            <td class="numeric">4.71</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">4.71</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="4.71" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -368,12 +406,15 @@
           <tr>
             <th class="parcel-name">PHIL</th>
             <td class="parcel-id"><span class="sbi">SU1236_3645</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">7.19</td>
             <td class="eligible-verified numeric">7.19</td>
             <td class="eligible-declared numeric">7.19</td>
-            <td class="numeric">7.19</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">7.19</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="7.19" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -391,12 +432,15 @@
           <tr>
             <th class="parcel-name">HILL</th>
             <td class="parcel-id"><span class="sbi">SU1236_3867</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">5.74</td>
             <td class="eligible-verified numeric">7.19</td>
             <td class="eligible-declared numeric">7.19</td>
-            <td class="numeric">7.19</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">7.19</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="7.19" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -414,12 +458,15 @@
           <tr>
             <th class="parcel-name">MID</th>
             <td class="parcel-id"><span class="sbi">SU1236_4225</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">5.35</td>
             <td class="eligible-verified numeric">5.35</td>
             <td class="eligible-declared numeric">5.35</td>
-            <td class="numeric">5.35</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">5.35</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="5.35" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -437,12 +484,15 @@
           <tr>
             <th class="parcel-name">JANE</th>
             <td class="parcel-id"><span class="sbi">SU1236_5930</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">2.82</td>
             <td class="eligible-verified numeric">2.82</td>
             <td class="eligible-declared numeric">2.82</td>
-            <td class="numeric">2.82</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">2.82</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="2.82" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -460,12 +510,15 @@
           <tr>
             <th class="parcel-name">CLERK</th>
             <td class="parcel-id"><span class="sbi">SU1236_6081</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">6.41</td>
             <td class="eligible-verified numeric">6.20</td>
             <td class="eligible-declared numeric">6.20</td>
-            <td class="numeric">6.20</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.20</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.20" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -483,12 +536,15 @@
           <tr>
             <th class="parcel-name">TOM</th>
             <td class="parcel-id"><span class="sbi">SU1236_6559</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">4.56</td>
             <td class="eligible-verified numeric">4.56</td>
             <td class="eligible-declared numeric">4.56</td>
-            <td class="numeric">4.56</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">4.56</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="4.56" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -506,12 +562,15 @@
           <tr>
             <th class="parcel-name">LAWN</th>
             <td class="parcel-id"><span class="sbi">SU1236_9816</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">1.93</td>
             <td class="eligible-verified numeric">1.93</td>
             <td class="eligible-declared numeric">1.93</td>
-            <td class="numeric">1.93</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">1.93</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="1.93" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -529,12 +588,15 @@
           <tr>
             <th class="parcel-name">TOP</th>
             <td class="parcel-id"><span class="sbi">SU1237_1323</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">7.41</td>
             <td class="eligible-verified numeric">7.41</td>
             <td class="eligible-declared numeric">7.41</td>
-            <td class="numeric">7.41</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">7.41</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="7.41" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -552,12 +614,15 @@
           <tr>
             <th class="parcel-name">3RD</th>
             <td class="parcel-id"><span class="sbi">SU1237_4042</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">12.01</td>
             <td class="eligible-verified numeric">12.00</td>
             <td class="eligible-declared numeric">12.00</td>
-            <td class="numeric">12.00</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">12.00</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="12.00" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -582,12 +647,15 @@
           <tr>
             <th class="parcel-name">3RD</th>
             <td class="parcel-id"><span class="sbi">SU1237_6127</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">11.01</td>
             <td class="eligible-verified numeric">11.01</td>
             <td class="eligible-declared numeric">11.01</td>
-            <td class="numeric">11.01</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">11.01</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="11.01" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -612,12 +680,15 @@
           <tr>
             <th class="parcel-name">1ST</th>
             <td class="parcel-id"><span class="sbi">SU1237_8618</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">6.88</td>
             <td class="eligible-verified numeric">6.82</td>
             <td class="eligible-declared numeric">6.82</td>
-            <td class="numeric">6.82</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.82</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.82" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -635,12 +706,15 @@
           <tr>
             <th class="parcel-name">LARGE</th>
             <td class="parcel-id"><span class="sbi">SU1238_0575</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">7.03</td>
             <td class="eligible-verified numeric">6.95</td>
             <td class="eligible-declared numeric">6.95</td>
-            <td class="numeric">6.95</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.95</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.95" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -658,12 +732,12 @@
           <tr>
             <th class="parcel-name">ALLOT</th>
             <td class="parcel-id"><span class="sbi">SU1238_1350</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">1.80</td>
             <td class="eligible-verified numeric">1.80</td>
             <td class="eligible-declared numeric">1.80</td>
             <td class="numeric">1.80</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -681,12 +755,15 @@
           <tr>
             <th class="parcel-name">DAIRY</th>
             <td class="parcel-id"><span class="sbi">SU1238_4590</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">4.91</td>
             <td class="eligible-verified numeric">4.80</td>
             <td class="eligible-declared numeric">4.80</td>
-            <td class="numeric">4.80</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">4.80</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="4.80" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -711,12 +788,15 @@
           <tr>
             <th class="parcel-name">BRIDGET</th>
             <td class="parcel-id"><span class="sbi">SU1238_7884</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">1.68</td>
             <td class="eligible-verified numeric">1.68</td>
             <td class="eligible-declared numeric">1.68</td>
-            <td class="numeric">1.68</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">1.68</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="1.68" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -748,12 +828,15 @@
           <tr>
             <th class="parcel-name">BARN</th>
             <td class="parcel-id"><span class="sbi">SU1239_0602</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">1.60</td>
             <td class="eligible-verified numeric">1.57</td>
             <td class="eligible-declared numeric">1.57</td>
-            <td class="numeric">1.57</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">1.57</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="1.57" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -771,12 +854,15 @@
           <tr>
             <th class="parcel-name">CRICKET</th>
             <td class="parcel-id"><span class="sbi">SU1239_2222</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">2.77</td>
             <td class="eligible-verified numeric">2.77</td>
             <td class="eligible-declared numeric">2.77</td>
-            <td class="numeric">2.77</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">2.77</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="2.77" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -794,12 +880,15 @@
           <tr>
             <th class="parcel-name">TOPGRND</th>
             <td class="parcel-id"><span class="sbi">SU1239_2307</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">1.46</td>
             <td class="eligible-verified numeric">1.46</td>
             <td class="eligible-declared numeric">1.46</td>
-            <td class="numeric">1.46</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">1.46</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="1.46" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -845,12 +934,15 @@
           <tr>
             <th class="parcel-name">WHITE</th>
             <td class="parcel-id"><span class="sbi">SU1239_6729</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">1.84</td>
             <td class="eligible-verified numeric">1.84</td>
             <td class="eligible-declared numeric">1.84</td>
-            <td class="numeric">1.84</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">1.84</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="1.84" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -868,12 +960,15 @@
           <tr>
             <th class="parcel-name">WHITEGATE</th>
             <td class="parcel-id"><span class="sbi">SU1239_6810</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">6.69</td>
             <td class="eligible-verified numeric">6.69</td>
             <td class="eligible-declared numeric">6.69</td>
-            <td class="numeric">6.69</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.69</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.69" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -891,12 +986,15 @@
           <tr>
             <th class="parcel-name">POND</th>
             <td class="parcel-id"><span class="sbi">SU1240_9092</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">3.45</td>
             <td class="eligible-verified numeric">3.41</td>
             <td class="eligible-declared numeric">3.41</td>
-            <td class="numeric">3.41</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">3.41</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="3.41" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -914,12 +1012,15 @@
           <tr>
             <th class="parcel-name">BIGPOND</th>
             <td class="parcel-id"><span class="sbi">SU1241_1272</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">9.80</td>
             <td class="eligible-verified numeric">9.80</td>
             <td class="eligible-declared numeric">9.80</td>
-            <td class="numeric">9.80</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">9.80</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="9.80" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -937,12 +1038,15 @@
           <tr>
             <th class="parcel-name">HMF</th>
             <td class="parcel-id"><span class="sbi">SU1241_2790</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">3.44</td>
             <td class="eligible-verified numeric">3.44</td>
             <td class="eligible-declared numeric">3.44</td>
-            <td class="numeric">3.44</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">3.44</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="3.44" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -960,12 +1064,15 @@
           <tr>
             <th class="parcel-name">FR</th>
             <td class="parcel-id"><span class="sbi">SU1241_2976</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">0.34</td>
             <td class="eligible-verified numeric">0.00</td>
             <td class="eligible-declared numeric">0.00</td>
-            <td class="numeric">0.00</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">0.00</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="0.00" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -983,12 +1090,15 @@
           <tr>
             <th class="parcel-name">CASTLE</th>
             <td class="parcel-id"><span class="sbi">SU1241_4250</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">12.43</td>
             <td class="eligible-verified numeric">12.43</td>
             <td class="eligible-declared numeric">12.43</td>
-            <td class="numeric">12.43</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">12.43</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="12.43" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -1006,12 +1116,15 @@
           <tr>
             <th class="parcel-name">30 ACRE</th>
             <td class="parcel-id"><span class="sbi">SU1241_6165</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">8.93</td>
             <td class="eligible-verified numeric">8.79</td>
             <td class="eligible-declared numeric">8.79</td>
-            <td class="numeric">8.79</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">8.79</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="8.79" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -1029,12 +1142,15 @@
           <tr>
             <th class="parcel-name">20 ACRE</th>
             <td class="parcel-id"><span class="sbi">SU1241_6933</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">11.55</td>
             <td class="eligible-verified numeric">11.51</td>
             <td class="eligible-declared numeric">11.51</td>
-            <td class="numeric">11.51</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">11.51</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="11.51" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -1052,12 +1168,15 @@
           <tr>
             <th class="parcel-name">BALLOON</th>
             <td class="parcel-id"><span class="sbi">SU1241_7807</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">6.03</td>
             <td class="eligible-verified numeric">6.03</td>
             <td class="eligible-declared numeric">6.03</td>
-            <td class="numeric">6.03</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.03</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.03" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -1082,12 +1201,15 @@
           <tr>
             <th class="parcel-name">PAUL</th>
             <td class="parcel-id"><span class="sbi">SU1242_1829</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">6.18</td>
             <td class="eligible-verified numeric">6.18</td>
             <td class="eligible-declared numeric">6.18</td>
-            <td class="numeric">6.18</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">6.18</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="6.18" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>
@@ -1105,12 +1227,15 @@
           <tr>
             <th class="parcel-name">TPCASTLE</th>
             <td class="parcel-id"><span class="sbi">SU1242_2405</span></td>
-            <td class="land-uses"><a href="#">Show</a></td>
+            <td class="land-uses"><a class="toggle-details" href="#">Show</a></td>
             <td class="parcel-size numeric">4.53</td>
             <td class="eligible-verified numeric">4.53</td>
             <td class="eligible-declared numeric">4.53</td>
-            <td class="numeric">4.53</td>
-            <td class="numeric last"><a href="#">Edit</a></td>
+            <td class="numeric">
+              <div class="inline-value">4.53</div>
+              <div class="inline-input js-hidden"><input class="form-control" type="text" value="4.53" size="5"></div>
+            </td>
+            <td class="edit-activated-area numeric last"><a class="inline-edit" href="#">Edit</a></td>
           </tr>
 
           <tr>

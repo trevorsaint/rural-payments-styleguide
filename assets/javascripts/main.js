@@ -468,6 +468,77 @@ function toggleContent() {
 };
 
 
+// Inline edititing
+
+function inlineEdit() {
+
+
+  if ($('.js-inline-edit').length>0) {
+
+
+    // Toggle details
+
+    $('.toggle-details').on('click', function(e) {
+
+
+      e.preventDefault();
+
+
+      var parent = $(this).closest('tbody');
+
+
+      if ((parent).hasClass('open')) {
+
+        $(this).text('Show');
+        parent.removeAttr('class', 'open');
+
+      } else {
+
+        $(this).text('Hide');
+        parent.addClass('open');
+
+      }
+
+    });
+
+
+    // Inline editing
+
+    $('.inline-edit').on('click', function(e) {
+
+
+      e.preventDefault();
+
+
+      var parent = $(this).closest('tr');
+      var value = parent.find('.inline-value');
+      var input = parent.find('.inline-input');
+
+      if ((input).hasClass('js-hidden')) {
+
+        $(this).text('Save');
+        input.removeClass('js-hidden');
+        value.addClass('js-hidden');
+
+      } else {
+
+        $(this).text('Edit');
+        value.removeClass('js-hidden');
+        input.addClass('js-hidden');
+
+      }
+
+    });
+
+
+  }
+
+
+}
+
+
+
+
 // Document ready
 
 (function() {
@@ -480,6 +551,7 @@ function toggleContent() {
   collapsibles();
   toggleContent();
   tableSortable();
+  inlineEdit();
 
 })();
 
