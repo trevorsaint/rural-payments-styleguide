@@ -1,6 +1,6 @@
 {
-  "name": "capd-styleguide",
-  "description": "A simple styleguide for CAPD services",
+  "name": "rural-payments-styleguide",
+  "description": "A styleguide for the Rural Payments project",
   "version": "0.0.1",
   "private": true,
   "engines": {
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Defra/capd-styleguide.git"
+    "url": "https://github.com/Defra/rural-payments-styleguide.git"
   },
   "scripts": {
     "start": "node app.js"
