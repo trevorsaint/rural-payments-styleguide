@@ -54,8 +54,10 @@
     <p class="text">Click on the label &quot;Full name&quot; to bring focus to the form field.</p>
 
     <div class="example">
-      <label class="form-label" for="full-name-f1">Full name</label>
-      <input class="form-control" id="full-name-f1" type="text">
+      <form>
+        <label class="form-label" for="full-name-f1">Full name</label>
+        <input class="form-control" id="full-name-f1" type="text">
+      </form>
     </div>
 
 
@@ -65,14 +67,16 @@
     <p class="text">Ensure there is sufficient spacing between form elements.</p>
 
     <div class="example">
-      <div class="form-group">
-        <label class="form-label" for="first-name-2">First name</label>
-        <input class="form-control" id="first-name-2" type="text">
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="last-name-2">Last name</label>
-        <input class="form-control" id="last-name-2" type="text">
-      </div>
+      <form>
+        <div class="form-group">
+          <label class="form-label" for="first-name-2">First name</label>
+          <input class="form-control" id="first-name-2" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="last-name-2">Last name</label>
+          <input class="form-control" id="last-name-2" type="text">
+        </div>
+      </form>
     </div>
 
 
@@ -87,11 +91,13 @@
     </ul>
 
     <div class="example">
-      <label class="form-label" for="ni-number">
-        National Insurance number
-        <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
-      </label>
-      <input class="form-control" id="ni-number" type="text">
+      <form>
+        <label class="form-label" for="ni-number">
+          National Insurance number
+          <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
+        </label>
+        <input class="form-control" id="ni-number" type="text">
+      </form>
     </div>
 
 
@@ -100,32 +106,36 @@
 
     <div class="example">
 
-      <fieldset>
+      <form>
 
-        <legend class="form-label">Date of birth</legend>
+        <fieldset>
 
-        <div class="form-date">
+          <legend class="form-label">Date of birth</legend>
 
-          <p class="form-hint">For example, 31 3 1980</p>
+          <div class="form-date">
 
-        	<div class="form-group form-group-day">
-        		<label for="dob-day">Day</label>
-        		<input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
-        	</div>
+            <p class="form-hint">For example, 31 3 1980</p>
 
-        	<div class="form-group form-group-month">
-        		<label for="dob-month">Month</label>
-        		<input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
-        	</div>
+          	<div class="form-group form-group-day">
+          		<label for="dob-day">Day</label>
+          		<input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+          	</div>
 
-        	<div class="form-group form-group-year">
-        		<label for="dob-year">Year</label>
-        		<input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
-        	</div>
+          	<div class="form-group form-group-month">
+          		<label for="dob-month">Month</label>
+          		<input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+          	</div>
 
-        </div>
+          	<div class="form-group form-group-year">
+          		<label for="dob-year">Year</label>
+          		<input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+          	</div>
 
-      </fieldset>
+          </div>
+
+        </fieldset>
+
+      </form>
 
     </div>
 
@@ -141,50 +151,54 @@
 
       <div class="form-group form-group-compound">
 
-        <fieldset class="inline">
+        <form>
 
-          <legend class="form-label">Is this person an owner?</legend>
+          <fieldset class="inline">
 
-          <div class="form-group form-group-compound">
+            <legend class="form-label">Is this person an owner?</legend>
 
-            <label class="block-label" data-target="person-dob" for="radio-indent-1">
-              <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
-              Yes
-            </label>
+            <div class="form-group form-group-compound">
 
-            <label class="block-label" for="radio-indent-2">
-              <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
-              No
-            </label>
+              <label class="block-label" data-target="person-dob" for="radio-indent-1">
+                <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
+                Yes
+              </label>
 
-          </div>
-
-          <div class="panel-indent js-hidden" id="person-dob">
-
-            <div class="form-date">
-
-              <label class="form-label">Date this person became an owner</label>
-
-            	<div class="form-group form-group-day">
-            		<label class="form-label" for="dob-day-2">Day</label>
-            		<input class="form-control" id="dob-day-2" type="text">
-            	</div>
-
-            	<div class="form-group form-group-month">
-            		<label class="form-label" for="dob-month-2">Month</label>
-            		<input class="form-control" id="dob-month-2" type="text">
-            	</div>
-
-            	<div class="form-group form-group-year">
-            		<label class="form-label" for="dob-year-2">Year</label>
-            		<input class="form-control" id="dob-year-2" type="text">
-            	</div>
+              <label class="block-label" for="radio-indent-2">
+                <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
+                No
+              </label>
 
             </div>
 
-          </div>
+            <div class="panel-indent js-hidden" id="person-dob">
 
-        </fieldset>
+              <div class="form-date">
+
+                <label class="form-label">Date this person became an owner</label>
+
+              	<div class="form-group form-group-day">
+              		<label class="form-label" for="dob-day-2">Day</label>
+              		<input class="form-control" id="dob-day-2" type="text">
+              	</div>
+
+              	<div class="form-group form-group-month">
+              		<label class="form-label" for="dob-month-2">Month</label>
+              		<input class="form-control" id="dob-month-2" type="text">
+              	</div>
+
+              	<div class="form-group form-group-year">
+              		<label class="form-label" for="dob-year-2">Year</label>
+              		<input class="form-control" id="dob-year-2" type="text">
+              	</div>
+
+              </div>
+
+            </div>
+
+          </fieldset>
+
+        </form>
 
       </div>
 
@@ -202,15 +216,19 @@
 
     <div class="example">
 
-      <label class="form-label" for="legal-status">Legal status</label>
+      <form>
 
-      <select class="form-control-select" id="legal-status">
-        <option>-- Please make a selection --</option>
-        <option value="1">Charitable Interest Organisation</option>
-        <option value="2">Community Interest Company</option>
-        <option value="3">Government (Central)</option>
-        <option value="4">Government Limited Liability Partnership</option>
-      </select>
+        <label class="form-label" for="legal-status">Legal status</label>
+
+        <select class="form-control-select" id="legal-status">
+          <option>-- Please make a selection --</option>
+          <option value="1">Charitable Interest Organisation</option>
+          <option value="2">Community Interest Company</option>
+          <option value="3">Government (Central)</option>
+          <option value="4">Government Limited Liability Partnership</option>
+        </select>
+
+      </form>
 
     </div>
 
@@ -220,23 +238,27 @@
 
     <div class="example">
 
-      <fieldset>
+      <form>
 
-        <legend class="form-label">What are you looking for?</legend>
+        <fieldset>
 
-        <div class="form-search">
+          <legend class="form-label">What are you looking for?</legend>
 
-          <div class="form-group-search">
-            <input class="form-control" id="search" type="search">
+          <div class="form-search">
+
+            <div class="form-group-search">
+              <input class="form-control" id="search" type="search">
+            </div>
+
+            <div class="form-group-button">
+              <button class="button" type="button">Search</button>
+            </div>
+
           </div>
 
-          <div class="form-group-button">
-            <button class="button" type="button">Search</button>
-          </div>
+        </fieldset>
 
-        </div>
-
-      </fieldset>
+      </form>
 
     </div>
 
@@ -245,8 +267,10 @@
     <h3 class="heading-medium">Textarea</h3>
 
 		<div class="example">
-      <label class="form-label" for="enquiry">Enquiry</label>
-      <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
+  		<form>
+        <label class="form-label" for="enquiry">Enquiry</label>
+        <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
+  		</form>
 		</div>
 
 
@@ -265,40 +289,53 @@
 
     <div class="example">
 
-      <fieldset class="inline">
+      <form>
 
-        <legend class="form-label visuallyhidden">Do you know their National Insurance number?</legend>
+        <fieldset class="inline">
 
-        <div class="form-group form-group-compound">
+          <legend class="form-label visuallyhidden">Do you know their National Insurance number?</legend>
 
-          <label class="block-label" for="radio-inline-1">
-            <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
-          </label>
+          <div class="form-group form-group-compound">
 
-          <label class="block-label" for="radio-inline-2">
-            <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
-          </label>
+            <label class="block-label" for="radio-inline-1">
+              <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
+            </label>
 
-        </div>
+            <label class="block-label" for="radio-inline-2">
+              <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
+            </label>
 
-      </fieldset>
+          </div>
+
+        </fieldset>
+
+      </form>
 
     </div>
 
     <div class="example">
-      <label class="block-label" for="radio-1">
-        <input id="radio-1" name="radio-group" value="Northern Ireland" type="radio">
-        Northern Ireland
-      </label>
-      <label class="block-label" for="radio-2">
-        <input id="radio-2" name="radio-group" value="Isle of Man or the Channel Islands" type="radio">
-        Isle of Man or the Channel Islands
-      </label>
-      <p class="form-block">or</p>
-      <label class="block-label" for="radio-3">
-        <input id="radio-3" name="radio-group" value="I am a British citizen living abroad" type="radio">
-        I am a British citizen living abroad
-      </label>
+
+      <form>
+
+        <label class="block-label" for="radio-1">
+          <input id="radio-1" name="radio-group" value="Northern Ireland" type="radio">
+          Northern Ireland
+        </label>
+
+        <label class="block-label" for="radio-2">
+          <input id="radio-2" name="radio-group" value="Isle of Man or the Channel Islands" type="radio">
+          Isle of Man or the Channel Islands
+        </label>
+
+        <p class="form-block">or</p>
+
+        <label class="block-label" for="radio-3">
+          <input id="radio-3" name="radio-group" value="I am a British citizen living abroad" type="radio">
+          I am a British citizen living abroad
+        </label>
+
+      </form>
+
     </div>
 
 
@@ -315,7 +352,7 @@
     </div>
 
     <div class="example">
-      <form class="form">
+      <form>
         <fieldset>
           <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
           <p>Select all that apply</p>
@@ -338,12 +375,14 @@
     <p>Large hit areas aren't always appropriate.</p>
 
     <div class="example">
-      <label class="form-label" for="telephone-number">Enter your telephone number</label>
-        <input class="form-control" id="telephone-number" type="text">
-        <label class="form-checkbox" for="checkbox-telephone-number">
-        <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
-        I need to be contacted using a text phone
-      </label>
+      <form>
+        <label class="form-label" for="telephone-number">Enter your telephone number</label>
+          <input class="form-control" id="telephone-number" type="text">
+          <label class="form-checkbox" for="checkbox-telephone-number">
+          <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
+          I need to be contacted using a text phone
+        </label>
+      </form>
     </div>
 
 
@@ -355,37 +394,52 @@
     <p>Click on &quot;Yes&quot; to see how this works.</p>
 
     <div class="example">
-      <form class="form">
+
+      <form>
+
         <fieldset class="inline">
+
           <legend class="form-label">Do you know their National Insurance number?</legend>
+
           <div class="form-group form-group-compound">
+
             <label class="block-label" data-target="example-ni-number" for="radio-indent-3">
               <input id="radio-indent-3" name="radio-indent-group" value="Yes" type="radio">
               Yes
             </label>
+
             <label class="block-label" for="radio-indent-4">
               <input id="radio-indent-4" name="radio-indent-group" value="No" type="radio">
               No
             </label>
+
           </div>
+
           <div class="panel-indent js-hidden" id="example-ni-number">
             <label class="form-label" for="national-insurance">National Insurance number</label>
             <input class="form-control" id="national-insurance" type="text">
           </div>
-        </fieldset>
-      </form>
-    </div>
 
+        </fieldset>
+
+      </form>
+
+    </div>
 
 
     <p>Click on &quot;Citizen of a different country&quot; to see how this works.</p>
 
 
     <div class="example">
-      <form class="form">
+
+      <form>
+
         <fieldset>
+
           <legend class="form-label-bold">What is your nationality?</legend>
+
           <p>Select all options that are relevant to you.</p>
+
           <div class="form-group form-group-compound">
 
             <label class="block-label" for="nationality-british">
@@ -411,6 +465,7 @@
           </div>
 
       </form>
+
     </div>
 
 
