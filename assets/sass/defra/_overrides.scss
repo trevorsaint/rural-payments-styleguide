@@ -34,14 +34,13 @@ body {
 }
 
 
+// For loading purposes
 
-// Content
-
-#content {
-  min-height: 300px;
-  position: relative;
+#global-header,
+#global-header-bar {
+	position: relative;
+	z-index: 12; // Sit above loading...
 }
-
 
 
 // Main heading no back link
