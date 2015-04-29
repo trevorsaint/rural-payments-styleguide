@@ -10,12 +10,12 @@ strong, b {
 // Text warning
 
 .text-warning {
-  color: $warning-color;
+  color: $error-colour;
   display: block;
 
   &:before {
     @include border-radius(50%);
-    background-color: $warning-background;
+    background-color: $error-colour;
     content: '!';
     color: $white;
     display: inline-block;
@@ -48,32 +48,7 @@ strong, b {
   }
 
   dl, ul {
-    color: $secondary-text-colour;
     margin: .5em 0 0 0;
-  }
-
-}
-
-
-// Link secondary
-
-.link-secondary {
-  color: $link-secondary-color;
-
-  &:link {
-    color: $link-secondary-color;
-  }
-
-  &:visited {
-    color: $link-secondary-visited-color;
-  }
-
-  &:hover {
-    color: $link-secondary-hover-color;
-  }
-
-  &:active {
-    color: $link-secondary-active-color;
   }
 
 }

@@ -1,7 +1,7 @@
 // Cross-browser shims
 // Ways of normalising properties across browsers.
 
-@import "_conditionals";
+@import "conditionals";
 
 // From: https://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/
 
@@ -21,6 +21,17 @@
   @if $min-height != "" {
     min-height: $min-height;
   }
+
+  @include ie-lte(7) {
+    zoom: 1;
+    display: inline;
+  }
+
+  @include ie(6) {
+    @if $min-height != "" {
+      height: $min-height;
+    }
+  }
 }
 
 
@@ -36,5 +47,8 @@
     content: "";
     display: block;
     clear: both;
+  }
+  @include ie-lte(7) {
+    zoom: 1;
   }
 }
