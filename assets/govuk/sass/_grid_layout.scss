@@ -37,32 +37,20 @@ $site-width: 960px;
 // }
 %outdent-to-full-width {
   margin-left: -$gutter-half;
-  margin-left: -$gutter-half;
+  margin-right: -$gutter-half;
   @include media(tablet){
     margin-left: -$gutter;
     margin-right: -$gutter;
   }
 }
 
-//
-// Usage:
-//
-//   .grid-row {
-//     @extend %grid-row;
-//   }
-
-%grid-row {
-  @extend %contain-floats;
-  margin: 0 (-$gutter-half);
-}
-
 // An extendable selector to define a row for grid columns to sit in
 //
 // Usage:
 //
-//   .grid-row {
-//     @extend %grid-row;
-//   }
+// .grid-row {
+//   @extend %grid-row;
+// }
 
 %grid-row {
   @extend %contain-floats;
@@ -73,7 +61,7 @@ $site-width: 960px;
 // Creates a cross browser grid column with a standardised gutter between the
 // columns. Widths should be defined as fractions of the full desktop width
 // they want to fill. By default they break to become full width at tablet size
-// but that can be configured to be dektop using the `$full-width` argument.
+// but that can be configured to be desktop using the `$full-width` argument.
 //
 // Usage:
 //
@@ -93,9 +81,9 @@ $site-width: 960px;
 //     @include grid-column( 1/3, $full-width: desktop );
 //   }
 
-@mixin grid-column($width, $full-width: tablet) {
+@mixin grid-column($width, $full-width: tablet, $float: left) {
   @include media($full-width){
-    float: left;
+    float: $float;
     width: percentage($width);
   }
   @include ie-lte(7){
@@ -103,7 +91,7 @@ $site-width: 960px;
   }
 
   padding: 0 $gutter-half;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
 
