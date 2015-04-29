@@ -9,3 +9,4 @@ gems/
 npm-debug.log
 files
 target/
+tests/
