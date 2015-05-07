@@ -9,7 +9,7 @@
 // @import 'themes/earthsong';
 // @import 'themes/freshcut';
 // @import 'themes/frontier';
-// @import 'themes/github';
+@import 'themes/github';
 // @import 'themes/gloom';
 // @import 'themes/glowfish';
 // @import 'themes/goldfish';
@@ -44,7 +44,7 @@
 // @import 'themes/sourlick';
 // @import 'themes/spearmint';
 // @import 'themes/stark';
-@import 'themes/super';
+// @import 'themes/super';
 // @import 'themes/tonic';
 // @import 'themes/tribal';
 // @import 'themes/tron';
@@ -147,7 +147,8 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   color: $codePrimaryColor;
-  background-color: $codeBackgroundColor;
+  // background-color: $codeBackgroundColor;
+  background-color: $grey-4; // Override
   // border-radius: 4px;
   padding: 10px;
 
@@ -156,7 +157,8 @@ pre {
     font-size: 14px;
     color: $codePrimaryColor;
     white-space: pre-wrap;
-    background-color: $codeBackgroundColor;
+    // background-color: $codeBackgroundColor;
+    background-color: $grey-4; // Override
     border-radius: 0;
   }
 }
