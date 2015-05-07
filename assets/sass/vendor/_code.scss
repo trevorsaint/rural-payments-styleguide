@@ -1,0 +1,162 @@
+// @import 'themes/arstotzka';
+// @import 'themes/azure';
+// @import 'themes/pastel';
+// @import 'themes/boxuk'; 
+// @import 'themes/carbonight';
+// @import 'themes/chocolate';
+// @import 'themes/crisp';
+// @import 'themes/darkside';
+// @import 'themes/earthsong';
+// @import 'themes/freshcut';
+// @import 'themes/frontier';
+// @import 'themes/github';
+// @import 'themes/gloom';
+// @import 'themes/glowfish';
+// @import 'themes/goldfish';
+// @import 'themes/grunge';
+// @import 'themes/halflife';
+// @import 'themes/hyrule';
+// @import 'themes/iceberg';
+// @import 'themes/juicy';
+// @import 'themes/keen';
+// @import 'themes/kiwi';
+// @import 'themes/laravel';
+// @import 'themes/lavender';
+// @import 'themes/legacy';
+// @import 'themes/mellow';
+// @import 'themes/mintchoc';
+// @import 'themes/mud';
+// @import 'themes/otakon';
+// @import 'themes/pastel';
+// @import 'themes/patriot';
+// @import 'themes/peacock';
+// @import 'themes/peacocksInSpace';
+// @import 'themes/peel';
+// @import 'themes/piggy';
+// @import 'themes/potpourri';
+// @import 'themes/rainbow';
+// @import 'themes/revelation';
+// @import 'themes/shrek';
+// @import 'themes/slate';
+// @import 'themes/slime';
+// @import 'themes/snappy';
+// @import 'themes/solarflare';
+// @import 'themes/sourlick';
+// @import 'themes/spearmint';
+// @import 'themes/stark';
+@import 'themes/super';
+// @import 'themes/tonic';
+// @import 'themes/tribal';
+// @import 'themes/tron';
+// @import 'themes/turnip';
+// @import 'themes/yule';
+// @import 'themes/zacks';
+
+
+code,  // Code
+kbd,   // Keyboard Input
+pre,   // Preformatted 
+samp { // Sample Output
+  // font-family: 'SourceCodePro', Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: monospace;
+}
+
+code {
+  // Inline code
+  padding: 2px 4px;
+  //font-size: 90%;
+  color: $codePrimaryColor;
+  background-color: $codeBackgroundColor;
+  white-space: nowrap;
+  //border-radius: 4px;
+
+    .pln {
+      color: $codePln;
+    }
+
+    .str {
+      color: $codeStr;
+    }
+
+    .kwd {
+      color: $codeKwd;
+    }
+
+    .com {
+      color: $codeCom;
+    }
+
+    .typ {
+      color: $codeTyp;
+    }
+
+    .lit {
+      color: $codeLit;
+    }
+
+    .pun, {
+      color: $codePun;
+    }
+
+    .opn {
+      color: $codeOpn;
+    }
+
+    .clo {
+      color: $codeClo;
+    }
+
+    .tag {
+      color: $codeTag;
+    }
+
+    .atn {
+      color: $codeAtn;
+    }
+
+    .atv {
+      color: $codeAtv;
+    }
+    
+    .dec {
+      color: $codeDec;
+    }
+
+    .var {
+      color: $codeVar;
+    }
+
+    .fun {
+      color: $codeFun;
+    }
+}
+
+// User input typically entered via keyboard
+kbd {
+  padding: 2px 4px;
+  //font-size: 90%;
+  color: $codePrimaryColor;
+  background-color: $codeBackgroundColor;
+  border-radius: 2px;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+}
+
+// Blocks of code
+pre {
+  display: block;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: $codePrimaryColor;
+  background-color: $codeBackgroundColor;
+  // border-radius: 4px;
+  padding: 10px;
+
+  code {
+    -moz-osx-font-smoothing: auto;
+    font-size: 14px;
+    color: $codePrimaryColor;
+    white-space: pre-wrap;
+    background-color: $codeBackgroundColor;
+    border-radius: 0;
+  }
+}

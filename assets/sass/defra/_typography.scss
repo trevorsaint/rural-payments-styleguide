@@ -1,8 +1,9 @@
 // Typography
 // ==========================================================================
 
-
-strong, b {
+ 
+b,
+strong {
   font-weight: bold;
 }
 
@@ -47,9 +48,23 @@ strong, b {
     @include bold-48();
   }
 
-  dl, ul {
+  dl, 
+  ul {
     margin: .5em 0 0 0;
   }
 
+}
+
+
+// Code blocks
+
+pre {
+  margin-bottom: em(40);
+  line-height: 1.5;
+}
+
+pre, 
+code {
+  border: 0 none;
 }
 
