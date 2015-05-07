@@ -192,7 +192,11 @@ module.exports = {
       // my account
       app.get('/pages/my-account', function(req, res) {
 
-        var data = {doctitle: 'My account'};
+        var data = {
+          doctitle: 'My account',
+          businessMenu: true
+        };
+        
         res.render('pages/my-account/home', data);
 
       });
@@ -201,7 +205,11 @@ module.exports = {
       // personal details
       app.get('/pages/personal-details', function(req, res) {
 
-        var data = {doctitle: 'Personal details'};
+        var data = {
+          doctitle: 'Personal details',
+          businessMenu: true
+        };
+        
         res.render('pages/personal-details/home', data);
 
       });
@@ -255,7 +263,11 @@ module.exports = {
       // bps application
       app.get('/pages/bps-application', function(req, res) {
 
-        var data = {doctitle: 'BPS application'};
+        var data = {
+          doctitle: 'BPS application',
+          businessMenu: true
+        };
+        
         res.render('pages/bps-application/home', data);
 
       });
@@ -266,7 +278,8 @@ module.exports = {
 
         var data = {
           doctitle: 'Manage land',
-          openLayers: true
+          openLayers: true,
+          businessMenu: true
         };
 
         res.render('pages/manage-land/home', data);
@@ -447,7 +460,10 @@ module.exports = {
         // personal details
         app.get('/pages/confirm-journey/personal-details', function(req, res) {
 
-          var data = {doctitle: 'Personal details'};
+          var data = {
+            doctitle: 'Personal details'
+          };
+          
           res.render('pages/confirm-journey/personal-details/home', data);
 
         });
@@ -553,7 +569,11 @@ module.exports = {
       // business details
       app.get('/pages/business-details', function(req, res) {
 
-        var data = {doctitle: 'Business details'};
+        var data = {
+          doctitle: 'Business details',
+          businessMenu: true
+        };
+        
         res.render('pages/business-details/home', data);
 
       });
@@ -562,7 +582,11 @@ module.exports = {
       // efas
       app.get('/pages/efas', function(req, res) {
 
-        var data = {doctitle: 'Ecological focus areas'};
+        var data = {
+          doctitle: 'Ecological focus areas',
+          businessMenu: true
+        };
+        
         res.render('pages/efas/home', data);
 
       });
@@ -571,7 +595,11 @@ module.exports = {
       // basic payment scheme application
       app.get('/pages/basic-payment-scheme-application', function(req, res) {
 
-        var data = {doctitle: 'BPS application'};
+        var data = {
+          doctitle: 'BPS application',
+          businessMenu: true
+        };
+        
         res.render('pages/basic-payment-scheme-application/home', data);
 
       });
@@ -580,7 +608,11 @@ module.exports = {
         // basic payment scheme application summary
         app.get('/pages/basic-payment-scheme-application/summary', function(req, res) {
 
-          var data = {doctitle: 'BPS application summary'};
+          var data = {
+            doctitle: 'BPS application summary',
+            businessMenu: true
+          };
+          
           res.render('pages/basic-payment-scheme-application/summary', data);
 
         });
@@ -589,7 +621,11 @@ module.exports = {
       // activate your entitlements
       app.get('/pages/activate-your-entitlements', function(req, res) {
 
-        var data = {doctitle: 'Activate your entitlements'};
+        var data = {
+          doctitle: 'Activate your entitlements',
+          businessMenu: true
+        };
+        
         res.render('pages/activate-your-entitlements/home', data);
 
       });
@@ -598,7 +634,11 @@ module.exports = {
       // check and submit your removal of land
       app.get('/pages/removal-of-land', function(req, res) {
 
-        var data = {doctitle: 'Check and submit your removal of land'};
+        var data = {
+          doctitle: 'Check and submit your removal of land',
+          businessMenu: true
+        };
+        
         res.render('pages/removal-of-land/home', data);
 
       });
@@ -616,7 +656,11 @@ module.exports = {
       // apply for the basic payment scheme
       app.get('/pages/apply-for-the-basic-payment-application', function(req, res) {
 
-        var data = {doctitle: 'Apply for the basic payment scheme'};
+        var data = {
+          doctitle: 'Apply for the basic payment scheme',
+          businessMenu: true
+        };
+        
         res.render('pages/apply-for-the-basic-payment-application/home', data);
 
       });
@@ -627,7 +671,8 @@ module.exports = {
 
         var data = {
           doctitle: 'Add / Edit land',
-          openLayers: true
+          openLayers: true,
+          businessMenu: true
         };
 
 
