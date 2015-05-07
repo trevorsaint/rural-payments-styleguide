@@ -12,7 +12,7 @@
   
 
   <!-- headings -->
-  <!--h3 class="heading-medium">Headings</h3>
+  <h3 class="heading-medium">Headings</h3>
   
   
   <ul class="list-bullet text">
@@ -35,103 +35,9 @@
     &lt;h2 class=&quot;heading-large&quot;&gt;A 36px bold heading&lt;/h2&gt;
     &lt;h3 class=&quot;heading-medium&quot;&gt;A 24px bold heading&lt;/h3&gt;
     &lt;h4 class=&quot;heading-small&quot;&gt;A 19px bold heading&lt;/h4&gt;
-  </code></pre-->
-  
-
-  <!-- headings with supporting information -->
-  <h3 class="heading-medium">Headings with supporting information</h3>
-  
-  
-  <div class="example">
-  
-    <h1 class="heading-xlarge">Personal details 
-      <span class="heading-secondary">Sidney Bechet</span>
-    </h1>
-    
-    <h1 class="heading-xlarge">
-      <span class="heading-secondary">Sidney Bechet</span> 
-      Personal details
-    </h1>
-  
-  </div>
-  
-  
-  <pre><code class="prettyprint">
-    &lt;h1 class=&quot;heading-xlarge&quot;&gt;
-      Personal details 
-      &lt;span class=&quot;heading-secondary&quot;&gt;Sidney Bechet&lt;/span&gt;
-    &lt;/h1&gt;
-    
-    &lt;h1 class=&quot;heading-xlarge&quot;&gt;
-      &lt;span class=&quot;heading-secondary&quot;&gt;Sidney Bechet&lt;/span&gt; 
-      Personal details
-    &lt;/h1&gt;
   </code></pre>
-
-
-  <!-- heading with parcel information -->
-  <h3 class="heading-medium">Heading with parcel information</h3>
   
   
-  <div class="example">
-  
-    <header class="page-header">
-    
-      <h1>North paddock</h1>
-      
-      <dl class="list-parcel">
-        <dt>Area</dt>
-        <dd>5.76<abbr title="hectares">ha</abbr></dd>
-        <dt>ID</dt>
-        <dd>SJ8063_3931</dd>
-        <dt>Organic status</dt>
-        <dd>In conversion</dd>
-      </dl>
-    
-    </header>
-  
-  </div>
-  
-  
-  <pre><code class="prettyprint">
-    &lt;header class=&quot;page-header&quot;&gt;
-    
-      &lt;h1&gt;North paddock&lt;/h1&gt;
-      
-      &lt;dl class=&quot;list-parcel&quot;&gt;
-        &lt;dt&gt;Area&lt;/dt&gt;
-        &lt;dd&gt;5.76&lt;abbr title=&quot;hectares&quot;&gt;ha&lt;/abbr&gt;&lt;/dd&gt;
-        &lt;dt&gt;ID&lt;/dt&gt;
-        &lt;dd&gt;SJ8063_3931&lt;/dd&gt;
-        &lt;dt&gt;Organic status&lt;/dt&gt;
-        &lt;dd&gt;In conversion&lt;/dd&gt;
-      &lt;/dl&gt;
-    
-    &lt;/header&gt;
-  </code></pre>
-
-
-  <!-- headings as links with description -->
-  <h3 class="heading-medium">Headings as links with description</h3>
-  
-  
-  <div class="example">
-    <h3 class="heading-medium"><a href="#">Venenatis dapibus posuere</a></h3>
-    <p>Vestibulum id ligula porta felis euismod semper.</p>
-    <h4 class="heading-small"><a href="#">Venenatis dapibus posuere</a></h4>
-    <p>Vestibulum id ligula porta felis euismod semper.</p>
-  </div>
-  
-  
-  <pre><code class="prettyprint">
-    &lt;h3 class=&quot;heading-medium&quot;&gt;&lt;a href=&quot;#&quot;&gt;Venenatis dapibus posuere&lt;/a&gt;&lt;/h3&gt;
-    &lt;p&gt;Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
-    
-    &lt;h3 class=&quot;heading-small&quot;&gt;&lt;a href=&quot;#&quot;&gt;Venenatis dapibus posuere&lt;/a&gt;&lt;/h3&gt;
-    &lt;p&gt;Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
-  </code></pre>
-
-
   <!-- lead paragraph -->
   <h3 class="heading-medium">Lead paragraph</h3>
   
@@ -197,8 +103,41 @@
     risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor 
     fringilla.&lt;/p&gt;
   </code></pre>
-
-
+  
+  
+  <!-- links -->
+  <h3 class="heading-medium">Links</h3>
+  
+  
+  <ul class="list-bullet">
+    <li>links within body copy should be blue and underlined</li>
+    <li>links without surrounding text should not have a full stop at the end</li>
+  </ul>
+  
+  
+  <div class="example">
+  
+    <p><a href="/">A 19px link without surrounding text</a></p>
+    
+    <p><a href="/">A 19px body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    
+    <p><a href="/" rel="external">A 19px body copy external link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    
+  </div>
+  
+  
+  <pre><code class="prettyprint">
+    &lt;p&gt;&lt;a href=&quot;/&quot;&gt;A 19px link without surrounding text&lt;/a&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href=&quot;/&quot;&gt;A 19px body copy link&lt;/a&gt;. Fusce dapibus, tellus ac cursus commodo, 
+    tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href=&quot;/&quot; rel=&quot;external&quot;&gt;A 19px body copy external link&lt;/a&gt;. Fusce dapibus, 
+    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo 
+    sit amet risus.&lt;/p&gt;
+  </code></pre>
+  
+  
   <!-- lists -->
   <h3 class="heading-medium">Lists</h3>
   
@@ -254,38 +193,156 @@
       &lt;li&gt;integer posuere erat a ante venenatis dapibus posuere velit aliquet&lt;/li&gt;
     &lt;/ul&gt;
   </code></pre>
-
-
-  <!-- links -->
-  <h3 class="heading-medium">Links</h3>
   
   
-  <ul class="list-bullet">
-    <li>links within body copy should be blue and underlined</li>
-    <li>links without surrounding text should not have a full stop at the end</li>
-  </ul>
+  <!-- inset text -->
+  <h3 class="heading-medium">Inset text</h3>
+  
+  
+  <div class="example">
+    
+    <div class="panel-indent text">
+      <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes 
+      in the application.</p>
+    </div>
+  
+  </div>
+  
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;panel-indent&quot;&gt;
+      &lt;p&gt;It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes 
+      in the application.&lt;/p&gt;
+    &lt;/div&gt;
+  </code></pre>
+
+
+  <!-- hidden text -->
+  <h3 class="heading-medium">Hidden text (progressive disclosure)</h3>
+  
+  
+  <div class="text">
+    
+    <p>Use this to make your page easier to scan, only showing contextual information when required.</p>
+    
+    <p>Click on 'Help with nationality' to see how this works.</p>
+  
+  </div>
   
   
   <div class="example">
   
-    <p><a href="/">A 19px link without surrounding text</a></p>
-    
-    <p><a href="/">A 19px body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    
-    <p><a href="/" rel="external">A 19px body copy external link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    
+    <details>
+      <summary><span class="summary">Help with nationality</span></summary>
+      <div class="panel-indent text">
+        <p>If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.</p>
+        <p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.</p>
+      </div>
+    </details>
+  
   </div>
   
   
   <pre><code class="prettyprint">
-    &lt;p&gt;&lt;a href=&quot;/&quot;&gt;A 19px link without surrounding text&lt;/a&gt;&lt;/p&gt;
+    &lt;details&gt;
     
-    &lt;p&gt;&lt;a href=&quot;/&quot;&gt;A 19px body copy link&lt;/a&gt;. Fusce dapibus, tellus ac cursus commodo, 
-    tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+      &lt;summary&gt;&lt;span class=&quot;summary&quot;&gt;Help with nationality&lt;/span&gt;&lt;/summary&gt;
+      
+      &lt;div class=&quot;panel-indent&quot;&gt;
+      
+        &lt;p&gt;If you&#x2019;re not sure about your nationality, try to find out from an official 
+        document like a passport or national ID card.&lt;/p&gt;
+        
+        &lt;p&gt;We need to know your nationality so we can work out which elections 
+        you&#x2019;re entitled to vote in. If you can&#x2019;t provide your nationality, you&#x2019;ll 
+        have to send copies of identity documents through the post.&lt;/p&gt;
+      
+      &lt;/div&gt;
     
-    &lt;p&gt;&lt;a href=&quot;/&quot; rel=&quot;external&quot;&gt;A 19px body copy external link&lt;/a&gt;. Fusce dapibus, 
-    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo 
-    sit amet risus.&lt;/p&gt;
+    &lt;/details&gt;
+  </code></pre>
+  
+  
+  <!-- heading with parcel information -->
+  <h3 class="heading-medium">Heading with parcel information</h3>
+  
+  
+  <div class="example">
+  
+    <header class="page-header">
+    
+      <h1>North paddock</h1>
+      
+      <dl class="list-parcel">
+        <dt>Area</dt>
+        <dd>5.76<abbr title="hectares">ha</abbr></dd>
+        <dt>ID</dt>
+        <dd>SJ8063_3931</dd>
+        <dt>Organic status</dt>
+        <dd>In conversion</dd>
+      </dl>
+    
+    </header>
+  
+  </div>
+  
+  
+  <pre><code class="prettyprint">
+    &lt;header class=&quot;page-header&quot;&gt;
+    
+      &lt;h1&gt;North paddock&lt;/h1&gt;
+      
+      &lt;dl class=&quot;list-parcel&quot;&gt;
+        &lt;dt&gt;Area&lt;/dt&gt;
+        &lt;dd&gt;5.76&lt;abbr title=&quot;hectares&quot;&gt;ha&lt;/abbr&gt;&lt;/dd&gt;
+        &lt;dt&gt;ID&lt;/dt&gt;
+        &lt;dd&gt;SJ8063_3931&lt;/dd&gt;
+        &lt;dt&gt;Organic status&lt;/dt&gt;
+        &lt;dd&gt;In conversion&lt;/dd&gt;
+      &lt;/dl&gt;
+    
+    &lt;/header&gt;
+  </code></pre>
+  
+
+  <!-- headings with supporting information -->
+  <h3 class="heading-medium">Headings with supporting information</h3>
+  
+  
+  <div class="example">
+  
+    <h1 class="heading-xlarge">Personal details 
+      <span class="heading-secondary">Sidney Bechet</span>
+    </h1>
+  
+  </div>
+  
+  
+  <pre><code class="prettyprint">
+    &lt;h1 class=&quot;heading-xlarge&quot;&gt;
+      Personal details 
+      &lt;span class=&quot;heading-secondary&quot;&gt;Sidney Bechet&lt;/span&gt;
+    &lt;/h1&gt;
+  </code></pre>
+
+
+  <!-- headings as links with description -->
+  <h3 class="heading-medium">Headings as links with description</h3>
+  
+  
+  <div class="example">
+    <h3 class="heading-medium"><a href="#">Venenatis dapibus posuere</a></h3>
+    <p>Vestibulum id ligula porta felis euismod semper.</p>
+    <h4 class="heading-small"><a href="#">Venenatis dapibus posuere</a></h4>
+    <p>Vestibulum id ligula porta felis euismod semper.</p>
+  </div>
+  
+  
+  <pre><code class="prettyprint">
+    &lt;h3 class=&quot;heading-medium&quot;&gt;&lt;a href=&quot;#&quot;&gt;Venenatis dapibus posuere&lt;/a&gt;&lt;/h3&gt;
+    &lt;p&gt;Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
+    
+    &lt;h3 class=&quot;heading-small&quot;&gt;&lt;a href=&quot;#&quot;&gt;Venenatis dapibus posuere&lt;/a&gt;&lt;/h3&gt;
+    &lt;p&gt;Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
   </code></pre>
 
 
@@ -382,73 +439,6 @@
       &lt;div itemprop=&quot;email&quot;&gt;&lt;a href=&quot;mailto:joe.bloggs@beechfarm.co.uk&quot;&gt;joe.bloggs@beechfarm.co.uk&lt;/a&gt;&lt;/div&gt;
       
     &lt;/div&gt;
-  </code></pre>
-
-
-  <!-- inset text -->
-  <h3 class="heading-medium">Inset text</h3>
-  
-  
-  <div class="example">
-    
-    <div class="panel-indent text">
-      <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes 
-      in the application.</p>
-    </div>
-  
-  </div>
-  
-  <pre><code class="prettyprint">
-    &lt;div class=&quot;panel-indent&quot;&gt;
-      &lt;p&gt;It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes 
-      in the application.&lt;/p&gt;
-    &lt;/div&gt;
-  </code></pre>
-
-
-  <!-- hidden text -->
-  <h3 class="heading-medium">Hidden text (progressive disclosure)</h3>
-  
-  
-  <div class="text">
-    
-    <p>Use this to make your page easier to scan, only showing contextual information when required.</p>
-    
-    <p>Click on 'Help with nationality' to see how this works.</p>
-  
-  </div>
-  
-  
-  <div class="example">
-  
-    <details>
-      <summary><span class="summary">Help with nationality</span></summary>
-      <div class="panel-indent text">
-        <p>If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.</p>
-        <p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.</p>
-      </div>
-    </details>
-  
-  </div>
-  
-  
-  <pre><code class="prettyprint">
-    &lt;details&gt;
-    
-      &lt;summary&gt;&lt;span class=&quot;summary&quot;&gt;Help with nationality&lt;/span&gt;&lt;/summary&gt;
-      
-      &lt;div class=&quot;panel-indent&quot;&gt;
-      
-        &lt;p&gt;If you&#x2019;re not sure about your nationality, try to find out from an official 
-        document like a passport or national ID card.&lt;/p&gt;
-        
-        &lt;p&gt;We need to know your nationality so we can work out which elections 
-        you&#x2019;re entitled to vote in. If you can&#x2019;t provide your nationality, you&#x2019;ll 
-        have to send copies of identity documents through the post.&lt;/p&gt;
-      
-      &lt;/div&gt;
-    
-    &lt;/details&gt;
   </code></pre>
   
   
