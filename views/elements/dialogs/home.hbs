@@ -1,28 +1,22 @@
-    <a class="back-link" href="/">Back to the index</a>
+  <a class="back-link" href="/">Back to the index</a>
 
 
-		<h1 class="heading-xlarge">Dialogs</h1>
+	<h1 class="heading-xlarge">Dialogs</h1>
+	
+	
+	<!-- introduction -->
+	<div class="text">
+		<p>The dialogs are in this page. I would assume that AJAX would be used to pull each dialog into view. Ensure that all attributes are used. This is of great importance due to accessibility.</p>
+	</div>
 
 
-    <div class="text">
+  <!-- examples -->
+  <h2 class="heading-medium">Examples</h2>
+  
+  
+  <div class="example">
 
-      <div class="alert-info" role="alert">
-
-        <div class="alert-message">
-
-          <p>The dialogs are in this page. I would assume that AJAX would be used to pull each dialog into view. Ensure that all attributes are used. This is of great importance due to accessibility.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <h2 class="heading-medium">Collections</h2>
-
-
-		<ul class="list-bullet">
+		<ul class="list-nav">
   		<li><a href="/" data-toggle="dialog" data-target="dialog-1">Sign out</a></li>
   		<li><a href="/" data-toggle="dialog" data-target="dialog-2">Lock customers account</a></li>
   		<li><a href="/" data-toggle="dialog" data-target="dialog-3">Duplicate found</a></li>
@@ -31,234 +25,232 @@
   		<li><a href="/" data-toggle="dialog" data-target="dialog-6">Warning</a></li>
   		<li><a href="/" data-toggle="dialog" data-target="dialog-7">Remove a person</a></li>
 		</ul>
+	
+  </div>
 
 
-    <!-- Dialog 1 -->
-		<div class="dialog" id="dialog-1" aria-hidden="true">
+  <!-- dialog 1 -->
+	<div class="dialog" id="dialog-1" aria-hidden="true">
 
-      <div class="dialog-holder" aria-labelledby="dialog-title-1" aria-describedby="dialog-content-1" role="alertdialog">
+    <div class="dialog-holder" aria-labelledby="dialog-title-1" aria-describedby="dialog-content-1" role="alertdialog">
 
-        <div class="dialog-content" id="dialog-content-1" role="document" tabindex="0">
+      <div class="dialog-content" id="dialog-content-1" role="document" tabindex="0">
 
-          <h1 class="dialog-heading" id="dialog-title-1">Sign out</h1>
+        <h1 class="dialog-heading" id="dialog-title-1">Sign out</h1>
 
-          <form class="form">
+        <form class="form">
 
-            <p>This will end your session. Are you sure you want to sign out?</p>
+          <p>This will end your session. Are you sure you want to sign out?</p>
 
-            <div class="dialog-actions">
-              <button class="button">Yes</button>
-              <a class="dialog-cancel" href="/">No</a>
-            </div>
+          <div class="dialog-actions">
+            <button class="button">Yes</button>
+            <a class="dialog-cancel" href="/">No</a>
+          </div>
 
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
 
-          </form>
-
-        </div>
-
-      </div>
-
-		</div>
-		<!-- End -->
-
-
-		<!-- Dialog 2-->
-		<div class="dialog" id="dialog-2" aria-hidden="true">
-
-      <div class="dialog-holder" aria-labelledby="dialog-title-2" aria-describedby="dialog-content-2" role="alertdialog">
-
-        <div class="dialog-content" id="dialog-content-2" role="document" tabindex="0">
-
-          <h1 class="dialog-heading" id="dialog-title-2">Lock customer's account</h1>
-
-          <form class="form">
-
-            <div class="form-group">
-              <label class="form-label" for="reason">Give a reason for locking this customer's account</label>
-              <textarea class="form-control form-control-textarea" id="reason" rows="3" cols="50"></textarea>
-            </div>
-
-            <div class="dialog-actions">
-              <button class="button">Lock customer's account</button>
-              <a class="dialog-cancel" href="#">Cancel</a>
-            </div>
-
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
-
-          </form>
-
-        </div>
+        </form>
 
       </div>
 
-		</div>
-		<!-- End -->
+    </div>
+
+	</div>
 
 
-		<!-- Dialog 2-->
-		<div class="dialog" id="dialog-3" aria-hidden="true">
+	<!-- dialog 2-->
+	<div class="dialog" id="dialog-2" aria-hidden="true">
 
-      <div class="dialog-holder" aria-labelledby="dialog-title-3" aria-describedby="dialog-content-3" role="alertdialog">
+    <div class="dialog-holder" aria-labelledby="dialog-title-2" aria-describedby="dialog-content-2" role="alertdialog">
 
-        <div class="dialog-content" id="dialog-content-3" role="document" tabindex="0">
+      <div class="dialog-content" id="dialog-content-2" role="document" tabindex="0">
 
-          <h1 class="dialog-heading" id="dialog-title-3">Duplicate found</h1>
+        <h1 class="dialog-heading" id="dialog-title-2">Lock customer's account</h1>
 
-          <form class="form">
+        <form class="form">
 
-            <p>The firm of agents <b>Dan Firm</b> already exists with the same landline number. Are you sure you want to continue to create this new firm of agents?</p>
+          <div class="form-group">
+            <label class="form-label" for="reason">Give a reason for locking this customer's account</label>
+            <textarea class="form-control form-control-textarea" id="reason" rows="3" cols="50"></textarea>
+          </div>
 
-            <div class="dialog-actions">
-              <button class="button">Yes</button>
-              <a class="dialog-cancel" href="#">No</a>
-            </div>
+          <div class="dialog-actions">
+            <button class="button">Lock customer's account</button>
+            <a class="dialog-cancel" href="#">Cancel</a>
+          </div>
 
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
 
-          </form>
-
-        </div>
-
-      </div>
-
-		</div>
-		<!-- End -->
-
-
-		<!-- Dialog 4-->
-		<div class="dialog" id="dialog-4" aria-hidden="true">
-
-      <div class="dialog-holder" aria-labelledby="dialog-title-4" aria-describedby="dialog-content-4" role="alertdialog">
-
-        <div class="dialog-content" id="dialog-content-4" role="document" tabindex="0">
-
-          <h1 class="dialog-heading" id="dialog-title-4">Lock customer's account</h1>
-
-          <form class="form">
-
-            <div class="form-group">
-              <label class="form-label" for="comments">Comments</label>
-              <p class="form-hint">Don't leave any sensitive details, such as phone numbers</p>
-              <textarea class="form-control form-control-textarea" id="comments" rows="3" cols="50"></textarea>
-            </div>
-
-            <div class="dialog-actions">
-              <button class="button">Submit</button>
-              <a class="dialog-cancel" href="#">Cancel</a>
-            </div>
-
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
-
-          </form>
-
-        </div>
+        </form>
 
       </div>
 
-		</div>
-		<!-- End -->
+    </div>
+
+	</div>
 
 
-		<!-- Dialog 5-->
-		<div class="dialog" id="dialog-5" aria-hidden="true">
+	<!-- dialog 2-->
+	<div class="dialog" id="dialog-3" aria-hidden="true">
 
-      <div class="dialog-holder" aria-labelledby="dialog-title-5" aria-describedby="dialog-content-5" role="alertdialog">
+    <div class="dialog-holder" aria-labelledby="dialog-title-3" aria-describedby="dialog-content-3" role="alertdialog">
 
-        <div class="dialog-content" id="dialog-content-5" role="document" tabindex="0">
+      <div class="dialog-content" id="dialog-content-3" role="document" tabindex="0">
 
-          <h1 class="dialog-heading" id="dialog-title-5">Change owner</h1>
+        <h1 class="dialog-heading" id="dialog-title-3">Duplicate found</h1>
 
-          <form class="form">
+        <form class="form">
 
-            <p>Are you sure you want to assign this case to <b>Connor Senior?</b></p>
+          <p>The firm of agents <b>Dan Firm</b> already exists with the same landline number. Are you sure you want to continue to create this new firm of agents?</p>
 
-            <div class="dialog-actions">
-              <button class="button">Yes</button>
-              <a class="dialog-cancel" href="#">No</a>
-            </div>
+          <div class="dialog-actions">
+            <button class="button">Yes</button>
+            <a class="dialog-cancel" href="#">No</a>
+          </div>
 
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
 
-          </form>
-
-        </div>
-
-      </div>
-
-		</div>
-		<!-- End -->
-
-
-		<!-- Dialog 6-->
-		<div class="dialog" id="dialog-6" aria-hidden="true">
-
-      <div class="dialog-holder" aria-labelledby="dialog-title-6" aria-describedby="dialog-content-6" role="alertdialog">
-
-        <div class="dialog-content" id="dialog-content-6" role="document" tabindex="0">
-
-          <h1 class="dialog-heading" id="dialog-title-6">Change owner</h1>
-
-          <form class="form">
-
-            <p>The total landuse area you have entered is <b>4.90 ha</b>, which is less than the parcel size. Are you sure you want to continue?</p>
-
-            <div class="dialog-actions">
-              <button class="button">Yes</button>
-              <a class="dialog-cancel" href="#">No</a>
-            </div>
-
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
-
-          </form>
-
-        </div>
+        </form>
 
       </div>
 
-		</div>
-		<!-- End -->
+    </div>
+
+	</div>
 
 
-		<!-- Dialog 7-->
-		<div class="dialog" id="dialog-7" aria-hidden="true">
+	<!-- dialog 4-->
+	<div class="dialog" id="dialog-4" aria-hidden="true">
 
-      <div class="dialog-holder" aria-labelledby="dialog-title-7" aria-describedby="dialog-content-7" role="alertdialog">
+    <div class="dialog-holder" aria-labelledby="dialog-title-4" aria-describedby="dialog-content-4" role="alertdialog">
 
-        <div class="dialog-content" id="dialog-content-7" role="document" tabindex="0">
+      <div class="dialog-content" id="dialog-content-4" role="document" tabindex="0">
 
-          <h1 class="dialog-heading" id="dialog-title-7">Remove a person</h1>
+        <h1 class="dialog-heading" id="dialog-title-4">Lock customer's account</h1>
 
-          <form class="form">
+        <form class="form">
 
-            <p>Are you sure you want to remove <b>Connor Senior</b> from this business? This person will no longer be able to access this business online.</p>
+          <div class="form-group">
+            <label class="form-label" for="comments">Comments</label>
+            <p class="form-hint">Don't leave any sensitive details, such as phone numbers</p>
+            <textarea class="form-control form-control-textarea" id="comments" rows="3" cols="50"></textarea>
+          </div>
 
-            <div class="dialog-actions">
-              <button class="button">Yes</button>
-              <a class="dialog-cancel" href="#">No</a>
-            </div>
+          <div class="dialog-actions">
+            <button class="button">Submit</button>
+            <a class="dialog-cancel" href="#">Cancel</a>
+          </div>
 
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
 
-          </form>
-
-        </div>
+        </form>
 
       </div>
 
-		</div>
-		<!-- End -->
+    </div>
+
+	</div>
+
+
+	<!-- dialog 5-->
+	<div class="dialog" id="dialog-5" aria-hidden="true">
+
+    <div class="dialog-holder" aria-labelledby="dialog-title-5" aria-describedby="dialog-content-5" role="alertdialog">
+
+      <div class="dialog-content" id="dialog-content-5" role="document" tabindex="0">
+
+        <h1 class="dialog-heading" id="dialog-title-5">Change owner</h1>
+
+        <form class="form">
+
+          <p>Are you sure you want to assign this case to <b>Connor Senior?</b></p>
+
+          <div class="dialog-actions">
+            <button class="button">Yes</button>
+            <a class="dialog-cancel" href="#">No</a>
+          </div>
+
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+	</div>
+
+
+	<!-- dialog 6-->
+	<div class="dialog" id="dialog-6" aria-hidden="true">
+
+    <div class="dialog-holder" aria-labelledby="dialog-title-6" aria-describedby="dialog-content-6" role="alertdialog">
+
+      <div class="dialog-content" id="dialog-content-6" role="document" tabindex="0">
+
+        <h1 class="dialog-heading" id="dialog-title-6">Change owner</h1>
+
+        <form class="form">
+
+          <p>The total landuse area you have entered is <b>4.90 ha</b>, which is less than the parcel size. Are you sure you want to continue?</p>
+
+          <div class="dialog-actions">
+            <button class="button">Yes</button>
+            <a class="dialog-cancel" href="#">No</a>
+          </div>
+
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+	</div>
+
+
+	<!-- dialog 7-->
+	<div class="dialog" id="dialog-7" aria-hidden="true">
+
+    <div class="dialog-holder" aria-labelledby="dialog-title-7" aria-describedby="dialog-content-7" role="alertdialog">
+
+      <div class="dialog-content" id="dialog-content-7" role="document" tabindex="0">
+
+        <h1 class="dialog-heading" id="dialog-title-7">Remove a person</h1>
+
+        <form class="form">
+
+          <p>Are you sure you want to remove <b>Connor Senior</b> from this business? This person will no longer be able to access this business online.</p>
+
+          <div class="dialog-actions">
+            <button class="button">Yes</button>
+            <a class="dialog-cancel" href="#">No</a>
+          </div>
+
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+	</div>
+	
+	
+	<p><a href="#content">Back to the top</a></p>

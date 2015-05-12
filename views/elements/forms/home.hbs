@@ -1,531 +1,410 @@
-		<a class="back-link" href="/">Back to the index</a>
+	<a class="back-link" href="/">Back to the index</a>
 
 
-		<h1 class="heading-xlarge">Forms</h1>
+	<h1 class="heading-xlarge">Forms</h1>
 
 
-		<div class="text">
-
-		  <p class="lede">Below you will find a collection of reusable form controls and example forms.</p>
-
-		  <div class="alert-info" role="alert">
-
-				<div class="alert-message">
-
-					<p>When you mark-up elements please ensure that the <b>class tag</b> is used first! This allows for quick visibility for styles associated to elements, and allows for consistency.</p>
-
-				</div>
-
-			</div>
-
-		</div>
-
-
-
-    <!-- examples -->
-    <h2 class="heading-large">Examples</h2>
-
-
-		<ul class="list-bullet">
-		  <li><a href="your-details/">Your details</a></li>
-		  <li><a href="where-should-we-send-your-new-passport/">Where should we send your new passport?</a></li>
-		  <li><a href="register-for-rural-payments/">Register for Rural Payments</a></li>
-		  <li><a href="form-validation/">Form validation</a></li>
-		</ul>
-
-
-
-    <h3 class="heading-medium">Optional and mandatory fields</h3>
-
-    <div class="text">
-
-      <ul class="list-bullet">
-        <li>only ask for the information you absolutely need</li>
-        <li>if you do ask for optional information, mark the labels of optional fields with '(optional)'</li>
-        <li>don't mark mandatory fields with asterisks</li>
-      </ul>
-
-    </div>
-
-
-    <!-- form labels -->
-    <h3 class="heading-medium">Labels</h3>
-
-    <p class="text">Click on the label &quot;Full name&quot; to bring focus to the form field.</p>
-
-    <div class="example">
-      <form>
-        <label class="form-label" for="full-name-f1">Full name</label>
-        <input class="form-control" id="full-name-f1" type="text">
-      </form>
-    </div>
-
-
-    <!-- form spacing -->
-    <h3 class="heading-medium">Spacing between form elements</h3>
-
-    <p class="text">Ensure there is sufficient spacing between form elements.</p>
-
-    <div class="example">
-      <form>
-        <div class="form-group">
-          <label class="form-label" for="first-name-2">First name</label>
-          <input class="form-control" id="first-name-2" type="text">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="last-name-2">Last name</label>
-          <input class="form-control" id="last-name-2" type="text">
-        </div>
-      </form>
-    </div>
-
-
-    <!-- hint text -->
-    <h3 class="heading-medium">Hint text</h3>
-
-    <ul class="list-bullet text">
-      <li>don't use placeholder text in form fields, as this will disappear once content is entered into the form field</li>
-      <li>use hint text for supporting contextual help, this will always be shown</li>
-      <li>hint text should sit above a form field</li>
-      <li>ensure hint text can be read correctly by screen readers</li>
+  <!-- introduction -->
+  <div class="text">
+  
+    <p>Keep forms as simple as possible.</p>
+    
+    
+    <h2 class="heading-medium">Looking for the HTML?</h2>
+    
+    <p>The HTML snippets can be found in the <a href="/elements/snippets/#forms">snippets page</a>.</p>
+    
+    
+    <h3 class="heading-medium">Form examples</h3>
+    
+    <ul class="list-bullet">
+      <li><a href="your-details/">Your details</a></li>
+      <li><a href="where-should-we-send-your-new-passport/">Where should we send your new passport?</a></li>
+      <li><a href="register-for-rural-payments/">Register for Rural Payments</a></li>
+      <li><a href="form-validation/">Form validation</a></li>
     </ul>
-
-    <div class="example">
-      <form>
-        <label class="form-label" for="ni-number">
-          National Insurance number
-          <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
-        </label>
-        <input class="form-control" id="ni-number" type="text">
-      </form>
-    </div>
-
-
-    <!-- date inputs -->
-    <h3 class="heading-medium">Date inputs</h3>
-
-    <div class="example">
-
-      <form>
-
-        <fieldset>
-
-          <legend class="form-label">Date of birth</legend>
-
-          <div class="form-date">
-
-            <p class="form-hint">For example, 31 3 1980</p>
-
-          	<div class="form-group form-group-day">
-          		<label for="dob-day">Day</label>
-          		<input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
-          	</div>
-
-          	<div class="form-group form-group-month">
-          		<label for="dob-month">Month</label>
-          		<input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
-          	</div>
-
-          	<div class="form-group form-group-year">
-          		<label for="dob-year">Year</label>
-          		<input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
-          	</div>
-
-          </div>
-
-        </fieldset>
-
-      </form>
-
-    </div>
+    
+    <h3 class="heading-medium">Optional and mandatory fields</h3>
+    
+    <ul class="list-bullet">
+      <li>only ask for the information you absolutely need</li>
+      <li>if you do ask for optional information, mark the labels of optional fields with '(optional)'</li>
+      <li>don't mark mandatory fields with asterisks</li>
+    </ul>
+  
+  </div>
 
 
-    <!-- toggle date inputs -->
-    <h3 class="heading-medium">Date inputs with inset form element</h3>
+  <!-- labels -->
+  <h3 class="heading-medium">Labels</h3>
+  
+  
+  <ul class="list-bullet text">
+    <li>all form fields should be given labels</li>
+    <li>don't hide labels, unless the surrounding context makes them unnecessary</li>
+    <li>labels should be aligned above their fields</li>
+    <li>label text should be short, direct and in sentence case</li>
+    <li>avoid colons at the end of labels</li>
+    <li>labels should be associated with form fields using the <b>for</b> attribute</li>
+  </ul>
+  
+  <p>Click on the label 'Full name' to bring focus to the form field.</p>
+  
+  
+  <div class="example">
+    <form>
+      <label class="form-label" for="full-name">Full name</label>
+      <input class="form-control" id="full-name" type="text">
+    </form>
+  </div>
 
-    <p>Insets can be used within forms to emphasise supporting information.</p>
 
-    <p>Click on &quot;Yes&quot; to see how this works.</p>
-
-    <div class="example">
-
-      <div class="form-group form-group-compound">
-
-        <form>
-
-          <fieldset class="inline">
-
-            <legend class="form-label">Is this person an owner?</legend>
-
-            <div class="form-group form-group-compound">
-
-              <label class="block-label" data-target="person-dob" for="radio-indent-1">
-                <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
-                Yes
-              </label>
-
-              <label class="block-label" for="radio-indent-2">
-                <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
-                No
-              </label>
-
-            </div>
-
-            <div class="panel-indent js-hidden" id="person-dob">
-
-              <div class="form-date">
-
-                <label class="form-label">Date this person became an owner</label>
-
-              	<div class="form-group form-group-day">
-              		<label class="form-label" for="dob-day-2">Day</label>
-              		<input class="form-control" id="dob-day-2" type="text">
-              	</div>
-
-              	<div class="form-group form-group-month">
-              		<label class="form-label" for="dob-month-2">Month</label>
-              		<input class="form-control" id="dob-month-2" type="text">
-              	</div>
-
-              	<div class="form-group form-group-year">
-              		<label class="form-label" for="dob-year-2">Year</label>
-              		<input class="form-control" id="dob-year-2" type="text">
-              	</div>
-
-              </div>
-
-            </div>
-
-          </fieldset>
-
-        </form>
-
+  <!-- spacing -->
+  <h3 class="heading-medium">Spacing between form elements</h3>
+  
+  
+  <div class="text">
+    
+    <p>Ensure there is sufficient spacing between form elements.</p>
+    
+    <p>Use '.form-group' to create spacing when wrapping label and input pairs.</p>
+  
+  </div>
+  
+  
+  <div class="example">
+    <form>
+      <div class="form-group">
+        <label class="form-label" for="first-name">First name</label>
+        <input class="form-control" id="first-name" type="text">
       </div>
-
-    </div>
-
-
-    <!-- drop down lists -->
-    <h3 class="heading-medium">Drop-down lists</h3>
-
-    <div class="text">
-      <p>Avoid using drop-down lists (the HTML select element) - use radio buttons or checkboxes instead. (Preferred)</p>
-      <p><a rel="external" href="https://www.youtube.com/watch?v=CUkMCQR4TpY">Watch Alice Bartlett present the failings of select boxes to meet the needs of less technically capable users</a>.</p>
-      <p>Use as a last resort if there is an absolute need for it!</p>
-    </div>
-
-    <div class="example">
-
-      <form>
-
-        <label class="form-label" for="legal-status">Legal status</label>
-
-        <select class="form-control-select" id="legal-status">
-          <option>-- Please make a selection --</option>
-          <option value="1">Charitable Interest Organisation</option>
-          <option value="2">Community Interest Company</option>
-          <option value="3">Government (Central)</option>
-          <option value="4">Government Limited Liability Partnership</option>
-        </select>
-
-      </form>
-
-    </div>
+      <div class="form-group">
+        <label class="form-label" for="last-name">Last name</label>
+        <input class="form-control" id="last-name" type="text">
+      </div>
+    </form>
+  </div>
 
 
-    <!-- search -->
-    <h3 class="heading-medium">Search</h3>
+  <!-- hint text -->
+  <h3 class="heading-medium">Hint text</h3>
+  
+  
+  <ul class="list-bullet text">
+    <li>don't use placeholder text in form fields, as this will disappear once content is entered into the form field</li>
+    <li>use hint text for supporting contextual help, this will always be shown</li>
+    <li>hint text should sit above a form field</li>
+    <li>ensure hint text can be read correctly by screen readers</li>
+  </ul>
+  
+  
+  <div class="example">
+  
+    <form>
+    
+      <label class="form-label" for="ni-number">
+        National Insurance number
+        <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
+      </label>
+      
+      <input class="form-control" id="ni-number" type="text">
+    
+    </form>
+  
+  </div>
 
-    <div class="example">
 
-      <form>
-
-        <fieldset>
-
-          <legend class="form-label">What are you looking for?</legend>
-
-          <div class="form-search">
-
-            <div class="form-group-search">
-              <input class="form-control" id="search" type="search">
-            </div>
-
-            <div class="form-group-button">
-              <button class="button" type="button">Search</button>
-            </div>
-
+  <!-- dates -->
+  <h3 class="heading-medium">Dates</h3>
+  
+  
+  <div class="example">
+  
+    <form>
+    
+      <fieldset>
+      
+        <legend class="form-label">Date of birth</legend>
+        
+        <div class="form-date">
+        
+          <p class="form-hint">For example, 31 3 1980</p>
+          
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
           </div>
-
-        </fieldset>
-
-      </form>
-
-    </div>
-
-
-    <!-- textarea -->
-    <h3 class="heading-medium">Textarea</h3>
-
-		<div class="example">
-  		<form>
-        <label class="form-label" for="enquiry">Enquiry</label>
-        <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
-  		</form>
-		</div>
-
-
-    <!-- radio buttons -->
-    <h3 class="heading-medium">Radio buttons</h3>
-
-    <div class="text">
-
-      <ul class="list-bullet">
-        <li>use these to let users choose a single option from a list</li>
-        <li>for more than two options, radio buttons should be stacked</li>
-        <li>radio buttons with large hit areas are easier to select with a mouse or touch devices</li>
-      </ul>
-
-    </div>
-
-    <div class="example">
-
-      <form>
-
-        <fieldset class="inline">
-
-          <legend class="form-label visuallyhidden">Do you know their National Insurance number?</legend>
-
-          <div class="form-group form-group-compound">
-
-            <label class="block-label" for="radio-inline-1">
-              <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
-            </label>
-
-            <label class="block-label" for="radio-inline-2">
-              <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
-            </label>
-
+          
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
           </div>
-
-        </fieldset>
-
-      </form>
-
-    </div>
-
-    <div class="example">
-
-      <form>
-
-        <label class="block-label" for="radio-1">
-          <input id="radio-1" name="radio-group" value="Northern Ireland" type="radio">
-          Northern Ireland
-        </label>
-
-        <label class="block-label" for="radio-2">
-          <input id="radio-2" name="radio-group" value="Isle of Man or the Channel Islands" type="radio">
-          Isle of Man or the Channel Islands
-        </label>
-
-        <p class="form-block">or</p>
-
-        <label class="block-label" for="radio-3">
-          <input id="radio-3" name="radio-group" value="I am a British citizen living abroad" type="radio">
-          I am a British citizen living abroad
-        </label>
-
-      </form>
-
-    </div>
+          
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+          </div>
+        
+        </div>
+      
+      </fieldset>
+    
+    </form>
+  
+  </div>
 
 
-    <!-- checkboxes -->
-    <h3 class="heading-medium">Checkboxes</h3>
+  <!-- selects -->
+  <h3 class="heading-medium">Drop&ndash;down lists</h3>
+  
+  
+  <div class="text">
+  
+    <p>It's advisable to avoid using drop&ndash;lists (the HTML select element) and use radio buttons or checkboxes instead.</p>
+    
+    <p><a href="https://www.youtube.com/watch?v=CUkMCQR4TpY" rel="external">Watch Alice Bartlett present the failings of select boxes to meet the needs of less technically capable users</a>.</p>
+    
+  </div>
+  
+  
+  <div class="example">
+    <form>
+      <label class="form-label" for="legal-status">Legal status</label>
+      <select class="form-control-select" id="legal-status">
+        <option>-- Please make a selection --</option>
+        <option value="1">Charitable Interest Organisation</option>
+        <option value="2">Community Interest Company</option>
+        <option value="3">Government (Central)</option>
+        <option value="4">Government Limited Liability Partnership</option>
+      </select>
+    </form>
+  </div>
 
-    <div class="text">
 
-      <ul class="list-bullet">
-        <li>use these to select either on/off toggles or multiple selections</li>
-        <li>make it clear with words when users can select one or multiple options</li>
-      </ul>
+  <!-- search -->
+  <h3 class="heading-medium">Search</h3>
+  
+  
+  <div class="example">
+  
+    <form>
+    
+    <fieldset>
+    
+      <legend class="form-label">What are you looking for?</legend>
+      
+      <div class="form-search">
+      
+        <div class="form-group-search">
+          <input class="form-control" id="search" type="text">
+        </div>
+        
+        <div class="form-group-button">
+          <button class="button" type="button">Search</button>
+        </div>
+      
+      </div>
+    
+    </fieldset>
+    
+    </form>
+  
+  </div>
 
-    </div>
 
-    <div class="example">
-      <form>
-        <fieldset>
-          <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
-          <p>Select all that apply</p>
-          <label class="block-label" for="checkbox-1">
-            <input id="checkbox-1" value="waste-animal" type="checkbox">
-            Waste from animal carcasses
+  <!-- textarea -->
+  <h3 class="heading-medium">Textarea</h3>
+  
+  
+  <div class="example">
+  
+    <form>
+      <label class="form-label" for="enquiry">Enquiry</label>
+      <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
+    </form>
+  
+  </div>
+
+
+  <!-- radio buttons -->
+  <h3 class="heading-medium">Radio buttons</h3>
+  
+  
+  <div class="text">
+    
+    <ul class="list-bullet">
+      <li>use these to let users choose a single option from a list</li>
+      <li>for more than two options, radio buttons should be stacked</li>
+      <li>radio buttons with large hit areas are easier to select with a mouse or touch devices</li>
+    </ul>
+  
+  </div>
+  
+  
+  <div class="example">
+  
+    <form>
+    
+      <fieldset class="inline">
+      
+        <legend class="form-label">Do you know their National Insurance number?</legend>
+        
+        <div class="form-group form-group-compound">
+        
+          <label class="block-label" for="radio-inline-1">
+            <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
           </label>
-          <label class="block-label" for="checkbox-2">
-            <input id="checkbox-2" value="waste-mines" type="checkbox">
-            Waste from mines or quarries
+          
+          <label class="block-label" for="radio-inline-2">
+            <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
           </label>
-          <label class="block-label" for="checkbox-3">
-            <input id="checkbox-3" value="farm-agricultural" type="checkbox">
-            Farm or agricultural waste
-          </label>
-        </fieldset>
-      </form>
-    </div>
+        
+        </div>
+      
+      </fieldset>
+    
+    </form>
+  
+  </div>
+  
+  
+  <div class="example">
+  
+    <form>
+    
+      <label class="block-label" for="radio-1">
+        <input id="radio-1" name="radio-group" value="Northern Ireland" type="radio">
+        Northern Ireland
+      </label>
+      
+      <label class="block-label" for="radio-2">
+        <input id="radio-2" name="radio-group" value="Isle of Man or the Channel Islands" type="radio">
+        Isle of Man or the Channel Islands
+      </label>
+      
+      <p class="form-block">or</p>
+      
+      <label class="block-label" for="radio-3">
+        <input id="radio-3" name="radio-group" value="I am a British citizen living abroad" type="radio">
+        I am a British citizen living abroad
+      </label>
+    
+    </form>
+  
+  </div>
 
-    <p>Large hit areas aren't always appropriate.</p>
 
-    <div class="example">
-      <form>
-        <label class="form-label" for="telephone-number">Enter your telephone number</label>
-          <input class="form-control" id="telephone-number" type="text">
-          <label class="form-checkbox" for="checkbox-telephone-number">
-          <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
-          I need to be contacted using a text phone
+  <!-- checkboxes -->
+  <h3 class="heading-medium">Checkboxes</h3>
+  
+  
+  <ul class="list-bullet text">
+    <li>use these to select either on/off toggles or multiple selections</li>
+    <li>make it clear with words when users can select one or multiple options</li>
+  </ul>
+  
+  
+  <div class="example">
+  
+    <form>
+    
+      <fieldset>
+      
+        <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
+        
+        <p>Select all that apply</p>
+        
+        <label class="block-label" for="checkbox-1">
+          <input id="checkbox-1" value="waste-animal" type="checkbox">
+          Waste from animal carcasses
         </label>
-      </form>
-    </div>
+        
+        <label class="block-label" for="checkbox-2">
+          <input id="checkbox-2" value="waste-mines" type="checkbox">
+          Waste from mines or quarries
+        </label>
+        
+        <label class="block-label" for="checkbox-3">
+          <input id="checkbox-3" value="farm-agricultural" type="checkbox">
+          Farm or agricultural waste
+        </label>
+      
+      </fieldset>
+    
+    </form>
+  
+  </div>
 
 
-    <!-- inset form elements -->
-    <h3 class="heading-medium">Inset form elements</h3>
+  <!-- alternative -->
+  <ul class="list-bullet">
+    <li>large hit areas aren't always appropriate</li>
+    <li>only pre&ndash;select optons if there's a strong, user&ndash;centred reason to</li>
+  </ul>
+  
+  
+  <div class="example">
+  
+    <form>
+    
+      <label class="form-label" for="telephone-number">Enter your telephone number</label>
+      <input class="form-control" id="telephone-number" type="text">
+      
+      <label class="form-checkbox" for="checkbox-telephone-number">
+      <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
+        I need to be contacted using a text phone
+      </label>
+    
+    </form>
+  
+  </div>
 
+
+  <!-- inset elements -->
+  <h3 class="heading-medium">Inset form elements</h3>
+  
+  
+  <div class="text">
+    
     <p>Insets can be used within forms to emphasise supporting information.</p>
-
-    <p>Click on &quot;Yes&quot; to see how this works.</p>
-
-    <div class="example">
-
-      <form>
-
-        <fieldset class="inline">
-
-          <legend class="form-label">Do you know their National Insurance number?</legend>
-
-          <div class="form-group form-group-compound">
-
-            <label class="block-label" data-target="example-ni-number" for="radio-indent-3">
-              <input id="radio-indent-3" name="radio-indent-group" value="Yes" type="radio">
-              Yes
-            </label>
-
-            <label class="block-label" for="radio-indent-4">
-              <input id="radio-indent-4" name="radio-indent-group" value="No" type="radio">
-              No
-            </label>
-
-          </div>
-
-          <div class="panel-indent js-hidden" id="example-ni-number">
-            <label class="form-label" for="national-insurance">National Insurance number</label>
-            <input class="form-control" id="national-insurance" type="text">
-          </div>
-
-        </fieldset>
-
-      </form>
-
-    </div>
-
-
-    <p>Click on &quot;Citizen of a different country&quot; to see how this works.</p>
-
-
-    <div class="example">
-
-      <form>
-
-        <fieldset>
-
-          <legend class="form-label-bold">What is your nationality?</legend>
-
-          <p>Select all options that are relevant to you.</p>
-
-          <div class="form-group form-group-compound">
-
-            <label class="block-label" for="nationality-british">
-              <input type="checkbox" id="nationality-british" value="British">
-              British (including English, Scottish, Welsh and Northern Irish)
-            </label>
-
-            <label class="block-label" for="nationality-irish">
-              <input type="checkbox" id="nationality-irish" value="Irish">
-              Irish
-            </label>
-
-            <label class="block-label" data-target="different-country" for="nationality-other">
-              <input type="checkbox" id="nationality-other" value="Citizen of a different country">
-              Citizen of a different country
-            </label>
-
-          </div>
-
-          <div id="different-country" class="panel-indent js-hidden">
-            <label class="form-label" for="nationality-other-country">Country name</label>
-            <input class="form-control" type="text" id="nationality-other-country">
-          </div>
-
-      </form>
-
-    </div>
-
-
-    <!-- button -->
-    <h2 class="heading-large">Buttons</h2>
-
-    <h3 class="heading-medium">Button text</h3>
-
-    <p class="text">Buton text should be short and describe the action the button performs.</p>
-
-
-    <div class="example">
-      <button class="button" type="button">Save and continue</button>
-    </div>
-
-
-    <p class="text">Launch your service with a Start now button.</p>
-
-
-    <!-- start now -->
-    <div class="example">
-      <button class="button button-get-started" type="button">Start now</button>
-    </div>
-
-
-    <p class="text">Align the primary action button to the left edge of your form, in the user's line of sight.</p>
-
-
-    <div class="example">
-
-      <form class="form" method="post" action="/">
-
-        <div class="form-group">
-          <label class="form-label" for="form-email-address-1">Email address</label>
-          <input class="form-control" type="text" id="form-email-address-1">
+  
+    <p>Click on 'Yes' to see how this works.</p>
+    
+  </div>
+  
+  
+  <div class="example">
+  
+    <form>
+    
+      <fieldset class="inline">
+      
+        <legend class="form-label">Do you know their National Insurance number?</legend>
+        
+        <div class="form-group form-group-compound">
+        
+          <label class="block-label" data-target="example-ni-number" for="radio-indent-1">
+            <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
+            Yes
+          </label>
+          
+          <label class="block-label" for="radio-indent-2">
+            <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
+            No
+          </label>
+        
         </div>
-
-        <div class="form-group">
-          <button class="button">Save and continue</button>
-          <p><a href="#">Back</a></p>
+        
+        <div class="panel-indent js-hidden" id="example-ni-number">
+          <label class="form-label" for="national-insurance">National Insurance number</label>
+          <input class="form-control" id="national-insurance" type="text">
         </div>
-
-      </form>
-
-    </div>
-
-
-    <!-- disabled button -->
-    <h3 class="heading-medium">Disabled buttons</h3>
-
-    <p>Disabled buttons should be set at 50% opacity.</p>
-
-    <div class="example">
-      <button class="button" type="button" disabled="disabled">Primary button</button>
-    </div>
+      
+      </fieldset>
+    
+    </form>
+  
+  </div>
 
 
-
-
-
-
-
-
+  <p><a href="#content">Back to the top</a></p>

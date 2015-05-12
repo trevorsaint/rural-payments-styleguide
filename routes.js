@@ -95,6 +95,15 @@ module.exports = {
           res.render('elements/forms/form-validation/home', data);
 
         });
+        
+        
+      // buttons
+      app.get('/elements/buttons', function(req, res) {
+
+        var data = {doctitle: 'Buttons'};
+        res.render('elements/buttons/home', data);
+
+      });
 
 
       // details
@@ -182,6 +191,15 @@ module.exports = {
 
         var data = {doctitle: 'Pagination'};
         res.render('elements/pagination/home', data);
+
+      });
+      
+      
+      // Related
+      app.get('/elements/related', function(req, res) {
+
+        var data = {doctitle: 'Related'};
+        res.render('elements/related/home', data);
 
       });
 
