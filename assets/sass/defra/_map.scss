@@ -7,6 +7,7 @@
 .map-container {
   border: 1px solid #bfc1c3;
   clear: both;
+  margin-bottom: 20px;
   position: relative;
   width: 100%;
   z-index: 10;
@@ -23,6 +24,23 @@
   @include abs-pos(0, 0, 0, 0);
   height: 100%;
   width: 100%;
+}
+
+
+// Map print link
+
+.map-print {
+  
+  &-warning {
+    border-left: 3px solid $error-colour;
+    padding: .75em 1em 1em;
+  }
+  
+  > span {
+    display: block;
+    margin-top: 5px;
+  }
+  
 }
 
 
