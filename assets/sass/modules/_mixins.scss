@@ -2,7 +2,7 @@
 // ==========================================================================
 
 
-// Absolute positioning
+/* Absolute positioning */
 
 @mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
   top: $top;

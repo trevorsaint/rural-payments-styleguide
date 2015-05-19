@@ -1,3 +1,4 @@
+// ==========================================================================
 // Typography
 // ==========================================================================
 
@@ -8,7 +9,7 @@ strong {
 }
 
 
-// Text warning
+/* text warning */
 
 .text-warning {
   color: $error-colour;
@@ -33,7 +34,7 @@ strong {
 }
 
 
-// Page header
+/* page header */
 
 .page-header {
   margin-top: em(15, 16);
@@ -56,12 +57,13 @@ strong {
 }
 
 
-// Code blocks
+/* code blocks */
 
 pre {
-  margin-bottom: em(40);
   line-height: 1.5;
+  margin-bottom: em(40);
 }
+
 
 pre, 
 code {

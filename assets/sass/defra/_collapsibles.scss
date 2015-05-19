@@ -7,7 +7,7 @@
   margin-bottom: 1em;
 
   &-heading {
-    @include user-select(none); /* Compass helper */
+    @include user-select(none); /* compass helper */
     border-top: 1px solid $grey-2;
     padding: .5em 0;
     position: relative;
@@ -155,7 +155,6 @@
 }
 
 
-
 // ==========================================================================
 // Toggle
 // ==========================================================================
@@ -164,5 +163,4 @@
 .toggle {
   margin-bottom: 1.05263em * 2; // 40px
 }
-
 

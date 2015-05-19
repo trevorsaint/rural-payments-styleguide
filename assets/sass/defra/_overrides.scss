@@ -3,7 +3,7 @@
 // ==========================================================================
 
 
-// Footer colour extended / font rendering fixes
+/* footer colour extended / font rendering fixes */
 
 html {
   background-color: $grey-3;
@@ -21,7 +21,7 @@ body {
 }
 
 
-// Selection
+/* Selection */
 
 ::-moz-selection {
   background: $grey-3;
@@ -34,16 +34,16 @@ body {
 }
 
 
-// For loading purposes
+/* for loading purposes */
 
 #global-header,
 #global-header-bar {
 	position: relative;
-	z-index: 12; // Sit above loading...
+	z-index: 12; // sits above loading...
 }
 
 
-// Main heading no back link
+/* main heading no back link */
 
 .heading-xlarge-noback {
   @extend .heading-xlarge;
@@ -63,7 +63,7 @@ body {
   display: inline-block;
   margin-top: 30px;
 
-  // Fixes bug (white line top and bottom on focus)
+  /* fixes bug (white line top and bottom on focus) */
 
   &:focus {
     border: 1px solid transparent;
@@ -74,7 +74,7 @@ body {
 }
 
 
-// Exception for date inputs
+/* Exception for date inputs */
 
 .form-date {
 
@@ -89,7 +89,7 @@ body {
 }
 
 
-// Exception for details
+/* exception for details */
 
 details {
   margin-top: em(5, 16 );
@@ -108,14 +108,14 @@ details .panel-indent {
 }
 
 
-// Links
+/* links */
 
 #global-header #logo, a:link {
-  overflow: hidden; // Fixes unwanted padding on focus
+  overflow: hidden; /* fixes unwanted padding on focus */
 }
 
 
-// Related external icon placement override
+/* related external icon placement override */
 
 .related-section-links {
 

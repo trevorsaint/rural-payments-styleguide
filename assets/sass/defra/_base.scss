@@ -2,3 +2,17 @@
 // Base
 // ==========================================================================
 
+
+/* Hide visually and from screen readers */
+
+.hidden {
+  display: none !important;
+}
+
+
+/* Hide visually and from screen readers, but maintain layout */
+
+.invisible {
+  visibility: hidden;
+}
+

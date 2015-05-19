@@ -1,8 +1,9 @@
-// Open Layers Map
+// ==========================================================================
+// Map
 // ==========================================================================
 
 
-/* Mmap container */
+/* map container */
 
 .map-container {
   border: 1px solid #bfc1c3;
@@ -33,7 +34,7 @@
   
   &-warning {
     border-left: 3px solid $error-colour;
-    padding: .75em 1em 1em;
+    padding: 1em;
   }
   
   > span {

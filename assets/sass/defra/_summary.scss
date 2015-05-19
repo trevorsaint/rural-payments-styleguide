@@ -2,8 +2,9 @@
 // Summary
 // ==========================================================================
 
+
 .summary {
-  margin-bottom: 1.05263em; // 20px
+  margin-bottom: 1.05263em; /* 20px */
 
 	ul {
 		margin: 0;
@@ -21,26 +22,26 @@
 		}
 
 	}
-
-}
-
-.summary-title {
-	@extend .bold-small;
-
-	@include media(tablet) {
-		float: left;
-		width: 40%;
+	
+	&-title {
+  	@extend .bold-small;
+  
+  	@include media(tablet) {
+  		float: left;
+  		width: 40%;
+  	}
+	
+	}
+	
+	&-value {
+    display: block;
+  	@include media(tablet) {
+    	@include box-sizing(border-box);
+  		float: right;
+  		padding-left: 20px;
+  		width: 60%;
+  	}
 	}
 
 }
 
-.summary-value {
-	display: block;
-	@include media(tablet) {
-  	@include box-sizing(border-box);
-		float: right;
-		padding-left: 20px;
-		width: 60%;
-	}
-
-}

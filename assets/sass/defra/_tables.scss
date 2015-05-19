@@ -3,13 +3,11 @@
 // ==========================================================================
 
 
-// Global properties
-
 table {
-  margin-bottom: 1.05263em * 2; // 40px
+  margin-bottom: 1.05263em * 2; /* 40px */
 
 
-  // Helper classes
+  /* helper classes */
 
   .sbi,
   .email {
@@ -42,7 +40,7 @@ table {
   }
 
 
-  // Other helper classes
+  /* other helper classes */
 
   .totals {
 
@@ -53,7 +51,7 @@ table {
   }
 
 
-  // Table tfoot
+  /* table tfoot */
 
   tfoot {
     border-top: 2px solid rgb(0, 0, 0);
@@ -63,12 +61,12 @@ table {
 }
 
 
-// Table variations
+// table variations */
 
 .table {
 
 
-  // Table land entitlements
+  /* table land entitlements */
 
   &-land-entitlements {
 
@@ -130,7 +128,7 @@ table {
   }
 
 
-  // Table land features
+  /* table land features */
 
   &-land-features {
 
@@ -153,7 +151,7 @@ table {
   }
 
 
-  // Table land parcels
+  /* table land parcels */
 
   &-land-parcels {
 
@@ -187,7 +185,7 @@ table {
   }
 
 
-  // Table land removal and summary
+  /* table land removal and summary */
 
   &-land-removal {
 
@@ -223,7 +221,7 @@ table {
   }
 
 
-  // Table customer and business results
+  /* table customer and business results */
 
   &-business-search {
 
@@ -235,7 +233,7 @@ table {
   }
 
 
-  // Table summary
+  // table summary */
 
   &-summary {
 
@@ -243,7 +241,8 @@ table {
 
       &:first-child {
 
-        th, td {
+        th, 
+        td {
           border-top: 1px solid $grey-2;
         }
 
@@ -268,7 +267,7 @@ table {
     &-content {
 
       ul {
-        margin: 0; // override list bullet margins
+        margin: 0; /* override list bullet margins */
       }
 
     }
@@ -284,7 +283,7 @@ table {
 }
 
 
-// Table sortable
+/* table sortable */
 
 .js-table-sortable {
 
@@ -319,7 +318,7 @@ table {
 }
 
 
-// Tables with javascript
+/* tables with javascript */
 
 .js-enabled {
 
@@ -327,7 +326,7 @@ table {
   .table {
 
 
-    // Table Land entitlements
+    /* table Land entitlements */
 
     &-land-entitlements {
 

@@ -2,16 +2,18 @@
 // Steps
 // ==========================================================================
 
+
 .steps {
-	//padding: 1em 0;
+
+  &-heading {
+    @include bold-36();
+  }
+  
+  &-pos {
+    @include core-19;
+    @extend .text-secondary;  
+    display: block;
+  }
+	
 }
 
-.steps-heading {
-	@include bold-36();
-}
-
-.steps-pos {
-	display: block;
-	@include core-19;
-	@extend .text-secondary;
-}

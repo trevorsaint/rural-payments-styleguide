@@ -4,10 +4,11 @@
 
 
 .tabs {
-  margin-bottom: 1.05263em; // 20px
+  margin-bottom: 1.05263em; /* 20px */
 
 
-  // Nav
+  /* nav */
+  
   &-nav {
     background-color: #fff;
 
@@ -22,7 +23,8 @@
   }
 
 
-  // List
+  /* list */
+  
   &-list {
     border-top: 1px solid $grey-2;
     margin: 0;
@@ -89,7 +91,8 @@
   }
 
 
-  // Content
+  /* content */
+  
   &-content {
     padding: em(19) 0 0;
 
