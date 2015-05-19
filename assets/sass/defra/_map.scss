@@ -37,7 +37,8 @@
     padding: 1em;
   }
   
-  > span {
+  &-message {
+    @extend .font-xsmall;
     color: $error-colour;
     display: block;
     margin-top: 5px;
