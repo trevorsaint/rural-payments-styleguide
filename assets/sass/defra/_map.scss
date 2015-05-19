@@ -2,7 +2,7 @@
 // ==========================================================================
 
 
-// Map container
+/* Mmap container */
 
 .map-container {
   border: 1px solid #bfc1c3;
@@ -27,7 +27,7 @@
 }
 
 
-// Map print link
+/* map print link */
 
 .map-print {
   
@@ -45,7 +45,7 @@
 }
 
 
-// Zoom Controls
+/* zoom controls */
 
 .olControlZoom {
   margin-left: -1px;
@@ -74,9 +74,9 @@
 }
 
 
-  // Zoom Out
+/* zoom out */
 
-  .olControlZoomOut {
-    margin-top: -1px;
-  }
+.olControlZoomOut {
+  margin-top: -1px;
+}
 

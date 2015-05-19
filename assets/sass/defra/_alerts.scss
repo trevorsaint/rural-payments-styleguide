@@ -39,7 +39,6 @@
 .alert-header {
   @extend .bold-medium;
 	clear: both;
-	//line-height: 2.083em; // 50px
 	margin-bottom: .5em;
 	overflow: hidden;
 	vertical-align: middle;
@@ -47,23 +46,24 @@
 
 
 .alert-number {
+  @extend .bold-xlarge;
 	float: left;
-  margin-right: .41666667em; // 20px ÷ 48px font size
-	@extend .bold-xlarge;
+  margin-right: .41666667em; /* 20px ÷ 48px font size */
 }
 
 
 .alert-message {
 	display: block;
 	overflow: hidden;
-
-  > p {
-    margin-top: 0;
-    margin-bottom: .5em;
-  }
-
-	p:last-child {
-		margin: 0;
+	
+	p {
+  	margin-top: em(25);
+  	margin-bottom: 0;
+  	
+  	&:first-child {
+    	margin-top: 0;
+  	}
+  	
 	}
 
 }

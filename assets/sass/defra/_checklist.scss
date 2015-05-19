@@ -9,13 +9,11 @@
 	position: relative;
 
 	&:before {
-
   	background: url('/assets/images/icons/checklist.png');
   	background-position: 50% 0;
   	content: '';
   	height: 25px;
-  	position: absolute;
-  	left: 0; top: 0;
+  	position: absolute; left: 0; top: 0;
   	width: 25px;
 
     @include device-pixel-ratio() {
@@ -33,7 +31,8 @@
 }
 
 
-// cross icon
+/* cross icon */
+
 .checklist-notmet {
 	@extend %checklist;
 
@@ -44,7 +43,8 @@
 }
 
 
-// question mark icon
+/* question mark icon */
+
 .checklist-inprogress {
 	@extend %checklist;
 
@@ -55,7 +55,8 @@
 }
 
 
-// tick icon
+/* tick icon */
+
 .checklist-done {
 	@extend %checklist;
 

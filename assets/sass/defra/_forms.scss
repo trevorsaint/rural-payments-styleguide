@@ -2,7 +2,7 @@
 // ==========================================================================
 
 
-// Form control errors
+/* form control errors */
 
 .form-control-error {
   border-color: $error-colour;
@@ -10,7 +10,7 @@
 }
 
 
-// Form control focus
+/* form control focus */
 
 .form-control:focus {
   border-color: $yellow;
@@ -18,7 +18,7 @@
 }
 
 
-// Form control widths
+/* form control widths */
 
 .form-control-wide {
   @include media(tablet) {
@@ -27,7 +27,7 @@
 }
 
 
-// Checkboxes
+/* checkboxes */
 
 .form-checkboxes {
   margin-top: 2em;
@@ -51,7 +51,7 @@
 }
 
 
-// Form control
+/* form control */
 
 .form-control-textarea {
   @extend .form-control;
@@ -72,7 +72,7 @@
   }
 
 
-  // Prevent firefox from using default focus
+  /* prevent firefox from using default focus */
 
   &:-moz-focusring {
     color: transparent;
@@ -83,7 +83,7 @@
 }
 
 
-// Form search
+/* form search */
 
 .form-search {
   display: table;
@@ -114,7 +114,7 @@
 }
 
 
-// Form table
+/* form table */
 
 .form-table {
 

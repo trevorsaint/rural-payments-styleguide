@@ -6,14 +6,14 @@
 .business {
 
 
-  // Menu
+  /* menu */
 
   &-menu {
     border-bottom: 1px solid $border-colour;
   }
 
 
-  // Links
+  /* links */
 
   &-links {
     @extend %clearfix;

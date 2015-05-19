@@ -14,7 +14,7 @@
 }
 
 
-// Alpha lists
+/* alpha lists */
 
 .list-alpha {
   list-style-type: lower-alpha;
@@ -25,7 +25,7 @@
 }
 
 
-// Parcel lists
+/* parcel lists */
 
 .list-parcel {
 
@@ -53,7 +53,7 @@
 }
 
 
-// Block list
+/* block list */
 
 .block-list {
   @include box-sizing(border-box);
@@ -61,7 +61,7 @@
   background: $panel-colour;
   border: 1px solid $panel-colour;
   clear: left;
-  cursor: pointer; // Encourage clicking on block labels
+  cursor: pointer; /* encourage clicking on block labels */
   display: block;
   float: none;
   margin-bottom: 10px;
@@ -88,7 +88,7 @@
 }
 
 
-// Add selected state
+/* add selected state */
 
 .js-enabled .block-list.selected {
   background: $white;
@@ -96,21 +96,21 @@
 }
 
 
-// Add focus to block labels
+/* add focus to block labels */
 
 .js-enabled .block-list.focused {
   outline: 3px solid $yellow;
 }
 
 
-// Remove focus from radio/checkboxes
+/* remove focus from radio/checkboxes */
 
 .js-enabled .block-list input:focus {
   outline: none;
 }
 
 
-// Description list
+/* description list */
 
 .description-list {
   margin-bottom: 1em;

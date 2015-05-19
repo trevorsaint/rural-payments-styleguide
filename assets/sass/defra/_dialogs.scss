@@ -4,12 +4,11 @@
 
 
 .dialog {
-  @include box-sizing(border-box); // Compass box sizing
+  @include box-sizing(border-box); /* compass box sizing */
   background-color: rgba(0,0,0,.5);
   height: 100%;
   padding: $gutter-half;
-  position: fixed;
-  left: 0; top: 0; right: 0; bottom: 0;
+  position: fixed; left: 0; top: 0; right: 0; bottom: 0;
   text-align: center;
   width: 100%;
   z-index: 0;
@@ -26,7 +25,7 @@
   }
 
 
-  // Matches page container properties
+  /* matches page container properties */
 
   @include media(tablet) {
     padding: $gutter;
@@ -71,13 +70,13 @@
 
 
   &-content {
-    outline: none; // Removes dotted border on focus
+    outline: none; /* removes dotted border on focus */
     padding: 1em;
     text-align: left;
   }
 
 
-  // Modify form controls inside a dialog
+  /* modify form controls inside a dialog */
 
   .form-group {
     float: none;
@@ -88,11 +87,11 @@
   }
 
 
-  // Button close modal
+  /* button close modal */
 
   &-close {
     @include hide-text;
-    background-color: transparent; // Removed background colour in Chrome (bug)
+    background-color: transparent; /* removed background colour in Chrome (bug) */
     border: 0 none;
     cursor: pointer;
     height: 22px;
@@ -104,7 +103,7 @@
   }
 
 
-  // Cancel link to close dialog
+  /* cancel link to close dialog */
 
   &-cancel {
     display: inline-block;
@@ -123,7 +122,7 @@
   &-actions {
 
     .button {
-      width: auto; // Prevent default style for buttons on mobile devices
+      width: auto; /* prevent default style for buttons on mobile devices */
     }
 
   }

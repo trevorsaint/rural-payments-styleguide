@@ -4,7 +4,7 @@
 
 .icon:before {
   cursor: default;
-  content: '\00a0'; // non-breaking space
+  content: '\00a0'; /* non-breaking space */
   display: inline-block;
   height: 22px;
   text-align: center;
