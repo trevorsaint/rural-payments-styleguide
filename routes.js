@@ -4,7 +4,6 @@ module.exports = {
   bind : function(app) {
 
 
-    // main menu
     app.get('/', function(req, res, next) {
 
       var data = {doctitle: 'Main menu'};
@@ -719,7 +718,23 @@ module.exports = {
         res.render('pages/angular/home', data);
 
       });
+      
+      
+    // ADMIN
+    
+    
+      // deactivate user
+      app.get('/internal/deactivate-user', function(req, res) {
 
+        var data = {
+          doctitle: 'Deactivate user',
+          internalStyles: true
+        };
+        
+        res.render('internal/deactivate-user/home', data);
+
+      });
+    
 
   }
 

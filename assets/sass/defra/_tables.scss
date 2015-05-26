@@ -223,7 +223,8 @@ table {
 
   /* table customer and business results */
 
-  &-business-search {
+  &-business-search,
+  &-customer-search {
 
     tbody th,
     tbody td {

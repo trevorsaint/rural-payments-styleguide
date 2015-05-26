@@ -53,10 +53,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/assets/govuk/images/opengraph-image.png">
 
-
     <!--[if gt IE 8]><!--><link href="/assets/stylesheets/main.css" media="all" rel="stylesheet"><!--<![endif]-->
     <!--[if IE 8]><link href="/assets/stylesheets/main-ie8.css" media="all" rel="stylesheet"><![endif]-->
 
+    {{#if internalStyles}}
+    <!-- Internal users -->
+    <link href="/assets/stylesheets/internal.css" media="all" rel="stylesheet">
+    {{/if}}
+    
+    <!-- print styles -->
     <link href="/assets/stylesheets/print.css" media="print" rel="stylesheet">
 
   </head>

@@ -1,0 +1,109 @@
+// ==========================================================================
+// Utilities
+// ==========================================================================
+
+@import 'compass';
+
+
+// ==========================================================================
+// Import GOV.UK frontend toolkit in part
+// ==========================================================================
+
+@import '../govuk/sass/colours';
+@import '../govuk/sass/conditionals';
+@import '../govuk/sass/typography';
+
+
+// ==========================================================================
+// Internal
+// ==========================================================================
+
+
+// Audit trail
+
+.audit-trail {
+  
+  @include media(tablet) {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+  
+  &-item {
+    @include core-16;
+    background-color: $grey-4;
+    margin-top: 19px;
+    padding: 19px;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    p {
+      margin-bottom: 0;
+    }
+    
+  }
+  
+}
+
+
+// Icons
+
+.icon-lock,
+.icon-deactivate {
+  background-image: url('../images/icons/statuses.png');
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+  
+  @include device-pixel-ratio() {
+    background-image: url('../images/icons/statuses-2x.png');
+    background-size: 100%;
+  }
+  
+}
+
+
+.icon-lock {
+  background-position: 0 0;
+}
+
+
+.icon-deactivate {
+  background-position: 0 -22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table {
+  
+  &-customer-search {
+    
+    .statuses {
+      float: right;
+      
+      .icon {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+      
+    }
+    
+    
+  }  
+  
+}
+
+
+
