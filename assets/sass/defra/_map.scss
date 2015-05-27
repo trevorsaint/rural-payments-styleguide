@@ -82,3 +82,17 @@
   margin-top: -1px;
 }
 
+
+/* measure output */
+
+.olControlMeasure {
+  @extend .font-xsmall;
+  background-color: $black;
+  color: $grey-4;
+  position: absolute; bottom: 10px; right: 10px;
+  padding: 5px 10px;
+  text-align: right;
+  width: auto;
+  z-index: 749;
+}
+

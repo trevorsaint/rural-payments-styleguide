@@ -27,6 +27,13 @@
         zoomInId: 'customZoomIn',
         zoomOutId: 'customZoomOut'
       }),
+      
+      /*
+        new OpenLayers.Control ({
+        autoActivate: false,
+        active: true,
+        displayClass: 'measurementButton'})
+      */
 
     ],
 
@@ -35,12 +42,16 @@
 
   });
 
+
   map.setCenter(
     new OpenLayers.LonLat(lat, lon).transform(
         new OpenLayers.Projection("EPSG:4326"),
         map.getProjectionObject()
     ), 10
   );
+
+
+  $('.map').append('<div class="olControlMeasure" id="OpenLayers_Measure">0.000 km</div>');
 
 
 })();
