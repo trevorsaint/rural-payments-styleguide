@@ -58,12 +58,14 @@
   width: 30px;
   
   &:hover,
-  &:focus {
+  &:focus,
+  &Active {
     background-color: $focus-colour;
+    outline: none;
   }
   
-  &:focus {
-    outline: none;
+  &Active {
+    cursor: default;
   }
   
   &:before {
