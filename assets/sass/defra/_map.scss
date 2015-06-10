@@ -3,7 +3,7 @@
 // ==========================================================================
 
 
-/* map container */
+/* map */
 
 .map-container {
   border: 1px solid #bfc1c3;
@@ -28,7 +28,7 @@
 }
 
 
-/* map print link */
+/* print link */
 
 .map-print {
   
@@ -47,52 +47,135 @@
 }
 
 
-/* zoom controls */
+/* buttons */
 
-.olControlZoom {
-  margin-left: -1px;
-  margin-bottom: -1px;
-  position: absolute;
-  bottom: 0; left: 0;
+.olButton {
+  @extend %hide-text;
+  background: $link-colour;
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 30px;
+  
+  &:hover,
+  &:focus {
+    background-color: $focus-colour;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+  
+  &:before {
+  	background: url('/assets/images/icons/map-controls.png');
+  	background-position: 50% 0;
+  	content: '';
+  	height: 30px;
+  	position: absolute; left: 0; top: 0;
+  	width: 30px;
 
-  .olButton {
-    border: 1px solid $grey-2;
-    background-color: #fff;
-    display: block;
-    font-size: 24px;
-    height: 30px;
-    line-height: 33px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    width: 30px;
-
-    &:hover {
-      color: $black;
+    @include device-pixel-ratio() {
+      background: url('/assets/images/icons/map-controls-2x.png');
+      @include background-size(30px);
     }
 
+	}
+  
+}
+
+
+/* controls */
+
+.olControl {
+  
+  
+  // measure
+  
+  &Measure {
+    @extend .font-xsmall;
+    background-color: $black;
+    color: $grey-4;
+    min-width: 80px;
+    padding: 5px 10px;
+    position: absolute; bottom: 10px; right: 10px;
+    text-align: right;
+    width: auto;
+    z-index: 749;
   }
-
-}
-
-
-/* zoom out */
-
-.olControlZoomOut {
-  margin-top: -1px;
-}
-
-
-/* measure output */
-
-.olControlMeasure {
-  @extend .font-xsmall;
-  background-color: $black;
-  color: $grey-4;
-  position: absolute; bottom: 10px; right: 10px;
-  padding: 5px 10px;
-  text-align: right;
-  width: auto;
-  z-index: 749;
+  
+  
+  // view controls
+  
+  &View {
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: 749;
+  }
+  
+  &Fullscreen {
+    &:before {
+      background-position: 50% -90px;
+    } 
+  }
+  
+  
+  // zoom controls
+  
+  &Zoom {
+    position: absolute; 
+    top: 50px; left: 10px;
+    z-index: 749;
+  }
+  
+  &Reset {
+  
+    &:before {
+      background-position: 50% 0;
+    }
+    
+  }
+  
+  &ZoomIn {
+  
+    &:before {
+      background-position: 50% -30px;
+    }
+    
+  }
+  
+  &ZoomOut {
+    
+    &:before {
+      background-position: 50% -60px;
+    }
+    
+  }
+  
+  
+  // measure controls
+  
+  &MeasureControls {
+    position: absolute;
+    top: 150px; left: 10px;
+    z-index: 749;
+  }
+  
+  &Measurement {
+    
+    &:before {
+      background-position: 50% -150px;
+    }
+    
+  }
+  
+  &MeasurementClear {
+    
+    &:before {
+      background-position: 50% -180px;
+    }
+    
+  }
+  
+  
 }
 
