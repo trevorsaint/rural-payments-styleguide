@@ -91,7 +91,7 @@
   
   // measure
   
-  &Measure {
+  &MeasureOutput {
     @extend .font-xsmall;
     background-color: $black;
     color: $grey-4;
@@ -127,7 +127,7 @@
     z-index: 749;
   }
   
-  &Reset {
+  &ZoomReset {
   
     &:before {
       background-position: 50% 0;

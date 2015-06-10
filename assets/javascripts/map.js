@@ -57,14 +57,14 @@
   
   $('.map').append(
     
-    '<div class="olControlMeasure" id="OpenLayers_Measure">8888.88 m</div>' +
+    '<div class="olControlMeasureOutput" id="OpenLayers_Measure">8888.88 m</div>' +
     
     '<div class="olControlView" id="OpenLayers_Fullscreen">' +
       '<a class="olControlFullscreen olButton" id="toggleFullscreen" href="#" title="Fullscreen toggle" role="button">Fullscreen toggle</a>' +
     '</div>' +
     
     '<div class="olControlZoom" id="OpenLayers_Control_Zoom">' +
-      '<a class="olControlReset olButton" href="#resetLoc" title="Reset view" role="button">Reset view</a>' +
+      '<a class="olControlZoomReset olButton" href="#resetLoc" title="Reset view" role="button">Reset view</a>' +
       '<a class="olControlZoomIn olButton" href="#zoomIn" title="Zoom in" role="button">Zoom in</a>' +
       '<a class="olControlZoomOut olButton" href="#zoomOut" title="Zoom out" role="button">Zoom out</a>' +
     '</div>' +

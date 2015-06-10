@@ -26,34 +26,6 @@
 }
 
 
-/* parcel lists */
-
-.list-parcel {
-
-  dt, dd {
-    display: inline;
-  }
-
-  dt {
-
-    &:after {
-      content: ':';
-    }
-
-  }
-
-  dd {
-    padding-right: 10px;
-
-    &:last-child {
-      padding-right: 0;
-    }
-
-  }
-
-}
-
-
 /* block list */
 
 .block-list {
@@ -111,24 +83,55 @@
 }
 
 
-/* description list */
+/* list parcel */
 
-.description-list {
+.list-parcel {
   margin-bottom: 1em;
-
+  
   dt {
     float: left;
     margin-right: 5px;
-
+    
     &:after {
       content: ':';
     }
-
+    
   }
-
+  
   dd {
     overflow: hidden;
   }
+  
+}
 
+
+/* list-parcel inline */
+
+.list-parcel-inline {
+  margin-bottom: 1em;
+  
+  dt, 
+  dd {
+    display: inline;
+  }
+  
+  dt {
+    
+    &:after {
+      content: ':';
+    }
+    
+  }
+  
+  dd {
+    padding-right: 10px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+    
+  }
+  
+  
 }
 
