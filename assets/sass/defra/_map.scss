@@ -68,6 +68,10 @@
     cursor: default;
   }
   
+  &Hidden {
+    display: none;
+  }
+  
   &:before {
   	background: url('/assets/images/icons/map-controls.png');
   	background-position: 50% 0;
