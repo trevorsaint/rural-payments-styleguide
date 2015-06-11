@@ -734,6 +734,19 @@ module.exports = {
         res.render('internal/deactivate-user/home', data);
 
       });
+      
+      
+      // alerts
+      app.get('/internal/alerts', function(req, res) {
+
+        var data = {
+          doctitle: 'Alerts',
+          internalStyles: true
+        };
+        
+        res.render('internal/alerts/home', data);
+
+      });
     
 
   }
