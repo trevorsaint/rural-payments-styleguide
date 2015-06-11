@@ -58,18 +58,24 @@
   width: 30px;
   
   &:hover,
-  &:focus,
-  &Active {
+  &:focus {
     background-color: $focus-colour;
     outline: none;
   }
   
-  &Active {
-    cursor: default;
-  }
-  
   &Hidden {
     display: none;
+  }
+  
+  &Active {
+    cursor: default;
+    opacity: .5;
+    
+    &:hover,
+    &:focus {
+      background-color: $link-colour;
+    }
+    
   }
   
   &:before {
@@ -121,6 +127,12 @@
   &Fullscreen {
     &:before {
       background-position: 50% -90px;
+    } 
+  }
+  
+  &FullscreenActive {
+    &:before {
+      background-position: 50% -120px;
     } 
   }
   
