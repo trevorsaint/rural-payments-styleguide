@@ -63,13 +63,18 @@
     outline: none;
   }
   
+  &Active {
+    background-color: $focus-colour;
+    outline: none;
+  }
+  
   &Hidden {
     display: none;
   }
   
-  &Active {
+  &Disabled {
     cursor: default;
-    opacity: .5;
+    @include opacity(0.5);
     
     &:hover,
     &:focus {
@@ -77,6 +82,7 @@
     }
     
   }
+  
   
   &:before {
   	background: url('/assets/images/icons/map-controls.png');
