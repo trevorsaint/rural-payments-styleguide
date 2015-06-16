@@ -78,15 +78,6 @@ module.exports = {
         });
 
 
-        // register for rural payments
-        app.get('/elements/forms/register-for-rural-payments', function(req, res) {
-
-          var data = {doctitle: 'Register for Rural Payments'};
-          res.render('elements/forms/register-for-rural-payments/home', data);
-
-        });
-
-
         // validation
         app.get('/elements/forms/form-validation', function(req, res) {
 
@@ -666,6 +657,15 @@ module.exports = {
         };
         
         res.render('pages/removal-of-land/home', data);
+
+      });
+      
+      
+      // register for rural payments
+      app.get('/pages/register-for-rural-payments', function(req, res) {
+
+        var data = {doctitle: 'Register for Rural Payments'};
+        res.render('pages/register-for-rural-payments/home', data);
 
       });
 
