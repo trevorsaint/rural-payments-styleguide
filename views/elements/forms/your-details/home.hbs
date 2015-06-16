@@ -1,37 +1,43 @@
 		<a class="back-link" href="../">Back to forms</a>
 
 
-		<h1 class="heading-xlarge">Your details</h1>
+		<form class="form">
+  		
+  		
+  		<h1 class="form-title heading-xlarge">Your details</h1>
 
 
-    <!-- form -->
-		<form class="form" method="get" action="/">
-
-
-      <!-- form group -->
 			<div class="form-group">
-				<label class="form-label" for="full-name">Full name</label>
-				<p class="form-hint">As shown on your birth certificate or passport</p>
-				<input class="form-control" type="text" id="full-name">
-			</div>
-
-
-      <!-- form group -->
-			<div class="form-group">
-				<label class="form-label" for="ni-number">National Insurance number
-					<span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60.<br>
-					For example, 'VO 12 34 56 D'.</span>
+				
+				<label for="full-name">
+				  <span class="form-label-bold">Full name</span>
+				  <span class="form-hint">As shown on your birth certificate or passport</span>
 				</label>
-				<input class="form-control" type="text" id="ni-number">
+				
+				<input class="form-control" type="text" id="full-name">
+				
 			</div>
 
 
-      <!-- form group -->
+			<div class="form-group">
+  			
+				<label for="ni-number">
+				  <span class="form-label-bold">National Insurance number</span>
+					<span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. <br> For example, 'VO 12 34 56 D'.</span>
+				</label>
+				
+				<input class="form-control" id="ni-number" type="text">
+				
+			</div>
+
+
 			<div class="form-group">
 
 				<fieldset>
 
-          <legend class="form-label">Date of birth</legend>
+          <legend>
+            <span class="form-label-bold">Date of birth</span>
+          </legend>
 
           <div class="form-date">
 
@@ -59,7 +65,6 @@
 			</div>
 
 
-      <!-- form group -->
 			<div class="form-group">
 
 				<button class="button" type="submit">Continue</button>
