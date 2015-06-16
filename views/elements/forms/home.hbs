@@ -52,10 +52,17 @@
   
   
   <div class="example">
-    <form>
-      <label class="form-label" for="full-name">Full name</label>
+    
+    <form class="form">
+      
+      <label for="full-name">
+        <span class="form-label">Full name</span>
+      </label>
+      
       <input class="form-control" id="full-name" type="text">
+      
     </form>
+    
   </div>
 
 
@@ -73,16 +80,31 @@
   
   
   <div class="example">
-    <form>
+    
+    <form class="form">
+      
       <div class="form-group">
-        <label class="form-label" for="first-name">First name</label>
+        
+        <label for="first-name">
+          <span class="form-label">First name</span>
+        </label>
+        
         <input class="form-control" id="first-name" type="text">
+        
       </div>
+      
       <div class="form-group">
-        <label class="form-label" for="last-name">Last name</label>
+        
+        <label for="last-name">
+          <span class="form-label">Last name</span>
+        </label>
+        
         <input class="form-control" id="last-name" type="text">
+        
       </div>
+      
     </form>
+    
   </div>
 
 
@@ -100,10 +122,10 @@
   
   <div class="example">
   
-    <form>
+    <form class="form">
     
-      <label class="form-label" for="ni-number">
-        National Insurance number
+      <label for="ni-number">
+        <span class="form-label">National Insurance number</span>
         <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
       </label>
       
@@ -120,11 +142,13 @@
   
   <div class="example">
   
-    <form>
+    <form class="form">
     
       <fieldset>
       
-        <legend class="form-label">Date of birth</legend>
+        <legend>
+          <span class="form-label-bold">Date of birth</span>
+        </legend>
         
         <div class="form-date">
         
@@ -168,8 +192,13 @@
   
   
   <div class="example">
-    <form>
-      <label class="form-label" for="legal-status">Legal status</label>
+    
+    <form class="form">
+      
+      <label for="legal-status">
+        <span class="form-label">Legal status</span>
+      </label>
+      
       <select class="form-control-select" id="legal-status">
         <option>-- Please make a selection --</option>
         <option value="1">Charitable Interest Organisation</option>
@@ -178,6 +207,7 @@
         <option value="4">Government Limited Liability Partnership</option>
       </select>
     </form>
+    
   </div>
 
 
@@ -187,11 +217,13 @@
   
   <div class="example">
   
-    <form>
+    <form class="form">
     
     <fieldset>
     
-      <legend class="form-label">What are you looking for?</legend>
+      <legend>
+        <span class="form-label-bold">What are you looking for?</span>
+      </legend>
       
       <div class="form-search">
       
@@ -218,9 +250,14 @@
   
   <div class="example">
   
-    <form>
-      <label class="form-label" for="enquiry">Enquiry</label>
+    <form class="form">
+      
+      <label for="enquiry">
+        <span class="form-label">Enquiry</span>
+      </label>
+      
       <textarea class="form-control form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
+      
     </form>
   
   </div>
@@ -230,24 +267,22 @@
   <h3 class="heading-medium">Radio buttons</h3>
   
   
-  <div class="text">
-    
-    <ul class="list-bullet">
-      <li>use these to let users choose a single option from a list</li>
-      <li>for more than two options, radio buttons should be stacked</li>
-      <li>radio buttons with large hit areas are easier to select with a mouse or touch devices</li>
-    </ul>
-  
-  </div>
+  <ul class="list-bullet text">
+    <li>use these to let users choose a single option from a list</li>
+    <li>for more than two options, radio buttons should be stacked</li>
+    <li>radio buttons with large hit areas are easier to select with a mouse or touch devices</li>
+  </ul>
   
   
   <div class="example">
   
-    <form>
+    <form class="form">
     
       <fieldset class="inline">
       
-        <legend><span class="form-label">Do you know their National Insurance number?</span></legend>
+        <legend>
+          <span class="form-label">Do you know their National Insurance number?</span>
+        </legend>
         
         <div class="form-group form-group-compound">
         
@@ -270,7 +305,7 @@
   
   <div class="example">
   
-    <form>
+    <form class="form">
     
       <label class="block-label" for="radio-1">
         <input id="radio-1" name="radio-group" value="Northern Ireland" type="radio">
@@ -306,11 +341,13 @@
   
   <div class="example">
   
-    <form>
+    <form class="form">
     
       <fieldset>
       
-        <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
+        <legend>
+          <span class="form-label-bold">Which types of waste do you transport regularly?</span>
+        </legend>
         
         <p>Select all that apply</p>
         
@@ -345,14 +382,16 @@
   
   <div class="example">
   
-    <form>
+    <form class="form">
     
-      <label class="form-label" for="telephone-number">Enter your telephone number</label>
+      <label for="telephone-number">
+        <span class="form-label">Enter your telephone number</span>
+      </label>
+      
       <input class="form-control" id="telephone-number" type="text">
       
       <label class="form-checkbox" for="checkbox-telephone-number">
-      <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox">
-        I need to be contacted using a text phone
+        <input id="checkbox-telephone-number" value="checkbox-telephone-number" type="checkbox"> I need to be contacted using a text phone
       </label>
     
     </form>
@@ -375,11 +414,13 @@
   
   <div class="example">
   
-    <form>
+    <form class="form">
     
       <fieldset class="inline">
       
-        <legend><span class="form-label">Do you know their National Insurance number?</span></legend>
+        <legend>
+          <span class="form-label">Do you know their National Insurance number?</span>
+        </legend>
         
         <div class="form-group form-group-compound">
         
@@ -396,8 +437,13 @@
         </div>
         
         <div class="panel-indent js-hidden" id="example-ni-number">
-          <label class="form-label" for="national-insurance">National Insurance number</label>
+          
+          <label for="national-insurance">
+            <span class="form-label">National Insurance number</span>
+          </label>
+          
           <input class="form-control" id="national-insurance" type="text">
+          
         </div>
       
       </fieldset>
