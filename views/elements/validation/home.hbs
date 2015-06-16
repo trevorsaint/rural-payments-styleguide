@@ -60,12 +60,12 @@
           </legend>
 
           <label class="block-label" for="personal-details-yes">
-            <input type="radio" value="Yes" id="personal-details-yes" aria-expanded="false">
+            <input id="personal-details-yes" type="radio" value="Yes" aria-expanded="false">
             Yes, my personal details are correct
           </label>
 
           <label class="block-label" for="personal-details-no">
-            <input type="radio" value="No" id="personal-details-no" aria-expanded="false">
+            <input  id="personal-details-no" type="radio" value="No" aria-expanded="false">
             No, some details are wrong or have changed
           </label>
 
@@ -126,19 +126,19 @@
         <span class="error-message" id="error-message-full-name">Error message about full name goes here</span>
       </label>
 
-      <input class="form-control" type="text" aria-describedby="error-message-full-name" id="full-name">
+      <input class="form-control" id="full-name" type="text" aria-describedby="error-message-full-name">
       
     </div>
 
     <div class="form-group error">
 
-      <label id="error-ni-number" for="ni-number">
+      <label for="ni-number" id="error-ni-number">
         <span class="form-label-bold">National Insurance number</span>
         <span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. <br> For example, 'VO 12 34 56 D'.</span>
         <span class="error-message" id="error-message-ni-number">Error message about National Insurance number goes here</span>
       </label>
 
-      <input class="form-control" type="text" aria-describedby="error-message-ni-number" id="ni-number">
+      <input class="form-control" id="ni-number" type="text" aria-describedby="error-message-ni-number">
 
     </div>
 
