@@ -8,65 +8,52 @@
 		<form class="form" method="get" action="/">
 
 
-			<div class="text">
-
-        <div class="validation-summary group">
-
-          <h1 class="validation-heading">We need more information</h1>
-
-          <p>Make sure you:</p>
-
-          <ol class="validation-list list-bullet text">
-            <li><a href="#register-email-label">enter a valid email address</a></li>
-            <li><a href="#register-email-confirm-label">check that your email addresses match exactly</a></li>
-            <li><a href="#register-confirm-understanding">tick the box to show you agree to the terms and conditions</a></li>
-          </ol>
-
-        </div>
-
-				<p>You need to give your email address and create a password. This is so you can make, save and retrieve LPAs.</p>
-
-				<p>You can create an account in your name to help someone else make an LPA. But they must make all the decisions about the LPA themselves.</p>
-
-				<p>If you already have an account please <a href="/">sign in</a>.</p>
-
-			</div>
+      <div class="error-summary" tabindex="-1" aria-labelledby="error-summary-heading" role="group">
+      
+        <h1 class="heading-medium error-summary-heading" id="error-summary-heading">Message to alert the user to a problem goes here</h1>
+      
+        <p>Optional description of the error(s) and how to correct them</p>
+      
+        <ul class="error-summary-list">
+          <li><a href="#ni-number">Descriptive link to the question with an error</a></li>
+        </ul>
+      
+      </div>
+      
+      
+      <h1 class="heading-large">Your personal details</h1>
 
 
       <!-- form group -->
-			<div class="form-group validation">
-	      <label class="form-label" for="register-email" id="register-email-label">Enter your email address <span class="validation-message">must be a valid email address</span></label>
-	      <input class="form-control" type="email" id="register-email">
-			</div>
-			<!-- end -->
+      <div class="form-group">
 
-
-      <!-- form group -->
-			<div class="form-group validation">
-	      <label class="form-label" for="register-email-confirm" id="register-email-confirm-label">Re-enter your email address <span class="validation-message">must match Enter your email address</span></label>
-	      <input class="form-control" type="email" id="register-email-confirm">
-			</div>
+        <label id="full-name" for="full-name">
+          <span class="form-label-bold">Full name</span>
+          <span class="form-hint">As shown on your birth certificate or passport</span>
+        </label>
+  
+        <input class="form-control" type="text" name="fullName" id="full-name">
+      
+      </div>
       <!-- end -->
-
-
-      <div class="form-block text">
-				<p>LPAs are governed by the laws of England and Wales and can only be made by people with mental capacity aged 18 or older.</p>
-			</div>
-
-
+      
+      
       <!-- form group -->
-			<div class="form-group validation">
-	      <label class="form-label" for="register-confirm-understanding" id="register-confirm-understanding-label">
-	      <input type="checkbox" value="1" id="register-confirm-understanding"> I agree to the <a target="_blank" href="/">Terms and conditions and privacy policy</a> <span class="validation-message">must be checked</span></label>
-			</div>
-			<!-- end -->
+      <div class="form-group error">
 
-
-      <!-- form group -->
-			<div class="form-group">
-				<button class="button" type="submit">Continue</button>
-			</div>
-			<!-- end -->
+        <label id="error-full-name" for="ni-number">
+          <span class="form-label-bold">National Insurance number</span>
+          <span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. <br> For example, 'VO 12 34 56 D'.</span>
+          <span class="error-message" id="error-message-ni-number">Error message about National Insurance number goes here</span>
+        </label>
+  
+        <input class="form-control" type="text" aria-describedby="error-message-ni-number" name="niNumber" id="ni-number">
+  
+      </div>
+      <!-- end -->
+      
+      
+      <input class="button" type="submit" value="Continue">
 
 
 		</form>

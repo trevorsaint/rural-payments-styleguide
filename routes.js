@@ -201,6 +201,15 @@ module.exports = {
         res.render('elements/related/home', data);
 
       });
+      
+      
+      // Errors & Validation
+      app.get('/elements/validation', function(req, res) {
+
+        var data = {doctitle: 'Errors & Validation'};
+        res.render('elements/validation/home', data);
+
+      });
 
 
     // PAGES

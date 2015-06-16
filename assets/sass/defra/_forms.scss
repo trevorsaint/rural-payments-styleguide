@@ -5,27 +5,27 @@
 
 /* form control errors */
 
-.form-control-error {
+/*.form-control-error {
   border-color: $error-colour;
   outline: 2px solid $error-colour;
-}
+}*/
 
 
 /* form control focus */
 
-.form-control:focus {
+/*.form-control:focus {
   border-color: $yellow;
   outline: 2px solid $yellow;
-}
+}*/
 
 
 /* form control widths */
 
-.form-control-wide {
+/*.form-control-wide {
   @include media(tablet) {
     width: 100%;
   }
-}
+}*/
 
 
 /* checkboxes */
