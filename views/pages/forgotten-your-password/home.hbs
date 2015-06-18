@@ -9,15 +9,14 @@
 
       <p>If you don't have a code, click '<b>send unique code</b>' below to recieve one. When you get this code, return to this page and enter it. This code is only active for 12 hours, after this time you will need another code.</p>
 
-      <p>If you don't know your <abbr title="Customer Reference Number">CRN</abbr> or the email address that is registered to your account, you will need to contact us on <b>03000 200 301</b>.</p>
+      <p>If you don't know your <abbr title="Customer Reference Number">CRN</abbr> or the email address that is registered to your account, you will need to contact us on <span class="bold-small">03000 200 301</span>.</p>
 
     </div>
 
 
-    <form class="form" method="get" action="/">
+    <form class="form">
 
 
-      <!-- form group -->
       <div class="form-group">
 
         <fieldset>
@@ -25,19 +24,34 @@
           <legend class="heading-large">Your details</legend>
 
           <div class="form-group">
-            <label class="form-label" for="customer-reference">Customer reference number</label>
+            
+            <label for="customer-reference">
+              <span class="form-label">Customer reference number</span>
+            </label>
+            
             <input class="form-control" id="customer-reference" type="text">
+            
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="email">Email address</label>
+            
+            <label for="email">
+              <span class="form-label">Email address</span>
+            </label>
+            
             <input class="form-control" id="email" type="email">
+            
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="unique-code">Unique code</label>
-            <span class="form-hint">It'll be in your email inbox. For example, 123456.</span>
+            
+            <label for="unique-code">
+              <span class="form-label">Unique code</span>
+              <span class="form-hint">It'll be in your email inbox. For example, 123456.</span>
+            </label>
+            
             <input class="form-control" id="unique-code" type="text">
+            
           </div>
 
         </fieldset>
@@ -47,7 +61,6 @@
       </div>
 
 
-      <!-- form group -->
       <div class="form-group">
 
         <fieldset>
@@ -55,17 +68,28 @@
           <legend class="heading-large">Create new password</legend>
 
           <div class="text">
-            <p>Your new password must be different from your email address and customer reference number, a minimum of 8 characters, contain upper and lower case letters, and contain at least one number or special character.</p>
+            <p>Your new password must be different from your email address and customer reference number, a minimum of 8 characters, contain upper and lower case letters, 
+              and contain at least one number or special character.</p>
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="new-password">New password</label>
+            
+            <label for="new-password">
+              <span class="form-label">New password</span>
+            </label>
+            
             <input class="form-control" id="new-password" type="password">
+            
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="confirm-password">Confirm password</label>
+            
+            <label for="confirm-password">
+              <span class="form-label">Confirm password</span>
+            </label>
+            
             <input class="form-control" id="confirm-password" type="password">
+            
           </div>
 
         </fieldset>
@@ -73,10 +97,7 @@
       </div>
 
 
-      <!-- form group -->
-      <div class="form-group">
-        <button class="button" type="submit">Create new password</button>
-      </div>
+      <button class="button">Create new password</button>
 
 
     </form>

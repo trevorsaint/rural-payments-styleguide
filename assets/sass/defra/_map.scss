@@ -18,6 +18,15 @@
     display: block;
     padding-top: 100%;
   }
+  
+  &-full {
+    background-color: $white;
+    border: 0 none;
+    position: fixed;
+    left:0; right: 0; bottom: 0; top: 0;
+    margin-bottom: 0;
+    z-index: 12;
+  }
 
 }
 
@@ -57,8 +66,12 @@
   position: relative;
   width: 30px;
   
-  &:hover,
   &:focus {
+    background-color: $link-colour;
+    outline: none;
+  }
+  
+  &:hover {
     background-color: $focus-colour;
     outline: none;
   }
@@ -76,8 +89,7 @@
     cursor: default;
     @include opacity(0.5);
     
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $link-colour;
     }
     

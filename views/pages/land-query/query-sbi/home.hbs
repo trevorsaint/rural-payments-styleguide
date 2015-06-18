@@ -11,8 +11,13 @@
 
 
         <div class="form-group">
-          <label class="form-label" for="enquiry">Query</label>
+          
+          <label for="enquiry">
+            <span class="form-label">Query</span>
+          </label>
+          
           <textarea class="form-control form-control-3-4 form-control-textarea" id="enquiry" rows="6" cols="50"></textarea>
+          
         </div>
 
 
@@ -20,7 +25,9 @@
 
           <fieldset class="inline">
 
-            <legend><span class="form-label">Do you know both, the <abbr title="Single Business Identifier">SBI</abbr> of the seller and parcel references for the parcels you have purchased?</span></legend>
+            <legend>
+              <span class="form-label">Do you know both, the <abbr title="Single Business Identifier">SBI</abbr> of the seller and parcel references for the parcels you have purchased?</span>
+            </legend>
 
             <div class="form-group form-group-compound">
 
@@ -37,21 +44,36 @@
             <div class="panel-indent js-hidden" id="seller-references">
 
               <div class="form-group">
-                <label class="form-label" for="sbi-reference">SBI reference number of the seller's business</label>
+                
+                <label for="sbi-reference">
+                  <span class="form-label">SBI reference number of the seller's business</span>
+                </label>
+                
                 <input class="form-control" id="sbi-reference" type="text">
+                
               </div>
 
               <div class="form-group form-group-compound">
-                <label class="form-label" for="parcel-reference">Parcel reference</label>
+                
+                <label for="parcel-reference">
+                  <span class="form-label">Parcel reference</span>
+                </label>
+                
                 <input class="form-control" id="parcel-reference" type="text">
+                
               </div>
 
               <div class="form-group form-group-compound">
-                <label class="form-label visuallyhidden" for="parcel-reference-2">Parcel reference #2</label>
+                
+                <label for="parcel-reference-2">
+                  <span class="form-label visuallyhidden">Parcel reference #2</span>
+                </label>
+                
                 <input class="form-control" id="parcel-reference-2" type="text">
+                
               </div>
 
-              <p><a href="#">Add another parcel reference</a></p>
+              <p><a href="/">Add another parcel reference</a></p>
 
             </div>
 
@@ -60,13 +82,9 @@
         </div>
 
 
-        <div class="form-group">
+        <button class="button" type="submit">Finish and submit query</button>
 
-          <button class="button" type="submit">Finish and submit query</button>
-
-          <p><a href="./">Cancel</a></p>
-
-        </div>
+        <p><a href="./">Cancel</a></p>
 
 
       </form>

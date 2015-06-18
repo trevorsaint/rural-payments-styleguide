@@ -60,24 +60,6 @@ module.exports = {
       });
 
 
-        // your details
-        app.get('/elements/forms/your-details', function(req, res) {
-
-          var data = {doctitle: 'Your details'};
-          res.render('elements/forms/your-details/home', data);
-
-        });
-
-
-        // where should we send your new passport
-        app.get('/elements/forms/where-should-we-send-your-new-passport', function(req, res) {
-
-          var data = {doctitle: 'Where should we send your new passport?'};
-          res.render('elements/forms/where-should-we-send-your-new-passport/home', data);
-
-        });
-
-
         // validation
         app.get('/elements/forms/form-validation', function(req, res) {
 
@@ -666,6 +648,24 @@ module.exports = {
 
         var data = {doctitle: 'Register for Rural Payments'};
         res.render('pages/register-for-rural-payments/home', data);
+
+      });
+      
+      
+      // where should we send your new passport
+      app.get('/pages/where-should-we-send-your-new-passport', function(req, res) {
+
+        var data = {doctitle: 'Where should we send your new passport?'};
+        res.render('pages/where-should-we-send-your-new-passport/home', data);
+
+      });
+      
+      
+      // your details
+      app.get('/pages/your-details', function(req, res) {
+
+        var data = {doctitle: 'Your details'};
+        res.render('pages/your-details/home', data);
 
       });
 

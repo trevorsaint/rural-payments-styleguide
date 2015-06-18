@@ -75,6 +75,25 @@
     '</div>'
     
   );
+  
+  
+  $('.olControlFullscreen').on('click', function (event) {
+
+      event.preventDefault();
+
+      $('.map-container').toggleClass('map-container-full');
+
+      if (this.inFullScreen) {
+          $(event.target).removeClass("olControlFullscreenActive").addClass("olControlFullscreen");
+      }
+      else {
+          $(event.target).removeClass("olControlFullscreen").addClass("olControlFullscreenActive");
+      }
+
+      map.updateSize();
+
+      this.inFullScreen = !this.inFullScreen;
+  });
 
 
 })();

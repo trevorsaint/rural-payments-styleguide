@@ -18,15 +18,16 @@
       <fieldset>
 
 
-        <legend class="heading-large">Additional business details</legend>
+        <legend class="heading-medium">Additional business details</legend>
 
 
-        <!-- form group -->
         <div class="form-group">
 
-          <label class="form-label" for="legal-status">Legal status</label>
+          <label for="legal-status">
+            <span class="form-label">Legal status</span>
+          </label>
 
-          <select class="form-control-select" id="legal-status">
+          <select class="form-control" id="legal-status">
             <option>-- Please make a selection --</option>
             <option value="1">Charitable Interest Organisation (CIO)</option>
             <option value="2">Community Interest Company (CIC)</option>
@@ -46,12 +47,13 @@
         </div>
 
 
-        <!-- form group -->
         <div class="form-group">
 
-          <label class="form-label" for="business-type">Type of business</label>
+          <label for="business-type">
+            <span class="form-label">Type of business</span>
+          </label>
 
-          <select class="form-control-select" id="business-type">
+          <select class="form-control" id="business-type">
             <option>-- Please make a selection --</option>
             <option value="1">Abattoir/Slaughterhouse</option>
             <option value="2">Agency</option>
@@ -100,127 +102,135 @@
         </div>
 
 
-        <!-- form group -->
-        <div class="form-group">
+        <fieldset class="form-group">
 
-          <fieldset>
+          <legend>
+            <span class="form-label">Date your business was registered</span>
+          </legend>
 
-            <legend class="form-label">Date your business was registered</legend>
+          <div class="form-date">
 
-            <div class="form-date">
+          	<div class="form-group form-group-day">
+          		
+          		<label for="dob-day">
+          		  <span class="form-label">Day</span>
+          		</label>
+          		
+          		<input class="form-control" id="dob-day" type="text">
+          		
+          	</div>
 
-            	<div class="form-group form-group-day">
-            		<label class="form-label" for="dob-day">Day</label>
-            		<input class="form-control" id="dob-day" type="text">
-            	</div>
+          	<div class="form-group form-group-month">
+          	
+          		<label for="dob-month">
+          		  <span class="form-label">Month</span>
+          		</label>
+          		
+          		<input class="form-control" id="dob-month" type="text">
+          		
+          	</div>
 
-            	<div class="form-group form-group-month">
-            		<label class="form-label" for="dob-month">Month</label>
-            		<input class="form-control" id="dob-month" type="text">
-            	</div>
+          	<div class="form-group form-group-year">
+          		
+          		<label for="dob-year">
+          		  <span class="form-label">Year</span>
+          		</label>
+          		
+          		<input class="form-control" id="dob-year" type="text">
+          		
+          	</div>
 
-            	<div class="form-group form-group-year">
-            		<label class="form-label" for="dob-year">Year</label>
-            		<input class="form-control" id="dob-year" type="text">
-            	</div>
+          </div>
 
-            </div>
+        </fieldset>
+        
 
-          </fieldset>
+        <fieldset class="form-group">
 
-        </div>
+          <legend>
+            <span class="form-label visuallyhidden">Registered land</span>
+          </legend>
+
+          <div class="text">
+            <p>Does your business have any land registered in Wales, Scotland or Northern Ireland?</p>
+          </div>
+
+          <label class="block-label" for="checkbox-1">
+            <input id="checkbox-1" value="waste-animal" type="checkbox">
+            Wales
+          </label>
+
+          <label class="block-label" for="checkbox-2">
+            <input id="checkbox-2" value="waste-mines" type="checkbox">
+            Scotland
+          </label>
+
+          <label class="block-label" for="checkbox-3">
+            <input id="checkbox-3" value="farm-agricultural" type="checkbox">
+            Northern Ireland
+          </label>
+
+        </fieldset>
 
 
-        <!-- form group -->
-        <div class="form-group">
+        <fieldset class="inline">
 
-          <fieldset>
+          <legend>
+            <span class="form-label visuallyhidden">Business operation</span>
+          </legend>
 
-            <legend class="form-label visuallyhidden">Registered land</legend>
+          <div class="text">
+            <p>Does your business operate any of the following additional business activities: airport, estate agency, permanent sports, ground, property development, railway, recreation ground or waterworks?</p>
+          </div>
 
-            <div class="text">
-              <p>Does your business have any land registered in Wales, Scotland or Northern Ireland?</p>
-            </div>
+          <div class="form-group form-group-compound">
 
-            <label class="block-label" for="checkbox-1">
-              <input id="checkbox-1" value="waste-animal" type="checkbox">
-              Wales
+            <label class="block-label" for="radio-indent-1">
+              <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
+              Yes
             </label>
 
-            <label class="block-label" for="checkbox-2">
-              <input id="checkbox-2" value="waste-mines" type="checkbox">
-              Scotland
+            <label class="block-label" for="radio-indent-2">
+              <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
+              No
             </label>
 
-            <label class="block-label" for="checkbox-3">
-              <input id="checkbox-3" value="farm-agricultural" type="checkbox">
-              Northern Ireland
-            </label>
+          </div>
 
-          </fieldset>
-
-        </div>
-
-
-        <!-- form group -->
-        <div class="form-group">
-
-          <fieldset class="inline">
-
-            <legend class="form-label visuallyhidden">Business operation</legend>
-
-            <div class="text">
-              <p>Does your business operate any of the following additional business activities: airport, estate agency, permanent sports, ground, property development, railway, recreation ground or waterworks?</p>
-            </div>
-
-            <div class="form-group form-group-compound">
-
-              <label class="block-label" for="radio-indent-1">
-                <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio">
-                Yes
-              </label>
-
-              <label class="block-label" for="radio-indent-2">
-                <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio">
-                No
-              </label>
-
-            </div>
-
-          </fieldset>
-
-        </div>
+        </fieldset>
 
 
       </fieldset>
 
 
-      <!-- form group -->
-      <div class="form-group">
+      <fieldset>
 
-        <fieldset>
+        <legend class="heading-medium">Additional reference numbers</legend>
 
-          <legend class="heading-large">Additional reference numbers</legend>
+        <div class="form-group">
+          
+          <label for="company-house-reg">
+            <span class="form-label">Companies House registration (if applicable)</span>
+          </label>
+          
+          <input class="form-control" id="company-house-reg" type="text">
+          
+        </div>
 
-          <div class="form-group">
-            <label class="form-label" for="company-house-reg">Companies House registration (if applicable)</label>
-            <input class="form-control" id="company-house-reg" type="text">
-          </div>
+        <div class="form-group">
+          
+          <label for="charity-commission-reg">
+            <span class="form-label">Charity Commission registration (if applicable)</span>
+          </label>
+          
+          <input class="form-control" id="charity-commission-reg" type="text">
+          
+        </div>
 
-          <div class="form-group">
-            <label class="form-label" for="charity-commission-reg">Charity Commission registration (if applicable)</label>
-            <input class="form-control" id="charity-commission-reg" type="text">
-          </div>
-
-        </fieldset>
-
-      </div>
+      </fieldset>
 
 
-      <!-- form group -->
-      <div class="form-group">
-        <button class="button" type="submit">Continue</button>
-      </div>
+      <button class="button">Continue</button>
 
 
     </form>

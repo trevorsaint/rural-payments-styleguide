@@ -13,22 +13,28 @@
         <form class="form" method="get" action="../additional-business-details/">
 
 
-          <!-- form group -->
-          <fieldset class="form-group">
+          <fieldset>
 
 
-            <legend class="heading-large">Business name and address</legend>
+            <legend class="heading-medium">Business name and address</legend>
 
 
             <div class="form-group">
-              <label class="form-label" for="business-name">Business name</label>
+              
+              <label for="business-name">
+                <span class="form-label">Business name</span>
+              </label>
+              
               <input class="form-control" id="business-name" type="text" value="Beech Farm">
+            
             </div>
 
 
             <div class="form-group">
 
-              <label class="form-label" for="postcode-search">Postcode</label>
+              <label for="postcode-search">
+                <span class="form-label">Postcode</span>
+              </label>
 
               <div class="form-search">
 
@@ -47,7 +53,7 @@
 
             <div class="toggle">
 
-              <p><a class="toggle-link" href="#">Enter address manually</a></p>
+              <p><a class="toggle-link" href="/">Enter address manually</a></p>
 
               <div class="toggle-content">
 
@@ -58,23 +64,43 @@
           					<legend class="heading-medium">Your address</legend>
 
           					<div class="form-group form-group-compound">
-          						<label class="form-label" for="address-line-1">Street</label>
-          						<input class="form-control" type="text" id="address-line-1">
+          						
+          						<label for="address-line-1">
+          						  <span class="form-label">Street</span>
+          						</label>
+          						
+          						<input class="form-control" id="address-line-1" type="text">
+          					
           					</div>
 
           					<div class="form-group">
-          						<label class="form-label visuallyhidden" for="address-line-2">Street</label>
-          						<input class="form-control" type="text" id="address-line-2">
+          						
+          						<label for="address-line-2">
+          						  <span class="form-label visuallyhidden">Street</span>
+          						</label>
+          						
+          						<input class="form-control" id="address-line-2" type="text">
+          					
           					</div>
 
           					<div class="form-group">
-          						<label class="form-label" for="address-town">Town or City</label>
-          						<input class="form-control form-control-1-4" type="text" id="address-town">
+          						
+          						<label for="address-town">
+          						  <span class="form-label">Town or City</span>
+          						</label>
+          						
+          						<input class="form-control form-control-1-4" id="address-town" type="text">
+          					
           					</div>
 
           					<div class="form-group">
-          						<label class="form-label" for="address-postcode">Postcode</label>
-          						<input class="form-control form-control-1-8" type="text" id="address-postcode">
+          						
+          						<label for="address-postcode">
+          						  <span class="form-label">Postcode</span>
+          						</label>
+          						
+          						<input class="form-control form-control-1-8" id="address-postcode" type="text">
+          					
           					</div>
 
           				</fieldset>
@@ -89,14 +115,11 @@
           </fieldset>
 
 
-          <!-- form group -->
-          <fieldset class="form-group">
+          <fieldset>
 
-            <legend class="heading-large">Business contact details</legend>
+            <legend class="heading-medium">Business contact details</legend>
 
-            <div class="text">
-              <p>You must enter either a landline or mobile number.</p>
-            </div>
+            <p>You must enter either a landline or mobile number.</p>
 
             <div class="form-group">
               <label class="form-label" for="email">Email</label>
@@ -116,25 +139,24 @@
           </fieldset>
 
 
-          <!-- form group -->
-          <fieldset class="form-group">
+          <fieldset>
 
-            <legend class="heading-large">Reference numbers</legend>
+            <legend class="heading-medium">Reference numbers</legend>
 
             <div class="form-group">
-              <label class="form-label" for="vat-number">VAT registration number (if applicable)</label>
+              
+              <label for="vat-number">
+                <span class="form-label">VAT registration number (if applicable)</span>
+              </label>
+              
               <input class="form-control" id="vat-number" type="text" value="GB999 9999 73">
+            
             </div>
 
           </fieldset>
 
 
-          <!-- form group -->
-          <div class="form-group">
-
-            <button class="button" type="submit">Business details are correct and complete</button>
-
-          </div>
+          <button class="button" type="submit">Business details are correct and complete</button>
 
 
         </form>

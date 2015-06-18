@@ -10,10 +10,13 @@
     <form class="form" method="get" action="../your-contact-details/">
 
 
-      <!-- form group -->
       <div class="form-group">
-        <label class="form-label" for="title">Title (optional)</label>
-        <select class="form-control-select" id="title">
+        
+        <label for="title">
+          <span class="form-label">Title (optional)</span>
+        </label>
+        
+        <select class="form-control" id="title">
           <option>-- Please make a selection --</option>
           <option value="1" selected>Miss</option>
           <option value="2">Ms</option>
@@ -21,52 +24,81 @@
           <option value="4">Dr</option>
           <option value="5">Sir</option>
         </select>
+        
       </div>
 
 
-      <!-- form group -->
       <div class="form-group">
-        <label class="form-label" for="first-name">First name</label>
+        
+        <label for="first-name">
+          <span class="form-label">First name</span>
+        </label>
+        
         <input class="form-control" id="first-name" type="text" value="Mia">
+        
       </div>
 
 
-      <!-- form group -->
       <div class="form-group">
-        <label class="form-label" for="middle-name">Middle name</label>
+        
+        <label for="middle-name">
+          <span class="form-label">Middle name</span>
+        </label>
+        
         <input class="form-control" id="middle-name" type="text" value="Jane">
+        
       </div>
 
 
-      <!-- form group -->
       <div class="form-group">
-        <label class="form-label" for="last-name">Last name</label>
+        
+        <label for="last-name">
+          <span class="form-label">Last name</span>
+        </label>
+        
         <input class="form-control" id="last-name" type="text" value="Wallace">
+        
       </div>
 
 
-      <!-- form-group -->
       <div class="form-group">
 
         <fieldset>
 
-          <legend class="form-label">Date of birth</legend>
+          <legend>
+            <span class="form-label">Date of birth</span>
+          </legend>
 
           <div class="form-date">
 
           	<div class="form-group form-group-day">
-          		<label class="form-label" for="dob-day">Day</label>
+          		
+          		<label for="dob-day">
+          		  <span class="form-label">Day</span>
+          		</label>
+          		
           		<input class="form-control" id="dob-day" type="text" value="18">
+          		
           	</div>
 
           	<div class="form-group form-group-month">
-          		<label class="form-label" for="dob-month">Month</label>
+          		
+          		<label for="dob-month">
+          		  <span class="form-label">Month</span>
+          		</label>
+          		
           		<input class="form-control" id="dob-month" type="text" value="10">
+          		
           	</div>
 
           	<div class="form-group form-group-year">
-          		<label class="form-label" for="dob-year">Year</label>
+          		
+          		<label for="dob-year">
+          		  <span class="form-label">Year</span>
+          		</label>
+          		
           		<input class="form-control" id="dob-year" type="text" value="1969">
+          		
           	</div>
 
           </div>
@@ -76,10 +108,7 @@
       </div>
 
 
-      <!-- form group -->
-      <div class="form-group">
-        <button class="button" type="submit">Continue</button>
-      </div>
+      <button class="button" type="submit">Continue</button>
 
 
     </form>
