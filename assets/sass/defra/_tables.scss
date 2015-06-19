@@ -44,7 +44,8 @@ table {
 
   .totals {
 
-    th, td {
+    th, 
+    td {
       border-bottom-color: $black;
     }
 
@@ -174,10 +175,14 @@ table {
 
     }
 
-    @include media(tablet) {
+    @include media(desktop) {
 
       .checked {
         text-align: right;
+      }
+      
+      .text-pending {
+        float: right;
       }
 
     }

@@ -9,15 +9,13 @@ strong {
 }
 
 
-/* text warning */
-
-.text-warning {
-  color: $error-colour;
+.text-warning,
+.text-pending {
   display: block;
-
+  margin: -1px 0;
+  
   &:before {
     @include border-radius(50%);
-    background-color: $error-colour;
     content: '!';
     color: $white;
     display: inline-block;
@@ -29,6 +27,28 @@ strong {
     padding: 2px;
     text-align: center;
     width: 1em;
+  }
+  
+}
+
+
+/* text warning */
+
+.text-warning {
+  color: $error-colour;
+
+  &:before {
+    background-color: $error-colour;
+  }
+
+}
+
+/* text pending */
+
+.text-pending {
+
+  &:before {
+    background-color: $black;
   }
 
 }

@@ -4,7 +4,6 @@
   <h2 class="heading-large">Tables</h2>
   
   
-  <!-- standard -->
   <h3 class="heading-medium">Standard</h3>
   
   
@@ -80,7 +79,118 @@
   </code></pre>
   
   
-  <!-- summary -->
+  
+  <h2 class="heading-medium">Sortable table</h2>
+  
+  
+  <div class="example">
+  
+    <table class="table-land-parcels js-table-sortable">
+      <caption class="visuallyhidden">Land parcel distribution</caption>
+      <thead>
+        <tr>
+          <th scope="col" data-sort="string">ParcelID</th>
+          <th class="numeric" scope="col">Total area (ha)</th>
+          <th scope="col">Eligible covers</th>
+          <th class="numeric last" scope="col">BPS eligible area (ha)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="/">SP1561 5978</a> <span class="text-pending">Pending</span></th>
+          <td class="numeric">2.62</td>
+          <td>Grassland</td>
+          <td class="numeric last">2.62</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/">SP1561 6596</a></th>
+          <td class="numeric">2.05</td>
+          <td>Arable</td>
+          <td class="numeric last">2.05</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/">SP1561 7039</a> <span class="text-pending">Pending</span></th>
+          <td class="numeric">10.16</td>
+          <td>Grassland</td>
+          <td class="numeric last">10.16</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/">SP1561 7070</a> <span class="text-pending">Pending</span></th>
+          <td class="numeric">6.63</td>
+          <td>Grassland</td>
+          <td class="numeric last">6.63</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/">SP1561 9086</a></th>
+          <td class="numeric">9.15</td>
+          <td>Arable</td>
+          <td class="numeric last">9.15</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/">SP1562 8012</a></th>
+          <td class="numeric">3.01</td>
+          <td>Arable</td>
+          <td class="numeric last">3.01</td>
+        </tr>
+      </tbody>
+    </table>
+      
+  </div>
+  
+  
+  <pre><code class="prettyprint">
+    &lt;table class=&quot;table-land-parcels js-table-sortable&quot;&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Land parcel distribution&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot; data-sort=&quot;string&quot;&gt;ParcelID&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Total area (ha)&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Eligible covers&lt;/th&gt;
+          &lt;th class=&quot;numeric last&quot; scope=&quot;col&quot;&gt;BPS eligible area (ha)&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 5978&lt;/a&gt; &lt;span class=&quot;text-pending&quot;&gt;Pending&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;2.62&lt;/td&gt;
+          &lt;td&gt;Grassland&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;2.62&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 6596&lt;/a&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;2.05&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;2.05&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 7039&lt;/a&gt; &lt;span class=&quot;text-pending&quot;&gt;Pending&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;10.16&lt;/td&gt;
+          &lt;td&gt;Grassland&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;10.16&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 7070&lt;/a&gt; &lt;span class=&quot;text-pending&quot;&gt;Pending&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;6.63&lt;/td&gt;
+          &lt;td&gt;Grassland&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;6.63&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 9086&lt;/a&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;9.15&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;9.15&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1562 8012&lt;/a&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;3.01&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;3.01&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </code></pre>
+  
+  
   <div class="example">
   
     <h2 class="heading-medium">Business details</h2>
@@ -197,7 +307,6 @@
   </code></pre>
   
   
-  <!-- land features -->
   <h3 class="heading-medium">Land features</h3>
   
   
@@ -269,7 +378,6 @@
   </code></pre>
   
   
-  <!-- land parcels -->
   <h3 class="heading-medium">Land parcels</h3>
   
   
@@ -333,7 +441,6 @@
   </code></pre>
   
   
-  <!-- screen reader optimised -->
   <h3 class="heading-medium">Screen reader optimised</h3>
   
   
@@ -385,7 +492,6 @@
   </code></pre>
   
   
-  <!-- search results with pagination -->
   <h3 class="heading-medium">Search results with pagination</h3>
   
   
@@ -483,7 +589,6 @@
   </code></pre>
   
   
-  <!-- form elements -->
   <h3 class="heading-medium">Form elements</h3>
   
   
@@ -599,7 +704,6 @@
   </code></pre>
   
   
-  <!-- form table with checkboxes -->
   <h2 class="heading-medium">Form table with checkboxes</h2>
   
   
@@ -657,7 +761,6 @@
   </code></pre>
   
   
-  <!-- reset passwords -->
   <h3 class="heading-medium">Reset password</h3>
   
   
