@@ -144,6 +144,8 @@ table {
     @include media(tablet) {
 
       .text-warning {
+        margin-top: -1px;
+        margin-bottom: -1px;
         float: right;
       }
 
@@ -175,13 +177,19 @@ table {
 
     }
 
-    @include media(desktop) {
+    @include media(tablet) {
 
       .checked {
         text-align: right;
       }
-      
+
+    }
+    
+    @include media(tablet) {
+
       .text-pending {
+        margin-top: -1px;
+        margin-bottom: -1px;
         float: right;
       }
 
