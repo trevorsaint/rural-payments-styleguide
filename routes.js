@@ -729,6 +729,19 @@ module.exports = {
       });
       
       
+      // parcel summary
+      app.get('/pages/parcel-summary', function(req, res) {
+
+        var data = {
+          doctitle: 'Parcel summary',
+          openLayers: true
+        };
+
+        res.render('pages/parcel-summary/home', data);
+
+      });
+      
+      
     // ADMIN
     
     

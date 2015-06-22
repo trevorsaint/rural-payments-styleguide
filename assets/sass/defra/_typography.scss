@@ -11,7 +11,7 @@ strong {
 
 .text-warning,
 .text-pending {
-  display: block;
+  display: inline-block;
   
   &:before {
     @include border-radius(50%);
@@ -22,10 +22,25 @@ strong {
     font-weight: bold;
     height: 1em;
     line-height: 1;
+    margin-left: 5px;
     margin-right: 5px;
     padding: 2px;
     text-align: center;
     width: 1em;
+  }
+  
+}
+
+
+.form {
+  
+  .text-warning,
+  .text-pending {
+    
+    &:before {
+      margin-left: 0;
+    }
+    
   }
   
 }
