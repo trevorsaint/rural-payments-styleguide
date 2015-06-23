@@ -158,7 +158,7 @@ module.exports = {
       });
 
 
-      // Pagination
+      // pagination
       app.get('/elements/pagination', function(req, res) {
 
         var data = {doctitle: 'Pagination'};
@@ -167,7 +167,7 @@ module.exports = {
       });
       
       
-      // Related
+      // related
       app.get('/elements/related', function(req, res) {
 
         var data = {doctitle: 'Related'};
@@ -176,14 +176,23 @@ module.exports = {
       });
       
       
-      // Errors & Validation
+      // errors & validation
       app.get('/elements/validation', function(req, res) {
 
         var data = {doctitle: 'Errors & Validation'};
         res.render('elements/validation/home', data);
 
       });
+      
+      
+      // application status
+      app.get('/elements/application', function(req, res) {
 
+        var data = {doctitle: 'Application Status'};
+        res.render('elements/application/home', data);
+
+      });
+      
 
     // PAGES
 
