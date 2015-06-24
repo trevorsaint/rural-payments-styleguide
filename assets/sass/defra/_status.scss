@@ -1,9 +1,9 @@
 // ==========================================================================
-// Status
+// App Status
 // ==========================================================================
 
 
-.status {
+.appstatus {
   background-color: $govuk-blue;
   color: $white;
   padding: em(38) em(38) em(18) em(38); // accounts for paragraph and list margin
@@ -61,11 +61,11 @@
         }
         
         
-        &.status-complete { 
+        &.appstatus-complete { 
          color: $white;
         }
         
-        &.status-processing { 
+        &.appstatus-processing { 
          border-color: $white;
          border-bottom-width: 6px;
          color: $white;
