@@ -751,6 +751,19 @@ module.exports = {
       });
       
       
+      // parcel details
+      app.get('/pages/parcel-details', function(req, res) {
+
+        var data = {
+          doctitle: 'Parcel details',
+          openLayers: true
+        };
+
+        res.render('pages/parcel-details/home', data);
+
+      });
+      
+      
     // ADMIN
     
     
