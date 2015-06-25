@@ -320,8 +320,8 @@ table {
 /* table sortable */
 
 .js-table-sortable {
-
-  [data-sort] {
+  
+  .sortable {
     @include user-select(none);
     @extend .link;
     cursor: pointer;

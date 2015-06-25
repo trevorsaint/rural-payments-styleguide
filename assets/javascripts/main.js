@@ -275,11 +275,29 @@ function toggleTabs() {
 
 function tableSortable() {
 
-  if ($('.js-table-sortable').length>0) {
 
-    $('.js-table-sortable').stupidtable();
-
+  if ($('.js-table-sortable').length > 0) {
+    
+    
+    var min = 4;
+    
+    
+    $('.js-table-sortable').each(function() {
+      
+      $this = $(this);
+      
+      var rows = $this.find('tbody tr').length;
+      
+      if (rows >= min) {
+        $this.find('thead [data-sort]').addClass('sortable'); // add classes for link styling purposes
+        $this.stupidtable(); // initiate plugin
+      }
+      
+    });
+    
+    
   }
+  
 
 };
 
@@ -468,7 +486,7 @@ function toggleContent() {
 };
 
 
-// Inline edititing
+// Inline edit
 
 function inlineEdit() {
 
