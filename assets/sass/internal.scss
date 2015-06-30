@@ -47,6 +47,27 @@
 }
 
 
+// Logo
+
+#global-header #logo {
+  font-weight: normal;
+  height: auto;
+  font-size: inherit;
+  
+  img {
+    top: auto;
+    padding-right: 0;
+  }
+  
+}
+
+
+.break {
+  clear: both;
+  display: block;
+}
+
+
 // Icons
 
 .icon-lock,
