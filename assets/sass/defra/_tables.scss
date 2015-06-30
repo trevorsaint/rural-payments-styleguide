@@ -7,6 +7,20 @@ table {
   margin-bottom: 1.05263em * 2; /* 40px */
 
 
+  /* handle form errors differently for tables (reset them) */
+  
+  .error {
+    border-left: 0;
+    padding-left: inherit;
+  
+    @include media(tablet) {
+      border-left: 0;
+      padding-left: inherit;
+    }
+    
+  }
+
+
   /* helper classes */
   
   .sbi,

@@ -6,19 +6,21 @@
 
     <!-- form table -->
 		<form class="form form-table" method="post" action="/">
+      
+      
+      <div class="error-summary" tabindex="-1" aria-labelledby="error-summary-heading-1" role="group">
 
-      <div class="validation-summary group text">
-
-        <h1 class="validation-heading">We need more information</h1>
-
-        <p>Make sure you:</p>
-
-        <ol class="validation-list list-bullet text">
-          <li><a href="#land-area-1">enter a number in the following format 3.5</a></li>
-          <li><a href="#land-area-2">enter a number in the following format 3.5</a></li>
-        </ol>
-
+        <h1 class="heading-medium error-summary-heading" id="error-summary-heading-1">Message to alert the user to a problem goes here</h1>
+    
+        <p>Optional description of the error(s) and how to correct them</p>
+    
+        <ul class="error-summary-list">
+          <li><a href="#error-land-area-1">Descriptive link to the question with an error</a></li>
+          <li><a href="#error-land-area-2">Descriptive link to the question with an error</a></li>
+        </ul>
+    
       </div>
+      
 
   		<table>
 
@@ -42,8 +44,8 @@
   			<tfoot>
 
     			<tr>
-  					<th class="numeric"scope="col" colspan="7">Total:</th>
-  					<td class="numeric"><span class="bold-medium">NaN</span></td>
+  					<th scope="col" colspan="7">Total:</th>
+  					<td class="numeric last"><span class="bold-medium">NaN</span></td>
   				</tr>
 
   			</tfoot>
@@ -58,9 +60,9 @@
   					<td>Arable</td>
   					<td>5.40</td>
   					<td>Wheat</td>
-  					<td class="numeric last">
+  					<td class="numeric last error" id="error-land-area-1">
     					<label class="visuallyhidden" for="land-area-1">Land Area</label>
-    					<input class="form-control form-control-error" type="text" id="land-area-1" size="5" value="34.fs">
+    					<input class="form-control" type="text" id="land-area-1" size="5" value="34.fs">
   					</td>
   				</tr>
 
@@ -72,9 +74,9 @@
   					<td>Arable</td>
   					<td>5.40</td>
   					<td>Wheat</td>
-  					<td class="numeric last">
+  					<td class="numeric last error" id="error-land-area-2">
     					<label class="visuallyhidden" for="land-area-2">Land Area</label>
-    					<input class="form-control form-control-error" type="text" id="land-area-2" size="5" value="abcdef">
+    					<input class="form-control" type="text" id="land-area-2" size="5" value="abcdef">
   					</td>
   				</tr>
 
