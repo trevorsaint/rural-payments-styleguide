@@ -772,7 +772,8 @@ module.exports = {
 
         var data = {
           doctitle: 'Deactivate user',
-          internalStyles: true
+          internalStyles: true,
+          internalHeader: true
         };
         
         res.render('internal/deactivate-user/home', data);
@@ -785,7 +786,8 @@ module.exports = {
 
         var data = {
           doctitle: 'Alerts',
-          internalStyles: true
+          internalStyles: true,
+          internalHeader: true
         };
         
         res.render('internal/alerts/home', data);

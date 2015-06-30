@@ -52,13 +52,14 @@
 .icon-lock,
 .icon-deactivate {
   background-image: url('../images/icons/statuses.png');
+  background-size: auto; // Reset
   float: left;
   margin-right: 10px;
   overflow: hidden;
   
   @include device-pixel-ratio() {
     background-image: url('../images/icons/statuses-2x.png');
-    background-size: 100%;
+    background-size: 200%;
   }
   
 }
@@ -70,7 +71,7 @@
 
 
 .icon-deactivate {
-  background-position: 0 -22px;
+  background-position: -22px -22px;
 }
 
 
