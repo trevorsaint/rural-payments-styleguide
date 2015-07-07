@@ -764,6 +764,18 @@ module.exports = {
       });
       
       
+      // amend personal details
+      app.get('/pages/amend-personal-details', function(req, res) {
+
+        var data = {
+          doctitle: 'Amend personal details'
+        };
+
+        res.render('pages/amend-personal-details/home', data);
+
+      });
+      
+      
     // ADMIN
     
     

@@ -3,7 +3,7 @@
 // ==========================================================================
 
 
-/* map */
+/* general */
 
 .map-container {
   border: 1px solid #bfc1c3;
@@ -183,6 +183,40 @@
     
     &:before {
       background-position: 50% -60px;
+    }
+    
+  }
+  
+  
+  // map switcher
+  
+  &MapSwitcher {
+    position: absolute;
+    top: 10px; right: 10px;
+    z-index: 749;
+    
+    a {
+      background: $link-colour;
+      color: $white;
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+      padding: 0 10px;
+      display: inline-block;
+      text-decoration: none;
+      
+      &:focus {
+        background-color: $link-colour;
+        color: $white;
+        outline: none;
+      }
+      
+      &:hover {
+        background-color: $focus-colour;
+        color: $link-hover-colour;
+        outline: none;
+      }
+      
     }
     
   }

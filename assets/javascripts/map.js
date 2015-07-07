@@ -72,6 +72,10 @@
     '<div class="olControlMeasureControls" id="OpenLayers_Measure_Controls">' +
       '<a class="olControlMeasurement olButton" id="toggleMeasurementMode" href="#toggleMeasurementMode" title="Measure" role="button">Measure</a>' +
       '<a class="olControlMeasurementClear olButton olButtonHidden" id="clearMeasurements" href="#clearMeasurements" title="Clear measure" role="button">Clear measure</a>' +
+    '</div>' +
+    
+    '<div class="olControlMapSwitcher" id="OpenLayers_Map_Switcher">' +
+      '<a class="olControlMap" id="toggleMapSwitcher" href="#toggleMapSwitcher" role="button">Show Aerial Map</a>' +
     '</div>'
     
   );

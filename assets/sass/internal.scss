@@ -23,11 +23,6 @@
 
 .audit-trail {
   
-  @include media(tablet) {
-    margin-left: -1em;
-    margin-right: -1em;
-  }
-  
   &-item {
     @include core-16;
     background-color: $grey-4;
@@ -45,6 +40,23 @@
   }
   
 }
+
+
+// Exception if audit trail sits within tabs
+
+.tabs {
+  
+  .audit-trail {
+    
+    @include media(tablet) {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
+    
+  }
+  
+}
+
 
 
 // Logo
