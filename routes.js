@@ -427,6 +427,15 @@ module.exports = {
         res.render('pages/signin/home', data);
 
       });
+      
+      
+        // password expired
+        app.get('/pages/signin/password-expired', function(req, res) {
+
+          var data = {doctitle: 'Signin'};
+          res.render('pages/signin/password-expired/home', data);
+  
+        });
 
 
       // forgotten your password
