@@ -432,7 +432,7 @@ module.exports = {
         // password expired
         app.get('/pages/signin/password-expired', function(req, res) {
 
-          var data = {doctitle: 'Signin'};
+          var data = {doctitle: 'Password expired'};
           res.render('pages/signin/password-expired/home', data);
   
         });
