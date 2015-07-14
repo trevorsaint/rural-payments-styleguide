@@ -259,11 +259,11 @@ module.exports = {
       });
 
 
-      // amend business details
-      app.get('/pages/amend-business-details', function(req, res) {
+      // update business details
+      app.get('/pages/update-business-details', function(req, res) {
 
-        var data = {doctitle: 'Amend business details'};
-        res.render('pages/amend-business-details/home', data);
+        var data = {doctitle: 'Update business details'};
+        res.render('pages/update-business-details/home', data);
 
       });
 
@@ -517,15 +517,15 @@ module.exports = {
         });
 
 
-        // amend business details
-        app.get('/pages/confirm-journey/amend-business-details', function(req, res) {
+        // update business details
+        app.get('/pages/confirm-journey/update-business-details', function(req, res) {
 
           var data = {
-            doctitle: 'Amend business details',
+            doctitle: 'Update business details',
             openLayers: true
           };
 
-          res.render('pages/confirm-journey/amend-business-details/home', data);
+          res.render('pages/confirm-journey/update-business-details/home', data);
 
         });
 
@@ -725,11 +725,11 @@ module.exports = {
       });
 
 
-        // amend business details
-        app.get('/pages/business-details/amend-business-details', function(req, res) {
+        // update business details
+        app.get('/pages/business-details/update-business-details', function(req, res) {
 
-          var data = {doctitle: 'Amend business details'};
-          res.render('pages/business-details/amend-business-details/home', data);
+          var data = {doctitle: 'Update business details'};
+          res.render('pages/business-details/update-business-details/home', data);
 
         });
 
@@ -773,14 +773,14 @@ module.exports = {
       });
       
       
-      // amend personal details
-      app.get('/pages/amend-personal-details', function(req, res) {
+      // update personal details
+      app.get('/pages/update-personal-details', function(req, res) {
 
         var data = {
-          doctitle: 'Amend personal details'
+          doctitle: 'Update personal details'
         };
 
-        res.render('pages/amend-personal-details/home', data);
+        res.render('pages/update-personal-details/home', data);
 
       });
       
