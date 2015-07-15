@@ -728,7 +728,11 @@ module.exports = {
         // update business details
         app.get('/pages/business-details/update-business-details', function(req, res) {
 
-          var data = {doctitle: 'Update business details'};
+          var data = {
+            doctitle: 'Update business details',
+            businessMenu: true
+          };
+          
           res.render('pages/business-details/update-business-details/home', data);
 
         });
