@@ -88,16 +88,9 @@
 /* form search */
 
 .form-search {
-  display: table;
-  width: 100%;
-
-  @include media(tablet) {
-    width: 50%;
-  }
 
   .form-control {
     margin: 0;
-    width: 100%;
   }
 
   .form-group-search,

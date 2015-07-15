@@ -1,7 +1,4 @@
-    <div class="text">
-
-
-  		<a class="back-link" href="./">Back to business details</a>
+  		<a class="back-link" href="/">Back to business details</a>
 
 
   		<h1 class="heading-xlarge">Update business details <span class="heading-secondary">Beech Farm</span></h1>
@@ -22,88 +19,103 @@
           <input class="form-control" id="business-name" type="text" value="Beech Farm">
           
         </div>
-
-
-        <div class="form-group">
-
-          <label for="postcode-search">
-            <pan  class="form-label">Postcode</pan>
-          </label>
-
-          <div class="form-search">
-
-            <div class="form-group-search">
-              <input class="form-control" id="postcode-search" type="text">
-            </div>
-
-            <div class="form-group-button">
-              <button class="button" type="button">Find UK address</button>
-            </div>
-
-          </div>
-
-        </div>
-
-
+        
+        
         <div class="toggle">
-
-          <p><a class="toggle-link" href="/">Enter address manually</a></p>
-
+        
+        
+          <p><a class="toggle-link" href="#find-postcode">Find a UK address</a></p>
+          
+          
           <div class="toggle-content">
-
+            
             <div class="panel-indent">
-
-      				<fieldset>
-
-      					<legend class="heading-medium">Your address</legend>
-
-      					<div class="form-group form-group-compound">
-      						
-      						<label for="address-line-1">
-      						  <span class="form-label">Street</span>
-      						</label>
-      						
-      						<input class="form-control" id="address-line-1" type="text">
-      					
-      					</div>
-
-      					<div class="form-group">
-      						
-      						<label for="address-line-2">
-      						  <span class="form-label visuallyhidden">Street</span>
-      						</label>
-      						
-      						<input class="form-control" id="address-line-2" type="text">
-      					
-      					</div>
-
-      					<div class="form-group">
-      						
-      						<label for="address-town">
-      						  <span class="form-label">Town or City</span>
-      						</label>
-      						
-      						<input class="form-control form-control-1-4" id="address-town" type="text">
-      					
-      					</div>
-
-      					<div class="form-group">
-      						
-      						<label for="address-postcode">
-      						  <span class="form-label">Postcode</span>
-      						</label>
-      						
-      						<input class="form-control form-control-1-8" id="address-postcode" type="text">
-      					
-      					</div>
-
-      				</fieldset>
-
+            
+              <div class="form-group-compound">
+    
+                <label for="postcode-search">
+                  <span class="form-label">Postcode</span>
+                </label>
+      
+                <div class="form-search">
+                  <input class="form-control form-control-1-8" type="text" id="postcode-search">
+                  <button class="button" type="button">Find UK address</button>
+                </div>
+      
+              </div>
+              
+              <!--div class="form-group">
+              
+                <label class="form-label visuallyhidden" for="addresses">Addresses</label>
+        
+                <select class="form-control-select" for="addresses">
+                  <option>Found 12 addresses</option>
+                  <option value="1">1 Monument Way, Bodmin</option>
+                  <option value="2">2 Monument Way, Bodmin</option>
+                  <option value="3">3 Monument Way, Bodmin</option>
+                  <option value="4">4 Monument Way, Bodmin</option>
+                  <option value="5">5 Monument Way, Bodmin</option>
+                  <option value="6">6 Monument Way, Bodmin</option>
+                  <option value="7">7 Monument Way, Bodmin</option>
+                  <option value="8">8 Monument Way, Bodmin</option>
+                  <option value="9">9 Monument Way, Bodmin</option>
+                  <option value="10">10 Monument Way, Bodmin</option>
+                  <option value="11">11 Monument Way, Bodmin</option>
+                  <option value="12">12 Monument Way, Bodmin</option>
+                </select>
+                
+              </div-->
+            
             </div>
-
+            
           </div>
-
+        
+        
         </div>
+        
+        
+        <div class="form-group-compound">
+      						
+					<label for="address-line-1">
+					  <span class="form-label">Street</span>
+					</label>
+					
+					<input class="form-control" id="address-line-1" type="text" value="Pooley Bridge">
+					
+				</div>
+				
+
+				<div class="form-group">
+					
+					<label for="address-line-2">
+					  <span class="form-label visuallyhidden">Street</span>
+					</label>
+					
+					<input class="form-control" id="address-line-2" type="text" value="">
+					
+				</div>
+				
+
+				<div class="form-group">
+					
+					<label for="address-town">
+					  <span class="form-label">Town or City</span>
+					</label>
+					
+					<input class="form-control form-control-1-4" id="address-town" type="text" value="Penrith">
+					
+				</div>
+				
+
+				<div class="form-group">
+					
+					<label for="address-postcode">
+					  <span class="form-label">Postcode</span>
+					</label>
+					
+					<input class="form-control form-control-1-8" id="address-postcode" type="text" value="CH3 6NZ">
+				
+				</div>
 
 
       </fieldset>
@@ -135,7 +147,7 @@
             <span class="form-label">Landline</span>
           </label>
           
-          <input class="form-control" id="landline" type="tel" value="0147 9643 7573">
+          <input class="form-control form-control-1-4" id="landline" type="tel" value="0147 9643 7573">
         
         </div>
 
@@ -146,7 +158,7 @@
             <span class="form-label">Mobile</span>
           </label>
           
-          <input class="form-control" id="mobile" type="tel" value="0797 8377 7457">
+          <input class="form-control form-control-1-4" id="mobile" type="tel" value="0797 8377 7457">
         
         </div>
 
@@ -161,18 +173,14 @@
         <div class="form-group">
           
           <label for="vat-number">
-            <span class="form-label">VAT registration number (if applicable)</span>
+            <span class="form-label"><abbr title="Value Added Tax">VAT</abbr> registration number (if applicable)</span>
           </label>
           
-          <input class="form-control" id="vat-number" type="text" value="GB999 9999 73">
+          <input class="form-control form-control-1-4" id="vat-number" type="text" value="GB999 9999 73">
         
         </div>
 
       </fieldset>
 
 
-
       <button class="button" type="submit">Business details are correct and complete</button>
-
-
-    </div>

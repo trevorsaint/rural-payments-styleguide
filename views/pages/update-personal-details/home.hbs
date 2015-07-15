@@ -1,4 +1,4 @@
-		<a class="back-link" href="../">Back to Rural Payments</a>
+		<a class="back-link" href="/">Back to Rural Payments</a>
 
 
     <h1 class="heading-xlarge">Update personal details</h1>
@@ -8,7 +8,7 @@
       
       <p class="lede">Keeping your personal details up to date saves time when applying for grants and schemes.</p>
       
-      <p>You must complete all fields, unless they're marked as optional.</p>
+      <p>You must complete all fields, unless they're marked as (optional).</p>
       
     </div>
 
@@ -29,14 +29,7 @@
             <span class="form-label">Title (optional)</span>
           </label>
           
-          <select class="form-control" id="title">
-            <option>-- Please make a selection --</option>
-            <option value="1" selected>Miss</option>
-            <option value="2">Ms</option>
-            <option value="3">Mr</option>
-            <option value="4">Dr</option>
-            <option value="5">Sir</option>
-          </select>
+          <input class="form-control form-control-1-8" id="title" type="text" value="Miss">
           
         </div>
 
@@ -125,10 +118,64 @@
       
       
       
+      <!-- address -->
       <fieldset>
         
         
         <legend class="heading-medium">Address</legend> 
+        
+        
+        <div class="toggle">
+        
+        
+          <p><a class="toggle-link" href="#find-postcode">Find a UK address</a></p>
+          
+          
+          <div class="toggle-content">
+            
+            <div class="panel-indent">
+            
+              <div class="form-group-compound">
+    
+                <label for="postcode-search">
+                  <span class="form-label">Postcode</span>
+                </label>
+      
+                <div class="form-search">
+                  <input class="form-control form-control-1-8" type="text" id="postcode-search">
+                  <button class="button" type="button">Find UK address</button>
+                </div>
+      
+              </div>
+              
+              <!--div class="form-group">
+              
+                <label class="form-label visuallyhidden" for="addresses">Addresses</label>
+        
+                <select class="form-control-select" for="addresses">
+                  <option>Found 12 addresses</option>
+                  <option value="1">1 Monument Way, Bodmin</option>
+                  <option value="2">2 Monument Way, Bodmin</option>
+                  <option value="3">3 Monument Way, Bodmin</option>
+                  <option value="4">4 Monument Way, Bodmin</option>
+                  <option value="5">5 Monument Way, Bodmin</option>
+                  <option value="6">6 Monument Way, Bodmin</option>
+                  <option value="7">7 Monument Way, Bodmin</option>
+                  <option value="8">8 Monument Way, Bodmin</option>
+                  <option value="9">9 Monument Way, Bodmin</option>
+                  <option value="10">10 Monument Way, Bodmin</option>
+                  <option value="11">11 Monument Way, Bodmin</option>
+                  <option value="12">12 Monument Way, Bodmin</option>
+                </select>
+                
+              </div-->
+            
+            </div>
+            
+          </div>
+        
+        
+        </div>
         
         
         <div class="form-group-compound">
@@ -137,7 +184,7 @@
 					  <span class="form-label">Street</span>
 					</label>
 					
-					<input class="form-control" id="address-line-1" type="text" value="Beech Farm">
+					<input class="form-control" id="address-line-1" type="text" value="Pooley Bridge">
 					
 				</div>
 				
@@ -148,7 +195,7 @@
 					  <span class="form-label visuallyhidden">Street</span>
 					</label>
 					
-					<input class="form-control" id="address-line-2" type="text" value="Pooley Bridge">
+					<input class="form-control" id="address-line-2" type="text" value="">
 					
 				</div>
 				
@@ -206,7 +253,7 @@
             <span class="form-label">Landline</span>
           </label>
           
-          <input class="form-control" id="landline" type="tel" value="0147 9643 7573">
+          <input class="form-control form-control-1-4" id="landline" type="tel" value="0147 9643 7573">
           
         </div>
         
@@ -217,7 +264,7 @@
             <span class="form-label">Mobile</span>
           </label>
           
-          <input class="form-control" id="mobile" type="tel" value="0797 8377 7457">
+          <input class="form-control form-control-1-4" id="mobile" type="tel" value="0797 8377 7457">
           
         </div>
         
