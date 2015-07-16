@@ -788,6 +788,17 @@ module.exports = {
 
       });
       
+      // create new customer
+      app.get('/pages/create-new-customer', function(req, res) {
+
+        var data = {
+          doctitle: 'Create new customer'
+        };
+
+        res.render('pages//create-new-customer/home', data);
+
+      });
+      
       
     // ADMIN
     
