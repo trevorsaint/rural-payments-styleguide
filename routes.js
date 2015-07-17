@@ -829,6 +829,18 @@ module.exports = {
         res.render('internal/alerts/home', data);
 
       });
+      
+      
+      // signin
+      app.get('/internal/signin', function(req, res) {
+
+        var data = {
+          doctitle: 'Sign in'
+        };
+        
+        res.render('internal/signin/home', data);
+
+      });
     
 
   }
