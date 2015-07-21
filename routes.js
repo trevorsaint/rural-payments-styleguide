@@ -795,7 +795,7 @@ module.exports = {
           doctitle: 'Create new customer'
         };
 
-        res.render('pages//create-new-customer/home', data);
+        res.render('pages/create-new-customer/home', data);
 
       });
       
@@ -841,6 +841,62 @@ module.exports = {
         res.render('internal/signin/home', data);
 
       });
+      
+      
+      // accountable people
+      app.get('/pages/accountable-people/', function(req, res) {
+
+        var data = {
+          doctitle: 'Accountable people'
+        };
+        
+        res.render('pages/accountable-people/home', data);
+
+      });
+      
+      
+        app.get('/pages/accountable-people/sole-trader-details/', function(req, res) {
+  
+          var data = {
+            doctitle: 'Sole trader details'
+          };
+          
+          res.render('pages/accountable-people/sole-trader-details/home', data);
+  
+        });
+        
+        
+        app.get('/pages/accountable-people/business-ownership/', function(req, res) {
+  
+          var data = {
+            doctitle: 'Business ownership'
+          };
+          
+          res.render('pages/accountable-people/business-ownership/home', data);
+  
+        });
+        
+        
+        app.get('/pages/accountable-people/confirm-sole-trader-details/', function(req, res) {
+  
+          var data = {
+            doctitle: 'Confirm sole trader details'
+          };
+          
+          res.render('pages/accountable-people/confirm-sole-trader-details/home', data);
+  
+        });
+        
+        
+        app.get('/pages/accountable-people/success/', function(req, res) {
+  
+          var data = {
+            doctitle: 'Success'
+          };
+          
+          res.render('pages/accountable-people/success/home', data);
+  
+        });
     
 
   }

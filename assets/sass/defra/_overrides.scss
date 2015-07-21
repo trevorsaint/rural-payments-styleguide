@@ -47,13 +47,10 @@ body {
 
 .heading-xlarge-noback {
   @extend .heading-xlarge;
-
-  margin-top: em(30, 32);
-  margin-bottom: em(15, 32);
+  margin-top: em(25, 32);
 
   @include media(tablet) {
-    margin-top: em(60, 48);
-    margin-bottom: em(30, 48);
+    margin-top: em(55, 48);
   }
 
 }
