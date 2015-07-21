@@ -375,8 +375,7 @@ module.exports = {
         var data = {doctitle: 'Land query'};
 
         var data = {
-          doctitle: 'Land query',
-          landScripts: true
+          doctitle: 'Land query'
         };
 
         res.render('pages/land-query/home', data);
