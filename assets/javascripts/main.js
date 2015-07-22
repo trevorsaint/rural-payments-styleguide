@@ -486,9 +486,105 @@ function toggleContent() {
 };
 
 
+// Sole trader details
+
+function soleTraderDetails() {
+  
+  
+  if ($('#form-sole-trader-details').length>0) {
+    
+  
+    // Declare variables
+    
+    var businessOwner = $('#business-owner'),
+        firstName     = $('#first-name'),
+        lastName      = $('#last-name'),
+        email         = $('#email'),
+        niNumber      = $('#ni-number');
+  
+  
+    // Detect changes on interaction
+  
+    businessOwner.change(function() {
+
+      var checkButtonHasValue = false;
+
+      if(this.checked) {
+
+        checkButtonHasValue = true;
+        
+        firstName.val('Sydney');
+        lastName.val('Bechett');
+        email.val('defra-user-1@kainos.com');
+        niNumber.val('RP 65 94 23 D');
+
+        return false;
+
+      } else {
+        
+        $('#form-sole-trader-details').find('textarea, input, select').val(''); // Clear form values
+        
+      }
+        
+    });
+  
+
+  }
+
+  
+};
+
+
+// Confirm sole trader details
+
+function confirmSoleTraderDetails() {
+  
+  
+  if ($('#form-confirm-sole-trader-details').length>0) {
+    
+    
+    // Declare my variables
+
+    var form     = $("#form-confirm-sole-trader-details"),
+        button   = form.find('.button'),
+        check    = form.find('input:checkbox');
+
+
+    // Detect changes on interaction
+
+    check.change(function() {
+
+      var checkButtonHasValue = false;
+
+      
+      if(this.checked) {
+
+        checkButtonHasValue = true;
+        
+        button.removeAttr('disabled');
+
+        return false;
+
+      } else {
+        
+        button.attr('disabled', 'disabled');
+        
+      }
+      
+      
+    });
+    
+    
+  }
+
+  
+};
+
+
 // Land query
 
 function landQuery() {
+  
   
   if ($('#form-land-query').length>0) {
     
@@ -555,8 +651,8 @@ function landQuery() {
     
   }
   
+  
 };
-
 
 
 // Inline edit
@@ -628,12 +724,9 @@ function inlineEdit() {
 };
 
 
-
 // Document ready
 
 (function() {
-
-  // Call Rural Payments Functions
   toggleTabs();
   formValidation();
   formMultipleCheckboxes();
@@ -643,6 +736,7 @@ function inlineEdit() {
   tableSortable();
   landQuery();
   inlineEdit();
-
+  soleTraderDetails();
+  confirmSoleTraderDetails();
 })();
 
