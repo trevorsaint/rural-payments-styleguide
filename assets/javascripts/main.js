@@ -499,8 +499,7 @@ function soleTraderDetails() {
     var businessOwner = $('#business-owner'),
         firstName     = $('#first-name'),
         lastName      = $('#last-name'),
-        email         = $('#email'),
-        niNumber      = $('#ni-number');
+        email         = $('#email');
   
   
     // Detect changes on interaction
@@ -516,13 +515,12 @@ function soleTraderDetails() {
         firstName.val('Sydney');
         lastName.val('Bechett');
         email.val('defra-user-1@kainos.com');
-        niNumber.val('RP 65 94 23 D');
 
         return false;
 
       } else {
         
-        $('#form-sole-trader-details').find('textarea, input, select').val(''); // Clear form values
+        $('#form-sole-trader-details').find('input').val(''); // Clear form values
         
       }
         
