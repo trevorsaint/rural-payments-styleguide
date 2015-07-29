@@ -512,15 +512,15 @@ function soleTraderDetails() {
 
         checkButtonHasValue = true;
         
-        firstName.val('Sydney');
-        lastName.val('Bechett');
-        email.val('defra-user-1@kainos.com');
+        firstName.val('Sydney').attr('disabled', 'disabled');
+        lastName.val('Bechett').attr('disabled', 'disabled');
+        email.val('defra-user-1@kainos.com').attr('disabled', 'disabled');
 
         return false;
 
       } else {
         
-        $('#form-sole-trader-details').find('input').val(''); // Clear form values
+        $('#form-sole-trader-details').find('input').val('').removeAttr('disabled'); // Clear form values and remvoe disabled attributes
         
       }
         
