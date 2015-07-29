@@ -149,110 +149,110 @@ function showDialog() {
   }
 
 
-    if ($('.dialog').length > 0) {
+  if ($('.dialog').length > 0) {
 
 
-        // Open dialog
+    // Open dialog
 
-        $('a[data-toggle=dialog]').on('click', function (e) {
+    $('a[data-toggle=dialog]').on('click', function (e) {
 
-            e.preventDefault();
-            e.stopPropagation();
+      e.preventDefault();
+      e.stopPropagation();
 
-            var anchor = $(this)
+      var anchor = $(this)
 
-            var data = '#' + anchor.attr('data-target');
+      var data = '#' + anchor.attr('data-target');
 
-            openDialog(data, anchor); // Pass data value into function
+      openDialog(data, anchor); // Pass data value into function
 
-        });
-
-
-        // Open dialog
-
-        function openDialog(data, anchor) {
-            dialogData.lastFocus = anchor;
-
-            var dialog = $(data);
-            dialog.attr('aria-hidden', 'false')
-                .find('.dialog-content').focus()
-                .attr('tabindex', '-1');
-
-            dialog.trap();
-        }
+    });
 
 
-        // Close dialog only if visible
+    // Open dialog
 
-        function closeDialog() {
-            var dialog = $('.dialog[aria-hidden=false]')
+    function openDialog(data, anchor) {
+      dialogData.lastFocus = anchor;
 
+      var dialog = $(data);
+      dialog.attr('aria-hidden', 'false')
+          .find('.dialog-content').focus()
+          .attr('tabindex', '-1');
 
-            dialog.attr('aria-hidden', 'true')
-                .find('.dialog-content').blur()
-                .attr('tabindex', '0');
-
-
-            dialog.untrap();
-
-            dialogData.lastFocus.focus();
-            dialogData.lastFocus.blur();
-        }
-
-
-        // Stop bubbling
-
-        $('.dialog-holder').on('click', function (e) {
-
-            e.stopPropagation();
-
-        });
-
-
-        $('.dialog-close').on('click', function (e) {
-
-            e.preventDefault();
-            e.stopPropagation();
-
-            closeDialog();
-
-        });
-
-
-        $('.dialog-cancel').on('click', function (e) {
-
-            e.preventDefault();
-            e.stopPropagation();
-
-            closeDialog();
-
-        });
-
-
-        // Document binding events
-
-        $(document).bind({
-
-            click: function (e) {
-
-                closeDialog();
-
-            },
-
-            keyup: function (e) {
-
-                if (e.keyCode == 27) {
-
-                    closeDialog();
-
-                }
-
-            }
-
-        });
-
-
+      dialog.trap();
     }
+
+
+    // Close dialog only if visible
+
+    function closeDialog() {
+      var dialog = $('.dialog[aria-hidden=false]')
+
+
+      dialog.attr('aria-hidden', 'true')
+          .find('.dialog-content').blur()
+          .attr('tabindex', '0');
+
+
+      dialog.untrap();
+
+      dialogData.lastFocus.focus();
+      dialogData.lastFocus.blur();
+    }
+
+
+    // Stop bubbling
+
+    $('.dialog-holder').on('click', function (e) {
+
+      e.stopPropagation();
+
+    });
+
+
+    $('.dialog-close').on('click', function (e) {
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      closeDialog();
+
+    });
+
+
+    $('.dialog-cancel').on('click', function (e) {
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      closeDialog();
+
+    });
+
+
+    // Document binding events
+
+    $(document).bind({
+
+      click: function (e) {
+
+        closeDialog();
+
+      },
+
+      keyup: function (e) {
+
+          if (e.keyCode == 27) {
+
+            closeDialog();
+
+          }
+
+      }
+
+    });
+
+
+  }
 
 
 };

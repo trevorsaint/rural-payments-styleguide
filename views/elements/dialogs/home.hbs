@@ -24,6 +24,7 @@
   		<li><a href="/" data-toggle="dialog" data-target="dialog-5">Change owner</a></li>
   		<li><a href="/" data-toggle="dialog" data-target="dialog-6">Warning</a></li>
   		<li><a href="/" data-toggle="dialog" data-target="dialog-7">Remove a person</a></li>
+  		<li><a href="/" data-toggle="dialog" data-target="dialog-8">Archive customer record</a></li>
 		</ul>
 	
   </div>
@@ -72,8 +73,13 @@
         <form class="form">
 
           <div class="form-group">
-            <label class="form-label" for="reason">Give a reason for locking this customer's account</label>
+            
+            <label for="reason">
+              <span class="form-label">Give a reason for locking this customer's account</span>
+            </label>
+            
             <textarea class="form-control form-control-textarea" id="reason" rows="3" cols="50"></textarea>
+            
           </div>
 
           <div class="dialog-actions">
@@ -137,9 +143,14 @@
         <form class="form">
 
           <div class="form-group">
-            <label class="form-label" for="comments">Comments</label>
-            <p class="form-hint">Don't leave any sensitive details, such as phone numbers</p>
+            
+            <label for="comments">
+              <span class="form-label">Comments</span>
+              <span class="form-hint">Don't leave any sensitive details, such as phone numbers</span>
+            </label>
+            
             <textarea class="form-control form-control-textarea" id="comments" rows="3" cols="50"></textarea>
+            
           </div>
 
           <div class="dialog-actions">
@@ -234,6 +245,37 @@
         <form class="form">
 
           <p>Are you sure you want to remove <b>Connor Senior</b> from this business? This person will no longer be able to access this business online.</p>
+
+          <div class="dialog-actions">
+            <button class="button">Yes</button>
+            <a class="dialog-cancel" href="#">No</a>
+          </div>
+
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+	</div>
+	
+	
+	<!-- dialog 8-->
+	<div class="dialog" id="dialog-8" aria-hidden="true">
+
+    <div class="dialog-holder" aria-labelledby="dialog-title-8" aria-describedby="dialog-content-8" role="alertdialog">
+
+      <div class="dialog-content" id="dialog-content-8" role="document" tabindex="0">
+
+        <h1 class="dialog-heading" id="dialog-title-8">Archive customer record</h1>
+
+        <form class="form">
+
+          <p>Are you sure you would like to archive xxx?</p>
 
           <div class="dialog-actions">
             <button class="button">Yes</button>
