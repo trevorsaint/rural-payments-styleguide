@@ -722,6 +722,38 @@ function inlineEdit() {
 };
 
 
+
+// Clickable table rows
+
+function clickableTableRows() {
+  
+  
+  if ($('.js-table-rows-clickable').length>0) {
+    
+    
+    var tableRow = $('.js-table-rows-clickable tbody tr'); 
+
+    
+    $(tableRow).on('click', function() {
+      
+      
+      if ( $(this).data('link')) {
+        
+        window.document.location = $(this).data('link'); // Go to link
+        
+      }
+      
+      
+    });
+    
+    
+  }
+  
+  
+};
+
+
+
 // Document ready
 
 (function() {
@@ -736,5 +768,6 @@ function inlineEdit() {
   inlineEdit();
   soleTraderDetails();
   confirmSoleTraderDetails();
+  clickableTableRows();
 })();
 

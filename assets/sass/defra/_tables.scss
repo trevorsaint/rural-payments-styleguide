@@ -273,6 +273,10 @@ table {
   &-business-search,
   &-customer-search {
 
+    tbody th {
+      font-weight: normal;
+    }
+
     tbody th,
     tbody td {
       vertical-align: top;
@@ -363,6 +367,30 @@ table {
     }
   }
 
+}
+
+
+/* clickable table rows */
+
+.js-table-rows-clickable {
+  
+  tbody {
+    
+    tr {
+      cursor: pointer;
+    }
+    
+    tr:hover {
+    
+      th, 
+      td {
+        background-color: $highlight-colour;
+      }
+    
+    }
+  
+  }
+  
 }
 
 

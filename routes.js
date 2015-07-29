@@ -842,6 +842,20 @@ module.exports = {
       });
       
       
+      // search customer or business
+      app.get('/internal/search-customer-or-business', function(req, res) {
+
+        var data = {
+          doctitle: 'Search customer or business',
+          internalStyles: true,
+          internalHeader: true
+        };
+        
+        res.render('internal/search-customer-or-business/home', data);
+
+      });
+      
+      
       // accountable people
       app.get('/pages/accountable-people/', function(req, res) {
 
