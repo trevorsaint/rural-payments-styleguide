@@ -8,44 +8,58 @@
       
       
       <div class="form-group">
-        
-        <label class="block-label">
-          <input type="checkbox" id="business-owner" value="yes" name="checkbox-group">I am the business owner; use my details
+      
+        <label class="block-label" for="radio-1" data-target="business-owner">
+          <input id="radio-1" name="owner" value="business-owner" type="radio">
+          I am the business owner; use my details
         </label>
         
+        
+        <label class="block-label" for="radio-2" data-target="owner">
+          <input id="radio-2" name="owner" value="owner" type="radio">
+          Enter business owner details
+        </label>
+      
       </div>
       
       
-      <div class="form-group">
-        
-        <label for="first-name">
-          <span class="form-label">First name</span>
-        </label>
-        
-        <input class="form-control" id="first-name" type="text">
-        
+      <div class="panel-indent js-hidden" id="business-owner">
+        <p>Sydney Bechett <br> defra-user-1@kainos.com</p>
       </div>
       
       
-      <div class="form-group">
+      <div class="panel-indent js-hidden" id="owner">
+
+        <div class="form-group">
         
-        <label for="last-name">
-          <span class="form-label">Last name</span>
-        </label>
+          <label for="first-name">
+            <span class="form-label">First name</span>
+          </label>
+          
+          <input class="form-control" id="first-name" type="text">
+          
+        </div>
         
-        <input class="form-control" id="last-name" type="text">
+        <div class="form-group">
+          
+          <label for="last-name">
+            <span class="form-label">Last name</span>
+          </label>
+          
+          <input class="form-control" id="last-name" type="text">
+          
+        </div>
         
-      </div>
-      
-      
-      <div class="form-group">
-        
-        <label for="email">
-          <span class="form-label">Email</span>
-        </label>
-        
-        <input class="form-control" id="email" type="email">
-        
+        <div class="form-group">
+          
+          <label for="email">
+            <span class="form-label">Email</span>
+          </label>
+          
+          <input class="form-control" id="email" type="email">
+          
+        </div>
+
       </div>
       
       
