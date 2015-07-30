@@ -766,7 +766,7 @@ function clickableTableRows() {
   tableSortable();
   landQuery();
   inlineEdit();
-  soleTraderDetails();
+  //soleTraderDetails();
   confirmSoleTraderDetails();
   clickableTableRows();
 })();
