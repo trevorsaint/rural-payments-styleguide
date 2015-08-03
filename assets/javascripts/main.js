@@ -533,6 +533,80 @@ function soleTraderDetails() {
 };
 
 
+
+// Business ownership
+
+function businessOwnership() {
+  
+  
+  if ($('#form-business-ownership').length>0) {    
+    
+    
+    // Declare my variables
+
+    var form   = $("#form-business-ownership"),
+        button = form.find('.button'),
+        radio  = form.find('input:radio');
+
+
+    // Detect changes on interaction
+
+    radio.change(function() {
+
+      var radioButtonHasValue = false;
+
+      radio.each(function() {
+
+        if(this.checked) {
+
+          radioButtonHasValue = true;
+
+          return false;
+
+        }
+
+      });
+
+
+      // Enabled button
+
+      if (radioButtonHasValue) {
+        button.removeAttr('disabled');
+      }
+      
+      
+      // Submit the form
+
+      $('button[type=submit]').on('click', function(e) {
+  
+  
+        e.preventDefault();
+  
+  
+        if ($('#radio-inline-1').is(':checked')) {
+  
+            window.location.href = "confirm-sole-trader-details";
+  
+          } else {
+  
+           window.location.href = "accountable-person-details";
+  
+        }
+  
+  
+      });
+      
+      
+    });    
+  
+
+  }
+
+  
+};
+
+
+
 // Confirm sole trader details
 
 function confirmSoleTraderDetails() {
@@ -616,9 +690,7 @@ function landQuery() {
       // Enabled button
 
       if (radioButtonHasValue) {
-
         button.removeAttr('disabled');
-
       }
 
 
@@ -767,6 +839,7 @@ function clickableTableRows() {
   landQuery();
   inlineEdit();
   //soleTraderDetails();
+  businessOwnership();
   confirmSoleTraderDetails();
   clickableTableRows();
 })();

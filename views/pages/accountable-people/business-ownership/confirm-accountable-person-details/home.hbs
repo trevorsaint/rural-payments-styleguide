@@ -1,7 +1,7 @@
-		<a class="back-link" href="/pages/accountable-people/sole-trader-details/">Back to sole trader details</a>
+		<a class="back-link" href="/pages/accountable-people/business-ownership/accountable-person-details/">Back to accountable person details</a>
     
     
-    <h1 class="heading-xlarge">Confirm sole trader details <span class="heading-secondary">Beech Farm</span></h1>
+    <h1 class="heading-xlarge">Confirm accountable person details <span class="heading-secondary">Beech Farm</span></h1>
     
     
     <p class="lede text">By declaring this business as being run by a sole trader you are telling us that this person is the only accountable person for this busness.</p>
@@ -17,32 +17,32 @@
       
         <tr>
           <th class="table-summary-title" scope="row">Name</th>
-          <td class="table-summary-content">Sydney Bechett</td>
+          <td class="table-summary-content">{{name}}</td>
         </tr>
         
         <tr>
           <th class="table-summary-title" scope="row">Email</th>
-          <td class="table-summary-content"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></td>
+          <td class="table-summary-content"><a href="mailto:{{email}}">{{email}}</a></td>
         </tr>
         
         <tr>
           <th class="table-summary-title" scope="row">National Insurance number</th>
-          <td class="table-summary-content">RP 65 94 23 D</td>
+          <td class="table-summary-content">{{ni}}</td>
         </tr>
         
         <tr>
           <th class="table-summary-title" scope="row">Role</th>
-          <td class="table-summary-content">Business owner (sole trader)</td>
+          <td class="table-summary-content">Business owner ({{role}})</td>
         </tr>
         
         <tr>
           <th class="table-summary-title" scope="row">&#37; share</th>
-          <td class="table-summary-content">100</td>
+          <td class="table-summary-content">{{share}}</td>
         </tr>
         
         <tr>
           <th class="table-summary-title" scope="row">&#37; rights</th>
-          <td class="table-summary-content">100</td>
+          <td class="table-summary-content">{{rights}}</td>
         </tr>
       
       </tbody>
@@ -50,7 +50,7 @@
     </table>
     
     
-    <form class="form" id="form-confirm-sole-trader-details" method="get" action="/pages/accountable-people/success/">
+    <form class="form" id="form-confirm-sole-trader-details" method="get" action="/pages/accountable-people/business-ownership/success/">
         
       
       <div class="form-group">

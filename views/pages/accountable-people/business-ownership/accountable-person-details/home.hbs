@@ -1,22 +1,22 @@
 		<a class="back-link" href="/pages/accountable-people/business-ownership/">Back to business ownership</a>
     
     
-    <h1 class="heading-xlarge">Sole trader details <span class="heading-secondary">Beech Farm</span></h1>
+    <h1 class="heading-xlarge">Accountable person details <span class="heading-secondary">Beech Farm</span></h1>
     
     
-    <form class="form" id="form-sole-trader-details" method="get" action="/pages/accountable-people/confirm-sole-trader-details/">
+    <form class="form" id="form-accountable-person-details" method="get" action="/pages/accountable-people/business-ownership/confirm-accountable-person-details/">
       
       
       <div class="form-group">
       
         <label class="block-label" for="radio-1" data-target="business-owner">
           <input id="radio-1" name="owner" value="business-owner" type="radio">
-          I am the business owner; use my details
+          I am this accountable person; use my details
         </label>
       
         <label class="block-label" for="radio-2" data-target="owner">
           <input id="radio-2" name="owner" value="owner" type="radio">
-          Enter business owner details
+          Enter accountable person details
         </label>
       
       </div>
@@ -35,7 +35,7 @@
             <span class="form-label">First name</span>
           </label>
           
-          <input class="form-control" id="first-name" type="text">
+          <input class="form-control" id="first-name" name="first-name" type="text">
           
         </div>
         
@@ -45,7 +45,7 @@
             <span class="form-label">Last name</span>
           </label>
           
-          <input class="form-control" id="last-name" type="text">
+          <input class="form-control" id="last-name" name="last-name" type="text">
           
         </div>
         
@@ -55,21 +55,21 @@
             <span class="form-label">Email</span>
           </label>
           
-          <input class="form-control" id="email" type="email">
+          <input class="form-control" id="email" name="email" type="email">
           
         </div>
 
       </div>
       
       
-      <div class="form-group">
+      <div class="form-group form-group-compound">
         
         <label for="ni-number">
           <span class="form-label">National Insurance number</span>
           <span class="form-hint">What is the National Insurance number of this person?</span>
         </label>
         
-        <input class="form-control" id="ni-number" type="text">
+        <input class="form-control" id="ni-number" name="ni-number" type="text">
         
         <details>
       
@@ -81,48 +81,41 @@
           </div>
         
         </details>
-        
+
       </div>
       
       
-      <h2 class="heading-medium">Sole traders have:</h2>
+      <div class="form-group">
+        
+        <label for="role">
+          <span class="form-label">Role in business</span>
+        </label>
+        
+        <input class="form-control" id="role" name="role" type="text">
+
+      </div>
     
     
       <div class="form-group">
-        
-        <div class="data">
-          <h3 class="bold-large">100&#37;</h3>
-          <p class="font-xsmall">share in business</p>
-        </div>
-        
-        <div class="data">
-          <h3 class="bold-large">100&#37;</h3>
-          <p class="font-xsmall">voting rights (if applicable)</p>
-        </div>
-        
-      </div>
-    
-    
-      <!--div class="form-group">
         
         <label for="business-share">
           <span class="form-label">Share in business</span>
         </label>
         
-        <input class="form-control form-control-1-8" id="business-share" type="text" value="60%">
+        <input class="form-control form-control-1-8" id="business-share" name="business-share" type="text"> &#37;
         
-      </div-->
+      </div>
       
       
-      <!--div class="form-group">
+      <div class="form-group">
         
         <label for="voting-rights">
           <span class="form-label">Voting rights (if different)</span>
         </label>
         
-        <input class="form-control form-control-1-8" id="voting-rights" type="text" value="10%">
+        <input class="form-control form-control-1-8" id="voting-rights" name="voting-rights" type="text"> &#37;
         
-      </div-->
+      </div>
     
       
       <div class="form-group">
