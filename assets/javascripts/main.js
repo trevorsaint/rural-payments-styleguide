@@ -585,7 +585,7 @@ function businessOwnership() {
   
         if ($('#radio-inline-1').is(':checked')) {
   
-            window.location.href = "confirm-sole-trader-details";
+            window.location.href = "sole-trader-details";
   
           } else {
   

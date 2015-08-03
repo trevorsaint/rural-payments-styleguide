@@ -4,6 +4,12 @@ var express = require('express'),
     routes  = require(__dirname + '/routes.js'),
     app     = express(),
     port    = (process.env.PORT || 3000);
+    
+    
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({	extended: true })); // support encoded bodies
 
 
 // application settings

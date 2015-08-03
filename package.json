@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "express-handlebars": "*",
-    "express": "*"
+    "express": "*",
+    "body-parser": "*"
   },
   "repository": {
     "type": "git",

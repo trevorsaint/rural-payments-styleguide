@@ -915,19 +915,17 @@ module.exports = {
   
         });
         
-        
-        
-        
-        app.get('/pages/accountable-people/business-ownership/confirm-accountable-person-details/', function(req, res) {
+
+        app.post('/pages/accountable-people/business-ownership/confirm-accountable-person-details/', function(req, res) {
   
           var data = {
-            doctitle: 'Confirm accountable person details',
-            name: req.param('first-name') + ' ' + req.param('last-name'),
-            email: req.param('email'),
-            role: req.param('role'),
-            ni: req.param('ni-number'),
-            share: req.param('business-share'),
-            rights: req.param('voting-rights')
+            doctitle: 'Confirm accountable person details',  
+            name: req.body.firstName + ' ' + req.body.lastName, 
+            email: req.body.email, 
+            role: req.body.role,
+            ni: req.body.niNumber, 
+            share: req.body.businessShare,
+            rights: req.body.votingRights       
           };
           
           res.render('pages/accountable-people/business-ownership/confirm-accountable-person-details/home', data);
