@@ -2,6 +2,13 @@ module.exports = {
 
 
   bind : function(app) {
+    
+    
+    
+    // Models
+        
+    var peopleEngine = require('./models/people');
+    
 
 
     app.get('/', function(req, res, next) {
@@ -857,14 +864,13 @@ module.exports = {
       
       
       
+      // ACCOUNTABLE PEOPLE
       
-      
-      
-      // accountable people
       app.get('/pages/accountable-people/', function(req, res) {
 
         var data = {
-          doctitle: 'Accountable people'
+          doctitle: 'Accountable people',
+          pagetitle: 'Accountable people'
         };
         
         res.render('pages/accountable-people/home', data);
@@ -872,80 +878,180 @@ module.exports = {
       });
       
       
+        // Business ownership
+        
         app.get('/pages/accountable-people/business-ownership/', function(req, res) {
   
           var data = {
-            doctitle: 'Business ownership'
+            doctitle: 'Business ownership',
+            pagetitle: 'Business ownership'
           };
           
           res.render('pages/accountable-people/business-ownership/home', data);
   
         });
+        
+          
+          // SOLE TRADER
+          
+          
+            // Details
+            
+            app.get('/pages/accountable-people/business-ownership/sole-trader/details/', function(req, res) {
+  
+              var data = {
+                doctitle: 'Sole trader details',
+                pagetitle: 'Sole trader details'
+              };
+              
+              res.render('pages/accountable-people/business-ownership/sole-trader/details/home', data);
       
+            });
+            
+            
+            // Confirm
+            
+            app.post('/pages/accountable-people/business-ownership/sole-trader/confirm/', function(req, res) {
+  
+              var data = {
+                doctitle: 'Confirm sole trader details',  
+                pagetitle: 'Confirm sole trader details',
+                owner: req.body.owner,
+                firstname: req.body.firstName,
+                lastname:  req.body.lastName, 
+                email: req.body.email, 
+                role: req.body.role,
+                ni: req.body.niNumber, 
+                share: req.body.businessShare,
+                rights: req.body.votingRights       
+              };
+              
+              res.render('pages/accountable-people/business-ownership/sole-trader/confirm/home', data);
       
-        app.get('/pages/accountable-people/business-ownership/sole-trader-details/', function(req, res) {
+            });
+            
+            
+            // Success
+            
+            app.get('/pages/accountable-people/business-ownership/sole-trader/success/', function(req, res) {
   
-          var data = {
-            doctitle: 'Sole trader details'
-          };
+              var data = {
+                doctitle: 'Success',
+                pagetitle: 'Success'
+              };
+              
+              res.render('pages/accountable-people/business-ownership/sole-trader/success/home', data);
+      
+            });
+            
+            
+            // Update
+            
+            app.get('/pages/accountable-people/business-ownership/sole-trader/update/:id', function(req, res) {
+              
+              var entry = peopleEngine.getPeopleEntry(req.params.id);
+              
+              res.render('pages/accountable-people/business-ownership/sole-trader/update/home', {
+                doctitle: 'Update accountable person',
+                pagetitle: 'Update accountable person',
+                people:entry
+              });
+              
+            });
           
-          res.render('pages/accountable-people/business-ownership/sole-trader-details/home', data);
-  
-        });
-        
-        
-        app.get('/pages/accountable-people/business-ownership/accountable-person-details/', function(req, res) {
-  
-          var data = {
-            doctitle: 'Accountable person details'
-          };
           
-          res.render('pages/accountable-people/business-ownership/accountable-person-details/home', data);
-  
-        });
-                
-        
-        app.get('/pages/accountable-people/business-ownership/confirm-sole-trader-details/', function(req, res) {
-  
-          var data = {
-            doctitle: 'Confirm sole trader details'
-          };
+          // ACCOUNTABLE PERSON
           
-          res.render('pages/accountable-people/business-ownership/confirm-sole-trader-details/home', data);
+          
+            // Add
+            
+            app.get('/pages/accountable-people/business-ownership/accountable-person/add/', function(req, res) {
   
-        });
+              var data = {
+                doctitle: 'Add an accountable person',
+                pagetitle: 'Add an accountable person'
+              };
+              
+              res.render('pages/accountable-people/business-ownership/accountable-person/add/home', data);
+      
+            });
+            
+            
+            // Confirm
+            
+            app.post('/pages/accountable-people/business-ownership/accountable-person/confirm/', function(req, res) {
+  
+              var data = {
+                doctitle: 'Confirm accountable person details',  
+                pagetitle: 'Confirm accountable person details',
+                firstname: req.body.firstName,
+                lastname: req.body.lastName,
+                email: req.body.email, 
+                role: req.body.role,
+                ni: req.body.niNumber, 
+                share: req.body.businessShare,
+                rights: req.body.votingRights       
+              };
+              
+              res.render('pages/accountable-people/business-ownership/accountable-person/confirm/home', data);
+      
+            });
+            
+            
+            // Summary
+            
+            app.get('/pages/accountable-people/business-ownership/accountable-person/summary/', function(req, res) {
+  
+              var data = {
+                doctitle: 'Accountable people summary',
+                pagetitle: 'Accountable people summary'
+              };
+              
+              res.render('pages/accountable-people/business-ownership/accountable-person/summary/home', data);
+      
+            });
+            
+            
+            // Update
+            
+            app.get('/pages/accountable-people/business-ownership/accountable-person/update/:id', function(req, res) {
+              
+              var entry = peopleEngine.getPeopleEntry(req.params.id);
+              
+              res.render('pages/accountable-people/business-ownership/accountable-person/update/home', {
+                doctitle: 'Update accountable person details',
+                pagetitle: 'Update accountable person details',
+                people:entry
+              });
+              
+            });
+            
+            
+            // Complete
+            
+            app.get('/pages/accountable-people/business-ownership/accountable-person/complete/', function(req, res) {
+              
+              res.render('pages/accountable-people/business-ownership/accountable-person/complete/home', {
+                doctitle: 'Complete accountable people',
+                pagetitle: 'Complete accountable people'
+              });
+              
+            });
+            
+            
+             // Overview
+            
+            app.get('/pages/accountable-people/business-ownership/accountable-person/overview/', function(req, res) {
+              
+              res.render('pages/accountable-people/business-ownership/accountable-person/overview/home', {
+                doctitle: 'Business overview',
+                pagetitle: 'Business overview'
+              });
+              
+            });
+
         
 
-        app.post('/pages/accountable-people/business-ownership/confirm-accountable-person-details/', function(req, res) {
-  
-          var data = {
-            doctitle: 'Confirm accountable person details',  
-            name: req.body.firstName + ' ' + req.body.lastName, 
-            email: req.body.email, 
-            role: req.body.role,
-            ni: req.body.niNumber, 
-            share: req.body.businessShare,
-            rights: req.body.votingRights       
-          };
-          
-          res.render('pages/accountable-people/business-ownership/confirm-accountable-person-details/home', data);
-  
-        });
-        
-        
-        
-        
-        app.get('/pages/accountable-people/business-ownership/success/', function(req, res) {
-  
-          var data = {
-            doctitle: 'Success'
-          };
-          
-          res.render('pages/accountable-people/business-ownership/success/home', data);
-  
-        });
-        
-        
     
 
   }

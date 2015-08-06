@@ -1,0 +1,147 @@
+		<a class="back-link" href="/pages/accountable-people/business-ownership/">Back to business ownership</a>
+    
+    
+    <div class="text">
+      
+      <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">Beech Farm</span></h1>
+      
+    </div>
+    
+    
+    <form class="form" id="form-accountable-person-details" method="post" action="/pages/accountable-people/business-ownership/sole-trader/confirm/">
+      
+      
+      <div class="form-group">
+        
+        <label for="first-name">
+          <span class="form-label">First name</span>
+        </label>
+        
+        <input class="form-control" id="first-name" name="firstName" type="text" value="{{people.firstname}}">
+        
+      </div>
+      
+      
+      <div class="form-group">
+        
+        <label for="last-name">
+          <span class="form-label">Last name</span>
+        </label>
+        
+        <input class="form-control" id="last-name" name="lastName" type="text" value="{{people.lastname}}">
+        
+      </div>
+      
+      
+      <div class="form-group">
+        
+        <label for="email">
+          <span class="form-label">Email</span>
+        </label>
+        
+        <input class="form-control" id="email" name="email" type="email" value="{{people.email}}">
+        
+      </div>
+      
+      
+      <div class="form-group">
+        
+        <label for="ni-number">
+          <span class="form-label">National Insurance number</span>
+          <span class="form-hint">What is the National Insurance number of this person?</span>
+        </label>
+        
+        <input class="form-control" id="ni-number" name="niNumber" type="text" value="{{people.ni}}">
+
+        <details>
+      
+          <summary><span class="summary">Why do we need a National Insurance number?</span></summary>
+          
+          <div class="panel-indent text">
+            <p>We need a National Insurance number so that we can carry out business checks.</p>
+            <p>If this person doesn’t have a National Insurance number, phone us on 03000 200 301.</p>
+          </div>
+        
+        </details>
+
+      </div>
+    
+    
+      <div class="form-group">
+        
+        <div class="data">
+          <h3 class="bold-large">100&#37;</h3>
+          <p class="font-xsmall">share in business</p>
+        </div>
+        
+        <div class="data">
+          <h3 class="bold-large">100&#37;</h3>
+          <p class="font-xsmall">voting rights (if applicable)</p>
+        </div>
+        
+      </div>
+    
+      
+      <div class="form-group">
+      
+        <fieldset class="inline">
+        
+          <legend>
+            <span class="form-label">Is this person involved in any other farming businesses?</span>
+          </legend>
+          
+          <div class="form-group form-group-compound">
+          
+            <label class="block-label" for="radio-indent-3">
+              <input id="radio-indent-3" name="radio-indent-group" value="Yes" type="radio"> Yes
+            </label>
+            
+            <label class="block-label" for="radio-indent-4">
+              <input id="radio-indent-4" name="radio-indent-group" value="No" type="radio" checked> No
+            </label>
+          
+          </div>
+          
+        </fieldset>
+      
+      </div>
+
+    
+      <button class="button" type="submit">Continue</button>
+      
+      
+      <p><a href="/" data-toggle="dialog" data-target="dialog">Remove this accountable person</a></p>
+      
+      
+    </form>
+    
+    
+    <!-- dialog-->
+  	<div class="dialog" id="dialog" aria-hidden="true">
+  
+      <div class="dialog-holder" aria-labelledby="dialog-title" aria-describedby="dialog-content" role="alertdialog">
+  
+        <div class="dialog-content" id="dialog-content" role="document" tabindex="0">
+  
+          <h1 class="dialog-heading" id="dialog-title">Remove a person</h1>
+  
+          <form class="form">
+  
+            <p>Are you sure you want to remove <b>{{people.firstname}} {{people.lastname}}</b> from this business? This person will no longer be able to access this business online.</p>
+  
+            <div class="dialog-actions">
+              <button class="button">Yes</button>
+              <a class="dialog-cancel" href="#">No</a>
+            </div>
+  
+            <button class="dialog-close" aria-label="close" type="button">
+              <span class="icon icon-close">x</span>
+            </button>
+  
+          </form>
+  
+        </div>
+  
+      </div>
+  
+  	</div>

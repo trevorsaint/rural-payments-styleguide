@@ -585,11 +585,11 @@ function businessOwnership() {
   
         if ($('#radio-inline-1').is(':checked')) {
   
-            window.location.href = "sole-trader-details";
+            window.location.href = "/pages/accountable-people/business-ownership/sole-trader/details";
   
           } else {
   
-           window.location.href = "accountable-person-details";
+           window.location.href = "/pages/accountable-people/business-ownership/accountable-person/add/";
   
         }
   
