@@ -931,16 +931,16 @@ module.exports = {
             });
             
             
-            // Success
+            // Business details
             
-            app.get('/pages/accountable-people/business-ownership/sole-trader/success/', function(req, res) {
+            app.get('/pages/accountable-people/business-ownership/sole-trader/business-details/', function(req, res) {
   
               var data = {
-                doctitle: 'Success',
-                pagetitle: 'Success'
+                doctitle: 'Business details',
+                pagetitle: 'Business details'
               };
               
-              res.render('pages/accountable-people/business-ownership/sole-trader/success/home', data);
+              res.render('pages/accountable-people/business-ownership/sole-trader/business-details/home', data);
       
             });
             
@@ -1039,13 +1039,13 @@ module.exports = {
             });
             
             
-             // Overview
+             // Business details
             
-            app.get('/pages/accountable-people/business-ownership/accountable-person/overview/', function(req, res) {
+            app.get('/pages/accountable-people/business-ownership/accountable-person/business-details/', function(req, res) {
               
-              res.render('pages/accountable-people/business-ownership/accountable-person/overview/home', {
-                doctitle: 'Business overview',
-                pagetitle: 'Business overview'
+              res.render('pages/accountable-people/business-ownership/accountable-person/business-details/home', {
+                doctitle: 'Business details',
+                pagetitle: 'Business details'
               });
               
             });
