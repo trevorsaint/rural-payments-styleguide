@@ -11,9 +11,11 @@ module.exports = {
     
 
 
-    app.get('/', function(req, res, next) {
+    // Index
+    
+    app.get('/', function(req, res) {
 
-      var data = {doctitle: 'Main menu'};
+      var data = {doctitle: 'Index', beta: true};
       res.render('home', data);
 
     });
