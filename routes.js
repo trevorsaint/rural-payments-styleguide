@@ -296,7 +296,8 @@ module.exports = {
         var data = {
           doctitle: 'Manage land',
           openLayers: true,
-          businessMenu: true
+          businessMenu: true,
+          sticky: true
         };
 
         res.render('pages/manage-land/home', data);
