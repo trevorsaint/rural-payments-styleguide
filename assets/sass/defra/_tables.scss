@@ -3,11 +3,13 @@
 // ==========================================================================
 
 
-table {
-  margin-bottom: 1.05263em * 2; /* 40px */
+// General
 
-
-  /* handle form errors differently for tables (reset them) */
+table, .table {
+  margin-bottom: 1.05263em * 2; // 40px
+  
+  
+  // Errors
   
   .error {
     border-left: 0;
@@ -18,45 +20,45 @@ table {
       padding-left: inherit;
     }
     
+    .form-control {
+      margin-top: -7px;
+      margin-bottom: -7px;
+    }
+    
   }
-
-
-  /* helper classes */
   
-  .sbi,
-  .email {
-    @extend .text-secondary;
-    font-weight: normal;
+  
+  // General
+  
+  tbody {
+    
+    th, td {
+      font-weight: 400;
+      vertical-align: top;
+    }
+    
   }
-
+  
+  tfoot {
+    border-top: 2px solid rgb(0, 0, 0);
+  }
+  
+  
+  // Helpers
+  
+  .form-control {
+    @include core-16;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    position: relative;
+    width: auto;
+  }
+  
   .last {
     padding-right: 0;
     text-align: right;
   }
-
-  .top {
-    vertical-align: top;
-  }
-
-  .text-normal {
-    font-weight: normal;
-  }
-
-  .action {
-    text-align: right;
-  }
-
-  .form-control {
-    @include core-16;
-    margin: -5px 0;
-    position: relative;
-    width: auto;
-  }
-
-
-  /* other helper classes */
-
-
+  
   .new {
     
     th,
@@ -65,65 +67,105 @@ table {
     }
     
   }
-
-
-  .totals {
-
-    th, 
-    td {
-      border-bottom-color: $black;
-    }
-
-  }
-
-
-  /* table tfoot */
-
-  tfoot {
-    border-top: 2px solid rgb(0, 0, 0);
-  }
-
-
-}
-
-
-// table variations */
-
-.table {
   
   
-  /* table highlighting */
+  // Specific
   
-  &-highlight {
+  &-summary {
+    
+    tr {
       
-    tbody {
-      
-      tr:hover {
-      
-        th, 
-        td {
-          background-color: $highlight-colour;
+      &:first-child {
+        
+        th, td {
+          border-top: 1px solid $grey-2;
         }
-      
+        
       }
-    
+      
     }
     
-  }  
+    &-heading {
+      position: relative;
 
+      a {
+        position: absolute; right: 0; top: 5px;
+      }
 
-  /* table land entitlements */
+    }
+    
+    &-title {
+      font-weight: 700;
+      width: 45%;
+    }
+    
+    &-content {
 
+      ul {
+        margin: 0; // override list bullet margins
+      }
+
+    }
+    
+    &-action {
+      padding-right: 0;
+      text-align: right;
+    }
+    
+  }
+  
+  
+  &-land-features {
+
+    @include media(tablet) {
+
+      .text-warning {
+        float: right;
+        margin-top: -1px;
+        margin-bottom: -1px;
+      }
+
+    }
+
+  }
+  
+  
+  &-land-parcels {
+    
+    .tag {
+      display: inline-block;
+      padding: 0 20px;
+      
+      &-done {
+        background-color: $button-colour;
+        color: white;
+      }
+      
+    }
+    
+    @include media(tablet) {
+
+      .text-pending {
+        float: right;
+        margin-top: -1px;
+        margin-bottom: -1px;
+      }
+
+    }
+    
+  }
+  
+  
   &-land-entitlements {
-
+    
     .parcel-id {
       width: 13%;
     }
-
+    
     .land-uses {
       width: 10%;
     }
-
+    
     .land-area {
       width: 10%;
     }
@@ -131,7 +173,7 @@ table {
     .parcel-size {
       width: 10%;
     }
-
+    
     .eligible-verified {
       width: 15%;
     }
@@ -147,7 +189,7 @@ table {
     .edit-activated-area {
       width: 3%;
     }
-
+    
     .form-control {
       margin: -5px -5px -5px 0;
     }
@@ -156,101 +198,20 @@ table {
       position: relative;
       top: -1px;
     }
-
-    tbody {
-
-      th,
-      td {
-        vertical-align: top;
-      }
-
-      input {
-        @include core-16($tabular-numbers: true);
-        text-align: right;
-      }
-
-    }
-
-  }
-
-
-  /* table land features */
-
-  &-land-features {
-
-    tbody {
-
-      th {
-        font-weight: normal;
-      }
-
-    }
-
-    @include media(tablet) {
-
-      .text-warning {
-        margin-top: -1px;
-        margin-bottom: -1px;
-        float: right;
-      }
-
-    }
-
-  }
-
-
-  /* table land parcels */
-
-  &-land-parcels {
-
-    tbody {
-
-      th {
-        font-weight: normal;
-      }
-
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 0 20px;
-
-      &-done {
-        background-color: $button-colour;
-        color: white;
-      }
-
-    }
-
-    @include media(tablet) {
-
-      .checked {
-        text-align: right;
-      }
-
+    
+    input {
+      @include core-16($tabular-numbers: true);
+      text-align: right;
     }
     
-    @include media(tablet) {
-
-      .text-pending {
-        margin-top: -1px;
-        margin-bottom: -1px;
-        float: right;
-      }
-
-    }
-
   }
-
-
-  /* table land removal and summary */
-
+  
+  
   &-land-removal {
 
     tbody {
 
       th {
-        font-weight: normal;
 
         @include media(tablet) {
           width: 30%;
@@ -277,174 +238,144 @@ table {
     }
 
   }
-
-
-  /* table customer and business results */
-
-  &-business-search,
-  &-customer-search {
-
-    tbody th {
-      font-weight: normal;
+  
+  
+  &-form {
+    
+    th, td {
+      padding: 12px 0;
+      vertical-align: middle;
     }
-
-    tbody th,
-    tbody td {
-      vertical-align: top;
-    }
-
+    
   }
-
-
-  // table summary */
-
-  &-summary {
-
-    tr {
-
-      &:first-child {
-
+  
+  
+  // Highlighting
+  
+  &-highlight {
+      
+    tbody {
+      
+      tr:hover {
+      
         th, 
         td {
-          border-top: 1px solid $grey-2;
+          background-color: $highlight-colour;
         }
-
+      
       }
-
+    
     }
-
-    &-heading {
-      position: relative;
-
-      a {
-        position: absolute; right: 0; top: 5px;
-      }
-
-    }
-
-    &-title {
-      vertical-align: top;
-      width: 45%;
-    }
-
-    &-content {
-
-      ul {
-        margin: 0; /* override list bullet margins */
-      }
-
-    }
-
-    &-action {
-      padding-right: 0;
-      text-align: right;
-    }
-
-  }
-
-
-}
-
-
-/* table sortable */
-
-.js-table-sortable {
+    
+  }  
   
-  .sortable {
-    @include user-select(none);
-    @extend .link;
-    cursor: pointer;
-    position: relative;
-    text-decoration: underline;
-  }
-
-  .sorting-asc,
-  .sorting-desc {
-    &:after {
-      margin-left: 4px;
-      position: absolute;
-    }
-  }
-
-  .sorting-asc {
-    &:after {
-      content: '▲';
-    }
-  }
-
-  .sorting-desc {
-    &:after {
-      content: '▼';
-    }
-  }
-
-}
-
-
-/* clickable table rows */
-
-.js-table-rows-clickable {
-  
-  tbody {
-    
-    tr {
-      cursor: pointer;
-    }
-    
-    tr:hover {
-    
-      th, 
-      td {
-        background-color: $highlight-colour;
-      }
-    
-    }
-  
-  }
   
 }
 
 
-/* tables with javascript */
+// Javascript enabled
 
 .js-enabled {
-
-
+  
+  
   .table {
-
-
-    /* table Land entitlements */
-
+  
     &-land-entitlements {
-
+  
       tbody {
-
+  
         tr {
           display: none;
-
+  
           &:first-child {
             display: table-row;
           }
-
+  
         }
-
+  
         &.open {
           border-top: 2px solid $black;
           border-bottom: 2px solid $black;
-
+  
           tr {
             display: table-row;
           }
-
+  
         }
-
+  
       }
-
+  
     }
+  
+  }
+  
+  
+}
 
 
+// Enhancements
+
+.js-table {
+  
+  
+  // Clickable rows
+  
+  &-rows-clickable {
+  
+    tbody {
+    
+      tr {
+        cursor: pointer;
+      }
+      
+      tr:hover {
+      
+        th, 
+        td {
+          background-color: $highlight-colour;
+        }
+    
+      }
+    
+    }
+  
+  }
+   
+  
+  // Sortable
+  
+  &-sortable {
+    
+    .sortable {
+      @include user-select(none);
+      @extend .link;
+      cursor: pointer;
+      position: relative;
+      text-decoration: underline;
+    }
+    
+    .sorting-asc,
+    .sorting-desc {
+      &:after {
+        margin-left: 4px;
+        position: absolute;
+      }
+    }
+    
+    .sorting-asc {
+      &:after {
+        content: '▲';
+      }
+    }
+  
+    .sorting-desc {
+      &:after {
+        content: '▼';
+      }
+    }
+    
   }
 
-
+  
 }
 

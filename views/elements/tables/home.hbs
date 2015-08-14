@@ -4,23 +4,20 @@
 	<h1 class="heading-xlarge">Tables</h1>
 	
 	
-	<!-- introduction -->
   <div class="text">
     
     <p>Consider putting content into tables to make it easier to scan.</p>
     
     <p>See an example of a table with <a href="validation/">form validation</a>.</p>
     
-    <h2 class="heading-medium">Looking for the HTML?</h2>
+    <h2 class="heading-medium">Looking for the <abbr title="HyperText Markup Language">HTML</abbr>?</h2>
     
-    <p>The HTML snippets can be found in the <a href="/elements/snippets/#tables">snippets page</a>.</p>
+    <p>The <abbr title="HyperText Markup Language">HTML</abbr> snippets can be found in the <a href="/elements/snippets/#tables">snippets page</a>.</p>
     
   </div>
 
 
-  <!-- standard -->
   <h3 class="heading-medium">Standard</h3>
-  
   
   <div class="example">
     <table>
@@ -58,15 +55,14 @@
   </div>
   
   
-  <h3 class="heading-medium">Sortable table with highlighting</h3>
-  
+  <h3 class="heading-medium">Sortable</h3>
   
   <div class="example">
-    <table class="table-land-parcels table-highlight js-table-sortable">
+    <table class="table-land-parcels js-table-sortable">
       <caption class="visuallyhidden">Land parcel distribution</caption>
       <thead>
         <tr>
-          <th scope="col" data-sort="string">ParcelID</th>
+          <th scope="col" data-sort="string">Parcel ID</th>
           <th class="numeric" scope="col">Total area (<abbr title="Hectare">ha</abbr>)</th>
           <th scope="col">Eligible covers</th>
           <th class="numeric last" scope="col">BPS eligible area (<abbr title="Hectare">ha</abbr>)</th>
@@ -114,15 +110,10 @@
   </div>
   
   
-  <!-- summary -->
   <h3 class="heading-medium">Summary</h3>
   
-  
-  <div class="text">
-    <p>A summary of items including <a href="http://schema.org/Organization/" rel="external">schema data</a> for a particular business.</p>
-  </div>
-  
-  
+  <p>A summary of items including <a href="http://schema.org/Organization/" rel="external">schema data</a> for a particular business.</p>
+
   <div class="example">
   
     <h2 class="heading-medium">Business details</h2>
@@ -183,9 +174,7 @@
   </div>
   
   
-  <!-- land features -->
   <h3 class="heading-medium">Land features</h3>
-  
   
   <div class="example">
   
@@ -222,9 +211,7 @@
   </div>
   
   
-  <!-- land parcels -->
   <h3 class="heading-medium">Land parcels</h3>
-  
   
   <div class="example">
   
@@ -241,13 +228,13 @@
       <tbody>
         <tr>
           <th scope="row"><a href="#">Arable land</a></th>
-          <td class="numeric"><span class="sbi">SJ8063_3931</span></td>
+          <td class="numeric"><span class="text-secondary">SJ8063_3931</span></td>
           <td class="numeric">5.76</td>
           <td class="checked last"><span class="tag tag-done">Yes</span></td>
         </tr>
         <tr>
           <th scope="row"><a href="#">East field</a></th>
-          <td class="numeric"><span class="sbi">SJ8063_4541</span></td>
+          <td class="numeric"><span class="text-secondary">SJ8063_4541</span></td>
           <td class="numeric">0.49</td>
           <td class="checked last"><span class="tag">No</span></td>
         </tr>
@@ -256,41 +243,8 @@
   
   </div>
   
-  
-  <!-- screen reader optimised -->
-  <h3 class="heading-medium">Screen reader optimised</h3>
-  
-  
-  <div class="example">
-  
-    <table>
-      
-      <caption class="visuallyhidden">Busness details listing</caption>
-      
-      <thead>
-        <tr>
-          <th scope="col">Business</th>
-          <th class="action" scope="col">Permissions</th>
-          <th class="action last" scope="col">View or check</th>
-        </tr>
-      </thead>
-      
-      <tbody>
-        <tr>
-          <th scope="row">Hansels Farm <br> <span class="sbi">SJ8063_4774</span></th>
-          <td class="action"><a href="/">View or give permissions <span class="visuallyhidden">to Hansels Farm</span></a></td>
-          <td class="action last"><a href="/">View business <span class="visuallyhidden">Hansels Farm</span></a></td>
-        </tr>
-      </tbody>
-      
-    </table>
-  
-  </div>
-  
-  
-  <!-- search results with pagination -->
+
   <h3 class="heading-medium">Search results with pagination</h3>
-  
   
   <div class="example">
     
@@ -314,16 +268,14 @@
             <div itemprop="postalCode">RH8 6LA</div>
             <div itemprop="addressCountry">United Kingdom</div>
           </td>
-          <td class="numeric"><span class="sbi">SJ8063_4461</span></td>
+          <td class="numeric"><span class="text-secondary">SJ8063_4461</span></td>
           <td class="action last"><a href="/">View business <span class="visuallyhidden">Appletree</span></a></td>
         </tr>
       </tbody>
     </table>
     
     <div class="pager">
-    
       <div class="pager-controls">
-      
         <ul class="pager-items">
           <li>1</li>
           <li><a href="#">2</a></li>
@@ -331,25 +283,19 @@
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
         </ul>
-        
         <a class="pager-next" href="#">Next</a>
-      
       </div>
-      
       <div class="pager-summary">Showing 1 &ndash; 50 of 146 results</div>
-    
     </div>
   
   </div>
   
   
+  <h3 class="heading-medium">Clickable rows</h3>
   
-  <!-- search results with pagination -->
-  <h3 class="heading-medium">Search results with clickable rows</h3>
-  
+  <p>Each row must contain only one link using the data-link attribute.</p>
   
   <div class="example">
-    
     <table class="table-business-search js-table-rows-clickable">
       <caption class="visuallyhidden">Customer and Business search listing</caption>
       <thead>
@@ -357,7 +303,7 @@
           <th scope="col">Customer</th>
           <th scope="col">Address</th>
           <th scope="col">Email</th>
-          <th class="numeric last" scope="col">Ref</th>
+          <th class="numeric last" scope="col">Reference</th>
         </tr>
       </thead>
       <tbody>
@@ -371,9 +317,8 @@
             <div itemprop="addressCountry">United Kingdom</div>
           </td>
           <td itemprop="email">selenium@kainos.com</td>
-          <td class="numeric last">1000000222</td>
+          <td class="numeric last"><span class="text-secondary">1000000222</span></td>
         </tr>
-        
         <tr itemtype="http://schema.org/Organization" data-link="/" itemscope>
           <th scope="row" itemprop="name"><a href="/">Andrew Smith</a></th>
           <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
@@ -384,23 +329,18 @@
             <div itemprop="addressCountry">United Kingdom</div>
           </td>
           <td itemprop="email">sandrew.smith@kainos.com</td>
-          <td class="numeric last">1000000087</td>
+          <td class="numeric last"><span class="text-secondary">1000000087</span></td>
         </tr>
-        
       </tbody>
     </table>
-  
   </div>
   
   
-  <!-- form elements -->
-  <h3 class="heading-medium">Form elements</h3>
-  
+  <h3 class="heading-medium">Table with inputs</h3>
   
   <div class="example">
-  
-    <form class="form form-table" method="post" action="/">
-      <table>
+    <form class="form">
+      <table class="table-form">
         <caption class="visuallyhidden">Business plan execution results</caption>
         <thead>
           <tr>
@@ -450,18 +390,110 @@
         </tbody>
       </table>
     </form>
-  
   </div>
   
   
-  <!-- form table with checkboxes -->
-  <h2 class="heading-medium">Form table with checkboxes</h2>
-  
+  <h3 class="heading-medium">Table with errors</h3>
   
   <div class="example">
+    
+    <div class="error-summary" tabindex="-1" aria-labelledby="error-summary-heading-1" role="group">
+
+      <h1 class="heading-medium error-summary-heading" id="error-summary-heading-1">Message to alert the user to a problem goes here</h1>
   
-    <form class="form form-table" method="post" action="/">
-      <table>
+      <p>Optional description of the error(s) and how to correct them</p>
+  
+      <ul class="error-summary-list">
+        <li><a href="#error-land-area-1">Descriptive link to the question with an error</a></li>
+        <li><a href="#error-land-area-2">Descriptive link to the question with an error</a></li>
+      </ul>
+  
+    </div>
+
+		<table class="table-form">
+
+		  <caption class="visuallyhidden">Business plan execution results</caption>
+
+			<thead>
+
+				<tr>
+					<th scope="col">Parcel</th>
+					<th scope="col">Reference</th>
+					<th scope="col">Total area (<abbr title="hectare">ha</abbr>)</th>
+					<th scope="col">Eligible area (<abbr title="hectare">ha</abbr>)</th>
+					<th scope="col">Land cover</th>
+					<th scope="col">Land use area (<abbr title="hectare">ha</abbr>)</th>
+					<th scope="col">Land use</th>
+					<th class="numeric last" scope="col">Area to claim (<abbr title="hectare">ha</abbr>)</th>
+				</tr>
+
+			</thead>
+
+			<tfoot>
+
+  			<tr>
+					<th scope="col" colspan="7">Total:</th>
+					<td class="numeric last"><span class="bold-medium">NaN</span></td>
+				</tr>
+
+			</tfoot>
+
+			<tbody>
+
+				<tr>
+					<th scope="row">Field E</th>
+					<td>NZ1234</td>
+					<td>10.50</td>
+					<td>10.50</td>
+					<td>Arable</td>
+					<td>5.40</td>
+					<td>Wheat</td>
+					<td class="numeric last error" id="error-land-area-1">
+  					<label class="visuallyhidden" for="land-area-1">Land Area</label>
+  					<input class="form-control" type="text" id="land-area-1" size="5" value="34.fs">
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row">Field E</th>
+					<td>NZ1234</td>
+					<td>10.50</td>
+					<td>10.50</td>
+					<td>Arable</td>
+					<td>5.40</td>
+					<td>Wheat</td>
+					<td class="numeric last error" id="error-land-area-2">
+  					<label class="visuallyhidden" for="land-area-2">Land Area</label>
+  					<input class="form-control" type="text" id="land-area-2" size="5" value="abcdef">
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row">Field E</th>
+					<td>NZ1234</td>
+					<td>10.50</td>
+					<td>10.50</td>
+					<td>Arable</td>
+					<td>-</td>
+					<td>Peas</td>
+					<td class="numeric last">
+  					<label class="visuallyhidden" for="land-area-3">Land Area</label>
+  					<input class="form-control" type="text" id="land-area-3" size="5" value="3.5">
+					</td>
+				</tr>
+
+			</tbody>
+
+		</table>
+    
+  </div>
+  
+  
+  <h3 class="heading-medium">Table with checkboxes</h3>
+  
+  <div class="example">
+    <form class="form">
+      <table class="table-form">
         <caption class="visuallyhidden">Name of agents listing</caption>
           <thead>
             <tr>
@@ -486,31 +518,27 @@
   </div>
   
   
-  <!-- reset passwords -->
   <h3 class="heading-medium">Reset password</h3>
   
-  
   <div class="example">
-  
     <table>
       <caption class="visuallyhidden">Reset user passwords</caption>
       <thead>
         <tr>
-          <th scope="col" colspan="2">User name</th>
+          <th scope="col" colspan="2">User details</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Connor Auditor <br> <span class="email">auditor@kainos.com</span></th>
+          <th scope="row">Connor Auditor <br> <span class="text-secondary">auditor@kainos.com</span></th>
           <td class="action last"><a href="/">Reset password</a></td>
         </tr>
         <tr>
-          <th scope="row">Connor Basic <br> <span class="email">basic@kainos.com</span></th>
+          <th scope="row">Connor Basic <br> <span class="text-secondary">basic@kainos.com</span></th>
           <td class="action last"><a href="/">Reset password</a></td>
         </tr>
       </tbody>
     </table>
-  
   </div>
   
   

@@ -6,7 +6,6 @@
   
   <h3 class="heading-medium">Standard</h3>
   
-  
   <div class="example">
     <table>
       <caption class="visuallyhidden">Business plan execution results</caption>
@@ -41,8 +40,6 @@
       </tbody>
     </table>
   </div>
-  
-  
   <pre><code class="prettyprint">
     &lt;table&gt;
       &lt;caption class=&quot;visuallyhidden&quot;&gt;Business plan execution results&lt;/caption&gt;
@@ -79,17 +76,14 @@
   </code></pre>
   
   
-  
-  <h2 class="heading-medium">Sortable table with highlighting</h2>
-  
+  <h3 class="heading-medium">Sortable</h3>
   
   <div class="example">
-  
-    <table class="table-land-parcels table-highlight js-table-sortable">
+    <table class="table-land-parcels js-table-sortable">
       <caption class="visuallyhidden">Land parcel distribution</caption>
       <thead>
         <tr>
-          <th scope="col" data-sort="string">ParcelID</th>
+          <th scope="col" data-sort="string">Parcel ID</th>
           <th class="numeric" scope="col">Total area (<abbr title="Hectare">ha</abbr>)</th>
           <th scope="col">Eligible covers</th>
           <th class="numeric last" scope="col">BPS eligible area (<abbr title="Hectare">ha</abbr>)</th>
@@ -134,16 +128,13 @@
         </tr>
       </tbody>
     </table>
-      
   </div>
-  
-  
   <pre><code class="prettyprint">
-    &lt;table class=&quot;table-land-parcels table-highlight js-table-sortable&quot;&gt;
+    &lt;table class=&quot;table-land-parcels js-table-sortable&quot;&gt;
       &lt;caption class=&quot;visuallyhidden&quot;&gt;Land parcel distribution&lt;/caption&gt;
       &lt;thead&gt;
         &lt;tr&gt;
-          &lt;th scope=&quot;col&quot; data-sort=&quot;string&quot;&gt;ParcelID&lt;/th&gt;
+          &lt;th scope=&quot;col&quot; data-sort=&quot;string&quot;&gt;Parcel ID&lt;/th&gt;
           &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Total area (ha)&lt;/th&gt;
           &lt;th scope=&quot;col&quot;&gt;Eligible covers&lt;/th&gt;
           &lt;th class=&quot;numeric last&quot; scope=&quot;col&quot;&gt;BPS eligible area (ha)&lt;/th&gt;
@@ -191,8 +182,11 @@
   </code></pre>
   
   
-  <div class="example">
+  <h3 class="heading-medium">Summary</h3>
   
+  <p>A summary of items including <a href="http://schema.org/Organization/" rel="external">schema data</a> for a particular business.</p>
+  
+  <div class="example">
     <h2 class="heading-medium">Business details</h2>
     
     <table class="table-summary" itemtype="http://schema.org/Organization" itemscope>
@@ -247,10 +241,7 @@
       </tbody>
     
     </table>
-  
   </div>
-  
-  
   <pre><code class="prettyprint">
     &lt;table class=&quot;table-summary&quot; itemtype=&quot;http://schema.org/Organization&quot; itemscope&gt;
     
@@ -309,69 +300,64 @@
   
   <h3 class="heading-medium">Land features</h3>
   
-  
   <div class="example">
-  
     <table class="table-land-features">
       <caption class="visuallyhidden">Land uses and features information</caption>
       <thead>
         <tr>
           <th scope="col">Land uses and features</th>
           <th class="numeric" scope="col">Area (<abbr title="hectare">ha</abbr>)</th>
-          <th class="action last"></th>
+          <th class="last"></th>
         </tr>
       </thead>
       <tfoot>
         <tr>
           <th>Total area:</th>
           <td class="numeric"><span class="bold-medium">5.6</span></td>
-          <td class="action last"></td>
+          <td class="last"></td>
         </tr>
       </tfoot>
       <tbody>
         <tr>
           <th scope="row"><a href="/">Hedge</a> <span class="text-warning">More details required</span></th>
           <td class="numeric">0.56</td>
-          <td class="action last"><a href="/">Remove</a></td>
+          <td class="last"><a href="/">Remove</a></td>
         </tr>
         <tr>
           <th scope="row"><a href="/">Buffer strip</a></th>
           <td class="numeric">0.67</td>
-          <td class="action last"><a href="/">Remove</a></td>
+          <td class="last"><a href="/">Remove</a></td>
         </tr>
       </tbody>
     </table>
-  
   </div>
-  
-  
   <pre><code class="prettyprint">
     &lt;table class=&quot;table-land-features&quot;&gt;
       &lt;caption class=&quot;visuallyhidden&quot;&gt;Land uses and features information&lt;/caption&gt;
       &lt;thead&gt;
         &lt;tr&gt;
           &lt;th scope=&quot;col&quot;&gt;Land uses and features&lt;/th&gt;
-          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
-          &lt;th class=&quot;action last&quot;&gt;&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Area (ha)&lt;/th&gt;
+          &lt;th class=&quot;last&quot;&gt;&lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
       &lt;tfoot&gt;
         &lt;tr&gt;
           &lt;th&gt;Total area:&lt;/th&gt;
           &lt;td class=&quot;numeric&quot;&gt;&lt;span class=&quot;bold-medium&quot;&gt;5.6&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;action last&quot;&gt;&lt;/td&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tfoot&gt;
       &lt;tbody&gt;
         &lt;tr&gt;
           &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;Hedge&lt;/a&gt; &lt;span class=&quot;text-warning&quot;&gt;More details required&lt;/span&gt;&lt;/th&gt;
           &lt;td class=&quot;numeric&quot;&gt;0.56&lt;/td&gt;
-          &lt;td class=&quot;action last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Remove&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Remove&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;Buffer strip&lt;/a&gt;&lt;/th&gt;
           &lt;td class=&quot;numeric&quot;&gt;0.67&lt;/td&gt;
-          &lt;td class=&quot;action last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Remove&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Remove&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
@@ -380,9 +366,7 @@
   
   <h3 class="heading-medium">Land parcels</h3>
   
-  
   <div class="example">
-  
     <table class="table-land-parcels">
       <caption class="visuallyhidden">Land parcels</caption>
       <thead>
@@ -396,96 +380,42 @@
       <tbody>
         <tr>
           <th scope="row"><a href="#">Arable land</a></th>
-          <td class="numeric"><span class="sbi">SJ8063_3931</span></td>
+          <td class="numeric"><span class="text-secondary">SJ8063_3931</span></td>
           <td class="numeric">5.76</td>
           <td class="checked last"><span class="tag tag-done">Yes</span></td>
         </tr>
         <tr>
           <th scope="row"><a href="#">East field</a></th>
-          <td class="numeric"><span class="sbi">SJ8063_4541</span></td>
+          <td class="numeric"><span class="text-secondary">SJ8063_4541</span></td>
           <td class="numeric">0.49</td>
-          <td class="checked last"><span class="tag">No</span></td>
+          <td class="checked last"><span class="tag tag-done">Yes</span></td>
         </tr>
       </tbody>
     </table>
-  
   </div>
-  
-  
   <pre><code class="prettyprint">
     &lt;table class=&quot;table-land-parcels&quot;&gt;
       &lt;caption class=&quot;visuallyhidden&quot;&gt;Land parcels&lt;/caption&gt;
       &lt;thead&gt;
         &lt;tr&gt;
           &lt;th scope=&quot;col&quot;&gt;Land parcel name&lt;/th&gt;
-          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;&lt;abbr title=&quot;Single Business Identifier&quot;&gt;SBI&lt;/abbr&gt;&lt;/th&gt;
-          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;SBI&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Area (ha)&lt;/th&gt;
           &lt;th class=&quot;checked last&quot; scope=&quot;col&quot;&gt;Checked&lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
       &lt;tbody&gt;
         &lt;tr&gt;
           &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;#&quot;&gt;Arable land&lt;/a&gt;&lt;/th&gt;
-          &lt;td class=&quot;numeric&quot;&gt;&lt;span class=&quot;sbi&quot;&gt;SJ8063_3931&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;&lt;span class=&quot;text-secondary&quot;&gt;SJ8063_3931&lt;/span&gt;&lt;/td&gt;
           &lt;td class=&quot;numeric&quot;&gt;5.76&lt;/td&gt;
           &lt;td class=&quot;checked last&quot;&gt;&lt;span class=&quot;tag tag-done&quot;&gt;Yes&lt;/span&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
           &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;#&quot;&gt;East field&lt;/a&gt;&lt;/th&gt;
-          &lt;td class=&quot;numeric&quot;&gt;&lt;span class=&quot;sbi&quot;&gt;SJ8063_4541&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;&lt;span class=&quot;text-secondary&quot;&gt;SJ8063_4541&lt;/span&gt;&lt;/td&gt;
           &lt;td class=&quot;numeric&quot;&gt;0.49&lt;/td&gt;
-          &lt;td class=&quot;checked last&quot;&gt;&lt;span class=&quot;tag&quot;&gt;No&lt;/span&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  </code></pre>
-  
-  
-  <h3 class="heading-medium">Screen reader optimised</h3>
-  
-  
-  <div class="example">
-  
-    <table>
-      
-      <caption class="visuallyhidden">Busness details listing</caption>
-      
-      <thead>
-        <tr>
-          <th scope="col">Business</th>
-          <th class="action" scope="col">Permissions</th>
-          <th class="action last" scope="col">View or check</th>
-        </tr>
-      </thead>
-      
-      <tbody>
-        <tr>
-          <th scope="row">Hansels Farm <br> <span class="sbi">SJ8063_4774</span></th>
-          <td class="action"><a href="/">View or give permissions <span class="visuallyhidden">to Hansels Farm</span></a></td>
-          <td class="action last"><a href="/">View business <span class="visuallyhidden">Hansels Farm</span></a></td>
-        </tr>
-      </tbody>
-      
-    </table>
-  
-  </div>
-  
-  
-  <pre><code class="prettyprint">
-    &lt;table&gt;
-      &lt;caption class=&quot;visuallyhidden&quot;&gt;Busness details listing&lt;/caption&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;col&quot;&gt;Business&lt;/th&gt;
-          &lt;th class=&quot;action&quot; scope=&quot;col&quot;&gt;Permissions&lt;/th&gt;
-          &lt;th class=&quot;action last&quot; scope=&quot;col&quot;&gt;View or check&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;Hansels Farm &lt;br&gt; &lt;span class=&quot;sbi&quot;&gt;SJ8063_4774&lt;/span&gt;&lt;/th&gt;
-          &lt;td class=&quot;action&quot;&gt;&lt;a href=&quot;/&quot;&gt;View &lt;span class=&quot;visuallyhidden&quot;&gt;Hansels Farm&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-          &lt;td class=&quot;action last&quot;&gt;&lt;a href=&quot;/&quot;&gt;View &lt;span class=&quot;visuallyhidden&quot;&gt;Hansels Farm&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;checked last&quot;&gt;&lt;span class=&quot;tag tag-done&quot;&gt;No&lt;/span&gt;&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
@@ -494,9 +424,7 @@
   
   <h3 class="heading-medium">Search results with pagination</h3>
   
-  
   <div class="example">
-    
     <table class="table-business-search">
       <caption class="visuallyhidden">Customer and Business search listing</caption>
       <thead>
@@ -504,7 +432,7 @@
           <th scope="col">Business</th>
           <th scope="col">Address</th>
           <th class="numeric" scope="col"><abbr title="Single Business Identifier">SBI</abbr></th>
-          <th class="action last" scope="col"><span class="visuallyhidden">View</span></th>
+          <th class="last" scope="col"><span class="visuallyhidden">View</span></th>
         </tr>
       </thead>
       <tbody>
@@ -517,16 +445,13 @@
             <div itemprop="postalCode">RH8 6LA</div>
             <div itemprop="addressCountry">United Kingdom</div>
           </td>
-          <td class="numeric"><span class="sbi">SJ8063_4461</span></td>
-          <td class="action last"><a href="/">View business <span class="visuallyhidden">Appletree</span></a></td>
+          <td class="numeric"><span class="text-secondary">SJ8063_4461</span></td>
+          <td class="last"><a href="/">View business <span class="visuallyhidden">Appletree</span></a></td>
         </tr>
       </tbody>
     </table>
-    
     <div class="pager">
-    
       <div class="pager-controls">
-      
         <ul class="pager-items">
           <li>1</li>
           <li><a href="#">2</a></li>
@@ -534,18 +459,11 @@
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
         </ul>
-        
         <a class="pager-next" href="#">Next</a>
-      
       </div>
-      
       <div class="pager-summary">Showing 1 &ndash; 50 of 146 results</div>
-    
     </div>
-  
   </div>
-  
-  
   <pre><code class="prettyprint">
     &lt;table class=&quot;table-business-search&quot;&gt;
       &lt;caption class=&quot;visuallyhidden&quot;&gt;Customer and Business search listing&lt;/caption&gt;
@@ -553,8 +471,8 @@
         &lt;tr&gt;
           &lt;th scope=&quot;col&quot;&gt;Business&lt;/th&gt;
           &lt;th scope=&quot;col&quot;&gt;Address&lt;/th&gt;
-          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;&lt;abbr title=&quot;Single Business Identifier&quot;&gt;SBI&lt;/abbr&gt;&lt;/th&gt;
-          &lt;th class=&quot;action last&quot; scope=&quot;col&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;View&lt;/span&gt;&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;SBI&lt;/th&gt;
+          &lt;th class=&quot;last&quot; scope=&quot;col&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;View&lt;/span&gt;&lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
       &lt;tbody&gt;
@@ -567,8 +485,8 @@
             &lt;div itemprop=&quot;postalCode&quot;&gt;RH8 6LA&lt;/div&gt;
             &lt;div itemprop=&quot;addressCountry&quot;&gt;United Kingdom&lt;/div&gt;
           &lt;/td&gt;
-          &lt;td class=&quot;numeric&quot;&gt;&lt;span class=&quot;sbi&quot;&gt;SJ8063_4461&lt;/span&gt;&lt;/td&gt;
-          &lt;td class=&quot;action last&quot;&gt;&lt;a href=&quot;/&quot;&gt;View &lt;span class=&quot;visuallyhidden&quot;&gt;Appletree&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;&lt;span class=&quot;text-secondary&quot;&gt;SJ8063_4461&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;a href=&quot;/&quot;&gt;View &lt;span class=&quot;visuallyhidden&quot;&gt;Appletree&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
@@ -589,13 +507,11 @@
   </code></pre>
   
   
-  <h3 class="heading-medium">Form elements</h3>
-  
+  <h3 class="heading-medium">Table with inputs</h3>
   
   <div class="example">
-  
-    <form class="form form-table" method="post" action="/">
-      <table>
+    <form class="form">
+      <table class="table-form">
         <caption class="visuallyhidden">Business plan execution results</caption>
         <thead>
           <tr>
@@ -645,24 +561,21 @@
         </tbody>
       </table>
     </form>
-  
   </div>
-  
-  
   <pre><code class="prettyprint">
-    &lt;form class=&quot;form form-table&quot; method=&quot;post&quot; action=&quot;/&quot;&gt;
-      &lt;table&gt;
+    &lt;form class=&quot;form&quot;&gt;
+      &lt;table class=&quot;table-form&quot;&gt;
         &lt;caption class=&quot;visuallyhidden&quot;&gt;Business plan execution results&lt;/caption&gt;
         &lt;thead&gt;
           &lt;tr&gt;
             &lt;th scope=&quot;col&quot;&gt;Parcel&lt;/th&gt;
             &lt;th scope=&quot;col&quot;&gt;Reference&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;Total area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;Eligible area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Total area (ha)&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Eligible area (ha)&lt;/th&gt;
             &lt;th scope=&quot;col&quot;&gt;Land cover&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;Land use area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Land use area (ha)&lt;/th&gt;
             &lt;th scope=&quot;col&quot;&gt;Land use&lt;/th&gt;
-            &lt;th class=&quot;numeric last&quot; scope=&quot;col&quot;&gt;Area to claim (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+            &lt;th class=&quot;numeric last&quot; scope=&quot;col&quot;&gt;Area to claim (ha)&lt;/th&gt;
           &lt;/tr&gt;
         &lt;/thead&gt;
         &lt;tfoot&gt;
@@ -704,13 +617,11 @@
   </code></pre>
   
   
-  <h2 class="heading-medium">Form table with checkboxes</h2>
-  
+  <h3 class="heading-medium">Table with checkboxes</h3>
   
   <div class="example">
-  
-    <form class="form form-table" method="post" action="/">
-      <table>
+    <form class="form">
+      <table class="table-form">
         <caption class="visuallyhidden">Name of agents listing</caption>
           <thead>
             <tr>
@@ -731,13 +642,10 @@
         </tbody>
       </table>
     </form>
-  
   </div>
-  
-  
   <pre><code class="prettyprint">
-    &lt;form class=&quot;form form-table&quot; method=&quot;post&quot; action=&quot;/&quot;&gt;
-      &lt;table&gt;
+    &lt;form class=&quot;form&quot; method=&quot;post&quot; action=&quot;/&quot;&gt;
+      &lt;table class=&quot;table-form&quot;&gt;
         &lt;caption class=&quot;visuallyhidden&quot;&gt;Name of agents listing&lt;/caption&gt;
         &lt;thead&gt;
           &lt;tr&gt;
@@ -763,9 +671,7 @@
   
   <h3 class="heading-medium">Reset password</h3>
   
-  
   <div class="example">
-  
     <table>
       <caption class="visuallyhidden">Reset user passwords</caption>
       <thead>
@@ -775,19 +681,16 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Connor Auditor <br> <span class="email">auditor@kainos.com</span></th>
-          <td class="action last"><a href="/">Reset password</a></td>
+          <th scope="row">Connor Auditor <br> <span class="text-secondary">auditor@kainos.com</span></th>
+          <td class="last"><a href="/">Reset password</a></td>
         </tr>
         <tr>
-          <th scope="row">Connor Basic <br> <span class="email">basic@kainos.com</span></th>
-          <td class="action last"><a href="/">Reset password</a></td>
+          <th scope="row">Connor Basic <br> <span class="text-secondary">basic@kainos.com</span></th>
+          <td class="last"><a href="/">Reset password</a></td>
         </tr>
       </tbody>
     </table>
-  
   </div>
-  
-  
   <pre><code class="prettyprint">
     &lt;table&gt;
       &lt;caption class=&quot;visuallyhidden&quot;&gt;Reset user passwords&lt;/caption&gt;
@@ -798,12 +701,12 @@
       &lt;/thead&gt;
       &lt;tbody&gt;
         &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;Connor Auditor &lt;br&gt; &lt;span class=&quot;email&quot;&gt;auditor@kainos.com&lt;/span&gt;&lt;/th&gt;
-          &lt;td class=&quot;action last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Reset password&lt;/a&gt;&lt;/td&gt;
+          &lt;th scope=&quot;row&quot;&gt;Connor Auditor &lt;br&gt; &lt;span class=&quot;text-secondary&quot;&gt;auditor@kainos.com&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Reset password&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;Connor Basic &lt;br&gt; &lt;span class=&quot;email&quot;&gt;basic@kainos.com&lt;/span&gt;&lt;/th&gt;
-          &lt;td class=&quot;action last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Reset password&lt;/a&gt;&lt;/td&gt;
+          &lt;th scope=&quot;row&quot;&gt;Connor Basic &lt;br&gt; &lt;span class=&quot;text-secondary&quot;&gt;basic@kainos.com&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Reset password&lt;/a&gt;&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;
     &lt;/table&gt;
