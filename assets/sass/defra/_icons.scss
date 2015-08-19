@@ -3,58 +3,62 @@
 // ==========================================================================
 
 
-.icon:before {
-  cursor: default;
-  content: '\00a0'; /* non-breaking space */
-  display: block;
-  height: 22px;
-  text-align: center;
-  vertical-align: middle;
-  width: 22px;
-}
+$module: 'icon';
 
 
-.icon {
+.#{$module} {
   background-size: 100%;
   background-repeat: no-repeat;
-  // background-position: 50%; 
-}
-
-
-.icon-close {
-  background-image: url("../images/icons/icon-close.png");
-  display: block;
-
-	@include device-pixel-ratio() {
-		background-image: url("../images/icons/icon-close-2x.png");
-    background-size: 100%;
-	}
-
-}
-
-
-.icon-tick,
-.icon-cross {
-  float: left;
-  margin-right: 10px;
-  overflow: hidden;
-}
-
-
-.icon-tick {
-  background-image: url("../images/icons/icon-tick.png");
-	@include device-pixel-ratio() {
-		background-image: url("../images/icons/icon-tick-2x.png");
-		background-size: 100%;
-	}
-}
-
-
-.icon-cross {
-  background-image: url("../images/icons/icon-cross.png");
-  @include device-pixel-ratio() {
-  	background-image: url("../images/icons/icon-cross-2x.png");
-  	background-size: 100%;
+  
+  &:before {
+    cursor: default;
+    content: '\00a0'; // Non-breaking space
+    display: block;
+    height: 22px;
+    text-align: center;
+    vertical-align: middle;
+    width: 22px;
   }
+  
+  
+  // Modifiers
+  
+  &-close {
+    background-image: url('../images/icons/icon-close.png');
+    display: block;
+  
+  	@include device-pixel-ratio() {
+  		background-image: url('../images/icons/icon-close-2x.png');
+      background-size: 100%;
+  	}
+  }
+  
+  
+  &-tick,
+  &-cross {
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  
+  
+  &-tick {
+    background-image: url('../images/icons/icon-tick.png');
+  	@include device-pixel-ratio() {
+  		background-image: url('../images/icons/icon-tick-2x.png');
+  		background-size: 100%;
+  	}
+  }
+  
+  
+  &-cross {
+    background-image: url('../images/icons/icon-cross.png');
+    @include device-pixel-ratio() {
+    	background-image: url('../images/icons/icon-cross-2x.png');
+    	background-size: 100%;
+    }
+  }
+  
+  
 }
 

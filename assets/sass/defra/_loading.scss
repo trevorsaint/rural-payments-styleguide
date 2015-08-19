@@ -3,7 +3,10 @@
 // ==========================================================================
 
 
-.loading {
+$module: 'loading';
+
+
+.#{$module} {
   background-color: $white;
   height: 100%;
   min-height: 400px;

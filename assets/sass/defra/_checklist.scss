@@ -3,6 +3,9 @@
 // ==========================================================================
 
 
+$module: 'checklist';
+
+
 %checklist {
 	clear: both;
 	margin: em(19) 0;
@@ -32,38 +35,38 @@
 }
 
 
-/* cross icon */
-
-.checklist-notmet {
-	@extend %checklist;
-
-	&:before {
-	  background-position: 50% 0
-	}
-
-}
-
-
-/* question mark icon */
-
-.checklist-inprogress {
-	@extend %checklist;
-
-	&:before {
-	  background-position: 50% -25px;
-	}
-
-}
-
-
-/* tick icon */
-
-.checklist-done {
-	@extend %checklist;
-
-	&:before {
-	  background-position: 50% -50px;
-	}
-
+.#{$module} {
+  
+  
+  &-notmet {
+  	@extend %checklist;
+  
+  	&:before {
+  	  background-position: 50% 0
+  	}
+  
+  }
+  
+  
+  &-inprogress {
+  	@extend %checklist;
+  
+  	&:before {
+  	  background-position: 50% -25px;
+  	}
+  
+  }
+  
+  
+  &-done {
+  	@extend %checklist;
+  
+  	&:before {
+  	  background-position: 50% -50px;
+  	}
+  
+  }
+  
+  
 }
 

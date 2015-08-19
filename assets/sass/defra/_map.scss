@@ -3,7 +3,7 @@
 // ==========================================================================
 
 
-/* general */
+// General
 
 .map-container {
   border: 1px solid #bfc1c3;
@@ -37,7 +37,7 @@
 }
 
 
-/* print link */
+// Print link
 
 .map-print {
   
@@ -56,7 +56,7 @@
 }
 
 
-/* buttons */
+// Buttons
 
 .olButton {
   @extend %hide-text;
@@ -114,12 +114,12 @@
 }
 
 
-/* controls */
+// Controls
 
 .olControl {
   
   
-  // measure
+  // Measure
   
   &MeasureOutput {
     @extend .font-xsmall;
@@ -134,7 +134,7 @@
   }
   
   
-  // view controls
+  // View controls
   
   &View {
     position: absolute;
@@ -155,7 +155,7 @@
   }
   
   
-  // zoom controls
+  // Zoom controls
   
   &Zoom {
     position: absolute; 
@@ -188,7 +188,7 @@
   }
   
   
-  // map switcher
+  // Map switcher
   
   &MapSwitcher {
     position: absolute;
@@ -222,7 +222,7 @@
   }
   
   
-  // measure controls
+  // Measure controls
   
   &MeasureControls {
     position: absolute;

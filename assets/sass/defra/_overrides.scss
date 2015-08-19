@@ -3,12 +3,12 @@
 // ==========================================================================
 
 
-/* footer colour extended / font rendering fixes */
+// Footer colour extended / font rendering fixes
 
 html {
   background-color: $grey-3;
-  -webkit-text-size-adjust: 100%; /* 1 */
-  -ms-text-size-adjust: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,7 +21,7 @@ body {
 }
 
 
-/* Selection */
+// Selection
 
 ::-moz-selection {
   background: $grey-3;
@@ -34,16 +34,16 @@ body {
 }
 
 
-/* for loading purposes */
+// For loading purposes
 
 #global-header,
 #global-header-bar {
 	position: relative;
-	z-index: 12; // sits above loading...
+	z-index: 12; // Sits above loading...
 }
 
 
-/* main heading no back link */
+// Main heading no back link
 
 .heading-xlarge-noback {
   @extend .heading-xlarge;
@@ -60,7 +60,7 @@ body {
   display: inline-block;
   margin-top: 30px;
 
-  /* fixes bug (white line top and bottom on focus) */
+  // Fixes bug (white line top and bottom on focus)
 
   &:focus {
     border: 1px solid transparent;
@@ -71,7 +71,7 @@ body {
 }
 
 
-/* Exception for date inputs */
+// Exception for date inputs
 
 .form-date {
 
@@ -86,7 +86,7 @@ body {
 }
 
 
-/* exception for details */
+// Exception for details
 
 details {
   margin-top: em(5, 16 );
@@ -105,20 +105,20 @@ details .panel-indent {
 }
 
 
-/* links */
+// links
 
 #global-header #logo, a:link {
-  overflow: hidden; /* fixes unwanted padding on focus */
+  overflow: hidden; // Fixes unwanted padding on focus
 }
 
 
-/* related external icon placement override */
+// Related external icon placement override
 
 .related-section-links {
 
-  a[rel="external"]::after {
+  a[rel='external']::after {
     background-position: right 4px;
-    content: "\A0\A0\A0\A0\A0";
+    content: '\A0\A0\A0\A0\A0';
   }
 
 }

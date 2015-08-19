@@ -3,17 +3,20 @@
 // ==========================================================================
 
 
-.business {
+$module: 'business';
 
 
-  /* menu */
+.#{$module} {
+
+  
+  // Menu
 
   &-menu {
     border-bottom: 1px solid $border-colour;
   }
 
 
-  /* links */
+  // Links
 
   &-links {
     @extend %clearfix;

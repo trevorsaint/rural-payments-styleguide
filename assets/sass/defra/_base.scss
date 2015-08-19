@@ -3,19 +3,21 @@
 // ==========================================================================
 
 
-/* Hide visually and from screen readers */
+// Hide visually and from screen readers
 
 .hidden {
   display: none !important;
 }
 
 
-/* Hide visually and from screen readers, but maintain layout */
+// Hide visually and from screen readers, but maintain layout
 
 .invisible {
   visibility: hidden;
 }
 
+
+// Remove dotted underline in firefox
 
 abbr[title] {
   text-decoration: none;

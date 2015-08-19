@@ -3,8 +3,11 @@
 // ==========================================================================
 
 
-.dialog {
-  @include box-sizing(border-box); /* compass box sizing */
+$module: 'dialog';
+
+
+.#{$module} {
+  @include box-sizing(border-box);
   background-color: rgba(0,0,0,.5);
   height: 100%;
   padding: $gutter-half;
@@ -25,7 +28,7 @@
   }
 
 
-  /* matches page container properties */
+  // Matches page container properties
 
   @include media(tablet) {
     padding: $gutter;
@@ -70,13 +73,13 @@
 
 
   &-content {
-    outline: none; /* removes dotted border on focus */
+    outline: none; // Removes dotted border on focus
     padding: 1em;
     text-align: left;
   }
 
 
-  /* modify form controls inside a dialog */
+  // Modify form controls inside a dialog
 
   .form-group {
     float: none;
@@ -87,11 +90,11 @@
   }
 
 
-  /* button close modal */
+  // Button close modal
 
   &-close {
     @include hide-text;
-    background-color: transparent; /* removed background colour in Chrome (bug) */
+    background-color: transparent; // Removed background colour in Chrome (bug)
     border: 0 none;
     cursor: pointer;
     height: 22px;
@@ -103,7 +106,7 @@
   }
 
 
-  /* cancel link to close dialog */
+  // Cancel link to close dialog
 
   &-cancel {
     display: inline-block;
@@ -122,7 +125,7 @@
   &-actions {
 
     .button {
-      width: auto; /* prevent default style for buttons on mobile devices */
+      width: auto; // Prevent default style for buttons on mobile devices
     }
 
   }

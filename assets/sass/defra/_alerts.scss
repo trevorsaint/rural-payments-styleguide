@@ -3,69 +3,81 @@
 // ==========================================================================
 
 
+$module: 'alert';
+
+
 %alert {
-	border-left: 4px solid $error-colour;
+  border-left: 4px solid $error-colour;
 	clear: both;
 	margin: 0 0 1.05263em;
 	padding: 1.05263em;
 }
 
 
-.alert-success {
-	@extend %alert;
-	border-color: $turquoise;
-}
-
-
-.alert-info {
-	@extend %alert;
-	border-color: $grey-2;
-}
-
-
-.alert-error {
-	@extend %alert;
-	border-color: $error-colour;
-}
-
-
-.alert-complete {
-	@extend %alert;
-	background-color: $turquoise;
-	border-color: $turquoise;
-	color: $white;
-}
-
-
-.alert-header {
-  @extend .bold-medium;
-	clear: both;
-	margin-bottom: .5em;
-	overflow: hidden;
-	vertical-align: middle;
-}
-
-
-.alert-number {
-  @extend .bold-xlarge;
-	float: left;
-  margin-right: .41666667em; /* 20px ÷ 48px font size */
-}
-
-
-.alert-message {
-	display: block;
-	overflow: hidden;
-	
-	p {
-  	margin-top: em(25);
-  	margin-bottom: 0;
-  	
-  	&:first-child {
-    	margin-top: 0;
-  	}
-  	
-	}
-
+.#{$module} {
+  
+  
+  // Modifiers
+  
+  &-success {
+    @extend %alert;
+    border-color: $turquoise;
+  }
+  
+  
+  &-info {
+    @extend %alert;
+    border-color: $grey-2;
+  }
+  
+  
+  &-error {
+    @extend %alert;
+    border-color: $error-colour;
+  }
+  
+  
+  &-complete {
+    @extend %alert;
+    background-color: $turquoise;
+    border-color: $turquoise;
+    color: $white;
+  }
+  
+  
+  // Blocks
+  
+  &-header {
+    @extend .bold-medium;
+    clear: both;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  
+  
+  &-number {
+    @extend .bold-xlarge;
+    float: left;
+    margin-right: em(20,48);
+  }
+  
+  
+  &-message {
+    display: block;
+    overflow: hidden;
+    
+    p {
+      margin-top: em(20);
+      margin-bottom: 0;
+    
+      &:first-child {
+        margin-top: 0;
+      }
+    
+    }
+    
+  }
+  
+  
 }
 

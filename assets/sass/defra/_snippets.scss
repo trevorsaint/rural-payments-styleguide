@@ -3,8 +3,11 @@
 // ==========================================================================
 
 
-.titled-list {
-  margin-bottom: 1.05263em; /* 20px */
+$module: 'titled-list';
+
+
+.#{$module} {
+  margin-bottom: 1.05263em; // 20px
 
 	ul {
 		margin: 0;
