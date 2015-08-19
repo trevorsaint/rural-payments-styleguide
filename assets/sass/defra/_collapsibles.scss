@@ -65,6 +65,22 @@ $module: 'collapsible';
         margin-right: .35em;
       }
       
+      &:hover {
+        
+        &:before {
+          color: $link-hover-colour;
+        }
+        
+        .#{$module}-heading {
+          
+          &-primary {
+            color: $link-hover-colour;
+          }
+          
+        }
+        
+      }
+      
       &[aria-expanded=false] {
         &:before {
           content: '►';
@@ -103,106 +119,13 @@ $module: 'collapsible';
 }
 
 
-
-
-
-// JS Enabled
-
-/*.js-enabled {
-
-  .collapsible {
-
-    &-heading {
-      padding: 0;
-    }
-
-    &-content {
-      padding: .5em .5em .5em 1.9em;
-    }
-
-
-      .owns {
-      margin: 0 .5em .5em 1.9em;
-
-      @include media(tablet) {
-        margin: 0;
-        right: .5em; top: .6em;
-      }
-
-    }
-
-    
-    
-    .name {
-      margin-top: 0;
-    }
-    
-
-    button {
-      background: transparent;
-      border: 0 none;
-      cursor: pointer;
-      display: block;
-      font-size: 1em;
-      padding: .5em;
-      text-align: left;
-      width: 100%;
-
-      .name-title {
-        color: $link-colour;
-        font-weight: normal;
-        text-decoration: underline;
-      }
-
-      &:before {
-        color: $link-colour;
-        margin-right: .35em;
-      }
-
-
-      // Closed
-
-      &[aria-expanded=false] {
-        &:before {
-          content: '►';
-        }
-      }
-
-
-      // Open
-
-      &[aria-expanded=true] {
-        &:before {
-          content: '▼';
-        }
-      }
-
-      &:hover {
-        .name-title,
-        &:before {
-          color: $link-hover-colour;
-        }
-      }
-
-      &:focus {
-        outline: 3px solid $yellow;
-      }
-
-    }
-
-
-  }
-
-}*/
-
-
 // ==========================================================================
 // Toggle
 // ==========================================================================
 
 
-/*.toggle {
+.toggle {
   //margin-bottom: 1.05263em * 2; // 40px
   margin-bottom: 1.05263em; // 20px
-}*/
+}
 
