@@ -384,7 +384,7 @@ function formValidation() {
 function collapsibles() {
 
 
-  $('.collapsible .collapsible-item').each(function() {
+  $('.collapsible-item').each(function() {
 
 
       var code = $(this).closest('.language-markup');
@@ -396,7 +396,7 @@ function collapsibles() {
 
         // Variables
         var $this    = $(this),
-            $header  = $(this).find('.collapsible-heading h3'),
+            $header  = $(this).find('.collapsible-heading > *'),
             $content = $(this).find('.collapsible-content');
 
 
@@ -533,7 +533,6 @@ function soleTraderDetails() {
 };
 
 
-
 // Business ownership
 
 function businessOwnership() {
@@ -604,7 +603,6 @@ function businessOwnership() {
 
   
 };
-
 
 
 // Confirm sole trader details
@@ -794,7 +792,6 @@ function inlineEdit() {
 };
 
 
-
 // Clickable table rows
 
 function clickableTableRows() {
@@ -823,7 +820,6 @@ function clickableTableRows() {
   
   
 };
-
 
 
 // Document ready

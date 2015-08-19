@@ -135,3 +135,23 @@
   
 }
 
+
+/* list summary */
+
+.list-summary {
+  margin-bottom: 40px;
+  
+  &-item {
+    border-bottom: 1px solid $grey-2;
+    padding: 12px 0;
+    
+    &:first-child {
+      border-top: 1px solid $grey-2;
+    }
+    
+  }
+  
+}
+
+
+

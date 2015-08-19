@@ -3,79 +3,112 @@
 // ==========================================================================
 
 
-.collapsible {
+$module: 'collapsible';
+
+
+.#{$module} {
   margin-bottom: 1em;
-
+  
+  
+  &-item {
+    border-bottom: 1px solid $grey-2;
+    &:first-child {
+      border-top: 1px solid $grey-2;
+    }
+    padding: 12px 0;
+  }
+  
+  
   &-heading {
-    @include user-select(none); /* compass helper */
-    border-top: 1px solid $grey-2;
-    padding: .5em 0;
-    position: relative;
-  }
-
-  &-content {
-    padding: .5em 0;
-  }
-
-  .name {
-    font-weight: bold;
-    position: relative;
-    z-index: 2;
-  }
-
-  .owns {
-    margin-bottom: 0;
-
-    @include media(tablet) {
-      position: absolute;
-      right: 0; top: .5em;
+    margin-top: em(20);
+    
+    &-primary {
+      font-weight: bold; 
     }
-
-  }
-
-  .details {
-    margin-bottom: 0;
-    overflow: hidden;
-
-    &:after {
-      clear: both;
-      content: '';
-      display: table;
-    }
-
-    dt {
-      @extend .bold-small;
-
+    
+    &-secondary {
+      @extend .font-xsmall;
+      @extend .text-secondary;
+      line-height: 25px;
+      
       @include media(tablet) {
-        clear: left;
-        float: left;
-        margin-top: em(5);
-        width: 40%;
+        float: right;  
       }
-
+      
     }
+    
+  }
+  
+}
 
-    dd {
+
+// JS Enabled
+
+.js-enabled {
+
+  .#{$module} {
+  
+    button {
+      background-color: transparent;
+      border: 0 none;
+      cursor: pointer;
       display: block;
-      @include media(tablet) {
-        @include box-sizing(border-box);
-        float: right;
-        margin-top: em(5);
-        padding-left: 20px;
-        width: 60%;
+      font-size: 1em;
+      line-height: 25px;
+      margin: -12px 0;
+      padding: 12px 0;
+      text-align: left;
+      width: 100%;
+      
+      &:before {
+        color: $link-colour;
+        margin-right: .35em;
       }
-
+      
+      &[aria-expanded=false] {
+        &:before {
+          content: '►';
+        }
+      }
+      
+      &[aria-expanded=true] {
+        &:before {
+          content: '▼';
+        }
+      }
+      
     }
-
+    
+    
+    &-heading {
+      margin-top: 0;
+      
+      &-primary {
+        color: $link-colour;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+      
+    }
+    
+    
+    &-content {
+      margin-top: em(20);
+      padding-left: em(25);
+    }
+    
+  
   }
 
 }
 
 
 
+
+
 // JS Enabled
 
-.js-enabled {
+/*.js-enabled {
 
   .collapsible {
 
@@ -87,7 +120,8 @@
       padding: .5em .5em .5em 1.9em;
     }
 
-    .owns {
+
+      .owns {
       margin: 0 .5em .5em 1.9em;
 
       @include media(tablet) {
@@ -96,6 +130,13 @@
       }
 
     }
+
+    
+    
+    .name {
+      margin-top: 0;
+    }
+    
 
     button {
       background: transparent;
@@ -107,7 +148,7 @@
       text-align: left;
       width: 100%;
 
-      span {
+      .name-title {
         color: $link-colour;
         font-weight: normal;
         text-decoration: underline;
@@ -137,7 +178,7 @@
       }
 
       &:hover {
-        span,
+        .name-title,
         &:before {
           color: $link-hover-colour;
         }
@@ -152,7 +193,7 @@
 
   }
 
-}
+}*/
 
 
 // ==========================================================================
@@ -160,8 +201,8 @@
 // ==========================================================================
 
 
-.toggle {
+/*.toggle {
   //margin-bottom: 1.05263em * 2; // 40px
   margin-bottom: 1.05263em; // 20px
-}
+}*/
 

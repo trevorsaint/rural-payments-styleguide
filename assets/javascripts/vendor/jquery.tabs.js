@@ -135,7 +135,7 @@ jQuery.fn.tabs = function(settings){
 		var tabIDsuffix = '-enhanced';
 
 		tabsBody
-			.addClass('tabs-body')
+			//.addClass('tabs-body')
 			.attr('aria-live', 'polite');
 
     // check for mobile and adapt DOM if required

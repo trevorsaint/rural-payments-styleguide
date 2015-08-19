@@ -19,6 +19,20 @@ module.exports = {
       res.render('home', data);
 
     });
+    
+    
+    // Account
+    
+    app.get('/pages/account/', function(req, res) {
+
+      var data = {
+        doctitle: 'Account',
+        pagetitle: 'Rural Payments'
+      };
+      
+      res.render('pages/account/home', data);
+
+    });
 
 
     // ELEMENTS
