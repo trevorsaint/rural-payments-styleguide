@@ -1,100 +1,104 @@
 		<a class="link-back" href="/">Back to index</a>
 
 
-    <div class="text">
-
-      <h1 class="heading-xlarge">Forgotten your password?</h1>
-
-      <p class="lede">Enter your customer reference number (<abbr title="Customer Reference Number">CRN</abbr>), email address and the code that we have emailed you.</p>
-
-      <p>If you don't have a code, click '<b>send unique code</b>' below to recieve one. When you get this code, return to this page and enter it. This code is only active for 12 hours, after this time you will need another code.</p>
-
-      <p>If you don't know your <abbr title="Customer Reference Number">CRN</abbr> or the email address that is registered to your account, you will need to contact us on <span class="bold-small">03000 200 301</span>.</p>
-
-    </div>
-
-
-    <form class="form">
-
-
-      <div class="form-group">
-
-        <fieldset>
-
-          <legend class="heading-large">Your details</legend>
-
-          <div class="form-group">
-            
-            <label for="customer-reference">
-              <span class="form-label">Customer reference number</span>
-            </label>
-            
-            <input class="form-control" id="customer-reference" type="text">
-            
-          </div>
-
-          <div class="form-group">
-            
-            <label for="email">
-              <span class="form-label">Email address</span>
-            </label>
-            
-            <input class="form-control" id="email" type="email">
-            
-          </div>
-
-          <div class="form-group">
-            
-            <label for="unique-code">
-              <span class="form-label">Unique code</span>
-              <span class="form-hint">It'll be in your email inbox. For example, 123456.</span>
-            </label>
-            
-            <input class="form-control" id="unique-code" type="text">
-            
-          </div>
-
-        </fieldset>
-
-        <p class="form-block">Unique code has expired or is forgotten? <br> <a href="/">Send unique code</a></p>
-
+    <form class="form" method="get" action="/">
+      
+      
+      <h1 class="form-title heading-large">Example: Forgotten your password?</h1>
+      
+      
+      <div class="text">
+  
+        <p class="lede">Enter your customer reference number (<abbr title="Customer Reference Number">CRN</abbr>), email address and the code that we have emailed you.</p>
+  
+        <p>If you don't have a code, click '<b>send unique code</b>' below to recieve one. When you get this code, return to this page and enter it. This code is only active for 12 hours, after this time you will need another code.</p>
+  
+        <p>If you don't know your <abbr title="Customer Reference Number">CRN</abbr> or the email address that is registered to your account, you will need to contact us on <span class="bold-small">03000 200 301</span>.</p>
+  
       </div>
 
 
-      <div class="form-group">
+      <fieldset>
 
-        <fieldset>
 
-          <legend class="heading-large">Create new password</legend>
+        <legend class="heading-medium">Your details</legend>
 
-          <div class="text">
-            <p>Your new password must be different from your email address and customer reference number, a minimum of 8 characters, contain upper and lower case letters, 
-              and contain at least one number or special character.</p>
-          </div>
 
-          <div class="form-group">
-            
-            <label for="new-password">
-              <span class="form-label">New password</span>
-            </label>
-            
-            <input class="form-control" id="new-password" type="password">
-            
-          </div>
+        <div class="form-group">
+          
+          <label for="customer-reference">
+            <span class="form-label">Customer reference number</span>
+          </label>
+          
+          <input class="form-control" id="customer-reference" type="text">
+          
+        </div>
 
-          <div class="form-group">
-            
-            <label for="confirm-password">
-              <span class="form-label">Confirm password</span>
-            </label>
-            
-            <input class="form-control" id="confirm-password" type="password">
-            
-          </div>
 
-        </fieldset>
+        <div class="form-group">
+          
+          <label for="email">
+            <span class="form-label">Email address</span>
+          </label>
+          
+          <input class="form-control" id="email" type="email">
+          
+        </div>
 
-      </div>
+
+        <div class="form-group form-group-compound">
+          
+          <label for="unique-code">
+            <span class="form-label">Unique code</span>
+            <span class="form-hint">It'll be in your email inbox. For example, 123456.</span>
+          </label>
+          
+          <input class="form-control" id="unique-code" type="text">
+          
+        </div>
+
+
+        <span class="form-block">Unique code has expired or is forgotten? <br> <a href="/">Send unique code</a></span>
+
+
+      </fieldset>
+
+
+      <fieldset>
+
+
+        <legend class="heading-medium">Create new password</legend>
+
+
+        <div class="text">
+          <p>Your new password must be different from your email address and customer reference number, a minimum of 8 characters, contain upper and lower case letters, 
+            and contain at least one number or special character.</p>
+        </div>
+
+
+        <div class="form-group">
+          
+          <label for="new-password">
+            <span class="form-label">New password</span>
+          </label>
+          
+          <input class="form-control" id="new-password" type="password">
+          
+        </div>
+        
+
+        <div class="form-group">
+          
+          <label for="confirm-password">
+            <span class="form-label">Confirm password</span>
+          </label>
+          
+          <input class="form-control" id="confirm-password" type="password">
+          
+        </div>
+        
+
+      </fieldset>
 
 
       <button class="button">Create new password</button>
