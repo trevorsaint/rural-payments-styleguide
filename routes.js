@@ -937,7 +937,7 @@ module.exports = {
                 firstname: req.body.firstName,
                 lastname:  req.body.lastName, 
                 email: req.body.email, 
-                role: req.body.role,
+                //role: req.body.role,
                 ni: req.body.niNumber, 
                 share: req.body.businessShare,
                 rights: req.body.votingRights       
@@ -1004,7 +1004,7 @@ module.exports = {
                 firstname: req.body.firstName,
                 lastname: req.body.lastName,
                 email: req.body.email, 
-                role: req.body.role,
+                //role: req.body.role,
                 ni: req.body.niNumber, 
                 share: req.body.businessShare,
                 rights: req.body.votingRights       

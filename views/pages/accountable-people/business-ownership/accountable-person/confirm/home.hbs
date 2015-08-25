@@ -28,7 +28,13 @@
         
         <tr>
           <th class="table-summary-title" scope="row">Email</th>
-          <td class="table-summary-content"><a href="mailto:{{email}}">{{email}}</a></td>
+          <td class="table-summary-content">
+            {{#if email}}
+              <a href="mailto:{{email}}">{{email}}</a>
+            {{else}}
+              <a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a>
+            {{/if}}
+          </td>
         </tr>
         
         <tr>
@@ -36,10 +42,10 @@
           <td class="table-summary-content">{{ni}}</td>
         </tr>
         
-        <tr>
+        <!--tr>
           <th class="table-summary-title" scope="row">Role</th>
           <td class="table-summary-content">{{role}}</td>
-        </tr>
+        </tr-->
         
         <tr>
           <th class="table-summary-title" scope="row">&#37; share</th>
