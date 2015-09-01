@@ -79,24 +79,14 @@
           			</thead>
   
           			<tbody>
-  
-          				<tr>
-          					<th scope="row">Hansels Farm <br> <span class="text-secondary">SJ8063 4774</span></th>
-          					<td class="action"><a href="/">View business <span class="visuallyhidden">Hansels Farm</span></a></td>
-          					<td class="action last"><a href="/">Accountable people <span class="visuallyhidden">for Hansels Farm</span></a></td>
+            			
+            			{{#each businesses}}
+            			<tr>
+          					<th scope="row">{{{name}}} <br> <span class="text-secondary">{{{sbi}}}</span></th>
+          					<td class="action"><a href="/pages/accountable-people/your-businesses/view/{{id}}">View business <span class="visuallyhidden">{{{name}}}</span></a></td>
+          					<td class="action last"><a href="/">Accountable people <span class="visuallyhidden">for {{{name}}}</span></a></td>
           				</tr>
-          				
-          				<tr>
-          					<th scope="row">Beech Farm <br> <span class="text-secondary">SJ8063 4587</span></th>
-          					<td class="action"><a href="/">View business <span class="visuallyhidden">Beech Farm</span></a></td>
-          					<td class="action last"><a href="/">Accountable people <span class="visuallyhidden">for Beech Farm</span></a></td>
-          				</tr>
-          				
-          				<tr>
-          					<th scope="row">Willow Farm <br> <span class="text-secondary">SJ8063 4461</span></th>
-          					<td class="action"><a href="/">View business <span class="visuallyhidden">Willow Farm</span></a></td>
-          					<td class="action last"><a href="/">Accountable people <span class="visuallyhidden">for Willow Farm</span></a></td>
-          				</tr>
+          				{{/each}}
   
           			</tbody>
   

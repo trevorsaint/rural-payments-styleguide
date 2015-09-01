@@ -7,7 +7,8 @@ module.exports = {
     
     // Models
         
-    var peopleEngine = require('./models/people');
+    var peopleEngine   = require('./models/people');
+    var businessEngine = require('./models/businesses');
     
 
 
@@ -880,14 +881,9 @@ module.exports = {
       });
       
       
-      
-      
-      
-      
-      
+
       
       // ACCOUNTABLE PEOPLE
-      
       
       
       // Your businesses
@@ -897,7 +893,8 @@ module.exports = {
         res.render('pages/accountable-people/your-businesses/home', {
           doctitle: 'Your businesses',
           pagetitle: 'Your businesses',
-          loggedUser: 'Sidney Bechet'
+          loggedUser: 'Sidney Bechet',
+          businesses:businessEngine.getBusinessEntries()
         });
         
       });
@@ -905,12 +902,15 @@ module.exports = {
       
        // View business
             
-      app.get('/pages/accountable-people/your-businesses/view/', function(req, res) {
+      app.get('/pages/accountable-people/your-businesses/view/:id', function(req, res) {
+        
+        var entry = businessEngine.getBusinessEntry(req.params.id);
         
         res.render('pages/accountable-people/your-businesses/view/home', {
           doctitle: 'Your businesses',
           pagetitle: 'Your businesses',
-          loggedUser: 'Sidney Bechet'
+          loggedUser: 'Sidney Bechet',
+          business:entry
         });
         
       });

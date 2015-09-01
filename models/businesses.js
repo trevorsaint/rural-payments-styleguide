@@ -1,15 +1,21 @@
-var people = [
+var businesses = [
   
   {
     "id": 1,
-    "business-name": "Hansels Farm",
-    "sbi": "SJ8063_4774"
+    "name": "Hansels Farm",
+    "sbi": "SJ8063 4774"
   },
   
   {
     "id": 2,
-    "business-name": "Willow Farm",
-    "sbi": "SJ8063_4461"
+    "name": "Beech Farm",
+    "sbi": "SJ8063 4587"
+  },
+  
+  {
+    "id": 3,
+    "name": "Willow Farm",
+    "sbi": "SJ8063 4461"
   }
     
 ];
@@ -20,7 +26,7 @@ exports.getBusinessEntries = function() {
 }
  
  
-exports.getBusinesseEntry = function(id) {
+exports.getBusinessEntry = function(id) {
   for(var i=0; i < businesses.length; i++) {
     if(businesses[i].id == id) return businesses[i];
   }
