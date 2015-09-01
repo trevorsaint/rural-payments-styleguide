@@ -881,7 +881,42 @@ module.exports = {
       
       
       
+      
+      
+      
+      
+      
       // ACCOUNTABLE PEOPLE
+      
+      
+      
+      // Your businesses
+            
+      app.get('/pages/accountable-people/your-businesses/', function(req, res) {
+        
+        res.render('pages/accountable-people/your-businesses/home', {
+          doctitle: 'Your businesses',
+          pagetitle: 'Your businesses',
+          loggedUser: 'Sidney Bechet'
+        });
+        
+      });
+      
+      
+       // View business
+            
+      app.get('/pages/accountable-people/your-businesses/view/', function(req, res) {
+        
+        res.render('pages/accountable-people/your-businesses/view/home', {
+          doctitle: 'Your businesses',
+          pagetitle: 'Your businesses',
+          loggedUser: 'Sidney Bechet'
+        });
+        
+      });
+      
+      
+      
       
       app.get('/pages/accountable-people/', function(req, res) {
 
