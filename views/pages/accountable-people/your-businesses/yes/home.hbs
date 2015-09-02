@@ -1,7 +1,7 @@
-    <a class="link-back" href="/">Back to the index</a>
+    <a class="link-back" href="/pages/accountable-people/">Back to the index</a>
     
     
-    <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">{{loggedUser}}</span></h1>
+    <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">{{{owner}}}</span></h1>
     
     
     <h2 class="heading-medium">Accountable people</h2>
@@ -23,7 +23,7 @@
         
         <ul class="tabs-list">
           <li class="active"><a href="#tab-1">Overview</a></li>
-          <li><a href="#tab-2">Messages (1)</a></li>
+          <li><a href="#tab-2">Messages (2)</a></li>
         </ul>
         
       </div>
@@ -64,6 +64,7 @@
               
               <p>We have listed below all of the business(es) you are associated with, or that you act on behalf of.</p>
               
+              
               <table>
 
           		  <caption class="visuallyhidden">Busnesses listing</caption>
@@ -83,8 +84,8 @@
             			{{#each businesses}}
             			<tr>
           					<th scope="row">{{{name}}} <br> <span class="text-secondary">{{{sbi}}}</span></th>
-          					<td class="action"><a href="/pages/accountable-people/your-businesses/view/{{id}}">View business <span class="visuallyhidden">{{{name}}}</span></a></td>
-          					<td class="action last"><a href="/">Accountable people <span class="visuallyhidden">for {{{name}}}</span></a></td>
+          					<td class="action"><a href="/pages/accountable-people/your-businesses/yes/view/{{id}}">View business <span class="visuallyhidden">{{{name}}}</span></a></td>
+          					<td class="action last"><a href="/pages/accountable-people/overview/">Accountable people <span class="visuallyhidden">for {{{name}}}</span></a></td>
           				</tr>
           				{{/each}}
   
@@ -122,7 +123,7 @@
             
           <h2 class="heading-medium">Messages</h2>
           
-          <p>You have 1 new messaage</p>
+          <p>You have 2 new messaage</p>
           
           <div class="collapsible">
       

@@ -883,55 +883,100 @@ module.exports = {
       
 
       
-      // ACCOUNTABLE PEOPLE
-      
-      
-      // Your businesses
-            
-      app.get('/pages/accountable-people/your-businesses/', function(req, res) {
-        
-        res.render('pages/accountable-people/your-businesses/home', {
-          doctitle: 'Your businesses',
-          pagetitle: 'Your businesses',
-          loggedUser: 'Sidney Bechet',
-          businesses:businessEngine.getBusinessEntries()
-        });
-        
-      });
-      
-      
-       // View business
-            
-      app.get('/pages/accountable-people/your-businesses/view/:id', function(req, res) {
-        
-        var entry = businessEngine.getBusinessEntry(req.params.id);
-        
-        res.render('pages/accountable-people/your-businesses/view/home', {
-          doctitle: 'Your businesses',
-          pagetitle: 'Your businesses',
-          loggedUser: 'Sidney Bechet',
-          business:entry
-        });
-        
-      });
       
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      // ACCOUNTABLE PEOPLE ====================================================================================
+      
+      
+      // Enterance
       app.get('/pages/accountable-people/', function(req, res) {
 
         var data = {
           doctitle: 'Accountable people',
-          pagetitle: 'Accountable people'
+          pagetitle: 'Accountable people',
         };
         
         res.render('pages/accountable-people/home', data);
 
       });
+
+
+        // Yes route
+        app.get('/pages/accountable-people/your-businesses/yes/', function(req, res) {
+          
+          res.render('pages/accountable-people/your-businesses/yes/home', {
+            doctitle: 'Your businesses',
+            pagetitle: 'Your businesses',
+            owner: 'Sidney Bechett',
+            businesses:businessEngine.getBusinessEntries()
+          });
+          
+        });
+      
+        app.get('/pages/accountable-people/your-businesses/yes/view/:id', function(req, res) {
+            
+          var entry = businessEngine.getBusinessEntry(req.params.id);
+          
+          res.render('pages/accountable-people/your-businesses/yes/view/home', {
+            doctitle: 'Your businesses',
+            pagetitle: 'Your businesses',
+            owner: 'Sidney Bechett',
+            business:entry
+          });
+        
+        });
+        
+        
+        // No route
+        app.get('/pages/accountable-people/your-businesses/no/', function(req, res) {
+          
+          res.render('pages/accountable-people/your-businesses/no/home', {
+            doctitle: 'Your businesses',
+            pagetitle: 'Your businesses',
+            owner: 'Richard Hillier',
+            businesses:businessEngine.getBusinessEntries()
+          });
+          
+        });
+        
+        app.get('/pages/accountable-people/your-businesses/no/view/:id', function(req, res) {
+            
+          var entry = businessEngine.getBusinessEntry(req.params.id);
+          
+          res.render('pages/accountable-people/your-businesses/no/view/home', {
+            doctitle: 'Your businesses',
+            pagetitle: 'Your businesses',
+            owner: 'Richard Hillier',
+            business:entry
+          });
+        
+        });
+      
+      
+        // Overview
+        app.get('/pages/accountable-people/overview/', function(req, res) {
+  
+          var data = {
+            doctitle: 'Accountable people',
+            pagetitle: 'Accountable people'
+          };
+          
+          res.render('pages/accountable-people/overview/home', data);
+  
+        });
       
       
         // Business ownership
-        
         app.get('/pages/accountable-people/business-ownership/', function(req, res) {
   
           var data = {
@@ -944,11 +989,9 @@ module.exports = {
         });
         
           
-          // SOLE TRADER
-          
+          // Sole trader path
           
             // Details
-            
             app.get('/pages/accountable-people/business-ownership/sole-trader/details/', function(req, res) {
   
               var data = {
@@ -962,7 +1005,6 @@ module.exports = {
             
             
             // Confirm
-            
             app.post('/pages/accountable-people/business-ownership/sole-trader/confirm/', function(req, res) {
   
               var data = {
@@ -972,7 +1014,6 @@ module.exports = {
                 firstname: req.body.firstName,
                 lastname:  req.body.lastName, 
                 email: req.body.email, 
-                //role: req.body.role,
                 ni: req.body.niNumber, 
                 share: req.body.businessShare,
                 rights: req.body.votingRights       
@@ -984,7 +1025,6 @@ module.exports = {
             
             
             // Business details
-            
             app.get('/pages/accountable-people/business-ownership/sole-trader/business-details/', function(req, res) {
   
               var data = {
@@ -998,7 +1038,6 @@ module.exports = {
             
             
             // Update
-            
             app.get('/pages/accountable-people/business-ownership/sole-trader/update/:id', function(req, res) {
               
               var entry = peopleEngine.getPeopleEntry(req.params.id);
@@ -1012,11 +1051,9 @@ module.exports = {
             });
           
           
-          // ACCOUNTABLE PERSON
-          
+          // Accountable person path
           
             // Add
-            
             app.get('/pages/accountable-people/business-ownership/accountable-person/add/', function(req, res) {
   
               var data = {
@@ -1030,7 +1067,6 @@ module.exports = {
             
             
             // Confirm
-            
             app.post('/pages/accountable-people/business-ownership/accountable-person/confirm/', function(req, res) {
   
               var data = {
@@ -1039,7 +1075,6 @@ module.exports = {
                 firstname: req.body.firstName,
                 lastname: req.body.lastName,
                 email: req.body.email, 
-                //role: req.body.role,
                 ni: req.body.niNumber, 
                 share: req.body.businessShare,
                 rights: req.body.votingRights       
@@ -1051,7 +1086,6 @@ module.exports = {
             
             
             // Summary
-            
             app.get('/pages/accountable-people/business-ownership/accountable-person/summary/', function(req, res) {
   
               var data = {
@@ -1065,7 +1099,6 @@ module.exports = {
             
             
             // Update
-            
             app.get('/pages/accountable-people/business-ownership/accountable-person/update/:id', function(req, res) {
               
               var entry = peopleEngine.getPeopleEntry(req.params.id);
@@ -1080,7 +1113,6 @@ module.exports = {
             
             
             // Complete
-            
             app.get('/pages/accountable-people/business-ownership/accountable-person/complete/', function(req, res) {
               
               res.render('pages/accountable-people/business-ownership/accountable-person/complete/home', {
@@ -1092,7 +1124,6 @@ module.exports = {
             
             
              // Business details
-            
             app.get('/pages/accountable-people/business-ownership/accountable-person/business-details/', function(req, res) {
               
               res.render('pages/accountable-people/business-ownership/accountable-person/business-details/home', {

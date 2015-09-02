@@ -9,7 +9,8 @@ var people = [
     "email": "defra-user-1@kainos.com",
     "share": 60,
     "rights": 10,
-    "farming": true
+    "farming": true,
+    "permissions": true
   },
   
   {
@@ -21,7 +22,8 @@ var people = [
     "email": "t.saint@kainos.com",
     "share": 10,
     "rights": "",
-    "farming": false
+    "farming": false,
+    "permissions": false
   },
   
   {
@@ -33,7 +35,8 @@ var people = [
     "email": "s.dick@kainos.com",
     "share": 10,
     "rights": 25,
-    "farming": ""
+    "farming": true,
+    "permissions": false
   }
     
 ];
