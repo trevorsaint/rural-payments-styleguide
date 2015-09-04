@@ -1,31 +1,59 @@
-// configurations
-var express = require('express'),
-    exphbs  = require('express-handlebars'),
-    routes  = require(__dirname + '/routes.js'),
-    app     = express(),
-    port    = (process.env.PORT || 3000);
+// CONFIGURATIONS
+// ==============================================
+    
+var express = require('express');
+var exphbs  = require('express-handlebars');
+var app     = express();
+var routes  = require(__dirname + '/routes/');
+var port    = (process.env.PORT || 3000);
+    
+
+// Cookie parser
+
+var cookieParser = require('cookie-parser');
+app.use(cookieParser());
     
     
+// Session
+
+var session = require('express-session');
+app.use(session({
+  resave: false,
+  saveUninitialized: false,
+  secret: 'Rural Payments Agency'
+}));
+
+
+// Parseurl
+var parseurl = require('parseurl');
+    
+    
+// Body parser
+
 var bodyParser = require('body-parser');
 
-app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({	extended: true })); // support encoded bodies
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({	extended: true }));
 
 
-// application settings
+// Application settings
+
 app.engine('hbs', exphbs({extname:'hbs', defaultLayout:'main.hbs'}));
 app.set('view engine', 'hbs');
 
 
-// middleware to serve static assets
+// Middleware to serve static assets
+
 app.use('/assets', express.static(__dirname + '/assets'));
 app.use('/javascripts', express.static(__dirname + '/javascripts'));
 
 
-// routes
-routes.bind(app, '/');
+// Routes
+
+routes.bind(app, '/routes/');
 
 
-// start the app
+// Start app
+
 app.listen(port);
 console.log('Listening on port ' + port);
