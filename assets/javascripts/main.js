@@ -134,7 +134,6 @@ $(document).ready(function() {
 });
 
 
-
 // ==========================================================================
 // Rural Payments Functions
 // ==========================================================================
@@ -533,76 +532,100 @@ function soleTraderDetails() {
 };
 
 
+
 // Business ownership
 
 function businessOwnership() {
-  
-  
-  if ($('#form-business-ownership').length>0) {    
     
+  
+  if ($('#form-business-ownership').length>0) {
     
-    // Declare my variables
+    var form = $('#form-business-ownership');    
+    
+    enableButtonOnSelection(form);    
 
-    var form   = $("#form-business-ownership"),
-        button = form.find('.button'),
-        radio  = form.find('input:radio');
+    // Submit the form
 
-
-    // Detect changes on interaction
-
-    radio.change(function() {
-
-      var radioButtonHasValue = false;
-
-      radio.each(function() {
-
-        if(this.checked) {
-
-          radioButtonHasValue = true;
-
-          return false;
-
-        }
-
-      });
+    $('button[type=submit]').on('click', function(e) {
 
 
-      // Enabled button
+      e.preventDefault();
 
-      if (radioButtonHasValue) {
-        button.removeAttr('disabled');
+
+      if ($('#radio-inline-1').is(':checked')) {
+
+          window.location.href = "/accountable-people/business-ownership/sole-trader/details/";
+
+        } else {
+
+         window.location.href = "/accountable-people/business-ownership/accountable-person/add/";
+
       }
-      
-      
-      // Submit the form
 
-      $('button[type=submit]').on('click', function(e) {
-  
-  
-        e.preventDefault();
-  
-  
-        if ($('#radio-inline-1').is(':checked')) {
-  
-            window.location.href = "/accountable-people/business-ownership/sole-trader/details/";
-  
-          } else {
-  
-           window.location.href = "/accountable-people/business-ownership/accountable-person/add/";
-  
-        }
-  
-  
-      });
-      
-      
+
     });    
-  
 
   }
-
+  
   
 };
+
+
+
+// Enable a disabled button if a selection is made
+
+function enableButtonOnSelection(form) {
+  
+  
+  var button = form.find('.button');
+  var radio  = form.find('input:radio');
+  
+  
+  radio.change(function() {
+
+    var radioButtonHasValue = false;
+
+    radio.each(function() {
+
+      if(this.checked) {
+
+        radioButtonHasValue = true;
+
+        return false;
+
+      }
+      
+    });
+    
+    
+    // Enabled button
+
+    if (radioButtonHasValue) {
+      button.removeAttr('disabled');
+    }
+    
+    
+  });
+  
+  
+};
+
+
+
+// Declaration of accountable people
+
+function declarationAccountable() {
+  
+  if ($('#form-declaration-accountable-people').length>0) {    
+    
+    var form = $('#form-declaration-accountable-people');
+    
+    enableButtonOnSelection(form);
+  
+  }
+  
+};
+
 
 
 // Confirm sole trader details
@@ -610,45 +633,17 @@ function businessOwnership() {
 function confirmSoleTraderDetails() {
   
   
-  if ($('#form-confirm-sole-trader-details').length>0) {
+  if ($('#form-confirm-sole-trader-details').length>0) {    
     
+    var form = $('#form-confirm-sole-trader-details');
     
-    // Declare my variables
-
-    var form     = $("#form-confirm-sole-trader-details"),
-        button   = form.find('.button'),
-        check    = form.find('input:checkbox');
-
-
-    // Detect changes on interaction
-
-    check.change(function() {
-
-      var checkButtonHasValue = false;
-
-      
-      if(this.checked) {
-
-        checkButtonHasValue = true;
-        
-        button.removeAttr('disabled');
-
-        return false;
-
-      } else {
-        
-        button.attr('disabled', 'disabled');
-        
-      }
-      
-      
-    });
-    
+    enableButtonOnSelection(form);    
     
   }
 
   
 };
+
 
 
 // Land query
@@ -656,71 +651,38 @@ function confirmSoleTraderDetails() {
 function landQuery() {
   
   
-  if ($('#form-land-query').length>0) {
+  if ($('#form-land-query').length>0) {    
     
+    var form = $('#form-land-query');    
     
-    // Declare my variables
+    enableButtonOnSelection(form);
+    
+    // Submit the form
 
-    var form   = $("#form-land-query"),
-        button = form.find('.button'),
-        radio  = form.find('input:radio');
-
-
-    // Detect changes on interaction
-
-    radio.change(function() {
-
-      var radioButtonHasValue = false;
-
-      radio.each(function() {
-
-        if(this.checked) {
-
-          radioButtonHasValue = true;
-
-          return false;
-
-        }
-
-      });
+    $('button[type=submit]').on('click', function(e) {
 
 
-      // Enabled button
+      e.preventDefault();
 
-      if (radioButtonHasValue) {
-        button.removeAttr('disabled');
+
+      if ($('#radio-1').is(':checked')) {
+
+          window.location.href = "query-sbi";
+
+        } else {
+
+         window.location.href = "query";
+
       }
 
 
-      // Submit the form
-
-      $('button[type=submit]').on('click', function(e) {
-
-
-        e.preventDefault();
-
-
-        if ($('#radio-1').is(':checked')) {
-
-            window.location.href = "query-sbi";
-
-          } else {
-
-           window.location.href = "query";
-
-        }
-
-
-      });
-
-
     });
-    
     
   }
   
   
 };
+
 
 
 // Inline edit
@@ -792,6 +754,7 @@ function inlineEdit() {
 };
 
 
+
 // Clickable table rows
 
 function clickableTableRows() {
@@ -822,6 +785,7 @@ function clickableTableRows() {
 };
 
 
+
 // Document ready
 
 (function() {
@@ -834,8 +798,8 @@ function clickableTableRows() {
   tableSortable();
   landQuery();
   inlineEdit();
-  //soleTraderDetails();
   businessOwnership();
+  declarationAccountable();
   confirmSoleTraderDetails();
   clickableTableRows();
 })();
