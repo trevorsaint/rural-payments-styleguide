@@ -25,7 +25,7 @@ app.use(session({
 
 
 // Parseurl
-var parseurl = require('parseurl');
+//var parseurl = require('parseurl');
     
     
 // Body parser

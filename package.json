@@ -21,7 +21,9 @@
   "dependencies": {
     "express-handlebars": "*",
     "express": "*",
-    "body-parser": "*"
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "express-session": "*"
   },
   "repository": {
     "type": "git",
