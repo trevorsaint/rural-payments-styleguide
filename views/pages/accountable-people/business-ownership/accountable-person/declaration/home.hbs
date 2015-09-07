@@ -28,13 +28,21 @@
           
           <div class="form-group form-group-compound">
           
-            <label class="block-label" for="radio-inline-1">
+            <label class="block-label" for="radio-inline-1" data-target="yes">
               <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
             </label>
             
-            <label class="block-label" for="radio-inline-2">
+            <label class="block-label" for="radio-inline-2" data-target="no">
               <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
             </label>
+            
+            <div class="panel-indent js-hidden text" id="yes">
+              <p>I have completed the details of all business owners, partners, directors, shareholders with 10&#37; or higher shares, and people with controlling voting rights.</p>
+            </div>
+            
+            <div class="panel-indent js-hidden text" id="no">
+              <p>I have not completed all the details yet, I will declare later. <br> I understand that if I do not provide this information any payments due may be withheld.</p>
+            </div>
           
           </div>
         
