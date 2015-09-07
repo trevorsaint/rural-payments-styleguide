@@ -1044,7 +1044,7 @@ module.exports = {
         owner: req.body.owner,
         firstname: req.body.firstName,
         lastname:  req.body.lastName, 
-        email: req.body.email, 
+        //email: req.body.email, 
         ni: req.body.niNumber, 
         share: req.body.businessShare,
         rights: req.body.votingRights       
@@ -1099,7 +1099,7 @@ module.exports = {
         pagetitle: 'Confirm accountable person details',
         firstname: req.body.firstName,
         lastname: req.body.lastName,
-        email: req.body.email, 
+        //email: req.body.email, 
         ni: req.body.niNumber, 
         share: req.body.businessShare,
         rights: req.body.votingRights       
