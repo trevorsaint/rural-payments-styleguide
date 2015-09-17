@@ -789,7 +789,7 @@ function clickableTableRows() {
 // Document ready
 
 (function() {
-  toggleTabs();
+  //toggleTabs();
   formValidation();
   formMultipleCheckboxes();
   showDialog();

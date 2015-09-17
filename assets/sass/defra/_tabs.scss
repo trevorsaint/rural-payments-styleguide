@@ -10,25 +10,9 @@ $module: 'tabs';
   margin-bottom: 1.05263em; // 20px
 
 
-  // Tab navigation
-  
-  &-nav {
-    background-color: $white;
-
-    &:after {
-  		clear: both;
-  		content: '.';
-  		display: block;
-  		height: 0;
-  		visibility: hidden;
-  	}
-
-  }
-
-
   // Tab list
   
-  &-list {
+  [role="tablist"] {
     border-top: 1px solid $grey-2;
     margin: 0;
 
@@ -36,10 +20,12 @@ $module: 'tabs';
       border-top: 0 none;
     }
 
+
     li {
       @include core-19;
-      margin: 0;
       border-bottom: 1px solid $grey-2;
+      margin: 0;
+
 
       @include media(tablet) {
         border-bottom: 0 none;
@@ -47,16 +33,37 @@ $module: 'tabs';
         margin: 0 0 -1px;
         padding: 0;
       }
-
-      &.active a {
-        background-color: #fff;
+      
+      
+      a {
+        background-color: $white;
+        display: block;
+        padding: em(9);
+        text-decoration: none;
+        
+        &:focus {
+          outline: 3px;
+        }
+  
+        @include media(tablet) {
+          background-color: $grey-3;
+          border: 0 none;
+          float: left;
+          margin: em(5) em(5) em(5) 0;
+          padding: em(9) em(19);
+          text-align: center;
+        }
+  
+      }
+      
+      
+      // Active tab
+      
+      [aria-selected="true"] {
+        background-color: $white;
         color: $text-colour;
         cursor: default;
         text-decoration: none;
-
-        &:focus {
-          outline: none;
-        }
 
         @include media(tablet) {
           border: 1px solid $grey-2;
@@ -70,54 +77,34 @@ $module: 'tabs';
 
     }
 
-    a {
-      background-color: #fff;
-      display: block;
-      padding: em(9);
-      text-decoration: none;
-
-      &:hover {
-        background-color: $grey-3;
-      }
-
-      @include media(tablet) {
-        background-color: $grey-3;
-        border: 0 none;
-        float: left;
-        margin: em(5) em(5) em(5) 0;
-        padding: em(9) em(19);
-        text-align: center;
-      }
-
-    }
-
   }
 
 
   // Tab content
   
   &-content {
-    padding: em(19) 0 0;
-
-  	@include media(tablet) {
-  		border-top: 1px solid $grey-2;
-  		padding: em(19) em(19) 0;
-  	}
-
-  }
-  
-  
-  // Tabs modifier
-  
-  &-alt {
-    margin-top: 40px;
+    clear: both;
     
-    .#{$module}-content {
-      padding: 0;
+    [role="tabpanel"] {
+      
+      @include media(tablet) {
+    		border-top: 1px solid $grey-2;
+    	}
+    	
+    	&[aria-hidden="true"] {
+      	display: none;
+    	}
+    	
     }
-    
+
   }
 
 
 }
+
+
+
+
+
+
 

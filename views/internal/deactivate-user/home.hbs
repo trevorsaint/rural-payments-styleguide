@@ -10,7 +10,7 @@
         <h1 class="heading-xlarge">Customer record <span class="heading-secondary">Agent Smith</span></h1>
         
         
-        <div class="alert-info text" role="alert">
+        <!--div class="alert-info text" role="alert">
       
           <span class="icon icon-deactivate" role="presentation"></span>
           
@@ -20,7 +20,7 @@
           
           </div>
         
-        </div>
+        </div-->
         
         
         <div class="tabs">
@@ -28,7 +28,7 @@
           <div class="tabs-nav">
            
             <ul class="tabs-list">
-              <li class="active"><a href="#tab-1">All</a></li>
+              <li><a href="#tab-1">All</a></li>
               <li><a href="#tab-2">Customer</a></li>
             </ul>
             
@@ -38,39 +38,56 @@
           
             <div class="tabs-panel" id="tab-1">
               
-              <!-- autdit trail -->
-              <ul class="audit-trail">
+              <div class="tabs-panel-inner">
+              
+                <h3 class="heading-medium">All notes</h3>
                 
-                <li class="audit-trail-item">
-                    <time datetime="2015-05-15 14:04">15/05/2015 14:04</time> &ndash; Defra Dan
-                    <p>Locked in error</p>
-                </li>
+                <div class="panel-indent">
+                  <p>There are currently no notes available.</p>
+                </div>
                 
-                <li class="audit-trail-item">
-                  <time datetime="2015-05-15 14:03">15/05/2015 14:03</time> &ndash; Defra Dan
-                  <p>Test</p>
-                </li>
-                
-                <li class="audit-trail-item">
-                  <time datetime="2015-05-15 14:02">15/05/2015 14:02</time> &ndash; Defra Dan
-                  <p>Test</p>
-                </li>
-                
-              </ul>
+                <form class="form">
+                  
+                  <div class="form-group">
+                    <label class="form-label" for="customer-note">Customer note</label>
+                    <textarea class="form-control form-control-textarea" id="customer-note" rows="6" cols="50"></textarea>
+                  </div>
+                  
+                  <button class="button" type="submit">Add Note</button>
+                  
+                </form>
+              
+              </div>
               
             </div>
             
             <div class="tabs-panel" id="tab-2">
               
-              <!-- autdit trail -->
-              <ul class="audit-trail">
+              <div class="tabs-panel-inner">
+              
+                <h3 class="heading-medium">Customer notes</h3>
                 
-                <li class="audit-trail-item">
-                  <time datetime="2015-05-15 14:02">15/05/2015 14:02</time> &ndash; Defra Dan
-                  <p>Test</p>
-                </li>
-                
-              </ul>
+                <!-- autdit trail -->
+                <ul class="audit-trail">
+                  
+                  <li class="audit-trail-item">
+                      <time datetime="2015-05-15 14:04">15/05/2015 14:04</time> &ndash; Defra Dan
+                      <p>Locked in error</p>
+                  </li>
+                  
+                  <li class="audit-trail-item">
+                    <time datetime="2015-05-15 14:03">15/05/2015 14:03</time> &ndash; Defra Dan
+                    <p>Test</p>
+                  </li>
+                  
+                  <li class="audit-trail-item">
+                    <time datetime="2015-05-15 14:02">15/05/2015 14:02</time> &ndash; Defra Dan
+                    <p>Test</p>
+                  </li>
+                  
+                </ul>
+              
+              </div>
               
             </div>
           

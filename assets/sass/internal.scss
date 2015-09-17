@@ -29,10 +29,6 @@
     margin-top: 19px;
     padding: 19px;
     
-    &:first-child {
-      margin-top: 0;
-    }
-    
     p {
       margin-bottom: 0;
     }
@@ -40,23 +36,6 @@
   }
   
 }
-
-
-// Exception if audit trail sits within tabs
-
-.tabs {
-  
-  .audit-trail {
-    
-    @include media(tablet) {
-      margin-left: -1em;
-      margin-right: -1em;
-    }
-    
-  }
-  
-}
-
 
 
 // Logo
