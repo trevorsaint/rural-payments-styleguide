@@ -7,19 +7,25 @@
       <div class="column-two-thirds">
         
         
-         <h1 class="heading-xlarge">{{{business.name}}}</h1>
+        <h1 class="heading-xlarge">{{{business.name}}}</h1>
     
     
         <h2 class="heading-medium">Accountable people</h2>
         
         
-        <div class="alert-info text" role="alert">
-        
-          <div class="alert-message">
-            <p>Have you told us about people accountable for this business? If you have not told us about your stakeholders, <span class="bold-small">any payments due to you may be withheld</span>.</p>
-            <p><a class="button" href="/accountable-people/overview/">Tell us about accountable people</a></p>
+        <details>
+    
+          <summary><span class="summary">What is an accountable person?</span></summary>
+          
+          <div class="panel-indent text">
+            <p>An accountable person is anyone who has effective control of the business and benefits financially or is exposed to financial loss. This includes sole traders, directors, partners or shareholders.</p>          
           </div>
         
+        </details>
+        
+        
+        <div class="panel-indent text">
+          <p>Have you told us about people accountable for this business? If you have not told us, any payments due to the business for 2016 may be withheld.</p>
         </div>
         
         
@@ -48,7 +54,7 @@
 
         <div class="hcard" itemtype="http://schema.org/Organization" itemscope>
     
-          <div itemprop="name">{{{business.name}}}</div>
+          <!--div itemprop="name">{{{business.name}}}</div-->
     
           <div class="hcard-adr" itemtype="http://schema.org/PostalAddress" itemprop="address" itemscope>
             <div itemprop="streetAddress">{{{business.address.address1}}}</div>

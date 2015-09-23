@@ -1167,6 +1167,32 @@ module.exports = {
     });
     
     
+    // Accountable people
+    
+    app.get('/sitiagri/accountable-people/', function(req, res) {
+
+      data = {
+        doctitle: 'Accountable people'
+      };
+      
+      res.render('prototype/sitiagri/accountable-people/home', data);
+
+    });
+    
+    
+    // Give access to business
+    
+    app.get('/sitiagri/people-and-permissions/', function(req, res) {
+
+      data = {
+        doctitle: 'People and permissions'
+      };
+      
+      res.render('prototype/sitiagri/people-and-permissions/home', data);
+
+    });
+    
+    
     // Manage your land
     
     app.get('/sitiagri/manage-your-land/', function(req, res) {
