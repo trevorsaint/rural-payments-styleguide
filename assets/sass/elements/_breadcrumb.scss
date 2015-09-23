@@ -17,9 +17,9 @@
       @include core-16;
       float: left;
 
-      background-image: file-url("separator.png");
+      background-image: file-url("../images/icons/separator.png");
       @include device-pixel-ratio() {
-        background-image: file-url("separator-2x.png");
+        background-image: file-url("../images/icons/separator-2x.png");
         background-size: 6px 11px;
       }
 

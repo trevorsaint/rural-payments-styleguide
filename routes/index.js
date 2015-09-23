@@ -327,8 +327,7 @@ module.exports = {
     app.get('/personal-details', function(req, res) {
     
       data = {
-        doctitle: 'Personal details',
-        businessMenu: true
+        doctitle: 'Personal details'
       };
       
       res.render('pages/personal-details/home', data);
@@ -1153,6 +1152,170 @@ module.exports = {
       });
     
     });
+    
+    
+    // Prototype
+    
+    app.get('/prototype/sitiagri/', function(req, res) {
+
+      data = {
+        doctitle: 'Business overview'
+      };
+      
+      res.render('prototype/sitiagri/home', data);
+
+    });
+    
+    
+    // Manage your land
+    
+    app.get('/prototype/sitiagri/manage-your-land/', function(req, res) {
+
+      data = {
+        doctitle: 'Manage you land'
+      };
+      
+      res.render('prototype/sitiagri/manage-your-land/home', data);
+
+    });
+    
+    
+      app.get('/prototype/sitiagri/manage-your-land/view-and-edit-land/', function(req, res) {
+
+        data = {
+          doctitle: 'View and edit land'
+        };
+        
+        res.render('prototype/sitiagri/manage-your-land/view-and-edit-land/home', data);
+  
+      });
+    
+    
+      app.get('/prototype/sitiagri/manage-your-land/transfer-land/', function(req, res) {
+
+        data = {
+          doctitle: 'Transfer land'
+        };
+        
+        res.render('prototype/sitiagri/manage-your-land/transfer-land/home', data);
+  
+      });
+    
+    
+      app.get('/prototype/sitiagri/manage-your-land/edit-land-use/', function(req, res) {
+
+        data = {
+          doctitle: 'Edit land use'
+        };
+        
+        res.render('prototype/sitiagri/manage-your-land/edit-land-use/home', data);
+  
+      });
+    
+    
+    // Manage your entitlements
+    
+    app.get('/prototype/sitiagri/manage-your-entitlements/', function(req, res) {
+
+      data = {
+        doctitle: 'Manage you entitlements'
+      };
+      
+      res.render('prototype/sitiagri/manage-your-entitlements/home', data);
+
+    });
+    
+    
+      app.get('/prototype/sitiagri/manage-your-entitlements/view/', function(req, res) {
+
+        data = {
+          doctitle: 'View entitlements'
+        };
+        
+        res.render('prototype/sitiagri/manage-your-entitlements/view/home', data);
+  
+      });
+      
+      
+      app.get('/prototype/sitiagri/manage-your-entitlements/transfer/', function(req, res) {
+
+        data = {
+          doctitle: 'Transfer entitlements'
+        };
+        
+        res.render('prototype/sitiagri/manage-your-entitlements/transfer/home', data);
+  
+      });
+    
+    
+    // Manage commons
+    
+    app.get('/prototype/sitiagri/manage-commons/', function(req, res) {
+
+      data = {
+        doctitle: 'Manage commons'
+      };
+      
+      res.render('prototype/sitiagri/manage-commons/home', data);
+
+    });
+    
+    
+      app.get('/prototype/sitiagri/manage-commons/view/', function(req, res) {
+
+        data = {
+          doctitle: 'View commons rights'
+        };
+        
+        res.render('prototype/sitiagri/manage-commons/view/home', data);
+  
+      });
+      
+      
+      app.get('/prototype/sitiagri/manage-commons/edit/', function(req, res) {
+
+        data = {
+          doctitle: 'Edit commons rights'
+        };
+        
+        res.render('prototype/sitiagri/manage-commons/edit/home', data);
+  
+      });
+    
+    
+    // Applications and claims
+    
+    app.get('/prototype/sitiagri/applications-and-claims/', function(req, res) {
+
+      data = {
+        doctitle: 'Applications and claims'
+      };
+      
+      res.render('prototype/sitiagri/applications-and-claims/home', data);
+
+    });
+    
+    
+      app.get('/prototype/sitiagri/applications-and-claims/view/', function(req, res) {
+
+        data = {
+          doctitle: 'View entitlements'
+        };
+        
+        res.render('prototype/sitiagri/applications-and-claims/view/home', data);
+  
+      });
+      
+      
+      app.get('/prototype/sitiagri/applications-and-claims/transfer/', function(req, res) {
+
+        data = {
+          doctitle: 'Trasnfer entitlements'
+        };
+        
+        res.render('prototype/sitiagri/applications-and-claims/transfer/home', data);
+  
+      });
     
     
   }
