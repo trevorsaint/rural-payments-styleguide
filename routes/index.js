@@ -1156,7 +1156,7 @@ module.exports = {
     
     // Prototype
     
-    app.get('/prototype/sitiagri/', function(req, res) {
+    app.get('/sitiagri/', function(req, res) {
 
       data = {
         doctitle: 'Business overview'
@@ -1169,7 +1169,7 @@ module.exports = {
     
     // Manage your land
     
-    app.get('/prototype/sitiagri/manage-your-land/', function(req, res) {
+    app.get('/sitiagri/manage-your-land/', function(req, res) {
 
       data = {
         doctitle: 'Manage you land'
@@ -1180,7 +1180,7 @@ module.exports = {
     });
     
     
-      app.get('/prototype/sitiagri/manage-your-land/view-and-edit-land/', function(req, res) {
+      app.get('/sitiagri/manage-your-land/view-and-edit-land/', function(req, res) {
 
         data = {
           doctitle: 'View and edit land'
@@ -1191,7 +1191,7 @@ module.exports = {
       });
     
     
-      app.get('/prototype/sitiagri/manage-your-land/transfer-land/', function(req, res) {
+      app.get('/sitiagri/manage-your-land/transfer-land/', function(req, res) {
 
         data = {
           doctitle: 'Transfer land'
@@ -1202,7 +1202,7 @@ module.exports = {
       });
     
     
-      app.get('/prototype/sitiagri/manage-your-land/edit-land-use/', function(req, res) {
+      app.get('/sitiagri/manage-your-land/edit-land-use/', function(req, res) {
 
         data = {
           doctitle: 'Edit land use'
@@ -1215,7 +1215,7 @@ module.exports = {
     
     // Manage your entitlements
     
-    app.get('/prototype/sitiagri/manage-your-entitlements/', function(req, res) {
+    app.get('/sitiagri/manage-your-entitlements/', function(req, res) {
 
       data = {
         doctitle: 'Manage you entitlements'
@@ -1226,7 +1226,7 @@ module.exports = {
     });
     
     
-      app.get('/prototype/sitiagri/manage-your-entitlements/view/', function(req, res) {
+      app.get('/sitiagri/manage-your-entitlements/view/', function(req, res) {
 
         data = {
           doctitle: 'View entitlements'
@@ -1237,7 +1237,7 @@ module.exports = {
       });
       
       
-      app.get('/prototype/sitiagri/manage-your-entitlements/transfer/', function(req, res) {
+      app.get('/sitiagri/manage-your-entitlements/transfer/', function(req, res) {
 
         data = {
           doctitle: 'Transfer entitlements'
@@ -1250,7 +1250,7 @@ module.exports = {
     
     // Manage commons
     
-    app.get('/prototype/sitiagri/manage-commons/', function(req, res) {
+    app.get('/sitiagri/manage-commons/', function(req, res) {
 
       data = {
         doctitle: 'Manage commons'
@@ -1261,7 +1261,7 @@ module.exports = {
     });
     
     
-      app.get('/prototype/sitiagri/manage-commons/view/', function(req, res) {
+      app.get('/sitiagri/manage-commons/view/', function(req, res) {
 
         data = {
           doctitle: 'View commons rights'
@@ -1272,7 +1272,7 @@ module.exports = {
       });
       
       
-      app.get('/prototype/sitiagri/manage-commons/edit/', function(req, res) {
+      app.get('/sitiagri/manage-commons/edit/', function(req, res) {
 
         data = {
           doctitle: 'Edit commons rights'
@@ -1285,7 +1285,7 @@ module.exports = {
     
     // Applications and claims
     
-    app.get('/prototype/sitiagri/applications-and-claims/', function(req, res) {
+    app.get('/sitiagri/applications-and-claims/', function(req, res) {
 
       data = {
         doctitle: 'Applications and claims'
@@ -1296,7 +1296,7 @@ module.exports = {
     });
     
     
-      app.get('/prototype/sitiagri/applications-and-claims/view/', function(req, res) {
+      app.get('/sitiagri/applications-and-claims/view/', function(req, res) {
 
         data = {
           doctitle: 'View entitlements'
@@ -1307,7 +1307,7 @@ module.exports = {
       });
       
       
-      app.get('/prototype/sitiagri/applications-and-claims/transfer/', function(req, res) {
+      app.get('/sitiagri/applications-and-claims/transfer/', function(req, res) {
 
         data = {
           doctitle: 'Trasnfer entitlements'
