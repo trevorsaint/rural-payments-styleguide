@@ -1,116 +1,113 @@
 		<a class="link-back" href="/accountable-people/business-ownership/">Back to Business ownership</a>
     
     
-    <div class="text">
+    <div class="grid-row">
       
-      <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">Beech Farm</span></h1>
       
-    </div>
+      <div class="column-two-thirds">
+        
+        
+        <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">Beech Farm</span></h1>
     
     
-    <form class="form" id="form-accountable-person-details" method="post" action="/accountable-people/business-ownership/sole-trader/confirm/">
-      
-      
-      <div class="form-group">
-        
-        <label for="first-name">
-          <span class="form-label">First name</span>
-        </label>
-        
-        <input class="form-control" id="first-name" name="firstName" type="text" value="{{people.firstname}}">
-        
-      </div>
-      
-      
-      <div class="form-group">
-        
-        <label for="last-name">
-          <span class="form-label">Last name</span>
-        </label>
-        
-        <input class="form-control" id="last-name" name="lastName" type="text" value="{{people.lastname}}">
-        
-      </div>
-      
-      
-      <!--div class="form-group">
-        
-        <label for="email">
-          <span class="form-label">Email</span>
-        </label>
-        
-        <input class="form-control" id="email" name="email" type="email" value="{{people.email}}">
-        
-      </div-->
-      
-      
-      <div class="form-group form-group-compound">
-        
-        <label for="ni-number">
-          <span class="form-label">National Insurance number</span>
-          <span class="form-hint">What is the National Insurance number of this person?</span>
-        </label>
-        
-        <input class="form-control" id="ni-number" name="niNumber" type="text" value="{{people.ni}}">
-
-      </div>
-      
-      
-      <details>
-      
-        <summary><span class="summary">Why do you need National Insurance numbers?</span></summary>
-        
-        <div class="panel-indent text">
-          <p>We need to be able to tell the difference between people who have the same name as each other. Because someone's National Insurance number is unique, it helps us to make sure that people aren't registered more than once, if they're not supposed to be.</p>
-        </div>
-      
-      </details>
-      
-      
-      <h2 class="heading-medium">Sole traders have:</h2>
-    
-    
-      <div class="form-group">
-        
-        <div class="data">
-          <h3 class="bold-large">100&#37;</h3>
-          <p class="font-xsmall">share in business</p>
-        </div>
-        
-        <div class="data">
-          <h3 class="bold-large">100&#37;</h3>
-          <p class="font-xsmall">voting rights (if applicable)</p>
-        </div>
-        
-      </div>
-    
-      
-      <div class="form-group">
-      
-        <fieldset class="inline">
-        
-          <legend>
-            <span class="form-label">Is this person involved in any other farming businesses?</span>
-          </legend>
+        <form class="form" id="form-accountable-person-details" method="post" action="/accountable-people/business-ownership/sole-trader/confirm/">
           
-          <div class="form-group form-group-compound">
           
-            <label class="block-label" for="radio-indent-3">
-              <input id="radio-indent-3" name="radio-indent-group" value="Yes" type="radio"> Yes
+          <div class="form-group">
+            
+            <label for="first-name">
+              <span class="form-label">First name</span>
             </label>
             
-            <label class="block-label" for="radio-indent-4">
-              <input id="radio-indent-4" name="radio-indent-group" value="No" type="radio" checked> No
-            </label>
-          
+            <input class="form-control" id="first-name" name="firstName" type="text" value="{{people.firstname}}">
+            
           </div>
           
-        </fieldset>
-      
-      </div>
-
+          
+          <div class="form-group">
+            
+            <label for="last-name">
+              <span class="form-label">Last name</span>
+            </label>
+            
+            <input class="form-control" id="last-name" name="lastName" type="text" value="{{people.lastname}}">
+            
+          </div>
+          
+          
+          <div class="form-group form-group-compound">
+            
+            <label for="ni-number">
+              <span class="form-label">National Insurance number</span>
+              <span class="form-hint">What is the National Insurance number of this person?</span>
+            </label>
+            
+            <input class="form-control" id="ni-number" name="niNumber" type="text" value="{{people.ni}}">
     
-      <button class="button" type="submit">Continue</button>
+          </div>
+          
+          
+          <details>
+          
+            <summary><span class="summary">Why do I need to give you National Insurance numbers?</span></summary>
+            
+            <div class="panel-indent">
+              <p>National Insurance numbers are unique and help us tell the difference between people who have the same name as each other.</p>
+            </div>
+          
+          </details>
+          
+          
+          <h2 class="heading-medium">Sole traders have:</h2>
+        
+        
+          <div class="form-group">
+            
+            <div class="data">
+              <h3 class="bold-large">100&#37;</h3>
+              <p class="font-xsmall">share in business</p>
+            </div>
+            
+            <div class="data">
+              <h3 class="bold-large">100&#37;</h3>
+              <p class="font-xsmall">voting rights (if applicable)</p>
+            </div>
+            
+          </div>
+        
+          
+          <div class="form-group">
+          
+            <fieldset class="inline">
+            
+              <legend>
+                <span class="form-label">Is this person accountable in any other farming business that is involved in agricultural activity?</span>
+              </legend>
+              
+              <div class="form-group form-group-compound">
+              
+                <label class="block-label" for="radio-indent-3">
+                  <input id="radio-indent-3" name="radio-indent-group" value="Yes" type="radio"> Yes
+                </label>
+                
+                <label class="block-label" for="radio-indent-4">
+                  <input id="radio-indent-4" name="radio-indent-group" value="No" type="radio" checked> No
+                </label>
+              
+              </div>
+              
+            </fieldset>
+          
+          </div>
+    
+        
+          <button class="button" type="submit">Continue</button>
+          
+          
+        </form>
+        
+        
+      </div>
       
       
-    </form>
+    </div>

@@ -1,60 +1,64 @@
 		<a class="link-back" href="/accountable-people/business-ownership/accountable-person/summary/">Back to Accountable people summary</a>
     
     
-    <div class="text">
-      
-      <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">Beech Farm</span></h1>
-
-    </div>
-    
-    
-    <form class="form" id="form-declaration-accountable-people" method="get" action="/accountable-people/business-ownership/accountable-person/business-details/">
+    <div class="grid-row">
       
       
-      <div class="text">
-      
-        <h2 class="heading-medium">Have you given us the details of all people currently accountable for this business?</h2>
+      <div class="column-two-thirds">
         
-        <p>If you need to inform us of any changes to accountable people you can do so through this service at any time, for example if the shareholder structure changes significantly.</p>
       
-      </div>
-    
-        
-      <div class="form-group form-group-compound">
-        
-        <fieldset class="inline">
+        <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">Beech Farm</span></h1>
+  
       
-          <legend class="visuallyhidden">Choose if you have given us all the accountable people details for this business</legend>
+        <form class="form" id="form-declaration-accountable-people" method="get" action="/accountable-people/business-ownership/accountable-person/business-details/">
           
+          
+          <h2 class="heading-medium">Have you given us the details of all people currently accountable for this business?</h2>
+            
+          <p>If you need to inform us of any changes to accountable people you can do so through this service at any time, for example if the shareholder structure changes significantly.</p>
+        
+            
           <div class="form-group form-group-compound">
+            
+            <fieldset class="inline">
           
-            <label class="block-label" for="radio-inline-1" data-target="yes">
-              <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
-            </label>
+              <legend class="visuallyhidden">Choose if you have given us all the accountable people details for this business</legend>
+              
+              <div class="form-group form-group-compound">
+              
+                <label class="block-label" for="radio-inline-1" data-target="yes">
+                  <input id="radio-inline-1" name="radio-inline-group" value="Yes" type="radio"> Yes
+                </label>
+                
+                <label class="block-label" for="radio-inline-2" data-target="no">
+                  <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
+                </label>
+                
+                <div class="panel-indent js-hidden" id="yes">
+                  <p>I have completed the details of all the accountable people for this business.</p>
+                </div>
+                
+                <div class="panel-indent js-hidden" id="no">
+                  <p>I have not completed all the details yet, they will be declared later. I understand that if this information is not provided, any payments due to the business may be withheld.</p>
+                </div>
+              
+              </div>
             
-            <label class="block-label" for="radio-inline-2" data-target="no">
-              <input id="radio-inline-2" name="radio-inline-group" value="No" type="radio"> No
-            </label>
-            
-            <div class="panel-indent js-hidden text" id="yes">
-              <p>I have completed the details of all business owners, partners, directors, shareholders with 10&#37; or higher shares, and people with controlling voting rights.</p>
-            </div>
-            
-            <div class="panel-indent js-hidden text" id="no">
-              <p>I have not completed all the details yet, I will declare later. <br> I understand that if I do not provide this information any payments due may be withheld.</p>
-            </div>
+            </fieldset>
           
           </div>
         
-        </fieldset>
+        
+          <button class="button" type="submit" disabled="disabled">Continue</button>
+          
+          
+          <p><a href="/accountable-people/business-ownership/accountable-person/summary/">Cancel</a></p>
+          
+          
+        </form>
+      
       
       </div>
-    
-    
-      <button class="button" type="submit" disabled="disabled">Continue</button>
       
       
-      <p><a href="/accountable-people/business-ownership/accountable-person/summary/">Cancel</a></p>
-      
-      
-    </form>
+    </div>

@@ -1071,8 +1071,8 @@ module.exports = {
       var entry = peopleEngine.getPeopleEntry(req.params.id);
       
       res.render('pages/accountable-people/business-ownership/sole-trader/update/home', {
-        doctitle: 'Update accountable person',
-        pagetitle: 'Update accountable person',
+        doctitle: 'Update sole trader details',
+        pagetitle: 'Update sole trader details',
         people:entry
       });
     
