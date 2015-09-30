@@ -1193,6 +1193,30 @@ module.exports = {
     });
     
     
+    // Manage your farm business
+    
+    app.get('/sitiagri/manage-your-farm-business/', function(req, res) {
+
+      data = {
+        doctitle: 'Manage your farm business'
+      };
+      
+      res.render('prototype/sitiagri/manage-your-farm-business/home', data);
+
+    });
+    
+    
+      app.get('/sitiagri/manage-your-farm-business/business-details/', function(req, res) {
+
+        data = {
+          doctitle: 'Business details'
+        };
+        
+        res.render('prototype/sitiagri/manage-your-farm-business/business-details/home', data);
+  
+      });
+    
+    
     // Manage your land
     
     app.get('/sitiagri/manage-your-land/', function(req, res) {
@@ -1206,13 +1230,13 @@ module.exports = {
     });
     
     
-      app.get('/sitiagri/manage-your-land/view-and-edit-land/', function(req, res) {
+      app.get('/sitiagri/manage-your-land/land-cover/', function(req, res) {
 
         data = {
-          doctitle: 'View and edit land'
+          doctitle: 'Update land cover'
         };
         
-        res.render('prototype/sitiagri/manage-your-land/view-and-edit-land/home', data);
+        res.render('prototype/sitiagri/manage-your-land/land-cover/home', data);
   
       });
     
@@ -1228,13 +1252,13 @@ module.exports = {
       });
     
     
-      app.get('/sitiagri/manage-your-land/edit-land-use/', function(req, res) {
+      app.get('/sitiagri/manage-your-land/land-use/', function(req, res) {
 
         data = {
-          doctitle: 'Edit land use'
+          doctitle: 'Update land use'
         };
         
-        res.render('prototype/sitiagri/manage-your-land/edit-land-use/home', data);
+        res.render('prototype/sitiagri/manage-your-land/land-use/home', data);
   
       });
     
@@ -1287,59 +1311,59 @@ module.exports = {
     });
     
     
-      app.get('/sitiagri/manage-commons/view/', function(req, res) {
+      app.get('/sitiagri/manage-commons/update/', function(req, res) {
 
         data = {
-          doctitle: 'View commons rights'
+          doctitle: 'Update commons rights'
         };
         
-        res.render('prototype/sitiagri/manage-commons/view/home', data);
-  
-      });
-      
-      
-      app.get('/sitiagri/manage-commons/edit/', function(req, res) {
-
-        data = {
-          doctitle: 'Edit commons rights'
-        };
-        
-        res.render('prototype/sitiagri/manage-commons/edit/home', data);
+        res.render('prototype/sitiagri/manage-commons/update/home', data);
   
       });
     
     
-    // Applications and claims
+    // Manage your applications and claims
     
-    app.get('/sitiagri/applications-and-claims/', function(req, res) {
+    app.get('/sitiagri/manage-your-applications-and-claims/', function(req, res) {
 
       data = {
-        doctitle: 'Applications and claims'
+        doctitle: 'Manage your applications and claims'
       };
       
-      res.render('prototype/sitiagri/applications-and-claims/home', data);
+      res.render('prototype/sitiagri/manage-your-applications-and-claims/home', data);
 
     });
     
     
-      app.get('/sitiagri/applications-and-claims/view/', function(req, res) {
+      app.get('/sitiagri/manage-your-applications-and-claims/view/', function(req, res) {
 
         data = {
-          doctitle: 'View entitlements'
+          doctitle: 'View BPS claims'
         };
         
-        res.render('prototype/sitiagri/applications-and-claims/view/home', data);
+        res.render('prototype/sitiagri/manage-your-applications-and-claims/view/home', data);
   
       });
       
       
-      app.get('/sitiagri/applications-and-claims/transfer/', function(req, res) {
+      app.get('/sitiagri/manage-your-applications-and-claims/apply/', function(req, res) {
 
         data = {
-          doctitle: 'Trasnfer entitlements'
+          doctitle: 'Apply for BPS'
         };
         
-        res.render('prototype/sitiagri/applications-and-claims/transfer/home', data);
+        res.render('prototype/sitiagri/manage-your-applications-and-claims/apply/home', data);
+  
+      });
+      
+      
+      app.get('/sitiagri/manage-your-applications-and-claims/update/', function(req, res) {
+
+        data = {
+          doctitle: 'Update BPS application'
+        };
+        
+        res.render('prototype/sitiagri/manage-your-applications-and-claims/update/home', data);
   
       });
     
