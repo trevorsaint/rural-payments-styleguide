@@ -1,7 +1,10 @@
     <a class="link-back" href="/accountable-people/">Back to the index</a>
     
     
-    <div class="grid-row">
+    <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">{{{owner}}}</span></h1>
+    
+    
+    <!--div class="grid-row">
           
           
       <div class="column-two-thirds">
@@ -33,7 +36,7 @@
       </div>            
             
             
-    </div>
+    </div-->
     
     
  
@@ -94,7 +97,7 @@
           				<tr>
           					<th scope="col">Business</th>
           					<th scope="col"><span class="visuallyhidden">View business</span></th>
-          					<th scope="col" class="last"><span class="visuallyhidden">View accountable people</span></th>
+          					<!--th scope="col" class="last"><span class="visuallyhidden">View accountable people</span></th-->
           				</tr>
   
           			</thead>
@@ -104,8 +107,8 @@
             			{{#each businesses}}
             			<tr>
           					<th scope="row">{{{name}}} <br> <span class="text-secondary">{{{sbi}}}</span></th>
-          					<td class="action"><a href="/accountable-people/your-businesses/yes/view/{{id}}">View business <span class="visuallyhidden">{{{name}}}</span></a></td>
-          					<td class="action last"><a href="/accountable-people/overview/">Accountable people <span class="visuallyhidden">for {{{name}}}</span></a></td>
+          					<td class="action last"><a href="/accountable-people/your-businesses/yes/view/{{id}}">View business <span class="visuallyhidden">{{{name}}}</span></a></td>
+          					<!--td class="action last"><a href="/accountable-people/overview/">Accountable people <span class="visuallyhidden">for {{{name}}}</span></a></td-->
           				</tr>
           				{{/each}}
   
