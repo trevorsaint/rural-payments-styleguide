@@ -38,10 +38,10 @@
   }
 
   .code {
-    font-weight: bold;
-    margin: 0 20px 0 10px;
     display: block;
     float: left;
+    font-weight: bold;
+    margin: 0 20px 0 10px;
   }
 
   .details {
@@ -91,7 +91,12 @@
 .form-search {
 
   .form-control {
-    margin: 0;
+    margin-bottom: 15px;
+    
+    @include media(tablet) {
+      margin-bottom: 0;
+    }
+    
   }
 
   .form-group-search,
@@ -102,9 +107,13 @@
   }
 
   .button {
-    margin: 0 0 0 15px;
     line-height: 1em;
     white-space: nowrap;
+    
+    @include media(tablet) {
+      margin-left: 15px;
+    }
+    
   }
 
 }
