@@ -3,44 +3,9 @@
     
     <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">{{{owner}}}</span></h1>
     
-    
-    <!--div class="grid-row">
-          
-          
-      <div class="column-two-thirds">
-        
-        
-        <h1 class="heading-xlarge">{{pagetitle}} <span class="heading-secondary">{{{owner}}}</span></h1>
-        
-        
-        <h2 class="heading-medium">Accountable people</h2>
-           
-                
-        <details>
-    
-          <summary><span class="summary">What is an accountable person?</span></summary>
-          
-          <div class="panel-indent">
-            <p>An accountable person is anyone who has effective control of the business and benefits financially or is exposed to financial loss. This includes sole traders, directors, partners or shareholders.</p>          
-          </div>
-        
-        </details>
-        
-        
-        <div class="panel-indent">
-          <p>Have you told us about people accountable for this business?  If you have not told us, any payments due to the business for 2016 may be withheld.</p>
-          <p>If you do not have permissions to change the details for this business, you will need to contact the business owner or someone with suitable permissions.</p>
-        </div>
-        
-        
-      </div>            
-            
-            
-    </div-->
-    
-    
  
-    <div class="tabs tabs-alt">
+    <div class="tabs">
+    
     
       <div class="tabs-nav">
         
@@ -51,13 +16,22 @@
         
       </div>
       
+      
       <div class="tabs-content">
+      
       
         <div class="tabs-panel" id="tab-1">
         
-          <div class="grid-row">
+          <div class="tabs-panel-inner">
+        
+            <div class="grid-row">
+          
           
             <div class="column-two-thirds">
+              
+              
+              <h2 class="heading-large">Overview</h2>
+              
               
               <h3 class="heading-medium">Search</h3>
               
@@ -85,8 +59,7 @@
               
               <h3 class="heading-medium">Businesses</h3>
               
-              <p>We have listed below all of the business(es) you are associated with, or that you act on behalf of.</p>
-              
+              <p>We have listed below all of the business(es) you are associated with, or that you act on behalf of.</p>              
               
               <table>
 
@@ -97,7 +70,6 @@
           				<tr>
           					<th scope="col">Business</th>
           					<th scope="col"><span class="visuallyhidden">View business</span></th>
-          					<!--th scope="col" class="last"><span class="visuallyhidden">View accountable people</span></th-->
           				</tr>
   
           			</thead>
@@ -108,7 +80,6 @@
             			<tr>
           					<th scope="row">{{{name}}} <br> <span class="text-secondary">{{{sbi}}}</span></th>
           					<td class="action last"><a href="/accountable-people/your-businesses/yes/view/{{id}}">View business <span class="visuallyhidden">{{{name}}}</span></a></td>
-          					<!--td class="action last"><a href="/accountable-people/overview/">Accountable people <span class="visuallyhidden">for {{{name}}}</span></a></td-->
           				</tr>
           				{{/each}}
   
@@ -140,74 +111,77 @@
           
           </div>
           
+          </div>          
+          
         </div>
         
+        
         <div class="tabs-panel" id="tab-2">
-            
-          <h2 class="heading-medium">Messages</h2>
           
-          <p>You have 2 new messaage</p>
+          <div class="tabs-panel-inner">
+              
+            <h2 class="heading-large">Messages</h2>
+            
+            <p>You have 2 new messaage</p>
+            
+            <div class="collapsible">
+        
+        
+              <div class="collapsible-item">
+                
+                <div class="collapsible-heading">
+                  <h3><span class="collapsible-heading-primary">You have been given access to Agri Agents Ltd.</span> <span class="collapsible-heading-secondary">15 Sep 2014</span></h3>
+                </div>
+                
+                <div class="collapsible-content">
+                  <div class="text">
+                    <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
+                    <p><a href="#">Go to this business</a>.</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+              
+              <div class="collapsible-item">
+                
+                <div class="collapsible-heading">
+                  <h3><span class="collapsible-heading-primary">You have been given access to Bodmin Agri Ltd.</span> <span class="collapsible-heading-secondary">10 Sep 2014</span></h3>
+                </div>
+                
+                <div class="collapsible-content">
+                  <div class="text">
+                    <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
+                    <p><a href="#">Go to this business</a>.</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+              
+              <div class="collapsible-item">
+                
+                <div class="collapsible-heading">
+                  <h3><span class="collapsible-heading-primary">Welcome to Rural Payments</span> <span class="collapsible-heading-secondary">5 Sep 2014</span></h3>
+                </div>
+                
+                <div class="collapsible-content">
+                  <div class="text">
+                    <p>Fusce a risus libero. Nam risus purus, pharetra eget porttitor in, dictum ut enim. In auctor, purus vitae luctus tempor.</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+            
+            </div>                        
           
-          <div class="collapsible">
-      
-      
-            <!-- item -->
-            <div class="collapsible-item">
-              
-              <div class="collapsible-heading">
-                <h3><span class="collapsible-heading-primary">You have been given access to Agri Agents Ltd.</span> <span class="collapsible-heading-secondary">15 Sep 2014</span></h3>
-              </div>
-              
-              <div class="collapsible-content">
-                <div class="text">
-                  <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
-                  <p><a href="#">Go to this business</a>.</p>
-                </div>
-              </div>
-              
-            </div>
-            <!-- end -->
-            
-            
-            <!-- item -->
-            <div class="collapsible-item">
-              
-              <div class="collapsible-heading">
-                <h3><span class="collapsible-heading-primary">You have been given access to Bodmin Agri Ltd.</span> <span class="collapsible-heading-secondary">10 Sep 2014</span></h3>
-              </div>
-              
-              <div class="collapsible-content">
-                <div class="text">
-                  <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
-                  <p><a href="#">Go to this business</a>.</p>
-                </div>
-              </div>
-              
-            </div>
-            <!-- end -->
-            
-            
-            <!-- item -->
-            <div class="collapsible-item">
-              
-              <div class="collapsible-heading">
-                <h3><span class="collapsible-heading-primary">Welcome to Rural Payments</span> <span class="collapsible-heading-secondary">5 Sep 2014</span></h3>
-              </div>
-              
-              <div class="collapsible-content">
-                <div class="text">
-                  <p>Fusce a risus libero. Nam risus purus, pharetra eget porttitor in, dictum ut enim. In auctor, purus vitae luctus tempor.</p>
-                </div>
-              </div>
-              
-            </div>
-            <!-- end -->
-            
-          
-          </div>
+          </div>          
           
         </div>
+        
       
       </div>
+      
     
     </div>
