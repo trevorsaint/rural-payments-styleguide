@@ -97,14 +97,21 @@ $module: 'tabs';
     	
     }
 
-  }
+  }  
+  
+  
+  // Tab panel inner
+  
+  &-panel-inner {
+    
+    &:focus {
+      border: 0;
+      outline: 0;
+    }      
+      
+    
+  }  
 
 
 }
-
-
-
-
-
-
 
