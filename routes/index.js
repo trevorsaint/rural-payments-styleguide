@@ -1167,6 +1167,32 @@ module.exports = {
     });
     
     
+    // Business overview (yes)
+    
+    app.get('/sitiagri/business-overview/yes/', function(req, res) {
+
+      data = {
+        doctitle: 'Business overview'
+      };
+      
+      res.render('prototype/sitiagri/business-overview/yes/home', data);
+
+    });
+    
+    
+    // Business overview (no)
+    
+    app.get('/sitiagri/business-overview/no/', function(req, res) {
+
+      data = {
+        doctitle: 'Business overview'
+      };
+      
+      res.render('prototype/sitiagri/business-overview/no/home', data);
+
+    });
+    
+    
     // Accountable people
     
     app.get('/sitiagri/accountable-people/', function(req, res) {
