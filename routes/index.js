@@ -1326,6 +1326,17 @@ module.exports = {
     });
     
     
+      app.get('/sitiagri/common-rights/update/', function(req, res) {
+  
+        data = {
+          doctitle: 'Update common rights'
+        };
+        
+        res.render('prototype/sitiagri/common-rights/update/home', data);
+  
+      });
+    
+    
     // Applications and claims
     
     app.get('/sitiagri/applications-and-claims/', function(req, res) {
