@@ -386,50 +386,49 @@ function collapsibles() {
   $('.collapsible-item').each(function() {
 
 
-      var code = $(this).closest('.language-markup');
+    // Variables
+    var $this    = $(this),
+        $header  = $(this).find('.collapsible-heading > *'),
+        $content = $(this).find('.collapsible-content');
 
 
-      // Do not run funtion if inside language markup (Not to be used in production)
-      if (!code.hasClass('language-markup')) {
+    // Create a unique ID
+    var $id = 'collapsible-' + $(this).index();
 
 
-        // Variables
-        var $this    = $(this),
-            $header  = $(this).find('.collapsible-heading > *'),
-            $content = $(this).find('.collapsible-content');
+    // Add button inside $header
+    $header.wrapInner('<button aria-expanded="false" aria-controls="' + $id + '">');
+    var $button = $header.children('button');
 
 
-        // Create a unique ID
-        var $id = 'collapsible-' + $(this).index();
+    // Add attributes to collapsible content
+    $content.attr({
+      'id' : $id,
+      'aria-hidden' : true,
+      'style' : 'display: none;'
+    });
+    
+    
+    // Initialise    
+    if (($this).hasClass('is-open')) {
+      
+      $button.attr('aria-expanded', true);
+      $content.attr('aria-hidden', false).toggle();
+      
+    }
 
 
-        // Add button inside $header
-        $header.wrapInner('<button aria-expanded="false" aria-controls="' + $id + '">');
-        var $button = $header.children('button');
+    // Toggle state
+    $button.on('click', function(e) {
 
+      e.preventDefault();
 
-        // Add attributes to collapsible content
-        $content.attr({
-          'id' : $id,
-          'aria-hidden' : true,
-          'style' : 'display: none;'
-        });
+      var state = $(this).attr('aria-expanded') === 'false' ? true : false;
 
+      $button.attr('aria-expanded', state);
+      $content.attr('aria-hidden', !state).toggle();
 
-        // Toggle state
-        $button.on('click', function(e) {
-
-          e.preventDefault();
-
-          var state = $(this).attr('aria-expanded') === 'false' ? true : false;
-
-          $button.attr('aria-expanded', state);
-          $content.attr('aria-hidden', !state).toggle();
-
-        });
-
-
-      }
+    });
 
 
   });
