@@ -11,6 +11,13 @@ $module: 'alert';
 	clear: both;
 	margin: 0 0 1.05263em;
 	padding: 1.05263em;
+	
+	> .icon {
+  	float: left;
+    margin-right: 10px;
+    overflow: hidden;
+	}
+	
 }
 
 

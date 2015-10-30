@@ -1,0 +1,80 @@
+// ==========================================================================
+// SitiAgri
+// ==========================================================================
+
+
+$module: 'guidance';
+
+
+.#{$module} {
+  background-color: white;
+  box-shadow: 0 em(2) em(5) rgba(0, 0, 0, .26);
+  box-sizing: border-box;
+  position: fixed; top: 0;
+  height: 100%;
+  max-width: em(480);
+  overflow-y: scroll;
+  padding: $gutter;
+  width: 100%;
+  z-index: 999;
+  
+  
+  // Hide
+  
+  &[aria-hidden='true'] {
+    display: none;
+  }
+  
+  
+  // Positioning
+  
+  &[data-position='right'] {
+    right: 0;
+  }
+  
+  
+  &[data-position='left'] {
+    left: 0;
+  }
+  
+  
+  
+  &-close,
+  &-move {
+    @extend %hide-text;
+    background-color: rgba(0,0,0,0);
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+  }
+  
+  
+  
+  // Close
+  
+  &-close {
+    position: absolute; 
+    right: 30px; top: 30px;
+  }
+  
+  
+  // Move
+  
+  &-move {
+    position: absolute; 
+    right: 66px; top: 30px;
+  }
+  
+  
+}
+
+
+// Iframe
+
+iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+

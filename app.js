@@ -45,7 +45,9 @@ app.set('view engine', 'hbs');
 // Middleware to serve static assets
 
 app.use('/assets', express.static(__dirname + '/assets'));
+app.use('/iframe', express.static(__dirname + '/iframe'));
 app.use('/javascripts', express.static(__dirname + '/javascripts'));
+app.use('/models', express.static(__dirname + '/models'));
 
 
 // Routes

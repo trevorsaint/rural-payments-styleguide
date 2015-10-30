@@ -261,7 +261,7 @@ function showDialog() {
 
 function toggleTabs() {
 
-  if ($('.tabs').length>0) {
+  if ($('.tabs').length > 0) {
 
     $('.tabs:not(pre .tabs)').tabs();
 
@@ -378,6 +378,101 @@ function formValidation() {
 };
 
 
+// Help and guidance
+
+function guidance() {
+    
+    
+  if ($('.guidance').length > 0) {    
+  
+  
+    var $doc            = $(document);
+    var $window         = $(window);
+    var guidanceActive  = false;
+    
+    var $guidance        = $('.guidance');
+    var $guidanceOpen    = $('.guidance-open');
+    var $guidanceClose   = $('.guidance-close');
+    
+    var $guidanceMove    = $('.guidance-move');
+    
+    
+    // Open guidance
+    
+    $guidanceOpen.on('click', function(e) {
+      
+      e.preventDefault();
+      
+      if (guidanceActive == false) {
+        
+        $guidance.attr('aria-hidden', false);
+      
+        guidanceActive = true; 
+        
+      } else {
+        
+        $guidance.attr('aria-hidden', true);
+      
+        guidanceActive = false;  
+        
+      }
+    
+    });
+    
+    
+    // Close guidance
+    
+    $guidanceClose.on('click', function(e) {
+      
+      e.preventDefault();
+      
+      $guidance.attr('aria-hidden', true);
+      
+      guidanceActive = false;        
+      
+    });
+    
+    
+    // Move guidance
+    
+    $guidanceMove.on('click', function(e) {
+      
+      
+      e.preventDefault();
+      
+      
+      var pos  = $guidance.attr('data-position') === 'right' ? 'left' : 'right';
+      var text = $guidance.attr('data-position') === 'right' ? 'Move to the right of the screen' : 'Move to the left of the screen'; 
+
+      $guidance.attr('data-position', pos);
+      $guidanceMove.find('span').text(text);
+      $guidanceMove.attr('title', text);
+      
+      
+    });
+    
+    
+    // Close on esc
+    
+    $doc.on('keyup', function(e) {
+        
+      if (e.keyCode === 27 && guidanceActive === true) {
+        
+        $guidance.attr('aria-hidden', true);
+      
+        guidanceActive = false; 
+        
+      }
+      
+    });
+    
+  
+  }
+  
+  
+};
+
+
 // Collapsibles
 
 function collapsibles() {
@@ -446,18 +541,21 @@ function toggleContent() {
 
 
     // Variables
+    
     var $link    = $(this).find('.toggle-link'),
         $content = $(this).find('.toggle-content'),
         $id      = 'toggle-' + (index ++);
 
 
     // Add attributes to toggler link
+    
     $link.attr('aria-controls', $id).attr({
       'aria-expanded' : false
     });
 
 
     // Add attributes to toggle content
+    
     $content.attr({
       'id' : $id,
       'aria-hidden' : true,
@@ -466,6 +564,7 @@ function toggleContent() {
 
 
     // Toggle state
+    
     $link.on('click', function(e) {
 
       e.preventDefault();
@@ -489,7 +588,7 @@ function toggleContent() {
 function soleTraderDetails() {
   
   
-  if ($('#form-sole-trader-details').length>0) {
+  if ($('#form-sole-trader-details').length > 0) {
     
   
     // Declare variables
@@ -531,13 +630,12 @@ function soleTraderDetails() {
 };
 
 
-
 // Business ownership
 
 function businessOwnership() {
     
   
-  if ($('#form-business-ownership').length>0) {
+  if ($('#form-business-ownership').length > 0) {
     
     var form = $('#form-business-ownership');    
     
@@ -568,7 +666,6 @@ function businessOwnership() {
   
   
 };
-
 
 
 // Enable a disabled button if a selection is made
@@ -610,12 +707,11 @@ function enableButtonOnSelection(form) {
 };
 
 
-
 // Declaration of accountable people
 
 function declarationAccountable() {
   
-  if ($('#form-declaration-accountable-people').length>0) {    
+  if ($('#form-declaration-accountable-people').length > 0) {    
     
     var form = $('#form-declaration-accountable-people');
     
@@ -626,13 +722,12 @@ function declarationAccountable() {
 };
 
 
-
 // Confirm sole trader details
 
 function confirmSoleTraderDetails() {
   
   
-  if ($('#form-confirm-sole-trader-details').length>0) {    
+  if ($('#form-confirm-sole-trader-details').length > 0) {    
     
     var form = $('#form-confirm-sole-trader-details');
     
@@ -644,13 +739,12 @@ function confirmSoleTraderDetails() {
 };
 
 
-
 // Land query
 
 function landQuery() {
   
   
-  if ($('#form-land-query').length>0) {    
+  if ($('#form-land-query').length > 0) {    
     
     var form = $('#form-land-query');    
     
@@ -683,13 +777,12 @@ function landQuery() {
 };
 
 
-
 // Inline edit
 
 function inlineEdit() {
 
 
-  if ($('.js-inline-edit').length>0) {
+  if ($('.js-inline-edit').length > 0) {
 
 
     // Toggle details
@@ -753,13 +846,12 @@ function inlineEdit() {
 };
 
 
-
 // Clickable table rows
 
 function clickableTableRows() {
   
   
-  if ($('.js-table-rows-clickable').length>0) {
+  if ($('.js-table-rows-clickable').length > 0) {
     
     
     var tableRow = $('.js-table-rows-clickable tbody tr'); 
@@ -784,11 +876,32 @@ function clickableTableRows() {
 };
 
 
+// Iframe resize
+
+function iframe() {
+  
+  
+  if ($('iframe').length > 0) {
+  
+  
+    $('iframe').load(function() {
+      
+      
+      this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+      
+      
+    });
+  
+  
+  }
+  
+  
+};
+
 
 // Document ready
 
 (function() {
-  //toggleTabs();
   formValidation();
   formMultipleCheckboxes();
   showDialog();
@@ -801,5 +914,7 @@ function clickableTableRows() {
   declarationAccountable();
   confirmSoleTraderDetails();
   clickableTableRows();
+  guidance();
+  iframe();
 })();
 
