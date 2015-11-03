@@ -59,7 +59,7 @@
         <span class="form-label">Full name</span>
       </label>
       
-      <input class="form-control typehead" type="text" autocomplete="off" placeholder="Countries">
+      <input class="form-control" type="text">
       
     </form>
     
@@ -219,20 +219,16 @@
   
     <form class="form">
       
-      <div class="form-group">
-      
-        <div class="form-search">
-          
-          <label for="search">
-            <span class="form-label">What are you looking for?</span>
-          </label>
-          
-          <input class="form-control" id="search" type="text">
-          
-          <button class="button" type="button">Search</button>
-          
-        </div>
-      
+      <div class="form-search">
+        
+        <label for="search">
+          <span class="form-label">What are you looking for?</span>
+        </label>
+        
+        <input class="form-control" id="search" type="text">
+        
+        <button class="button" type="button">Search</button>
+        
       </div>
     
     </form>
@@ -447,6 +443,34 @@
     </form>
   
   </div>
+  
+  
+  <!-- autocomplete example -->
+  <h3 class="heading-medium">Autocomplete</h3>
+  
+  
+  <div class="text">
+  
+    <p>Autocomplete provides suggestions while you type into the field.</p>
+  
+  </div>
+  
+  
+  <div class="example">
+    
+    <form class="form">
+      
+      <label for="town">
+        <span class="form-label">Town or City</span>
+        <span class="form-hint">For example, 'Am' (for Amersham or Amesbury)</span>
+      </label>
+      
+      <input class="form-control js-tt" id="town" type="text">
+      
+    </form>
+    
+  </div>
+  
 
 
   <p><a href="#content">Back to the top</a></p>

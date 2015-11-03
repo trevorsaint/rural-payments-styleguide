@@ -1,5 +1,4 @@
-{{#if prismScript}}
-<!--script src="/assets/javascripts/vendor/prism.js"></script-->
+{{#if prettifyScript}}
 <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 {{/if}}
 
@@ -11,6 +10,7 @@
 <!-- govuk frontend toolkit js -->
 <script src="/assets/govuk/javascripts/vendor/polyfills/bind.js"></script>
 <script src="/assets/govuk/javascripts/govuk/selection-buttons.js"></script>
+
 {{#if sticky}}
 <script src="/assets/govuk/javascripts/govuk/stick-at-top-when-scrolling.js"></script>
 {{/if}}
@@ -18,12 +18,16 @@
 <!-- govuk elements js -->
 <script src="/assets/javascripts/vendor/details.polyfill.js"></script>
 <script src="/assets/javascripts/vendor/jquery.tabs.js"></script>
-<script src="/assets/javascripts/vendor/jquery.typehead.js"></script>
+
+{{#if autocomplete}}
+<script src="/assets/javascripts/vendor/jquery.typeahead.js"></script>
+{{/if}}
 
 <!-- custom js -->
 {{#unless angularScripts}}
 <script src="/assets/javascripts/main.js"></script>
 {{/unless}}
+
 {{#if openLayers}}
 <script src="/assets/javascripts/map.js"></script>
 {{/if}}

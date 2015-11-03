@@ -136,3 +136,45 @@
 
 }
 
+
+/* autocomplete */
+
+.twitter-typeahead {
+  width: 50% !important; // Override inline style  
+}
+
+
+.js-tt {
+  width: 100%;
+}
+
+
+.js-tt-menu {
+  background-color: $white;
+  border: 1px solid $border-colour;
+  margin: 10px 0;
+  width: 100%;
+}
+
+
+.js-tt-suggestion {
+  padding: 4px;
+}
+
+
+.js-tt-selectable {
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $grey-1;
+    color: $white;
+  }
+  
+}
+
+
+.js-tt-cursor {
+  background-color: $grey-1;
+  color: $white;
+}
+

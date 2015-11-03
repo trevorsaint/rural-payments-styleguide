@@ -82,7 +82,8 @@ module.exports = {
     app.get('/forms', function(req, res) {
     
       data = {
-        doctitle: 'Forms'
+        doctitle: 'Forms',
+        autocomplete: true
       };
       
       res.render('elements/forms/home', data);
@@ -194,7 +195,8 @@ module.exports = {
     
       data = {
         doctitle: 'Snippets',
-        prismScript: true
+        prettifyScript: true,
+        autocomplete: true
       };
       
       res.render('elements/snippets/home', data);
