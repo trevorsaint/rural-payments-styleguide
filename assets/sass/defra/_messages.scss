@@ -1,0 +1,57 @@
+// ==========================================================================
+// Messages
+// ==========================================================================
+
+
+$module: 'messages';
+
+
+.#{$module} {
+ 
+ 
+  &-filter {
+    
+    
+    select {
+      font-size: 14px;
+      margin-left: 10px;
+      
+      @include media(tablet) {
+        font-size: 16px;
+      }
+      
+    }
+    
+    
+    @include media(tablet) {
+      float: right;  
+    }
+    
+    
+  }
+
+  
+}
+
+
+// Javascript enabled
+
+.js-enabled {
+  
+  
+  $module: 'messages';
+
+
+  .#{$module} {
+    
+    
+    &-new {
+      font-weight: bold;
+    }
+    
+    
+  }
+  
+  
+}
+

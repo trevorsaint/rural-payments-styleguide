@@ -953,8 +953,8 @@ module.exports = {
     app.get('/accountable-people/your-businesses/yes/', function(req, res) {
     
       res.render('pages/accountable-people/your-businesses/yes/home', {
-        doctitle: 'Your businesses',
-        pagetitle: 'Your businesses',
+        doctitle: 'Your account',
+        pagetitle: 'Your account',
         owner: 'Sidney Bechett',
         businesses:businessEngine.getBusinessEntries()
       });
