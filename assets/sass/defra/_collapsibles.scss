@@ -10,15 +10,6 @@ $module: 'collapsible';
   margin-bottom: 1em;
   
   
-  &-item {
-    border-bottom: 1px solid $grey-2;
-    &:first-child {
-      border-top: 1px solid $grey-2;
-    }
-    padding: 12px 0;
-  }
-  
-  
   &-heading {
     margin-top: em(20);
     
@@ -39,7 +30,28 @@ $module: 'collapsible';
     
   }
   
+  
+  // With borders
+  
+  &-borders {
+  
+    .#{$module}-item {
+      border-bottom: 1px solid $grey-2;
+      padding: 12px 0;
+      
+      &:first-child {
+        border-top: 1px solid $grey-2;
+      }
+      
+    }
+  
+  
+  }
+  
+  
 }
+
+
 
 
 // JS Enabled
@@ -109,8 +121,9 @@ $module: 'collapsible';
     
     
     &-content {
+      border-left: 4px solid $grey-2;
       margin-top: em(20);
-      padding-left: em(25);
+      padding-left: em(15);
     }
     
   

@@ -14,9 +14,36 @@ $module: 'guidance';
   height: 100%;
   max-width: em(480);
   overflow-y: scroll;
-  padding: $gutter;
   width: 100%;
   z-index: 999;
+  
+  
+  &-header {
+    background-color: white;
+    border-bottom: 1px solid $grey-2;
+    height: em(87);
+    max-width: em(480);
+    position: fixed;
+    width: 100%;
+  }
+  
+  
+  &-title {
+    @include bold-24();
+    position: absolute; 
+    top: 30px; left: 30px;
+  }
+  
+  
+  &-content {
+    box-sizing: border-box;
+    padding: em(117) $gutter $gutter;
+    
+    img {
+      max-width: 100%;
+    }
+    
+  }
   
   
   // Hide
@@ -28,12 +55,12 @@ $module: 'guidance';
   
   // Positioning
   
-  &[data-position='right'] {
+  &[data-position=right] {
     right: 0;
   }
   
   
-  &[data-position='left'] {
+  &[data-position=left] {
     left: 0;
   }
   
@@ -46,6 +73,7 @@ $module: 'guidance';
     border: 0 none;
     cursor: pointer;
     display: block;
+    margin: 4px;
     padding: 0;
   }
   
