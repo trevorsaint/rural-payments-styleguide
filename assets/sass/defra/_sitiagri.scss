@@ -37,7 +37,8 @@ $module: 'guidance';
   
   &-content {
     box-sizing: border-box;
-    padding: em(117) $gutter $gutter;
+    margin-top: em(87);
+    padding: $gutter;
     
     img {
       max-width: 100%;
