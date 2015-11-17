@@ -8,12 +8,15 @@ $module: 'guidance';
 
 .#{$module} {
   background-color: white;
-  box-shadow: 0 em(2) em(5) rgba(0, 0, 0, .26);
+  border-left: 1px solid $grey-2;
+  border-right: 1px solid $grey-2;
+  // box-shadow: 0 em(2) em(5) rgba(0, 0, 0, .26); // Gov.uk don't seem to use css3 fancy filters
   box-sizing: border-box;
   position: fixed; top: 0;
   height: 100%;
   max-width: em(480);
-  overflow-y: scroll;
+  padding-top: em(87);
+  overflow: hidden;
   width: 100%;
   z-index: 999;
   
@@ -22,8 +25,8 @@ $module: 'guidance';
     background-color: white;
     border-bottom: 1px solid $grey-2;
     height: em(87);
-    max-width: em(480);
-    position: fixed;
+    max-width: em(478);
+    position: fixed; top: 0;
     width: 100%;
   }
   
@@ -37,13 +40,18 @@ $module: 'guidance';
   
   &-content {
     box-sizing: border-box;
-    margin-top: em(87);
-    padding: $gutter;
+    height: 100%;
+    overflow-y: scroll;
     
     img {
-      max-width: 100%;
+      max-width: 100%; // Alow for responsive images
     }
     
+  }
+  
+  
+  &-inner {
+    padding: em(30);
   }
   
   
@@ -66,7 +74,6 @@ $module: 'guidance';
   }
   
   
-  
   &-close,
   &-move {
     @extend %hide-text;
@@ -76,8 +83,12 @@ $module: 'guidance';
     display: block;
     margin: 4px;
     padding: 0;
+    
+    span {
+      cursor: inherit;
+    }
+    
   }
-  
   
   
   // Close
