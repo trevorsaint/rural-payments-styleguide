@@ -41,7 +41,7 @@ $module: 'guidance';
   &-content {
     box-sizing: border-box;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     
     img {
       max-width: 100%; // Alow for responsive images
