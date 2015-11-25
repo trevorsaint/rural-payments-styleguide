@@ -130,7 +130,7 @@
     position: absolute; bottom: 10px; right: 10px;
     text-align: right;
     width: auto;
-    z-index: 749;
+    z-index: 750;
   }
   
   
@@ -139,7 +139,7 @@
   &View {
     position: absolute;
     top: 10px; left: 10px;
-    z-index: 749;
+    z-index: 750;
   }
   
   &Fullscreen {
@@ -160,7 +160,7 @@
   &Zoom {
     position: absolute; 
     top: 50px; left: 10px;
-    z-index: 749;
+    z-index: 750;
   }
   
   &ZoomReset {
@@ -193,7 +193,7 @@
   &MapSwitcher {
     position: absolute;
     top: 10px; right: 10px;
-    z-index: 749;
+    z-index: 750;
     
     a {
       background: $link-colour;
@@ -227,7 +227,7 @@
   &MeasureControls {
     position: absolute;
     top: 150px; left: 10px;
-    z-index: 749;
+    z-index: 750;
   }
   
   &Measurement {
