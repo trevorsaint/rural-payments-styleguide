@@ -95,6 +95,19 @@ module.exports = {
     });
     
     
+    app.get('/pagination', function(req, res) {
+    
+      data = {
+        doctitle:       'Pagination',
+        page_name:      'Pagination',
+        prettifyScript: true,
+      };
+      
+      res.render('elements/pagination/home', data);
+    
+    });
+    
+    
     
     
     
@@ -227,17 +240,6 @@ module.exports = {
       };
       
       res.render('elements/snippets/home', data);
-    
-    });
-
-
-    app.get('/pagination', function(req, res) {
-    
-      data = {
-        doctitle: 'Pagination'
-      };
-      
-      res.render('elements/pagination/home', data);
     
     });
     
