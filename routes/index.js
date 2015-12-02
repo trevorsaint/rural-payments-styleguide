@@ -60,6 +60,8 @@ module.exports = {
     
     
     
+    
+    
     app.get('/layout', function(req, res) {
       data = {
         doctitle:       'Layout',
@@ -78,6 +80,20 @@ module.exports = {
       };
       res.render('elements/collapsibles/home', data);
     });
+    
+    
+    app.get('/alerts', function(req, res) {
+    
+      data = {
+        doctitle:       'Alerts',
+        page_name:      'Alerts',
+        prettifyScript: true,
+      };
+      
+      res.render('elements/alerts/home', data);
+    
+    });
+    
     
     
     
@@ -151,15 +167,7 @@ module.exports = {
     });
 
 
-    app.get('/alerts', function(req, res) {
     
-      data = {
-        doctitle: 'Alerts'
-      };
-      
-      res.render('elements/alerts/home', data);
-    
-    });
     
 
     app.get('/dialogs', function(req, res) {
