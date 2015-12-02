@@ -1,20 +1,15 @@
-  <a class="link-back" href="/">Back to the index</a>
+  {{>breadcrumb}}
+  
+  
+  <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
+  
+  
+  <p class="lede"><abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes are applied <strong>automatically</strong> if Javascript is enabled.</p>
 
 
-	<h1 class="heading-xlarge">Collapsibles</h1>
-	
-	
-	<!-- introduction -->
-  <div class="text">
-    
-    <h2 class="heading-medium">Looking for the HTML?</h2>
-    
-    <p>The HTML snippets can be found in the <a href="/snippets/#collapsibles">snippets page</a>.</p>
-    
-  </div>
+  <h3 class="heading-medium">Example 1</h3>
+  
 
-
-  <!-- collapsibles -->
   <div class="example">
   
   
@@ -69,67 +64,130 @@
   </div>
   
   
-  <!-- collapsibles -->
+  <h3 class="heading-medium">Example 2</h3>
+  
+  
+  <p>Adding an 'is-open' class to the 'collapsible-item' will open the collapsible item at run&ndash;time.</p>
+  
+  
   <div class="example">
   
+  
+    <div class="messages">
+    
+    
+      <h2 class="heading-medium">Messages</h2>
+    
+    
+      <div class="messages-filter">
+      
+        <label>
+        
+          Sort messages by
           
+          <select>
+            <option value="newest">Newest on top</option>
+            <option value="oldest">Oldest on top</option>
+          </select>
+        
+        </label>
+      
+      </div>
+      
+      
+      <p>You have 2 new messages.</p>
+      
+      
       <div class="collapsible collapsible-borders">
-        
-        
-        <h2 class="heading-medium">Messages</h2>
-  
-  
+      
+      
         <div class="collapsible-item is-open">
-          
+        
           <div class="collapsible-heading">
-            <h3><span class="collapsible-heading-primary">You have been given access to Agri Agents Ltd.</span> <span class="collapsible-heading-secondary">15 Sep 2014</span></h3>
+          
+          <h3>
+            <span class="collapsible-heading-primary messages-new">You have been given access to Agri Agents Ltd.</span> 
+            <span class="collapsible-heading-secondary">15 Sep 2014</span>
+          </h3>
+          
           </div>
           
           <div class="collapsible-content">
             <div class="text">
               <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
-              <p><a href="#">Go to this business</a>.</p>
+              <p><a href="#" data-toggle="dialog" data-target="dialog-1">Delete this message</a>.</p>
             </div>
           </div>
-          
-        </div>
+        
+       </div>
         
         
         <div class="collapsible-item">
-          
+        
           <div class="collapsible-heading">
-            <h3><span class="collapsible-heading-primary">You have been given access to Bodmin Agri Ltd.</span> <span class="collapsible-heading-secondary">10 Sep 2014</span></h3>
+            <h3>
+              <span class="collapsible-heading-primary messages-new">You have been given access to Bodmin Agri Ltd.</span> 
+              <span class="collapsible-heading-secondary">10 Sep 2014</span>
+            </h3>
           </div>
           
           <div class="collapsible-content">
             <div class="text">
               <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
-              <p><a href="#">Go to this business</a>.</p>
+              <p><a href="#" data-toggle="dialog" data-target="dialog-1">Delete this message</a>.</p>
             </div>
           </div>
-          
+        
         </div>
         
         
         <div class="collapsible-item">
-          
+        
           <div class="collapsible-heading">
-            <h3><span class="collapsible-heading-primary">Welcome to Rural Payments</span> <span class="collapsible-heading-secondary">5 Sep 2014</span></h3>
+            <h3>
+              <span class="collapsible-heading-primary">Welcome to Rural Payments</span> 
+              <span class="collapsible-heading-secondary">5 Sep 2014</span>
+            </h3>
           </div>
           
           <div class="collapsible-content">
             <div class="text">
               <p>Fusce a risus libero. Nam risus purus, pharetra eget porttitor in, dictum ut enim. In auctor, purus vitae luctus tempor.</p>
+              <p><a href="#" data-toggle="dialog" data-target="dialog-1">Delete this message</a></p>
             </div>
           </div>
-          
-        </div>
         
-      
+        </div>
+    
+    
       </div>
     
+  
+    </div>
+  
+  
   </div>
   
   
-  
-  <p><a href="#content">Back to the top</a></p>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;collapsible collapsible-borders&quot;&gt;
+    
+      &lt;h2 class=&quot;heading-medium&quot;&gt;Main heading&lt;/h2&gt;
+      
+      &lt;div class=&quot;collapsible-item&quot;&gt;
+      
+        &lt;div class=&quot;collapsible-heading&quot;&gt;
+          &lt;h3&gt;
+            &lt;span class=&quot;collapsible-heading-primary&quot;&gt;Title&lt;/span&gt; 
+            &lt;span class=&quot;collapsible-heading-secondary&quot;&gt;Sub title (if required)&lt;/span&gt;
+          &lt;/h3&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;collapsible-content&quot;&gt;
+          &lt;p&gt;Content&lt;/p&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+    
+    &lt;/div&gt;
+  </code></pre>

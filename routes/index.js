@@ -57,17 +57,30 @@ module.exports = {
     
     
     
-    app.get('/layout', function(req, res) {
     
+    
+    
+    app.get('/layout', function(req, res) {
       data = {
         doctitle:       'Layout',
         page_name:      'Layout',
         prettifyScript: true,
       };
-      
       res.render('elements/layout/home', data);
-    
     });
+    
+    
+    app.get('/collapsibles', function(req, res) {
+      data = {
+        doctitle:       'Collapsibles',
+        page_name:      'Collapsibles',
+        prettifyScript: true,
+      };
+      res.render('elements/collapsibles/home', data);
+    });
+    
+    
+    
     
     
     
@@ -160,15 +173,7 @@ module.exports = {
     });
     
 
-    app.get('/collapsibles', function(req, res) {
     
-      data = {
-        doctitle: 'Collapsibles'
-      };
-      
-      res.render('elements/collapsibles/home', data);
-    
-    });
     
 
     app.get('/checklist', function(req, res) {
