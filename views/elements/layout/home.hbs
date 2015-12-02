@@ -1,32 +1,10 @@
-  <a class="link-back" href="/">Back to the index</a>
+  {{>breadcrumb}}
   
   
-  <h1 class="heading-xlarge">Layout</h1>
+  <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
   
   
-  <div class="text">  
-    
-    <p>Use white space to create a visual hierarchy on the page. Design for small screens first using a single column layout.</p>
-    <p>The default maximum page width is 1020px, but go wider if the content requires it.</p>
-    <p>Optimise for different screen sizes, but don’t make assumptions about what devices people are using.</p>  
-    
-    <h2 class="heading-medium">Looking for the HTML?</h2>
-    
-    <p>The HTML snippets can be found in the <a href="/snippets/#layout">snippets page</a>.</p>
-  
-  </div>
-  
-  
-  <h3 class="heading-medium">Grid unit proportions</h3>
-  
-  
-  <div class="text">
-    <p>Introduce columns as the content requires it &ndash; base column ratios on halves, thirds or quarters of the page width.</p>
-  </div>
-		
-		
-  <!-- halves -->
-  <h4 class="heading-small">Halves</h4>
+  <h3 class="heading-medium">Halves</h3>
   
   
   <div class="example example-grid">
@@ -46,8 +24,18 @@
   </div>
   
   
-  <!-- thirds -->
-  <h4 class="heading-small">Thirds</h4>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;grid-row&quot;&gt;
+      
+      &lt;div class=&quot;column-half&quot;&gt;&lt;/div&gt;
+      
+      &lt;div class=&quot;column-half&quot;&gt;&lt;/div&gt;
+      
+    &lt;/div&gt;
+  </code></pre>
+  
+  
+  <h3 class="heading-medium">Thirds</h3>
   
   
   <div class="example example-grid">
@@ -71,8 +59,20 @@
   </div>
   
   
-  <!-- two thirds / one third -->
-  <h4 class="heading-small">Two Thirds / One Third</h4>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;grid-row&quot;&gt;
+      
+      &lt;div class=&quot;column-third&quot;&gt;&lt;/div&gt;
+      
+      &lt;div class=&quot;column-third&quot;&gt;&lt;/div&gt;
+      
+      &lt;div class=&quot;column-third&quot;&gt;&lt;/div&gt;
+      
+    &lt;/div&gt;
+  </code></pre>
+  
+  
+  <h3 class="heading-medium">Two thirds / One third</h3>
   
   
   <div class="example example-grid">
@@ -92,8 +92,18 @@
   </div>
   
   
-  <!-- one third / two thirds -->
-  <h4 class="heading-small">One Third / Two Thirds</h4>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;grid-row&quot;&gt;
+      
+      &lt;div class=&quot;column-two-thirds&quot;&gt;&lt;/div&gt;
+      
+      &lt;div class=&quot;column-third&quot;&gt;&lt;/div&gt;
+      
+    &lt;/div&gt;
+  </code></pre>
+  
+  
+  <h3 class="heading-medium">One third / Two thirds</h3>
   
   
   <div class="example example-grid">
@@ -113,8 +123,18 @@
   </div>
   
   
-  <!-- quarters -->
-  <h4 class="heading-small">Quarters</h4>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;grid-row&quot;&gt;
+      
+      &lt;div class=&quot;column-third&quot;&gt;&lt;/div&gt;
+      
+      &lt;div class=&quot;column-two-thirds&quot;&gt;&lt;/div&gt;
+      
+    &lt;/div&gt;
+  </code></pre>
+  
+  
+  <h3 class="heading-medium">Quarters</h3>
   
   
   <div class="example example-grid">
@@ -142,4 +162,16 @@
   </div>
   
   
-  <p><a href="#content">Back to the top</a></p>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;grid-row&quot;&gt;
+    
+      &lt;div class=&quot;column-quarter&quot;&gt;&lt;/div&gt;
+      
+      &lt;div class=&quot;column-quarter&quot;&gt;&lt;/div&gt;
+      
+      &lt;div class=&quot;column-quarter&quot;&gt;&lt;/div&gt;
+      
+      &lt;div class=&quot;column-quarter&quot;&gt;&lt;/div&gt;
+    
+    &lt;/div&gt;
+  </code></pre>

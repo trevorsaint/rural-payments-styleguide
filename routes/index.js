@@ -2,6 +2,15 @@ module.exports = {
 
 
   bind: function(app) {
+    
+    
+    // LOCALS
+    // ==============================================
+    
+    app.locals = {      
+      title:   'RPA Styleguide',
+      baseurl: '/'
+    }
 
 
     // MODELS
@@ -46,15 +55,20 @@ module.exports = {
     });
     
     
+    
+    
     app.get('/layout', function(req, res) {
     
       data = {
-        doctitle: 'Layout'
+        doctitle:       'Layout',
+        page_name:      'Layout',
+        prettifyScript: true,
       };
       
       res.render('elements/layout/home', data);
     
     });
+    
     
     
     app.get('/tables', function(req, res) {
