@@ -140,6 +140,19 @@ module.exports = {
     
     });
     
+    app.get('/forms', function(req, res) {
+    
+      data = {
+        doctitle:       'Form elements',
+        page_name:      'Form elements',
+        prettifyScript: true,
+        autocomplete:   true
+      };
+      
+      res.render('elements/forms/home', data);
+    
+    });
+    
     
     
     
@@ -163,18 +176,6 @@ module.exports = {
       };
       
       res.render('elements/tables/validation', data);
-    
-    });
-    
-    
-    app.get('/forms', function(req, res) {
-    
-      data = {
-        doctitle: 'Forms',
-        autocomplete: true
-      };
-      
-      res.render('elements/forms/home', data);
     
     });
     
