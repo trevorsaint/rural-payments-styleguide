@@ -116,6 +116,29 @@ module.exports = {
     
     });
     
+    app.get('/application', function(req, res) {
+    
+      data = {
+        doctitle:       'Application status',
+        page_name:      'Application status',
+        prettifyScript: true,
+      };
+      
+      res.render('elements/application/home', data);
+    
+    });
+    
+    app.get('/tabs', function(req, res) {
+    
+      data = {
+        doctitle:       'Tabs',
+        page_name:      'Tabs',
+        prettifyScript: true,
+      };
+      
+      res.render('elements/tabs/home', data);
+    
+    });
     
     
     
@@ -215,15 +238,7 @@ module.exports = {
     });
     
 
-    app.get('/tabs', function(req, res) {
     
-      data = {
-        doctitle: 'Tabs'
-      };
-      
-      res.render('elements/tabs/home', data);
-    
-    });
     
 
     app.get('/snippets', function(req, res) {
@@ -261,15 +276,7 @@ module.exports = {
     });
     
     
-    app.get('/application', function(req, res) {
     
-      data = {
-        doctitle: 'Application Status'
-      };
-      
-      res.render('elements/application/home', data);
-    
-    });
     
     
     // Admin

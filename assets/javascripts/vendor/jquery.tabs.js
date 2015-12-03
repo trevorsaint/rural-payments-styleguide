@@ -68,8 +68,8 @@ $('[role="tab"]').on('keydown', function(e) {
   // Define current, previous and next (possible) tabs
 
   var $original = $(this);
-  var $prev = $(this).parents('li').prev().children('[role="tab"]');
-  var $next = $(this).parents('li').next().children('[role="tab"]');
+  var $prev     = $(this).parents('li').prev().children('[role="tab"]');
+  var $next     = $(this).parents('li').next().children('[role="tab"]');
   var $target;
 
 
@@ -88,14 +88,17 @@ $('[role="tab"]').on('keydown', function(e) {
   }
 
   if ($target.length) {
-      $original.attr({
-        'tabindex' : '-1',
-        'aria-selected' : null
-      });
-      $target.attr({
-        'tabindex' : '0',
-        'aria-selected' : true
-      }).focus();
+    
+    $original.attr({
+      'tabindex' : '-1',
+      'aria-selected' : null
+    });
+    
+    $target.attr({
+      'tabindex' : '0',
+      'aria-selected' : true
+    }).focus();
+      
   }
   
 
@@ -117,6 +120,7 @@ $('[role="tab"]').on('keydown', function(e) {
 
 $('[role="tab"]').on('click', function(e) {
 
+
   e.preventDefault();
 
 
@@ -125,7 +129,7 @@ $('[role="tab"]').on('click', function(e) {
   $('[role="tab"]').attr({
     'tabindex': '-1',
     'aria-selected' : null
-    });
+  });
 
 
   // Replace above on clicked tab

@@ -1,20 +1,14 @@
-	<a class="link-back" href="/">Back to the index</a>
-
-
-	<h1 class="heading-xlarge">Tabs</h1>
+  {{>breadcrumb}}
+  
+  
+  <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
+  
+  
+  <p class="lede">Optimise screen area without sacrificing the amount of content.</p>
+  
+  
+  <h3 class="heading-medium">Example 1</h3>	
 	
-	
-	<!-- introduction -->
-  <div class="text">
-    
-    <h2 class="heading-medium">Looking for the HTML?</h2>
-    
-    <p>The HTML snippets can be found in the <a href="/snippets/#tabs">snippets page</a>.</p>
-    
-  </div>
-	
-	
-	<!-- tabbed content -->
   <div class="example">
   
     <div class="tabs">
@@ -101,4 +95,223 @@
   </div>
   
   
-  <p><a href="#content">Back to the top</a></p>
+  <h3 class="heading-medium">Example 2</h3>
+  
+  <div class="example">    
+    
+    <div class="tabs">    
+    
+      <div class="tabs-nav">
+        
+        <ul class="tabs-list">
+          <li><a href="#tab-1">Businesses</a></li>
+          <li><a href="#tab-2">Messages (2)</a></li>
+          <li><a href="#tab-3">Applications</a></li>
+        </ul>
+        
+      </div>      
+      
+      <div class="tabs-content">      
+      
+        <div class="tabs-panel" id="tab-1">
+          
+            
+          <div class="tabs-panel-inner">
+          
+          
+            <h2 class="heading-medium">Businesses</h2>
+            
+            
+            <ul class="list-summary">
+              <li class="list-summary-item"><a href="#">Black Horse Farm. Black Horse Lane, Reading R5 6PQ</a></li>
+              <li class="list-summary-item"><a href="#">Agri Agents Ltd. Low Street, West Yorkshire, YR4 XP2</a></li>
+              <li class="list-summary-item"><a href="#">Bodmin Agri Ltd. Monument Way, Bodmin PL31 1NZ</a></li>
+            </ul>
+            
+            
+            <a class="button" href="#">Add another business</a>
+            
+            
+          </div>
+          
+          
+        </div>        
+        
+        <div class="tabs-panel" id="tab-2">
+          
+          
+          <div class="tabs-panel-inner">
+              
+              
+            <h2 class="heading-large">Messages</h2>
+            
+            
+            <div class="messages">
+            
+            
+              <div class="messages-filter">
+                
+                <label>
+                
+                  Sort messages by
+                  
+                  <select>
+                    <option value="newest">Newest on top</option>
+                    <option value="oldest">Oldest on top</option>
+                  </select>
+                
+                </label>
+                
+              </div>
+            
+            
+              <p>You have 2 new messages.</p>
+              
+              
+              <div class="collapsible collapsible-borders">
+          
+          
+                <div class="collapsible-item is-open">
+                  
+                  <div class="collapsible-heading">
+                    
+                    <h3>
+                      <span class="collapsible-heading-primary messages-new">You have been given access to Agri Agents Ltd.</span> 
+                      <span class="collapsible-heading-secondary">15 Sep 2014</span>
+                    </h3>
+                    
+                  </div>
+                  
+                  <div class="collapsible-content">
+                    <div class="text">
+                      <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
+                      <p><a href="#" data-toggle="dialog" data-target="dialog-1">Delete this message</a>.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="collapsible-item">
+                  
+                  <div class="collapsible-heading">
+                    <h3>
+                      <span class="collapsible-heading-primary messages-new">You have been given access to Bodmin Agri Ltd.</span> 
+                      <span class="collapsible-heading-secondary">10 Sep 2014</span>
+                    </h3>
+                  </div>
+                  
+                  <div class="collapsible-content">
+                    <div class="text">
+                      <p>John Smith has given you permission to view and amend information about this business and make applications on their behalf.</p>
+                      <p><a href="#" data-toggle="dialog" data-target="dialog-1">Delete this message</a>.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                
+                <div class="collapsible-item">
+                  
+                  <div class="collapsible-heading">
+                    <h3>
+                      <span class="collapsible-heading-primary">Welcome to Rural Payments</span> 
+                      <span class="collapsible-heading-secondary">5 Sep 2014</span>
+                    </h3>
+                  </div>
+                  
+                  <div class="collapsible-content">
+                    <div class="text">
+                      <p>Fusce a risus libero. Nam risus purus, pharetra eget porttitor in, dictum ut enim. In auctor, purus vitae luctus tempor.</p>
+                      <p><a href="#" data-toggle="dialog" data-target="dialog-1">Delete this message</a></p>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                
+              </div>
+              
+            
+            </div>                        
+          
+          
+          </div> 
+          
+          
+        </div>        
+        
+        <div class="tabs-panel" id="tab-3">
+          
+            
+          <div class="tabs-panel-inner">
+            
+            
+            <h2 class="heading-medium">Applications in progress</h2>
+            
+            
+            <ul class="list-summary">
+              <li class="list-summary-item"><a href="#">Black Horse Farm, Basic Payment Scheme</a></li>
+              <li class="list-summary-item"><a href="#">Agri Agents Ltd. Basic Payment Scheme</a></li>
+            </ul>
+            
+            
+            <h2 class="heading-medium">Submitted appications</h2>
+            
+            
+            <ul class="list-summary">
+              <li class="list-summary-item"><a href="#">Bodmin Agri Ltd. Basic Payment Scheme</a></li>
+            </ul>
+            
+          
+          </div>
+          
+          
+        </div>
+      
+      
+      </div>      
+    
+    </div>    
+    
+  </div>
+  
+  
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;tabs&quot;&gt;
+    
+      &lt;div class=&quot;tabs-nav&quot;&gt;
+        &lt;ul class=&quot;tabs-list&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#tab-1&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#tab-2&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#tab-3&quot;&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;tabs-content&quot;&gt;
+      
+        &lt;div class=&quot;tabs-panel&quot; id=&quot;tab-1&quot;&gt;
+          &lt;div class=&quot;tabs-panel-inner text&quot;&gt;
+            &lt;h3&gt;Tab 1&lt;/h3&gt;
+            &lt;p&gt;Some content would go here for tab 1.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;tabs-panel&quot; id=&quot;tab-2&quot;&gt;
+          &lt;div class=&quot;tabs-panel-inner text&quot;&gt;
+            &lt;h3&gt;Tab 2&lt;/h3&gt;
+            &lt;p&gt;Some content would go here for tab 2.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;tabs-panel&quot; id=&quot;tab-3&quot;&gt;
+          &lt;div class=&quot;tabs-panel-inner text&quot;&gt;
+            &lt;h3&gt;Tab 3&lt;/h3&gt;
+            &lt;p&gt;Some content would go here for tab 3.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      
+      &lt;/div&gt;
+    
+    &lt;/div&gt;
+  </code></pre>
