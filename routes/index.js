@@ -69,8 +69,7 @@ module.exports = {
         prettifyScript: true,
       };
       res.render('elements/layout/home', data);
-    });
-    
+    });    
     
     app.get('/collapsibles', function(req, res) {
       data = {
@@ -79,8 +78,7 @@ module.exports = {
         prettifyScript: true,
       };
       res.render('elements/collapsibles/home', data);
-    });
-    
+    });    
     
     app.get('/alerts', function(req, res) {
     
@@ -92,8 +90,7 @@ module.exports = {
       
       res.render('elements/alerts/home', data);
     
-    });
-    
+    });    
     
     app.get('/pagination', function(req, res) {
     
@@ -104,6 +101,18 @@ module.exports = {
       };
       
       res.render('elements/pagination/home', data);
+    
+    });
+    
+    app.get('/checklist', function(req, res) {
+    
+      data = {
+        doctitle:       'Checklist',
+        page_name:      'Checklist',
+        prettifyScript: true,
+      };
+      
+      res.render('elements/checklist/home', data);
     
     });
     
@@ -192,21 +201,7 @@ module.exports = {
       res.render('elements/dialogs/home', data);
     
     });
-    
 
-    
-    
-
-    app.get('/checklist', function(req, res) {
-    
-      data = {
-        doctitle: 'Checklist'
-      };
-      
-      res.render('elements/checklist/home', data);
-    
-    });
-    
 
     app.get('/checklist/example', function(req, res) {
     

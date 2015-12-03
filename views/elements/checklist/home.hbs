@@ -1,22 +1,9 @@
-  <a class="link-back" href="/">Back to the index</a>
+  {{>breadcrumb}}
+  
+  
+  <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
 
 
-	<h1 class="heading-xlarge">Checklist</h1>
-	
-	
-	<!-- introduction -->
-  <div class="text">
-    
-    <p>See an example of an in&ndash;page <a href="example">checklist</a>.</p>
-    
-    <h2 class="heading-medium">Looking for the HTML?</h2>
-    
-    <p>The HTML snippets can be found in the <a href="/snippets/#checklist">snippets page</a>.</p>
-    
-  </div>
-
-
-  <!-- checklist -->
   <div class="example">
   
     <div class="checklist-done">
@@ -34,4 +21,23 @@
   </div>
   
   
-  <p><a href="#content">Back to the top</a></p>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;checklist-done&quot;&gt;
+      &lt;p&gt;This business has enough eligible land.&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;checklist-notmet&quot;&gt;
+      &lt;p&gt;This business doesn't have enough eligible land.&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;checklist-inprogress&quot;&gt;
+      &lt;p&gt;Tell us more about your &lt;a href=&quot;#&quot;&gt;business activities&lt;/a&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+  </code></pre>
+  
+  
+  <h3 class="heading-medium">Examples</h3>
+  
+  <ul class="list-bullet">
+    <li><a href="example">an example page with a checklist</a></li>
+  </ul>
