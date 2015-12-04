@@ -1,22 +1,14 @@
-  <a class="link-back" href="/">Back to the index</a>
-
-
-	<h1 class="heading-xlarge">Related</h1>
+  {{>breadcrumb}}
+  
+  
+  <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
 	
-	
-	<!-- introduction -->
-  <div class="text">
-    
-    <p>Related content needs to sit inside the <a href="/snippets/#layout">layout grid</a>.</p>
-    
-    <h2 class="heading-medium">Looking for the HTML?</h2>
-    
-    <p>The HTML snippets can be found in the <a href="/snippets/#related">snippets page</a>.</p>
-    
-  </div>
+
+  <p class="lede">Related content needs to sit inside the layout grid.</p>
 
 
-  <!-- related content -->
+  <h3 class="heading-medium">Example 1</h3>
+
   <div class="example example-grid">
   
     <div class="grid-row">
@@ -55,5 +47,24 @@
   
   </div>
   
-  
-  <p><a href="#content">Back to the top</a></p>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;related&quot;&gt;
+    
+      &lt;div class=&quot;related-section&quot;&gt;
+        &lt;h2 class=&quot;related-section-title&quot;&gt;Dealing with HMRC&lt;/h2&gt;
+        &lt;ul class=&quot;related-section-links&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Get help with tax&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;/&quot; rel=&quot;external&quot;&gt;Handling someone's personal tax affairs on their behalf&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;related-section&quot;&gt;
+        &lt;h2 class=&quot;related-section-title&quot;&gt;Elsewhere on GOV.UK&lt;/h2&gt;
+        &lt;ul class=&quot;related-section-links&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Claiming and dealing with tax credits for someone else&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Claim and deal with Child Benefit for someone else&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    
+    &lt;/div&gt;
+  </code></pre>

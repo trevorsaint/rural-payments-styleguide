@@ -27,9 +27,6 @@ module.exports = {
     var data = '';
 
 
-
-    // Index
-
     app.get('/', function(req, res) {
 
       data = {
@@ -42,26 +39,9 @@ module.exports = {
     });
 
 
-    // Elements
+    // ELEMENTS
+    // ==============================================
 
-    app.get('/typography', function(req, res) {
-    
-      data = {
-        doctitle: 'Typography'
-      };
-      
-      res.render('elements/typography/home', data);
-    
-    });
-    
-    
-    
-    
-    
-    
-    
-    
-    
     app.get('/layout', function(req, res) {
       data = {
         doctitle:       'Layout',
@@ -153,6 +133,46 @@ module.exports = {
     
     });
     
+    app.get('/typography', function(req, res) {
+    
+      data = {
+        doctitle:       'Typography',
+        page_name:      'Typography',
+        prettifyScript: true,
+        autocomplete:   true
+      };
+      
+      res.render('elements/typography/home', data);
+    
+    });
+    
+    app.get('/related', function(req, res) {
+    
+      data = {
+        doctitle:       'Related content',
+        page_name:      'Related content',
+        prettifyScript: true,
+        autocomplete:   true
+      };
+      
+      res.render('elements/related/home', data);
+    
+    });
+    
+    app.get('/buttons', function(req, res) {
+    
+      data = {
+        doctitle:       'Buttons',
+        page_name:      'Buttons',
+        prettifyScript: true,
+        autocomplete:   true
+      };
+      
+      res.render('elements/buttons/home', data);
+    
+    });
+    
+    
     
     
     
@@ -191,29 +211,8 @@ module.exports = {
     });
     
 
-    app.get('/buttons', function(req, res) {
     
-      data = {
-        doctitle: 'Buttons'
-      };
-      
-      res.render('elements/buttons/home', data);
-    
-    });
 
-
-    app.get('/details', function(req, res) {
-    
-      data = {
-        doctitle: 'Details'
-      };
-      
-      res.render('elements/details/home', data);
-    
-    });
-
-
-    
     
 
     app.get('/dialogs', function(req, res) {
@@ -237,33 +236,8 @@ module.exports = {
       res.render('elements/checklist/example/home', data);
     
     });
-    
 
     
-    
-
-    app.get('/snippets', function(req, res) {
-    
-      data = {
-        doctitle: 'Snippets',
-        prettifyScript: true,
-        autocomplete: true
-      };
-      
-      res.render('elements/snippets/home', data);
-    
-    });
-    
-
-    app.get('/related', function(req, res) {
-    
-      data = {
-        doctitle: 'Related'
-      };
-      
-      res.render('elements/related/home', data);
-    
-    });
     
 
     app.get('/validation', function(req, res) {

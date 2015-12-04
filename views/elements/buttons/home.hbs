@@ -1,49 +1,46 @@
-	<a class="link-back" href="/">Back to the index</a>
+  {{>breadcrumb}}
+  
+  
+  <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
+	
 
-
-	<h1 class="heading-xlarge">Buttons</h1>
-
-
-  <!-- introduction -->
   <div class="text">
     
-    <p>Use buttons to move though a transaction, aim to use only one button per page.</p>
-    
-    <h2 class="heading-medium">Looking for the HTML?</h2>
-    
-    <p>The HTML snippets can be found in the <a href="/snippets/#buttons">snippets page</a>.</p>
-    
+    <p class="lede">Use buttons to move though a transaction, aim to use only one button per page.</p>
+
   </div>
   
   
-  <!-- button text -->
   <h3 class="heading-medium">Button text</h3>
-  
-  
-  <div class="text">
-    <p>Button text should be short and describe the action the button performs.</p>
-  </div>
-  
   
   <div class="example">
     <button class="button" type="button">Save and continue</button>
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;button class=&quot;button&quot; type=&quot;button&quot;&gt;Save and continue&lt;/button&gt;
+    
+    &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Save and continue&quot;&gt;
+    
+    &lt;a class=&quot;button&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Save and continue&lt;/a&gt;
+  </code></pre>
+
   
-  <div class="text">
-    <p>Launch your service with a Start now button.</p>
-  </div>
+  <h3 class="heading-medium">Start now button</h3>
+  
+  <p class="text">Launch your service with a Start now button.</p>
   
   
   <div class="example">
-    <button class="button button-start" type="button">Start now</button>
+    <a class="button button-start" href="#" role="button">Start now</a>
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;a class=&quot;button button-start&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Start now&lt;/a&gt;
+  </code></pre>
   
-  <div class="text">
-    <p>Align the primary action button to the left edge of your form, in the user's line of sight.</p>
-  </div>
   
+  <h3 class="heading-medium">Button alignment</h3>
   
   <div class="example">
     
@@ -51,31 +48,38 @@
      
       <div class="form-group">
         <label class="form-label" for="form-email-address-1">Email address</label>
-        <input class="form-control" type="text" id="form-email-address-1">
+        <input class="form-control" type="text" name="form-email-address-1" id="form-email-address-1">
       </div>
      
       <div class="form-group">
         <button class="button" type="button">Save and continue</button>
-        <p><a href="#">Back</a></p>
       </div>
       
     </form>
       
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label class=&quot;form-label&quot; for=&quot;form-email-address-1&quot;&gt;Email address&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; name=&quot;form-email-address-1&quot; id=&quot;form-email-address-1&quot;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;button class=&quot;button&quot; type=&quot;button&quot;&gt;Save and continue&lt;/button&gt;
+    &lt;/div&gt;
+  </code></pre>
   
-  <!-- disabled button -->
+
   <h3 class="heading-medium">Disabled button</h3>
   
-  
-  <div class="text">
-    <p>Disabled buttons should be set at 50% opacity.</p>
-  </div>
+  <p class="text">Disabled buttons should be set at 50% opacity.</p>
   
   
   <div class="example">
-    <button class="button" type="button" disabled="disabled">Primary button</button>
+    <button class="button" type="button" disabled="disabled">Save and continue</button>
   </div>
-
-
-  <p><a href="#content">Back to the top</a></p>
+  
+  <pre><code class="prettyprint">
+    &lt;button class=&quot;button&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;Save and continue&lt;/button&gt;
+  </code></pre>
