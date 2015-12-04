@@ -1,19 +1,24 @@
-	  <a class="link-back" href="/">Back to BPS application</a>
+  {{>breadcrumb}}
 
 
-    <div class="text">
+  <div class="grid-row">
+    
+    
+    <div class="column-two-thirds">
+      
+      
+      <form class="form" method="get" action="#">
 
 
-      <h1 class="heading-xlarge">Cross compliance</h1>
-
-
-      <form class="form">
+        <h1 class="heading-large">{{page_name}}</h1>
 
 
         <fieldset>
-
-          <legend class="form-label-bold">Select the Statutory Management Requirements (<abbr title="Statutory Management Requirements">SMRs</abbr>) that apply to this business.</legend>
-
+        
+          <legend class="heading-medium">Statutory Management Requirements (<abbr title="Statutory Management Requirements">SMRs</abbr>) that apply to this business</legend>
+          
+          <p>Select all options that are relevant to you.</p>
+      
           <div class="form-group">
 
             <ol class="form-checkboxes">
@@ -136,7 +141,9 @@
 
         <fieldset>
 
-          <legend class="form-label-bold">Select the Good Agriculture and Environment Conditions (<abbr title="Good Agriculture and Environment Conditions">GAEC</abbr>) that apply to this business.</legend>
+          <legend class="heading-medium">Good Agriculture and Environment Conditions (<abbr title="Good Agriculture and Environment Conditions">GAEC</abbr>) that apply to this business.</legend>
+
+          <p>Select all options that are relevant to you.</p>
 
           <div class="form-group">
 
@@ -251,10 +258,15 @@
         </fieldset>
 
 
-        <button class="button">Save and continue application</button>
+        <div class="form-group">
+          <button class="button" type="submit">Save and continue application</button>
+        </div>
 
 
       </form>
-
-
+      
+      
     </div>
+    
+    
+  </div>

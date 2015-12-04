@@ -1,131 +1,132 @@
-		<a class="link-back" href="/">Back to land summary</a>
+  {{>breadcrumb}}
+  
+
+  <div class="grid-row">
 
 
-    <div class="grid-row">
+    <div class="column-two-thirds">
 
 
-      <div class="column-two-thirds">
-
-
-        <div class="page-header">
-          
-          <h1 class="heading-xlarge">Parcel summary <span class="heading-secondary">Beech Farm</span></h1>
+      <div class="page-header">
         
-          <dl class="list-parcel">
-            <dt><abbr title="Ordnance Survey">OS</abbr> Title</dt>
-            <dd>SK1</dd>
-          </dl>
-        
-        </div>
-        
+        <h1 class="heading-xlarge">{{page_name}} <span class="heading-secondary">Beech Farm</span></h1>
+      
+        <dl class="list-parcel">
+          <dt><abbr title="Ordnance Survey">OS</abbr> Title</dt>
+          <dd>SK1</dd>
+        </dl>
+      
+      </div>
+      
 
-        <p>This is a summary of the land parcel information Rural Payments currently holds for this <abbr title="Ordnance Survey">OS</abbr> (Ordnance Survey) tile.</p>
+      <p>This is a summary of the land parcel information Rural Payments currently holds for this <abbr title="Ordnance Survey">OS</abbr> (Ordnance Survey) tile.</p>
 
-        <table>
-          <caption class="visuallyhidden">Summary of land parcel information</caption>
-          <thead>
-            <tr>
-              <th scope="col" colspan="2">Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row">Number of parcels</ts>
-              <td class="numeric last">388</td>
-            </tr>
-            <tr>
-              <td scope="row">BPS eligible area (<abbr title="hectare">ha</abbr>)</td>
-              <td class="numeric last">6335.54</td>
-            </tr>
-            <tr>
-              <td scope="row">Total area (<abbr title="hectare">ha</abbr>)</td>
-              <td class="numeric last">6905.72</td>
-            </tr>
-            <tr>
-              <td scope="row">Arable (<abbr title="hectare">ha</abbr>)</td>
-              <td class="numeric last">4.45</td>
-            </tr>
-            <tr>
-              <td scope="row">Grassland (<abbr title="hectare">ha</abbr>)</td>
-              <td class="numeric last">6331.09</td>
-            </tr>
-          </tbody>
-        </table>
-        
-        
-        <h2 class="heading-medium">Land parcels</h2>
-        
-        <p>This is how the land parcels for this business are distributed. Click on the Parcel ID to view it or tell Rural Payments about any changes.</p>
-        
-        <div class="panel-indent">
-          <p>An <span class="text-pending" title="Changes pending"></span> icon denotes there are changes pending for the parcel.</p>
-        </div>
-
-
-        <table class="table-land-parcels table-highlight js-table-sortable">
-          <caption class="visuallyhidden">Land parcel distribution</caption>
-          <thead>
-            <tr>
-              <th scope="col" data-sort="string">Parcel ID</th>
-              <th class="numeric" scope="col">Total area (<abbr title="hectare">ha</abbr>)</th>
-              <th scope="col">Eligible covers</th>
-              <th class="numeric last" scope="col">BPS eligible area (<abbr title="hectare">ha</abbr>)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"><a href="/">SP1561 5978</a> <span class="text-pending" title="Changes pending"></span></th>
-              <td class="numeric">2.62</td>
-              <td>Grassland</td>
-              <td class="numeric last">2.62</td>
-            </tr>
-            <tr>
-              <th scope="row"><a href="/">SP1561 6596</a></th>
-              <td class="numeric">2.05</td>
-              <td>Arable</td>
-              <td class="numeric last">2.05</td>
-            </tr>
-            <tr>
-              <th scope="row"><a href="/">SP1561 7039</a> <span class="text-pending" title="Changes pending"></span></th>
-              <td class="numeric">10.16</td>
-              <td>Grassland</td>
-              <td class="numeric last">10.16</td>
-            </tr>
-            <tr>
-              <th scope="row"><a href="/">SP1561 7070</a> <span class="text-pending" title="Changes pending"></span></th>
-              <td class="numeric">6.63</td>
-              <td>Grassland</td>
-              <td class="numeric last">6.63</td>
-            </tr>
-            <tr>
-              <th scope="row"><a href="/">SP1561 9086</a></th>
-              <td class="numeric">9.15</td>
-              <td>Arable</td>
-              <td class="numeric last">9.15</td>
-            </tr>
-            <tr>
-              <th scope="row"><a href="/">SP1562 8012</a></th>
-              <td class="numeric">3.01</td>
-              <td>Arable</td>
-              <td class="numeric last">3.01</td>
-            </tr>
-          </tbody>
-        </table>
-
-
+      <table>
+        <caption class="visuallyhidden">Summary of land parcel information</caption>
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">Number of parcels</ts>
+            <td class="numeric last">388</td>
+          </tr>
+          <tr>
+            <td scope="row">BPS eligible area (<abbr title="hectare">ha</abbr>)</td>
+            <td class="numeric last">6335.54</td>
+          </tr>
+          <tr>
+            <td scope="row">Total area (<abbr title="hectare">ha</abbr>)</td>
+            <td class="numeric last">6905.72</td>
+          </tr>
+          <tr>
+            <td scope="row">Arable (<abbr title="hectare">ha</abbr>)</td>
+            <td class="numeric last">4.45</td>
+          </tr>
+          <tr>
+            <td scope="row">Grassland (<abbr title="hectare">ha</abbr>)</td>
+            <td class="numeric last">6331.09</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+      <h2 class="heading-medium">Land parcels</h2>
+      
+      <p>This is how the land parcels for this business are distributed. Click on the Parcel ID to view it or tell Rural Payments about any changes.</p>
+      
+      <div class="panel-indent">
+        <p>An <span class="text-pending" title="Changes pending"></span> icon denotes there are changes pending for the parcel.</p>
       </div>
 
 
-      <div class="column-third">
+      <table class="table-land-parcels table-highlight js-table-sortable">
+        <caption class="visuallyhidden">Land parcel distribution</caption>
+        <thead>
+          <tr>
+            <th scope="col" data-sort="string">Parcel ID</th>
+            <th class="numeric" scope="col">Total area (<abbr title="hectare">ha</abbr>)</th>
+            <th scope="col">Eligible covers</th>
+            <th class="numeric last" scope="col">BPS eligible area (<abbr title="hectare">ha</abbr>)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><a href="/">SP1561 5978</a> <span class="text-pending" title="Changes pending"></span></th>
+            <td class="numeric">2.62</td>
+            <td>Grassland</td>
+            <td class="numeric last">2.62</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/">SP1561 6596</a></th>
+            <td class="numeric">2.05</td>
+            <td>Arable</td>
+            <td class="numeric last">2.05</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/">SP1561 7039</a> <span class="text-pending" title="Changes pending"></span></th>
+            <td class="numeric">10.16</td>
+            <td>Grassland</td>
+            <td class="numeric last">10.16</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/">SP1561 7070</a> <span class="text-pending" title="Changes pending"></span></th>
+            <td class="numeric">6.63</td>
+            <td>Grassland</td>
+            <td class="numeric last">6.63</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/">SP1561 9086</a></th>
+            <td class="numeric">9.15</td>
+            <td>Arable</td>
+            <td class="numeric last">9.15</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/">SP1562 8012</a></th>
+            <td class="numeric">3.01</td>
+            <td>Arable</td>
+            <td class="numeric last">3.01</td>
+          </tr>
+        </tbody>
+      </table>
 
-        {{>map}}
-        
-        <!--p class="font-xsmall">Is any of this information about your land wrong? If so, call us on <span class="bold-small">0300 200 301</span>.</p-->
-        
-        <h3 class="heading-small">Is this information up to date?</h3>
-        
-        <p class="font-xsmall">If you have already asked us to make changes to information about your land, they might not show here yet.</p>
-        
-        <p class="font-xsmall">If you need to tell us about any changes to your land you should fill in an <a href="/">RLE1 form </a>.</p>
 
     </div>
+
+
+    <div class="column-third">
+
+      {{>map}}
+      
+      <h3 class="heading-small">Is this information up to date?</h3>
+      
+      <p class="font-xsmall">If you have already asked us to make changes to information about your land, they might not show here yet.</p>
+      
+      <p class="font-xsmall">If you need to tell us about any changes to your land you should fill in an <a href="/">RLE1 form </a>.</p>
+
+    </div>
+    
+    
+  </div>

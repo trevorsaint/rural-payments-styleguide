@@ -8,7 +8,7 @@ module.exports = {
     // ==============================================
     
     app.locals = {      
-      title:   'RPA Styleguide',
+      title: 'RPA Styleguide',
       baseurl: '/'
     }
 
@@ -20,12 +20,8 @@ module.exports = {
     var businessEngine = require('../models/businesses');
 
 
-    // Index
+    // INDEX
     // ==============================================
-
-
-    var data = '';
-
 
     app.get('/', function(req, res) {
 
@@ -64,83 +60,64 @@ module.exports = {
     });    
     
     app.get('/alerts', function(req, res) {
-    
       data = {
         doctitle:       'Alerts',
         page_name:      'Alerts',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/alerts/home', data);
-    
     });    
     
     app.get('/pagination', function(req, res) {
-    
       data = {
         doctitle:       'Pagination',
         page_name:      'Pagination',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/pagination/home', data);
-    
     });
     
     app.get('/checklist', function(req, res) {
-    
       data = {
         doctitle:       'Checklist',
         page_name:      'Checklist',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/checklist/home', data);
-    
     });
-      app.get('/checklist/example', function(req, res) {
-    
-        data = {
-          doctitle: 'Checklist example',
-          openLayers: true
-        };
-        
-        res.render('elements/checklist/example/home', data);
-      
-      });
-    
+  
+    app.get('/checklist/example', function(req, res) {
+      data = {
+        doctitle: 'Checklist example',
+        openLayers: true
+      };
+      res.render('elements/checklist/example/home', data);
+    });
     
     app.get('/application', function(req, res) {
-    
       data = {
-        doctitle:       'Application status',
-        page_name:      'Application status',
+        doctitle: 'Application status',
+        page_name: 'Application status',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/application/home', data);
-    
     });
     
     app.get('/tabs', function(req, res) {
-    
       data = {
-        doctitle:       'Tabs',
-        page_name:      'Tabs',
+        doctitle: 'Tabs',
+        page_name: 'Tabs',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/tabs/home', data);
-    
     });
     
     app.get('/forms', function(req, res) {
-    
       data = {
         doctitle:       'Form elements',
         page_name:      'Form elements',
@@ -148,87 +125,76 @@ module.exports = {
         autocomplete:   true,
         phase: true
       };
-      
       res.render('elements/forms/home', data);
-    
     });
     
     app.get('/typography', function(req, res) {
-    
       data = {
-        doctitle:       'Typography',
-        page_name:      'Typography',
+        doctitle: 'Typography',
+        page_name: 'Typography',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/typography/home', data);
-    
     });
     
     app.get('/related', function(req, res) {
-    
       data = {
-        doctitle:       'Related content',
-        page_name:      'Related content',
+        doctitle: 'Related content',
+        page_name: 'Related content',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/related/home', data);
-    
     });
     
     app.get('/buttons', function(req, res) {
-    
       data = {
-        doctitle:       'Buttons',
-        page_name:      'Buttons',
+        doctitle: 'Buttons',
+        page_name: 'Buttons',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/buttons/home', data);
-    
     });
     
     app.get('/validation', function(req, res) {
-    
       data = {
-        doctitle:       'Errors and validation',
-        page_name:      'Errors and validation',
+        doctitle: 'Errors and validation',
+        page_name: 'Errors and validation',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/validation/home', data);
-    
     });
     
     app.get('/tables', function(req, res) {
-    
       data = {
-        doctitle:       'Tables',
-        page_name:      'Tables',
+        doctitle: 'Tables',
+        page_name: 'Tables',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/tables/home', data);
-    
     });
     
     app.get('/dialogs', function(req, res) {
-    
       data = {
-        doctitle:       'Dialog overlays',
-        page_name:      'Dialog overlays',
+        doctitle: 'Dialog overlays',
+        page_name: 'Dialog overlays',
         prettifyScript: true,
         phase: true
       };
-      
       res.render('elements/dialogs/home', data);
+    });
     
+    app.get('/pages', function(req, res) {
+      data = {
+        doctitle: 'Page examples',
+        page_name: 'Page examples',
+        phase: true
+      };
+      res.render('elements/pages/home', data);
     });
     
     
@@ -311,58 +277,118 @@ module.exports = {
     });
     
     
-    // Pages
     
-    app.get('/account', function(req, res) {
+    
+    
+    // PAGES
+    // ==============================================
+    
+    app.get('/pages/your-account', function(req, res) {
 
       data = {
-        doctitle: 'Account',
-        pagetitle: 'Rural Payments'
+        doctitle: 'Your account',
+        page_name: 'Your account',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
       
-      res.render('pages/account/home', data);
+      res.render('pages/your-account/home', data);
 
     });
     
-    
-    app.get('/my-account', function(req, res) {
+    app.get('/pages/create-new-customer', function(req, res) {
     
       data = {
-        doctitle: 'My account',
-        businessMenu: true
+        doctitle: 'Create new customer',
+        page_name: 'Create new customer',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+        
       };
       
-      res.render('pages/my-account/home', data);
-      
+      res.render('pages/create-new-customer/home', data);
+    
     });
     
-    
-    app.get('/personal-details', function(req, res) {
+    app.get('/pages/update-personal-details', function(req, res) {
     
       data = {
-        doctitle: 'Personal details'
+        doctitle: 'Update personal details',
+        page_name: 'Update personal details',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      
+      res.render('pages/update-personal-details/home', data);
+    
+    });
+    
+    app.get('/pages/parcel-summary', function(req, res) {
+    
+      data = {
+        doctitle: 'Parcel summary',
+        page_name: 'Parcel summary',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true,
+        openLayers: true
+      };
+      
+      res.render('pages/parcel-summary/home', data);
+    
+    });
+    
+    app.get('/pages/parcel-details', function(req, res) {
+    
+      data = {
+        doctitle: 'Parcel details',
+        page_name: 'Parcel details',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true,
+        openLayers: true
+      };
+      
+      res.render('pages/parcel-details/home', data);
+    
+    });
+    
+    app.get('/pages/personal-details', function(req, res) {
+    
+      data = {
+        doctitle: 'Personal details',
+        page_name: 'Personal details',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
       
       res.render('pages/personal-details/home', data);
       
     });
-    
 
-    app.get('/self-assessment', function(req, res) {
-      
+    app.get('/pages/self-assessment', function(req, res) {
       data = {
-        doctitle: 'Self assessment'
+        doctitle: 'Self assessment',
+        page_name: 'Check if you need to fill in a Self Assessment tax return',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
       res.render('pages/self-assessment/home', data);
-      
     });
     
-    
-    app.get('/cross-compliance', function(req, res) {
+    app.get('/pages/cross-compliance', function(req, res) {
     
       data = {
-        doctitle: 'Cross compliance'
+        doctitle: 'Cross compliance',
+        page_name: 'Cross compliance',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
       
       res.render('pages/cross-compliance/home', data);
@@ -370,7 +396,7 @@ module.exports = {
     });
     
     
-    app.get('/confirmation', function(req, res) {
+    app.get('/pages/confirmation', function(req, res) {
     
       data = {
         doctitle: 'Confirmation'
@@ -381,7 +407,7 @@ module.exports = {
     });
     
     
-    app.get('/apply-for-bps', function(req, res) {
+    app.get('/pages/apply-for-bps', function(req, res) {
     
       data = {
         doctitle: 'Apply for BPS'
@@ -392,7 +418,7 @@ module.exports = {
     });
     
     
-    app.get('/update-business-details', function(req, res) {
+    app.get('/pages/update-business-details', function(req, res) {
     
       data = {
         doctitle: 'Update business details'
@@ -403,7 +429,7 @@ module.exports = {
     });
     
     
-    app.get('/bps-application', function(req, res) {
+    app.get('/pages/bps-application', function(req, res) {
     
       data = {
         doctitle: 'BPS application',
@@ -415,7 +441,7 @@ module.exports = {
     });
     
     
-    app.get('/manage-land', function(req, res) {
+    app.get('/pages/manage-land', function(req, res) {
     
       data = {
         doctitle: 'Manage land',
@@ -595,17 +621,6 @@ module.exports = {
         };
         
         res.render('pages/need-to-change-password/home', data);
-    
-    });
-    
-
-    app.get('/scheme-eligibility', function(req, res) {
-    
-      data = {
-        doctitle: 'Scheme eligibility'
-      };
-      
-      res.render('pages/scheme-eligibility/home', data);
     
     });
     
@@ -901,50 +916,16 @@ module.exports = {
     });
     
     
-    app.get('/parcel-summary', function(req, res) {
-    
-      data = {
-        doctitle: 'Parcel summary',
-        openLayers: true
-      };
-      
-      res.render('pages/parcel-summary/home', data);
-    
-    });
     
     
-    app.get('/parcel-details', function(req, res) {
-    
-      data = {
-        doctitle: 'Parcel details',
-        openLayers: true
-      };
-      
-      res.render('pages/parcel-details/home', data);
-    
-    });
     
     
-    app.get('/update-personal-details', function(req, res) {
     
-      data = {
-        doctitle: 'Update personal details'
-      };
-      
-      res.render('pages/update-personal-details/home', data);
     
-    });
+    
     
 
-    app.get('/create-new-customer', function(req, res) {
     
-      data = {
-        doctitle: 'Create new customer'
-      };
-      
-      res.render('pages/create-new-customer/home', data);
-    
-    });
     
     
     // Accountable people

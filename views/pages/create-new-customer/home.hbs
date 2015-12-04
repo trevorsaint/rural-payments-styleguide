@@ -1,255 +1,162 @@
-		<a class="link-back" href="/">Back to index</a>
+  {{>breadcrumb}}
 
 
-    <form class="form" method="get" action="/">
+  <form class="form" method="get" action="#">
+    
+    
+    <h1 class="heading-large">{{page_name}}</h1>
       
       
-      <div class="text">
+    <div class="text">
       
-        <h1 class="form-title heading-large">Example: Create new customer</h1>
-        
-        <p class="lede">Please complete all the details below to register a new customer.</p>
-        
-        <p>You must complete all fields, unless they're marked as (optional).</p>
-        
+      <p class="lede">Please complete all the details below to register a new customer.</p>
+      
+      <p>You must complete all fields, unless they're marked as (optional).</p>
+    
+    </div>
+
+
+    <fieldset> 
+      
+      <legend class="heading-medium">Personal details</legend>     
+
+      <div class="form-group">
+        <label class="form-label" for="title">Title (optional)</label>
+        <input class="form-control form-control-1-8" id="title" type="text">
       </div>
 
+      <div class="form-group">
+        <label class="form-label" for="first-name">First name</label>
+        <input class="form-control" id="first-name" type="text">
+      </div>
 
-      <!-- Personal details -->
-      <fieldset> 
-        
-        
-        <legend class="heading-medium">Personal details</legend>     
+      <div class="form-group">
+        <label class="form-label" for="middle-name">Middle name (optional)</label>
+        <input class="form-control" id="middle-name" type="text">
+      </div>
 
+      <div class="form-group">
+        <label class="form-label" for="last-name">Last name</label>
+        <input class="form-control" id="last-name" type="text">
+      </div>
 
-        <div class="form-group">
-        
-          <label for="title">
-            <span class="form-label">Title (optional)</span>
-          </label>
-          
-          <input class="form-control form-control-1-8" id="title" type="text">
-          
-        </div>
+      <div class="form-group form-group-compound">
 
+        <fieldset>
 
-        <div class="form-group">
-          
-          <label for="first-name">
-            <span class="form-label">First name</span>
-          </label>
-          
-          <input class="form-control" id="first-name" type="text">
-          
-        </div>
-  
-  
-        <div class="form-group">
-          
-          <label for="middle-name">
-            <span class="form-label">Middle name (optional)</span>
-          </label>
-          
-          <input class="form-control" id="middle-name" type="text">
-          
-        </div>
+          <legend class="form-label">Date of birth</legend>
 
-
-        <div class="form-group">
-        
-          <label for="last-name">
-            <span class="form-label">Last name</span>
-          </label>
-          
-          <input class="form-control" id="last-name" type="text">
-          
-        </div>
-
-
-        <div class="form-group form-group-compound">
-
-          <fieldset>
-  
-            <legend class="form-label">Date of birth</legend>
-  
-            <div class="form-date">
-              
-              <span class="form-hint">For example, 31 3 1980</span>
-  
-            	<div class="form-group form-group-day">
-            		
-            		<label for="dob-day">
-            		  <span class="form-label">Day</span>
-            		</label>
-            		
-            		<input class="form-control" id="dob-day" type="text">
-            		
-            	</div>
-  
-            	<div class="form-group form-group-month">
-            		
-            		<label for="dob-month">
-            		  <span class="form-label">Month</span>
-            		</label>
-            		
-            		<input class="form-control" id="dob-month" type="text">
-            		
-            	</div>
-  
-            	<div class="form-group form-group-year">
-            		
-            		<label for="dob-year">
-            		  <span class="form-label">Year</span>
-            		</label>
-            		
-            		<input class="form-control" id="dob-year" type="text">
-            		
-            	</div>
-  
-            </div>
-  
-          </fieldset>
-  
-        </div>
-      
-      
-      </fieldset>
-      
-      
-      <!-- Address -->
-      <fieldset>
-        
-        
-        <legend class="heading-medium">Address</legend> 
-        
-        
-        <div class="toggle">
-        
-        
-          <p><a class="toggle-link" href="#find-postcode">Find a UK address</a></p>
-          
-          
-          <div class="toggle-content">
+          <div class="form-date">
             
-            <div class="panel-indent">
-            
-              <div class="form-group form-group-compound">
-    
-                <label for="postcode-search">
-                  <span class="form-label">Postcode</span>
-                </label>
-      
-                <div class="form-search">
-                  <input class="form-control form-control-1-8" type="text" id="postcode-search">
-                  <button class="button" type="button">Find UK address</button>
-                </div>
-      
-              </div>
-            
-            </div>
-            
+            <span class="form-hint">For example, 31 3 1980</span>
+
+          	<div class="form-group form-group-day">
+          		<label class="form-label" for="dob-day">Day</label>
+          		<input class="form-control" id="dob-day" type="text">
+          	</div>
+
+          	<div class="form-group form-group-month">
+          		<label class="form-label" for="dob-month">Month</label>
+          		<input class="form-control" id="dob-month" type="text">
+          	</div>
+
+          	<div class="form-group form-group-year">
+          		<label class="form-label" for="dob-year">Year</label>
+          		<input class="form-control" id="dob-year" type="text">
+          	</div>
+
           </div>
-        
-        
-        </div>
-        
-        
-        <div class="form-group form-group-compound">
-      						
-					<label for="address-line-1">
-					  <span class="form-label">Street</span>
-					</label>
-					
-					<input class="form-control" id="address-line-1" type="text">
-					
-				</div>
-				
 
-				<div class="form-group">
-					
-					<label for="address-line-2">
-					  <span class="form-label visuallyhidden">Street</span>
-					</label>
-					
-					<input class="form-control" id="address-line-2" type="text">
-					
-				</div>
-				
+        </fieldset>
 
-				<div class="form-group">
-					
-					<label for="address-town">
-					  <span class="form-label">Town or City</span>
-					</label>
-					
-					<input class="form-control form-control-1-4" id="address-town" type="text">
-					
-				</div>
-				
-
-				<div class="form-group form-group-compound">
-					
-					<label for="address-postcode">
-					  <span class="form-label">Postcode</span>
-					</label>
-					
-					<input class="form-control form-control-1-8" id="address-postcode" type="text">
-				
-				</div>       
-        
-        
-      </fieldset>
+      </div>
+    
+    </fieldset>
+    
+    
+    <fieldset>
       
+      <legend class="heading-medium">Address</legend> 
       
-      <!-- Email and telephone -->
-      <fieldset>
+      <div class="toggle">
+      
+        <p><a class="toggle-link" href="#find-postcode">Find a UK address</a></p>
         
-        
-        <legend class="heading-medium">Email and telephone</legend>
-        
-        
-        <p>You must enter either a landline or mobile number.</p>
-        
-        
-        <div class="form-group">
+        <div class="toggle-content">
           
-          <label for="email">
-            <span class="form-label">Email</span>
-          </label>
+          <div class="panel-indent">
           
-          <input class="form-control" id="email" type="email">
+            <div class="form-group form-group-compound">
+  
+              <label class="form-label" for="postcode-search">Postcode</label>
+    
+              <div class="form-search">
+                <input class="form-control form-control-1-8" type="text" id="postcode-search">
+                <button class="button" type="button">Find UK address</button>
+              </div>
+    
+            </div>
+          
+          </div>
           
         </div>
-        
-
-        <div class="form-group">
-          
-          <label for="landline">
-            <span class="form-label">Landline</span>
-          </label>
-          
-          <input class="form-control form-control-1-4" id="landline" type="tel">
-          
-        </div>
-        
-
-        <div class="form-group">
-          
-          <label for="mobile">
-            <span class="form-label">Mobile</span>
-          </label>
-          
-          <input class="form-control form-control-1-4" id="mobile" type="tel">
-          
-        </div>
-        
-        
-      </fieldset>
       
+      </div>
       
-      <button class="button">Register</button>
+      <div class="form-group form-group-compound">	
+				<label class="form-label" for="address-line-1">Street</label>
+				<input class="form-control" id="address-line-1" type="text">
+			</div>
+	
+			<div class="form-group">
+				<label class="form-label visuallyhidden" for="address-line-2">Street</label>
+				<input class="form-control" id="address-line-2" type="text">
+			</div>
+
+			<div class="form-group">
+				<label class="form-label" for="address-town">Town or City</label>
+				<input class="form-control form-control-1-4" id="address-town" type="text">
+			</div>
+			
+			<div class="form-group form-group-compound">
+				<label class="form-label" for="address-postcode">Postcode</label>
+				<input class="form-control form-control-1-8" id="address-postcode" type="text">
+			</div>       
       
-      <p><a href="/">Back</a></p>
+    </fieldset>
+    
+    
+    <fieldset>
+      
+      <legend class="heading-medium">Email and telephone</legend>
+      
+      <p>You must enter either a landline or mobile number.</p>
+      
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control" id="email" type="email">
+      </div>
+    
+      <div class="form-group">
+        <label class="form-label" for="landline">Landline</label>
+        <input class="form-control form-control-1-4" id="landline" type="tel">
+      </div>
+    
+      <div class="form-group">
+        <label class="form-label" for="mobile">Mobile</label>
+        <input class="form-control form-control-1-4" id="mobile" type="tel">
+      </div>
+      
+    </fieldset>
+    
+    
+    <div class="form-group">
+      
+      <button class="button" type="submit">Register</button>
+    
+      <p><a href="#">Back</a></p>
+    
+    </div>
 
 
-    </form>
+  </form>

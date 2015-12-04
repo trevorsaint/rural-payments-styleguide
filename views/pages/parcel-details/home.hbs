@@ -1,83 +1,85 @@
-		<a class="link-back" href="/">Back to parcel summary</a>
+  {{>breadcrumb}}
 
 
-    <div class="grid-row">
+  <div class="grid-row">
 
 
-      <div class="column-half">
+    <div class="column-half">
 
 
-        <div class="page-header">
-          
-          <h1 class="heading-xlarge">Parcel details <span class="heading-secondary">Beech Farm</span></h1>
+      <div class="page-header">
         
-          <dl class="list-parcel">
-            <dt>Parcel ID</dt>
-            <dd>SE0103 8038</dd>
-          </dl>
-        
-        </div>
-        
-
-        <p>This is a summary of the land parcel information Rural Payments currently holds for this land.</p>
-
-        <table>
-          <caption class="visuallyhidden">Summary of land parcel information</caption>
-          <thead>
-            <tr>
-              <th scope="col" colspan="2">Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row"><abbr title="Basic Payment Scheme">BPS</abbr> eligible area (<abbr title="hectare">ha</abbr>)</ts>
-              <td class="numeric">0.00</td>
-            </tr>
-            <tr>
-              <td scope="row">Total area (<abbr title="hectare">ha</abbr>)</td>
-              <td class="numeric">0.84</td>
-            </tr>
-          </tbody>
-        </table>
-        
-        
-        <h2 class="heading-medium">Land covers</h2>
-        
-        <p>Thease are the land covers you told us about.</p>
-
-
-        <table class="table-land-parcels js-table-sortable">
-          <caption class="visuallyhidden">Land parcel distribution</caption>
-          <thead>
-            <tr>
-              <th scope="col" data-sort="string">Land cover</th>
-              <th class="numeric" scope="col" data-sort="int">Total area (<abbr title="hectare">ha</abbr>)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"><a href="/">Natural Woodland</a></th>
-              <td class="numeric">0.84</td>
-            </tr>
-            <tr>
-              <th scope="row"><a href="/">Grassland</a></th>
-              <td class="numeric">1.52</td>
-            </tr>
-          </tbody>
-        </table>
-
-
+        <h1 class="heading-xlarge">{{page_name}} <span class="heading-secondary">Beech Farm</span></h1>
+      
+        <dl class="list-parcel">
+          <dt>Parcel ID</dt>
+          <dd>SE0103 8038</dd>
+        </dl>
+      
       </div>
+      
 
+      <p>This is a summary of the land parcel information Rural Payments currently holds for this land.</p>
 
-      <div class="column-half">
+      <table>
+        <caption class="visuallyhidden">Summary of land parcel information</caption>
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row"><abbr title="Basic Payment Scheme">BPS</abbr> eligible area (<abbr title="hectare">ha</abbr>)</ts>
+            <td class="numeric">0.00</td>
+          </tr>
+          <tr>
+            <td scope="row">Total area (<abbr title="hectare">ha</abbr>)</td>
+            <td class="numeric">0.84</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+      <h2 class="heading-medium">Land covers</h2>
+      
+      <p>Thease are the land covers you told us about.</p>
 
-        {{>map}}
-        
-        <h3 class="heading-small">Is this information up to date?</h3>
-        
-        <p class="font-xsmall">If you have already asked us to make changes to information about your land, they might not show here yet.</p>
-        
-        <p class="font-xsmall">If you need to tell us about any changes to your land you should fill in an <a href="/">RLE1 form </a>.</p>
+      <table class="table-land-parcels js-table-sortable">
+        <caption class="visuallyhidden">Land parcel distribution</caption>
+        <thead>
+          <tr>
+            <th scope="col" data-sort="string">Land cover</th>
+            <th class="numeric" scope="col" data-sort="int">Total area (<abbr title="hectare">ha</abbr>)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><a href="/">Natural Woodland</a></th>
+            <td class="numeric">0.84</td>
+          </tr>
+          <tr>
+            <th scope="row"><a href="/">Grassland</a></th>
+            <td class="numeric">1.52</td>
+          </tr>
+        </tbody>
+      </table>
+
 
     </div>
+
+
+    <div class="column-half">
+
+      {{>map}}
+      
+      <h3 class="heading-small">Is this information up to date?</h3>
+      
+      <p class="font-xsmall">If you have already asked us to make changes to information about your land, they might not show here yet.</p>
+      
+      <p class="font-xsmall">If you need to tell us about any changes to your land you should fill in an <a href="/">RLE1 form </a>.</p>
+
+    </div>
+    
+    
+  </div>
