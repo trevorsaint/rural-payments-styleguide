@@ -12,7 +12,7 @@
   <p class="text">This link associates with the dialog overlay using the 'data-target' attribute.</p>
 
   <pre><code class="prettyprint">
-    &lt;a href=&quot;#&quot; data-toggle=&quot;dialog&quot; data-target=&quot;dialog-1&quot;&gt;sign out&lt;/a&gt;
+   &lt;a href=&quot;#&quot; data-toggle=&quot;dialog&quot; data-target=&quot;dialog-1&quot;&gt;sign out&lt;/a&gt;
   </code></pre>
 
 
@@ -21,34 +21,34 @@
   <p class="text">The dialog overlay can either be located in the page or called via <abbr title="Asynchronous JavaScript and XML">AJAX</abbr>.</p>
 
   <pre><code class="prettyprint">
-    &lt;div class=&quot;dialog&quot; id=&quot;dialog-1&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;div class=&quot;dialog&quot; id=&quot;dialog-1&quot; aria-hidden=&quot;true&quot;&gt;
+  
+    &lt;div class=&quot;dialog-holder&quot; aria-labelledby=&quot;title-1&quot; aria-describedby=&quot;content-1&quot; role=&quot;alertdialog&quot;&gt;
     
-      &lt;div class=&quot;dialog-holder&quot; aria-labelledby=&quot;title-1&quot; aria-describedby=&quot;content-1&quot; role=&quot;alertdialog&quot;&gt;
+      &lt;div class=&quot;dialog-content&quot; id=&quot;content-1&quot; role=&quot;document&quot; tabindex=&quot;0&quot;&gt;
       
-        &lt;div class=&quot;dialog-content&quot; id=&quot;content-1&quot; role=&quot;document&quot; tabindex=&quot;0&quot;&gt;
+        &lt;h1 class=&quot;dialog-heading&quot; id=&quot;title-1&quot;&gt;Sign out&lt;/h1&gt;
+      
+        &lt;form class=&quot;form&quot;&gt;
         
-          &lt;h1 class=&quot;dialog-heading&quot; id=&quot;title-1&quot;&gt;Sign out&lt;/h1&gt;
-        
-          &lt;form class=&quot;form&quot;&gt;
+          &lt;p&gt;This will end your session. Are you sure you want to sign out?&lt;/p&gt;
           
-            &lt;p&gt;This will end your session. Are you sure you want to sign out?&lt;/p&gt;
-            
-            &lt;div class=&quot;dialog-actions&quot;&gt;
-              &lt;button class=&quot;button&quot;&gt;Yes&lt;/button&gt;
-              &lt;a class=&quot;dialog-cancel&quot; href=&quot;#&quot;&gt;No&lt;/a&gt;
-            &lt;/div&gt;
-            
-            &lt;button class=&quot;dialog-close&quot; aria-label=&quot;close&quot; type=&quot;button&quot;&gt;
-              &lt;span class=&quot;icon icon-close&quot;&gt;x&lt;/span&gt;
-            &lt;/button&gt;
+          &lt;div class=&quot;dialog-actions&quot;&gt;
+            &lt;button class=&quot;button&quot;&gt;Yes&lt;/button&gt;
+            &lt;a class=&quot;dialog-cancel&quot; href=&quot;#&quot;&gt;No&lt;/a&gt;
+          &lt;/div&gt;
           
-          &lt;/form&gt;
+          &lt;button class=&quot;dialog-close&quot; aria-label=&quot;close&quot; type=&quot;button&quot;&gt;
+            &lt;span class=&quot;icon icon-close&quot;&gt;x&lt;/span&gt;
+          &lt;/button&gt;
         
-        &lt;/div&gt;
+        &lt;/form&gt;
       
       &lt;/div&gt;
     
     &lt;/div&gt;
+  
+  &lt;/div&gt;
   </code></pre>
 
 

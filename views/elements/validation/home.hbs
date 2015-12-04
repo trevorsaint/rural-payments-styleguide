@@ -60,52 +60,49 @@
   
   
   </div>
-  
   <pre><code class="prettyprint">
+  &lt;div class=&quot;error-summary&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;error-summary-heading&quot; role=&quot;group&quot;&gt;
+
+    &lt;h1 class=&quot;heading-medium error-summary-heading&quot; id=&quot;error-summary-heading&quot;&gt;
+      Message to alert the user to a problem goes here
+    &lt;/h1&gt;
+
+    &lt;p&gt;Optional description of the error(s) and how to correct them&lt;/p&gt;
+
+    &lt;ul class=&quot;error-summary-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#error-full-name&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#error-ni-number&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+  &lt;/div&gt;
+
+  &lt;h1 class=&quot;heading-large&quot;&gt;Your personal details&lt;/h1&gt;
+
+  &lt;div class=&quot;form-group error&quot;&gt;
     
-    &lt;div class=&quot;error-summary&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;error-summary-heading&quot; role=&quot;group&quot;&gt;
-
-      &lt;h1 class=&quot;heading-medium error-summary-heading&quot; id=&quot;error-summary-heading&quot;&gt;
-        Message to alert the user to a problem goes here
-      &lt;/h1&gt;
-
-      &lt;p&gt;Optional description of the error(s) and how to correct them&lt;/p&gt;
-
-      &lt;ul class=&quot;error-summary-list&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;#error-full-name&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#error-ni-number&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-
-    &lt;/div&gt;
-
-    &lt;h1 class=&quot;heading-large&quot;&gt;Your personal details&lt;/h1&gt;
-
-    &lt;div class=&quot;form-group error&quot;&gt;
-      
-      &lt;label for=&quot;full-name&quot; id=&quot;error-full-name&quot;&gt;
-        &lt;span class=&quot;form-label-bold&quot;&gt;Full name&lt;/span&gt;
-        &lt;span class=&quot;form-hint&quot;&gt;Form hint goes here&lt;/span&gt;
-        &lt;span class=&quot;error-message&quot; id=&quot;error-message-full-name&quot;&gt;Error message goes here&lt;/span&gt;
-      &lt;/label&gt;
-      
-      &lt;input class=&quot;form-control&quot; id=&quot;full-name&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-full-name&quot;&gt;
-      
-    &lt;/div&gt;
-
-    &lt;div class=&quot;form-group error&quot;&gt;
-      
-      &lt;label for=&quot;ni-number&quot; id=&quot;error-ni-number&quot;&gt;
-        &lt;span class=&quot;form-label-bold&quot;&gt;National Insurance number&lt;/span&gt;
-        &lt;span class=&quot;form-hint&quot;&gt;Form hint goes here&lt;/span&gt;
-        &lt;span class=&quot;error-message&quot; id=&quot;error-message-ni-number&quot;&gt;Error message goes here&lt;/span&gt;
-      &lt;/label&gt;
-      
-      &lt;input class=&quot;form-control&quot; id=&quot;ni-number&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-ni-number&quot;&gt;
-      
-    &lt;/div&gt;
-
-    &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Continue&quot;&gt;
+    &lt;label for=&quot;full-name&quot; id=&quot;error-full-name&quot;&gt;
+      &lt;span class=&quot;form-label-bold&quot;&gt;Full name&lt;/span&gt;
+      &lt;span class=&quot;form-hint&quot;&gt;Form hint goes here&lt;/span&gt;
+      &lt;span class=&quot;error-message&quot; id=&quot;error-message-full-name&quot;&gt;Error message goes here&lt;/span&gt;
+    &lt;/label&gt;
     
+    &lt;input class=&quot;form-control&quot; id=&quot;full-name&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-full-name&quot;&gt;
+    
+  &lt;/div&gt;
+
+  &lt;div class=&quot;form-group error&quot;&gt;
+    
+    &lt;label for=&quot;ni-number&quot; id=&quot;error-ni-number&quot;&gt;
+      &lt;span class=&quot;form-label-bold&quot;&gt;National Insurance number&lt;/span&gt;
+      &lt;span class=&quot;form-hint&quot;&gt;Form hint goes here&lt;/span&gt;
+      &lt;span class=&quot;error-message&quot; id=&quot;error-message-ni-number&quot;&gt;Error message goes here&lt;/span&gt;
+    &lt;/label&gt;
+    
+    &lt;input class=&quot;form-control&quot; id=&quot;ni-number&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-ni-number&quot;&gt;
+    
+  &lt;/div&gt;
+
+  &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Continue&quot;&gt;
   </code></pre>
   
   
@@ -155,57 +152,53 @@
     <input class="button" type="submit" value="Continue">
   
   </div>
-  
-  
   <pre><code class="prettyprint">
+  &lt;div class=&quot;error-summary&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;error-summary-heading-2&quot; role=&quot;group&quot;&gt;
+
+    &lt;h1 class=&quot;heading-medium error-summary-heading&quot; id=&quot;error-summary-heading-2&quot;&gt;
+      Message to alert the user to a problem goes here
+    &lt;/h1&gt;
+
+    &lt;p&gt;Optional description of the error(s) and how to correct them&lt;/p&gt;
+
+    &lt;ul class=&quot;error-summary-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#error-full-name&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#error-ni-number&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+  &lt;/div&gt;
+
+  &lt;h1 class=&quot;heading-large&quot;&gt;Your personal details&lt;/h1&gt;
+
+  &lt;div class=&quot;form-group error&quot;&gt;
+
+    &lt;label id=&quot;error-full-name&quot; for=&quot;full-name&quot;&gt;
+      &lt;span class=&quot;form-label-bold&quot;&gt;Full name&lt;/span&gt;
+      &lt;span class=&quot;form-hint&quot;&gt;As shown on your birth certificate or passport&lt;/span&gt;
+      &lt;span class=&quot;error-message&quot; id=&quot;error-message-full-name&quot;&gt;Error message about full name goes here&lt;/span&gt;
+    &lt;/label&gt;
+
+    &lt;input class=&quot;form-control&quot; id=&quot;full-name&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-full-name&quot;&gt;
     
-    &lt;div class=&quot;error-summary&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;error-summary-heading-2&quot; role=&quot;group&quot;&gt;
+  &lt;/div&gt;
 
-      &lt;h1 class=&quot;heading-medium error-summary-heading&quot; id=&quot;error-summary-heading-2&quot;&gt;
-        Message to alert the user to a problem goes here
-      &lt;/h1&gt;
+  &lt;div class=&quot;form-group error&quot;&gt;
 
-      &lt;p&gt;Optional description of the error(s) and how to correct them&lt;/p&gt;
+    &lt;label for=&quot;ni-number&quot; id=&quot;error-ni-number&quot;&gt;
+      &lt;span class=&quot;form-label-bold&quot;&gt;National Insurance number&lt;/span&gt;
+      &lt;span class=&quot;form-hint&quot;&gt;
+        It's on your National Insurance card, benefit letter, payslip or P60. 
+        &lt;br&gt; For example, 'VO 12 34 56 D'.
+      &lt;/span&gt;
+      &lt;span class=&quot;error-message&quot; id=&quot;error-message-ni-number&quot;&gt;
+        Error message about National Insurance number goes here
+      &lt;/span&gt;
+    &lt;/label&gt;
 
-      &lt;ul class=&quot;error-summary-list&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;#error-full-name&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#error-ni-number&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;ni-number&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-ni-number&quot;&gt;
 
-    &lt;/div&gt;
+  &lt;/div&gt;
 
-    &lt;h1 class=&quot;heading-large&quot;&gt;Your personal details&lt;/h1&gt;
-
-    &lt;div class=&quot;form-group error&quot;&gt;
-
-      &lt;label id=&quot;error-full-name&quot; for=&quot;full-name&quot;&gt;
-        &lt;span class=&quot;form-label-bold&quot;&gt;Full name&lt;/span&gt;
-        &lt;span class=&quot;form-hint&quot;&gt;As shown on your birth certificate or passport&lt;/span&gt;
-        &lt;span class=&quot;error-message&quot; id=&quot;error-message-full-name&quot;&gt;Error message about full name goes here&lt;/span&gt;
-      &lt;/label&gt;
-
-      &lt;input class=&quot;form-control&quot; id=&quot;full-name&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-full-name&quot;&gt;
-      
-    &lt;/div&gt;
-
-    &lt;div class=&quot;form-group error&quot;&gt;
-
-      &lt;label for=&quot;ni-number&quot; id=&quot;error-ni-number&quot;&gt;
-        &lt;span class=&quot;form-label-bold&quot;&gt;National Insurance number&lt;/span&gt;
-        &lt;span class=&quot;form-hint&quot;&gt;
-          It's on your National Insurance card, benefit letter, payslip or P60. 
-          &lt;br&gt; For example, 'VO 12 34 56 D'.
-        &lt;/span&gt;
-        &lt;span class=&quot;error-message&quot; id=&quot;error-message-ni-number&quot;&gt;
-          Error message about National Insurance number goes here
-        &lt;/span&gt;
-      &lt;/label&gt;
-
-      &lt;input class=&quot;form-control&quot; id=&quot;ni-number&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-ni-number&quot;&gt;
-
-    &lt;/div&gt;
-
-    &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Continue&quot;&gt;
-    
+  &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Continue&quot;&gt;
   </code></pre>
   

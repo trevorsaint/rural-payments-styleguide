@@ -20,7 +20,7 @@ module.exports = {
     var businessEngine = require('../models/businesses');
 
 
-    // ROUTES
+    // Index
     // ==============================================
 
 
@@ -30,7 +30,8 @@ module.exports = {
     app.get('/', function(req, res) {
 
       data = {
-        doctitle: 'Index', 
+        doctitle: 'RPA Styleguide', 
+        isIndex: true,
         beta: true
       };
       
@@ -44,8 +45,8 @@ module.exports = {
 
     app.get('/layout', function(req, res) {
       data = {
-        doctitle:       'Layout',
-        page_name:      'Layout',
+        doctitle: 'Layout',
+        page_name: 'Layout',
         prettifyScript: true,
       };
       res.render('elements/layout/home', data);
@@ -53,8 +54,8 @@ module.exports = {
     
     app.get('/collapsibles', function(req, res) {
       data = {
-        doctitle:       'Collapsibles',
-        page_name:      'Collapsibles',
+        doctitle: 'Collapsibles',
+        page_name: 'Collapsibles',
         prettifyScript: true,
       };
       res.render('elements/collapsibles/home', data);
@@ -95,6 +96,17 @@ module.exports = {
       res.render('elements/checklist/home', data);
     
     });
+      app.get('/checklist/example', function(req, res) {
+    
+        data = {
+          doctitle: 'Checklist example',
+          openLayers: true
+        };
+        
+        res.render('elements/checklist/example/home', data);
+      
+      });
+    
     
     app.get('/application', function(req, res) {
     
@@ -231,27 +243,7 @@ module.exports = {
       res.render('elements/forms/form-validation/home', data);
     
     });
-    
 
-    
-
-    
-
-    
-
-
-    app.get('/checklist/example', function(req, res) {
-    
-      data = {
-        doctitle: 'Checklist example',
-        openLayers: true
-      };
-      
-      res.render('elements/checklist/example/home', data);
-    
-    });
-
-    
     
 
    

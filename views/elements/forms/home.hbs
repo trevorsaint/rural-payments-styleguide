@@ -20,10 +20,9 @@
     </form>
     
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;label class=&quot;form-label&quot; for=&quot;full-name&quot;&gt;Full name&lt;/label&gt;
-    &lt;input class=&quot;form-control&quot; name=&quot;full-name&quot; id=&quot;full-name&quot; type=&quot;text&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;full-name&quot;&gt;Full name&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; name=&quot;full-name&quot; id=&quot;full-name&quot; type=&quot;text&quot;&gt;
   </code></pre>
   
 
@@ -43,14 +42,13 @@
     </form>
   
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;label class=&quot;form-label&quot; for=&quot;ni-number&quot;&gt;
-      National Insurance number
-      &lt;span class=&quot;form-hint&quot;&gt;It'll be on your last payslip. For example, JH 21 90 0A.&lt;/span&gt;
-    &lt;/label&gt;
-    
-    &lt;input class=&quot;form-control&quot; name=&quot;ni-number&quot; id=&quot;ni-number&quot; type=&quot;text&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;ni-number&quot;&gt;
+    National Insurance number
+    &lt;span class=&quot;form-hint&quot;&gt;It'll be on your last payslip. For example, JH 21 90 0A.&lt;/span&gt;
+  &lt;/label&gt;
+  
+  &lt;input class=&quot;form-control&quot; name=&quot;ni-number&quot; id=&quot;ni-number&quot; type=&quot;text&quot;&gt;
   </code></pre>
 
 
@@ -73,17 +71,16 @@
     </form>
     
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;div class=&quot;form-group&quot;&gt;
-      &lt;label class=&quot;form-label&quot; for=&quot;first-name&quot;&gt;First name&lt;/label&gt;
-      &lt;input class=&quot;form-control&quot; name=&quot;first-name&quot; id=&quot;first-name&quot; type=&quot;text&quot;&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;form-group&quot;&gt;
-      &lt;label class=&quot;form-label&quot; for=&quot;last-name&quot;&gt;Last name&lt;/label&gt;
-      &lt;input class=&quot;form-control&quot; name=&quot;last-name&quot; id=&quot;last-name&quot; type=&quot;text&quot;&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;first-name&quot;&gt;First name&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; name=&quot;first-name&quot; id=&quot;first-name&quot; type=&quot;text&quot;&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;last-name&quot;&gt;Last name&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; name=&quot;last-name&quot; id=&quot;last-name&quot; type=&quot;text&quot;&gt;
+  &lt;/div&gt;
   </code></pre>
 
 
@@ -125,34 +122,33 @@
     </form>
   
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;fieldset&gt;
+  &lt;fieldset&gt;
+  
+    &lt;legend class=&quot;form-label&quot;&gt;Date of birth&lt;/legend&gt;
     
-      &lt;legend class=&quot;form-label&quot;&gt;Date of birth&lt;/legend&gt;
+    &lt;div class=&quot;form-date&quot;&gt;
+    
+      &lt;p class=&quot;form-hint&quot;&gt;For example, 31 3 1980&lt;/p&gt;
       
-      &lt;div class=&quot;form-date&quot;&gt;
+      &lt;div class=&quot;form-group form-group-day&quot;&gt;
+        &lt;label for=&quot;dob-day&quot;&gt;Day&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; id=&quot;dob-day&quot; type=&quot;number&quot; pattern=&quot;[0-9]*&quot; min=&quot;0&quot; max=&quot;31&quot;&gt;
+      &lt;/div&gt;
       
-        &lt;p class=&quot;form-hint&quot;&gt;For example, 31 3 1980&lt;/p&gt;
-        
-        &lt;div class=&quot;form-group form-group-day&quot;&gt;
-          &lt;label for=&quot;dob-day&quot;&gt;Day&lt;/label&gt;
-          &lt;input class=&quot;form-control&quot; id=&quot;dob-day&quot; type=&quot;number&quot; pattern=&quot;[0-9]*&quot; min=&quot;0&quot; max=&quot;31&quot;&gt;
-        &lt;/div&gt;
-        
-        &lt;div class=&quot;form-group form-group-month&quot;&gt;
-          &lt;label for=&quot;dob-month&quot;&gt;Month&lt;/label&gt;
-          &lt;input class=&quot;form-control&quot; id=&quot;dob-month&quot; type=&quot;number&quot; pattern=&quot;[0-9]*&quot; min=&quot;0&quot; max=&quot;12&quot;&gt;
-        &lt;/div&gt;
-        
-        &lt;div class=&quot;form-group form-group-year&quot;&gt;
-          &lt;label for=&quot;dob-year&quot;&gt;Year&lt;/label&gt;
-          &lt;input class=&quot;form-control&quot; id=&quot;dob-year&quot; type=&quot;number&quot; pattern=&quot;[0-9]*&quot; min=&quot;0&quot; max=&quot;2014&quot;&gt;
-        &lt;/div&gt;
+      &lt;div class=&quot;form-group form-group-month&quot;&gt;
+        &lt;label for=&quot;dob-month&quot;&gt;Month&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; id=&quot;dob-month&quot; type=&quot;number&quot; pattern=&quot;[0-9]*&quot; min=&quot;0&quot; max=&quot;12&quot;&gt;
+      &lt;/div&gt;
       
+      &lt;div class=&quot;form-group form-group-year&quot;&gt;
+        &lt;label for=&quot;dob-year&quot;&gt;Year&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; id=&quot;dob-year&quot; type=&quot;number&quot; pattern=&quot;[0-9]*&quot; min=&quot;0&quot; max=&quot;2014&quot;&gt;
       &lt;/div&gt;
     
-    &lt;/fieldset&gt;
+    &lt;/div&gt;
+  
+  &lt;/fieldset&gt;
   </code></pre>
   
 
@@ -176,17 +172,16 @@
     </form>
     
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;label class=&quot;form-label&quot; for=&quot;legal-status&quot;&gt;Legal status&lt;/label&gt;
-    
-    &lt;select class=&quot;form-control-select&quot; name=&quot;legal-status&quot; id=&quot;legal-status&quot;&gt;
-      &lt;option&gt;-- Please make a selection --&lt;/option&gt;
-      &lt;option value=&quot;1&quot;&gt;Charitable Interest Organisation&lt;/option&gt;
-      &lt;option value=&quot;2&quot;&gt;Community Interest Company&lt;/option&gt;
-      &lt;option value=&quot;3&quot;&gt;Government (Central)&lt;/option&gt;
-      &lt;option value=&quot;4&quot;&gt;Government Limited Liability Partnership&lt;/option&gt;
-    &lt;/select&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;legal-status&quot;&gt;Legal status&lt;/label&gt;
+  
+  &lt;select class=&quot;form-control-select&quot; name=&quot;legal-status&quot; id=&quot;legal-status&quot;&gt;
+    &lt;option&gt;-- Please make a selection --&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Charitable Interest Organisation&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Community Interest Company&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Government (Central)&lt;/option&gt;
+    &lt;option value=&quot;4&quot;&gt;Government Limited Liability Partnership&lt;/option&gt;
+  &lt;/select&gt;
   </code></pre>
   
 
@@ -208,13 +203,12 @@
     </form>
   
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;div class=&quot;form-search&quot;&gt;
-      &lt;label class=&quot;form-label&quot;&gt;What are you looking for?&lt;/label&gt;
-      &lt;input class=&quot;form-control&quot; name=&quot;search&quot; id=&quot;search&quot; type=&quot;text&quot;&gt;
-      &lt;button class=&quot;button&quot; type=&quot;button&quot;&gt;Search&lt;/button&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;form-search&quot;&gt;
+    &lt;label class=&quot;form-label&quot;&gt;What are you looking for?&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; name=&quot;search&quot; id=&quot;search&quot; type=&quot;text&quot;&gt;
+    &lt;button class=&quot;button&quot; type=&quot;button&quot;&gt;Search&lt;/button&gt;
+  &lt;/div&gt;
   </code></pre>
   
   
@@ -228,10 +222,9 @@
     </form>
   
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;label class=&quot;form-label&quot; for=&quot;enquiry&quot;&gt;Enquiry&lt;/label&gt;
-    &lt;textarea class=&quot;form-control form-control-textarea&quot; id=&quot;enquiry&quot; rows=&quot;6&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;enquiry&quot;&gt;Enquiry&lt;/label&gt;
+  &lt;textarea class=&quot;form-control form-control-textarea&quot; id=&quot;enquiry&quot; rows=&quot;6&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;
   </code></pre>
   
 
@@ -260,23 +253,22 @@
     </form>
   
   </div>  
-  
   <pre><code class="prettyprint">
-    &lt;fieldset class=&quot;inline&quot;&gt;
+  &lt;fieldset class=&quot;inline&quot;&gt;
+  
+    &lt;legend&gt;
+      &lt;span class=&quot;form-label-bold&quot;&gt;Do you already have a personal user account?&lt;/span&gt;
+    &lt;/legend&gt;
     
-      &lt;legend&gt;
-        &lt;span class=&quot;form-label-bold&quot;&gt;Do you already have a personal user account?&lt;/span&gt;
-      &lt;/legend&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;radio-inline-1&quot;&gt;
-        &lt;input id=&quot;radio-inline-1&quot; name=&quot;radio-inline-group&quot; value=&quot;Yes&quot; type=&quot;radio&quot;&gt; Yes
-      &lt;/label&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;radio-inline-2&quot;&gt;
-        &lt;input id=&quot;radio-inline-2&quot; name=&quot;radio-inline-group&quot; value=&quot;No&quot; type=&quot;radio&quot;&gt; No
-      &lt;/label&gt;
+    &lt;label class=&quot;block-label&quot; for=&quot;radio-inline-1&quot;&gt;
+      &lt;input id=&quot;radio-inline-1&quot; name=&quot;radio-inline-group&quot; value=&quot;Yes&quot; type=&quot;radio&quot;&gt; Yes
+    &lt;/label&gt;
     
-    &lt;/fieldset&gt;
+    &lt;label class=&quot;block-label&quot; for=&quot;radio-inline-2&quot;&gt;
+      &lt;input id=&quot;radio-inline-2&quot; name=&quot;radio-inline-group&quot; value=&quot;No&quot; type=&quot;radio&quot;&gt; No
+    &lt;/label&gt;
+  
+  &lt;/fieldset&gt;
   </code></pre>
   
   
@@ -313,33 +305,32 @@
     
     </form>
   
-  </div>
-  
+  </div> 
   <pre><code class="prettyprint">
-    &lt;fieldset&gt;
+  &lt;fieldset&gt;
+  
+    &lt;legend&gt;
+      &lt;span class=&quot;form-label-bold&quot;&gt;Where do you live?&lt;/span&gt;
+    &lt;/legend&gt;
     
-      &lt;legend&gt;
-        &lt;span class=&quot;form-label-bold&quot;&gt;Where do you live?&lt;/span&gt;
-      &lt;/legend&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;radio-1&quot;&gt;
-        &lt;input id=&quot;radio-1&quot; name=&quot;radio-group&quot; value=&quot;Northern Ireland&quot; type=&quot;radio&quot;&gt;
-        Northern Ireland
-      &lt;/label&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;radio-2&quot;&gt;
-        &lt;input id=&quot;radio-2&quot; name=&quot;radio-group&quot; value=&quot;Isle of Man or the Channel Islands&quot; type=&quot;radio&quot;&gt;
-        Isle of Man or the Channel Islands
-      &lt;/label&gt;
-      
-      &lt;p class=&quot;form-block&quot;&gt;or&lt;/p&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;radio-3&quot;&gt;
-        &lt;input id=&quot;radio-3&quot; name=&quot;radio-group&quot; value=&quot;I am a British citizen living abroad&quot; type=&quot;radio&quot;&gt;
-        I am a British citizen living abroad
-      &lt;/label&gt;
+    &lt;label class=&quot;block-label&quot; for=&quot;radio-1&quot;&gt;
+      &lt;input id=&quot;radio-1&quot; name=&quot;radio-group&quot; value=&quot;Northern Ireland&quot; type=&quot;radio&quot;&gt;
+      Northern Ireland
+    &lt;/label&gt;
     
-    &lt;/fieldset&gt;
+    &lt;label class=&quot;block-label&quot; for=&quot;radio-2&quot;&gt;
+      &lt;input id=&quot;radio-2&quot; name=&quot;radio-group&quot; value=&quot;Isle of Man or the Channel Islands&quot; type=&quot;radio&quot;&gt;
+      Isle of Man or the Channel Islands
+    &lt;/label&gt;
+    
+    &lt;p class=&quot;form-block&quot;&gt;or&lt;/p&gt;
+    
+    &lt;label class=&quot;block-label&quot; for=&quot;radio-3&quot;&gt;
+      &lt;input id=&quot;radio-3&quot; name=&quot;radio-group&quot; value=&quot;I am a British citizen living abroad&quot; type=&quot;radio&quot;&gt;
+      I am a British citizen living abroad
+    &lt;/label&gt;
+  
+  &lt;/fieldset&gt;
   </code></pre>
 
 
@@ -377,30 +368,29 @@
     </form>
   
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;fieldset&gt;
+  &lt;fieldset&gt;
+  
+    &lt;legend class=&quot;form-label-bold&quot;&gt;Which types of waste do you transport regularly?&lt;/legend&gt;
     
-      &lt;legend class=&quot;form-label-bold&quot;&gt;Which types of waste do you transport regularly?&lt;/legend&gt;
-      
-      &lt;p&gt;Select all that apply&lt;/p&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;checkbox-1&quot;&gt;
-        &lt;input id=&quot;checkbox-1&quot; value=&quot;waste-animal&quot; type=&quot;checkbox&quot;&gt;
-        Waste from animal carcasses
-      &lt;/label&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;checkbox-2&quot;&gt;
-        &lt;input id=&quot;checkbox-2&quot; value=&quot;waste-mines&quot; type=&quot;checkbox&quot;&gt;
-        Waste from mines or quarries
-      &lt;/label&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;checkbox-3&quot;&gt;
-        &lt;input id=&quot;checkbox-3&quot; value=&quot;farm-agricultural&quot; type=&quot;checkbox&quot;&gt;
-        Farm or agricultural waste
-      &lt;/label&gt;
+    &lt;p&gt;Select all that apply&lt;/p&gt;
     
-    &lt;/fieldset&gt;
+    &lt;label class=&quot;block-label&quot; for=&quot;checkbox-1&quot;&gt;
+      &lt;input id=&quot;checkbox-1&quot; value=&quot;waste-animal&quot; type=&quot;checkbox&quot;&gt;
+      Waste from animal carcasses
+    &lt;/label&gt;
+    
+    &lt;label class=&quot;block-label&quot; for=&quot;checkbox-2&quot;&gt;
+      &lt;input id=&quot;checkbox-2&quot; value=&quot;waste-mines&quot; type=&quot;checkbox&quot;&gt;
+      Waste from mines or quarries
+    &lt;/label&gt;
+    
+    &lt;label class=&quot;block-label&quot; for=&quot;checkbox-3&quot;&gt;
+      &lt;input id=&quot;checkbox-3&quot; value=&quot;farm-agricultural&quot; type=&quot;checkbox&quot;&gt;
+      Farm or agricultural waste
+    &lt;/label&gt;
+  
+  &lt;/fieldset&gt;
   </code></pre>
 
   
@@ -419,24 +409,19 @@
     </form>
   
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;label class=&quot;form-label&quot; for=&quot;telephone-number&quot;&gt;Enter your telephone number&lt;/label&gt;
-    &lt;input class=&quot;form-control&quot; id=&quot;telephone-number&quot; type=&quot;text&quot;&gt;    
-    &lt;label class=&quot;form-checkbox&quot; for=&quot;checkbox-telephone-number&quot;&gt;
-    &lt;input id=&quot;checkbox-telephone-number&quot; name=&quot;checkbox-telephone-number&quot; value=&quot;true&quot; type=&quot;checkbox&quot;&gt;
-      I need to be contacted using a text phone
-    &lt;/label&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;telephone-number&quot;&gt;Enter your telephone number&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;telephone-number&quot; type=&quot;text&quot;&gt;    
+  &lt;label class=&quot;form-checkbox&quot; for=&quot;checkbox-telephone-number&quot;&gt;
+  &lt;input id=&quot;checkbox-telephone-number&quot; name=&quot;checkbox-telephone-number&quot; value=&quot;true&quot; type=&quot;checkbox&quot;&gt;
+    I need to be contacted using a text phone
+  &lt;/label&gt;
   </code></pre>
   
   
   <h3 class="heading-medium">Conditionally revealing content</h3>  
   
-  <div class="text">
-  
-    <p>Click on 'Yes' to see how this works.</p>
-    
-  </div>
+  <p class="text">Click on 'Yes' to see how this works.</p>
   
   
   <div class="example">
@@ -469,38 +454,33 @@
     </form>
   
   </div>
-  
   <pre><code class="prettyprint">
-    &lt;fieldset class=&quot;inline&quot;&gt;
+  &lt;fieldset class=&quot;inline&quot;&gt;
+  
+    &lt;legend&gt;
+      &lt;span class=&quot;form-label&quot;&gt;Do you know their National Insurance number?&lt;/span&gt;
+    &lt;/legend&gt;
     
-      &lt;legend&gt;
-        &lt;span class=&quot;form-label&quot;&gt;Do you know their National Insurance number?&lt;/span&gt;
-      &lt;/legend&gt;
-      
-      &lt;label class=&quot;block-label&quot; data-target=&quot;example-ni-number&quot; for=&quot;radio-indent-1&quot;&gt;
-        &lt;input id=&quot;radio-indent-1&quot; name=&quot;radio-indent-group&quot; value=&quot;Yes&quot; type=&quot;radio&quot;&gt; Yes
-      &lt;/label&gt;
-      
-      &lt;label class=&quot;block-label&quot; for=&quot;radio-indent-2&quot;&gt;
-        &lt;input id=&quot;radio-indent-2&quot; name=&quot;radio-indent-group&quot; value=&quot;No&quot; type=&quot;radio&quot;&gt; No
-      &lt;/label&gt;
-      
-      &lt;div class=&quot;panel-indent js-hidden&quot; id=&quot;example-ni-number&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;national-insurance&quot;&gt;National Insurance number&lt;/label&gt;
-        &lt;input class=&quot;form-control&quot; name=&quot;national-insurance&quot; id=&quot;national-insurance&quot; type=&quot;text&quot;&gt;
-      &lt;/div&gt;
+    &lt;label class=&quot;block-label&quot; data-target=&quot;example-ni-number&quot; for=&quot;radio-indent-1&quot;&gt;
+      &lt;input id=&quot;radio-indent-1&quot; name=&quot;radio-indent-group&quot; value=&quot;Yes&quot; type=&quot;radio&quot;&gt; Yes
+    &lt;/label&gt;
     
-    &lt;/fieldset&gt;
+    &lt;label class=&quot;block-label&quot; for=&quot;radio-indent-2&quot;&gt;
+      &lt;input id=&quot;radio-indent-2&quot; name=&quot;radio-indent-group&quot; value=&quot;No&quot; type=&quot;radio&quot;&gt; No
+    &lt;/label&gt;
+    
+    &lt;div class=&quot;panel-indent js-hidden&quot; id=&quot;example-ni-number&quot;&gt;
+      &lt;label class=&quot;form-label&quot; for=&quot;national-insurance&quot;&gt;National Insurance number&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; name=&quot;national-insurance&quot; id=&quot;national-insurance&quot; type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+  
+  &lt;/fieldset&gt;
   </code></pre>  
   
   
   <h3 class="heading-medium">Autocomplete</h3>  
   
-  <div class="text">
-  
-    <p>Autocomplete provides suggestions while you type into the field.</p>
-  
-  </div>
+  <p class="text">Autocomplete provides suggestions while you type into the field.</p>
   
   
   <div class="example">
@@ -517,14 +497,13 @@
     </form>
     
   </div>  
-  
   <pre><code class="prettyprint">
-    &lt;label class=&quot;form-label&quot; for=&quot;town&quot;&gt;
-      Town or City
-      &lt;span class=&quot;form-hint&quot;&gt;For example, 'Am' (for Amersham or Amesbury)&lt;/span&gt;
-    &lt;/label&gt;
-    
-    &lt;input class=&quot;form-control js-tt&quot; name=&quot;town&quot; id=&quot;town&quot; type=&quot;text&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;town&quot;&gt;
+    Town or City
+    &lt;span class=&quot;form-hint&quot;&gt;For example, 'Am' (for Amersham or Amesbury)&lt;/span&gt;
+  &lt;/label&gt;
+  
+  &lt;input class=&quot;form-control js-tt&quot; name=&quot;town&quot; id=&quot;town&quot; type=&quot;text&quot;&gt;
   </code></pre>
   
   
