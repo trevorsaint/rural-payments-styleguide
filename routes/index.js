@@ -198,6 +198,19 @@ module.exports = {
     
     });
     
+    app.get('/dialogs', function(req, res) {
+    
+      data = {
+        doctitle:       'Dialog overlays',
+        page_name:      'Dialog overlays',
+        prettifyScript: true,
+        autocomplete:   true
+      };
+      
+      res.render('elements/dialogs/home', data);
+    
+    });
+    
     
     
     
@@ -224,15 +237,7 @@ module.exports = {
 
     
 
-    app.get('/dialogs', function(req, res) {
     
-      data = {
-        doctitle: 'Dialogs'
-      };
-      
-      res.render('elements/dialogs/home', data);
-    
-    });
 
 
     app.get('/checklist/example', function(req, res) {

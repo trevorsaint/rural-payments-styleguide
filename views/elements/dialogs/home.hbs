@@ -1,36 +1,71 @@
-  <a class="link-back" href="/">Back to the index</a>
-
-
-	<h1 class="heading-xlarge">Dialogs</h1>
-	
-	
-	<!-- introduction -->
-	<div class="text">
-		<p>The dialogs are in this page. I would assume that AJAX would be used to pull each dialog into view. Ensure that all attributes are used. This is of great importance due to accessibility.</p>
-	</div>
-
-
-  <!-- examples -->
-  <h2 class="heading-medium">Examples</h2>
+  {{>breadcrumb}}
   
   
-  <div class="example">
-
-		<ul class="list-nav">
-  		<li><a href="/" data-toggle="dialog" data-target="dialog-1">Sign out</a></li>
-  		<li><a href="/" data-toggle="dialog" data-target="dialog-2">Lock customers account</a></li>
-  		<li><a href="/" data-toggle="dialog" data-target="dialog-3">Duplicate found</a></li>
-  		<li><a href="/" data-toggle="dialog" data-target="dialog-4">Provide feedback</a></li>
-  		<li><a href="/" data-toggle="dialog" data-target="dialog-5">Change owner</a></li>
-  		<li><a href="/" data-toggle="dialog" data-target="dialog-6">Warning</a></li>
-  		<li><a href="/" data-toggle="dialog" data-target="dialog-7">Remove a person</a></li>
-  		<li><a href="/" data-toggle="dialog" data-target="dialog-8">Archive customer record</a></li>
-		</ul>
-	
-  </div>
+  <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
+  
+  
+  <p class="lede">Ensure all <abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes are applied.</p>
 
 
-  <!-- dialog 1 -->
+  <h3 class="heading-medium">Link</h3>
+  
+  <p class="text">This link associates with the dialog overlay using the 'data-target' attribute.</p>
+
+  <pre><code class="prettyprint">
+    &lt;a href=&quot;#&quot; data-toggle=&quot;dialog&quot; data-target=&quot;dialog-1&quot;&gt;sign out&lt;/a&gt;
+  </code></pre>
+
+
+  <h3 class="heading-medium">Dialog overlay</h3>
+  
+  <p class="text">The dialog overlay can either be located in the page or called via <abbr title="Asynchronous JavaScript and XML">AJAX</abbr>.</p>
+
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;dialog&quot; id=&quot;dialog-1&quot; aria-hidden=&quot;true&quot;&gt;
+    
+      &lt;div class=&quot;dialog-holder&quot; aria-labelledby=&quot;title-1&quot; aria-describedby=&quot;content-1&quot; role=&quot;alertdialog&quot;&gt;
+      
+        &lt;div class=&quot;dialog-content&quot; id=&quot;content-1&quot; role=&quot;document&quot; tabindex=&quot;0&quot;&gt;
+        
+          &lt;h1 class=&quot;dialog-heading&quot; id=&quot;title-1&quot;&gt;Sign out&lt;/h1&gt;
+        
+          &lt;form class=&quot;form&quot;&gt;
+          
+            &lt;p&gt;This will end your session. Are you sure you want to sign out?&lt;/p&gt;
+            
+            &lt;div class=&quot;dialog-actions&quot;&gt;
+              &lt;button class=&quot;button&quot;&gt;Yes&lt;/button&gt;
+              &lt;a class=&quot;dialog-cancel&quot; href=&quot;#&quot;&gt;No&lt;/a&gt;
+            &lt;/div&gt;
+            
+            &lt;button class=&quot;dialog-close&quot; aria-label=&quot;close&quot; type=&quot;button&quot;&gt;
+              &lt;span class=&quot;icon icon-close&quot;&gt;x&lt;/span&gt;
+            &lt;/button&gt;
+          
+          &lt;/form&gt;
+        
+        &lt;/div&gt;
+      
+      &lt;/div&gt;
+    
+    &lt;/div&gt;
+  </code></pre>
+
+
+  <h3 class="heading-medium">Examples</h3>
+  
+  <ul class="list-bullet">
+		<li><a href="/" data-toggle="dialog" data-target="dialog-1">sign out</a></li>
+		<li><a href="/" data-toggle="dialog" data-target="dialog-2">lock customers account</a></li>
+		<li><a href="/" data-toggle="dialog" data-target="dialog-3">duplicate found</a></li>
+		<li><a href="/" data-toggle="dialog" data-target="dialog-4">provide feedback</a></li>
+		<li><a href="/" data-toggle="dialog" data-target="dialog-5">change owner</a></li>
+		<li><a href="/" data-toggle="dialog" data-target="dialog-6">warning</a></li>
+		<li><a href="/" data-toggle="dialog" data-target="dialog-7">remove a person</a></li>
+		<li><a href="/" data-toggle="dialog" data-target="dialog-8">archive customer record</a></li>
+	</ul>
+
+
 	<div class="dialog" id="dialog-1" aria-hidden="true">
 
     <div class="dialog-holder" aria-labelledby="dialog-title-1" aria-describedby="dialog-content-1" role="alertdialog">
@@ -61,7 +96,6 @@
 	</div>
 
 
-	<!-- dialog 2-->
 	<div class="dialog" id="dialog-2" aria-hidden="true">
 
     <div class="dialog-holder" aria-labelledby="dialog-title-2" aria-describedby="dialog-content-2" role="alertdialog">
@@ -100,7 +134,6 @@
 	</div>
 
 
-	<!-- dialog 2-->
 	<div class="dialog" id="dialog-3" aria-hidden="true">
 
     <div class="dialog-holder" aria-labelledby="dialog-title-3" aria-describedby="dialog-content-3" role="alertdialog">
@@ -131,7 +164,6 @@
 	</div>
 
 
-	<!-- dialog 4-->
 	<div class="dialog" id="dialog-4" aria-hidden="true">
 
     <div class="dialog-holder" aria-labelledby="dialog-title-4" aria-describedby="dialog-content-4" role="alertdialog">
@@ -171,7 +203,6 @@
 	</div>
 
 
-	<!-- dialog 5-->
 	<div class="dialog" id="dialog-5" aria-hidden="true">
 
     <div class="dialog-holder" aria-labelledby="dialog-title-5" aria-describedby="dialog-content-5" role="alertdialog">
@@ -202,7 +233,6 @@
 	</div>
 
 
-	<!-- dialog 6-->
 	<div class="dialog" id="dialog-6" aria-hidden="true">
 
     <div class="dialog-holder" aria-labelledby="dialog-title-6" aria-describedby="dialog-content-6" role="alertdialog">
@@ -233,7 +263,6 @@
 	</div>
 
 
-	<!-- dialog 7-->
 	<div class="dialog" id="dialog-7" aria-hidden="true">
 
     <div class="dialog-holder" aria-labelledby="dialog-title-7" aria-describedby="dialog-content-7" role="alertdialog">
@@ -263,8 +292,7 @@
 
 	</div>
 	
-	
-	<!-- dialog 8-->
+
 	<div class="dialog" id="dialog-8" aria-hidden="true">
 
     <div class="dialog-holder" aria-labelledby="dialog-title-8" aria-describedby="dialog-content-8" role="alertdialog">
@@ -293,6 +321,3 @@
     </div>
 
 	</div>
-	
-	
-	<p><a href="#content">Back to the top</a></p>
