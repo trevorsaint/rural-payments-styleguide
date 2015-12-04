@@ -172,6 +172,20 @@ module.exports = {
     
     });
     
+    app.get('/validation', function(req, res) {
+    
+      data = {
+        doctitle:       'Errors and validation',
+        page_name:      'Errors and validation',
+        prettifyScript: true,
+        autocomplete:   true
+      };
+      
+      res.render('elements/validation/home', data);
+    
+    });
+    
+    
     
     
     
@@ -240,16 +254,7 @@ module.exports = {
     
     
 
-    app.get('/validation', function(req, res) {
-    
-      data = {
-        doctitle: 'Errors & Validation'
-      };
-      
-      res.render('elements/validation/home', data);
-    
-    });
-    
+   
     
     
     
