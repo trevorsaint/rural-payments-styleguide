@@ -32,7 +32,7 @@ module.exports = {
       data = {
         doctitle: 'RPA Styleguide', 
         isIndex: true,
-        beta: true
+        phase: true
       };
       
       res.render('home', data);
@@ -48,6 +48,7 @@ module.exports = {
         doctitle: 'Layout',
         page_name: 'Layout',
         prettifyScript: true,
+        phase: true
       };
       res.render('elements/layout/home', data);
     });    
@@ -57,6 +58,7 @@ module.exports = {
         doctitle: 'Collapsibles',
         page_name: 'Collapsibles',
         prettifyScript: true,
+        phase: true
       };
       res.render('elements/collapsibles/home', data);
     });    
@@ -67,6 +69,7 @@ module.exports = {
         doctitle:       'Alerts',
         page_name:      'Alerts',
         prettifyScript: true,
+        phase: true
       };
       
       res.render('elements/alerts/home', data);
@@ -79,6 +82,7 @@ module.exports = {
         doctitle:       'Pagination',
         page_name:      'Pagination',
         prettifyScript: true,
+        phase: true
       };
       
       res.render('elements/pagination/home', data);
@@ -91,6 +95,7 @@ module.exports = {
         doctitle:       'Checklist',
         page_name:      'Checklist',
         prettifyScript: true,
+        phase: true
       };
       
       res.render('elements/checklist/home', data);
@@ -114,6 +119,7 @@ module.exports = {
         doctitle:       'Application status',
         page_name:      'Application status',
         prettifyScript: true,
+        phase: true
       };
       
       res.render('elements/application/home', data);
@@ -126,6 +132,7 @@ module.exports = {
         doctitle:       'Tabs',
         page_name:      'Tabs',
         prettifyScript: true,
+        phase: true
       };
       
       res.render('elements/tabs/home', data);
@@ -138,7 +145,8 @@ module.exports = {
         doctitle:       'Form elements',
         page_name:      'Form elements',
         prettifyScript: true,
-        autocomplete:   true
+        autocomplete:   true,
+        phase: true
       };
       
       res.render('elements/forms/home', data);
@@ -151,7 +159,7 @@ module.exports = {
         doctitle:       'Typography',
         page_name:      'Typography',
         prettifyScript: true,
-        autocomplete:   true
+        phase: true
       };
       
       res.render('elements/typography/home', data);
@@ -164,7 +172,7 @@ module.exports = {
         doctitle:       'Related content',
         page_name:      'Related content',
         prettifyScript: true,
-        autocomplete:   true
+        phase: true
       };
       
       res.render('elements/related/home', data);
@@ -177,7 +185,7 @@ module.exports = {
         doctitle:       'Buttons',
         page_name:      'Buttons',
         prettifyScript: true,
-        autocomplete:   true
+        phase: true
       };
       
       res.render('elements/buttons/home', data);
@@ -190,7 +198,7 @@ module.exports = {
         doctitle:       'Errors and validation',
         page_name:      'Errors and validation',
         prettifyScript: true,
-        autocomplete:   true
+        phase: true
       };
       
       res.render('elements/validation/home', data);
@@ -203,7 +211,7 @@ module.exports = {
         doctitle:       'Tables',
         page_name:      'Tables',
         prettifyScript: true,
-        autocomplete:   true
+        phase: true
       };
       
       res.render('elements/tables/home', data);
@@ -216,7 +224,7 @@ module.exports = {
         doctitle:       'Dialog overlays',
         page_name:      'Dialog overlays',
         prettifyScript: true,
-        autocomplete:   true
+        phase: true
       };
       
       res.render('elements/dialogs/home', data);

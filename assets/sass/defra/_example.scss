@@ -50,20 +50,24 @@
 }
 
 
-// Use for paragraphs before lists
 .lead-in {
   margin-bottom: 0;
 }
 
 
-// Lists
-.list-bullet {
-  //margin-bottom: ($gutter*1.5);
+.heading-index {
+  margin: 1em 0 0;
 }
 
 
-// Heading
-.heading-index {
-  margin: 1em 0 0;
+// Alpha beta banners
+// ==========================================================================
+
+.phase-banner-alpha {
+  @include phase-banner($state: alpha);
+}
+
+.phase-banner-beta {
+  @include phase-banner($state: beta);
 }
 
