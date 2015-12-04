@@ -185,17 +185,13 @@ module.exports = {
     
     });
     
-    
-    
-    
-    
-    
-    
-    
     app.get('/tables', function(req, res) {
     
       data = {
-        doctitle: 'Tables'
+        doctitle:       'Tables',
+        page_name:      'Tables',
+        prettifyScript: true,
+        autocomplete:   true
       };
       
       res.render('elements/tables/home', data);
@@ -203,15 +199,14 @@ module.exports = {
     });
     
     
-    app.get('/tables/validation', function(req, res) {
     
-      data = {
-        doctitle: 'Table validation'
-      };
-      
-      res.render('elements/tables/validation', data);
     
-    });
+    
+    
+    
+    
+    
+    
     
 
     app.get('/forms/form-validation', function(req, res) {

@@ -1,61 +1,262 @@
-	<a class="link-back" href="/">Back to the index</a>
+  {{>breadcrumb}}
+  
+  
+  <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
 
 
-	<h1 class="heading-xlarge">Tables</h1>
-	
-	
-  <div class="text">
-    
-    <p>Consider putting content into tables to make it easier to scan.</p>
-    
-    <p>See an example of a table with <a href="validation/">form validation</a>.</p>
-    
-    <h2 class="heading-medium">Looking for the <abbr title="HyperText Markup Language">HTML</abbr>?</h2>
-    
-    <p>The <abbr title="HyperText Markup Language">HTML</abbr> snippets can be found in the <a href="/snippets/#tables">snippets page</a>.</p>
-    
-  </div>
-
-
-  <h3 class="heading-medium">Standard</h3>
+  <h3 class="heading-medium">Numeric tabular data</h3>
+  
+  <p class="text">When comparing rows of numbers, align numbers to the right in table cells.</p>
   
   <div class="example">
+    
     <table>
-      <caption class="visuallyhidden">Business plan execution results</caption>
+      <caption class="visuallyhidden">Caption to identify a table</caption>
       <thead>
         <tr>
-          <th></th>
-          <th class="numeric" scope="col">Business Plan</th>
-          <th class="numeric last" scope="col">Actual</th>
+          <th scope="col">Date</th>
+          <th class="numeric" scope="col">Paper form</th>
+          <th class="numeric" scope="col">Digital</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Vehicle volumes</th>
-          <td class="numeric">103,672</td>
-          <td class="numeric last">97,424</td>
+          <td>25 November to 1 December 2013</td>
+          <td class="numeric">2,763</td>
+          <td class="numeric">1,792</td>
         </tr>
         <tr>
-          <th scope="row">Driver volumes</th>
-          <td class="numeric">16,891</td>
-          <td class="numeric last">15,197</td>
+          <td>2 to 8 December 2013</td>
+          <td class="numeric">2,850</td>
+          <td class="numeric">1,740</td>
         </tr>
         <tr>
-          <th scope="row">Electronic take-up target</th>
-          <td class="numeric">54&#37;</td>
-          <td class="numeric last">-</td>
-        </tr>
-        <tr>
-          <th scope="row">Electronic take-up (actual)</th>
-          <td class="numeric">-</td>
-          <td class="numeric last">50.3&#37;</td>
+         <td>9 to 15 December 2013</td>
+          <td class="numeric">2,388</td>
+          <td class="numeric">1,683</td>
         </tr>
       </tbody>
     </table>
+
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;table&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Caption to identify a table&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;Date&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Paper form&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Digital&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;25 November to 1 December 2013&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;2,763&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;1,792&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;2 to 8 December 2013&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;2,850&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;1,740&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+         &lt;td&gt;9 to 15 December 2013&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;2,388&lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;1,683&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </code></pre>
   
-  <h3 class="heading-medium">Sortable</h3>
+  
+  <h3 class="heading-medium">Data in a table</h3>
+  
+  <p class="text">Not all content in tables should be right aligned.</p>
+  
+  <div class="example">
+    
+    <table>
+      <caption class="visuallyhidden">Caption to identify a table</caption>
+      <thead>
+        <tr>
+          <th colspan="2">Dates and amounts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First 6 weeks</td>
+          <td>£109.80 per week</td>
+        </tr>
+        <tr>
+          <td>Next 33 weeks</td>
+          <td>£109.80 per week</td>
+        </tr>
+        <tr>
+         <td>Total estimated pay</td>
+          <td>£4,282.20</td>
+        </tr>
+        <tr>
+          <td>Tell the mother’s employer</td>
+          <td>28 days before they want to start maternity pay</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+  
+  <pre><code class="prettyprint">
+    &lt;table&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Caption to identify a table&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th colspan=&quot;2&quot;&gt;Dates and amounts&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;First 6 weeks&lt;/td&gt;
+          &lt;td&gt;&#x00a3;109.80 per week&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Next 33 weeks&lt;/td&gt;
+          &lt;td&gt;&#x00a3;109.80 per week&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+         &lt;td&gt;Total estimated pay&lt;/td&gt;
+          &lt;td&gt;&#x00a3;4,282.20&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Tell the mother&#x2019;s employer&lt;/td&gt;
+          &lt;td&gt;28 days before they want to start maternity pay&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </code></pre>
+  
+  
+  <h3 class="heading-medium">Summary</h3>
+  
+  <p class="text">A summary of items including <a href="http://schema.org/Organization/" rel="external">schema data</a> for a particular business.</p>
+
+
+  <div class="example">
+  
+    <h2 class="heading-medium">Business details</h2>
+    
+    <table class="table-summary" itemtype="http://schema.org/Organization" itemscope>
+    
+      <caption class="visuallyhidden">Caption to identify a table</caption>
+      
+      <tbody>
+      
+        <tr>
+          <th class="table-summary-title" scope="row">Business name</th>
+          <td class="table-summary-content" itemprop="name">Beech Farm</td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row">Firm reference</th>
+          <td class="table-summary-content">2000000045</td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row"><abbr title="Value Added Tax">VAT</abbr> registration number</th>
+          <td class="table-summary-content">567890123</td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row">Address</th>
+          <td class="table-summary-content">
+          <div itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+            <div itemprop="streetAddress">Pooley Bridge</div>
+            <div itemprop="addressLocality">Penrith</div>
+            <div itemprop="addressRegion">Cumbria</div>
+            <div itemprop="postalCode">CH3 6NZ</div>
+            <div itemprop="addressCountry">United Kingdom</div>
+          </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row">Landline</th>
+          <td class="table-summary-content" itemprop="telephone">07337938476</td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row">Mobile</th>
+          <td class="table-summary-content" itemprop="telephone">07449654321</td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row">Email</th>
+          <td class="table-summary-content" itemprop="email"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></td>
+        </tr>
+      
+      </tbody>
+    
+    </table>
+  
+  </div>
+  
+  <pre><code class="prettyprint">
+    &lt;table class=&quot;table-summary&quot; itemtype=&quot;http://schema.org/Organization&quot; itemscope&gt;
+    
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Caption to identify a table&lt;/caption&gt;
+      
+      &lt;tbody&gt;
+      
+        &lt;tr&gt;
+          &lt;th class=&quot;table-summary-title&quot; scope=&quot;row&quot;&gt;Business name&lt;/th&gt;
+          &lt;td class=&quot;table-summary-content&quot; itemprop=&quot;name&quot;&gt;Beech Farm&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+          &lt;th class=&quot;table-summary-title&quot; scope=&quot;row&quot;&gt;Firm reference&lt;/th&gt;
+          &lt;td class=&quot;table-summary-content&quot;&gt;2000000045&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+          &lt;th class=&quot;table-summary-title&quot; scope=&quot;row&quot;&gt;VAT registration number&lt;/th&gt;
+          &lt;td class=&quot;table-summary-content&quot;&gt;567890123&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+          &lt;th class=&quot;table-summary-title&quot; scope=&quot;row&quot;&gt;Address&lt;/th&gt;
+          &lt;td class=&quot;table-summary-content&quot;&gt;
+            &lt;div itemprop=&quot;address&quot; itemtype=&quot;http://schema.org/PostalAddress&quot; itemscope&gt;
+              &lt;div itemprop=&quot;streetAddress&quot;&gt;Pooley Bridge&lt;/div&gt;
+              &lt;div itemprop=&quot;addressLocality&quot;&gt;Penrith&lt;/div&gt;
+              &lt;div itemprop=&quot;addressRegion&quot;&gt;Cumbria&lt;/div&gt;
+              &lt;div itemprop=&quot;postalCode&quot;&gt;CH3 6NZ&lt;/div&gt;
+              &lt;div itemprop=&quot;addressCountry&quot;&gt;United Kingdom&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+          &lt;th class=&quot;table-summary-title&quot; scope=&quot;row&quot;&gt;Landline&lt;/th&gt;
+          &lt;td class=&quot;table-summary-content&quot; itemprop=&quot;telephone&quot;&gt;07337938476&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+          &lt;th class=&quot;table-summary-title&quot; scope=&quot;row&quot;&gt;Mobile&lt;/th&gt;
+          &lt;td class=&quot;table-summary-content&quot; itemprop=&quot;telephone&quot;&gt;07449654321&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+          &lt;th class=&quot;table-summary-title&quot; scope=&quot;row&quot;&gt;Email&lt;/th&gt;
+          &lt;td class=&quot;table-summary-content&quot; itemprop=&quot;email&quot;&gt;&lt;a href=&quot;mailto:&quot;&gt;defra@kainos.com&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+      &lt;/tbody&gt;
+    
+    &lt;/table&gt;
+  </code></pre>
+  
+  
+  <h3 class="heading-medium">Sortable data</h3>
   
   <div class="example">
     <table class="table-land-parcels js-table-sortable">
@@ -109,69 +310,57 @@
     </table>
   </div>
   
-  
-  <h3 class="heading-medium">Summary</h3>
-  
-  <p>A summary of items including <a href="http://schema.org/Organization/" rel="external">schema data</a> for a particular business.</p>
-
-  <div class="example">
-  
-    <h2 class="heading-medium">Business details</h2>
-    
-    <table class="table-summary" itemtype="http://schema.org/Organization" itemscope>
-    
-      <caption class="visuallyhidden">Business details</caption>
-      
-      <tbody>
-      
-        <tr>
-          <th class="table-summary-title" scope="row">Business name</th>
-          <td class="table-summary-content" itemprop="name">Beech Farm</td>
-        </tr>
-        
-        <tr>
-          <th class="table-summary-title" scope="row">Firm reference</th>
-          <td class="table-summary-content">2000000045</td>
-        </tr>
-        
-        <tr>
-          <th class="table-summary-title" scope="row"><abbr title="Value Added Tax">VAT</abbr> registration number</th>
-          <td class="table-summary-content">567890123</td>
-        </tr>
-        
-        <tr>
-          <th class="table-summary-title" scope="row">Address</th>
-          <td class="table-summary-content">
-          <div itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-            <div itemprop="streetAddress">Pooley Bridge</div>
-            <div itemprop="addressLocality">Penrith</div>
-            <div itemprop="addressRegion">Cumbria</div>
-            <div itemprop="postalCode">CH3 6NZ</div>
-            <div itemprop="addressCountry">United Kingdom</div>
-          </div>
-          </td>
-        </tr>
-        
-        <tr>
-          <th class="table-summary-title" scope="row">Landline</th>
-          <td class="table-summary-content" itemprop="telephone">07337938476</td>
-        </tr>
-        
-        <tr>
-          <th class="table-summary-title" scope="row">Mobile</th>
-          <td class="table-summary-content" itemprop="telephone">07449654321</td>
-        </tr>
-        
-        <tr>
-          <th class="table-summary-title" scope="row">Email</th>
-          <td class="table-summary-content" itemprop="email"><a href="mailto:defra-user-1@kainos.com">defra-user-1@kainos.com</a></td>
-        </tr>
-      
-      </tbody>
-    
-    </table>
-  
-  </div>
+  <pre><code class="prettyprint">
+    &lt;table class=&quot;table-land-parcels js-table-sortable&quot;&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Land parcel distribution&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot; data-sort=&quot;string&quot;&gt;Parcel ID&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Total area (ha)&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Eligible covers&lt;/th&gt;
+          &lt;th class=&quot;numeric last&quot; scope=&quot;col&quot;&gt;BPS eligible area (ha)&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 5978&lt;/a&gt; &lt;span class=&quot;text-pending&quot;&gt;Pending&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;2.62&lt;/td&gt;
+          &lt;td&gt;Grassland&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;2.62&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 6596&lt;/a&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;2.05&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;2.05&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 7039&lt;/a&gt; &lt;span class=&quot;text-pending&quot;&gt;Pending&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;10.16&lt;/td&gt;
+          &lt;td&gt;Grassland&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;10.16&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 7070&lt;/a&gt; &lt;span class=&quot;text-pending&quot;&gt;Pending&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;6.63&lt;/td&gt;
+          &lt;td&gt;Grassland&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;6.63&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1561 9086&lt;/a&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;9.15&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;9.15&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;SP1562 8012&lt;/a&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;3.01&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;3.01&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </code></pre>
   
   
   <h3 class="heading-medium">Land features</h3>
@@ -210,6 +399,38 @@
   
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;table class=&quot;table-land-features&quot;&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Land uses and features information&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;Land uses and features&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;Area (ha)&lt;/th&gt;
+          &lt;th class=&quot;last&quot;&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tfoot&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Total area:&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;&lt;span class=&quot;bold-medium&quot;&gt;5.6&lt;/span&gt;&lt;/td&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tfoot&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;Hedge&lt;/a&gt; &lt;span class=&quot;text-warning&quot;&gt;More details required&lt;/span&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;0.56&lt;/td&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Remove&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;/&quot;&gt;Buffer strip&lt;/a&gt;&lt;/th&gt;
+          &lt;td class=&quot;numeric&quot;&gt;0.67&lt;/td&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Remove&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </code></pre>
+  
   
   <h3 class="heading-medium">Land parcels</h3>
   
@@ -220,31 +441,61 @@
       <thead>
         <tr>
           <th scope="col">Land parcel name</th>
-          <th class="numeric" scope="col"><abbr title="Single Business Identifier">SBI</abbr></th>
-          <th class="numeric" scope="col">Area (<abbr title="hectare">ha</abbr>)</th>
+          <th scope="col"><abbr title="Single Business Identifier">SBI</abbr></th>
+          <th scope="col">Area (<abbr title="hectare">ha</abbr>)</th>
           <th class="checked last" scope="col">Checked</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th scope="row"><a href="#">Arable land</a></th>
-          <td class="numeric"><span class="text-secondary">SJ8063_3931</span></td>
-          <td class="numeric">5.76</td>
+          <td>SJ8063 3931</td>
+          <td>5.76</td>
           <td class="checked last"><span class="tag tag-done">Yes</span></td>
         </tr>
         <tr>
           <th scope="row"><a href="#">East field</a></th>
-          <td class="numeric"><span class="text-secondary">SJ8063_4541</span></td>
-          <td class="numeric">0.49</td>
-          <td class="checked last"><span class="tag">No</span></td>
+          <td>SJ8063 4541</td>
+          <td>0.49</td>
+          <td class="checked last"><span class="tag tag-done">Yes</span></td>
         </tr>
       </tbody>
     </table>
   
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;table class=&quot;table-land-parcels&quot;&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Land parcels&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;Land parcel name&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;&lt;abbr title=&quot;Single Business Identifier&quot;&gt;SBI&lt;/abbr&gt;&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+          &lt;th class=&quot;checked last&quot; scope=&quot;col&quot;&gt;Checked&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;#&quot;&gt;Arable land&lt;/a&gt;&lt;/th&gt;
+          &lt;td&gt;SJ8063 3931&lt;/td&gt;
+          &lt;td&gt;5.76&lt;/td&gt;
+          &lt;td class=&quot;checked last&quot;&gt;&lt;span class=&quot;tag tag-done&quot;&gt;Yes&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;#&quot;&gt;East field&lt;/a&gt;&lt;/th&gt;
+          &lt;td&gt;SJ8063 4541&lt;/td&gt;
+          &lt;td&gt;0.49&lt;/td&gt;
+          &lt;td class=&quot;checked last&quot;&gt;&lt;span class=&quot;tag tag-done&quot;&gt;Yes&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </code></pre>
+  
 
-  <h3 class="heading-medium">Search results with pagination</h3>
+  <h3 class="heading-medium">Search results (with pagination)</h3>
+  
+  <p class="text">Pagination should only be used when a large amount of records are shown. If the record count is less than '50' then don't show pagination at all.</p>
   
   <div class="example">
     
@@ -268,7 +519,7 @@
             <div itemprop="postalCode">RH8 6LA</div>
             <div itemprop="addressCountry">United Kingdom</div>
           </td>
-          <td class="numeric"><span class="text-secondary">SJ8063_4461</span></td>
+          <td class="numeric">SJ8063 4461</td>
           <td class="action last"><a href="/">View business <span class="visuallyhidden">Appletree</span></a></td>
         </tr>
       </tbody>
@@ -290,10 +541,52 @@
   
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;table class=&quot;table-business-search&quot;&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Customer and Business search listing&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;Business&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Address&lt;/th&gt;
+          &lt;th class=&quot;numeric&quot; scope=&quot;col&quot;&gt;SBI&lt;/th&gt;
+          &lt;th class=&quot;last&quot; scope=&quot;col&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;View&lt;/span&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr itemtype=&quot;http://schema.org/Organization&quot; itemscope&gt;
+          &lt;th scope=&quot;row&quot; itemprop=&quot;name&quot;&gt;Appletree&lt;/th&gt;
+          &lt;td itemprop=&quot;address&quot; itemtype=&quot;http://schema.org/PostalAddress&quot; itemscope&gt;
+            &lt;div itemprop=&quot;streetAddress&quot;&gt;8 Mckenzie Springs&lt;/div&gt;
+            &lt;div itemprop=&quot;addressLocality&quot;&gt;Menai Street&lt;/div&gt;
+            &lt;div itemprop=&quot;addressRegion&quot;&gt;Hatfield&lt;/div&gt;
+            &lt;div itemprop=&quot;postalCode&quot;&gt;RH8 6LA&lt;/div&gt;
+            &lt;div itemprop=&quot;addressCountry&quot;&gt;United Kingdom&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td class=&quot;numeric&quot;&gt;SJ8063 4461&lt;/td&gt;
+          &lt;td class=&quot;last&quot;&gt;&lt;a href=&quot;/&quot;&gt;View &lt;span class=&quot;visuallyhidden&quot;&gt;Appletree&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    
+    &lt;div class=&quot;pager&quot;&gt;
+      &lt;div class=&quot;pager-controls&quot;&gt;
+        &lt;ul class=&quot;pager-items&quot;&gt;
+          &lt;li&gt;1&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;a class=&quot;pager-next&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;pager-summary&quot;&gt;Showing 1 &amp;ndash; 50 of 146 results&lt;/div&gt;
+    &lt;/div&gt;
+  </code></pre>
+  
   
   <h3 class="heading-medium">Clickable rows</h3>
   
-  <p>Each row must contain only one link using the data-link attribute.</p>
+  <p>Each row <strong>must contain only one link</strong> using the data-link attribute.</p>
   
   <div class="example">
     <table class="table-business-search js-table-rows-clickable">
@@ -307,8 +600,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr itemtype="http://schema.org/Organization" data-link="/" itemscope>
-          <th scope="row" itemprop="name"><a href="/">Agent Smith</a></th>
+        <tr itemtype="http://schema.org/Organization" data-link="#" itemscope>
+          <th scope="row" itemprop="name"><a href="#">Agent Smith</a></th>
           <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
             <div itemprop="streetAddress">Beech Farm</div>
             <div itemprop="addressLocality">Pooley Bridge</div>
@@ -317,10 +610,10 @@
             <div itemprop="addressCountry">United Kingdom</div>
           </td>
           <td itemprop="email">selenium@kainos.com</td>
-          <td class="numeric last"><span class="text-secondary">1000000222</span></td>
+          <td class="numeric last">1000000222</td>
         </tr>
-        <tr itemtype="http://schema.org/Organization" data-link="/" itemscope>
-          <th scope="row" itemprop="name"><a href="/">Andrew Smith</a></th>
+        <tr itemtype="http://schema.org/Organization" data-link="#" itemscope>
+          <th scope="row" itemprop="name"><a href="#">Andrew Smith</a></th>
           <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
             <div itemprop="streetAddress">144</div>
             <div itemprop="addressLocality">Holt Road</div>
@@ -329,14 +622,54 @@
             <div itemprop="addressCountry">United Kingdom</div>
           </td>
           <td itemprop="email">sandrew.smith@kainos.com</td>
-          <td class="numeric last"><span class="text-secondary">1000000087</span></td>
+          <td class="numeric last">1000000087</td>
         </tr>
       </tbody>
     </table>
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;table class=&quot;table-business-search js-table-rows-clickable&quot;&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Customer and Business search listing&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;Customer&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Address&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Email&lt;/th&gt;
+          &lt;th class=&quot;numeric last&quot; scope=&quot;col&quot;&gt;Reference&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr itemtype=&quot;http://schema.org/Organization&quot; data-link=&quot;#&quot; itemscope&gt;
+          &lt;th scope=&quot;row&quot; itemprop=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Agent Smith&lt;/a&gt;&lt;/th&gt;
+          &lt;td itemprop=&quot;address&quot; itemtype=&quot;http://schema.org/PostalAddress&quot; itemscope&gt;
+            &lt;div itemprop=&quot;streetAddress&quot;&gt;Beech Farm&lt;/div&gt;
+            &lt;div itemprop=&quot;addressLocality&quot;&gt;Pooley Bridge&lt;/div&gt;
+            &lt;div itemprop=&quot;addressRegion&quot;&gt;Penrith&lt;/div&gt;
+            &lt;div itemprop=&quot;postalCode&quot;&gt;CA10 2NP&lt;/div&gt;
+            &lt;div itemprop=&quot;addressCountry&quot;&gt;United Kingdom&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td itemprop=&quot;email&quot;&gt;selenium@kainos.com&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;1000000222&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr itemtype=&quot;http://schema.org/Organization&quot; data-link=&quot;#&quot; itemscope&gt;
+          &lt;th scope=&quot;row&quot; itemprop=&quot;name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Andrew Smith&lt;/a&gt;&lt;/th&gt;
+          &lt;td itemprop=&quot;address&quot; itemtype=&quot;http://schema.org/PostalAddress&quot; itemscope&gt;
+            &lt;div itemprop=&quot;streetAddress&quot;&gt;144&lt;/div&gt;
+            &lt;div itemprop=&quot;addressLocality&quot;&gt;Holt Road&lt;/div&gt;
+            &lt;div itemprop=&quot;addressRegion&quot;&gt;Fakenham&lt;/div&gt;
+            &lt;div itemprop=&quot;postalCode&quot;&gt;NR21 0AX&lt;/div&gt;
+            &lt;div itemprop=&quot;addressCountry&quot;&gt;United Kingdom&lt;/div&gt;
+          &lt;/td&gt;
+          &lt;td itemprop=&quot;email&quot;&gt;sandrew.smith@kainos.com&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;1000000087&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </code></pre>
+
   
-  <h3 class="heading-medium">Table with inputs</h3>
+  <h3 class="heading-medium">Data (with form controls)</h3>
   
   <div class="example">
     <form class="form">
@@ -392,8 +725,62 @@
     </form>
   </div>
   
+  <pre><code class="prettyprint">
+    &lt;form class=&quot;form&quot;&gt;
+      &lt;table class=&quot;table-form&quot;&gt;
+        &lt;caption class=&quot;visuallyhidden&quot;&gt;Business plan execution results&lt;/caption&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;col&quot;&gt;Parcel&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Reference&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Total area (ha)&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Eligible area (ha)&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Land cover&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Land use area (ha)&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;Land use&lt;/th&gt;
+            &lt;th class=&quot;numeric last&quot; scope=&quot;col&quot;&gt;Area to claim (ha)&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tfoot&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;col&quot; colspan=&quot;7&quot;&gt;Total:&lt;/th&gt;
+            &lt;td class=&quot;numeric last&quot;&gt;&lt;span class=&quot;bold-medium&quot;&gt;10.20&lt;/span&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tfoot&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;Field E&lt;/th&gt;
+            &lt;td&gt;NZ1234&lt;/td&gt;
+            &lt;td&gt;10.50&lt;/td&gt;
+            &lt;td&gt;10.50&lt;/td&gt;
+            &lt;td&gt;Arable&lt;/td&gt;
+            &lt;td&gt;5.40&lt;/td&gt;
+            &lt;td&gt;Wheat&lt;/td&gt;
+            &lt;td class=&quot;numeric last&quot;&gt;
+              &lt;label class=&quot;visuallyhidden&quot; for=&quot;land-area-1&quot;&gt;Land Area&lt;/label&gt;
+              &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;land-area-1&quot; size=&quot;5&quot; value=&quot;5.20&quot;&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;Field F&lt;/th&gt;
+            &lt;td&gt;NZ1234&lt;/td&gt;
+            &lt;td&gt;10.50&lt;/td&gt;
+            &lt;td&gt;10.50&lt;/td&gt;
+            &lt;td&gt;Arable&lt;/td&gt;
+            &lt;td&gt;5.40&lt;/td&gt;
+            &lt;td&gt;Wheat&lt;/td&gt;
+            &lt;td class=&quot;numeric last&quot;&gt;
+              &lt;label class=&quot;visuallyhidden&quot; for=&quot;land-area-2&quot;&gt;Land Area&lt;/label&gt;
+              &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;land-area-2&quot; size=&quot;5&quot; value=&quot;5.00&quot;&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/form&gt;
+  </code></pre>
   
-  <h3 class="heading-medium">Table with errors</h3>
+  
+  <h3 class="heading-medium">Data (with errors)</h3>
   
   <div class="example">
     
@@ -488,34 +875,98 @@
     
   </div>
   
-  
-  <h3 class="heading-medium">Table with checkboxes</h3>
-  
-  <div class="example">
-    <form class="form">
-      <table class="table-form">
-        <caption class="visuallyhidden">Name of agents listing</caption>
-          <thead>
-            <tr>
-              <th scope="col">Name of the agents</th>
-            </tr>
-          </thead>
-        <tbody>
-          <tr>
-            <th scope="row">
-              <label><input type="checkbox"> Clarinda Bainbridge</label>
-            </th>
-          </tr>
-          <tr>
-            <th scope="row">
-              <label><input type="checkbox"> Patrick Fensome</label>
-            </th>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-  
-  </div>
+  <pre><code class="prettyprint">
+    &lt;div class=&quot;error-summary&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;error-summary-heading-1&quot; role=&quot;group&quot;&gt;
+    
+      &lt;h1 class=&quot;heading-medium error-summary-heading&quot; id=&quot;error-summary-heading-1&quot;&gt;
+        Message to alert the user to a problem goes here
+      &lt;/h1&gt;
+      
+      &lt;p&gt;Optional description of the error(s) and how to correct them&lt;/p&gt;
+      
+      &lt;ul class=&quot;error-summary-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#error-land-area-1&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#error-land-area-2&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      
+    &lt;/div&gt;
+      
+    &lt;table class=&quot;table-form&quot;&gt;
+      
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Business plan execution results&lt;/caption&gt;
+      
+      &lt;thead&gt;
+      
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;Parcel&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Reference&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Total area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Eligible area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Land cover&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Land use area (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Land use&lt;/th&gt;
+          &lt;th class=&quot;numeric last&quot; scope=&quot;col&quot;&gt;Area to claim (&lt;abbr title=&quot;hectare&quot;&gt;ha&lt;/abbr&gt;)&lt;/th&gt;
+        &lt;/tr&gt;
+      
+      &lt;/thead&gt;
+      
+      &lt;tfoot&gt;
+      
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot; colspan=&quot;7&quot;&gt;Total:&lt;/th&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;&lt;span class=&quot;bold-medium&quot;&gt;NaN&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+      &lt;/tfoot&gt;
+      
+      &lt;tbody&gt;
+      
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;Field E&lt;/th&gt;
+          &lt;td&gt;NZ1234&lt;/td&gt;
+          &lt;td&gt;10.50&lt;/td&gt;
+          &lt;td&gt;10.50&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td&gt;5.40&lt;/td&gt;
+          &lt;td&gt;Wheat&lt;/td&gt;
+          &lt;td class=&quot;numeric last error&quot; id=&quot;error-land-area-1&quot;&gt;
+          &lt;label class=&quot;visuallyhidden&quot; for=&quot;land-area-1&quot;&gt;Land Area&lt;/label&gt;
+          &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;land-area-1&quot; size=&quot;5&quot; value=&quot;34.fs&quot;&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;Field E&lt;/th&gt;
+          &lt;td&gt;NZ1234&lt;/td&gt;
+          &lt;td&gt;10.50&lt;/td&gt;
+          &lt;td&gt;10.50&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td&gt;5.40&lt;/td&gt;
+          &lt;td&gt;Wheat&lt;/td&gt;
+          &lt;td class=&quot;numeric last error&quot; id=&quot;error-land-area-2&quot;&gt;
+            &lt;label class=&quot;visuallyhidden&quot; for=&quot;land-area-2&quot;&gt;Land Area&lt;/label&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;land-area-2&quot; size=&quot;5&quot; value=&quot;abcdef&quot;&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;Field E&lt;/th&gt;
+          &lt;td&gt;NZ1234&lt;/td&gt;
+          &lt;td&gt;10.50&lt;/td&gt;
+          &lt;td&gt;10.50&lt;/td&gt;
+          &lt;td&gt;Arable&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+          &lt;td&gt;Peas&lt;/td&gt;
+          &lt;td class=&quot;numeric last&quot;&gt;
+            &lt;label class=&quot;visuallyhidden&quot; for=&quot;land-area-3&quot;&gt;Land Area&lt;/label&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;land-area-3&quot; size=&quot;5&quot; value=&quot;3.5&quot;&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+      &lt;/tbody&gt;
+    
+    &lt;/table&gt;
+  </code></pre>
   
   
   <h3 class="heading-medium">Reset password</h3>
@@ -525,21 +976,47 @@
       <caption class="visuallyhidden">Reset user passwords</caption>
       <thead>
         <tr>
-          <th scope="col" colspan="2">User details</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email address</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Connor Auditor <br> <span class="text-secondary">auditor@kainos.com</span></th>
+          <th scope="row">Connor Auditor</th>
+          <td>auditor@kainos.com</td>
           <td class="action last"><a href="/">Reset password</a></td>
         </tr>
         <tr>
-          <th scope="row">Connor Basic <br> <span class="text-secondary">basic@kainos.com</span></th>
+          <th scope="row">Connor Basic</th>
+          <td>basic@kainos.com</td>
           <td class="action last"><a href="/">Reset password</a></td>
         </tr>
       </tbody>
     </table>
   </div>
   
-  
-  <p><a href="#content">Back to the top</a></p>
+  <pre><code class="prettyprint">
+    &lt;table&gt;
+      &lt;caption class=&quot;visuallyhidden&quot;&gt;Reset user passwords&lt;/caption&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;col&quot;&gt;Name&lt;/th&gt;
+          &lt;th scope=&quot;col&quot;&gt;Email address&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;Connor Auditor&lt;/th&gt;
+          &lt;td&gt;auditor@kainos.com&lt;/td&gt;
+          &lt;td class=&quot;action last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Reset password&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;Connor Basic&lt;/th&gt;
+          &lt;td&gt;basic@kainos.com&lt;/td&gt;
+          &lt;td class=&quot;action last&quot;&gt;&lt;a href=&quot;/&quot;&gt;Reset password&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </code></pre>
