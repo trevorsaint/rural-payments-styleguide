@@ -119,13 +119,24 @@ module.exports = {
     
     app.get('/forms', function(req, res) {
       data = {
-        doctitle:       'Form elements',
-        page_name:      'Form elements',
+        doctitle: 'Form elements',
+        page_name: 'Form elements',
         prettifyScript: true,
         autocomplete:   true,
         phase: true
       };
       res.render('elements/forms/home', data);
+    });
+    
+    app.get('/forms/form-validation', function(req, res) {
+      data = {
+        doctitle: 'Form validation',
+        page_name: 'Form validation',
+        section: 'forms',
+        section_name: 'Forms',
+        phase: true
+      };
+      res.render('elements/forms/form-validation/home', data);
     });
     
     app.get('/typography', function(req, res) {
@@ -198,86 +209,56 @@ module.exports = {
     });
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    app.get('/forms/form-validation', function(req, res) {
-    
-      data = {
-        doctitle: 'Form validation'
-      };
-      
-      res.render('elements/forms/form-validation/home', data);
-    
-    });
-
-    
-
-   
-    
-    
-    
-    
-    // Admin
-    
-    app.get('/internal/deactivate-user', function(req, res) {
-    
-      data = {
-        doctitle: 'Deactivate user',
-        internalStyles: true,
-        internalHeader: true
-      };
-      
-      res.render('internal/deactivate-user/home', data);
-      
-    });
-    
-    
-    app.get('/internal/alerts', function(req, res) {
-    
-      data = {
-        doctitle: 'Alerts',
-        internalStyles: true,
-        internalHeader: true
-      };
-      
-      res.render('internal/alerts/home', data);
-    
-    });
-    
-    
-    app.get('/internal/signin', function(req, res) {
-    
-      data = {
-        doctitle: 'Sign in'
-      };
-      
-      res.render('internal/signin/home', data);
-      
-    });
-    
+    // INTERNAL USERS
+    // ==============================================
     
     app.get('/internal/search-customer-or-business', function(req, res) {
-    
       data = {
-        doctitle: 'Search customer or business',
+        doctitle: 'Search for a customer or business',
+        page_name: 'Search for a customer or business',
+        section: 'pages',
+        section_name: 'Pages',
         internalStyles: true,
         internalHeader: true
       };
-      
       res.render('internal/search-customer-or-business/home', data);
-      
     });
     
+    app.get('/internal/deactivate-user', function(req, res) {
+      data = {
+        doctitle: 'Customer record',
+        page_name: 'Customer record',
+        section: 'pages',
+        section_name: 'Pages',
+        internalStyles: true,
+        internalHeader: true
+      };
+      res.render('internal/deactivate-user/home', data);
+    });
     
+    app.get('/internal/alerts', function(req, res) {
+      data = {
+        doctitle: 'Alerts',
+        page_name: 'Alerts',
+        section: 'pages',
+        section_name: 'Pages',
+        internalStyles: true,
+        internalHeader: true
+      };
+      res.render('internal/alerts/home', data);
+    });
     
+    app.get('/internal/sign-in', function(req, res) {
+      data = {
+        doctitle: 'Sign in',
+        page_name: 'Sign in',
+        section: 'pages',
+        section_name: 'Pages',
+        internalStyles: true,
+        internalHeader: true
+      };
+      res.render('internal/sign-in/home', data);
+    });
     
     
     // PAGES
@@ -395,976 +376,793 @@ module.exports = {
       
     });
     
-    
     app.get('/pages/confirmation', function(req, res) {
-    
       data = {
-        doctitle: 'Confirmation'
+        doctitle: 'BPS application',
+        page_name: 'BPS application',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
       res.render('pages/confirmation/home', data);
-    
     });
-    
-    
+
     app.get('/pages/apply-for-bps', function(req, res) {
-    
       data = {
-        doctitle: 'Apply for BPS'
+        doctitle: 'Apply for Basic Payment Scheme',
+        page_name: 'Apply for Basic Payment Scheme',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
       res.render('pages/apply-for-bps/home', data);
-    
     });
-    
     
     app.get('/pages/update-business-details', function(req, res) {
-    
-      data = {
-        doctitle: 'Update business details'
-      };
-      
-      res.render('pages/update-business-details/home', data);
-    
-    });
-    
-    
-    app.get('/pages/bps-application', function(req, res) {
-    
-      data = {
-        doctitle: 'BPS application',
-        businessMenu: true
-      };
-      
-      res.render('pages/bps-application/home', data);
-    
-    });
-    
-    
-    app.get('/pages/manage-land', function(req, res) {
-    
-      data = {
-        doctitle: 'Manage land',
-        openLayers: true,
-        businessMenu: true,
-        sticky: true
-      };
-      
-      res.render('pages/manage-land/home', data);
-    
-    });
-    
-    
-    app.get('/manage-land/fallow-field', function(req, res) {
-    
-      data = {
-        doctitle: 'Fallow field',
-        openLayers: true
-      };
-      
-      res.render('pages/manage-land/fallow-field/home', data);
-    
-    });
-    
-    
-    app.get('/manage-land/fallow-field/land-use', function(req, res) {
-    
-      data = {
-        doctitle: 'Land use',
-        openLayers: true
-      };
-      
-      res.render('pages/manage-land/fallow-field/land-use/home', data);
-    
-    });
-    
-    
-    app.get('/manage-land/fallow-field/add-feature', function(req, res) {
-    
-      data = {
-        doctitle: 'Add feature',
-        openLayers: true
-      };
-      
-      res.render('pages/manage-land/fallow-field/add-feature/home', data);
-    
-    });
-    
-    
-    app.get('/manage-land/fallow-field/edit-feature', function(req, res) {
-    
-      data = {
-        doctitle: 'Edit feature',
-        openLayers: true
-      };
-      
-      res.render('pages/manage-land/fallow-field/edit-feature/home', data);
-    
-    });
-    
-    
-    app.get('/manage-land/fallow-field/add-feature-details', function(req, res) {
-    
-      data = {
-        doctitle: 'Add feature details',
-        openLayers: true
-      };
-      
-      res.render('pages/manage-land/fallow-field/add-feature-details/home', data);
-    
-    });
-    
-
-    app.get('/home', function(req, res) {
-    
-      data = {
-        doctitle: 'Home'
-      };
-      
-      res.render('pages/home/home', data);
-    
-    });
-    
-
-    app.get('/land-query', function(req, res) {
-      
-      data = {
-        doctitle: 'Land query'
-      };
-      
-      res.render('pages/land-query/home', data);
-    
-    });
-    
-
-    app.get('/land-query/query', function(req, res) {
-    
-      data = {
-        doctitle: 'Land query'
-      };
-      
-      res.render('pages/land-query/query/home', data);
-    
-    });
-    
-
-    app.get('/land-query/query-sbi', function(req, res) {
-    
-      data = {
-        doctitle: 'Land query'
-      };
-      
-      res.render('pages/land-query/query-sbi/home', data);
-    
-    });
-    
-
-    app.get('/rural-payments', function(req, res) {
-    
-      data = {
-        doctitle: 'Rural Payments'
-      };
-      
-      res.render('pages/rural-payments/home', data);
-    
-    });
-    
-
-    app.get('/invalid-or-missing-token', function(req, res) {
-    
-      data = {
-        doctitle: 'Invalid or missing token'
-      };
-      
-      res.render('pages/invalid-or-missing-token/home', data);
-      
-    });
-    
-    
-    app.get('/signin', function(req, res) {
-    
-      data = {
-        doctitle: 'Signin'
-      };
-      
-      res.render('pages/signin/home', data);
-    
-    });
-    
-
-    app.get('/signin/password-expired', function(req, res) {
-    
-      data = {
-        doctitle: 'Password expired'
-      };
-      
-      res.render('pages/signin/password-expired/home', data);
-    
-    });
-    
-
-    app.get('/forgotten-your-password', function(req, res) {
-    
-      data = {
-        doctitle: 'Forgotten your password'
-      };
-      
-      res.render('pages/forgotten-your-password/home', data);
-    
-    });
-    
-
-    app.get('/need-to-change-password', function(req, res) {
-    
-        data = {
-          doctitle: 'Need to change password'
-        };
-        
-        res.render('pages/need-to-change-password/home', data);
-    
-    });
-    
-
-    app.get('/confirm-journey', function(req, res) {
-    
-      data = {
-        doctitle: 'Confirm journey'
-      };
-      
-      res.render('pages/confirm-journey/home', data);
-    
-    });
-    
-
-    app.get('/confirm-journey/personal-details', function(req, res) {
-    
-      data = {
-        doctitle: 'Personal details'
-      };
-      
-      res.render('pages/confirm-journey/personal-details/home', data);
-    
-    });
-    
-
-    app.get('/confirm-journey/your-contact-details', function(req, res) {
-    
-      data = {
-        doctitle: 'Your contact details'
-      };
-      
-      res.render('pages/confirm-journey/your-contact-details/home', data);
-    
-    });
-    
-
-    app.get('/confirm-journey/your-contact-preferences', function(req, res) {
-    
-      data = {
-        doctitle: 'Your contact preferences'
-      };
-      
-      res.render('pages/confirm-journey/your-contact-preferences/home', data);
-    
-    });
-    
-
-    app.get('/confirm-journey/check-business-details', function(req, res) {
-    
-      data = {
-        doctitle: 'Check business details',
-        openLayers: true
-      };
-      
-      res.render('pages/confirm-journey/check-business-details/home', data);
-    
-    });
-    
-
-    app.get('/confirm-journey/update-business-details', function(req, res) {
-    
       data = {
         doctitle: 'Update business details',
+        page_name: 'Update business details',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/update-business-details/home', data);
+    });
+    
+    app.get('/pages/register-for-rural-payments', function(req, res) {
+      data = {
+        doctitle: 'Register for Rural Payments',
+        page_name: 'Register for Rural Payments',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/register-for-rural-payments/home', data);
+    });
+    
+    app.get('/pages/where-should-we-send-your-new-passport', function(req, res) {
+      data = {
+        doctitle: 'Where should we send your new passport?',
+        page_name: 'Where should we send your new passport?',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+        
+      };
+      res.render('pages/where-should-we-send-your-new-passport/home', data);
+    });
+    
+    app.get('/pages/your-details', function(req, res) {
+      data = {
+        doctitle: 'Your details',
+        page_name: 'Your details',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/your-details/home', data);
+    });
+    
+    app.get('/pages/add-edit-land', function(req, res) {
+      data = {
+        doctitle: 'Add or edit land',
+        page_name: 'Add or edit land',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true,
         openLayers: true
       };
-      
-      res.render('pages/confirm-journey/update-business-details/home', data);
-    
+      res.render('pages/add-edit-land/home', data);
     });
     
-
-    app.get('/confirm-journey/additional-business-details', function(req, res) {
-    
+    app.get('/pages/home', function(req, res) {
       data = {
-        doctitle: 'Additional business details'
+        doctitle: 'Rural Payments',
+        page_name: 'Rural Payments',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/confirm-journey/additional-business-details/home', data);
-    
+      res.render('pages/home/home', data);
     });
     
-
-    app.get('/confirm-journey/people-accountable', function(req, res) {
-    
+    app.get('/pages/invalid-or-missing-token', function(req, res) {
       data = {
-        doctitle: 'People accountable'
+        doctitle: 'Invalid or missing token',
+        page_name: 'Invalid or missing token',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/confirm-journey/people-accountable/home', data);
-    
+      res.render('pages/invalid-or-missing-token/home', data);
     });
     
-
-    app.get('/confirm-journey/business-details-summary', function(req, res) {
-    
-      data = {
-        doctitle: 'Business details summary',
-        openLayers: true
-      };
-      
-      res.render('pages/confirm-journey/business-details-summary/home', data);
-    
-    });
-    
-
-    app.get('/confirm-journey/business-overview', function(req, res) {
-    
-      data = {
-        doctitle: 'Business overview',
-        openLayers: true
-      };
-      
-      res.render('pages/confirm-journey/business-overview/home', data);
-    
-    });
-    
-
-    app.get('/confirm-journey/people-accountable-summary', function(req, res) {
-    
-      data = {
-        doctitle: 'People accountable summary'
-      };
-      
-      res.render('pages/confirm-journey/people-accountable-summary/home', data);
-    
-    });
-    
-
-    app.get('/business-details', function(req, res) {
-    
-      data = {
-        doctitle: 'Business details',
-        businessMenu: true
-      };
-      
-      res.render('pages/business-details/home', data);
-    
-    });
-    
-    
-    app.get('/efas', function(req, res) {
-    
-      data = {
-        doctitle: 'Ecological focus areas',
-        businessMenu: true
-      };
-      
-      res.render('pages/efas/home', data);
-    
-    });
-    
-
-    app.get('/basic-payment-scheme-application', function(req, res) {
-    
-      data = {
-        doctitle: 'BPS application',
-        businessMenu: true
-      };
-      
-      res.render('pages/basic-payment-scheme-application/home', data);
-    
-    });
-    
-
-    app.get('/basic-payment-scheme-application/summary', function(req, res) {
-    
-      data = {
-        doctitle: 'BPS application summary',
-        businessMenu: true
-      };
-      
-      res.render('pages/basic-payment-scheme-application/summary', data);
-    
-    });
-    
-    
-    app.get('/activate-your-entitlements', function(req, res) {
-    
-      data = {
-        doctitle: 'Activate your entitlements',
-        businessMenu: true
-      };
-      
-      res.render('pages/activate-your-entitlements/home', data);
-    
-    });
-    
-
-    app.get('/removal-of-land', function(req, res) {
-    
+    app.get('/pages/removal-of-land', function(req, res) {
       data = {
         doctitle: 'Check and submit your removal of land',
-        businessMenu: true
+        page_name: 'Check and submit your removal of land',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
       res.render('pages/removal-of-land/home', data);
-    
     });
     
-
-    app.get('/register-for-rural-payments', function(req, res) {
-    
+    app.get('/pages/basic-payment-scheme-application', function(req, res) {
       data = {
-        doctitle: 'Register for Rural Payments'
+        doctitle: 'Basic payment scheme application',
+        page_name: 'Basic payment scheme application',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/register-for-rural-payments/home', data);
-    
+      res.render('pages/basic-payment-scheme-application/home', data);
     });
     
-
-    app.get('/where-should-we-send-your-new-passport', function(req, res) {
-    
+    app.get('/pages/basic-payment-scheme-application/summary', function(req, res) {
       data = {
-        doctitle: 'Where should we send your new passport?'
+        doctitle: 'Basic payment scheme application summary',
+        page_name: 'Basic payment scheme application summary',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/where-should-we-send-your-new-passport/home', data);
-    
+      res.render('pages/basic-payment-scheme-application/summary', data);
     });
     
-
-    app.get('/your-details', function(req, res) {
-    
+    app.get('/pages/activate-your-entitlements', function(req, res) {
       data = {
-        doctitle: 'Your details'
+        doctitle: 'Activate your entitlements',
+        page_name: 'Activate your entitlements',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/your-details/home', data);
-    
+      res.render('pages/activate-your-entitlements/home', data);
     });
     
-    
-    app.get('/loading', function(req, res) {
-    
+    app.get('/pages/efas', function(req, res) {
       data = {
-        doctitle: 'Loading'
+        doctitle: 'Ecological focus areas',
+        page_name: 'Ecological focus areas',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/loading/home', data);
-    
+      res.render('pages/efas/home', data);
     });
     
+    app.get('/pages/signin', function(req, res) {
+      data = {
+        doctitle: 'Sign in to Rural Payments',
+        page_name: 'Sign in to Rural Payments',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/signin/home', data);
+    });
     
-    app.get('/apply-for-the-basic-payment-application', function(req, res) {
+    app.get('/pages/forgotten-your-password', function(req, res) {
+      data = {
+        doctitle: 'Forgotten your password',
+        page_name: 'Forgotten your password',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/forgotten-your-password/home', data);
+    });
     
+    app.get('/pages/you-need-to-change-your-password', function(req, res) {
+      data = {
+        doctitle: 'You need to change your password',
+        page_name: 'You need to change your password',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/you-need-to-change-your-password/home', data);
+    });
+    
+    app.get('/pages/check-your-land', function(req, res) {
+      data = {
+        doctitle: 'Check your land',
+        page_name: 'Check your land',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true,
+        openLayers: true
+      };
+      res.render('pages/check-your-land/home', data);
+    });
+    
+    app.get('/pages/add-feature-to-this-land/', function(req, res) {
+      data = {
+        doctitle: 'What do you want to add to this land?',
+        page_name: 'What do you want to add to this land?',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true,
+        openLayers: true
+      };
+      res.render('pages/add-feature-to-this-land//home', data);
+    });
+    
+    app.get('/pages/add-feature-details-to-this-land/', function(req, res) {
+      data = {
+        doctitle: 'Sweet potatoes',
+        page_name: 'Sweet potatoes',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true,
+        openLayers: true
+      };
+      res.render('pages/add-feature-details-to-this-land/home', data);
+    });
+    
+    app.get('/pages/manage-your-land/', function(req, res) {
+      data = {
+        doctitle: 'North paddock',
+        page_name: 'North paddock',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true,
+        openLayers: true
+      };
+      res.render('pages/manage-your-land/home', data);
+    });
+    
+    app.get('/pages/edit-land-feature/', function(req, res) {
+      data = {
+        doctitle: 'Pond',
+        page_name: 'Pond',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true,
+        openLayers: true
+      };
+      res.render('pages/edit-land-feature/home', data);
+    });
+    
+    app.get('/pages/apply-for-the-basic-payment-scheme', function(req, res) {
       data = {
         doctitle: 'Apply for the basic payment scheme',
-        businessMenu: true
+        page_name: 'Apply for the basic payment scheme',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/apply-for-the-basic-payment-application/home', data);
-    
+      res.render('pages/apply-for-the-basic-payment-scheme/home', data);
     });
     
-    
-    app.get('/add-edit-land', function(req, res) {
-    
+    app.get('/pages/terms-and-conditions', function(req, res) {
       data = {
-        doctitle: 'Add / Edit land',
-        openLayers: true,
-        businessMenu: true
+        doctitle: 'Rural Payments',
+        page_name: 'Rural Payments',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      
-      res.render('pages/add-edit-land/home', data);
-    
+      res.render('pages/terms-and-conditions/home', data);
     });
     
-    
-    app.get('/business-details/update-business-details', function(req, res) {
-    
+    app.get('/pages/business-details', function(req, res) {
       data = {
-        doctitle: 'Update business details',
-        businessMenu: true
+        doctitle: 'Business details',
+        page_name: 'Business details',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/business-details/update-business-details/home', data);
-    
+      res.render('pages/business-details/home', data);
     });
     
-    
-    app.get('/angular', function(req, res) {
-    
+    app.get('/pages/your-password-has-expired', function(req, res) {
       data = {
-        doctitle: 'Angular directives',
-        angularScripts: true
+        doctitle: 'Sign in',
+        page_name: 'Sign in',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
       };
-      
-      res.render('pages/angular/home', data);
-    
+      res.render('pages/your-password-has-expired/home', data);
     });
     
     
+    // USER JOURNEYS
+    // ==============================================
     
     
+    // You account
     
-    
-    
-    
-    
-    
-
-    
-    
-    
-    // Accountable people
-
-    app.get('/accountable-people/', function(req, res) {
-    
-      data = {
-        doctitle: 'Accountable people',
-        pagetitle: 'Accountable people'
-      };
-      
-      res.render('pages/accountable-people/home', data);
-    
-    });
-    
-    
-    app.get('/accountable-people/your-businesses/yes/', function(req, res) {
-    
-      res.render('pages/accountable-people/your-businesses/yes/home', {
+    app.get('/your-account/', function(req, res) {
+      res.render('user/your-account/home', {
         doctitle: 'Your account',
-        pagetitle: 'Your account',
+        page_name: 'Your account',
         owner: 'Sidney Bechett',
         businesses:businessEngine.getBusinessEntries()
       });
-    
     });
     
-    
-    app.get('/accountable-people/your-businesses/yes/view/:id', function(req, res) {
+    app.get('/your-account/view/:id', function(req, res) {
     
       var entry = businessEngine.getBusinessEntry(req.params.id);
       
-      req.session.lastPage = '/accountable-people/your-businesses/yes/view/:id';
-        res.render('pages/accountable-people/your-businesses/yes/view/home', {
+      res.render('user/your-account/view/home', {
         doctitle: 'Your businesses',
-        pagetitle: 'Your businesses',
+        page_name: 'Your businesses',
+        section: 'your-account',
+        section_name: 'Your account',
         business:entry
       });
     
-    });
-    
-    
-    app.get('/accountable-people/your-businesses/no/', function(req, res) {
-    
-      res.render('pages/accountable-people/your-businesses/no/home', {
-        doctitle: 'Your businesses',
-        pagetitle: 'Your businesses',
-        owner: 'Richard Hillier',
-        businesses:businessEngine.getBusinessEntries()
-      });
-    
-    });
-    
-    
-    app.get('/accountable-people/your-businesses/no/view/:id', function(req, res) {
-    
-      var entry = businessEngine.getBusinessEntry(req.params.id);
-      
-      res.render('pages/accountable-people/your-businesses/no/view/home', {
-        doctitle: 'Your businesses',
-        pagetitle: 'Your businesses',
-        business:entry
-      });
-    
-    });
-    
-    
-    app.get('/accountable-people/overview/', function(req, res) {
-    
-      data = {
-        doctitle: 'Accountable people',
-        pagetitle: 'Accountable people'
-      };
-      
-      res.render('pages/accountable-people/overview/home', data);
-      
-    });
-    
-
-    app.get('/accountable-people/business-ownership/', function(req, res) {
-    
-      data = {
-        doctitle: 'Business ownership',
-        pagetitle: 'Business ownership'
-      };
-      
-      res.render('pages/accountable-people/business-ownership/home', data);
-    
-    });
-    
-
-    app.get('/accountable-people/business-ownership/sole-trader/details/', function(req, res) {
-    
-      data = {
-        doctitle: 'Sole trader details',
-        pagetitle: 'Sole trader details'
-      };
-      
-      res.render('pages/accountable-people/business-ownership/sole-trader/details/home', data);
-    
-    });
-
-
-    app.post('/accountable-people/business-ownership/sole-trader/confirm/', function(req, res) {
-    
-      data = {
-        doctitle: 'Confirm sole trader details',  
-        pagetitle: 'Confirm sole trader details',
-        owner: req.body.owner,
-        firstname: req.body.firstName,
-        lastname:  req.body.lastName, 
-        //email: req.body.email, 
-        ni: req.body.niNumber, 
-        share: req.body.businessShare,
-        rights: req.body.votingRights       
-      };
-      
-      res.render('pages/accountable-people/business-ownership/sole-trader/confirm/home', data);
-    
-    });
-    
-
-    app.get('/accountable-people/business-ownership/sole-trader/business-details/', function(req, res) {
-    
-      data = {
-        doctitle: 'Business details',
-        pagetitle: 'Business details'
-      };
-      
-      res.render('pages/accountable-people/business-ownership/sole-trader/business-details/home', data);
-    
-    });
-    
-
-    app.get('/accountable-people/business-ownership/sole-trader/update/:id', function(req, res) {
-    
-      var entry = peopleEngine.getPeopleEntry(req.params.id);
-      
-      res.render('pages/accountable-people/business-ownership/sole-trader/update/home', {
-        doctitle: 'Update sole trader details',
-        pagetitle: 'Update sole trader details',
-        people:entry
-      });
-    
-    });
-    
-    
-    app.get('/accountable-people/business-ownership/accountable-person/add/', function(req, res) {
-    
-      data = {
-        doctitle: 'Add an accountable person',
-        pagetitle: 'Add an accountable person'
-      };
-      
-      res.render('pages/accountable-people/business-ownership/accountable-person/add/home', data);
-    
-    });
-    
-    
-    app.post('/accountable-people/business-ownership/accountable-person/confirm/', function(req, res) {
-    
-      data = {
-        doctitle: 'Confirm accountable person details',  
-        pagetitle: 'Confirm accountable person details',
-        firstname: req.body.firstName,
-        lastname: req.body.lastName,
-        //email: req.body.email, 
-        ni: req.body.niNumber, 
-        share: req.body.businessShare,
-        rights: req.body.votingRights       
-      };
-      
-      res.render('pages/accountable-people/business-ownership/accountable-person/confirm/home', data);
-    
-    });
-    
-    
-    app.get('/accountable-people/business-ownership/accountable-person/summary/', function(req, res) {
-    
-      data = {
-        doctitle: 'Accountable people summary',
-        pagetitle: 'Accountable people summary'
-      };
-      
-      res.render('pages/accountable-people/business-ownership/accountable-person/summary/home', data);
-    
-    });
-    
-    
-    app.get('/accountable-people/business-ownership/accountable-person/update/:id', function(req, res) {
-    
-      var entry = peopleEngine.getPeopleEntry(req.params.id);
-      
-      res.render('pages/accountable-people/business-ownership/accountable-person/update/home', {
-        doctitle: 'Update accountable person details',
-        pagetitle: 'Update accountable person details',
-        people:entry
-      });
-    
-    });
-    
-    
-    app.get('/accountable-people/business-ownership/accountable-person/declaration/', function(req, res) {
-      
-      res.render('pages/accountable-people/business-ownership/accountable-person/declaration/home', {
-        doctitle: 'Declaration of accountable people',
-        pagetitle: 'Declaration of accountable people'
-      });
-    
-    });
-    
-    
-    app.get('/accountable-people/business-ownership/accountable-person/business-details/', function(req, res) {
-    
-      res.render('pages/accountable-people/business-ownership/accountable-person/business-details/home', {
-        doctitle: 'Business details',
-        pagetitle: 'Business details'
-      });
-    
-    });
-    
-    
-    // Prototype
-    
-    app.get('/sitiagri/', function(req, res) {
-
-      data = {
-        doctitle: 'Business overview'
-      };
-      
-      res.render('prototype/sitiagri/home', data);
-
-    });
-    
-    
-    // Business overview (yes)
-    
-    app.get('/sitiagri/business-overview/yes/', function(req, res) {
-
-      data = {
-        doctitle: 'Business overview'
-      };
-      
-      res.render('prototype/sitiagri/business-overview/yes/home', data);
-
-    });
-    
-    
-    // Business overview (no)
-    
-    app.get('/sitiagri/business-overview/no/', function(req, res) {
-
-      data = {
-        doctitle: 'Business overview'
-      };
-      
-      res.render('prototype/sitiagri/business-overview/no/home', data);
-
     });
     
     
     // Accountable people
     
-    app.get('/sitiagri/accountable-people/', function(req, res) {
-
+    app.get('/accountable-people/', function(req, res) {
       data = {
-        doctitle: 'Accountable people'
+        doctitle: 'Accountable people',
+        page_name: 'Accountable people',
+        business_name: 'Beech Farm',
       };
-      
-      res.render('prototype/sitiagri/accountable-people/home', data);
+      res.render('user/accountable-people/home', data);
+    });
+    
+    app.get('/accountable-people/business-ownership/', function(req, res) {
+      data = {
+        doctitle: 'Business ownership',
+        page_name: 'Business ownership',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+      };
+      res.render('user/accountable-people/business-ownership/home', data);
+    });
 
+    app.get('/accountable-people/business-ownership/sole-trader/', function(req, res) {
+      data = {
+        doctitle: 'Sole trader details',
+        page_name: 'Sole trader details',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership'
+      };
+      res.render('user/accountable-people/business-ownership/sole-trader/home', data);
+    });
+
+    app.post('/accountable-people/business-ownership/sole-trader/confirm', function(req, res) {
+      data = {
+        doctitle: 'Confirm sole trader details',  
+        page_name: 'Confirm sole trader details',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership',
+        owner: req.body.owner,
+        firstname: req.body.firstName,
+        lastname:  req.body.lastName, 
+        ni: req.body.niNumber, 
+        share: req.body.businessShare,
+        rights: req.body.votingRights       
+      };
+      res.render('user/accountable-people/business-ownership/sole-trader/confirm', data);
+    });
+    
+    app.get('/accountable-people/business-ownership/sole-trader/business', function(req, res) {
+      data = {
+        doctitle: 'Business details',
+        page_name: 'Business details',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership',
+      };
+      res.render('user/accountable-people/business-ownership/sole-trader/business', data);
+    });
+    
+    app.get('/accountable-people/business-ownership/sole-trader/update/:id', function(req, res) {
+      var entry = peopleEngine.getPeopleEntry(req.params.id);
+      res.render('user/accountable-people/business-ownership/sole-trader/update', {
+        doctitle: 'Update sole trader details',
+        page_name: 'Update sole trader details',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership',
+        people:entry
+      });
+    });
+    
+    app.get('/accountable-people/business-ownership/accountable-person/', function(req, res) {
+      data = {
+        doctitle: 'Add an accountable person',
+        page_name: 'Add an accountable person',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership',
+      };
+      res.render('user/accountable-people/business-ownership/accountable-person/home', data);
+    });
+    
+    app.post('/accountable-people/business-ownership/accountable-person/confirm/', function(req, res) {
+      data = {
+        doctitle: 'Confirm accountable person details',  
+        page_name: 'Confirm accountable person details',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership',
+        firstname: req.body.firstName,
+        lastname: req.body.lastName,
+        ni: req.body.niNumber, 
+        share: req.body.businessShare,
+        rights: req.body.votingRights       
+      };
+      res.render('user/accountable-people/business-ownership/accountable-person/confirm', data);
+    });
+    
+    app.get('/accountable-people/business-ownership/accountable-person/summary/', function(req, res) {
+      data = {
+        doctitle: 'Accountable people summary',
+        page_name: 'Accountable people summary',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership',
+      };
+      res.render('user/accountable-people/business-ownership/accountable-person/summary', data);
+    });
+    
+    app.get('/accountable-people/business-ownership/accountable-person/update/:id', function(req, res) {
+      var entry = peopleEngine.getPeopleEntry(req.params.id);
+      res.render('user/accountable-people/business-ownership/accountable-person/update', {
+        doctitle: 'Update accountable person details',
+        page_name: 'Update accountable person details',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership',
+        people:entry
+      });
+    
+    });
+
+    app.get('/accountable-people/business-ownership/accountable-person/declaration/', function(req, res) {
+      res.render('user/accountable-people/business-ownership/accountable-person/declaration', {
+        doctitle: 'Declaration of accountable people',
+        page_name: 'Declaration of accountable people',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership'
+      });
+    });
+    
+    app.get('/accountable-people/business-ownership/accountable-person/business/', function(req, res) {
+      res.render('user/accountable-people/business-ownership/accountable-person/business', {
+        doctitle: 'Business details',
+        page_name: 'Business details',
+        business_name: 'Beech Farm',
+        section: 'accountable-people',
+        section_name: 'Accountable people',
+        section2: 'accountable-people/business-ownership',
+        section2_name: 'Business ownership'
+      });
     });
     
     
-    // Give access to business
+    // Land query
+    
+    app.get('/land-query', function(req, res) {
+      data = {
+        doctitle: 'What do you need help with?',
+        page_name: 'What do you need help with?'
+      };
+      res.render('user/land-query/home', data);
+    });
+
+    app.get('/land-query/query', function(req, res) {
+      data = {
+        doctitle: 'Tell us more about your query',
+        page_name: 'Tell us more about your query',
+        section: 'land-query',
+        section_name: 'Land query',
+      };
+      res.render('user/land-query/query', data);
+    });
+
+    app.get('/land-query/query-sbi', function(req, res) {
+      data = {
+        doctitle: 'Land query',
+        page_name: 'Tell us more about your query',
+        section: 'land-query',
+        section_name: 'Land query',
+      };
+      res.render('user/land-query/query-sbi', data);
+    });
+    
+    
+    // SitiAgri
+    
+    app.get('/sitiagri/', function(req, res) {
+      data = {
+        doctitle: 'Business overview',
+        page_name: 'Business overview',
+        business_name: 'Beech Farm'
+      };
+      res.render('user/sitiagri/home', data);
+    });
     
     app.get('/sitiagri/people-and-permissions/', function(req, res) {
-
       data = {
-        doctitle: 'People and permissions'
+        doctitle: 'People and permissions',
+        page_name: 'People and permissions',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview',
       };
-      
-      res.render('prototype/sitiagri/people-and-permissions/home', data);
-
+      res.render('user/sitiagri/people-and-permissions', data);
     });
-    
-    
-    // Business details
     
     app.get('/sitiagri/business-details/', function(req, res) {
-
       data = {
-        doctitle: 'Business details'
+        doctitle: 'Business details',
+        page_name: 'Business details',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview',
       };
-      
-      res.render('prototype/sitiagri/business-details/home', data);
-
+      res.render('user/sitiagri/business-details', data);
     });
-    
-    
-    // Land
     
     app.get('/sitiagri/land/', function(req, res) {
-
       data = {
-        doctitle: 'Land'
+        doctitle: 'Land',
+        page_name: 'Land',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview'
       };
-      
-      res.render('prototype/sitiagri/land/home', data);
-
+      res.render('user/sitiagri/land/home', data);
     });
     
+    app.get('/sitiagri/land/land-cover/', function(req, res) {
+      data = {
+        doctitle: 'Land cover',
+        page_name: 'Land cover',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview',
+        section2: 'sitiagri/land',
+        section2_name: 'Land'
+      };
+      res.render('user/sitiagri/land/land-cover', data);
+    });    
     
-      app.get('/sitiagri/land/land-cover/', function(req, res) {
-
-        data = {
-          doctitle: 'Land cover'
-        };
-        
-        res.render('prototype/sitiagri/land/land-cover/home', data);
+    app.get('/sitiagri/land/land-use/', function(req, res) {
+      data = {
+        doctitle: 'Land use',
+        page_name: 'Land use',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview',
+        section2: 'sitiagri/land',
+        section2_name: 'Land'
+      };
+      res.render('user/sitiagri/land/land-use', data);
+    });  
   
-      });
-      
-      
-      app.get('/sitiagri/land/land-use/', function(req, res) {
-
-        data = {
-          doctitle: 'Land use'
-        };
-        
-        res.render('prototype/sitiagri/land/land-use/home', data);
-  
-      });
-    
-    
-      app.get('/sitiagri/land/transfer-land/', function(req, res) {
-
-        data = {
-          doctitle: 'Transfer land'
-        };
-        
-        res.render('prototype/sitiagri/land/transfer-land/home', data);
-  
-      });
-    
-    
-    // Entitlements
+    app.get('/sitiagri/land/transfer-land/', function(req, res) {
+      data = {
+        doctitle: 'Transfer land',
+        page_name: 'Transfer land',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview',
+        section2: 'sitiagri/land',
+        section2_name: 'Land'
+      };
+      res.render('user/sitiagri/land/transfer-land', data);
+    });
     
     app.get('/sitiagri/entitlements/', function(req, res) {
-
       data = {
-        doctitle: 'Entitlements'
-      };
-      
-      res.render('prototype/sitiagri/entitlements/home', data);
-
+        doctitle: 'Entitlements',
+        page_name: 'Entitlements',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview'
+      };      
+      res.render('user/sitiagri/entitlements/home', data);
     });
-    
-    
-      app.get('/sitiagri/entitlements/view/', function(req, res) {
 
-        data = {
-          doctitle: 'View entitlements'
-        };
-        
-        res.render('prototype/sitiagri/entitlements/view/home', data);
-  
-      });
-      
-      
-      app.get('/sitiagri/entitlements/transfer/', function(req, res) {
-
-        data = {
-          doctitle: 'Transfer entitlements'
-        };
-        
-        res.render('prototype/sitiagri/entitlements/transfer/home', data);
-  
-      });
+    app.get('/sitiagri/entitlements/view/', function(req, res) {
+      data = {
+        doctitle: 'View entitlements',
+        page_name: 'View entitlements',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview',
+        section2: 'sitiagri/entitlements',
+        section2_name: 'Entitlements'
+      };
+      res.render('user/sitiagri/entitlements/view', data);
+    });    
     
-    
-    // Common rights
+    app.get('/sitiagri/entitlements/transfer/', function(req, res) {
+      data = {
+        doctitle: 'Transfer entitlements',
+        page_name: 'Transfer entitlements',
+        section: 'sitiagri',
+        section_name: 'Business overview',
+        section2: 'sitiagri/entitlements',
+        section2_name: 'Entitlements'
+      };
+      res.render('user/sitiagri/entitlements/transfer', data);
+    });
     
     app.get('/sitiagri/common-rights/', function(req, res) {
-
       data = {
-        doctitle: 'Common rights'
+        doctitle: 'Common rights',
+        page_name: 'Common rights',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview'
       };
-      
-      res.render('prototype/sitiagri/common-rights/home', data);
-
+      res.render('user/sitiagri/common-rights', data);
     });
-    
-    
-      app.get('/sitiagri/common-rights/update/', function(req, res) {
-  
-        data = {
-          doctitle: 'Update common rights'
-        };
-        
-        res.render('prototype/sitiagri/common-rights/update/home', data);
-  
-      });
-    
-    
-    // Applications and claims
     
     app.get('/sitiagri/applications-and-claims/', function(req, res) {
-
       data = {
-        doctitle: 'Applications and claims'
+        doctitle: 'Applications and claims',
+        page_name: 'Applications and claims',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview'
       };
-      
-      res.render('prototype/sitiagri/applications-and-claims/home', data);
-
-    });
-      
-      
-      app.get('/sitiagri/applications-and-claims/apply/', function(req, res) {
-
-        data = {
-          doctitle: 'Apply for BPS'
-        };
-        
-        res.render('prototype/sitiagri/applications-and-claims/apply/home', data);
-  
-      });
-      
-      
-      app.get('/sitiagri/applications-and-claims/update/', function(req, res) {
-
-        data = {
-          doctitle: 'Update BPS application'
-        };
-        
-        res.render('prototype/sitiagri/applications-and-claims/update/home', data);
-  
-      });
+      res.render('user/sitiagri/applications-and-claims/home', data);
+    });    
     
+    app.get('/sitiagri/applications-and-claims/apply/', function(req, res) {
+      data = {
+        doctitle: 'Apply for the Basic Payment Scheme',
+        page_name: 'Apply for the Basic Payment Scheme',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview',
+        section2: 'sitiagri/applications-and-claims',
+        section2_name: 'Applications and claims'
+      };
+      res.render('user/sitiagri/applications-and-claims/apply', data);
+    });    
+    
+    app.get('/sitiagri/applications-and-claims/update/', function(req, res) {
+      data = {
+        doctitle: 'Update your Basic Payment Scheme application',
+        page_name: 'Update your Basic Payment Scheme application',
+        business_name: 'Beech Farm',
+        section: 'sitiagri',
+        section_name: 'Business overview',
+        section2: 'sitiagri/applications-and-claims',
+        section2_name: 'Applications and claims'
+      };
+      res.render('user/sitiagri/applications-and-claims/update', data);
+    });
+    
+    
+    // Confirm journey
+    
+    app.get('/confirm-journey', function(req, res) {    
+      data = {
+        doctitle: 'Confirm journey',
+        page_name: 'Rural Payments'
+      };      
+      res.render('user/confirm-journey/home', data);    
+    });
+  
+    app.get('/confirm-journey/personal-details', function(req, res) {    
+      data = {
+        doctitle: 'Your personal details',
+        page_name: 'Your personal details'
+      };      
+      res.render('user/confirm-journey/personal-details', data);    
+    });
+
+    app.get('/confirm-journey/your-contact-details', function(req, res) {   
+      data = {
+        doctitle: 'Your contact details',
+        page_name: 'Your contact details'
+      };      
+      res.render('user/confirm-journey/your-contact-details', data);    
+    });    
+
+    app.get('/confirm-journey/your-contact-preferences', function(req, res) {    
+      data = {
+        doctitle: 'Your contact preferences',
+        page_name: 'Your contact preferences'
+      };      
+      res.render('user/confirm-journey/your-contact-preferences', data);    
+    });   
+
+    app.get('/confirm-journey/check-business-details', function(req, res) {    
+      data = {
+        doctitle: 'Check business details',
+        page_name: 'Check business details',
+        business_name: 'Beech Farm',
+        openLayers: true
+      };      
+      res.render('user/confirm-journey/check-business-details', data);    
+    });
+
+    app.get('/confirm-journey/update-business-details', function(req, res) {    
+      data = {
+        doctitle: 'Update business details',
+        page_name: 'Update business details',
+        business_name: 'Beech Farm',
+        openLayers: true
+      };      
+      res.render('user/confirm-journey/update-business-details', data);    
+    });
+    
+    app.get('/confirm-journey/additional-business-details', function(req, res) {    
+      data = {
+        doctitle: 'Additional business details',
+        page_name: 'Additional business details',
+        business_name: 'Beech Farm',
+      };      
+      res.render('user/confirm-journey/additional-business-details', data);    
+    });
+
+    app.get('/confirm-journey/people-accountable', function(req, res) {    
+      data = {
+        doctitle: 'People accountable',
+        page_name: 'People accountable',
+        business_name: 'Beech Farm',
+      };      
+      res.render('user/confirm-journey/people-accountable', data);    
+    });
+    
+    app.get('/confirm-journey/people-accountable-summary', function(req, res) {    
+      data = {
+        doctitle: 'People accountable summary',
+        page_name: 'People accountable summary',
+        business_name: 'Beech Farm',
+      };      
+      res.render('user/confirm-journey/people-accountable-summary', data);    
+    });
+
+    app.get('/confirm-journey/business-details-summary', function(req, res) {    
+      data = {
+        doctitle: 'Business details summary',
+        page_name: 'Business details summary',
+        business_name: 'Beech Farm',
+        openLayers: true
+      };      
+      res.render('user/confirm-journey/business-details-summary', data);    
+    });
+    
+    app.get('/confirm-journey/business-overview', function(req, res) {    
+      data = {
+        doctitle: 'Business overview',
+        page_name: 'Beech Farm',
+        openLayers: true
+      };      
+      res.render('user/confirm-journey/business-overview', data);    
+    });
+
     
   }
     

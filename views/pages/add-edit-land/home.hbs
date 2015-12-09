@@ -1,4 +1,4 @@
-	 <a class="link-back" href="/">Back to index</a>
+  {{>breadcrumb}}
 
 
    <div class="grid-row">
@@ -7,7 +7,7 @@
       <div class="column-half">
 
 
-        <h1 class="heading-large">Edit drain / ditch / dyke</h1>
+        <h1 class="heading-large">{{page_name}}</h1>
 
 
         <p>Draw a rough outline of the land use or feature on the map using the mouse.</p>
@@ -15,7 +15,7 @@
 
         <div class="toggle">
 
-          <p><a class="toggle-link" href="/">How to draw on the map</a></p>
+          <p><a class="toggle-link" href="#">How to draw on the map</a></p>
 
           <div class="toggle-content">
 
@@ -29,7 +29,7 @@
         </div>
 
 
-        <form class="form" action="/" method="get">
+        <form class="form" action="#" method="get">
 
           <div class="form-group">
             <label class="form-label-bold" for="length">Length</label>
@@ -46,8 +46,10 @@
             Total area: 0.01<abbr title="Hectare">ha</abbr>
           </div>
 
-          <button class="button">Continue</button>
-          <p><a href="../">Back</a></p>
+          <div class="form-group">
+            <button class="button">Continue</button>
+            <p><a href="#">Back</a></p>
+          </div>
 
         </form>
 

@@ -1,46 +1,42 @@
-		<a class="link-back" href="/">Back to index</a>
-		
-		
-    <h2 class="heading-large">Alerts</h2>
+  {{>breadcrumb}}
+	
+	
+  <h2 class="heading-xlarge">{{page_name}}</h2>
+
+
+  <h3 class="heading-medium">Locked</h3>
   
+  <div class="example">
   
-    <!-- locked account -->
-    <h3 class="heading-medium">Locked</h3>
+    <div class="alert-info" role="alert">
     
-    
-    <div class="example">
-    
-      <div class="alert-info text" role="alert">
+      <span class="icon icon-lock" role="presentation"></span>
       
-        <span class="icon icon-lock" role="presentation"></span>
-        
-        <div class="alert-message">
-        
-          <p>This account has been locked.</p>
-        
-        </div>
+      <div class="alert-message">
+      
+        <p>This account has been locked.</p>
       
       </div>
     
-    </div> 
+    </div>
+  
+  </div> 
+  
+  
+  <h3 class="heading-medium">Deactivated</h3>
+  
+  <div class="example">
+  
+    <div class="alert-info" role="alert">
     
-    
-    <!-- deactivated account -->
-    <h3 class="heading-medium">Deactivated</h3>
-    
-    
-    <div class="example">
-    
-      <div class="alert-info text" role="alert">
+      <span class="icon icon-deactivate" role="presentation"></span>
       
-        <span class="icon icon-deactivate" role="presentation"></span>
-        
-        <div class="alert-message">
-        
-          <p>This account has been locked and deactivated.</p>
-        
-        </div>
+      <div class="alert-message">
+      
+        <p>This account has been locked and deactivated.</p>
       
       </div>
     
-    </div>    
+    </div>
+  
+  </div>    

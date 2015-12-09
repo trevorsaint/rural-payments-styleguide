@@ -1,132 +1,98 @@
-		<a class="link-back" href="/">Back to index</a>
-		
-		
-		<div class="grid-row">
-      
-      
-      <div class="column-two-thirds">
-        
-        
-        <h1 class="heading-xlarge">Customer record <span class="heading-secondary">Agent Smith</span></h1>
-        
-        
-        <!--div class="alert-info text" role="alert">
-      
-          <span class="icon icon-deactivate" role="presentation"></span>
-          
-          <div class="alert-message">
-          
-            <p>This account has been locked and deactivated.</p>
-          
-          </div>
-        
-        </div-->
-        
-        
-        <div class="tabs">
+  {{>breadcrumb}}
+	
+	
+	<div class="grid-row">
     
-          <div class="tabs-nav">
-           
-            <ul class="tabs-list">
-              <li><a href="#tab-1">All</a></li>
-              <li><a href="#tab-2">Customer</a></li>
-            </ul>
+    
+    <div class="column-two-thirds">
+      
+      
+      <h1 class="heading-xlarge">{{page_name}} <span class="heading-secondary">Agent Smith</span></h1>
+      
+      
+      <!--div class="alert-info text" role="alert">
+    
+        <span class="icon icon-deactivate" role="presentation"></span>
+        
+        <div class="alert-message">
+        
+          <p>This account has been locked and deactivated.</p>
+        
+        </div>
+      
+      </div-->
+      
+      
+      <div class="tabs">
+  
+        <div class="tabs-nav">
+         
+          <ul class="tabs-list">
+            <li><a href="#tab-1">All</a></li>
+            <li><a href="#tab-2">Customer</a></li>
+          </ul>
+          
+        </div>
+        
+        <div class="tabs-content">
+        
+          <div class="tabs-panel" id="tab-1">
             
-          </div>
-          
-          <div class="tabs-content">
-          
-            <div class="tabs-panel" id="tab-1">
+            <div class="tabs-panel-inner">
+            
+              <h3 class="heading-medium">All notes</h3>
               
-              <div class="tabs-panel-inner">
+              <div class="panel-indent">
+                <p>There are currently no notes available.</p>
+              </div>
               
-                <h3 class="heading-medium">All notes</h3>
+              <form class="form">
                 
-                <div class="panel-indent">
-                  <p>There are currently no notes available.</p>
+                <div class="form-group">
+                  <label class="form-label" for="customer-note">Customer note</label>
+                  <textarea class="form-control form-control-textarea" id="customer-note" rows="6" cols="50"></textarea>
                 </div>
                 
-                <form class="form">
-                  
-                  <div class="form-group">
-                    <label class="form-label" for="customer-note">Customer note</label>
-                    <textarea class="form-control form-control-textarea" id="customer-note" rows="6" cols="50"></textarea>
-                  </div>
-                  
+                <div class="form-group">
                   <button class="button" type="submit">Add Note</button>
-                  
-                </form>
-              
-              </div>
-              
-            </div>
-            
-            <div class="tabs-panel" id="tab-2">
-              
-              <div class="tabs-panel-inner">
-              
-                <h3 class="heading-medium">Customer notes</h3>
+                </div>
                 
-                <!-- autdit trail -->
-                <ul class="audit-trail">
-                  
-                  <li class="audit-trail-item">
-                      <time datetime="2015-05-15 14:04">15/05/2015 14:04</time> &ndash; Defra Dan
-                      <p>Locked in error</p>
-                  </li>
-                  
-                  <li class="audit-trail-item">
-                    <time datetime="2015-05-15 14:03">15/05/2015 14:03</time> &ndash; Defra Dan
-                    <p>Test</p>
-                  </li>
-                  
-                  <li class="audit-trail-item">
-                    <time datetime="2015-05-15 14:02">15/05/2015 14:02</time> &ndash; Defra Dan
-                    <p>Test</p>
-                  </li>
-                  
-                </ul>
-              
-              </div>
-              
+              </form>
+            
             </div>
-          
-          </div>
-        
-        </div>
-        
-        
-      </div>
-      
-      
-      <div class="column-third">
-      
-        
-        <div class="related">
-    
-          <div class="related-section">
-            
-            <h2 class="related-section-title">Manage customer record</h2>
-            
-            <ul class="related-section-links">
-              <li><a href="/">View customer's businesses</a></li>
-              <li><a href="/">View personal details</a></li>
-              <li><span class="icon icon-lock" role="presentation"></span><a href="/" data-toggle="dialog" data-target="dialog-1">Lock customer's account</a></li>
-              <li><span class="icon icon-deactivate" role="presentation"></span><a href="/" data-toggle="dialog" data-target="dialog-2">Deactivate customer's account</a></li>
-            </ul>
             
           </div>
           
-          <div class="related-section">
-            <h2 class="related-section-title">Assisted assurance</h2>
-            <ul class="related-section-links">
-              <li><a href="/">Resend code</a></li>
-              <li><a href="/">Delete identity</a></li>
-            </ul>
+          <div class="tabs-panel" id="tab-2">
+            
+            <div class="tabs-panel-inner">
+            
+              <h3 class="heading-medium">Customer notes</h3>
+              
+              <ul class="audit-trail">
+                
+                <li class="audit-trail-item">
+                    <time datetime="2015-05-15 14:04">15/05/2015 14:04</time> &ndash; Defra Dan
+                    <p>Locked in error</p>
+                </li>
+                
+                <li class="audit-trail-item">
+                  <time datetime="2015-05-15 14:03">15/05/2015 14:03</time> &ndash; Defra Dan
+                  <p>Test</p>
+                </li>
+                
+                <li class="audit-trail-item">
+                  <time datetime="2015-05-15 14:02">15/05/2015 14:02</time> &ndash; Defra Dan
+                  <p>Test</p>
+                </li>
+                
+              </ul>
+            
+            </div>
+            
           </div>
         
         </div>
-      
       
       </div>
       
@@ -134,146 +100,176 @@
     </div>
     
     
-    <!-- search results -->
-    <h3 class="heading-medium">Search results</h3>
+    <div class="column-third">
     
-    <table class="table-customer-search">
       
-      <caption class="visuallyhidden">Customer search listing</caption>
-     
-      <thead>
-        <tr>
-          <th scope="col">Customer</th>
-          <th scope="col">Address</th>
-          <th scope="col">Email</th>
-          <th scope="col">Ref</th>
-          <th class="action last" scope="col"><span class="visuallyhidden">Status</span></th>
-        </tr>
-      </thead>
-      
-      <tbody>
-        
-        <tr itemtype="http://schema.org/Organization" itemscope>
-          <th scope="row" itemprop="name"><a href="/">Agent Smith</a></th>
-          <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-            <div itemprop="streetAddress">Beech Farm</div>
-            <div itemprop="addressLocality">Pooley Bridge</div>
-            <div itemprop="addressRegion">Penrith</div>
-            <div itemprop="postalCode">CA10 2NP</div>
-            <div itemprop="addressCountry">United Kingdom</div>
-          </td>
-          <td itemprop="email">selenium@kainos.com</td>
-          <td>1000000222</td>
-          <td class="status last">
-            <div class="statuses">
-              <span class="icon icon-lock" title="Customer's account is locked" role="presentation"></span>
-              <span class="icon icon-deactivate" title="Customer's account is deactivated" role="presentation"></span>
-            </div>
-          </td>
-        </tr>
-        
-        <tr itemtype="http://schema.org/Organization" itemscope>
-          <th scope="row" itemprop="name"><a href="/">Andrew Smith</a></th>
-          <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-            <div itemprop="streetAddress">144</div>
-            <div itemprop="addressLocality">Holt Road</div>
-            <div itemprop="addressRegion">Fakenham</div>
-            <div itemprop="postalCode">NR21 0AX</div>
-            <div itemprop="addressCountry">United Kingdom</div>
-          </td>
-          <td itemprop="email">sandrew.smith@kainos.com</td>
-          <td>1000000087</td>
-          <td class="status last"></td>
-        </tr>
-        
-        <tr itemtype="http://schema.org/Organization" itemscope>
-          <th scope="row" itemprop="name"><a href="/">Bert Smith</a></th>
-          <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-            <div itemprop="streetAddress">Willow Farm</div>
-            <div itemprop="addressLocality">Green Lane</div>
-            <div itemprop="addressRegion">Wilmslow</div>
-            <div itemprop="postalCode">SK9 1LD</div>
-            <div itemprop="addressCountry">United Kingdom</div>
-          </td>
-          <td itemprop="email">bert.smith@kainos.com</td>
-          <td>1000000028</td>
-          <td class="last">
-            <div class="statuses">
-              <span class="icon icon-lock" title="Customer's account is locked" role="presentation"></span>
-            </div>
-          </td>
-        </tr>
-        
-      </tbody>
-      
-    </table>
-    
-    
-    <!-- lock customer's account -->
-    <div class="dialog" id="dialog-1" aria-hidden="true">
-
-      <div class="dialog-holder" aria-labelledby="dialog-title-1" aria-describedby="dialog-content-1" role="alertdialog">
+      <div class="related">
   
-        <div class="dialog-content" id="dialog-content-1" role="document" tabindex="0">
-  
-          <h1 class="dialog-heading" id="dialog-title-1">Lock customer's account</h1>
-  
-          <form class="form">
-  
-            <div class="form-group">
-              <label class="form-label" for="reason-1">Give a reason for locking this customer's account</label>
-              <textarea class="form-control form-control-textarea" id="reason-1" rows="3" cols="50"></textarea>
-            </div>
-  
-            <div class="dialog-actions">
-              <button class="button">Lock customer's account</button>
-              <a class="dialog-cancel" href="#">Cancel</a>
-            </div>
-  
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
-  
-          </form>
-  
+        <div class="related-section">
+          
+          <h2 class="related-section-title">Manage customer record</h2>
+          
+          <ul class="related-section-links">
+            <li><a href="#">View customer's businesses</a></li>
+            <li><a href="#">View personal details</a></li>
+            <li><span class="icon icon-lock" role="presentation"></span><a href="#" data-toggle="dialog" data-target="dialog-1">Lock customer's account</a></li>
+            <li><span class="icon icon-deactivate" role="presentation"></span><a href="#" data-toggle="dialog" data-target="dialog-2">Deactivate customer's account</a></li>
+          </ul>
+          
         </div>
-  
-      </div>
-  
-  	</div>
-  	
-  	
-  	<!-- deactivate customer's account -->
-    <div class="dialog" id="dialog-2" aria-hidden="true">
-
-      <div class="dialog-holder" aria-labelledby="dialog-title-2" aria-describedby="dialog-content-2" role="alertdialog">
-  
-        <div class="dialog-content" id="dialog-content-2" role="document" tabindex="0">
-  
-          <h1 class="dialog-heading" id="dialog-title-2">Deactivate customer's account</h1>
-  
-          <form class="form">
-  
-            <div class="form-group">
-              <label class="form-label" for="reason-2">Give a reason for deactivating this customer's account</label>
-              <textarea class="form-control form-control-textarea" id="reason-2" rows="3" cols="50"></textarea>
-            </div>
-  
-            <div class="dialog-actions">
-              <button class="button">Deactivate customer's account</button>
-              <a class="dialog-cancel" href="#">Cancel</a>
-            </div>
-  
-            <button class="dialog-close" aria-label="close" type="button">
-              <span class="icon icon-close">x</span>
-            </button>
-  
-          </form>
-  
+        
+        <div class="related-section">
+          <h2 class="related-section-title">Assisted assurance</h2>
+          <ul class="related-section-links">
+            <li><a href="#">Resend code</a></li>
+            <li><a href="#">Delete identity</a></li>
+          </ul>
         </div>
-  
+      
       </div>
-  
-  	</div>
-  	
     
+    
+    </div>
+    
+    
+  </div>
+  
+  
+  <h3 class="heading-medium">Search results</h3>
+  
+  <table class="table-customer-search">
+    
+    <caption class="visuallyhidden">Customer search listing</caption>
+   
+    <thead>
+      <tr>
+        <th scope="col">Customer</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ref</th>
+        <th class="action last" scope="col"><span class="visuallyhidden">Status</span></th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      
+      <tr itemtype="http://schema.org/Organization" itemscope>
+        <th scope="row" itemprop="name"><a href="/">Agent Smith</a></th>
+        <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+          <div itemprop="streetAddress">Beech Farm</div>
+          <div itemprop="addressLocality">Pooley Bridge</div>
+          <div itemprop="addressRegion">Penrith</div>
+          <div itemprop="postalCode">CA10 2NP</div>
+          <div itemprop="addressCountry">United Kingdom</div>
+        </td>
+        <td itemprop="email">selenium@kainos.com</td>
+        <td>1000000222</td>
+        <td class="status last">
+          <div class="statuses">
+            <span class="icon icon-lock" title="Customer's account is locked" role="presentation"></span>
+            <span class="icon icon-deactivate" title="Customer's account is deactivated" role="presentation"></span>
+          </div>
+        </td>
+      </tr>
+      
+      <tr itemtype="http://schema.org/Organization" itemscope>
+        <th scope="row" itemprop="name"><a href="/">Andrew Smith</a></th>
+        <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+          <div itemprop="streetAddress">144</div>
+          <div itemprop="addressLocality">Holt Road</div>
+          <div itemprop="addressRegion">Fakenham</div>
+          <div itemprop="postalCode">NR21 0AX</div>
+          <div itemprop="addressCountry">United Kingdom</div>
+        </td>
+        <td itemprop="email">sandrew.smith@kainos.com</td>
+        <td>1000000087</td>
+        <td class="status last"></td>
+      </tr>
+      
+      <tr itemtype="http://schema.org/Organization" itemscope>
+        <th scope="row" itemprop="name"><a href="/">Bert Smith</a></th>
+        <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+          <div itemprop="streetAddress">Willow Farm</div>
+          <div itemprop="addressLocality">Green Lane</div>
+          <div itemprop="addressRegion">Wilmslow</div>
+          <div itemprop="postalCode">SK9 1LD</div>
+          <div itemprop="addressCountry">United Kingdom</div>
+        </td>
+        <td itemprop="email">bert.smith@kainos.com</td>
+        <td>1000000028</td>
+        <td class="last">
+          <div class="statuses">
+            <span class="icon icon-lock" title="Customer's account is locked" role="presentation"></span>
+          </div>
+        </td>
+      </tr>
+      
+    </tbody>
+    
+  </table>
+  
+  
+  <div class="dialog" id="dialog-1" aria-hidden="true">
+
+    <div class="dialog-holder" aria-labelledby="dialog-title-1" aria-describedby="dialog-content-1" role="alertdialog">
+
+      <div class="dialog-content" id="dialog-content-1" role="document" tabindex="0">
+
+        <h1 class="dialog-heading" id="dialog-title-1">Lock customer's account</h1>
+
+        <form class="form">
+
+          <div class="form-group">
+            <label class="form-label" for="reason-1">Give a reason for locking this customer's account</label>
+            <textarea class="form-control form-control-textarea" id="reason-1" rows="3" cols="50"></textarea>
+          </div>
+
+          <div class="dialog-actions">
+            <button class="button">Lock customer's account</button>
+            <a class="dialog-cancel" href="#">Cancel</a>
+          </div>
+
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+	</div>
+	
+	
+  <div class="dialog" id="dialog-2" aria-hidden="true">
+
+    <div class="dialog-holder" aria-labelledby="dialog-title-2" aria-describedby="dialog-content-2" role="alertdialog">
+
+      <div class="dialog-content" id="dialog-content-2" role="document" tabindex="0">
+
+        <h1 class="dialog-heading" id="dialog-title-2">Deactivate customer's account</h1>
+
+        <form class="form">
+
+          <div class="form-group">
+            <label class="form-label" for="reason-2">Give a reason for deactivating this customer's account</label>
+            <textarea class="form-control form-control-textarea" id="reason-2" rows="3" cols="50"></textarea>
+          </div>
+
+          <div class="dialog-actions">
+            <button class="button">Deactivate customer's account</button>
+            <a class="dialog-cancel" href="#">Cancel</a>
+          </div>
+
+          <button class="dialog-close" aria-label="close" type="button">
+            <span class="icon icon-close">x</span>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+	</div>

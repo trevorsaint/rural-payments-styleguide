@@ -1,27 +1,18 @@
 {{>docheader}}
-
-
-  {{>angularscripts}}
   
   
   {{#if internalHeader}}
-  {{>header-defra}}
+    {{>header-defra}}
   {{else}}
-  {{>header}}
+    {{>header}}
   {{/if}}
 
 
-  <!-- Content -->
   <main id="content" role="main">
 
 
   {{#if phase}}
   {{>phase}}
-  {{/if}}
-  
-  
-  {{#if businessMenu}}
-  {{>navigation}}
   {{/if}}
 
 
@@ -29,7 +20,6 @@
 
 
   </main>
-  <!-- end -->
 
 
   {{>footer}}

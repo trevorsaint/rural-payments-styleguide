@@ -1,0 +1,54 @@
+		{{>breadcrumb}}
+    
+    
+    <div class="text">
+      
+      <h1 class="heading-xlarge">{{page_name}} <span class="heading-secondary">{{business_name}}</span></h1>
+      
+    </div>
+    
+    
+    <h2 class="heading-medium">Accountable person details</h2>
+
+    <table class="table-summary">
+    
+      <caption class="visuallyhidden">Business details</caption>
+      
+      <tbody>
+      
+        <tr>
+          <th class="table-summary-title" scope="row">Name</th>
+          <td class="table-summary-content">
+            {{#if firstname}}
+              {{firstname}} {{lastname}}
+            {{else}}
+              Sydney Bechett
+            {{/if}}</td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row">National Insurance number</th>
+          <td class="table-summary-content">{{ni}}</td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row">&#37; share</th>
+          <td class="table-summary-content">{{share}}</td>
+        </tr>
+        
+        <tr>
+          <th class="table-summary-title" scope="row">&#37; votes</th>
+          <td class="table-summary-content">{{rights}}</td>
+        </tr>
+      
+      </tbody>
+    
+    </table>
+    
+    
+    <p><a class="button" href="/accountable-people/business-ownership/accountable-person/summary/" role="button">Confirm</a></p>
+    
+    
+    <p><a href="/accountable-people/business-ownership/accountable-person/">Cancel</a></p>
+    
+    

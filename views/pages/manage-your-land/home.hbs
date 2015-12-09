@@ -1,0 +1,116 @@
+  {{>breadcrumb}}
+
+
+    <div class="grid-row">
+
+
+      <div class="column-two-thirds">
+
+
+        <header class="page-header">
+
+          <h1>{{page_name}}</h1>
+
+          <dl class="list-parcel-inline">
+            <dt>Area</dt>
+            <dd>5.76<abbr title="hectares">ha</abbr></dd>
+            <dt>ID</dt>
+            <dd>SJ8063_3931</dd>
+            <dt>Organic status</dt>
+            <dd>In conversion</dd>
+          </dl>
+
+        </header>
+
+
+        <p class="lede">List the land uses and features on this land parcel.</p>
+
+
+        <form class="form" method="post" action="#">
+
+
+        <p class="bold-small text-warning">Enter any missing information before saving</p>
+
+
+        <table class="table-land-features">
+
+          <caption class="visuallyhidden">Land uses and features information</caption>
+
+          <thead>
+
+            <tr>
+              <th scope="col">Land uses and features</th>
+              <th class="numeric" scope="col">Area (<abbr title="hectare">ha</abbr>)</th>
+              <th class="action last"></th>
+            </tr>
+
+          </thead>
+
+          <tfoot>
+
+            <tr>
+              <th>Total area:</th>
+              <td class="numeric"><span class="bold-medium">5.6</span></td>
+              <td class="action last"></td>
+            </tr>
+
+          </tfoot>
+
+          <tbody>
+
+            <tr>
+              <th scope="row">Hedge</th>
+              <td class="numeric">0.56</td>
+              <td class="action last"><a class="link-secondary" href="#">Remove</a></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Buffer strip</th>
+              <td class="numeric">0.67</td>
+              <td class="action last"><a class="link-secondary" href="#">Remove</a></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Arable land <span class="text-warning">More information required</span></th>
+              <td class="numeric">4.32</td>
+              <td class="action last"><a class="link-secondary" href="#">Remove</a></td>
+            </tr>
+
+            <tr>
+              <th scope="row"><a href="#">Pond</a></th>
+              <td class="numeric">0.05</td>
+              <td class="action last"><a class="link-secondary" href="#">Remove</a></td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+
+        <p><a href="#">Add a land use or feature</a></p>
+
+
+          <div class="form-group">
+            <label class="block-label">
+              <input type="checkbox" name="checkbox-group" value="confirm">By checking this box I confirm this information is accurate
+            </label>
+          </div>
+
+
+          <button class="button" type="submit">Save and return</button>
+
+
+        </form>
+
+
+      </div>
+
+
+      <div class="column-third">
+
+        {{>map}}
+
+      </div>
+
+
+    </div>

@@ -1,125 +1,136 @@
-		<a class="link-back" href="/">Back to index</a>
+  {{>breadcrumb}}
+		
+	
+	<div class="grid-row">
 		
 		
-    <form class="form" method="get" action="/">
-  		
-  		
-  		<div class="text">  		
-  		  <h1 class="form-title heading-large">Example: Search for a customer or business</h1>  		
-  		</div>
-
-
-			<div class="form-group">
-				
-				<label for="criteria">
-				  <span class="form-label">Criteria</span>
-				  <span class="form-hint">Select the criteria you want to search by</span>
-				</label>
-    
-        <select class="form-control-select" id="criteria">
-          <option>-- Please make a selection --</option>
-          <option value="1">Single business identifier</option>
-          <option value="2">Business name</option>
-          <option value="3">Business postcode</option>
-          <option value="4" selected>Customer name</option>
-          <option value="5">Customer postcode</option>
-          <option value="6">Trader number</option>
-          <option value="7">Vendor number</option>
-          <option value="8">Customer reference number</option>
-          <option value="9">Personal identifier</option>
-        </select>
-				
-			</div>
-
-
-			<div class="form-group">
-  			
-				<label for="last-name">
-				  <span class="form-label">Last name</span>
-					<span class="form-hint">Enter at least the first 3 characters, example 'Smi'</span>
-				</label>
-				
-				<input class="form-control" id="last-name" type="text" value="Smith">
-				
-			</div>
-
-
-			<button class="button">Search</button>
-
-
-		</form>
-
-    
-    <h3 class="heading-medium">Search results</h3>
-    
-    
-    <table class="table-customer-search js-table-rows-clickable">
+		<div class="column-two-thirds">
+	
+	
+      <form class="form" method="get" action="/">
+    		
+    				
+    		<h1 class="form-title heading-xlarge">{{page_name}}</h1>
+  
+  
+  			<div class="form-group">
+  				
+  				<label class="form-label" for="criteria">Criteria 
+  				  <span class="form-hint">Select the criteria you want to search by</span>
+  				</label>
       
-      <caption class="visuallyhidden">Customer search listing</caption>
-     
-      <thead>
-        <tr>
-          <th scope="col">Customer</th>
-          <th scope="col">Address</th>
-          <th scope="col">Email</th>
-          <th scope="col">Ref</th>
-          <th class="action last" scope="col"><span class="visuallyhidden">Status</span></th>
-        </tr>
-      </thead>
+          <select class="form-control-select" id="criteria">
+            <option>-- Please make a selection --</option>
+            <option value="1">Single business identifier</option>
+            <option value="2">Business name</option>
+            <option value="3">Business postcode</option>
+            <option value="4" selected>Customer name</option>
+            <option value="5">Customer postcode</option>
+            <option value="6">Trader number</option>
+            <option value="7">Vendor number</option>
+            <option value="8">Customer reference number</option>
+            <option value="9">Personal identifier</option>
+          </select>
+  				
+  			</div>
+  
+  
+  			<div class="form-group">
+    			
+  				<label class="form-label" for="last-name">Last name 
+  					<span class="form-hint">Enter at least the first 3 characters</span>
+  				</label>
+  				
+  				<input class="form-control" id="last-name" type="text" value="Smith">
+  				
+  			</div>
+  
+  
+  			<div class="form-group">
+    			
+    			<button class="button" type="submit">Search</button>
+    			
+  			</div>
+  
+  
+  		</form>
+	
+	
+		</div>
+	
+	
+	</div>
+	
+	
+	<h3 class="heading-medium">Search results</h3>
+	
+  <table class="table-customer-search">
+    
+    <caption class="visuallyhidden">Customer search listing</caption>
+   
+    <thead>
+      <tr>
+        <th scope="col">Customer</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ref</th>
+        <th class="action last" scope="col"><span class="visuallyhidden">Status</span></th>
+      </tr>
+    </thead>
+    
+    <tbody>
       
-      <tbody>
-        
-        <tr itemtype="http://schema.org/Organization" data-link="/" itemscope>
-          <th scope="row" itemprop="name"><a href="/">Agent Smith</a></th>
-          <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-            <div itemprop="streetAddress">Beech Farm</div>
-            <div itemprop="addressLocality">Pooley Bridge</div>
-            <div itemprop="addressRegion">Penrith</div>
-            <div itemprop="postalCode">CA10 2NP</div>
-            <div itemprop="addressCountry">United Kingdom</div>
-          </td>
-          <td itemprop="email">selenium@kainos.com</td>
-          <td>1000000222</td>
-          <td class="status last">
-            <div class="statuses">
-              <span class="icon icon-lock" title="Customer's account is locked" role="presentation"></span>
-              <span class="icon icon-deactivate" title="Customer's account is deactivated" role="presentation"></span>
-            </div>
-          </td>
-        </tr>
-        
-        <tr itemtype="http://schema.org/Organization" data-link="/" itemscope>
-          <th scope="row" itemprop="name"><a href="/">Andrew Smith</a></th>
-          <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-            <div itemprop="streetAddress">144</div>
-            <div itemprop="addressLocality">Holt Road</div>
-            <div itemprop="addressRegion">Fakenham</div>
-            <div itemprop="postalCode">NR21 0AX</div>
-            <div itemprop="addressCountry">United Kingdom</div>
-          </td>
-          <td itemprop="email">sandrew.smith@kainos.com</td>
-          <td>1000000087</td>
-          <td class="status last"></td>
-        </tr>
-        
-        <tr itemtype="http://schema.org/Organization" data-link="/" itemscope>
-          <th scope="row" itemprop="name"><a href="/">Bert Smith</a></th>
-          <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
-            <div itemprop="streetAddress">Willow Farm</div>
-            <div itemprop="addressLocality">Green Lane</div>
-            <div itemprop="addressRegion">Wilmslow</div>
-            <div itemprop="postalCode">SK9 1LD</div>
-            <div itemprop="addressCountry">United Kingdom</div>
-          </td>
-          <td itemprop="email">bert.smith@kainos.com</td>
-          <td>1000000028</td>
-          <td class="last">
-            <div class="statuses">
-              <span class="icon icon-lock" title="Customer's account is locked" role="presentation"></span>
-            </div>
-          </td>
-        </tr>
-        
-      </tbody>
+      <tr itemtype="http://schema.org/Organization" itemscope>
+        <th scope="row" itemprop="name"><a href="/">Agent Smith</a></th>
+        <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+          <div itemprop="streetAddress">Beech Farm</div>
+          <div itemprop="addressLocality">Pooley Bridge</div>
+          <div itemprop="addressRegion">Penrith</div>
+          <div itemprop="postalCode">CA10 2NP</div>
+          <div itemprop="addressCountry">United Kingdom</div>
+        </td>
+        <td itemprop="email">selenium@kainos.com</td>
+        <td>1000000222</td>
+        <td class="status last">
+          <div class="statuses">
+            <span class="icon icon-lock" title="Customer's account is locked" role="presentation"></span>
+            <span class="icon icon-deactivate" title="Customer's account is deactivated" role="presentation"></span>
+          </div>
+        </td>
+      </tr>
       
-    </table>
+      <tr itemtype="http://schema.org/Organization" itemscope>
+        <th scope="row" itemprop="name"><a href="/">Andrew Smith</a></th>
+        <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+          <div itemprop="streetAddress">144</div>
+          <div itemprop="addressLocality">Holt Road</div>
+          <div itemprop="addressRegion">Fakenham</div>
+          <div itemprop="postalCode">NR21 0AX</div>
+          <div itemprop="addressCountry">United Kingdom</div>
+        </td>
+        <td itemprop="email">sandrew.smith@kainos.com</td>
+        <td>1000000087</td>
+        <td class="status last"></td>
+      </tr>
+      
+      <tr itemtype="http://schema.org/Organization" itemscope>
+        <th scope="row" itemprop="name"><a href="/">Bert Smith</a></th>
+        <td itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope>
+          <div itemprop="streetAddress">Willow Farm</div>
+          <div itemprop="addressLocality">Green Lane</div>
+          <div itemprop="addressRegion">Wilmslow</div>
+          <div itemprop="postalCode">SK9 1LD</div>
+          <div itemprop="addressCountry">United Kingdom</div>
+        </td>
+        <td itemprop="email">bert.smith@kainos.com</td>
+        <td>1000000028</td>
+        <td class="last">
+          <div class="statuses">
+            <span class="icon icon-lock" title="Customer's account is locked" role="presentation"></span>
+          </div>
+        </td>
+      </tr>
+      
+    </tbody>
+    
+  </table>

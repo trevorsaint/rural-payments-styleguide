@@ -653,11 +653,11 @@ function businessOwnership() {
 
       if ($('#radio-inline-1').is(':checked')) {
 
-          window.location.href = "/accountable-people/business-ownership/sole-trader/details/";
+          window.location.href = "/accountable-people/business-ownership/sole-trader/";
 
         } else {
 
-         window.location.href = "/accountable-people/business-ownership/accountable-person/add/";
+         window.location.href = "/accountable-people/business-ownership/accountable-person/";
 
       }
 
@@ -718,6 +718,14 @@ function declarationAccountable() {
     var form = $('#form-declaration-accountable-people');
     
     enableButtonOnSelection(form);
+    
+    $('button[type=submit]').on('click', function(e) {
+
+      e.preventDefault();
+
+      window.location.href = "/accountable-people/business-ownership/accountable-person/business/";
+
+    });
   
   }
   
