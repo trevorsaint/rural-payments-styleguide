@@ -8,15 +8,12 @@ $module: 'guidance';
 
 .#{$module} {
   background-color: white;
-  border-left: 1px solid $grey-2;
-  border-right: 1px solid $grey-2;
-  // box-shadow: 0 em(2) em(5) rgba(0, 0, 0, .26); // Gov.uk don't seem to use css3 fancy filters
   box-sizing: border-box;
   position: fixed; top: 0;
   height: 100%;
   max-width: em(480);
+  min-width: 0;
   padding-top: em(87);
-  overflow: hidden;
   width: 100%;
   z-index: 999;
   
@@ -52,6 +49,34 @@ $module: 'guidance';
   
   &-inner {
     padding: em(30);
+  }
+  
+  
+  &-resize {
+    background-color: $grey-2;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    cursor: ew-resize;
+    
+    &:hover {
+      background-color: $govuk-blue;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      height: 30px;
+      width: 2px;
+      margin-top: -15px;
+      margin-left: -1px;
+      background-color: #fff;
+      left: 50%;
+    }
+    
   }
   
   
@@ -116,5 +141,15 @@ iframe {
   border: 0;
   height: 100%;
   width: 100%;
+}
+
+
+.js-resizing {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
