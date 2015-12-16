@@ -61,8 +61,8 @@ module.exports = {
     
     app.get('/alerts', function(req, res) {
       data = {
-        doctitle:       'Alerts',
-        page_name:      'Alerts',
+        doctitle: 'Alerts',
+        page_name: 'Alerts',
         prettifyScript: true,
         phase: true
       };
@@ -71,8 +71,8 @@ module.exports = {
     
     app.get('/pagination', function(req, res) {
       data = {
-        doctitle:       'Pagination',
-        page_name:      'Pagination',
+        doctitle: 'Pagination',
+        page_name: 'Pagination',
         prettifyScript: true,
         phase: true
       };
@@ -81,8 +81,8 @@ module.exports = {
     
     app.get('/checklist', function(req, res) {
       data = {
-        doctitle:       'Checklist',
-        page_name:      'Checklist',
+        doctitle: 'Checklist',
+        page_name: 'Checklist',
         prettifyScript: true,
         phase: true
       };
@@ -92,6 +92,10 @@ module.exports = {
     app.get('/checklist/example', function(req, res) {
       data = {
         doctitle: 'Checklist example',
+        page_name: 'Checklist example',
+        section: 'checklist',
+        section_name: 'Checklist',
+        phase: true,
         openLayers: true
       };
       res.render('elements/checklist/example/home', data);
