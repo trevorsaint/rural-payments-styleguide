@@ -5,23 +5,24 @@
 
 .button {
   @include button ($button-colour);
-  margin: 0 $gutter-half $gutter-half 0;
+  @include box-sizing (border-box);
   padding: em(10) em(15) em(5) em(15);
   vertical-align: top;
+  @include media (mobile) {
+    width: 100%;
+  }
 }
 
 
 // Fix unwanted button padding in Firefox
 
-.button::-moz-focus-inner,
- button::-moz-focus-inner {
+.button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
 
-.button:focus,
- button:focus {
+.button:focus {
   outline: 3px solid $yellow;
   overflow: hidden; // Fixes unwanted padding on focus
 }
@@ -29,13 +30,11 @@
 
 // Disabled buttons
 
-.button[disabled="disabled"],
- button[disabled="disabled"] {
+.button[disabled="disabled"] {
   background: $button-colour;
 }
 
-.button[disabled="disabled"]:focus,
- button[disabled="disabled"]:focus {
+.button[disabled="disabled"]:focus {
   outline: none;
 }
 
@@ -60,11 +59,3 @@
   }
 
 }
-
-
-// Button container
-
-.button-container {
-  margin-top: em(45);
-}
-

@@ -112,7 +112,7 @@ $module: 'dialog';
     display: inline-block;
     font-size: 1em;
     line-height: 1.25;
-    margin: 0 em(15) em(15) 0;
+    margin-right: em(15);
     padding: em(10) em(15) em(5);
 
     &:focus,
