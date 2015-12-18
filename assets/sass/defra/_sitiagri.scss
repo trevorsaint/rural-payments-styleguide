@@ -10,9 +10,8 @@ $module: 'guidance';
   background-color: white;
   border-left: 1px solid $grey-2;
   border-right: 1px solid $grey-2;
-  // box-shadow: 0 em(2) em(5) rgba(0, 0, 0, .26); // Gov.uk don't seem to use css3 fancy filters
   box-sizing: border-box;
-  position: fixed; top: 0;
+  position: fixed; top: 0; right: 0;
   height: 100%;
   max-width: em(480);
   padding-top: em(87);
@@ -62,15 +61,11 @@ $module: 'guidance';
   }
   
   
-  // Positioning
+  // Move guidance to the left
   
-  &[data-position=right] {
-    right: 0;
-  }
-  
-  
-  &[data-position=left] {
+  &-left {
     left: 0;
+    right: auto;
   }
   
   

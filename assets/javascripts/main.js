@@ -441,15 +441,23 @@ function guidance() {
       
       
       e.preventDefault();
-      
-      
-      var pos  = $guidance.attr('data-position') === 'right' ? 'left' : 'right';
-      var text = $guidance.attr('data-position') === 'right' ? 'Move to the right of the screen' : 'Move to the left of the screen'; 
 
-      $guidance.attr('data-position', pos);
-      $guidanceMove.find('span').text(text);
-      $guidanceMove.attr('title', text);
       
+      if (($guidance).hasClass('guidance-left')) {
+        
+        $guidance.removeClass('guidance-left');
+        
+        $(this).find('span').text('Move to the left of the screen');
+        $(this).attr('title', 'Move to the left of the screen');
+
+      } else {
+        
+        $guidance.addClass('guidance-left');
+        
+        $(this).find('span').text('Move to the right of the screen');
+        $(this).attr('title', 'Move to the right of the screen');
+        
+      }
       
     });
     
