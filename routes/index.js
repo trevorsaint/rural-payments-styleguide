@@ -674,6 +674,18 @@ module.exports = {
     });
     
     
+    app.get('/pages/options-tool-questions', function(req, res) {
+      data = {
+        doctitle: 'Countryside Stewardship',
+        page_name: 'Countryside Stewardship',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/options-tool-questions/home', data);
+    });
+    
+    
     // USER JOURNEYS
     // ==============================================
     
