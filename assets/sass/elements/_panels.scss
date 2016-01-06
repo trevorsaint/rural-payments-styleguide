@@ -8,7 +8,8 @@
   clear: both;
   border-left: 4px solid $border-colour;
   padding: 10px 0 10px $gutter-half;
-  margin: ($gutter $gutter-half $gutter*1.5 0);
+  //margin: ($gutter $gutter-half $gutter*1.5 0);
+  margin-bottom: em(15,19);
 }
 
 
