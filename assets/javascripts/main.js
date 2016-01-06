@@ -385,18 +385,26 @@ function formValidation() {
 function guidance() {
     
     
-  if ($('.guidance').length > 0) {    
+  if ($('.guidance').length > 0) {
   
-  
-    var $doc            = $(document);
-    var $window         = $(window);
+
+    var $doc       = $(document);
+    var $window    = $(window);
+    var $container = $('body');
+    
     var guidanceActive  = false;
+    var $guidance       = $('.guidance');
+    var $guidanceOpen   = $('.guidance-open');
+    var $guidanceClose  = $('.guidance-close');
     
-    var $guidance        = $('.guidance');
-    var $guidanceOpen    = $('.guidance-open');
-    var $guidanceClose   = $('.guidance-close');
+    var $guidanceMove   = $('.guidance-move');
+    var $guidanceResize = $('.guidance-resize');
     
-    var $guidanceMove    = $('.guidance-move');
+    var isResizing = false;
+    var lastDownX  = 0;
+    
+    var min = 270;
+    var max = 480;
     
     
     // Open guidance
@@ -435,27 +443,58 @@ function guidance() {
     });
     
     
+    // Resize
+    
+    $guidanceResize.on('mousedown', function(e) {
+      isResizing = true;
+      $container.addClass('js-resizing'); // Prevent user selection
+    });
+
+    
+    $doc.on('mousemove', function (e) {
+    
+      if (!isResizing) return;
+      
+        if ($guidance.hasClass('guidance-left')) {
+          
+          var x = e.pageX - $guidance.offset().left;
+          
+        } else {
+          
+          var x = $guidance.width() - (e.pageX - $guidance.offset().left);
+          
+        }
+        
+        $guidance.css('width', x);
+        console.log(x);
+      
+      }).on('mouseup', function(e) {
+        
+        isResizing = false;
+        $container.removeClass('js-resizing'); // Allow user selection
+        
+    });
+    
+    
     // Move guidance
     
     $guidanceMove.on('click', function(e) {
       
-      
       e.preventDefault();
 
-      
       if (($guidance).hasClass('guidance-left')) {
         
         $guidance.removeClass('guidance-left');
         
-        $(this).find('span').text('Move to the left of the screen');
-        $(this).attr('title', 'Move to the left of the screen');
+        $(this).find('span').text('Move help & guidance to the left of the screen');
+        $(this).attr('title', 'Move help & guidance to the left of the screen');
 
       } else {
         
         $guidance.addClass('guidance-left');
         
-        $(this).find('span').text('Move to the right of the screen');
-        $(this).attr('title', 'Move to the right of the screen');
+        $(this).find('span').text('Move help & guidance to the right of the screen');
+        $(this).attr('title', 'Move help & guidance to the right of the screen');
         
       }
       

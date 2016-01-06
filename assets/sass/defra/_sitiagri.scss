@@ -7,36 +7,37 @@ $module: 'guidance';
 
 
 .#{$module} {
-  background-color: white;
-  border-left: 1px solid $grey-2;
-  border-right: 1px solid $grey-2;
+  background-color: $page-colour;
   box-sizing: border-box;
   position: fixed; top: 0; right: 0;
   height: 100%;
-  max-width: em(480);
-  padding-top: em(87);
-  overflow: hidden;
+  max-width: 480px;
+  min-width: 270px;
+  padding-top: em(74);
   width: 100%;
   z-index: 999;
   
   
+  // Header
   &-header {
-    background-color: white;
+    background-color: $page-colour;
     border-bottom: 1px solid $grey-2;
-    height: em(87);
-    max-width: em(478);
-    position: fixed; top: 0; right: 0;
+    box-sizing: border-box;
+    position: absolute; top: 0;
+    padding: em(19);
     width: 100%;
+    text-align: center;
   }
   
   
   &-title {
-    @include bold-24();
-    position: absolute; 
-    top: 30px; left: 30px;
+    @include bold-19();
+    display: inline-block;
+    line-height: 36px;
   }
   
   
+  // Content
   &-content {
     box-sizing: border-box;
     height: 100%;
@@ -50,28 +51,38 @@ $module: 'guidance';
   
   
   &-inner {
-    padding: em(30);
+    padding: em(19);
+    overflow: hidden;
+  }
+  
+  
+  &-resize {
+    background-color: $grey-2;
+    cursor: ew-resize;
+    height: 100%;
+    position: absolute; left: -10px; top: 0;
+    width: 10px;
+    
+    &:hover {
+      background-color: lighten($grey-2,5%);
+    }
+    
+    &:after {
+      background-color: $page-colour;
+      content: '';
+      height: 30px;
+      margin-top: -15px;
+      margin-left: -1px;
+      position: absolute; left: 50%; top: 50%;
+      width: 2px;
+    }
+    
   }
   
   
   // Hide
-  
   &[aria-hidden='true'] {
     display: none;
-  }
-  
-  
-  // Move guidance to the left with header
-  
-  &-left {
-    left: 0;
-    right: auto;
-    
-    .#{$module}-header {
-      left: 0;
-      right: auto;
-    }
-    
   }
   
   
@@ -79,32 +90,71 @@ $module: 'guidance';
   &-move {
     @extend %hide-text;
     background-color: rgba(0,0,0,0);
+    background-image: url('../images/icons/help-and-guidance.png');
+    background-position: 50% 0;
     border: 0 none;
+    border-color: $grey-3;
+    border-style: solid;
     cursor: pointer;
     display: block;
-    margin: 4px;
+    height: 36px;
     padding: 0;
+    width: 36px;
     
-    span {
-      cursor: inherit;
+    @include device-pixel-ratio() {
+      background: url('../images/icons/help-and-guidance-2x.png');
+      @include background-size(36px);
+    }
+    
+    &:hover {
+      border-color: $black;
     }
     
   }
   
   
   // Close
-  
   &-close {
-    position: absolute; 
-    right: 30px; top: 30px;
+    border-left-width: 1px;
+    float: right;
   }
   
   
   // Move
-  
   &-move {
-    position: absolute; 
-    right: 66px; top: 30px;
+    background-position: 50% -36px;
+    border-right-width: 1px;
+    float: left;
+  }
+  
+  
+  // Positioning
+  &-left {
+    right: auto;
+    left: 0;
+    
+    .#{$module} {
+      
+      &-close {
+        border-left: 0;
+        border-right-width: 1px;
+        float: left;
+      }
+      
+      &-move {
+        background-position: 50% -72px;
+        border-right: 0;
+        border-left-width: 1px;
+        float: right;
+      }
+      
+      &-resize {
+        left: auto;
+        right: -10px;
+      }
+      
+    }
+    
   }
   
   
@@ -112,10 +162,30 @@ $module: 'guidance';
 
 
 // Iframe
-
 iframe {
   border: 0;
   height: 100%;
   width: 100%;
+}
+
+
+.js-resizing {
+  
+  // Prevent weird selection issues when resizing
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+  .#{$module} {
+  
+    &-resize {
+      background-color: $govuk-blue;
+    }
+  
+  }
+  
 }
 
