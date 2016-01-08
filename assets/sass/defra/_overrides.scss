@@ -108,3 +108,15 @@ details .panel-indent {
 
 }
 
+
+// Button text alignment for button links
+
+.button {
+  text-align: center;
+  
+  &-start {
+    text-align: left;
+  }
+  
+}
+
