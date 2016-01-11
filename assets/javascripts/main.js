@@ -449,6 +449,12 @@ function guidance() {
       isResizing = true;
       $container.addClass('js-resizing'); // Prevent user selection
     });
+    
+    
+    $guidanceResize.on('mouseup', function(e) {
+      isResizing = false;
+      $container.removeClass('js-resizing'); // Prevent user selection
+    });
 
     
     $doc.on('mousemove', function (e) {
