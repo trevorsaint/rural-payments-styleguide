@@ -7,6 +7,10 @@
 
 .panel-indent {
 
+  *:first-child {
+    margin-top: 0;
+  }
+
   p {
     margin-top: 0;
   }

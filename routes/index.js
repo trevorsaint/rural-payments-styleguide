@@ -686,6 +686,18 @@ module.exports = {
     });
     
     
+    app.get('/pages/cs-priority-options', function(req, res) {
+      data = {
+        doctitle: 'Priority options',
+        page_name: 'Priority options',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/cs-priority-options/home', data);
+    });
+    
+    
     // USER JOURNEYS
     // ==============================================
     

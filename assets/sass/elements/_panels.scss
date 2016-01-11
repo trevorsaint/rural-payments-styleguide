@@ -5,11 +5,11 @@
 // Indented panels with a grey left hand border
 .panel-indent {
   @extend %contain-floats;
-  clear: both;
   border-left: 4px solid $border-colour;
+  clear: both;
+  margin-bottom: em(20,19);
   padding: 10px 0 10px $gutter-half;
   //margin: ($gutter $gutter-half $gutter*1.5 0);
-  margin-bottom: em(15,19);
 }
 
 
