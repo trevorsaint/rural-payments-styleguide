@@ -417,13 +417,13 @@ function guidance() {
         
         $guidance.attr('aria-hidden', false);
       
-        guidanceActive = true; 
+        guidanceActive = true;      
         
       } else {
         
         $guidance.attr('aria-hidden', true);
       
-        guidanceActive = false;  
+        guidanceActive = false;
         
       }
     
@@ -448,12 +448,11 @@ function guidance() {
     $guidanceResize.on('mousedown', function(e) {
       isResizing = true;
       $container.addClass('js-resizing'); // Prevent user selection
-    });
-    
-    
-    $guidanceResize.on('mouseup', function(e) {
-      isResizing = false;
-      $container.removeClass('js-resizing'); // Prevent user selection
+      
+      // Add a tarpaulin
+      
+      $('body').append('<div class="iframe-tarpaulin"></div>');
+      
     });
 
     
@@ -478,6 +477,10 @@ function guidance() {
         
         isResizing = false;
         $container.removeClass('js-resizing'); // Allow user selection
+        
+        // Remove tarpaulin
+        
+        $('.iframe-tarpaulin').remove();
         
     });
     
