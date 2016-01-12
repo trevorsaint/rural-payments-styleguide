@@ -180,7 +180,8 @@ iframe {
 
 
 .js-resizing {
-  
+  cursor: ew-resize;
+
   // Prevent weird selection issues when resizing
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -188,7 +189,7 @@ iframe {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  
+    
   .#{$module} {
   
     &-resize {
