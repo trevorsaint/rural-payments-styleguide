@@ -701,12 +701,16 @@ module.exports = {
       var manage_and_protect          = req.body.manage_and_protect;
       var improve_landscape_features  = req.body.improve_landscape_features;
       
-      var error = false;
+      var error  = false;
+      var error1 = false;
       
-      if (!severely_disadvantaged_area || !organic_land || !arable_land || !grassland || !farmland_birds || !breeding_waders || !addressing_water_quality || !types_of_water_issue || !manage_and_protect || !improve_landscape_features) {
+      if (!severely_disadvantaged_area || !organic_land || !arable_land || !grassland || !farmland_birds || !addressing_water_quality || !breeding_waders || !manage_and_protect || !improve_landscape_features) {
         error = true;
+      } else if (addressing_water_quality === 'Yes' && !types_of_water_issue) {
+        error1 = true;
       } else {
         error = false;
+        error1 = false;
       }
       
       res.render('pages/cs-options-tool-questions/home', {
@@ -725,6 +729,7 @@ module.exports = {
         'manage_and_protect': manage_and_protect,
         'improve_landscape_features': improve_landscape_features,
         'error': error,
+        'error1': error1,
         'phase': phase
       });
       

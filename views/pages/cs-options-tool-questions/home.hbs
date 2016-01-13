@@ -54,6 +54,23 @@
   {{/error}}
 
 
+  {{#error1}}
+  <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+
+    <h1 class="heading-medium error-summary-heading" id="error-summary-heading">You must answer all questions</h1>
+
+    <ul class="error-summary-list">
+
+      {{^types_of_water_issue}}
+      <li><a href="#types-of-water-issue">Which types of water issue are you interested in addressing?</a></li>
+      {{/types_of_water_issue}}
+
+    </ul>
+
+  </div>
+  {{/error1}}
+
+
   <div class="grid-row">
 
 
@@ -224,8 +241,7 @@
 
         </div>
 
-
-        <div class="form-group{{#error}}{{^addressing_water_quality}} error{{/addressing_water_quality}}{{/error}}">
+        <div class="form-group{{#error}} error{{/error}}{{#error1}} error{{/error1}}">
 
           <fieldset class="inline">
 
@@ -233,13 +249,13 @@
               <span class="form-label-bold">Are you interested in addressing water quality issues identified in your area?</span>
               {{#error}}
                 {{^addressing_water_quality}}
-                <span class="error-message"  id="error-message-addressing-water-quality">Select an answer</span>
+                <span class="error-message" id="error-message-addressing-water-quality">Select an answer</span>
                 {{/addressing_water_quality}}
               {{/error}}
             </legend>
 
             <label class="block-label" data-target="example-radio-inline-13" for="radio-inline-13">
-              <input id="radio-inline-13" name="addressing_water_quality" value="Yes" type="radio"{{#error}}{{^addressing_water_quality}} aria-describedby="error-message-addressing-water-quality"{{/addressing_water_quality}}{{/error}}> Yes
+              <input id="radio-inline-13" name="addressing_water_quality" value="Yes" type="radio"{{#error}} aria-describedby="error-message-addressing-water-quality"{{/error}}> Yes
             </label>
 
             <label class="block-label" for="radio-inline-14">
@@ -248,48 +264,48 @@
 
           </fieldset>
 
-          <div class="panel-indent js-hidden" id="example-radio-inline-13">
+          <div class="panel-indent js-hidden" id="example-radio-inline-13"{{#error1}} style="display: block;" aria-hidden="false"{{/error1}}>
 
             <fieldset>
 
               <legend>
                 <span class="form-label-bold">Which types of water issue are you interested in addressing?</span>
-                {{#error}}
+                {{#error1}}
                   {{^types_of_water_issue}}
                   <span class="error-message" id="error-message-types-of-water-issue">Select at least one answer</span>
                   {{/types_of_water_issue}}
-                {{/error}}
+                {{/error1}}
               </legend>
 
               <p>Select all that apply</p>
 
               <label class="block-label" for="checkbox-1">
-                <input id="checkbox-1" value="1" type="checkbox"{{#error}}{{^types_of_water_issue}} aria-describedby="error-message-types-of-water-issue"{{/types_of_water_issue}}{{/error}}>
+                <input id="checkbox-1" name="types_of_water_issue[]" value="1" type="checkbox"{{#error1}} aria-describedby="error-message-types-of-water-issue"{{/error1}}>
                 Phosphate and sediment in surface water
               </label>
 
               <label class="block-label" for="checkbox-2">
-                <input id="checkbox-2" value="2" type="checkbox">
+                <input id="checkbox-2"name="types_of_water_issue[]" value="2" type="checkbox">
                 Nitrates in surface water
               </label>
 
               <label class="block-label" for="checkbox-3">
-                <input id="checkbox-3" value="3" type="checkbox">
+                <input id="checkbox-3" name="types_of_water_issue[]" value="3" type="checkbox">
                 Nitrates in ground water
               </label>
 
               <label class="block-label" for="checkbox-4">
-                <input id="checkbox-4" value="4" type="checkbox">
+                <input id="checkbox-4" name="types_of_water_issue[]" value="4" type="checkbox">
                 Pesticides in surface water
               </label>
 
               <label class="block-label" for="checkbox-5">
-                <input id="checkbox-5" value="5" type="checkbox">
+                <input id="checkbox-5" name="types_of_water_issue[]" value="5" type="checkbox">
                 Pesticides in ground water
               </label>
 
               <label class="block-label" for="checkbox-6">
-                <input id="checkbox-6" value="6" type="checkbox">
+                <input id="checkbox-6" name="types_of_water_issue[]" value="6" type="checkbox">
                 Priority bathing waters
               </label>
 
