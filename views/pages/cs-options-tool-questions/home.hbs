@@ -1,372 +1,368 @@
   {{>breadcrumb}}
-  
-  
+
+
   {{#error}}
   <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
-  
-    <h1 class="heading-medium error-summary-heading" id="error-summary-heading">Message to alert the user to a problem goes here</h1>
-  
-    <p>Optional description of the error(s) and how to correct them</p>
-  
+
+    <h1 class="heading-medium error-summary-heading" id="error-summary-heading">You must answer all questions</h1>
+
     <ul class="error-summary-list">
-      
-      {{^severely_disadvantaged_area}}
-      <li><a href="#severely-disadvantaged-area">Do you have land within the Severely Disadvantaged Area (SDA)?</a></li>
-      {{/severely_disadvantaged_area}}
-      
-      {{^organic_land}}
-      <li><a href="#organic-land">Do you have organic land?</a></li>
-      {{/organic_land}}
-      
+
       {{^arable_land}}
       <li><a href="#arable-land">Do you have arable land?</a></li>
       {{/arable_land}}
-      
+
       {{^grassland}}
       <li><a href="#grassland">Do you have grassland?</a></li>
       {{/grassland}}
-      
+
+      {{^severely_disadvantaged_area}}
+      <li><a href="#severely-disadvantaged-area">Do you have land within the Severely Disadvantaged Area (SDA)?</a></li>
+      {{/severely_disadvantaged_area}}
+
+      {{^organic_land}}
+      <li><a href="#organic-land">Do you have organic land?</a></li>
+      {{/organic_land}}
+
       {{^farmland_birds}}
       <li><a href="#farmland-birds">Are you interested in options that help farmland birds and pollinators?</a></li>
       {{/farmland_birds}}
-      
+
       {{^breeding_waders}}
       <li><a href="#breeding-waders">Are you interested in options to help breeding waders?</a></li>
       {{/breeding_waders}}
-      
+
       {{^addressing_water_quality}}
       <li><a href="#addressing-water-quality">Are you interested in addressing water quality issues identified in your area?</a></li>
       {{/addressing_water_quality}}
-      
+
       {{^types_of_water_issue}}
       <li><a href="#types-of-water-issue">Which types of water issue are you interested in addressing?</a></li>
       {{/types_of_water_issue}}
-      
+
       {{^manage_and_protect}}
       <li><a href="#manage-and-protect">Are you interested in options to manage and protect historic environment features?</a></li>
       {{/manage_and_protect}}
-      
+
       {{^improve_landscape_features}}
       <li><a href="#improve-landscape-features">Are you interested in options to improve landscape features?</a></li>
       {{/improve_landscape_features}}
-      
+
     </ul>
-  
+
   </div>
   {{/error}}
 
 
   <div class="grid-row">
-    
-    
+
+
     <div class="column-two-thirds">
-      
-      
+
+
       <form class="form" method="post">
-    
-    
-        <h1 class="form-title heading-xlarge">{{page_name}}</h1>
 
-        
-        <p class="lede">Answering all the questions below will help us determine which Countryside Stewardship options are most applicable for your land and business.</p>
-        
 
-        <div class="form-group{{#error}}{{^severely_disadvantaged_area}} error{{/severely_disadvantaged_area}}{{/error}}">
-        
-          <fieldset class="inline">
-    
-            <legend{{#error}} id="severely-disadvantaged-area"{{/error}}>
-              <span class="form-label-bold">Do you have land within the Severely Disadvantaged Area (<abbr title="Severely Disadvantaged Area">SDA</abbr>)?</span>
-              {{#error}}
-                {{^severely_disadvantaged_area}}
-                <span class="error-message" id="error-message-severely-disadvantaged-area">Error message goes here</span>
-                {{/severely_disadvantaged_area}}
-              {{/error}}
-            </legend>
-            
-            <label class="block-label" for="radio-inline-1">
-              <input id="radio-inline-1" name="severely_disadvantaged_area" value="Yes" type="radio"{{#error}}{{^severely_disadvantaged_area}} aria-describedby="error-message-severely-disadvantaged-area"{{/severely_disadvantaged_area}}{{/error}}> Yes
-            </label>
-            
-            <label class="block-label" for="radio-inline-2">
-              <input id="radio-inline-2" name="severely_disadvantaged_area" value="No" type="radio"> No
-            </label>
-          
-          </fieldset>
-      
-        </div>
-        
+        <h1 class="form-title heading-xlarge">Questions</h1>
 
-        <div class="form-group{{#error}}{{^organic_land}} error{{/organic_land}}{{/error}}">
-        
-          <fieldset class="inline">
-    
-            <legend{{#error}} id="organic-land"{{/error}}>
-              <span class="form-label-bold">Do you have organic land?</span>
-              {{#error}}
-                {{^organic_land}}
-                <span class="error-message" id="error-message-organic-land">Error message goes here</span>
-                {{/organic_land}}
-              {{/error}}
-            </legend>
-            
-            <label class="block-label" for="radio-inline-3">
-              <input id="radio-inline-3" name="organic_land" value="Yes" type="radio"{{#error}}{{^organic_land}} aria-describedby="error-message-organic-land"{{/organic_land}}{{/error}}> Yes
-            </label>
-            
-            <label class="block-label" for="radio-inline-4">
-              <input id="radio-inline-4" name="organic_land" value="No" type="radio"> No
-            </label>
-          
-          </fieldset>
-        
-        </div>
-        
+
+        <p class="lede">Please answer all of the questions below. This will help to determine which Countryside Stewardship options are most applicable for you.</p>
+
 
         <div class="form-group{{#error}}{{^arable_land}} error{{/arable_land}}{{/error}}">
-        
+
           <fieldset class="inline">
-    
+
             <legend{{#error}} id="arable-land"{{/error}}>
               <span class="form-label-bold">Do you have arable land?</span>
               {{#error}}
                 {{^arable_land}}
-                <span class="error-message" id="error-message-arable-land">Error message goes here</span>
+                <span class="error-message" id="error-message-arable-land">Select an answer</span>
                 {{/arable_land}}
               {{/error}}
             </legend>
-            
+
             <label class="block-label" for="radio-inline-5">
               <input id="radio-inline-5" name="arable_land" value="Yes" type="radio"{{#error}}{{^arable_land}} aria-describedby="error-message-arable-land"{{/arable_land}}{{/error}}> Yes
             </label>
-            
+
             <label class="block-label" for="radio-inline-6">
               <input id="radio-inline-6" name="arable_land" value="No" type="radio"> No
             </label>
-          
+
           </fieldset>
-        
+
         </div>
-        
-      
+
+
         <div class="form-group{{#error}}{{^grassland}} error{{/grassland}}{{/error}}">
-        
+
           <fieldset class="inline">
-    
+
             <legend{{#error}} id="grassland"{{/error}}>
               <span class="form-label-bold">Do you have grassland?</span>
               {{#error}}
                 {{^grassland}}
-                <span class="error-message" id="error-message-grassland">Error message goes here</span>
+                <span class="error-message" id="error-message-grassland">Select an answer</span>
                 {{/grassland}}
               {{/error}}
             </legend>
-            
+
             <label class="block-label" for="radio-inline-7">
               <input id="radio-inline-7" name="grassland" value="Yes" type="radio"{{#error}}{{^grassland}} aria-describedby="error-message-grassland"{{/grassland}}{{/error}}> Yes
             </label>
-            
+
             <label class="block-label" for="radio-inline-8">
               <input id="radio-inline-8" name="grassland" value="No" type="radio"> No
             </label>
-          
+
           </fieldset>
-        
+
         </div>
-        
+
+
+        <div class="form-group{{#error}}{{^severely_disadvantaged_area}} error{{/severely_disadvantaged_area}}{{/error}}">
+
+          <fieldset class="inline">
+
+            <legend{{#error}} id="severely-disadvantaged-area"{{/error}}>
+              <span class="form-label-bold">Do you have land within the Severely Disadvantaged Area (<abbr title="Severely Disadvantaged Area">SDA</abbr>)?</span>
+              {{#error}}
+                {{^severely_disadvantaged_area}}
+                <span class="error-message" id="error-message-severely-disadvantaged-area">Select an answer</span>
+                {{/severely_disadvantaged_area}}
+              {{/error}}
+            </legend>
+
+            <label class="block-label" for="radio-inline-1">
+              <input id="radio-inline-1" name="severely_disadvantaged_area" value="Yes" type="radio"{{#error}}{{^severely_disadvantaged_area}} aria-describedby="error-message-severely-disadvantaged-area"{{/severely_disadvantaged_area}}{{/error}}> Yes
+            </label>
+
+            <label class="block-label" for="radio-inline-2">
+              <input id="radio-inline-2" name="severely_disadvantaged_area" value="No" type="radio"> No
+            </label>
+
+          </fieldset>
+
+        </div>
+
+
+        <div class="form-group{{#error}}{{^organic_land}} error{{/organic_land}}{{/error}}">
+
+          <fieldset class="inline">
+
+            <legend{{#error}} id="organic-land"{{/error}}>
+              <span class="form-label-bold">Do you have organic land?</span>
+              {{#error}}
+                {{^organic_land}}
+                <span class="error-message" id="error-message-organic-land">Select an answer</span>
+                {{/organic_land}}
+              {{/error}}
+            </legend>
+
+            <label class="block-label" for="radio-inline-3">
+              <input id="radio-inline-3" name="organic_land" value="Yes" type="radio"{{#error}}{{^organic_land}} aria-describedby="error-message-organic-land"{{/organic_land}}{{/error}}> Yes
+            </label>
+
+            <label class="block-label" for="radio-inline-4">
+              <input id="radio-inline-4" name="organic_land" value="No" type="radio"> No
+            </label>
+
+          </fieldset>
+
+        </div>
+
 
         <div class="form-group{{#error}}{{^farmland_birds}} error{{/farmland_birds}}{{/error}}">
-        
+
           <fieldset class="inline">
-    
+
             <legend{{#error}} id="farmland-birds"{{/error}}>
-              <span class="form-label-bold">Are you interested in options that help farmland birds and pollinators?</span>
-              <span class="form-hint">This includes bees, butterflies and moths</span>
+              <span class="form-label-bold">Are you interested in options that help farmland birds and pollinators (this includes bees, butterflies and moths)?</span>
               {{#error}}
                 {{^farmland_birds}}
-                <span class="error-message" id="error-message-farmland-birds">Error message goes here</span>
+                <span class="error-message" id="error-message-farmland-birds">Select an answer</span>
                 {{/farmland_birds}}
               {{/error}}
             </legend>
-            
+
             <label class="block-label" for="radio-inline-9">
               <input id="radio-inline-9" name="farmland_birds" value="Yes" type="radio"{{#error}}{{^farmland_birds}} aria-describedby="error-message-farmland-birds"{{/farmland_birds}}{{/error}}> Yes
             </label>
-            
+
             <label class="block-label" for="radio-inline-10">
               <input id="radio-inline-10" name="farmland_birds" value="No" type="radio"> No
             </label>
-          
+
           </fieldset>
-        
+
         </div>
-        
+
 
         <div class="form-group{{#error}}{{^breeding_waders}} error{{/breeding_waders}}{{/error}}">
-        
+
           <fieldset class="inline">
-    
+
             <legend{{#error}} id="breeding-waders"{{/error}}>
               <span class="form-label-bold">Are you interested in options to help breeding waders?</span>
               {{#error}}
                 {{^breeding_waders}}
-                <span class="error-message" id="error-message-breeding-waders">Error message goes here</span>
+                <span class="error-message" id="error-message-breeding-waders">Select an answer</span>
                 {{/breeding_waders}}
               {{/error}}
             </legend>
-            
+
             <label class="block-label" for="radio-inline-11">
               <input id="radio-inline-11" name="breeding_waders" value="Yes" type="radio"{{#error}}{{^breeding_waders}} aria-describedby="error-message-breeding-waders"{{/breeding_waders}}{{/error}}> Yes
             </label>
-            
+
             <label class="block-label" for="radio-inline-12">
               <input id="radio-inline-12" name="breeding_waders" value="No" type="radio"> No
             </label>
-          
+
           </fieldset>
-        
+
         </div>
-        
+
 
         <div class="form-group{{#error}}{{^addressing_water_quality}} error{{/addressing_water_quality}}{{/error}}">
-        
+
           <fieldset class="inline">
-    
+
             <legend{{#error}} id="addressing-water-quality"{{/error}}>
               <span class="form-label-bold">Are you interested in addressing water quality issues identified in your area?</span>
               {{#error}}
                 {{^addressing_water_quality}}
-                <span class="error-message"  id="error-message-addressing-water-quality">Error message goes here</span>
+                <span class="error-message"  id="error-message-addressing-water-quality">Select an answer</span>
                 {{/addressing_water_quality}}
               {{/error}}
             </legend>
-            
+
             <label class="block-label" data-target="example-radio-inline-13" for="radio-inline-13">
               <input id="radio-inline-13" name="addressing_water_quality" value="Yes" type="radio"{{#error}}{{^addressing_water_quality}} aria-describedby="error-message-addressing-water-quality"{{/addressing_water_quality}}{{/error}}> Yes
             </label>
-            
+
             <label class="block-label" for="radio-inline-14">
               <input id="radio-inline-14" name="addressing_water_quality" value="No" type="radio"> No
             </label>
-          
+
           </fieldset>
-          
+
           <div class="panel-indent js-hidden" id="example-radio-inline-13">
-            
+
             <fieldset>
-      
+
               <legend>
                 <span class="form-label-bold">Which types of water issue are you interested in addressing?</span>
                 {{#error}}
                   {{^types_of_water_issue}}
-                  <span class="error-message" id="error-message-types-of-water-issue">Error message goes here</span>
+                  <span class="error-message" id="error-message-types-of-water-issue">Select at least one answer</span>
                   {{/types_of_water_issue}}
                 {{/error}}
               </legend>
-              
+
               <p>Select all that apply</p>
-              
+
               <label class="block-label" for="checkbox-1">
                 <input id="checkbox-1" value="1" type="checkbox"{{#error}}{{^types_of_water_issue}} aria-describedby="error-message-types-of-water-issue"{{/types_of_water_issue}}{{/error}}>
                 Phosphate and sediment in surface water
               </label>
-              
+
               <label class="block-label" for="checkbox-2">
                 <input id="checkbox-2" value="2" type="checkbox">
                 Nitrates in surface water
               </label>
-              
+
               <label class="block-label" for="checkbox-3">
                 <input id="checkbox-3" value="3" type="checkbox">
                 Nitrates in ground water
               </label>
-              
+
               <label class="block-label" for="checkbox-4">
                 <input id="checkbox-4" value="4" type="checkbox">
                 Pesticides in surface water
               </label>
-              
+
               <label class="block-label" for="checkbox-5">
                 <input id="checkbox-5" value="5" type="checkbox">
                 Pesticides in ground water
               </label>
-              
+
               <label class="block-label" for="checkbox-6">
                 <input id="checkbox-6" value="6" type="checkbox">
                 Priority bathing waters
               </label>
-            
+
             </fieldset>
-            
+
           </div>
-        
+
         </div>
 
 
         <div class="form-group{{#error}}{{^manage_and_protect}} error{{/manage_and_protect}}{{/error}}">
-        
+
           <fieldset class="inline">
-    
+
             <legend{{#error}} id="manage-and-protect"{{/error}}>
               <span class="form-label-bold">Are you interested in options to manage and protect historic environment features?</span>
               {{#error}}
                 {{^manage_and_protect}}
-                <span class="error-message" id="error-message-manage-and-protect">Error message goes here</span>
+                <span class="error-message" id="error-message-manage-and-protect">Select an answer</span>
                 {{/manage_and_protect}}
               {{/error}}
             </legend>
-            
+
             <label class="block-label" for="radio-inline-15">
               <input id="radio-inline-15" name="manage_and_protect" value="Yes" type="radio"{{#error}}{{^manage_and_protect}} aria-describedby="error-message-manage-and-protect"{{/manage_and_protect}}{{/error}}> Yes
             </label>
-            
+
             <label class="block-label" for="radio-inline-16">
               <input id="radio-inline-16" name="manage_and_protect" value="No" type="radio"> No
             </label>
-          
+
           </fieldset>
-        
+
         </div>
-        
-        
+
+
         <div class="form-group{{#error}}{{^improve_landscape_features}} error{{/improve_landscape_features}}{{/error}}">
-        
+
           <fieldset class="inline">
-    
+
             <legend{{#error}} id="improve-landscape-features"{{/error}}>
-              <span class="form-label-bold">Are you interested in options to improve landscape features?</span>
-              <span class="form-hint">This includes walls, barns and hedges</span>
+              <span class="form-label-bold">Are you interested in options to improve landscape features (this includes walls, barns and hedges)?</span>
               {{#error}}
                 {{^improve_landscape_features}}
-                <span class="error-message" id="error-message-improve-landscape-features">Error message goes here</span>
+                <span class="error-message" id="error-message-improve-landscape-features">Select an answer</span>
                 {{/improve_landscape_features}}
               {{/error}}
             </legend>
-            
+
             <label class="block-label" for="radio-inline-17">
               <input id="radio-inline-17" name="improve_landscape_features" value="Yes" type="radio"{{#error}}{{^improve_landscape_features}} aria-describedby="error-message-improve-landscape-features"{{/improve_landscape_features}}{{/error}}> Yes
             </label>
-            
+
             <label class="block-label" for="radio-inline-18">
               <input id="radio-inline-18" name="improve_landscape_features" value="No" type="radio"> No
             </label>
-          
+
           </fieldset>
-        
+
         </div>
-        
-        
+
+
         <div class="form-group">
-          
-          <button class="button" type="submit">Continue</button>
-          
+
+          <button class="button" type="submit">Next</button>
+
         </div>
-        
-    
+
+
       </form>
-      
-      
+
+
     </div>
-    
-    
+
+
   </div>
