@@ -673,9 +673,18 @@ module.exports = {
       res.render('pages/your-password-has-expired/home', data);
     });
     
+    app.get('/pages/cs-options', function(req, res) {
+      var doctitle = 'Countryside Stewardship options';
+      var page_name = 'Countryside Stewardship options';
+      var section = 'pages';
+      var section_name = 'Pages';
+      var phase = true;
+      res.render('pages/cs-options-tool-questions/home', {'doctitle' : doctitle, 'page_name' : page_name, 'section' : section, 'section_name' : section_name, 'phase' : phase});
+    });
+    
     app.get('/pages/cs-options-tool-questions', function(req, res) {
-      var doctitle = 'Countryside Stewardship';
-      var page_name = 'Countryside Stewardship';
+      var doctitle = 'Questions';
+      var page_name = 'Questions';
       var section = 'pages';
       var section_name = 'Pages';
       var phase = true;
@@ -684,8 +693,8 @@ module.exports = {
     
     app.post('/pages/cs-options-tool-questions', function(req, res) {
       
-      var doctitle = 'Countryside Stewardship';
-      var page_name = 'Countryside Stewardship';
+      var doctitle = 'Questions';
+      var page_name = 'Questions';
       var section = 'pages';
       var section_name = 'Pages';
       var phase = true;
