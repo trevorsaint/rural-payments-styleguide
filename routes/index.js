@@ -673,88 +673,6 @@ module.exports = {
       res.render('pages/your-password-has-expired/home', data);
     });
     
-    app.get('/pages/cs-options', function(req, res) {
-      var doctitle = 'Countryside Stewardship options';
-      var page_name = 'Countryside Stewardship options';
-      var section = 'pages';
-      var section_name = 'Pages';
-      var phase = true;
-      res.render('pages/cs-options-tool-questions/home', {'doctitle' : doctitle, 'page_name' : page_name, 'section' : section, 'section_name' : section_name, 'phase' : phase});
-    });
-    
-    app.get('/pages/cs-options-tool-questions', function(req, res) {
-      var doctitle = 'Questions';
-      var page_name = 'Questions';
-      var section = 'pages';
-      var section_name = 'Pages';
-      var phase = true;
-      res.render('pages/cs-options-tool-questions/home', {'doctitle' : doctitle, 'page_name' : page_name, 'section' : section, 'section_name' : section_name, 'phase' : phase});
-    });
-    
-    app.post('/pages/cs-options-tool-questions', function(req, res) {
-      
-      var doctitle = 'Questions';
-      var page_name = 'Questions';
-      var section = 'pages';
-      var section_name = 'Pages';
-      var phase = true;
-      
-      var severely_disadvantaged_area = req.body.severely_disadvantaged_area;
-      var organic_land                = req.body.organic_land;
-      var arable_land                 = req.body.arable_land;
-      var grassland                   = req.body.grassland;
-      var farmland_birds              = req.body.farmland_birds;
-      var breeding_waders             = req.body.breeding_waders;
-      var addressing_water_quality    = req.body.addressing_water_quality;
-      var types_of_water_issue        = req.body.types_of_water_issue;
-      var manage_and_protect          = req.body.manage_and_protect;
-      var improve_landscape_features  = req.body.improve_landscape_features;
-      
-      var error  = false;
-      var error1 = false;
-      
-      if (!severely_disadvantaged_area || !organic_land || !arable_land || !grassland || !farmland_birds || !addressing_water_quality || !breeding_waders || !manage_and_protect || !improve_landscape_features) {
-        error = true;
-      } else if (addressing_water_quality === 'Yes' && !types_of_water_issue) {
-        error1 = true;
-      } else {
-        error = false;
-        error1 = false;
-      }
-      
-      res.render('pages/cs-options-tool-questions/home', {
-        'doctitle' : doctitle, 
-        'page_name' : page_name,
-        'section' : section, 
-        'section_name' : section_name, 
-        'severely_disadvantaged_area': severely_disadvantaged_area,
-        'organic_land': organic_land,
-        'arable_land': arable_land,
-        'grassland': grassland,
-        'farmland_birds': farmland_birds,
-        'breeding_waders': breeding_waders,
-        'addressing_water_quality': addressing_water_quality,
-        'types_of_water_issue': types_of_water_issue,
-        'manage_and_protect': manage_and_protect,
-        'improve_landscape_features': improve_landscape_features,
-        'error': error,
-        'error1': error1,
-        'phase': phase
-      });
-      
-    });
-
-    app.get('/pages/cs-priority-options', function(req, res) {
-      data = {
-        doctitle: 'Priority options',
-        page_name: 'Priority options',
-        section: 'pages',
-        section_name: 'Pages',
-        phase: true
-      };
-      res.render('pages/cs-priority-options/home', data);
-    });
-    
     
     // USER JOURNEYS
     // ==============================================
@@ -1247,6 +1165,95 @@ module.exports = {
         openLayers: true
       };      
       res.render('user/confirm-journey/business-overview', data);    
+    });
+    
+    
+    
+    
+    
+    
+    // Countryside stewardship
+    
+    app.get('/pages/countryside-stewardship', function(req, res) {
+      var doctitle = 'Countryside Stewardship';
+      var page_name = 'Countryside Stewardship';
+      var section = 'pages';
+      var section_name = 'Pages';
+      var phase = true;
+      res.render('pages/countryside-stewardship/home', {'doctitle' : doctitle, 'page_name' : page_name, 'section' : section, 'section_name' : section_name, 'phase' : phase});
+    });
+    
+    app.get('/pages/countryside-stewardship/questions', function(req, res, next) {
+      var doctitle = 'Questions';
+      var page_name = 'Questions';
+      var section = 'pages';
+      var section_name = 'Pages';
+      var phase = true;
+      res.render('pages/countryside-stewardship/questions', {'doctitle' : doctitle, 'page_name' : page_name, 'section' : section, 'section_name' : section_name, 'phase' : phase});
+    });
+    
+    app.post('/pages/countryside-stewardship/questions', function(req, res) {
+      
+      var doctitle = 'Questions';
+      var page_name = 'Questions';
+      var section = 'pages';
+      var section_name = 'Pages';
+      var phase = true;
+      
+      var severely_disadvantaged_area = req.body.severely_disadvantaged_area;
+      var organic_land                = req.body.organic_land;
+      var arable_land                 = req.body.arable_land;
+      var grassland                   = req.body.grassland;
+      var farmland_birds              = req.body.farmland_birds;
+      var breeding_waders             = req.body.breeding_waders;
+      var addressing_water_quality    = req.body.addressing_water_quality;
+      var types_of_water_issue        = req.body.types_of_water_issue;
+      var manage_and_protect          = req.body.manage_and_protect;
+      var improve_landscape_features  = req.body.improve_landscape_features;
+      
+      var error  = false;
+      var error1 = false;
+      
+      if (!severely_disadvantaged_area || !organic_land || !arable_land || !grassland || !farmland_birds || !addressing_water_quality || !breeding_waders || !manage_and_protect || !improve_landscape_features) {
+        error = true;
+      } else if (addressing_water_quality === 'Yes' && !types_of_water_issue) {
+        error1 = true;
+      } else {
+        error = false;
+        error1 = false;
+      }
+      
+      res.render('pages/countryside-stewardship/questions', {
+        'doctitle' : doctitle, 
+        'page_name' : page_name,
+        'section' : section, 
+        'section_name' : section_name, 
+        'severely_disadvantaged_area': severely_disadvantaged_area,
+        'organic_land': organic_land,
+        'arable_land': arable_land,
+        'grassland': grassland,
+        'farmland_birds': farmland_birds,
+        'breeding_waders': breeding_waders,
+        'addressing_water_quality': addressing_water_quality,
+        'types_of_water_issue': types_of_water_issue,
+        'manage_and_protect': manage_and_protect,
+        'improve_landscape_features': improve_landscape_features,
+        'error': error,
+        'error1': error1,
+        'phase': phase
+      });
+      
+    });
+
+    app.get('/pages/countryside-stewardship/options', function(req, res) {
+      data = {
+        doctitle: 'Priority options',
+        page_name: 'Priority options',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/countryside-stewardship/options', data);
     });
 
     

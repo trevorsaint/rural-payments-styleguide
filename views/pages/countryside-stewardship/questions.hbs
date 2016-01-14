@@ -36,10 +36,6 @@
       <li><a href="#addressing-water-quality">Are you interested in addressing water quality issues identified in your area?</a></li>
       {{/addressing_water_quality}}
 
-      {{^types_of_water_issue}}
-      <li><a href="#types-of-water-issue">Which types of water issue are you interested in addressing?</a></li>
-      {{/types_of_water_issue}}
-
       {{^manage_and_protect}}
       <li><a href="#manage-and-protect">Are you interested in options to manage and protect historic environment features?</a></li>
       {{/manage_and_protect}}
@@ -269,7 +265,7 @@
 
             <fieldset>
 
-              <legend>
+              <legend{{#error1}} id="types-of-water-issue"{{/error1}}>
                 <span class="form-label-bold">Which types of water issue are you interested in addressing?</span>
                 {{#error1}}
                   {{^types_of_water_issue}}
