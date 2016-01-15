@@ -3,31 +3,14 @@
 // ==========================================================================
 
 
-.list-alpha,
-.list-nav {
-  margin-top: 5px;
-  margin-bottom: 20px;
-
-  li {
-    margin-bottom: 5px;
-  }
-
-}
-
-
-/* alpha lists */
-
+// Alpha lists
 .list-alpha {
   list-style-type: lower-alpha;
   padding-left: 20px;
-  @include ie-lte(7) {
-    padding-left: 28px;
-  }
 }
 
 
-/* block list */
-
+// Block list
 .block-list {
   @include box-sizing(border-box);
   @include user-select(none);
@@ -61,30 +44,26 @@
 }
 
 
-/* add selected state */
-
+// Add selected state
 .js-enabled .block-list.selected {
   background: $white;
   border-color: $black;
 }
 
 
-/* add focus to block labels */
-
+// Add focus to block labels
 .js-enabled .block-list.focused {
   outline: 3px solid $yellow;
 }
 
 
-/* remove focus from radio/checkboxes */
-
+// Remove focus from radio/checkboxes
 .js-enabled .block-list input:focus {
   outline: none;
 }
 
 
-/* list parcel */
-
+// List parcel
 .list-parcel {
   margin-bottom: 1em;
   
@@ -105,8 +84,7 @@
 }
 
 
-/* list-parcel inline */
-
+// List-parcel inline
 .list-parcel-inline {
   margin-bottom: 1em;
   
@@ -136,8 +114,7 @@
 }
 
 
-/* list summary */
-
+// List summary
 .list-summary {
   margin-bottom: 40px;
   
@@ -152,6 +129,4 @@
   }
   
 }
-
-
 
