@@ -1,0 +1,218 @@
+  {{>breadcrumb}}
+  
+  
+  <div class="grid-row">
+
+
+    <div class="column-two-thirds">
+      
+      
+      <form class="form" method="get" action="#">
+
+
+    		<h1 class="form-title heading-xlarge">{{page_name}}</h1>
+  
+  
+        <h2 class="heading-medium">Business name and address</h2>
+  
+  
+        <div class="form-group">
+          
+        
+          <fieldset>
+    
+    
+            <legend class="visuallyhidden">Business name and address</legend>
+    
+    
+            <div class="form-group">         
+              <label class="form-label" for="business-name">Business name</label>          
+              <input class="form-control" id="business-name" type="text">          
+            </div>
+            
+            
+            <div class="form-group-compound">
+            
+              <fieldset class="inline">
+        
+                <legend>
+                  <span class="form-label">Is your business address the same as your personal address?</span>
+                </legend>
+                
+                <label class="block-label" data-target="personal-address" for="radio-indent-1">
+                  <input id="radio-indent-1" name="radio-indent-group" value="Yes" type="radio"> Yes
+                </label>
+                
+                <label class="block-label" data-target="business-address" for="radio-indent-2">
+                  <input id="radio-indent-2" name="radio-indent-group" value="No" type="radio"> No
+                </label>
+                            
+              </fieldset>
+              
+              
+              <div class="js-hidden" id="personal-address">
+                  
+                <div class="panel-indent">
+                  Red Farm <br> 
+                  Helpston Road <br> 
+                  Peterborough <br> 
+                  PE6 7DU
+                </div>
+                
+                <label class="form-checkbox" for="use-personal-address">
+                  <input id="use-personal-address" name="use-personal-address" value="true" type="checkbox">
+                  I would like to use my personal address for this business
+                </label>
+                  
+              </div>
+                
+                
+              <div class="js-hidden" id="business-address">
+                  
+                  
+                <div class="panel-indent">                
+                
+                  <h2 class="heading-medium">Address</h2>    
+                  
+                  
+                  <div class="toggle">
+                  
+                    <p><a class="toggle-link" href="#">Find a UK address</a></p>
+                    
+                    <div class="toggle-content">
+                    
+                      <div class="form-group">
+            
+                        <label class="form-label" for="postcode-search">Postcode</label>
+              
+                        <div class="form-search">
+                          <input class="form-control form-control-1-4" type="text" id="postcode-search">
+                          <button class="button" type="button">Find address</button>
+                        </div>
+                      
+                      </div>
+                      
+                    </div>
+                  
+                  </div>
+                                        
+                  
+                  <fieldset>
+            
+                    <legend class="visuallyhidden">Address</legend> 
+                    
+                    <div class="form-group form-group-compound">	
+              				<label class="form-label" for="address-line-1">Street</label>
+              				<input class="form-control" id="address-line-1" type="text">
+              			</div>
+              	
+              			<div class="form-group">
+              				<label class="form-label visuallyhidden" for="address-line-2">Street</label>
+              				<input class="form-control" id="address-line-2" type="text">
+              			</div>
+              
+              			<div class="form-group">
+              				<label class="form-label" for="address-town">Town or City</label>
+              				<input class="form-control form-control-1-4" id="address-town" type="text">
+              			</div>
+              			
+              			<div class="form-group form-group-compound">
+              				<label class="form-label" for="address-postcode">Postcode</label>
+              				<input class="form-control form-control-1-4" id="address-postcode" type="text">
+              			</div>       
+                    
+                  </fieldset>
+                
+                
+                </div>
+        
+        
+                    
+              </div>
+                        
+            
+            </div>
+            
+    
+          </fieldset>
+        
+        
+        </div>
+  
+  
+        <h2 class="heading-medium">Business contact details</h2>
+        
+        <p>You must enter either a landline or mobile number.</p>      
+  
+        
+        <div class="form-group">
+        
+        
+          <fieldset>
+    
+    
+            <legend class="visuallyhidden">Business contact details</legend>
+    
+    
+            <div class="form-group">          
+              <label class="form-label" for="email">Email</label>          
+              <input class="form-control" id="email" type="email">        
+            </div>
+    
+    
+            <div class="form-group">          
+              <label class="form-label" for="landline">Landline</label>          
+              <input class="form-control form-control-1-4" id="landline" type="tel">        
+            </div>
+    
+    
+            <div class="form-group form-group-compound">          
+              <label class="form-label" for="mobile">Mobile</label>          
+              <input class="form-control form-control-1-4" id="mobile" type="tel">        
+            </div>
+    
+    
+          </fieldset> 
+        
+        
+        </div> 
+            
+  
+  
+        <h2 class="heading-medium">Reference numbers</h2>
+  
+        <div class="form-group">
+          
+  
+          <fieldset>
+    
+            <legend class="visuallyhidden">Reference numbers</legend>
+    
+            <div class="form-group">
+              
+              <label class="form-label" for="vat-number"><abbr title="Value Added Tax">VAT</abbr> registration number (if applicable)</label>
+              
+              <input class="form-control form-control-1-4" id="vat-number" type="text">
+            
+            </div>        
+    
+          </fieldset>
+        
+        
+        </div>
+  
+  
+        <div class="form-group">
+  
+          <button class="button" type="submit">Continue</button>
+        
+        </div> 
+      
+      
+      </form>     
+      
+    
+    </div>
+      
+      
+  </div>

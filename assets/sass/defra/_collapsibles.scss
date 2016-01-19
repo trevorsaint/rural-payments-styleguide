@@ -138,7 +138,20 @@ $module: 'collapsible';
 
 
 .toggle {
-  //margin-bottom: 1.05263em * 2; // 40px
-  margin-bottom: 1.05263em; // 20px
+  
+  
+  &-content {
+    @extend %contain-floats;
+    @include box-sizing(border-box);
+    float: left;
+    margin-bottom: $gutter-half;
+    width: 100%;
+
+    @include media(tablet) {
+      margin-bottom: $gutter;
+    }
+    
+  }
+  
 }
 

@@ -402,6 +402,17 @@ module.exports = {
       res.render('pages/apply-for-bps/home', data);
     });
     
+    app.get('/pages/add-business-details', function(req, res) {
+      data = {
+        doctitle: 'Add business details',
+        page_name: 'Add business details',
+        section: 'pages',
+        section_name: 'Pages',
+        phase: true
+      };
+      res.render('pages/add-business-details/home', data);
+    });
+    
     app.get('/pages/update-business-details', function(req, res) {
       data = {
         doctitle: 'Update business details',

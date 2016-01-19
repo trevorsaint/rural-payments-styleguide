@@ -399,6 +399,7 @@ function guidance() {
     
     var $guidanceMove   = $('.guidance-move');
     var $guidanceResize = $('.guidance-resize');
+    var $guidanceTitle  = $('.guidance-title');
     
     var isResizing = false;
     var lastDownX  = 0;
@@ -470,8 +471,20 @@ function guidance() {
           
         }
         
-        $guidance.css('width', x);
-        console.log(x);
+        $guidance.css('width', x);        
+        
+        // Title change on resize
+        
+        if (x < 300) {
+          
+          $guidanceTitle.text('Help');
+          
+        } else {
+          
+          $guidanceTitle.text('Help and guidance');
+          
+        }        
+        
       
       }).on('mouseup', function(e) {
         
