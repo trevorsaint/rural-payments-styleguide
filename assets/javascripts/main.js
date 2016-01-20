@@ -380,26 +380,26 @@ function formValidation() {
 }
 
 
-// Help and guidance
+// Help
 
-function guidance() {
+function help() {
     
     
-  if ($('.guidance').length > 0) {
+  if ($('.help').length > 0) {
   
 
     var $doc       = $(document);
     var $window    = $(window);
     var $container = $('body');
     
-    var guidanceActive  = false;
-    var $guidance       = $('.guidance');
-    var $guidanceOpen   = $('.guidance-open');
-    var $guidanceClose  = $('.guidance-close');
+    var helpActive  = false;
+    var $help       = $('.help');
+    var $helpOpen   = $('.help-open');
+    var $helpClose  = $('.help-close');
     
-    var $guidanceMove   = $('.guidance-move');
-    var $guidanceResize = $('.guidance-resize');
-    var $guidanceTitle  = $('.guidance-title');
+    var $helpMove   = $('.help-move');
+    var $helpResize = $('.help-resize');
+    var $helpTitle  = $('.help-title');
     
     var isResizing = false;
     var lastDownX  = 0;
@@ -408,45 +408,45 @@ function guidance() {
     var max = 480;
     
     
-    // Open guidance
+    // Open help
     
-    $guidanceOpen.on('click', function(e) {
+    $helpOpen.on('click', function(e) {
       
       e.preventDefault();
       
-      if (guidanceActive === false) {
+      if (helpActive === false) {
         
-        $guidance.attr('aria-hidden', false);
+        $help.attr('aria-hidden', false);
       
-        guidanceActive = true;      
+        helpActive = true;      
         
       } else {
         
-        $guidance.attr('aria-hidden', true);
+        $help.attr('aria-hidden', true);
       
-        guidanceActive = false;
+        helpActive = false;
         
       }
     
     });
     
     
-    // Close guidance
+    // Close help
     
-    $guidanceClose.on('click', function(e) {
+    $helpClose.on('click', function(e) {
       
       e.preventDefault();
       
-      $guidance.attr('aria-hidden', true);
+      $help.attr('aria-hidden', true);
       
-      guidanceActive = false;        
+      helpActive = false;        
       
     });
     
     
     // Resize
     
-    $guidanceResize.on('mousedown', function(e) {
+    $helpResize.on('mousedown', function(e) {
       isResizing = true;
       $container.addClass('js-resizing'); // Prevent user selection
       
@@ -461,29 +461,17 @@ function guidance() {
     
       if (!isResizing) return;
       
-        if ($guidance.hasClass('guidance-left')) {
+        if ($help.hasClass('help-left')) {
           
-          var x = e.pageX - $guidance.offset().left;
+          var x = e.pageX - $help.offset().left;
           
         } else {
           
-          var x = $guidance.width() - (e.pageX - $guidance.offset().left);
+          var x = $help.width() - (e.pageX - $help.offset().left);
           
         }
         
-        $guidance.css('width', x);        
-        
-        // Title change on resize
-        
-        if (x < 300) {
-          
-          $guidanceTitle.text('Help');
-          
-        } else {
-          
-          $guidanceTitle.text('Help and guidance');
-          
-        }        
+        $help.css('width', x);
         
       
       }).on('mouseup', function(e) {
@@ -498,25 +486,25 @@ function guidance() {
     });
     
     
-    // Move guidance
+    // Move help
     
-    $guidanceMove.on('click', function(e) {
+    $helpMove.on('click', function(e) {
       
       e.preventDefault();
 
-      if (($guidance).hasClass('guidance-left')) {
+      if (($help).hasClass('help-left')) {
         
-        $guidance.removeClass('guidance-left');
+        $help.removeClass('help-left');
         
-        $(this).find('span').text('Move help & guidance to the left of the screen');
-        $(this).attr('title', 'Move help & guidance to the left of the screen');
+        $(this).find('span').text('Move help to the left of the screen');
+        $(this).attr('title', 'Move help to the left of the screen');
 
       } else {
         
-        $guidance.addClass('guidance-left');
+        $help.addClass('help-left');
         
-        $(this).find('span').text('Move help & guidance to the right of the screen');
-        $(this).attr('title', 'Move help & guidance to the right of the screen');
+        $(this).find('span').text('Move help to the right of the screen');
+        $(this).attr('title', 'Move help to the right of the screen');
         
       }
       
@@ -527,11 +515,11 @@ function guidance() {
     
     $doc.on('keyup', function(e) {
         
-      if (e.keyCode === 27 && guidanceActive === true) {
+      if (e.keyCode === 27 && helpActive === true) {
         
-        $guidance.attr('aria-hidden', true);
+        $help.attr('aria-hidden', true);
       
-        guidanceActive = false; 
+        helpActive = false; 
         
       }
       
@@ -1928,7 +1916,7 @@ function autocomplete() {
   declarationAccountable();
   confirmSoleTraderDetails();
   clickableTableRows();
-  guidance();
+  help();
   iframe();
   autocomplete();
 })();
