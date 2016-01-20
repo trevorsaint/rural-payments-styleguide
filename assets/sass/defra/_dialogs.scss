@@ -103,6 +103,11 @@ $module: 'dialog';
     position: absolute;
     top: 5px; right: 5px;
     width: 22px;
+    
+    span {
+      cursor: pointer; // Added to apply cursor style in Chrome (bug)
+    }
+    
   }
 
 

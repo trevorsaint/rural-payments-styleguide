@@ -12,7 +12,7 @@
   <p class="text">This link associates with the dialog overlay using the 'data-target' attribute.</p>
 
   <pre><code class="prettyprint">
-   &lt;a href=&quot;#&quot; data-toggle=&quot;dialog&quot; data-target=&quot;dialog-1&quot;&gt;sign out&lt;/a&gt;
+  &lt;a href=&quot;#&quot; data-toggle=&quot;dialog&quot; data-target=&quot;dialog-1&quot;&gt;sign out&lt;/a&gt;
   </code></pre>
 
 
@@ -34,7 +34,7 @@
           &lt;p&gt;This will end your session. Are you sure you want to sign out?&lt;/p&gt;
           
           &lt;div class=&quot;dialog-actions&quot;&gt;
-            &lt;button class=&quot;button&quot;&gt;Yes&lt;/button&gt;
+            &lt;button class=&quot;button&quot; type=&quot;submit&quot;&gt;Yes&lt;/button&gt;
             &lt;a class=&quot;dialog-cancel&quot; href=&quot;#&quot;&gt;No&lt;/a&gt;
           &lt;/div&gt;
           
@@ -55,14 +55,14 @@
   <h3 class="heading-medium">Examples</h3>
   
   <ul class="list-bullet">
-		<li><a href="/" data-toggle="dialog" data-target="dialog-1">sign out</a></li>
-		<li><a href="/" data-toggle="dialog" data-target="dialog-2">lock customers account</a></li>
-		<li><a href="/" data-toggle="dialog" data-target="dialog-3">duplicate found</a></li>
-		<li><a href="/" data-toggle="dialog" data-target="dialog-4">provide feedback</a></li>
-		<li><a href="/" data-toggle="dialog" data-target="dialog-5">change owner</a></li>
-		<li><a href="/" data-toggle="dialog" data-target="dialog-6">warning</a></li>
-		<li><a href="/" data-toggle="dialog" data-target="dialog-7">remove a person</a></li>
-		<li><a href="/" data-toggle="dialog" data-target="dialog-8">archive customer record</a></li>
+		<li><a href="#" data-toggle="dialog" data-target="dialog-1">Sign out</a></li>
+		<li><a href="#" data-toggle="dialog" data-target="dialog-2">Lock customers account</a></li>
+		<li><a href="#" data-toggle="dialog" data-target="dialog-3">Duplicate found</a></li>
+		<li><a href="#" data-toggle="dialog" data-target="dialog-4">Provide feedback</a></li>
+		<li><a href="#" data-toggle="dialog" data-target="dialog-5">Change owner</a></li>
+		<li><a href="#" data-toggle="dialog" data-target="dialog-6">Warning</a></li>
+		<li><a href="#" data-toggle="dialog" data-target="dialog-7">Remove a person</a></li>
+		<li><a href="#" data-toggle="dialog" data-target="dialog-8">Archive customer record</a></li>
 	</ul>
 
 
@@ -79,7 +79,7 @@
           <p>This will end your session. Are you sure you want to sign out?</p>
 
           <div class="dialog-actions">
-            <button class="button">Yes</button>
+            <button class="button" type="submit">Yes</button>
             <a class="dialog-cancel" href="/">No</a>
           </div>
 
@@ -107,17 +107,12 @@
         <form class="form">
 
           <div class="form-group">
-            
-            <label for="reason">
-              <span class="form-label">Give a reason for locking this customer's account</span>
-            </label>
-            
+            <label class="form-label" for="reason">Give a reason for locking this customer's account</label>
             <textarea class="form-control form-control-textarea" id="reason" rows="3" cols="50"></textarea>
-            
           </div>
 
           <div class="dialog-actions">
-            <button class="button">Lock customer's account</button>
+            <button class="button" type="submit">Lock customer's account</button>
             <a class="dialog-cancel" href="#">Cancel</a>
           </div>
 
@@ -147,7 +142,7 @@
           <p>The firm of agents <b>Dan Firm</b> already exists with the same landline number. Are you sure you want to continue to create this new firm of agents?</p>
 
           <div class="dialog-actions">
-            <button class="button">Yes</button>
+            <button class="button" type="submit">Yes</button>
             <a class="dialog-cancel" href="#">No</a>
           </div>
 
@@ -170,15 +165,16 @@
 
       <div class="dialog-content" id="dialog-content-4" role="document" tabindex="0">
 
-        <h1 class="dialog-heading" id="dialog-title-4">Lock customer's account</h1>
+        <h1 class="dialog-heading" id="dialog-title-4">Provide feedback</h1>
 
         <form class="form">
 
-          <div class="form-group">
+          <div class="form-group error">
             
-            <label for="comments">
-              <span class="form-label">Comments</span>
+            <label class="form-label" for="comments">
+              Comments
               <span class="form-hint">Don't leave any sensitive details, such as phone numbers</span>
+              <span class="error-message" id="error-message-full-name">You need to enter a comment</span>
             </label>
             
             <textarea class="form-control form-control-textarea" id="comments" rows="3" cols="50"></textarea>
@@ -186,7 +182,7 @@
           </div>
 
           <div class="dialog-actions">
-            <button class="button">Submit</button>
+            <button class="button" type="submit">Submit</button>
             <a class="dialog-cancel" href="#">Cancel</a>
           </div>
 
@@ -216,7 +212,7 @@
           <p>Are you sure you want to assign this case to <b>Connor Senior?</b></p>
 
           <div class="dialog-actions">
-            <button class="button">Yes</button>
+            <button class="button" type="submit">Yes</button>
             <a class="dialog-cancel" href="#">No</a>
           </div>
 
@@ -243,10 +239,10 @@
 
         <form class="form">
 
-          <p>The total landuse area you have entered is <b>4.90 ha</b>, which is less than the parcel size. Are you sure you want to continue?</p>
+          <p>The total landuse area you have entered is <b>4.90<abbr title="Hectare">ha</abbr></b>, which is less than the parcel size. Are you sure you want to continue?</p>
 
           <div class="dialog-actions">
-            <button class="button">Yes</button>
+            <button class="button" type="submit">Yes</button>
             <a class="dialog-cancel" href="#">No</a>
           </div>
 
@@ -276,7 +272,7 @@
           <p>Are you sure you want to remove <b>Connor Senior</b> from this business? This person will no longer be able to access this business online.</p>
 
           <div class="dialog-actions">
-            <button class="button">Yes</button>
+            <button class="button" type="submit">Yes</button>
             <a class="dialog-cancel" href="#">No</a>
           </div>
 
@@ -306,7 +302,7 @@
           <p>Are you sure you would like to archive xxx?</p>
 
           <div class="dialog-actions">
-            <button class="button">Yes</button>
+            <button class="button" type="submit">Yes</button>
             <a class="dialog-cancel" href="#">No</a>
           </div>
 
