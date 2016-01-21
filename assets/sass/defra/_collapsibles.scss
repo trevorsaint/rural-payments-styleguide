@@ -7,7 +7,8 @@ $module: 'collapsible';
 
 
 .#{$module} {
-  margin-bottom: 1em;
+  clear: both;
+  margin-bottom: $gutter;
   
   
   &-heading {
