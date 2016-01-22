@@ -11,11 +11,17 @@ $module: 'help';
   box-sizing: border-box;
   position: fixed; top: 0; right: 0;
   height: 100%;
-  max-width: 480px;
-  min-width: 200px;
-  padding-top: em(74);
+  max-width: 300px;
+  min-width: 150px;
+  padding-top: em(52);
   width: 100%;
   z-index: 999;
+  
+  
+  @include media(tablet) {
+    max-width: 480px;  
+  }
+  
   
   
   // Header
@@ -24,9 +30,10 @@ $module: 'help';
     border-bottom: 1px solid $grey-2;
     box-sizing: border-box;
     position: absolute; top: 0;
-    padding: em(19);
+    padding: em(8);
     width: 100%;
     text-align: center;
+    line-height: 36px;
   }
   
   
