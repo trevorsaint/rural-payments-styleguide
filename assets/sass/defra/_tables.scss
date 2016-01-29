@@ -207,6 +207,21 @@ table, .table {
   }
   
   
+  &-customer-search {
+      
+    .statuses {
+      float: right;
+      
+      .icon {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+      
+    }
+    
+  }
+  
+  
   &-land-removal {
 
     tbody {
