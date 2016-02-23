@@ -1,0 +1,81 @@
+  {{>breadcrumb}}
+  
+  
+  <div class="grid-row">
+    
+    
+    <div class="column-two-thirds">
+      
+      
+      {{#error}}
+      <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+    
+        <h1 class="heading-medium error-summary-heading" id="error-summary-heading">Message to alert the user to a problem goes here</h1>
+        
+        <p>Optional description of the error(s) and how to correct them</p>
+    
+        <ul class="error-summary-list">
+    
+          {{^personal_details}}
+          <li><a href="#error-personal-details">Are your personal details correct and up-to-date?</a></li>
+          {{/personal_details}}
+    
+        </ul>
+    
+      </div>
+      {{/error}}
+  
+    
+      <form class="form" method="post">
+        
+            
+        <h1 class="heading-large">Check your personal details</h1>
+        
+        
+        <p class="lede">Look at your name, signature and other details.</p>
+        
+        
+        <div class="form-group{{#error}}{{^personal_details}} error" id="error-personal-details{{/personal_details}}{{/error}}">
+          
+          
+          <fieldset>
+    
+            <legend>
+              <span class="form-label-bold">Are your personal details correct and up-to-date?</span>
+              {{#error}}
+                {{^personal_details}}
+                <span class="error-message" id="error-message-personal-details">Select an answer</span>
+                {{/personal_details}}
+              {{/error}}
+            </legend>
+    
+            <label class="block-label" for="personal-details-yes">
+              <input id="personal-details-yes" type="radio" name="personal_details"{{#error}}{{^personal_details}} aria-describedby="error-message-personal-details" aria-invalid="true" {{/personal_details}}{{/error}}value="Yes">
+              Yes, my personal details are correct
+            </label>
+    
+            <label class="block-label" for="personal-details-no">
+              <input id="personal-details-no" type="radio" name="personal_details" value="No">
+              No, some details are wrong or have changed
+            </label>
+    
+          </fieldset>
+          
+          
+        </div>
+    
+    
+        <div class="form-group">
+          
+          <button class="button" type="submit">Continue</button>
+          
+        </div>
+        
+    
+      </form>
+  
+  
+    </div>
+    
+    
+  </div>

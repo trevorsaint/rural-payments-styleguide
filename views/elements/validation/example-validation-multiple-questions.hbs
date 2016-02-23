@@ -1,0 +1,78 @@
+  {{>breadcrumb}}
+  
+  
+  <div class="grid-row">
+    
+    
+    <div class="column-two-thirds">
+      
+      
+      {{#error}}
+      <div class="error-summary" role="group" aria-labelledby="error-summary-heading" tabindex="-1">
+    
+        <h1 class="heading-medium error-summary-heading" id="error-summary-heading">Message to alert the user to a problem goes here</h1>
+        
+        <p>Optional description of the error(s) and how to correct them</p>
+    
+        <ul class="error-summary-list">
+    
+          {{#if full_name_error}}
+          <li><a href="#error-full-name">Enter your Full name</a></li>
+          {{/if}}
+          
+          {{#if ni_number_error}}
+          <li><a href="#error-ni-number">Enter your National Insurance number</a></li>
+          {{/if}}
+    
+        </ul>
+    
+      </div>
+      {{/error}}
+  
+  
+      <form class="form" method="post">
+        
+        
+        <h1 class="heading-large">Your personal details</h1>
+        
+        
+        <div class="form-group{{#error}}{{#full_name_error}} error{{/full_name_error}}{{/error}}">
+    
+          <label for="full-name"{{#error}}{{#full_name_error}} id="error-full-name"{{/full_name_error}}{{/error}}>
+            <span class="form-label-bold">Full name</span>
+            <span class="form-hint">As shown on your birth certificate or passport</span>
+            {{#error}}{{#full_name_error}}<span class="error-message" id="error-message-full-name">Enter your Full name</span>{{/full_name_error}}{{/error}}
+          </label>
+    
+          <input class="form-control" id="full-name" name="full_name" type="text" value="{{full_name}}"{{#error}}{{#full_name_error}}aria-invalid="true" aria-describedby="error-message-full-name"{{/full_name_error}}{{/error}}>
+          
+        </div>
+        
+    
+        <div class="form-group{{#error}}{{#ni_number_error}} error{{/ni_number_error}}{{/error}}">
+    
+          <label for="ni-number"{{#error}}{{#ni_number_error}} id="error-ni-number"{{/ni_number_error}}{{/error}}>
+            <span class="form-label-bold">National Insurance number</span>
+            <span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. <br> For example, 'VO 12 34 56 D'.</span>
+            {{#error}}{{#ni_number_error}}<span class="error-message" id="error-message-ni-number">Enter your National Insurance number</span>{{/ni_number_error}}{{/error}}
+          </label>
+    
+          <input class="form-control" id="ni-number" name="ni_number" type="text" value="{{ni_number}}"{{#error}}{{#ni_number_error}}aria-invalid="true" aria-describedby="error-message-ni-number"{{/ni_number_error}}{{/error}}>
+    
+        </div>
+        
+        
+        <div class="form-group">
+          
+          <button class="button" type="submit">Continue</button>
+          
+        </div>
+    
+    
+      </form>
+    
+    
+    </div>
+  
+  
+  </div>

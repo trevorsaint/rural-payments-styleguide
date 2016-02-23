@@ -183,6 +183,70 @@ module.exports = {
       res.render('elements/validation/home', data);
     });
     
+  
+    app.get('/validation/example-validation-single-question', function(req, res) {
+      var doctitle = 'Example - Validation single question';
+      var page_name = 'Example: Form validation - single question';
+      var section = 'validation';
+      var section_name = 'Errors and validation';
+      res.render('elements/validation/example-validation-single-question', {'doctitle': doctitle, 'page_name': page_name, 'section': section, 'section_name': section_name});
+    });
+    
+    
+    app.post('/validation/example-validation-single-question', function(req, res) {
+      var doctitle = 'Example - Validation single question';
+      var page_name = 'Example: Form validation - single question';
+      var section = 'validation';
+      var section_name = 'Errors and validation';
+      var personal_details = req.body.personal_details;
+      var error  = false;
+      if (!personal_details) {
+        error = true;
+      } else {
+        error = false;
+      }
+      res.render('elements/validation/example-validation-single-question', {'doctitle': doctitle, 'page_name': page_name, 'section': section, 'section_name': section_name, 'personal_details': personal_details, 'error': error});
+    });
+
+
+    app.get('/validation/example-validation-multiple-questions', function(req, res, next) {
+      var doctitle = 'Example - Validation multiple questions';
+      var page_name = 'Example: Form validation - multiple questions';
+      var section = 'validation';
+      var section_name = 'Errors and validation';
+      res.render('elements/validation/example-validation-multiple-questions', {'doctitle': doctitle, 'page_name': page_name, 'section': section, 'section_name': section_name});
+    });
+
+    app.post("/validation/example-validation-multiple-questions", function(req, res) {
+      
+      var doctitle = 'Example - Validation multiple questions';
+      var page_name = 'Example: Form validation - multiple questions';
+      var section = 'validation';
+      var section_name = 'Errors and validation';
+      var full_name = req.body.full_name;
+      var ni_number = req.body.ni_number;
+      var full_name_error = false;
+      var ni_number_error = false;
+      var error = false;
+      
+      // MUST be a better approach for this!!!
+      if (!full_name && !ni_number) {
+        full_name_error = true;
+        ni_number_error = true;
+        error = true;
+      } else if (!full_name) {
+        full_name_error = true;
+        error = true;
+      } else if (!ni_number) {
+        ni_number_error = true;
+        error = true;
+      }
+
+      res.render('elements/validation/example-validation-multiple-questions', {'doctitle': doctitle, 'page_name': page_name, 'section': section, 'section_name': section_name, 'full_name': full_name, 'ni_number': ni_number, 'error': error, 'full_name_error': full_name_error, 'ni_number_error': ni_number_error})
+      
+    });
+
+
     app.get('/tables', function(req, res) {
       data = {
         doctitle: 'Tables',

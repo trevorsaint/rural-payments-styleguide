@@ -6,34 +6,6 @@ var exphbs  = require('express-handlebars');
 var app     = express();
 var routes  = require(__dirname + '/routes/');
 var port    = (process.env.PORT || 3000);
-    
-
-// Cookie parser
-
-var cookieParser = require('cookie-parser');
-app.use(cookieParser());
-    
-    
-// Session
-
-var session = require('express-session');
-app.use(session({
-  resave: false,
-  saveUninitialized: false,
-  secret: 'Rural Payments Agency'
-}));
-
-
-// Parseurl
-//var parseurl = require('parseurl');
-    
-    
-// Body parser
-
-var bodyParser = require('body-parser');
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({	extended: true }));
 
 
 // Application settings
@@ -48,6 +20,14 @@ app.use('/assets', express.static(__dirname + '/assets'));
 app.use('/iframe', express.static(__dirname + '/iframe'));
 app.use('/javascripts', express.static(__dirname + '/javascripts'));
 app.use('/models', express.static(__dirname + '/models'));
+
+
+// Body parser
+
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({	extended: false }));
 
 
 // Routes

@@ -4,200 +4,123 @@
   <h1 class="heading-xlarge"><span class="heading-secondary">{{title}}</span> {{page_name}}</h1>
 
 
-  <h3 class="heading-medium">Error message and summary box</h3>
+  <p class="lede">Error message and summary box.</p>
+  
+  
+  <div class="panel-indent text">
+    <p>Some obvious attributes have been removed to fit example code, and allow for focus on more important properties relating to errors and validation!</p>
+  </div>
+  
+  
+  <h3 class="heading-medium">Multiple questions</h3>
+
 
   <div class="example">
   
   
-    <div class="error-summary" tabindex="-1" aria-labelledby="error-summary-heading-1" role="group">
+    <div class="error-summary" aria-labelledby="error-summary-heading" role="group" tabindex="-1">
 
-      <h1 class="heading-medium error-summary-heading" id="error-summary-heading-1">Message to alert the user to a problem goes here</h1>
+      <h1 class="heading-medium error-summary-heading" id="error-summary-heading">Message to alert the user to a problem goes here</h1>
 
       <p>Optional description of the error(s) and how to correct them</p>
 
       <ul class="error-summary-list">
-        <li><a href="#personal-details">Descriptive link to the question with an error</a></li>
+        <li><a href="#error-full-name">Enter your Full name</a></li>
+        <li><a href="#error-ni-number">Enter your National Insurance number</a></li>
       </ul>
 
     </div>
     
     
-    <h1 class="heading-large">Check your personal details</h1>
-    
-    
-    <p>Look at your name, signature and other details.</p>
-    
-    
-    <form class="form">
+    <form class="form" method="post">
+      
+      
+      <h1 class="heading-large">Your personal details</h1>
+      
       
       <div class="form-group error">
-        
-        <fieldset>
-
-          <legend id="personal-details">
-            <span class="form-label-bold">Are your personal details correct and up-to-date?</span>
-            <span class="error-message">Error message about personal details goes here</span>
-          </legend>
-
-          <label class="block-label" for="personal-details-yes">
-            <input id="personal-details-yes" type="radio" name="personal_details" value="Yes" aria-expanded="false">
-            Yes, my personal details are correct
-          </label>
-
-          <label class="block-label" for="personal-details-no">
-            <input  id="personal-details-no" type="radio" name="personal_details" value="No" aria-expanded="false">
-            No, some details are wrong or have changed
-          </label>
-
-        </fieldset>
+  
+        <label for="full-name" id="error-full-name">
+          <span class="form-label-bold">Full name</span>
+          <span class="form-hint">As shown on your birth certificate or passport</span>
+          <span class="error-message" id="error-message-full-name">Enter your Full name</span>
+        </label>
+  
+        <input class="form-control" id="full-name" name="full_name" type="text" aria-invalid="true" aria-describedby="error-message-full-name">
         
       </div>
-
-      <input class="button" type="submit" value="Continue">
-
+      
+  
+      <div class="form-group error">
+  
+        <label for="ni-number" id="error-ni-number">
+          <span class="form-label-bold">National Insurance number</span>
+          <span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. <br> For example, 'VO 12 34 56 D'.</span>
+          <span class="error-message" id="error-message-ni-number">Enter your National Insurance number</span>
+        </label>
+  
+        <input class="form-control" id="ni-number" name="ni_number" type="text" aria-invalid="true" aria-describedby="error-message-ni-number">
+  
+      </div>
+      
+      
+      <div class="form-group">
+        
+        <button class="button" type="submit" disabled="disabled">Continue</button>
+        
+      </div>
+  
+  
     </form>
   
   
   </div>
+
+  
   <pre><code class="prettyprint">
-  &lt;div class=&quot;error-summary&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;error-summary-heading&quot; role=&quot;group&quot;&gt;
+  &lt;div class=&quot;error-summary&quot; aria-labelledby=&quot;error-summary-heading&quot; role=&quot;group&quot; tabindex=&quot;-1&quot;&gt;
 
-    &lt;h1 class=&quot;heading-medium error-summary-heading&quot; id=&quot;error-summary-heading&quot;&gt;
-      Message to alert the user to a problem goes here
-    &lt;/h1&gt;
-
-    &lt;p&gt;Optional description of the error(s) and how to correct them&lt;/p&gt;
-
+    &lt;h1 class=&quot;heading-medium error-summary-heading&quot; id=&quot;error-summary-heading&quot;&gt;Heading&lt;/h1&gt;
+  
+    &lt;p&gt;Optional description&lt;/p&gt;
+  
     &lt;ul class=&quot;error-summary-list&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;#error-full-name&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#error-ni-number&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#error-full-name&quot;&gt;Enter your Full name&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#error-ni-number&quot;&gt;Enter your National Insurance number&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-
+  
   &lt;/div&gt;
-
-  &lt;h1 class=&quot;heading-large&quot;&gt;Your personal details&lt;/h1&gt;
-
-  &lt;div class=&quot;form-group error&quot;&gt;
     
+    
+  &lt;div class=&quot;form-group error&quot;&gt;
+
     &lt;label for=&quot;full-name&quot; id=&quot;error-full-name&quot;&gt;
-      &lt;span class=&quot;form-label-bold&quot;&gt;Full name&lt;/span&gt;
-      &lt;span class=&quot;form-hint&quot;&gt;Form hint goes here&lt;/span&gt;
-      &lt;span class=&quot;error-message&quot; id=&quot;error-message-full-name&quot;&gt;Error message goes here&lt;/span&gt;
-    &lt;/label&gt;
-    
-    &lt;input class=&quot;form-control&quot; id=&quot;full-name&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-full-name&quot;&gt;
-    
-  &lt;/div&gt;
-
-  &lt;div class=&quot;form-group error&quot;&gt;
-    
-    &lt;label for=&quot;ni-number&quot; id=&quot;error-ni-number&quot;&gt;
-      &lt;span class=&quot;form-label-bold&quot;&gt;National Insurance number&lt;/span&gt;
-      &lt;span class=&quot;form-hint&quot;&gt;Form hint goes here&lt;/span&gt;
-      &lt;span class=&quot;error-message&quot; id=&quot;error-message-ni-number&quot;&gt;Error message goes here&lt;/span&gt;
-    &lt;/label&gt;
-    
-    &lt;input class=&quot;form-control&quot; id=&quot;ni-number&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-ni-number&quot;&gt;
-    
-  &lt;/div&gt;
-
-  &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Continue&quot;&gt;
-  </code></pre>
-  
-  
-  <h3 class="heading-medium">Highlight errors in forms</h3>
-  
-  <div class="example">
-  
-    <div class="error-summary" tabindex="-1" aria-labelledby="error-summary-heading-2" role="group">
-
-      <h1 class="heading-medium error-summary-heading" id="error-summary-heading-2">Message to alert the user to a problem goes here</h1>
-
-      <p>Optional description of the error(s) and how to correct them</p>
-
-      <ul class="error-summary-list">
-        <li><a href="#error-full-name">Descriptive link to the question with an error</a></li>
-        <li><a href="#error-ni-number">Descriptive link to the question with an error</a></li>
-      </ul>
-
-    </div>
-
-    <h1 class="heading-large">Your personal details</h1>
-
-    <div class="form-group error">
-
-      <label id="error-full-name" for="full-name">
-        <span class="form-label-bold">Full name</span>
-        <span class="form-hint">As shown on your birth certificate or passport</span>
-        <span class="error-message" id="error-message-full-name">Error message about full name goes here</span>
-      </label>
-
-      <input class="form-control" id="full-name" type="text" aria-describedby="error-message-full-name">
-      
-    </div>
-
-    <div class="form-group error">
-
-      <label for="ni-number" id="error-ni-number">
-        <span class="form-label-bold">National Insurance number</span>
-        <span class="form-hint">It's on your National Insurance card, benefit letter, payslip or P60. <br> For example, 'VO 12 34 56 D'.</span>
-        <span class="error-message" id="error-message-ni-number">Error message about National Insurance number goes here</span>
-      </label>
-
-      <input class="form-control" id="ni-number" type="text" aria-describedby="error-message-ni-number">
-
-    </div>
-
-    <input class="button" type="submit" value="Continue">
-  
-  </div>
-  <pre><code class="prettyprint">
-  &lt;div class=&quot;error-summary&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;error-summary-heading-2&quot; role=&quot;group&quot;&gt;
-
-    &lt;h1 class=&quot;heading-medium error-summary-heading&quot; id=&quot;error-summary-heading-2&quot;&gt;
-      Message to alert the user to a problem goes here
-    &lt;/h1&gt;
-
-    &lt;p&gt;Optional description of the error(s) and how to correct them&lt;/p&gt;
-
-    &lt;ul class=&quot;error-summary-list&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;#error-full-name&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#error-ni-number&quot;&gt;Descriptive link to the question with an error&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-  &lt;/div&gt;
-
-  &lt;h1 class=&quot;heading-large&quot;&gt;Your personal details&lt;/h1&gt;
-
-  &lt;div class=&quot;form-group error&quot;&gt;
-
-    &lt;label id=&quot;error-full-name&quot; for=&quot;full-name&quot;&gt;
-      &lt;span class=&quot;form-label-bold&quot;&gt;Full name&lt;/span&gt;
-      &lt;span class=&quot;form-hint&quot;&gt;As shown on your birth certificate or passport&lt;/span&gt;
-      &lt;span class=&quot;error-message&quot; id=&quot;error-message-full-name&quot;&gt;Error message about full name goes here&lt;/span&gt;
+      &lt;span&gt;Full name&lt;/span&gt;
+      &lt;span class=&quot;error-message&quot; id=&quot;error-message-full-name&quot;&gt;Enter your Full name&lt;/span&gt;
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-control&quot; id=&quot;full-name&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-full-name&quot;&gt;
+    &lt;input aria-invalid=&quot;true&quot; aria-describedby=&quot;error-message-full-name&quot;&gt;
     
   &lt;/div&gt;
+  
 
   &lt;div class=&quot;form-group error&quot;&gt;
 
     &lt;label for=&quot;ni-number&quot; id=&quot;error-ni-number&quot;&gt;
-      &lt;span class=&quot;form-label-bold&quot;&gt;National Insurance number&lt;/span&gt;
-      &lt;span class=&quot;form-hint&quot;&gt;
-        It's on your National Insurance card, benefit letter, payslip or P60. 
-        &lt;br&gt; For example, 'VO 12 34 56 D'.
-      &lt;/span&gt;
-      &lt;span class=&quot;error-message&quot; id=&quot;error-message-ni-number&quot;&gt;
-        Error message about National Insurance number goes here
-      &lt;/span&gt;
+      &lt;span&gt;National Insurance number&lt;/span&gt;
+      &lt;span class=&quot;error-message&quot; id=&quot;error-message-ni-number&quot;&gt;Enter your National Insurance number&lt;/span&gt;
     &lt;/label&gt;
 
-    &lt;input class=&quot;form-control&quot; id=&quot;ni-number&quot; type=&quot;text&quot; aria-describedby=&quot;error-message-ni-number&quot;&gt;
+    &lt;input aria-invalid=&quot;true&quot; aria-describedby=&quot;error-message-ni-number&quot;&gt;
 
   &lt;/div&gt;
-
-  &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Continue&quot;&gt;
   </code></pre>
+  
+  
+  <h3 class="heading-medium">Examples</h3>
+  
+  <ul class="list list-bullet">
+    <li><a href="/validation/example-validation-single-question">form validation &ndash; single question</a></li>
+    <li><a href="/validation/example-validation-multiple-questions">form validation &ndash; multiple questions</a></li>
+  </ul>
   
