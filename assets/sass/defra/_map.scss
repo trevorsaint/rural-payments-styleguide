@@ -60,7 +60,7 @@
 
 .olButton {
   @extend %hide-text;
-  background: $link-colour;
+  background-color: $link-colour;
   display: block;
   height: 30px;
   position: relative;
@@ -68,7 +68,7 @@
   
   &:focus {
     background-color: $link-colour;
-    outline: none;
+    z-index: 1;
   }
   
   &:hover {
@@ -208,7 +208,6 @@
       &:focus {
         background-color: $link-colour;
         color: $white;
-        outline: none;
       }
       
       &:hover {
