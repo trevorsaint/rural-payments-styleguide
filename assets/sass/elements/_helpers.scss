@@ -24,3 +24,9 @@
   display: none;
 }
 
+
+// Prevent flicker (DEFRA request)
+.js-cloak {
+  display: !important;  
+}
+
