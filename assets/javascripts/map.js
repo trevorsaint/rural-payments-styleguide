@@ -140,6 +140,9 @@
     
     });
     
+    
+    $mapToggle.removeClass("olControlFullscreen").addClass("olControlFullscreenActive");
+    
       
   }
   
@@ -157,7 +160,7 @@
     
     $mapElements.off("keydown");
     
-     
+    $mapToggle.removeClass("olControlFullscreenActive").addClass("olControlFullscreen");
     
   }
 
@@ -173,13 +176,9 @@
     
     if (mapActive === false) {
       
-      $(this).removeClass("olControlFullscreen").addClass("olControlFullscreenActive");
-      
       openMap();
       
-    } else if (mapActive === true) {         
-              
-      $(this).removeClass("olControlFullscreenActive").addClass("olControlFullscreen");
+    } else if (mapActive === true) {
       
       closeMap();
       
@@ -198,8 +197,6 @@
 
           
     if (e.keyCode === 27 && mapActive === true) {
-      
-      $(this).removeClass("olControlFullscreenActive").addClass("olControlFullscreen");
       
       closeMap();
       
