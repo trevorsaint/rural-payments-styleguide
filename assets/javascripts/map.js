@@ -1,6 +1,6 @@
 // Self evoking JavaScript function
 
-(function openLayers(){
+(function openLayers() {
 
   var map;
   var lat  = -0.977852;
@@ -12,6 +12,8 @@
     layers: [
       new OpenLayers.Layer.OSM()
     ],
+    
+    theme: null,
 
     controls: [
 
@@ -21,22 +23,8 @@
           enableKinetic: true
         }
 
-      }),
-
-      /*
-        new OpenLayers.Control.Zoom({
-        zoomInId: 'customZoomIn',
-        zoomOutId: 'customZoomOut'
-      }),
-      */
+      })
       
-      /*
-        new OpenLayers.Control ({
-        autoActivate: false,
-        active: true,
-        displayClass: 'measurementButton'})
-      */
-
     ],
 
     center: [0, 0],
@@ -46,9 +34,9 @@
 
 
   map.setCenter(
-    new OpenLayers.LonLat(lat, lon).transform(
-        new OpenLayers.Projection("EPSG:4326"),
-        map.getProjectionObject()
+      new OpenLayers.LonLat(lat, lon).transform(
+      new OpenLayers.Projection("EPSG:4326"),
+      map.getProjectionObject()
     ), 10
   );
   
@@ -79,24 +67,143 @@
     '</div>'
     
   );
+
+
+
+  var $doc         = $(document);
+
+  var $mapElements = $(".olButton:visible, .olControlMap");
+  var $mapToggle   = $(".olControlFullscreen");
+  
+  var mapActive    = false;
+
+
+
+  // Open map fullscreen
+
+  var openMap = function() {
+    
+    
+    $(".map-container").addClass("map-container-full");
+    
+    
+    map.updateSize();
+    
+    
+    mapActive = true;
+    
+    
+    $mapElements.on("keydown", function(e) {
+        
+        
+      // If tab key pressed
+      
+      if (e.keyCode == 9 || e.which == 9) {
+      
+        e.preventDefault();
+        
+        var nextElement = $mapElements.get($mapElements.index(this) + 1);
+        
+        if (nextElement) {
+          
+          nextElement.focus();
+          
+        } else {
+          
+          $mapElements[0].focus();
+          
+        }
+      
+      }
+    
+    
+      // If shift and tab key pressed
+      
+      if (e.shiftKey && e.keyCode == 9) {
+      
+        e.preventDefault();
+        
+        var prevElement = $mapElements.get($mapElements.index(this) - 1);
+        
+        if (prevElement) {
+          
+          prevElement.focus();
+          
+        } else {
+          
+          $mapElements[0].focus();
+          
+        }
+      
+      } 
+    
+    
+    });
+    
+      
+  }
   
   
-  $('.olControlFullscreen').on('click', function (event) {
+  
+  // Close map fullscreen
+  
+  var closeMap = function() {
+    
+    $(".map-container").removeClass("map-container-full");
+    
+    map.updateSize();
+    
+    mapActive = false;
+    
+    $mapElements.off("keydown");
+    
+     
+    
+  }
 
-      event.preventDefault();
 
-      $('.map-container').toggleClass('map-container-full');
 
-      if (this.inFullScreen) {
-          $(event.target).removeClass("olControlFullscreenActive").addClass("olControlFullscreen");
-      }
-      else {
-          $(event.target).removeClass("olControlFullscreen").addClass("olControlFullscreenActive");
-      }
+  // Click handler
 
-      map.updateSize();
+  $mapToggle.on("click", function(e) {
+    
+  
+    e.preventDefault();
+    
+    
+    if (mapActive === false) {
+      
+      $(this).removeClass("olControlFullscreen").addClass("olControlFullscreenActive");
+      
+      openMap();
+      
+    } else if (mapActive === true) {         
+              
+      $(this).removeClass("olControlFullscreenActive").addClass("olControlFullscreen");
+      
+      closeMap();
+      
+    }   
+    
+    
+  });
+  
+  
+  // Close map fullscreen by esc key
+  
+  $doc.on("keyup", function(e) {
+         
 
-      this.inFullScreen = !this.inFullScreen;
+    e.preventDefault();
+
+          
+    if (e.keyCode === 27 && mapActive === true) {
+      
+      closeMap();
+      
+    }  
+
+
   });
 
 
