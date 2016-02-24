@@ -199,6 +199,8 @@
           
     if (e.keyCode === 27 && mapActive === true) {
       
+      $(this).removeClass("olControlFullscreenActive").addClass("olControlFullscreen");
+      
       closeMap();
       
     }  
