@@ -1247,6 +1247,84 @@ module.exports = {
     
     
     
+    
+    
+    // Land
+    
+    app.get('/land/', function(req, res) {
+      data = {
+        doctitle: 'Land summary',
+        page_name: 'Land summary',
+        business_name: 'Appletree Ranch',
+        openLayers: true
+      };
+      res.render('user/land/home', data);
+    });    
+    
+    app.get('/land/parcel-summary', function(req, res) {
+      data = {
+        doctitle: 'Parcel summary',
+        page_name: 'Parcel summary',
+        business_name: 'Appletree Ranch',
+        openLayers: true
+      };
+      res.render('user/land/parcel-summary', data);
+    });
+    
+    app.get('/land/parcel-details', function(req, res) {
+      data = {
+        doctitle: 'Parcel details',
+        page_name: 'Parcel details',
+        business_name: 'Appletree Ranch',
+        openLayers: true
+      };
+      res.render('user/land/parcel-details', data);
+    });
+    
+    app.get('/land/add-feature-or-land-cover', function(req, res) {
+      data = {
+        doctitle: 'Add a feature or land cover',
+        page_name: 'Add a feature or land cover',
+        business_name: 'Appletree Ranch',
+        openLayers: true
+      };
+      res.render('user/land/add-feature-or-land-cover', data);
+    });
+    
+    app.get('/land/add-details-to-this-land', function(req, res) {
+      data = {
+        doctitle: 'Add pond',
+        page_name: 'Add pond',
+        openLayers: true
+      };
+      res.render('user/land/add-details-to-this-land', data);
+    });
+    
+    app.get('/land/feature-details', function(req, res) {
+      data = {
+        doctitle: 'Add pond',
+        page_name: 'Add pond',
+        openLayers: true
+      };
+      res.render('user/land/feature-details', data);
+    });
+    
+    app.get('/land/feature-effective-date', function(req, res) {
+      data = {
+        doctitle: 'Add pond',
+        page_name: 'Add pond',
+        openLayers: true
+      };
+      res.render('user/land/feature-effective-date', data);
+    });
+    
+    
+    
+    
+    
+    
+    
+    
     // Countryside stewardship
     
     app.get('/pages/countryside-stewardship', function(req, res) {

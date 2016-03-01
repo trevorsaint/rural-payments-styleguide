@@ -1,0 +1,51 @@
+  {{>breadcrumb}}
+
+
+  <div class="grid-row">
+
+
+    <div class="column-half">      
+
+
+      <form class="form" method="post" action="#">
+        
+        
+        <h1 class="form-title heading-xlarge">Add a feature or land cover</h1>
+
+
+        <div class="form-group">
+
+          <label class="form-label" for="land-use">
+            Enter land feature or land cover 
+            <span class="form-hint">For example 'Arable', 'Grassland' or 'Pond'</span>
+          </label>
+
+          <input class="form-control form-control-3-4" id="land-use" type="text">
+
+        </div>
+
+
+        <div class="form-group">
+          
+          <button class="button" type="submit">Continue</button>
+          
+        </div>
+        
+        
+        <p><a href="#">Back</a></p>
+
+
+      </form>
+
+
+    </div>
+
+
+    <div class="column-half">
+
+      {{>map}}
+      
+    </div>
+
+
+  </div>

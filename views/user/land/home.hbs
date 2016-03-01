@@ -1,0 +1,204 @@
+  {{>breadcrumb}}
+  
+
+  <div class="grid-row">
+
+
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-xlarge">{{page_name}} <span class="heading-secondary">{{business_name}}</span></h1>
+      
+
+      <p class="lede">This is a summary of the information Rural Payments currently holds for this land.</p>
+
+
+      <table>
+        
+        <caption class="visuallyhidden">Summary of land information</caption>
+        
+        <thead>
+          
+          <tr>
+            <th scope="col" colspan="2">Summary</th>
+          </tr>
+          
+        </thead>
+        
+        <tbody>
+          
+          <tr>
+            <th scope="row">Number of parcels</th>
+            <td class="numeric last">228</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">Total area (<abbr title="hectare">ha</abbr>)</th> 
+            <td class="numeric last">838.72</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">Arable land (<abbr title="hectare">ha</abbr>)</th>
+            <td class="numeric last">466.36</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">Permanent grassland (<abbr title="hectare">ha</abbr>)</th>
+            <td class="numeric last">315.16</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">Permanent crops (<abbr title="hectare">ha</abbr>)</th>
+            <td class="numeric last">0.45</td>
+          </tr>
+          
+        </tbody>
+        
+      </table>
+      
+      
+      <h2 class="heading-medium">Land parcels</h2>
+      
+      
+      <p>This is how the land parcels for this business are distributed. Click on the Parcel ID to view it or tell Rural Payments about any changes.</p>
+      
+      
+      <div class="panel-indent">
+        <p>An <span class="text-pending" title="Changes pending"></span> icon denotes there are changes pending for one or more parcels.</p>
+      </div>
+
+
+      <table class="table-land-parcels">
+        
+        <caption class="visuallyhidden">Land parcel distribution</caption>
+        
+        <thead>
+          
+          <tr>
+            <th scope="col">OS Tile</th>
+            <th class="numeric">Parcels</th>
+            <th class="numeric">Total area (<abbr title="hectare">ha</abbr>)</th>
+            <th>Eligible covers</th>
+            <th class="numeric last">BPS eligible area (<abbr title="hectare">ha</abbr>)</th>
+          </tr>
+          
+        </thead>
+        
+        <tbody>
+          
+          <tr>
+            <th scope="row" rowspan="2"><a href="parcel-summary">SJ4</a> <span class="text-pending" title="Changes pending"></span></th>
+            <td class="numeric" rowspan="2">10</td>
+            <td class="numeric" rowspan="2">64.35</td>
+            <td>Arable land</td>
+            <td class="numeric last">57.62</td>
+          </tr>
+          
+          <tr>
+            <td>Permanent grassland</td>
+            <td class="numeric last">6.70</td>
+          </tr>
+          
+          <tr>
+            <th scope="row" rowspan="2">SJ5 <span class="text-pending" title="Changes pending"></span></th>
+            <td class="numeric" rowspan="2">53</td>
+            <td class="numeric" rowspan="2">142.42</td>
+            <td>Arable land</td>
+            <td class="numeric last">35.25</td>
+          </tr>
+          
+          <tr>
+            <td>Permanent grassland</td>
+            <td class="numeric last">94.62</td>
+          </tr>
+          
+          <tr>
+            <th scope="row" rowspan="2">SJ6 <span class="text-pending" title="Changes pending"></span></th>
+            <td class="numeric" rowspan="2">92</td>
+            <td class="numeric" rowspan="2">366.17</td>
+            <td>Arable land</td>
+            <td class="numeric last">193.66</td>
+          </tr>
+          
+          <tr>
+            <td>Permanent grassland</td>
+            <td class="numeric last">152.75</td>
+          </tr>
+          
+          <tr>
+            <th scope="row" rowspan="2">SJ7 <span class="text-pending" title="Changes pending"></span></th>
+            <td class="numeric" rowspan="2">33</td>
+            <td class="numeric" rowspan="2">95.02</td>
+            <td>Arable land</td>
+            <td class="numeric last">36.58</td>
+          </tr>
+          
+          <tr>
+            <td>Permanent grassland</td>
+            <td class="numeric last">48.19</td>
+          </tr>
+          
+          <tr>
+            <th scope="row" rowspan="2">SJ8 <span class="text-pending" title="Changes pending"></span></th>
+            <td class="numeric" rowspan="2">25</td>
+            <td class="numeric" rowspan="2">126.63</td>
+            <td>Arable land</td>
+            <td class="numeric last">111.51</td>
+          </tr>
+          
+          <tr>
+            <td>Permanent grassland</td>
+            <td class="numeric last">1.75</td>
+          </tr>
+          
+          <tr>
+            <th scope="row" rowspan="3">SJ9</th>
+            <td class="numeric" rowspan="3">15</td>
+            <td class="numeric" rowspan="3">44.12</td>
+            <td>Arable land</td>
+            <td class="numeric last">31.74</td>
+          </tr>
+          
+          <tr>
+            <td>Permanent crops</td>
+            <td class="numeric last">0.45</td>
+          </tr>
+          
+          <tr>
+            <td>Permanent grassland</td>
+            <td class="numeric last">11.15</td>
+          </tr>
+          
+        </tbody>
+        
+      </table>
+      
+      
+      <details>
+  
+        <summary><span class="summary">More about OS (Ordnance Survey) tiles</span></summary>
+        
+        <div class="panel-indent">
+        
+          <p>Content goes here&hellip;</p>
+        
+        </div>
+      
+      </details>
+
+
+    </div>
+
+
+    <div class="column-third">
+
+      {{>map}}
+      
+      <h3 class="heading-small">Is this information up to date?</h3>
+      
+      <p class="font-xsmall">If you have already asked us to make changes to information about your land, they might not show here yet.</p>
+
+    </div>
+    
+    
+  </div>

@@ -1,0 +1,82 @@
+  {{>breadcrumb}}
+
+
+  <div class="grid-row">
+
+
+    <div class="column-half">      
+
+
+      <form class="form" method="post" action="#">
+        
+        
+        <h1 class="form-title heading-xlarge">{{page_name}}</h1>
+
+
+        <p class="lede">Add an effective date for this feature or land cover.</p>
+        
+        
+        <div class="form-group">
+        
+        
+          <fieldset>
+            
+    
+            <legend class="form-label">Effective date</legend>
+            
+            
+            <div class="form-date">
+            
+            
+              <p class="form-hint">For example, 31 3 1980</p>
+              
+              
+              <div class="form-group form-group-day">
+                <label for="effective-date-day">Day</label>
+                <input class="form-control" id="effective-date-day" type="number" pattern="[0-9]*" min="0" max="31">
+              </div>
+              
+              
+              <div class="form-group form-group-month">
+                <label for="effective-date-month">Month</label>
+                <input class="form-control" id="effective-date-month" type="number" pattern="[0-9]*" min="0" max="12">
+              </div>
+              
+              
+              <div class="form-group form-group-year">
+                <label for="effective-date-year">Year</label>
+                <input class="form-control" id="effective-date-year" type="number" pattern="[0-9]*" min="0" max="2014">
+              </div>
+              
+            
+            </div>
+            
+          
+          </fieldset>
+          
+        
+        </div>
+
+
+        <div class="form-group">          
+          <button class="button" type="submit">Save and continue</button>          
+        </div>
+        
+        
+        <p><a href="#">Back</a></p>
+
+
+      </form>
+
+
+    </div>
+
+
+    <div class="column-half">
+
+      {{>map}}
+      
+    </div>
+
+
+  </div>

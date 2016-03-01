@@ -1,0 +1,117 @@
+  {{>breadcrumb}}
+
+
+  <div class="grid-row">
+
+
+    <div class="column-half">
+
+
+      <div class="page-header">
+        
+        <h1 class="heading-xlarge">{{page_name}} <span class="heading-secondary">{{business_name}}</span></h1>
+      
+        <dl class="list-parcel">
+          <dt>Parcel ID</dt>
+          <dd>SJ4307 2617</dd>
+        </dl>
+      
+      </div>
+      
+
+      <p>This is a summary of the land parcel information Rural Payments currently holds for this land.</p>
+      
+      
+      <div class="panel-indent">
+        <p><span class="text-pending" title="Changes pending"></span> There are changes pending for this land parcel.</p>
+      </div>
+
+
+      <table>
+        
+        <caption class="visuallyhidden">Summary of land parcel information</caption>
+        
+        <thead>
+          
+          <tr>
+            <th scope="col" colspan="2">Summary</th>
+          </tr>
+          
+        </thead>
+        
+        <tbody>
+          
+          <tr>
+            <th scope="row"><abbr title="Basic Payment Scheme">BPS</abbr> eligible area (<abbr title="hectare">ha</abbr>)</th>
+            <td class="numeric">3.85</td>
+          </tr>
+          
+          <tr>
+            <th scope="row">Total area (<abbr title="hectare">ha</abbr>)</th>
+            <td class="numeric">3.85</td>
+          </tr>
+          
+        </tbody>
+        
+      </table>
+      
+      
+      <h2 class="heading-medium">Land covers</h2>
+      
+      <p>These are the land covers you have told us about.</p>
+
+
+      <table class="table-land-parcels js-table-sortable">
+        
+        <caption class="visuallyhidden">Land parcel distribution</caption>
+        
+        <thead>
+          
+          <tr>
+            <th scope="col" data-sort="string">Land cover</th>
+            <th class="numeric" scope="col" data-sort="int">Total area (<abbr title="hectare">ha</abbr>)</th>
+          </tr>
+          
+        </thead>
+        
+        <tfoot>
+          
+          <tr>
+            <th>Total area:</th>
+            <td class="numeric"><span class="bold-medium">3.85</span></td>
+          </tr>
+          
+        </tfoot>
+        
+        <tbody>
+          
+          <tr>
+            <th scope="row">Arable land</th>
+            <td class="numeric">3.85</td>
+          </tr>
+          
+        </tbody>
+        
+      </table>
+      
+      
+      <p><a href="#">Add a land cover or feature</a></p>
+
+
+    </div>
+
+
+    <div class="column-half">
+
+      {{>map}}
+      
+      <h3 class="heading-small">Is this information up to date?</h3>
+      
+      <p class="font-xsmall">If you have already asked us to make changes to information about your land, they might not show here yet.</p>
+      
+      <p class="font-xsmall">If you need to tell us about any changes to your land you should fill in an <a href="#" rel="external">RLE1 form </a>.</p>
+
+    </div>
+    
+    
+  </div>

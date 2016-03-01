@@ -1,0 +1,49 @@
+  {{>breadcrumb}}
+
+
+  <div class="grid-row">
+
+
+    <div class="column-half">
+
+
+      <form class="form" method="post" action="#">
+        
+        
+        <h1 class="form-title heading-xlarge">{{page_name}}</h1>
+
+
+        <div class="form-group">          
+          <label for="crop-area">Area of this feature:</label>          
+          <input class="form-control form-control-1-8" id="crop-area" type="text"> <abbr title="Hectare">ha</abbr>          
+        </div>
+
+
+        <div class="form-group">
+          <label class="form-label" for="enquiry">Tell us anything else about this feature (optional)</label>
+          <textarea class="form-control form-control-3-4 form-control-textarea" id="enquiry" rows="3" cols="50"></textarea>
+        </div>
+
+
+        <div class="form-group">
+          <button class="button" type="submit">Continue</button>
+        </div>
+
+
+        <p><a href="#">Back</a></p>
+        
+
+      </form>
+
+
+    </div>
+
+
+    <div class="column-half">
+
+      {{>map}}
+
+    </div>
+
+
+  </div>
