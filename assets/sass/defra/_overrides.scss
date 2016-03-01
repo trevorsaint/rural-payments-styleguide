@@ -71,6 +71,21 @@ body {
 }
 
 
+// External link icon reposition if inside small type
+
+.font-xsmall {
+  
+  a[rel="external"]::after {
+    background-position: right 4px;    
+  }
+  
+  a[rel="external"]:hover::after {
+    background-position: right -384px;    
+  }
+  
+}
+
+
 // Exception for details
 
 details {
