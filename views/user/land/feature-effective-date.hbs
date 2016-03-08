@@ -7,7 +7,7 @@
     <div class="column-half">      
 
 
-      <form class="form" method="post" action="#">
+      <form class="form" method="post" action="/land/parcel-details-summary/">
         
         
         <h1 class="form-title heading-xlarge">{{page_name}}</h1>
@@ -33,19 +33,19 @@
               
               <div class="form-group form-group-day">
                 <label for="effective-date-day">Day</label>
-                <input class="form-control" id="effective-date-day" type="number" pattern="[0-9]*" min="0" max="31">
+                <input class="form-control" id="effective-date-day" name="effective_date_day" type="number" pattern="[0-9]*" min="0" max="31" value="{{effective_date_day}}">
               </div>
               
               
               <div class="form-group form-group-month">
                 <label for="effective-date-month">Month</label>
-                <input class="form-control" id="effective-date-month" type="number" pattern="[0-9]*" min="0" max="12">
+                <input class="form-control" id="effective-date-month" name="effective_date_month" type="number" pattern="[0-9]*" min="0" max="12" value="{{effective_date_month}}">
               </div>
               
               
               <div class="form-group form-group-year">
                 <label for="effective-date-year">Year</label>
-                <input class="form-control" id="effective-date-year" type="number" pattern="[0-9]*" min="0" max="2014">
+                <input class="form-control" id="effective-date-year" name="effective_date_year" type="number" pattern="[0-9]*" min="0" max="2014" value="{{effective_date_year}}">
               </div>
               
             
@@ -63,7 +63,7 @@
         </div>
         
         
-        <p><a href="#">Back</a></p>
+        <p><a href="/land/feature-details/">Back</a></p>
 
 
       </form>

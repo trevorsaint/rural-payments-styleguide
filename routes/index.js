@@ -1241,89 +1241,202 @@ module.exports = {
       };      
       res.render('user/confirm-journey/business-overview', data);    
     });
-    
-    
-    
-    
-    
-    
-    
+
     
     // Land
     
-    app.get('/land/', function(req, res) {
-      data = {
-        doctitle: 'Land summary',
-        page_name: 'Land summary',
-        business_name: 'Appletree Ranch',
-        openLayers: true
-      };
-      res.render('user/land/home', data);
-    });    
-    
-    app.get('/land/parcel-summary', function(req, res) {
-      data = {
-        doctitle: 'Parcel summary',
-        page_name: 'Parcel summary',
-        business_name: 'Appletree Ranch',
-        openLayers: true
-      };
-      res.render('user/land/parcel-summary', data);
+    app.all('/land', function(req, res) {
+
+      res.render('user/land/home', {
+        'doctitle': 'Land summary',
+        'page_name': 'Land summary',
+        'business_name': 'Appletree Ranch',
+        'openLayers': true
+      });
+      
     });
     
-    app.get('/land/parcel-details', function(req, res) {
-      data = {
-        doctitle: 'Parcel details',
-        page_name: 'Parcel details',
-        business_name: 'Appletree Ranch',
-        openLayers: true
-      };
-      res.render('user/land/parcel-details', data);
+    app.all('/land/parcel-summary', function(req, res) {
+
+      res.render('user/land/parcel-summary', {
+        'doctitle': 'Parcel summary',
+        'page_name': 'Parcel summary',
+        'business_name': 'Appletree Ranch',
+        'openLayers': true
+      });
+      
+    });
+    
+    app.all('/land/parcel-details', function(req, res) {
+
+      res.render('user/land/parcel-details', {
+        'doctitle': 'Parcel details',
+        'page_name': 'Parcel details',
+        'business_name': 'Appletree Ranch',
+        'openLayers': true
+      });
+      
     });
     
     app.get('/land/add-feature-or-land-cover', function(req, res) {
-      data = {
-        doctitle: 'Add a feature or land cover',
-        page_name: 'Add a feature or land cover',
-        business_name: 'Appletree Ranch',
-        openLayers: true
-      };
-      res.render('user/land/add-feature-or-land-cover', data);
+      
+      var land_use = req.session.land_use;
+      
+      res.render('user/land/add-feature-or-land-cover', {
+        'doctitle': 'Add a feature or land cover',
+        'page_name': 'Add a feature or land cover',
+        'business_name': 'Appletree Ranch',
+        'land_use': land_use,
+        'openLayers': true
+      });
+      
     });
     
-    app.get('/land/add-details-to-this-land', function(req, res) {
-      data = {
-        doctitle: 'Add pond',
-        page_name: 'Add pond',
-        openLayers: true
-      };
-      res.render('user/land/add-details-to-this-land', data);
+    app.route('/land/add-details-to-this-land')
+    
+      .get(function(req, res) {
+        
+        var land_use = req.session.land_use;
+        var feature_area = req.session.feature_area;
+        var feature_additional = req.session.feature_additional;
+        
+        res.render('user/land/add-details-to-this-land', {
+          'doctitle' : 'Add ' + land_use,
+          'page_name' : 'Add ' + land_use,
+          'feature_area' : feature_area,
+          'feature_additional' : feature_additional,
+          'openLayers' : true
+        });
+        
+      })
+      
+      .post(function(req, res) {
+        
+        var land_use = req.session.land_use = req.body.land_use;
+        var feature_area = req.session.feature_area;
+        var feature_additional = req.session.feature_additional;
+        
+        res.render('user/land/add-details-to-this-land', {
+          'doctitle' : 'Add ' + land_use,
+          'page_name' : 'Add ' + land_use,
+          'feature_area' : feature_area,
+          'feature_additional' : feature_additional,
+          'openLayers' : true
+        });
+        
+      }
+      
+    );
+
+    app.route('/land/feature-details')
+    
+      .get(function(req, res) {
+        
+        var land_use = req.session.land_use;
+        var feature_area = req.session.feature_area;
+        var feature_additional = req.session.feature_additional;
+        
+        res.render('user/land/feature-details', {
+          'doctitle' : 'Add ' + land_use,
+          'page_name' : 'Add ' + land_use,
+          'feature_area' : feature_area,
+          'feature_additional' : feature_additional,
+          'openLayers' : true
+        });
+        
+      })
+      
+      .post(function(req, res) {
+        
+        var land_use = req.session.land_use;
+        var feature_area = req.session.feature_area = req.body.feature_area;
+        var feature_additional = req.session.feature_additional = req.body.feature_additional;
+        
+        res.render('user/land/feature-details', {
+          'doctitle' : 'Add ' + land_use,
+          'page_name' : 'Add ' + land_use,
+          'feature_area' : feature_area,
+          'feature_additional' : feature_additional,
+          'openLayers' : true
+        });
+        
+      }
+      
+    );
+    
+    app.route("/land/feature-effective-date")
+  
+      .all(function(req, res) {
+        
+        var land_use = req.session.land_use;
+        var feature_area = req.session.feature_area;
+        var feature_additional = req.session.feature_additional;
+        
+        var effective_date_day = req.session.effective_date_day;
+        var effective_date_month = req.session.effective_date_month;
+        var effective_date_year = req.session.effective_date_year;
+  
+        res.render('user/land/feature-effective-date', {
+          'doctitle' : 'Add ' + land_use,
+          'page_name' : 'Add ' + land_use,
+          'feature_area' : feature_area,
+          'effective_date_day' : effective_date_day,
+          'effective_date_month' : effective_date_month,
+          'effective_date_year' : effective_date_year,
+          'openLayers' : true
+        });
+        
+      }
+      
+    );
+  
+    app.get('/land/parcel-details-summary', function(req, res) {
+      
+      var land_use = req.session.land_use;
+      var feature_area = req.session.feature_area;
+      var feature_additional = req.session.feature_additional;
+      
+      var effective_date_day = req.session.effective_date_day;
+      var effective_date_month = req.session.effective_date_month;
+      var effective_date_year = req.session.effective_date_year;
+
+      res.render('user/land/parcel-details-summary', {
+        'doctitle' : 'Parcel details',
+        'page_name' : 'Parcel details',
+        'land_use' : land_use,
+        'feature_area' : feature_area,
+        'effective_date_day' : effective_date_day,
+        'effective_date_month' : effective_date_month,
+        'effective_date_year' : effective_date_year,
+        'openLayers' : true
+      });
+      
     });
     
-    app.get('/land/feature-details', function(req, res) {
-      data = {
-        doctitle: 'Add pond',
-        page_name: 'Add pond',
-        openLayers: true
-      };
-      res.render('user/land/feature-details', data);
+    app.post('/land/parcel-details-summary', function(req, res) {
+      
+      var land_use = req.session.land_use;
+      var feature_area = req.session.feature_area;
+      var feature_additional = req.session.feature_additional;
+      
+      var effective_date_day = req.session.effective_date_day = req.body.effective_date_day;
+      var effective_date_month = req.session.effective_date_month = req.body.effective_date_month;
+      var effective_date_year = req.session.effective_date_year = req.body.effective_date_year;
+
+      res.render('user/land/parcel-details-summary', {
+        'doctitle' : 'Parcel details',
+        'page_name' : 'Parcel details',
+        'land_use' : land_use,
+        'feature_area' : feature_area,
+        'effective_date_day' : effective_date_day,
+        'effective_date_month' : effective_date_month,
+        'effective_date_year' : effective_date_year,
+        'openLayers' : true
+      });
+      
     });
-    
-    app.get('/land/feature-effective-date', function(req, res) {
-      data = {
-        doctitle: 'Add pond',
-        page_name: 'Add pond',
-        openLayers: true
-      };
-      res.render('user/land/feature-effective-date', data);
-    });
-    
-    
-    
-    
-    
-    
-    
+
+
     
     // Countryside stewardship
     

@@ -1,0 +1,168 @@
+  {{>breadcrumb}}
+
+
+  <div class="grid-row">
+
+
+    <div class="column-two-thirds">
+
+
+      <div class="page-header">
+        
+        <h1 class="heading-xlarge">{{page_name}} <span class="heading-secondary">{{business_name}}</span></h1>
+      
+        <dl class="list-parcel">
+          <dt>Parcel ID</dt>
+          <dd>SJ4307 2617</dd>
+        </dl>
+      
+      </div>
+      
+      
+      <form class="form" method="post" action="/land/">
+      
+
+        <p>This is a summary of the land parcel information Rural Payments currently holds for this land.</p>
+        
+        
+        <div class="panel-indent">
+          <p><span class="text-pending" title="Changes pending"></span> There are changes pending for this land parcel.</p>
+        </div>
+  
+  
+        <table>
+          
+          <caption class="visuallyhidden">Summary of land parcel information</caption>
+          
+          <thead>
+            
+            <tr>
+              <th scope="col" colspan="2">Summary</th>
+            </tr>
+            
+          </thead>
+          
+          <tbody>
+            
+            <tr>
+              <th scope="row"><abbr title="Basic Payment Scheme">BPS</abbr> eligible area (<abbr title="hectare">ha</abbr>)</th>
+              <td class="numeric">3.85</td>
+            </tr>
+            
+            <tr>
+              <th scope="row">Total area (<abbr title="hectare">ha</abbr>)</th>
+              <td class="numeric">3.85</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        
+        
+        <h2 class="heading-medium">Land covers</h2>
+        
+        <p>These are the land covers you have told us about.</p>
+  
+  
+        <table class="table-land-parcels js-table-sortable">
+          
+          <caption class="visuallyhidden">Land parcel distribution</caption>
+          
+          <thead>
+            
+            <tr>
+              <th scope="col" data-sort="string">Land cover</th>
+              <th class="numeric" scope="col" data-sort="int">Total area (<abbr title="hectare">ha</abbr>)</th>
+            </tr>
+            
+          </thead>
+          
+          <tfoot>
+            
+            <tr>
+              <th>Total area:</th>
+              <td class="numeric"><span class="bold-medium">3.85</span></td>
+            </tr>
+            
+          </tfoot>
+          
+          <tbody>
+            
+            <tr>
+              <th scope="row">Arable land</th>
+              <td class="numeric">3.85</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        
+        
+        <p><a href="add-feature-or-land-cover">Add a land cover or feature</a></p>
+  
+  
+        <h2 class="heading-medium">Not yet submitted</h2>
+        
+        <p>These are the land covers that are not yet submitted.</p>
+  
+  
+        <table class="table-land-parcels js-table-sortable">
+          
+          <caption class="visuallyhidden">Land parcel distribution</caption>
+          
+          <thead>
+            
+            <tr>
+              <th scope="col" data-sort="string">Land cover</th>
+              <th class="" scope="col">Effective date</th>
+              <th class="numeric" scope="col" data-sort="int">Total area (<abbr title="hectare">ha</abbr>)</th>
+            </tr>
+            
+          </thead>
+          
+          <tfoot>
+            
+            <tr>
+              <th colspan="2">Total area:</th>
+              <td class="numeric"><span class="bold-medium">{{feature_area}}</span></td>
+            </tr>
+            
+          </tfoot>
+          
+          <tbody>
+            
+            <tr>
+              <th scope="row"><a href="#">{{land_use}}</a></th>
+              <td>{{effective_date_day}} / {{effective_date_month}} / {{effective_date_year}}</td>
+              <td class="numeric">{{feature_area}}</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        
+        
+        <div class="form-group">
+          <label class="block-label">
+            <input type="checkbox" name="checkbox-group" value="confirm">By checking this box I confirm this information is accurate
+          </label>
+        </div>
+  
+  
+        <button class="button" type="submit">Continue</button>
+      
+      
+      </form>
+
+
+    </div>
+
+
+    <div class="column-third">
+
+      {{>map}}
+      
+    </div>
+    
+    
+  </div>

@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "express-handlebars": "*",
+    "express-session": "*",
     "express": "*",
     "body-parser": "*"
   },

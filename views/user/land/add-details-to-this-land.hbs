@@ -7,21 +7,21 @@
     <div class="column-half">
 
 
-      <form class="form" method="post" action="#">
+      <form class="form" method="post" action="/land/feature-details/">
         
         
         <h1 class="form-title heading-xlarge">{{page_name}}</h1>
 
 
         <div class="form-group">          
-          <label for="crop-area">Area of this feature:</label>          
-          <input class="form-control form-control-1-8" id="crop-area" type="text"> <abbr title="Hectare">ha</abbr>          
+          <label for="feature-area">Area of this feature:</label>          
+          <input class="form-control form-control-1-8" id="feature-area" name="feature_area" type="text" value="{{feature_area}}"> <abbr title="Hectare">ha</abbr>          
         </div>
 
 
         <div class="form-group">
-          <label class="form-label" for="enquiry">Tell us anything else about this feature (optional)</label>
-          <textarea class="form-control form-control-3-4 form-control-textarea" id="enquiry" rows="3" cols="50"></textarea>
+          <label class="form-label" for="feature-additional">Tell us anything else about this feature (optional)</label>
+          <textarea class="form-control form-control-3-4 form-control-textarea" id="feature-additional" name="feature_additional" rows="3" cols="50">{{feature_additional}}</textarea>
         </div>
 
 
@@ -30,7 +30,7 @@
         </div>
 
 
-        <p><a href="#">Back</a></p>
+        <p><a href="/land/add-feature-or-land-cover/">Back</a></p>
         
 
       </form>

@@ -30,6 +30,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({	extended: false }));
 
 
+// Sessions
+
+var session = require('express-session');
+
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true
+}));
+
+
 // Routes
 
 routes.bind(app, '/routes/');
