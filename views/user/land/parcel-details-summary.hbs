@@ -114,8 +114,9 @@
             
             <tr>
               <th scope="col" data-sort="string">Land cover</th>
-              <th class="" scope="col">Effective date</th>
+              <th scope="col">Effective date</th>
               <th class="numeric" scope="col" data-sort="int">Total area (<abbr title="hectare">ha</abbr>)</th>
+              <th class="last"></th>
             </tr>
             
           </thead>
@@ -125,6 +126,7 @@
             <tr>
               <th colspan="2">Total area:</th>
               <td class="numeric"><span class="bold-medium">{{feature_area}}</span></td>
+              <td class="last"></td>
             </tr>
             
           </tfoot>
@@ -135,6 +137,7 @@
               <th scope="row"><a href="#">{{land_use}}</a></th>
               <td>{{effective_date_day}} / {{effective_date_month}} / {{effective_date_year}}</td>
               <td class="numeric">{{feature_area}}</td>
+              <td class="last"><a href="/">Remove<span class="visuallyhidden"> {{land_use}}</span></a></td>
             </tr>
             
           </tbody>
