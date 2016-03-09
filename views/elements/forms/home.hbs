@@ -28,27 +28,29 @@
 
   <h3 class="heading-medium">Hint text</h3>
   
+  <p>Use <abbr title="Accessible Rich Internet Applications">ARIA</abbr> attribute to associate the hint with the form field.</p>
+  
   <div class="example">
   
     <form class="form">
     
       <label for="ni-number">
         <span class="form-label">National Insurance number</span>
-        <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
+        <span class="form-hint" id="ni-hint">It&rsquo;ll be on your last payslip. For example, JH 21 90 0A.</span>
       </label>
       
-      <input class="form-control" name="ni-number" id="ni-number" type="text">
+      <input class="form-control" name="ni-number" id="ni-number" type="text" aria-describedby="ni-hint">
     
     </form>
   
   </div>
   <pre><code class="prettyprint">
-  &lt;label class=&quot;form-label&quot; for=&quot;ni-number&quot;&gt;
-    National Insurance number
-    &lt;span class=&quot;form-hint&quot;&gt;It'll be on your last payslip. For example, JH 21 90 0A.&lt;/span&gt;
+  &lt;label for=&quot;ni-number&quot;&gt;
+    &lt;span class=&quot;form-label&quot;&gt;National Insurance number&lt;/span&gt;
+    &lt;span class=&quot;form-hint&quot; id=&quot;ni-hint&quot;&gt;It'll be on your last payslip. For example, JH 21 90 0A.&lt;/span&gt;
   &lt;/label&gt;
   
-  &lt;input class=&quot;form-control&quot; name=&quot;ni-number&quot; id=&quot;ni-number&quot; type=&quot;text&quot;&gt;
+  &lt;input class=&quot;form-control&quot; name=&quot;ni-number&quot; id=&quot;ni-number&quot; type=&quot;text&quot; aria-describedby=&quot;ni-hint&quot;&gt;
   </code></pre>
 
 
@@ -92,17 +94,16 @@
     
       <fieldset>
       
-        <legend>
-          <span class="form-label-bold">Date of birth</span>
-        </legend>
+        <legend><span class="form-label-bold">Date of birth</span></legend>
         
         <div class="form-date">
         
-          <p class="form-hint">For example, 31 3 1980</p>
+          <p class="form-hint" id="dob-hint">For example, 31 3 1980</p>
           
           <div class="form-group form-group-day">
             <label for="dob-day">Day</label>
-            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31" 
+                   aria-describedby="dob-hint">
           </div>
           
           <div class="form-group form-group-month">
@@ -124,16 +125,17 @@
   </div>
   <pre><code class="prettyprint">
   &lt;fieldset&gt;
-  
-    &lt;legend class=&quot;form-label&quot;&gt;Date of birth&lt;/legend&gt;
+      
+    &lt;legend&gt;&lt;span class=&quot;form-label-bold&quot;&gt;Date of birth&lt;/span&gt;&lt;/legend&gt;
     
     &lt;div class=&quot;form-date&quot;&gt;
     
-      &lt;p class=&quot;form-hint&quot;&gt;For example, 31 3 1980&lt;/p&gt;
+      &lt;p class=&quot;form-hint&quot; id=&quot;dob-hint&quot;&gt;For example, 31 3 1980&lt;/p&gt;
       
       &lt;div class=&quot;form-group form-group-day&quot;&gt;
         &lt;label for=&quot;dob-day&quot;&gt;Day&lt;/label&gt;
-        &lt;input class=&quot;form-control&quot; id=&quot;dob-day&quot; type=&quot;number&quot; pattern=&quot;[0-9]*&quot; min=&quot;0&quot; max=&quot;31&quot;&gt;
+        &lt;input class=&quot;form-control&quot; id=&quot;dob-day&quot; type=&quot;number&quot; pattern=&quot;[0-9]*&quot; min=&quot;0&quot; max=&quot;31&quot; 
+               aria-describedby=&quot;dob-hint&quot;&gt;
       &lt;/div&gt;
       
       &lt;div class=&quot;form-group form-group-month&quot;&gt;
