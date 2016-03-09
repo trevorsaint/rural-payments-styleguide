@@ -491,10 +491,10 @@
       
       <label class="form-label" for="town">
         Town or City
-        <span class="form-hint">For example, 'Am' (for Amersham or Amesbury)</span>
+        <span class="form-hint" id="town-hint">For example, 'Am' (for Amersham or Amesbury)</span>
       </label>
       
-      <input class="form-control js-tt" name="town" id="town" type="text">
+      <input class="form-control js-tt" name="town" id="town" type="text" aria-describedby="town-hint">
       
     </form>
     
@@ -502,10 +502,10 @@
   <pre><code class="prettyprint">
   &lt;label class=&quot;form-label&quot; for=&quot;town&quot;&gt;
     Town or City
-    &lt;span class=&quot;form-hint&quot;&gt;For example, 'Am' (for Amersham or Amesbury)&lt;/span&gt;
+    &lt;span class=&quot;form-hint&quot; id=&quot;town-hint&quot;&gt;For example, 'Am' (for Amersham or Amesbury)&lt;/span&gt;
   &lt;/label&gt;
   
-  &lt;input class=&quot;form-control js-tt&quot; name=&quot;town&quot; id=&quot;town&quot; type=&quot;text&quot;&gt;
+  &lt;input class=&quot;form-control js-tt&quot; name=&quot;town&quot; id=&quot;town&quot; type=&quot;text&quot; aria-describedby=&quot;town-hint&quot;&gt;
   </code></pre>
   
   
