@@ -1243,7 +1243,7 @@ module.exports = {
     });
 
     
-    // Land
+    // LAND
     
     app.all('/land', function(req, res) {
 
@@ -1251,7 +1251,8 @@ module.exports = {
         'doctitle': 'Land summary',
         'page_name': 'Land summary',
         'business_name': 'Appletree Ranch',
-        'openLayers': true
+        'openLayers': true,
+        'sticky' : true
       });
       
     });
@@ -1262,7 +1263,8 @@ module.exports = {
         'doctitle': 'Parcel summary',
         'page_name': 'Parcel summary',
         'business_name': 'Appletree Ranch',
-        'openLayers': true
+        'openLayers': true,
+        'sticky' : true
       });
       
     });
@@ -1408,7 +1410,8 @@ module.exports = {
         'effective_date_day' : effective_date_day,
         'effective_date_month' : effective_date_month,
         'effective_date_year' : effective_date_year,
-        'openLayers' : true
+        'openLayers' : true,
+        'sticky' : true
       });
       
     });
@@ -1472,7 +1475,8 @@ module.exports = {
         'effective_date_day' : effective_date_day,
         'effective_date_month' : effective_date_month,
         'effective_date_year' : effective_date_year,
-        'openLayers' : true
+        'openLayers' : true,
+        'sticky' : true
       });
       
     });

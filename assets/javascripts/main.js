@@ -1059,6 +1059,23 @@ function autocomplete() {
 }
 
 
+// Sticky
+
+function sticky() {
+  
+  
+  if ($('.sticky').length > 0) {
+  
+  
+    $('.sticky').Stickyfill();
+  
+  
+  }
+  
+  
+}
+
+
 // Document ready
 
 (function() {
@@ -1077,5 +1094,6 @@ function autocomplete() {
   help();
   iframe();
   autocomplete();
+  sticky();
 })();
 
