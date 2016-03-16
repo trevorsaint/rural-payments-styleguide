@@ -1422,6 +1422,47 @@ module.exports = {
       var effective_date_day = req.session.effective_date_day = req.body.effective_date_day;
       var effective_date_month = req.session.effective_date_month = req.body.effective_date_month;
       var effective_date_year = req.session.effective_date_year = req.body.effective_date_year;
+      
+      // Month conversion from number variable
+
+      switch (effective_date_month) {
+        case '1':
+          effective_date_month = "Jan";
+          break;
+        case '2':
+          effective_date_month = "Feb";
+          break;
+        case '3':
+          effective_date_month = "Mar";
+          break;
+        case '4':
+          effective_date_month = "Apr";
+          break;
+        case '5':
+          effective_date_month = "May";
+          break;
+        case '6':
+          effective_date_month = "June";
+          break;
+        case '7':
+          effective_date_month = "July";
+          break;
+        case '8':
+          effective_date_month = "Aug";
+          break;
+        case '9':
+          effective_date_month = "Sep";
+          break;
+        case '10':
+          effective_date_month = "Oct";
+          break;
+        case '11':
+          effective_date_month = "Nov";
+          break;
+        case '12':
+          effective_date_month = "Dec";
+          break;
+      }
 
       res.render('user/land/parcel-details-summary', {
         'doctitle' : 'Parcel details',

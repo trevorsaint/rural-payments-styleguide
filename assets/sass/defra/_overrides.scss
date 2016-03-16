@@ -135,3 +135,19 @@ details .panel-indent {
   
 }
 
+
+// Sticky element
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+   
+}
+

@@ -275,11 +275,11 @@ table, .table {
       
     tbody {
       
-      tr:hover {
+      tr:hover,
+      tr.hover {
       
-        th, 
-        td {
-          background-color: $highlight-colour;
+        th, td {
+          background-color: $grey-3;
         }
       
       }
@@ -347,11 +347,12 @@ table, .table {
         cursor: pointer;
       }
       
-      tr:hover {
+      tr:hover,
+      tr.hover {
       
         th, 
         td {
-          background-color: $highlight-colour;
+          background-color: $grey-3;
         }
     
       }
