@@ -142,6 +142,7 @@ details .panel-indent {
   position: -webkit-sticky;
   position: sticky;
   top: 20px;
+  z-index: 12;
   
   &:before,
   &:after {
