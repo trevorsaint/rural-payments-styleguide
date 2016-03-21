@@ -152,3 +152,19 @@ details .panel-indent {
    
 }
 
+
+// Help and guidance
+
+@media print { 
+ 
+ .help {
+   display: none !important;
+   
+   &-open {
+    display: none !important;  
+   }
+   
+ }
+ 
+}
+
