@@ -1,0 +1,66 @@
+  {{>breadcrumb}}
+    
+    
+  <div class="grid-row">
+    
+    
+    <div class="column-two-thirds">
+      
+    
+      <h1 class="heading-xlarge">{{page_name}}</h1>
+      
+      
+      {{id}}
+      
+      
+      <form class="form" id="form-set-permissions" method="post" action="/people-and-permissions/change/">
+      
+      
+        <div class="form-group">
+      
+          <fieldset>
+    
+            <legend class="visuallyhidden">Area of the business do you want to set permissions?</legend>
+            
+            <label class="block-label" for="radio-1">
+              <input id="radio-1" name="option" type="radio" value="Business details">
+              Business details
+            </label>
+            
+            <label class="block-label" for="radio-2">
+              <input id="radio-2" name="option" type="radio" value="Land details">
+              Land details
+            </label>
+            
+            <label class="block-label" for="radio-3">
+              <input id="radio-3" name="option" type="radio" value="Entitlements">
+              Entitlements
+            </label>
+            
+            <label class="block-label" for="radio-4">
+              <input id="radio-4" name="option" type="radio" value="Basic Payment Scheme">
+              Basic Payment Scheme
+            </label>
+          
+          </fieldset>
+        
+        </div>
+
+        
+        <div class="form-group">
+          <input name="user" type="hidden" value="{{{permissions.name}}}">
+          <input name="email" type="hidden" value="{{{permissions.email}}}">
+          <button class="button" type="submit" disabled="disabled">Continue</button>          
+        </div>
+        
+        
+        <p><a href="/people-and-permissions/">Back</a></p>
+        
+      
+      </form>
+    
+  
+    </div>
+  
+  
+  </div>

@@ -1,0 +1,117 @@
+  {{>breadcrumb}}
+    
+    
+  <div class="grid-row">
+    
+    
+    <div class="column-two-thirds">
+      
+    
+      <h1 class="heading-xlarge">{{page_name}}</h1>
+      
+      
+      <dl class="description-list">
+        <dt>Name</dt>
+        <dd>{{user}}</dd>
+        <dt>Email address</dt>
+        <dd>{{email}}</dd>
+      </dl>      
+    
+      
+      <form class="form" method="post" action="#">
+      
+      
+        <h2 class="heading-medium">What can {{user}} do on {{option}}?</h2>
+        
+        
+        <div class="form-group-compound">
+        
+          <fieldset class="inline">
+          
+            <legend>
+              <span class="form-label">Add and remove people and change permissions</span>
+            </legend>
+            
+            <label class="block-label" for="radio-inline-1">
+              <input id="radio-inline-1" name="radio-inline-group-1" value="Yes" type="radio"> Yes
+            </label>
+            
+            <label class="block-label" for="radio-inline-2">
+              <input id="radio-inline-2" name="radio-inline-group-1" value="No" type="radio"> No
+            </label>
+          
+          </fieldset>
+        
+        </div>
+        
+        
+        <div class="form-group-compound">
+        
+          <fieldset class="inline">
+          
+            <legend>
+              <span class="form-label">Make legal changes to the business E.g. Business name, type of business</span>
+            </legend>
+            
+            <label class="block-label" for="radio-inline-3">
+              <input id="radio-inline-3" name="radio-inline-group-2" value="Yes" type="radio"> Yes
+            </label>
+            
+            <label class="block-label" for="radio-inline-4">
+              <input id="radio-inline-4" name="radio-inline-group-2" value="No" type="radio"> No
+            </label>
+          
+          </fieldset>
+        
+       </div>
+        
+        
+        <div class="form-group-compound">
+        
+          <fieldset class="inline">
+          
+            <legend>
+              <span class="form-label">Submit an application</span>
+            </legend>
+            
+            <label class="block-label" for="radio-inline-5">
+              <input id="radio-inline-5" name="radio-inline-group-3" value="Yes" type="radio"> Yes
+            </label>
+            
+            <label class="block-label" for="radio-inline-6">
+              <input id="radio-inline-6" name="radio-inline-group-3" value="No" type="radio"> No
+            </label>
+          
+          </fieldset>
+        
+        </div>
+        
+        
+        <p class="form-block">OR</p>
+        
+        
+        <div class="form-group">
+        
+          <label class="block-label" for="checkbox-1">
+            <input id="checkbox-1" value="view-business-details" type="checkbox">
+            {{user}} can view {{option}}, but can't make any changes
+          </label>
+        
+        </div>
+
+        
+        <div class="form-group">          
+          <button class="button" type="submit">Continue</button>          
+        </div>
+        
+        
+        <p><a href="/people-and-permissions/options/">Back</a></p>
+        
+      
+      </form>
+    
+  
+    </div>
+  
+  
+  </div>

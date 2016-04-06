@@ -605,6 +605,65 @@ function collapsibles() {
 }
 
 
+// Collapse
+
+function collapse() {
+
+
+  $('.collapse-item').each(function() {
+
+
+    // Variables
+    var $this    = $(this),
+        $header  = $(this).find('.collapse-title'),
+        $content = $(this).find('.collapse-content');
+
+
+    // Create a unique ID
+    var $id = 'collapse-' + $(this).index();
+
+
+    // Add button inside $header
+    $header.wrapInner('<button aria-expanded="false" aria-controls="' + $id + '">');
+    var $button = $header.children('button');
+
+
+    // Add attributes to collapsible content
+    $content.attr({
+      'id' : $id,
+      'aria-hidden' : true,
+      'style' : 'display: none;'
+    });
+    
+    
+    // Initialise    
+    if (($this).hasClass('is-open')) {
+      
+      $button.attr('aria-expanded', true);
+      $content.attr('aria-hidden', false).toggle();
+      
+    }
+
+
+    // Toggle state
+    $button.on('click', function(e) {
+
+      e.preventDefault();
+
+      var state = $(this).attr('aria-expanded') === 'false' ? true : false;
+
+      $button.attr('aria-expanded', state);
+      $content.attr('aria-hidden', !state).toggle();
+
+    });
+
+
+  });
+
+
+}
+
+
 // Toggle
 
 function toggleContent() {
@@ -811,6 +870,23 @@ function confirmSoleTraderDetails() {
   if ($('#form-confirm-sole-trader-details').length > 0) {    
     
     var form = $('#form-confirm-sole-trader-details');
+    
+    enableButtonOnSelection(form);    
+    
+  }
+
+  
+}
+
+
+// Set permissions
+
+function setPermissions() {
+  
+  
+  if ($('#form-set-permissions').length > 0) {    
+    
+    var form = $('#form-set-permissions');
     
     enableButtonOnSelection(form);    
     
@@ -1083,6 +1159,7 @@ function sticky() {
   formMultipleCheckboxes();
   showDialog();
   collapsibles();
+  collapse();
   toggleContent();
   tableSortable();
   landQuery();
@@ -1090,6 +1167,7 @@ function sticky() {
   businessOwnership();
   declarationAccountable();
   confirmSoleTraderDetails();
+  setPermissions();
   clickableTableRows();
   help();
   iframe();

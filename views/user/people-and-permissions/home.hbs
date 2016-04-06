@@ -1,0 +1,71 @@
+  {{>breadcrumb}}
+    
+    
+  <div class="grid-row">
+    
+    
+    <div class="column-two-thirds">
+      
+    
+      <h1 class="heading-xlarge">{{page_name}}</h1>
+    
+    
+      <div class="collapse">
+    
+    
+        {{#each permissions}}
+        <div class="collapse-item">
+    
+        
+          <div class="collapse-heading">
+            
+            <div class="collapse-cell"><h3 class="collapse-title">{{{name}}} {{#if agencyName}}<span class="collapse-subtitle">{{{agencyName}}}</span>{{/if}}</h3></div>
+            
+            {{#if agency}}<div class="collapse-cell"><span class="collapse-tag collapse-tag-agency">Agency</span></div>{{/if}}
+            
+            {{#if agent}}<div class="collapse-cell"><span class="collapse-tag collapse-tag-agent">Agent</span></div>{{/if}}  
+            
+            <div class="collapse-cell"><a href="#">Remove</a></div>
+            
+          </div>
+          
+          
+          <div class="collapse-content">
+            
+            
+            {{#each access}}
+            
+              <h3 class="heading-small">{{level}}</h3>
+              
+              <ul class="list list-bullet">
+                
+                {{#each actions}}
+                <li>{{{title}}}</li>
+                {{/each}}
+                
+              </ul>
+            
+            {{/each}}
+            
+            <p><a href="/people-and-permissions/options/{{id}}">Change permisions</a></p>
+            
+          </div>
+          
+        
+        </div>
+        {{/each}}
+        
+      
+      </div>
+    
+    
+      <p><a class="button" href="#" role="button">Add</a></p>
+      
+      
+      <p>Can&rsquo;t find the person you&rsquo;re looking for? <br> <a href="#">Invite someone to register</a></p>
+    
+  
+    </div>
+  
+  
+  </div>

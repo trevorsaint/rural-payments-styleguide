@@ -16,8 +16,9 @@ module.exports = {
     // MODELS
     // ==============================================
     
-    var peopleEngine   = require('../models/people');
-    var businessEngine = require('../models/businesses');
+    var peopleEngine      = require('../models/people');
+    var businessEngine    = require('../models/businesses');
+    var permissionsEngine = require('../models/permissions');
 
 
     // INDEX
@@ -1243,7 +1244,54 @@ module.exports = {
     });
 
     
-    // LAND
+    // People and permissions
+    
+    app.all('/people-and-permissions', function(req, res) {
+
+      res.render('user/people-and-permissions/home', {
+        'doctitle': 'People who can help you with Rural Payments',
+        'page_name': 'People who can help you with Rural Payments',
+        permissions:permissionsEngine.getPermissionsEntries()
+      });
+      
+    });
+    
+    
+    app.all('/people-and-permissions/options/:id', function(req, res) {
+      
+      var entry = permissionsEngine.getPermissionsEntry(req.params.id);
+      
+      res.render('user/people-and-permissions/options', {
+        'doctitle': 'Where do you want to set permissions?',
+        'page_name': 'Where do you want to set permissions?',
+        'section': 'people-and-permissions',
+        'section_name': 'People and permissions',
+        permissions:entry
+      });
+      
+    });
+    
+    
+    app.all('/people-and-permissions/change/', function(req, res) {
+      
+      var option = req.body.option;
+      var user   = req.body.user;
+      var email  = req.body.email;
+      
+      res.render('user/people-and-permissions/change', {
+        'doctitle': 'Change ' + user + ' permissions',
+        'page_name': 'Change ' + user + ' permissions',
+        'section': 'people-and-permissions',
+        'section_name': 'People and permissions',
+        'option': option,
+        'user': user,
+        'email': email
+      });
+      
+    });
+    
+    
+    // Land
     
     app.all('/land', function(req, res) {
 

@@ -1,4 +1,140 @@
 // ==========================================================================
+// Collapse
+// ==========================================================================
+
+
+$module: 'collapse';
+
+
+.#{$module} {
+  margin-bottom: 40px;
+  
+  
+  &-item {
+    border-bottom: 1px solid $grey-2;
+    
+    &:first-child {
+      border-top: 1px solid $grey-2;
+    }
+    
+  }
+  
+  
+  &-cell {
+   display: table-cell;
+   vertical-align: middle;
+   
+    &:first-child {
+     width: 60%;
+    }   
+    
+    &:last-child {
+      text-align: right;
+    }
+    
+  }
+  
+  
+  &-tag {
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    padding: 2px 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    
+    &-agency {
+      background-color: $pink;
+    }
+    
+    &-agent {
+      background-color: $fuschia;
+    }
+    
+  }
+  
+  
+  &-heading {
+    display: table;
+    padding: 12px 0;
+    width: 100%;
+  }
+  
+  
+  &-title {
+    font-weight: 700;      
+  }
+  
+  
+  &-subtitle {
+    @include core-16;
+    clear: both;
+    display: block;
+  }
+  
+  
+}
+
+
+// JS Enabled
+
+.js-enabled {
+  
+  .#{$module} {    
+    
+    &-title {
+
+      button {
+        background-color: transparent;
+        border: 0 none;
+        cursor: pointer;
+        display: block;
+        font-size: 1em;
+        line-height: 25px;
+        padding: 0 0 0 25px;
+        position: relative;
+        text-align: left;
+        
+        &::-moz-focus-inner {
+          border: 0;
+          padding: 0;
+        }
+        
+        &:before {
+          content: '►';
+          position: absolute;
+          left: 0;
+        }
+        
+        &[aria-expanded=false] {
+          &:before {
+            content: '►';
+          }
+        }
+        
+        &[aria-expanded=true] {
+          &:before {
+            content: '▼';
+          }
+        } 
+        
+      }
+      
+    }  
+    
+    &-content {
+      padding-left: 25px;
+    }    
+    
+  }  
+  
+}
+
+
+// ==========================================================================
 // Collapsibles
 // ==========================================================================
 
@@ -51,7 +187,6 @@ $module: 'collapsible';
   
   
 }
-
 
 
 
