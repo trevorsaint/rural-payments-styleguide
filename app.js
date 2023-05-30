@@ -10,7 +10,13 @@ var port    = (process.env.PORT || 3000);
 
 // Application settings
 
-app.engine('hbs', exphbs({extname:'hbs', defaultLayout:'main.hbs'}));
+app.engine('.hbs', exphbs.engine({
+  layoutsDir: 'views/layouts',
+  partialsDir: 'views/partials',
+  extname:'.hbs', 
+  defaultLayout:'main'
+}));
+
 app.set('view engine', 'hbs');
 
 
